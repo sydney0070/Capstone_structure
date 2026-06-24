@@ -8,3 +8,22 @@ __pycache__/
 
 # DEM data
 *.hgt
+
+# Planetary DEM data
+*.img
+*.IMG
+*.lbl
+*.LBL
+*.hgt
+*.HGT
+*.tif
+*.tiff
+
+# Generated visualization/results
+*.html
+*.csv
+
+# Python/macOS
+__pycache__/
+*.pyc
+.DS_Store
