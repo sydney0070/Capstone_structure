@@ -1,14 +1,3 @@
-"""
-[설계 원칙 — 기존과 동일]
-- 절점 태그 1~999    : 지반/기초 (build_foundation이 자동 생성)
-- 절점 태그 1000+id  : 돔 구조물 (dome_NODES의 원래 nodeTag + 1000)
-
-필요 패키지: openseespy, numpy, plotly
-    pip install openseespy numpy plotly --break-system-packages
-실행:
-    python opensees_dome_stress_abaqus_fixed.py
-"""
-
 import math
 import os
 import webbrowser
