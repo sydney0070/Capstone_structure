@@ -1,3 +1,7 @@
+"""
+돔(dome) 구조물
+"""
+
 import math
 import os
 import webbrowser
