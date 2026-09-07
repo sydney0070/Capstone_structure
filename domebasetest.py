@@ -187,14 +187,7 @@ DOME_EDGES = [
 
 
 # ----------------------------------------------------------------------
-# 0-부록. 내부 체적 계산 (단위체적당 강재량 q=M/V 비교용)
-#    돔은 순수 뼈대(선요소)라 "면" 정보가 없다. 그래서 DOME_EDGES가 이루는
-#    삼각망을 찾아 발산정리(divergence theorem)로 감싸인 체적을 구한다.
-#    쉘 자체는 z=0 밑단이 뚫린 사발 모양이므로, 밑단 링을 중심점 기준으로
-#    부채꼴 삼각형화해서 바닥을 닫아준 뒤 체적을 계산한다.
-#    V = (1/6) * sum(v0 . (v1 x v2))  (모든 삼각형이 바깥쪽을 향하도록 감겨 있어야 함)
-#    이 값은 순수하게 형상(dome_NODES/DOME_EDGES)에서만 나오고, 부재 단면(질량)과는
-#    무관하므로 목표질량 역산 로직보다 앞에, 형상 데이터 바로 뒤에 둔다.
+# 0. 내부 체적 계산 (단위체적당 강재량 q=M/V 비교용)
 # ----------------------------------------------------------------------
 def _find_triangles_from_edges(nodes, edges):
     """엣지 목록에서 삼각형(a,b,c 세 노드가 서로 다 연결된 경우)을 찾는다."""
@@ -374,9 +367,8 @@ def connect_structure_base(foundation_index, structure_base_node, dofs=(1, 2, 3,
 
 
 # ----------------------------------------------------------------------
-# 3. 부재 단면(각형강관, SHS(!!square hollow section!!)) — 목표 강재 질량에서 D·t를 자동 역산
+# 3. 부재 단면(각형강관, SHS(!!square hollow section!!))
 # ----------------------------------------------------------------------
-TARGET_STEEL_MASS_TON = 1_750.0   # 단일 해석 및 함수 기본값으로 사용할 SHS 총질량(ton)
 MEMBER_T_D_RATIO = 0.04           # 단면 형상비 t/D (구조별로 동일하게 유지) 두께와 외경의 비
 """mass와 t/D에 맞게 자동으로 단면적이 적용 될 것"""
 
@@ -423,18 +415,10 @@ def size_uniform_shs_for_target_mass(nodes, edges, target_mass_ton,
     t = t_over_D * D
     return float(D), float(t), float(area), float(length_sum)
 
+DOME_TOTAL_MEMBER_LENGTH = total_member_length(dome_NODES, DOME_EDGES)
 
-MEMBER_D, MEMBER_T, TARGET_MEMBER_A, DOME_TOTAL_MEMBER_LENGTH = \
-    size_uniform_shs_for_target_mass(
-        dome_NODES,
-        DOME_EDGES,
-        target_mass_ton=TARGET_STEEL_MASS_TON,
-        t_over_D=MEMBER_T_D_RATIO,
-    )
-
-def steel_shs_section(D=MEMBER_D, t=MEMBER_T, E=2.0e11, G=None):
+def steel_shs_section(D, t, E=2.0e11, G=None):
     """정사각형 강관(SHS, Square Hollow Section) hollow 사각관임
-
     각 물성치 계산식 (모서리 라운드는 무시하고 완전한 사각형으로 근사):
         A  = D^2 - (D-2t)^2                         (단면적)
         I  = (D^4 - (D-2t)^4) / 12                  (Iy = Iz, 대칭 단면),(bh^3/12; b=h) 
@@ -499,9 +483,12 @@ def compute_tributary_mass(nodes, edges, node_tags, A, density=STEEL_DENSITY,
 # ----------------------------------------------------------------------
 def build_dome_structure(nodes, edges, section=None, extra_mass_per_node=0.0,
                           node_offset=NODE_OFFSET):
-    """dome_NODES / DOME_EDGES를 nodes, edges로 함수내부 범용 매개변수로 처리(종속되지 않게 하기 위함!!)"""
+    """dome_NODES / DOME_EDGES를 nodes, edges로 함수내부 범용 매개변수로 처리(종속되지 않게 하기 위함!!)
+    section은 필수 인자다 — steel_shs_section(D, t)로 만들어서 넘길 것."""
     if section is None:
-        section = steel_shs_section()
+        raise ValueError(
+            "section을 지정해야 합니다. steel_shs_section(D, t)로 원하는 단면을 만들거나, "
+            "make_section_for_target_mass(target_mass_ton)으로 목표질량에서 역산해서 넘기세요.")
     if isinstance(section, dict):
         A, E, G, J, Iy, Iz = (section["A"], section["E"], section["G"],
                               section["J"], section["Iy"], section["Iz"])
@@ -579,7 +566,7 @@ def build_dome_structure(nodes, edges, section=None, extra_mass_per_node=0.0,
 
 
 # ----------------------------------------------------------------------
-# 5. 환경 하중 / 해석 실행 (실제 해석 진행 순서에 맞춘 재배치)
+# 5. 환경 하중 / 해석 실행
 # ----------------------------------------------------------------------
 
 # [1단계] 중력을 가해서 구조물에 질량과 하중을 부여
@@ -981,12 +968,11 @@ def _add_ground_block(footing_xy, X, Y, Z, I, J, K, intensity, edge_x, edge_y, e
     _add_box(verts, 0.0, X, Y, Z, I, J, K, intensity, edge_x, edge_y, edge_z)
 
 
-VIS_SIDE = MEMBER_D
-
-
 def plot_dome_3d_abaqus(dome, nodes, edges, member_stress,
                          colorscale="RdBu", ground_depth=None, ground_pad=None,
-                         vis_side=VIS_SIDE, save_html_path=None):
+                         vis_side=None, save_html_path=None):
+    if vis_side is None:
+        vis_side = 2.0 * dome["c"]  # c = D/2 (steel_shs_section 참고)
 
     node_coord = {tag: ops.nodeCoord(stag) for tag, stag in dome["node_tags"].items()}
     base_tags = list(dome["base_node_tags"].keys())
@@ -1051,15 +1037,9 @@ def plot_dome_3d_abaqus(dome, nodes, edges, member_stress,
 # ----------------------------------------------------------------------
 # 8. 실행 파이프라인 — PGA 하나를 넣으면 그 강도에서의 파손 여부까지 반환
 # ----------------------------------------------------------------------
-def run_case(pga_g, target_mass_ton=TARGET_STEEL_MASS_TON,
+def run_case(pga_g, target_mass_ton,
              dt=0.01, t_total=15.0, seed=42, direction=1,
              section=None, extra_mass_per_node=0.0, pga_reference="earth"):
-    """지정 질량·PGA에서 중력 및 지진해석 후 부재 한계초과 여부를 반환한다.
-
-    section을 생략하면 target_mass_ton에서 D·t·A·I·J를 매번 다시 산정한다.
-    section을 직접 전달하면 그 단면을 사용하되 target_mass_ton은 결과 식별용이다.
-    build_foundation()이 매번 ops.wipe()하므로 각 질량은 독립 모델로 해석된다.
-    """
     if target_mass_ton <= 0.0:
         raise ValueError("target_mass_ton은 0보다 커야 합니다.")
     if direction not in (1, 2, 3):
