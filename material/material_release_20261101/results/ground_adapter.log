@@ -1,0 +1,142 @@
+
+[Validation] Soil model sanity check
+  Overall: FAIL
+  Counts: PASS=17 WARNING=1 FAIL=1
+  [FAIL] Materials / material_parameter_ranges: Invalid material parameter values were found.
+    value: [('earth_sand_dr50_dry_reference', 'nd', -1), ('earth_sand_dr50_dry_reference', 'refPress', nan), ('earth_sand_dr50_dry_reference', 'pa', nan), ('earth_sand_dr50_dry_reference', 'frictionAng', nan)]
+  [WARNING] Boundary / dynamic_ssi_boundary: Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.
+Earth OpenSees 3D soil model generated.
+OpenSees domain: ndm=3, ndf=3
+Element type: bbarBrick
+Number of nodes: 36
+Number of elements: 12
+Nonlinear PDMY/PDMY02 material tags: [101]
+Total soil mass: 74823.52941176468 kg
+Expected total weight: 734018.8235294116 N
+Model generation time: 0.014263625023886561 s
+RELEASE_CASE Earth 0.5 True None
+
+[Validation] Soil model sanity check
+  Overall: FAIL
+  Counts: PASS=17 WARNING=1 FAIL=1
+  [FAIL] Materials / material_parameter_ranges: Invalid material parameter values were found.
+    value: [('earth_sand_dr50_dry_reference', 'nd', -1), ('earth_sand_dr50_dry_reference', 'refPress', nan), ('earth_sand_dr50_dry_reference', 'pa', nan), ('earth_sand_dr50_dry_reference', 'frictionAng', nan)]
+  [WARNING] Boundary / dynamic_ssi_boundary: Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.
+Earth OpenSees 3D soil model generated.
+OpenSees domain: ndm=3, ndf=3
+Element type: bbarBrick
+Number of nodes: 36
+Number of elements: 12
+Nonlinear PDMY/PDMY02 material tags: [101]
+Total soil mass: 74823.52941176468 kg
+Expected total weight: 734018.8235294116 N
+Model generation time: 0.012888084049336612 s
+RELEASE_CASE Earth 1.0 True None
+
+[Validation] Soil model sanity check
+  Overall: FAIL
+  Counts: PASS=17 WARNING=1 FAIL=1
+  [FAIL] Materials / material_parameter_ranges: Invalid material parameter values were found.
+    value: [('earth_sand_dr50_dry_reference', 'nd', -1), ('earth_sand_dr50_dry_reference', 'refPress', nan), ('earth_sand_dr50_dry_reference', 'pa', nan), ('earth_sand_dr50_dry_reference', 'frictionAng', nan)]
+  [WARNING] Boundary / dynamic_ssi_boundary: Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.
+Earth OpenSees 3D soil model generated.
+OpenSees domain: ndm=3, ndf=3
+Element type: bbarBrick
+Number of nodes: 36
+Number of elements: 12
+Nonlinear PDMY/PDMY02 material tags: [101]
+Total soil mass: 74823.52941176468 kg
+Expected total weight: 734018.8235294116 N
+Model generation time: 0.013343708007596433 s
+RELEASE_CASE Earth 2.0 True None
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+
+[Validation] Soil model sanity check
+  Overall: WARNING
+  Counts: PASS=18 WARNING=1 FAIL=0
+  [WARNING] Boundary / dynamic_ssi_boundary: Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.
+Moon OpenSees 3D soil model generated.
+OpenSees domain: ndm=3, ndf=3
+Element type: bbarBrick
+Number of nodes: 36
+Number of elements: 12
+Nonlinear PDMY/PDMY02 material tags: []
+Total soil mass: 85439.99999999999 kg
+Expected total weight: 138412.8 N
+Model generation time: 0.014829042018391192 s
+RELEASE_CASE Moon 0.5 True None
+
+[Validation] Soil model sanity check
+  Overall: WARNING
+  Counts: PASS=18 WARNING=1 FAIL=0
+  [WARNING] Boundary / dynamic_ssi_boundary: Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.
+Moon OpenSees 3D soil model generated.
+OpenSees domain: ndm=3, ndf=3
+Element type: bbarBrick
+Number of nodes: 36
+Number of elements: 12
+Nonlinear PDMY/PDMY02 material tags: []
+Total soil mass: 85439.99999999999 kg
+Expected total weight: 138412.8 N
+Model generation time: 0.014251374988816679 s
+RELEASE_CASE Moon 1.0 True None
+
+[Validation] Soil model sanity check
+  Overall: WARNING
+  Counts: PASS=18 WARNING=1 FAIL=0
+  [WARNING] Boundary / dynamic_ssi_boundary: Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.
+Moon OpenSees 3D soil model generated.
+OpenSees domain: ndm=3, ndf=3
+Element type: bbarBrick
+Number of nodes: 36
+Number of elements: 12
+Nonlinear PDMY/PDMY02 material tags: []
+Total soil mass: 85439.99999999999 kg
+Expected total weight: 138412.8 N
+Model generation time: 0.01426904194522649 s
+RELEASE_CASE Moon 2.0 True None
+
+[Validation] Soil model sanity check
+  Overall: WARNING
+  Counts: PASS=18 WARNING=1 FAIL=0
+  [WARNING] Boundary / dynamic_ssi_boundary: Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.
+Mars OpenSees 3D soil model generated.
+OpenSees domain: ndm=3, ndf=3
+Element type: bbarBrick
+Number of nodes: 36
+Number of elements: 12
+Nonlinear PDMY/PDMY02 material tags: []
+Total soil mass: 88319.99999999999 kg
+Expected total weight: 327755.51999999996 N
+Model generation time: 0.014278916991315782 s
+RELEASE_CASE Mars 0.5 True None
+
+[Validation] Soil model sanity check
+  Overall: WARNING
+  Counts: PASS=18 WARNING=1 FAIL=0
+  [WARNING] Boundary / dynamic_ssi_boundary: Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.
+Mars OpenSees 3D soil model generated.
+OpenSees domain: ndm=3, ndf=3
+Element type: bbarBrick
+Number of nodes: 36
+Number of elements: 12
+Nonlinear PDMY/PDMY02 material tags: []
+Total soil mass: 88319.99999999999 kg
+Expected total weight: 327755.51999999996 N
+Model generation time: 0.014134124969132245 s
+RELEASE_CASE Mars 1.0 True None
+
+[Validation] Soil model sanity check
+  Overall: WARNING
+  Counts: PASS=18 WARNING=1 FAIL=0
+  [WARNING] Boundary / dynamic_ssi_boundary: Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.
+Mars OpenSees 3D soil model generated.
+OpenSees domain: ndm=3, ndf=3
+Element type: bbarBrick
+Number of nodes: 36
+Number of elements: 12
+Nonlinear PDMY/PDMY02 material tags: []
+Total soil mass: 88319.99999999999 kg
+Expected total weight: 327755.51999999996 N
+Model generation time: 0.014226166065782309 s
+RELEASE_CASE Mars 2.0 True None

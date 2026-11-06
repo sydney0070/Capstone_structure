@@ -1,0 +1,239 @@
+{
+  "gravity": {
+    "analysis_ok": 0,
+    "analysis_steps": 10,
+    "load_step": 0.1,
+    "total_applied_load": [
+      0.0,
+      0.0,
+      -712206.0
+    ],
+    "reaction_vector": [
+      -1.1823431123048067e-11,
+      -2.000888343900442e-11,
+      712205.9999999998
+    ],
+    "balance_vector": [
+      -1.1823431123048067e-11,
+      -2.000888343900442e-11,
+      -2.3283064365386963e-10
+    ],
+    "balance_norm": 2.339877295164692e-10,
+    "relative_balance_error": 3.285393966302856e-16,
+    "max_displacement_m": 0.0025155310151799225,
+    "mean_displacement_m": 0.0011394962345352522,
+    "max_vertical_displacement_m": 0.0025155310151799225,
+    "stage_after_gravity": 1
+  },
+  "report": {
+    "overall_status": "WARNING",
+    "items": [
+      {
+        "status": "PASS",
+        "category": "Geometry",
+        "check": "finite_node_coordinates",
+        "message": "All node coordinates are finite.",
+        "value": null
+      },
+      {
+        "status": "PASS",
+        "category": "Geometry",
+        "check": "positive_element_volume",
+        "message": "All elements have positive Gauss-integrated volume.",
+        "value": 0.9999999999999991
+      },
+      {
+        "status": "PASS",
+        "category": "Geometry",
+        "check": "positive_jacobian",
+        "message": "All Gauss point Jacobian determinants are positive.",
+        "value": 0.12499999999999986
+      },
+      {
+        "status": "PASS",
+        "category": "Geometry",
+        "check": "element_aspect_ratio",
+        "message": "Element aspect ratios are within the configured preliminary limit.",
+        "value": 8.0
+      },
+      {
+        "status": "PASS",
+        "category": "Geometry",
+        "check": "gauss_volume_vs_projected_volume",
+        "message": "Gauss volume is compared with the previous projected-area approximation.",
+        "value": 8.88178419700126e-16
+      },
+      {
+        "status": "PASS",
+        "category": "Connectivity",
+        "check": "valid_node_references",
+        "message": "All element node references are valid.",
+        "value": null
+      },
+      {
+        "status": "PASS",
+        "category": "Connectivity",
+        "check": "orphan_nodes",
+        "message": "No orphan nodes were found.",
+        "value": []
+      },
+      {
+        "status": "PASS",
+        "category": "Connectivity",
+        "check": "duplicate_elements",
+        "message": "No duplicate element connectivity was found.",
+        "value": []
+      },
+      {
+        "status": "PASS",
+        "category": "Connectivity",
+        "check": "duplicate_node_coordinates",
+        "message": "No duplicate node coordinates were found.",
+        "value": 0
+      },
+      {
+        "status": "PASS",
+        "category": "Materials",
+        "check": "defined_material_tags",
+        "message": "All element material tags are defined.",
+        "value": []
+      },
+      {
+        "status": "PASS",
+        "category": "Materials",
+        "check": "material_parameter_ranges",
+        "message": "Material parameters are inside basic numerical ranges.",
+        "value": []
+      },
+      {
+        "status": "PASS",
+        "category": "Loads",
+        "check": "self_weight_load_sum",
+        "message": "Applied nodal self-weight matches mass times gravity.",
+        "value": {
+          "total_mass_kg": 72600.0,
+          "expected_weight_n": 712206.0,
+          "applied_load_z_n": -712206.0,
+          "relative_error": 0.0
+        }
+      },
+      {
+        "status": "PASS",
+        "category": "Loads",
+        "check": "reaction_equilibrium",
+        "message": "Sum of reactions balances applied gravity load.",
+        "value": {
+          "relative_balance_error": 3.285393966302856e-16,
+          "reaction_vector": [
+            -1.1823431123048067e-11,
+            -2.000888343900442e-11,
+            712205.9999999998
+          ],
+          "applied_load": [
+            0.0,
+            0.0,
+            -712206.0
+          ]
+        }
+      },
+      {
+        "status": "PASS",
+        "category": "Loads",
+        "check": "gravity_displacement_size",
+        "message": "Gravity displacement magnitude is within preliminary sanity limit.",
+        "value": 0.0025155310151799225
+      },
+      {
+        "status": "PASS",
+        "category": "Boundary",
+        "check": "bottom_fixity",
+        "message": "All bottom nodes are fixed in x, y, z.",
+        "value": []
+      },
+      {
+        "status": "PASS",
+        "category": "Boundary",
+        "check": "side_boundary_groups",
+        "message": "Side boundary node groups are available.",
+        "value": 104
+      },
+      {
+        "status": "WARNING",
+        "category": "Boundary",
+        "check": "dynamic_ssi_boundary",
+        "message": "Current fixed-base/lateral-roller boundary is for gravity and preliminary static loading, not dynamic SSI.",
+        "value": null
+      },
+      {
+        "status": "PASS",
+        "category": "Mesh",
+        "check": "mesh_counts",
+        "message": "Mesh counts were computed.",
+        "value": {
+          "nodes": 117,
+          "elements": 48,
+          "nx": 3,
+          "ny": 3,
+          "nz": 12
+        }
+      },
+      {
+        "status": "PASS",
+        "category": "Mesh",
+        "check": "layer_boundary_alignment",
+        "message": "Layer boundaries are represented by vertical mesh levels.",
+        "value": []
+      }
+    ],
+    "mesh": {
+      "domain_x_length_m": 4.0,
+      "domain_y_length_m": 4.0,
+      "domain_depth_m": 3.0,
+      "nx": 3,
+      "ny": 3,
+      "nz": 12,
+      "dx_m": {
+        "min": 2.0,
+        "mean": 2.0,
+        "max": 2.0
+      },
+      "dy_m": {
+        "min": 2.0,
+        "mean": 2.0,
+        "max": 2.0
+      },
+      "dz_m": {
+        "min": 0.25,
+        "mean": 0.25,
+        "max": 0.25
+      },
+      "element_aspect_ratio": {
+        "min": 8.0,
+        "mean": 8.0,
+        "max": 8.0
+      },
+      "element_volume_m3": {
+        "min": 0.9999999999999991,
+        "mean": 1.0,
+        "max": 1.0000000000000004
+      },
+      "min_jacobian_det": {
+        "min": 0.12499999999999986,
+        "mean": 0.12499999999999996,
+        "max": 0.12499999999999997
+      },
+      "node_count": 117,
+      "element_count": 48
+    },
+    "limits": {
+      "min_volume_m3": 1e-09,
+      "min_jacobian_det": 1e-12,
+      "aspect_ratio_warning": 12.0,
+      "aspect_ratio_fail": 40.0,
+      "force_balance_relative_warning": 0.0001,
+      "force_balance_relative_fail": 0.01,
+      "max_gravity_displacement_warning_m": 0.5
+    }
+  },
+  "mass": 72600.0
+}

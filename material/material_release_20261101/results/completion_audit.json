@@ -1,0 +1,110 @@
+{
+  "audited_utc": "2026-11-01T22:12:13.300171+00:00",
+  "objective_scope": "pre-integration selection/tuning/numerical verification package; experimental calibration, literature assumptions and unverified scope distinguished",
+  "requirements": [
+    {
+      "requirement": "roadmap/material/ground review",
+      "evidence": "FINAL_REPORT_KO.md; ../material_review_20261101.md; capmat/ground.py; results/ground_adapter.json",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "Existing3D source selected; originals preserved; gravity staging corrected"
+    },
+    {
+      "requirement": "steel selection/calibration replay",
+      "evidence": "configs/catalog.json; results/steel_coupon/summary.json; results/metal_shell_plastic.json",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "Nominal baseline separated from calibrated selected-coupon scope"
+    },
+    {
+      "requirement": "6061-T6",
+      "evidence": "configs/catalog.json; results/material_patch.json; results/metal_shell_plastic.json",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "Correct alloy/product source; elastic/yield reference; hardening not experimentally fitted"
+    },
+    {
+      "requirement": "RC frame and foundation",
+      "evidence": "capmat/rc.py; capmat/elastic_rc.py; results/rc_hinge/summary.json; results/rc_3d.json; results/rc_continuum.json",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "Nonlinear fixed physical hinge formulation and elastic continuum; actual geometry/LP/ratios explicit"
+    },
+    {
+      "requirement": "CFRP",
+      "evidence": "capmat/laminate.py; capmat/mechanics.py; results/laminate_bending.json; results/shell_mass.json",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "0/90 OpenSees ply model; arbitrary-angle ABD computation; no damage/allowables claim"
+    },
+    {
+      "requirement": "regolith3 roles",
+      "evidence": "configs/catalog.json; research/moon_strength_fits.json; results/soil_material/summary.json; results/material_patch.json",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "Ground simulant, shielding mass, and sintered structural candidate separated; tensile failure unavailable"
+    },
+    {
+      "requirement": "Earth Moon Mars representative soils",
+      "evidence": "configs/catalog.json; results/ground_adapter.json; results/soil_material/summary.json",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "Literature state-specific references plus declared assumptions; not universal most-used/site calibration"
+    },
+    {
+      "requirement": "SSI",
+      "evidence": "capmat/ssi.py; capmat/mechanics.py; results/ssi_contact/summary.json; results/ssi_transfer.json",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "Slip/uplift, force transfer, physical rotation, viscous response verified in explicit scope"
+    },
+    {
+      "requirement": "units/selfweight/inertia",
+      "evidence": "capmat/mass.py; results/dynamic_mass.json; results/shell_mass.json; results/rc_3d.json",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "SI and independent mass-frequency checks; no gravity scaling of inertial mass"
+    },
+    {
+      "requirement": "geometry-dependent inputs and load scope",
+      "evidence": "README.md",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "Dimensions, stacking, hinge length, GJ, interface area/pair and boundary frequency left explicit; pressure/wind/settlement/impact integration instructions recorded"
+    },
+    {
+      "requirement": "reproduction/report/next actions/time",
+      "evidence": "run_verification.py; results/verification_manifest.json; README.md; FINAL_REPORT_KO.md",
+      "determination": "PROVEN_WITH_DECLARED_SCOPE",
+      "scope": "Full rerun passed; selected formulation gates distinguished from rejected diagnostic; staged next work and7h assessment documented"
+    }
+  ],
+  "selected_gates": {
+    "material_patch": true,
+    "dynamic_mass": true,
+    "rc_section_patch": true,
+    "ssi_transfer": true,
+    "rc_3d": true,
+    "rc_continuum": true,
+    "laminate_bending": true,
+    "shell_mass": true,
+    "metal_shell_plastic": true,
+    "soil_material": true,
+    "steel_coupon": true,
+    "ssi_contact": true,
+    "rc_hinge": true,
+    "ground_adapter": true
+  },
+  "external_work_after_geometry": "Actual structure assembly, site/boundary validation and geometry-dependent parameter finalization are next phase; no structure code was supplied",
+  "physical_evidence_limits": [
+    "not all materials experimentally calibrated",
+    "sintered tensile strength unknown",
+    "CFRP arbitrary-angle OpenSees/damage not supplied",
+    "RC LP must be chosen for real member",
+    "SSI fixed-normal small-slip unbonded point interface",
+    "no in-situ extraterrestrial soil or impact penetration calibration"
+  ],
+  "root_artifact_sha256": {
+    "run_verification.py": "ccb61086e057ba290729da67326a22c413d745d457d8516b18cb8ee8dab89be3",
+    "build_catalog.py": "052654d3c9c45a84ca761451267064dbe52be21eb7bc764747eae5436f0fc1d2",
+    "README.md": "63cc6ef8638a988af7a135855dd2c14b409f2f753c41fe5f3e3d0c21e2c4f0fb",
+    "FINAL_REPORT_KO.md": "d7e1fcb251c78205c931f7198faf2cec4bc6009e0373e5caeee9cd329f17b7b1"
+  },
+  "schedule_result": {
+    "target_hours": 7,
+    "goal_created_KST": "2026-11-01T21:41:53+09:00",
+    "audit_KST": "2026-11-02T07:12:26+09:00",
+    "elapsed_clock_hours": 9.5092,
+    "status": "TIME_TARGET_MISSED; deliverable completed with explicitly limited physical scope"
+  }
+}

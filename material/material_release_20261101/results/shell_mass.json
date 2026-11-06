@@ -1,0 +1,34 @@
+{
+  "runtime": "3.4.0",
+  "cases": [
+    {
+      "name": "steel_s355_nominal",
+      "computed_kg": 78.49999999608436,
+      "expected_kg": 78.5,
+      "relative_error": 4.988082417034452e-11,
+      "pass": true
+    },
+    {
+      "name": "al6061_t6_extrusion",
+      "computed_kg": 27.126306614641138,
+      "expected_kg": 27.126306615999066,
+      "relative_error": 5.005948283616535e-11,
+      "pass": true
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity",
+      "computed_kg": 21.999999998900325,
+      "expected_kg": 22.0,
+      "relative_error": 4.998522807785445e-11,
+      "pass": true
+    },
+    {
+      "name": "cfrp",
+      "computed_kg": 1.1954255999999917,
+      "expected_kg": 1.1954256,
+      "relative_error": 7.0583188005603935e-15,
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

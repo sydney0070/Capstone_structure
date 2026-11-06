@@ -1,0 +1,1 @@
+{'runtime': '3.4.0', 'constraint_handler': 'Plain', 'pass_': True, 'relative_errors': [1.6263032587282567e-16, 1.3552527156068805e-16, 1.734723475976807e-16], 'expected_ux_uz_ry': [8.333333333333333e-05, -0.0001, 0.01], 'actual_ux_uz_ry': [8.333333333333332e-05, -9.999999999999999e-05, 0.009999999999999998], 'physical_rotation_unrestrained_by_contact': True, 'pass': True}

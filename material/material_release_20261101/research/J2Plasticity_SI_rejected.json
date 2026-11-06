@@ -1,0 +1,18 @@
+{
+  "runtime": "3.4.0",
+  "cases": [
+    {
+      "name": "steel_s355_nominal",
+      "steps": 400,
+      "max_error_over_yield": 2.380281690031399,
+      "pass": false
+    },
+    {
+      "name": "al6061_t6_extrusion",
+      "steps": 400,
+      "max_error_over_yield": 0.7589648046886267,
+      "pass": false
+    }
+  ],
+  "all_pass": false
+}

@@ -1,0 +1,31 @@
+material_patch exit 0
+soil_material exit 0
+ground_adapter exit 0
+steel_coupon exit 0
+dynamic_mass exit 0
+rc_section_patch exit 0
+ssi_contact exit 0
+ssi_transfer exit 0
+rc_convergence exit 0
+rc_hinge exit 0
+rc_3d exit 0
+rc_continuum exit 0
+laminate_bending exit 0
+shell_mass exit 0
+metal_shell_plastic exit 0
+{
+  "material_patch": true,
+  "dynamic_mass": true,
+  "rc_section_patch": true,
+  "ssi_transfer": true,
+  "rc_3d": true,
+  "rc_continuum": true,
+  "laminate_bending": true,
+  "shell_mass": true,
+  "metal_shell_plastic": true,
+  "soil_material": true,
+  "steel_coupon": true,
+  "ssi_contact": true,
+  "rc_hinge": true,
+  "ground_adapter": true
+}

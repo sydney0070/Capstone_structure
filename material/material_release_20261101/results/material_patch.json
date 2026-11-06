@@ -1,0 +1,252 @@
+{
+  "runtime": "3.4.0",
+  "cases": [
+    {
+      "name": "uniaxial_steel_s355_coupon",
+      "relative_initial_tangent_error": 0.0,
+      "stress_Pa": 204167.88333006157,
+      "metadata": {
+        "tag": 1,
+        "density_kg_m3": 7850,
+        "mass_in_material": false,
+        "law": "Steel02"
+      },
+      "pass": true
+    },
+    {
+      "name": "uniaxial_steel_s355_nominal",
+      "relative_initial_tangent_error": 0.0,
+      "stress_Pa": 200000.0,
+      "metadata": {
+        "tag": 1,
+        "density_kg_m3": 7850,
+        "mass_in_material": false,
+        "law": "J2PerfectPlastic"
+      },
+      "stress_at_one_percent_Pa": 355000000.0,
+      "yield_relative_error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "uniaxial_al6061_t6_extrusion",
+      "relative_initial_tangent_error": 0.0,
+      "stress_Pa": 70358.5921827291,
+      "metadata": {
+        "tag": 1,
+        "density_kg_m3": 2712.6306615999065,
+        "mass_in_material": false,
+        "law": "J2PerfectPlastic"
+      },
+      "stress_at_one_percent_Pa": 240000000.0,
+      "yield_relative_error": 0.0,
+      "pass": true
+    },
+    {
+      "name": "uniaxial_rebar_sd400_prototype",
+      "relative_initial_tangent_error": 0.0,
+      "stress_Pa": 200000.0,
+      "metadata": {
+        "tag": 1,
+        "density_kg_m3": 7850,
+        "mass_in_material": false,
+        "law": "Steel02"
+      },
+      "pass": true
+    },
+    {
+      "name": "uniaxial_sintered_jsc1a_high_porosity",
+      "relative_initial_tangent_error": 0.0,
+      "stress_Pa": 5475.0,
+      "metadata": {
+        "tag": 1,
+        "density_kg_m3": 2200,
+        "mass_in_material": false,
+        "law": "ElasticIsotropic"
+      },
+      "pass": true
+    },
+    {
+      "name": "shell_steel_s355_nominal",
+      "pass_": true,
+      "pass": true,
+      "force_N": 19999.999999,
+      "expected_N": 20000.0,
+      "force_relative_error": 5.0000016926787794e-11,
+      "poisson_relative_error": 0.0,
+      "metadata": {
+        "tag": 100,
+        "law": "J2PerfectPlastic",
+        "density_kg_m3": 7850,
+        "mass_in_material": true,
+        "external_mass_required": false,
+        "implementation": "DruckerPrager_zero_friction_J2_limit",
+        "section_tag": 10,
+        "areal_mass_kg_m2": 78.5
+      }
+    },
+    {
+      "name": "shell_al6061_t6_extrusion",
+      "pass_": true,
+      "pass": true,
+      "force_N": 7035.8592179211155,
+      "expected_N": 7035.859218272912,
+      "force_relative_error": 5.000045875149431e-11,
+      "poisson_relative_error": 0.0,
+      "metadata": {
+        "tag": 100,
+        "law": "J2PerfectPlastic",
+        "density_kg_m3": 2712.6306615999065,
+        "mass_in_material": true,
+        "external_mass_required": false,
+        "implementation": "DruckerPrager_zero_friction_J2_limit",
+        "section_tag": 10,
+        "areal_mass_kg_m2": 27.126306615999066
+      }
+    },
+    {
+      "name": "shell_sintered_jsc1a_high_porosity",
+      "pass_": true,
+      "pass": true,
+      "force_N": 547.4999999726249,
+      "expected_N": 547.5,
+      "force_relative_error": 5.0000197995139377e-11,
+      "poisson_relative_error": 1.7216116814111794e-16,
+      "metadata": {
+        "tag": 100,
+        "law": "ElasticIsotropic",
+        "density_kg_m3": 2200,
+        "mass_in_material": true,
+        "external_mass_required": false,
+        "implementation": "ElasticIsotropic",
+        "section_tag": 10,
+        "areal_mass_kg_m2": 22.0
+      }
+    },
+    {
+      "name": "crossply_[0, 0, 0, 0]",
+      "pass_": true,
+      "pass": true,
+      "force_N": 956.921048080334,
+      "expected_N": 956.9210480803363,
+      "force_relative_error": 2.3760965013713794e-15,
+      "poisson_relative_error": 1.5426096721518718e-15,
+      "metadata": {
+        "section_tag": 10,
+        "areal_mass_kg_m2": 1.1954256,
+        "material_tags": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "mass_in_material": true,
+        "angles_deg": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "sublayers_per_ply": 32,
+        "local_axis_requirement": "orient element localx consistently with declared laminate0deg; z bottom-to-top must match ply sequence"
+      }
+    },
+    {
+      "name": "crossply_[90, 90, 90, 90]",
+      "pass_": true,
+      "pass": true,
+      "force_N": 69.4623079321589,
+      "expected_N": 69.46230793215877,
+      "force_relative_error": 1.8412531377697805e-15,
+      "poisson_relative_error": 6.037265635160181e-16,
+      "metadata": {
+        "section_tag": 10,
+        "areal_mass_kg_m2": 1.1954256,
+        "material_tags": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "mass_in_material": true,
+        "angles_deg": [
+          90,
+          90,
+          90,
+          90
+        ],
+        "sublayers_per_ply": 32,
+        "local_axis_requirement": "orient element localx consistently with declared laminate0deg; z bottom-to-top must match ply sequence"
+      }
+    },
+    {
+      "name": "crossply_[0, 90, 90, 0]",
+      "pass_": true,
+      "pass": true,
+      "force_N": 515.7486649719322,
+      "expected_N": 515.7486649719323,
+      "force_relative_error": 2.204306970485382e-16,
+      "poisson_relative_error": 4.1443244923483106e-15,
+      "metadata": {
+        "section_tag": 10,
+        "areal_mass_kg_m2": 1.1954256,
+        "material_tags": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107
+        ],
+        "mass_in_material": true,
+        "angles_deg": [
+          0,
+          90,
+          90,
+          0
+        ],
+        "sublayers_per_ply": 32,
+        "local_axis_requirement": "orient element localx consistently with declared laminate0deg; z bottom-to-top must match ply sequence"
+      }
+    },
+    {
+      "name": "independent_conversions_and_CLT",
+      "pass": true,
+      "shield": {
+        "mass_kg": 34000,
+        "weight_N": 55080.0,
+        "areal_mass_kg_m2": 3400,
+        "pressure_vertical_Pa": 5508.0,
+        "convention": "thickness measured normal to local actual surface; area is actual surface area; weight acts globally vertical, not surface-normal; mass added once"
+      },
+      "contact": {
+        "Kn_N_m": 2000000000.0,
+        "Kt_N_m": 240000000.0,
+        "mu": 0.3,
+        "cohesive_force_N": 0.0,
+        "area_m2": 2,
+        "estimated_penetration_m": 0.0001,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied"
+      },
+      "dashpots": {
+        "Vs_m_s": 81.64965809277261,
+        "Vp_m_s": 159.86105077709064,
+        "Ct_N_s_m": 293938.7691339814,
+        "Cn_N_s_m": 575499.7827975263,
+        "scope": "local plane-wave absorbing boundary approximation, not static foundation spring; assign only on appropriate far boundaries; do not duplicate radiation damping"
+      },
+      "isotropic_rotation_absolute_error": 1.4210854715202004e-14,
+      "symmetric_laminate_B_max": 6.821210263296962e-13
+    }
+  ],
+  "all_pass": true
+}

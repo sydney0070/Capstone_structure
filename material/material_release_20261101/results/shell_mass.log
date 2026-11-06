@@ -1,0 +1,2 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+WARNING - the 'fullGenLapack' eigen solver is VERY SLOW. Consider using the default eigen solver.shell_mass True

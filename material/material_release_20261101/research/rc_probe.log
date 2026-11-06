@@ -1,0 +1,31 @@
+NormDispIncr_36x18_ip5 COMPLETED 540 4.906941966909232e-07
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 100 iterations  current Norm: 0.00973408 (max: 0.001, Norm deltaX: 4.03474e-12)
+NewtonRaphson::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1323.21
+OpenSees > analyze failed, returned: -3 error flag
+NormUnbalance_24x12_ip5 FAILED 0 None
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 100 iterations  current Norm: 0.00974359 (max: 0.001, Norm deltaX: 4.04033e-12)
+NewtonRaphson::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1324.37
+OpenSees > analyze failed, returned: -3 error flag
+NormUnbalance_36x18_ip5 FAILED 0 None
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 100 iterations  current Norm: 0.00974692 (max: 0.001, Norm deltaX: 4.04228e-12)
+NewtonRaphson::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1324.77
+OpenSees > analyze failed, returned: -3 error flag
+NormUnbalance_48x24_ip5 FAILED 0 None
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 100 iterations  current Norm: 0.00463527 (max: 0.001, Norm deltaX: 1.92131e-12)
+NewtonRaphson::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1323.21
+OpenSees > analyze failed, returned: -3 error flag
+NormUnbalance_24x12_ip7 FAILED 0 None
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 100 iterations  current Norm: 0.00464139 (max: 0.001, Norm deltaX: 1.9249e-12)
+NewtonRaphson::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1324.77
+OpenSees > analyze failed, returned: -3 error flag
+NormUnbalance_48x24_ip7 FAILED 0 None

@@ -1,0 +1,133 @@
+{
+  "python": "3.10.18 (main, Jun  5 2025, 08:13:51) [Clang 14.0.6 ]",
+  "executable": "/Users/sydney/anaconda3/envs/cap/bin/python",
+  "platform": "macOS-26.2-x86_64-i386-64bit",
+  "elapsed_s": 11.399284839630127,
+  "runs": [
+    {
+      "test": "material_patch",
+      "exit_code": 0,
+      "script_sha256": "e8418e0d16da37a4a0a116a84c7ebb99ed094a979b1d82ce9cb0550a7eb7b05c"
+    },
+    {
+      "test": "soil_material",
+      "exit_code": 0,
+      "script_sha256": "6060da697bf5d4dfe5770ad5a2cb8ffddb68563257e50576cd429c4d40ff5ae8"
+    },
+    {
+      "test": "ground_adapter",
+      "exit_code": 0,
+      "script_sha256": "4255a43a6c477563fca7c81ab435f60057409cbc5757653c542bdea0d787ba5e"
+    },
+    {
+      "test": "steel_coupon",
+      "exit_code": 0,
+      "script_sha256": "9fb18db07438d66e9ab746cbb57b4c55ccf221107f5591df0be118c804f159c8"
+    },
+    {
+      "test": "dynamic_mass",
+      "exit_code": 0,
+      "script_sha256": "ea417f2269c99734459a54d42f597b7e68eb7ba81d2a365a6d39af907901a6ec"
+    },
+    {
+      "test": "rc_section_patch",
+      "exit_code": 0,
+      "script_sha256": "5f6235f14176ae7b4c24b57b5969d2ea4636203973142d16b11aa5c630f2cf62"
+    },
+    {
+      "test": "ssi_contact",
+      "exit_code": 0,
+      "script_sha256": "efc0ee771a36c6aae16d818fc05997d7a47d846bbbf5ea7ac3f28b612f367524"
+    },
+    {
+      "test": "ssi_transfer",
+      "exit_code": 0,
+      "script_sha256": "a6563808463cf4f193724f809c27271130017932f835aa95250b7f145a68f47a"
+    },
+    {
+      "test": "rc_convergence",
+      "exit_code": 0,
+      "script_sha256": "8a7d9eec5607551c9b07d054f42ff9c3ad09a51fc19ac6763920a80692d6501f"
+    },
+    {
+      "test": "rc_hinge",
+      "exit_code": 0,
+      "script_sha256": "3aaef8036d4b3b0d52173ddfb52ad183f29f4d7b302d6a83b3912320668eac59"
+    },
+    {
+      "test": "rc_3d",
+      "exit_code": 0,
+      "script_sha256": "1e58fcc4d9e16273ad6853d164ea2434efa9e368c400ca249eb3038d017099bb"
+    },
+    {
+      "test": "rc_continuum",
+      "exit_code": 0,
+      "script_sha256": "0430ca86d1110e2fbb1fd04d0225dbdf0b678932ed9b3ebb1a0bc1bdc25c85d9"
+    },
+    {
+      "test": "laminate_bending",
+      "exit_code": 0,
+      "script_sha256": "4167d8d48c74c209d72dc1afc811aa87020b2c47f231929804301d3a12c83563"
+    },
+    {
+      "test": "shell_mass",
+      "exit_code": 0,
+      "script_sha256": "bd063f5b52d5b002f4c98344c607e66e0493058b75daa2d3fa26d223c85e140c"
+    },
+    {
+      "test": "metal_shell_plastic",
+      "exit_code": 0,
+      "script_sha256": "ddb0bec1c702efa81a77418635e63e3fb8d49761e89b318db27d359770638b53"
+    }
+  ],
+  "gates": {
+    "material_patch": true,
+    "dynamic_mass": true,
+    "rc_section_patch": true,
+    "ssi_transfer": true,
+    "rc_3d": true,
+    "rc_continuum": true,
+    "laminate_bending": true,
+    "shell_mass": true,
+    "metal_shell_plastic": true,
+    "soil_material": true,
+    "steel_coupon": true,
+    "ssi_contact": true,
+    "rc_hinge": true,
+    "ground_adapter": true
+  },
+  "rejected_formulations": {
+    "arbitrary_Lobatto_RC_all_comparisons_pass": false,
+    "decision": "Rejected; replaced by fixed explicit physical HingeRadau formulation tested in rc_hinge. Not a request to change softening material constants until old arbitrary integration passes."
+  },
+  "all_required_gates_pass": true,
+  "status": "NUMERICALLY_VERIFIED_PREINTEGRATION_WITH_EXPLICIT_LIMITS",
+  "code_hashes": {
+    "capmat/__init__.py": "d05f9243c0ef5a29b93c2690bb7c710a082b94315644b8460cfe9f823a47546c",
+    "capmat/analysis.py": "e3e98f28af7a4f778fac32b16741ddc60ea05d4f1221727b1fffedd61e5a36e5",
+    "capmat/elastic_rc.py": "6ff9a53b4ec1a97587211947a716dc7068fe9475bac4a32b6788c6307f7d90ec",
+    "capmat/ground.py": "ce0a9d37ddd808ef81b13078ff0774a7546926d52da8fa7fd79d5fd886618594",
+    "capmat/laminate.py": "b53b8bf90b78004b335e8430030ee060d1782cdd4feb7219d459c546b02f020e",
+    "capmat/mass.py": "4103b10b04d05699263c80f7562d919b2a2719be580c02fb7f9692e6c38c688d",
+    "capmat/materials.py": "492fd210db17ba590d7f7e5441680e20fd3a2c81bc8719ecf56e74e7bca85001",
+    "capmat/mechanics.py": "8e00efd8a32b77c768ce760c034c69ac775477e1b09bc3b80d7c42c7c242c759",
+    "capmat/rc.py": "672fd9bc548536c43ad7860c26c2ce70935eed031129b977c4e11a6e37cd69d3",
+    "capmat/ssi.py": "d06e5fac4d2964981096bf9fed1c804eca86c7bc1488e8c8e50f1936221c3adf",
+    "verification/dynamic_mass.py": "ea417f2269c99734459a54d42f597b7e68eb7ba81d2a365a6d39af907901a6ec",
+    "verification/ground_adapter.py": "4255a43a6c477563fca7c81ab435f60057409cbc5757653c542bdea0d787ba5e",
+    "verification/laminate_bending.py": "4167d8d48c74c209d72dc1afc811aa87020b2c47f231929804301d3a12c83563",
+    "verification/material_patch.py": "e8418e0d16da37a4a0a116a84c7ebb99ed094a979b1d82ce9cb0550a7eb7b05c",
+    "verification/metal_shell_plastic.py": "ddb0bec1c702efa81a77418635e63e3fb8d49761e89b318db27d359770638b53",
+    "verification/rc_3d.py": "1e58fcc4d9e16273ad6853d164ea2434efa9e368c400ca249eb3038d017099bb",
+    "verification/rc_continuum.py": "0430ca86d1110e2fbb1fd04d0225dbdf0b678932ed9b3ebb1a0bc1bdc25c85d9",
+    "verification/rc_convergence.py": "8a7d9eec5607551c9b07d054f42ff9c3ad09a51fc19ac6763920a80692d6501f",
+    "verification/rc_hinge.py": "3aaef8036d4b3b0d52173ddfb52ad183f29f4d7b302d6a83b3912320668eac59",
+    "verification/rc_section_patch.py": "5f6235f14176ae7b4c24b57b5969d2ea4636203973142d16b11aa5c630f2cf62",
+    "verification/shell_mass.py": "bd063f5b52d5b002f4c98344c607e66e0493058b75daa2d3fa26d223c85e140c",
+    "verification/soil_material.py": "6060da697bf5d4dfe5770ad5a2cb8ffddb68563257e50576cd429c4d40ff5ae8",
+    "verification/ssi_contact.py": "efc0ee771a36c6aae16d818fc05997d7a47d846bbbf5ea7ac3f28b612f367524",
+    "verification/ssi_transfer.py": "a6563808463cf4f193724f809c27271130017932f835aa95250b7f145a68f47a",
+    "verification/steel_coupon.py": "9fb18db07438d66e9ab746cbb57b4c55ccf221107f5591df0be118c804f159c8",
+    "configs/catalog.json": "c26e7e067a4ac59a30c55df688f702f2fe946e05dba3d01aee3e60da593de8f5"
+  }
+}

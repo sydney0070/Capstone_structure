@@ -1,0 +1,105 @@
+{
+  "1.7": {
+    "count": 18,
+    "test_ids": [
+      "J1A_15_17A",
+      "J1A_15_17B",
+      "J1A_15_17C",
+      "J1A_15_17D",
+      "J1A_15_17E",
+      "J1A_15_17F",
+      "J1A_15_17G",
+      "J1A_15_17H",
+      "J1A_15_17I",
+      "J1A_30_17A",
+      "J1A_30_17B",
+      "J1A_30_17C",
+      "J1A_30_17D",
+      "J1A_30_17E",
+      "J1A_60_17A",
+      "J1A_60_17B",
+      "J1A_60_17C",
+      "J1A_60_17D"
+    ],
+    "flagged_ids": [],
+    "slope_c0": 5.282222169192221,
+    "phi_deg": 42.97203456434001,
+    "rms_sigma1_kPa": 11.14158111610738,
+    "E_reference_test_ids": [
+      "J1A_30_17A",
+      "J1A_30_17B",
+      "J1A_30_17C",
+      "J1A_30_17D",
+      "J1A_30_17E"
+    ],
+    "E_median_Pa": 15100000.0,
+    "phi_residual_median_deg": 35.2,
+    "method": "all observations retained; through-origin sigma1 vs sigma3 least squares c=0; descriptive fit NOT independent validation; static tangent E median of nominal30kPa subgroup; nu .30 assumed"
+  },
+  "1.8": {
+    "count": 13,
+    "test_ids": [
+      "J1A_15_18A",
+      "J1A_15_18B",
+      "J1A_15_18D",
+      "J1A_15_18E",
+      "J1A_30_18A",
+      "J1A_30_18B",
+      "J1A_30_18C",
+      "J1A_30_18D",
+      "J1A_60_18A",
+      "J1A_60_18B",
+      "J1A_60_18C",
+      "J1A_60_18D",
+      "J1A_60_18E"
+    ],
+    "flagged_ids": [
+      "J1A_60_18D"
+    ],
+    "slope_c0": 5.996249425637752,
+    "phi_deg": 45.57215332353432,
+    "rms_sigma1_kPa": 20.27547486216903,
+    "E_reference_test_ids": [
+      "J1A_30_18A",
+      "J1A_30_18B",
+      "J1A_30_18C",
+      "J1A_30_18D"
+    ],
+    "E_median_Pa": 20450000.000000004,
+    "phi_residual_median_deg": 38.1,
+    "method": "all observations retained; through-origin sigma1 vs sigma3 least squares c=0; descriptive fit NOT independent validation; static tangent E median of nominal30kPa subgroup; nu .30 assumed"
+  },
+  "1.9": {
+    "count": 15,
+    "test_ids": [
+      "J1A_15_19B",
+      "J1A_15_19C",
+      "J1A_15_19D",
+      "J1A_15_19E",
+      "J1A_30_19A",
+      "J1A_30_19B",
+      "J1A_30_19C",
+      "J1A_30_19D",
+      "J1A_60_19A",
+      "J1A_60_19B",
+      "J1A_60_19C",
+      "J1A_60_19D",
+      "J1A_60_19E",
+      "J1A_60_19F",
+      "J1A_60_19G"
+    ],
+    "flagged_ids": [],
+    "slope_c0": 7.341491740663919,
+    "phi_deg": 49.4848957431355,
+    "rms_sigma1_kPa": 19.588467958636425,
+    "E_reference_test_ids": [
+      "J1A_30_19A",
+      "J1A_30_19B",
+      "J1A_30_19C",
+      "J1A_30_19D"
+    ],
+    "E_median_Pa": 17250000.0,
+    "phi_residual_median_deg": 39.8,
+    "method": "all observations retained; through-origin sigma1 vs sigma3 least squares c=0; descriptive fit NOT independent validation; static tangent E median of nominal30kPa subgroup; nu .30 assumed"
+  }
+}

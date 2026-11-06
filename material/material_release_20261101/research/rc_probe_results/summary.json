@@ -1,0 +1,205 @@
+{
+  "opensees_version": "3.4.0",
+  "python": "3.10.18 (main, Jun  5 2025, 08:13:51) [Clang 14.0.6 ]",
+  "cases": {
+    "NormDispIncr_36x18_ip5": {
+      "case": "NormDispIncr_36x18_ip5",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 36,
+        "nz": 18
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": 30,
+      "status": "COMPLETED",
+      "failure": null,
+      "points": 540,
+      "peak_force_kN": 76.12151417417996,
+      "balance_rel_peak": 4.906941966909232e-07,
+      "equilibrium_pass": true,
+      "elapsed_s": 0.23105616704560816
+    },
+    "NormUnbalance_24x12_ip5": {
+      "case": "NormUnbalance_24x12_ip5",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 24,
+        "nz": 12
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": 30,
+      "status": "FAILED",
+      "failure": {
+        "segment": 1,
+        "substep": 1,
+        "target_m": 0.003,
+        "du_m": 5e-05
+      },
+      "points": 0,
+      "peak_force_kN": null,
+      "balance_rel_peak": null,
+      "equilibrium_pass": false,
+      "elapsed_s": 0.007212458993308246
+    },
+    "NormUnbalance_36x18_ip5": {
+      "case": "NormUnbalance_36x18_ip5",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 36,
+        "nz": 18
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": 30,
+      "status": "FAILED",
+      "failure": {
+        "segment": 1,
+        "substep": 1,
+        "target_m": 0.003,
+        "du_m": 5e-05
+      },
+      "points": 0,
+      "peak_force_kN": null,
+      "balance_rel_peak": null,
+      "equilibrium_pass": false,
+      "elapsed_s": 0.00843058293685317
+    },
+    "NormUnbalance_48x24_ip5": {
+      "case": "NormUnbalance_48x24_ip5",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": 30,
+      "status": "FAILED",
+      "failure": {
+        "segment": 1,
+        "substep": 1,
+        "target_m": 0.003,
+        "du_m": 5e-05
+      },
+      "points": 0,
+      "peak_force_kN": null,
+      "balance_rel_peak": null,
+      "equilibrium_pass": false,
+      "elapsed_s": 0.013825292000547051
+    },
+    "NormUnbalance_24x12_ip7": {
+      "case": "NormUnbalance_24x12_ip7",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 24,
+        "nz": 12
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 7,
+      "element_iterations": 30,
+      "status": "FAILED",
+      "failure": {
+        "segment": 1,
+        "substep": 1,
+        "target_m": 0.003,
+        "du_m": 5e-05
+      },
+      "points": 0,
+      "peak_force_kN": null,
+      "balance_rel_peak": null,
+      "equilibrium_pass": false,
+      "elapsed_s": 0.0061935000121593475
+    },
+    "NormUnbalance_48x24_ip7": {
+      "case": "NormUnbalance_48x24_ip7",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 7,
+      "element_iterations": 30,
+      "status": "FAILED",
+      "failure": {
+        "segment": 1,
+        "substep": 1,
+        "target_m": 0.003,
+        "du_m": 5e-05
+      },
+      "points": 0,
+      "peak_force_kN": null,
+      "balance_rel_peak": null,
+      "equilibrium_pass": false,
+      "elapsed_s": 0.01874187495559454
+    }
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "runtime": "3.4.0",
+  "cases": [
+    {
+      "name": "area1_adhesion0_axis3",
+      "parameters": {
+        "Kn_N_m": 1000000000.0,
+        "Kt_N_m": 120000000.0,
+        "mu": 0.34,
+        "cohesive_force_N": 0,
+        "area_m2": 1,
+        "estimated_penetration_m": 0.0001,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied"
+      },
+      "normal_relative_error": 0.0,
+      "capacity_excess_N": 0,
+      "opening_force_N": 0.0,
+      "sliding_capacity_error_N": 34000.0,
+      "action_reaction_error_N": 0.0,
+      "pass": false
+    },
+    {
+      "name": "area2_adhesion0_axis3",
+      "parameters": {
+        "Kn_N_m": 2000000000.0,
+        "Kt_N_m": 240000000.0,
+        "mu": 0.34,
+        "cohesive_force_N": 0,
+        "area_m2": 2,
+        "estimated_penetration_m": 0.0001,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied"
+      },
+      "normal_relative_error": 0.0,
+      "capacity_excess_N": 0,
+      "opening_force_N": 0.0,
+      "sliding_capacity_error_N": 68000.0,
+      "action_reaction_error_N": 0.0,
+      "pass": false
+    },
+    {
+      "name": "area2_adhesion1500_axis3",
+      "parameters": {
+        "Kn_N_m": 2000000000.0,
+        "Kt_N_m": 240000000.0,
+        "mu": 0.34,
+        "cohesive_force_N": 3000,
+        "area_m2": 2,
+        "estimated_penetration_m": 0.0001,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied"
+      },
+      "normal_relative_error": 0.0,
+      "capacity_excess_N": 0,
+      "opening_force_N": 0.0,
+      "sliding_capacity_error_N": 71000.0,
+      "action_reaction_error_N": 0.0,
+      "pass": false
+    },
+    {
+      "name": "area1_adhesion0_axis1",
+      "parameters": {
+        "Kn_N_m": 1000000000.0,
+        "Kt_N_m": 120000000.0,
+        "mu": 0.34,
+        "cohesive_force_N": 0,
+        "area_m2": 1,
+        "estimated_penetration_m": 0.0001,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied"
+      },
+      "normal_relative_error": 0.0,
+      "capacity_excess_N": 0,
+      "opening_force_N": 0.0,
+      "sliding_capacity_error_N": 34000.0,
+      "action_reaction_error_N": 0.0,
+      "pass": false
+    },
+    {
+      "name": "area1_adhesion0_axis2",
+      "parameters": {
+        "Kn_N_m": 1000000000.0,
+        "Kt_N_m": 120000000.0,
+        "mu": 0.34,
+        "cohesive_force_N": 0,
+        "area_m2": 1,
+        "estimated_penetration_m": 0.0001,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied"
+      },
+      "normal_relative_error": 0.0,
+      "capacity_excess_N": 0,
+      "opening_force_N": 0.0,
+      "sliding_capacity_error_N": 34000.0,
+      "action_reaction_error_N": 0.0,
+      "pass": false
+    },
+    {
+      "name": "linear_radiation_dashpot_transient",
+      "samples": [
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          0.01,
+          0.01,
+          2939.387691339814,
+          2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          -0.01,
+          -0.01,
+          -2939.387691339814,
+          -2939.387691339814
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          0.2,
+          0.2,
+          58787.75382679628,
+          58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ],
+        [
+          -0.2,
+          -0.2,
+          -58787.75382679628,
+          -58787.75382679628
+        ]
+      ],
+      "pass": true,
+      "scope": "imposed constant-velocity transient force; far-boundary absorption needs domain-size/frequency check"
+    }
+  ],
+  "all_pass": false
+}

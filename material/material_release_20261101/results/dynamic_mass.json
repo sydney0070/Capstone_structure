@@ -1,0 +1,228 @@
+{
+  "runtime": "3.4.0",
+  "cases": [
+    {
+      "name": "steel_s355_nominal",
+      "added_mass_kg": 0.0,
+      "eigenvalue_per_s2": 127.38853503573472,
+      "expected_per_s2": 127.38853503184713,
+      "mass_from_eigen_kg": 7849.999999760437,
+      "expected_mass_kg": 7850.0,
+      "relative_error": 3.0517600890789256e-11,
+      "ledger": {},
+      "pass": true
+    },
+    {
+      "name": "steel_s355_nominal",
+      "added_mass_kg": 1700.0,
+      "eigenvalue_per_s2": 104.71204188801231,
+      "expected_per_s2": 104.71204188481676,
+      "mass_from_eigen_kg": 9549.999999708558,
+      "expected_mass_kg": 9550.0,
+      "relative_error": 3.0517524152173794e-11,
+      "ledger": {
+        "shield": {
+          "mass_kg": 1700.0,
+          "nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "distribution": "uniform per listed node; geometry weights must be supplied separately for nonuniform meshes"
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "al6061_t6_extrusion",
+      "added_mass_kg": 0.0,
+      "eigenvalue_per_s2": 368.645836735548,
+      "expected_per_s2": 368.64583673554773,
+      "mass_from_eigen_kg": 2712.6306615999047,
+      "expected_mass_kg": 2712.6306615999065,
+      "relative_error": 7.709760045599713e-16,
+      "ledger": {},
+      "pass": true
+    },
+    {
+      "name": "al6061_t6_extrusion",
+      "added_mass_kg": 1700.0,
+      "eigenvalue_per_s2": 226.6221845173478,
+      "expected_per_s2": 226.62218451734768,
+      "mass_from_eigen_kg": 4412.630661599905,
+      "expected_mass_kg": 4412.6306615999065,
+      "relative_error": 5.016580259507358e-16,
+      "ledger": {
+        "shield": {
+          "mass_kg": 1700.0,
+          "nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "distribution": "uniform per listed node; geometry weights must be supplied separately for nonuniform meshes"
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity",
+      "added_mass_kg": 0.0,
+      "eigenvalue_per_s2": 454.54545454540033,
+      "expected_per_s2": 454.54545454545456,
+      "mass_from_eigen_kg": 2200.0000000002624,
+      "expected_mass_kg": 2200.0,
+      "relative_error": 1.1930296750506385e-13,
+      "ledger": {},
+      "pass": true
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity",
+      "added_mass_kg": 1700.0,
+      "eigenvalue_per_s2": 256.4102564102258,
+      "expected_per_s2": 256.4102564102564,
+      "mass_from_eigen_kg": 3900.000000000465,
+      "expected_mass_kg": 3900.0,
+      "relative_error": 1.1926886145374737e-13,
+      "ledger": {
+        "shield": {
+          "mass_kg": 1700.0,
+          "nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "distribution": "uniform per listed node; geometry weights must be supplied separately for nonuniform meshes"
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "moon_jsc1a_18_peak",
+      "added_mass_kg": 0.0,
+      "eigenvalue_per_s2": 561.7977528089875,
+      "expected_per_s2": 561.7977528089888,
+      "mass_from_eigen_kg": 1780.0000000000039,
+      "expected_mass_kg": 1780.0,
+      "relative_error": 2.225988282589242e-15,
+      "ledger": {},
+      "pass": true
+    },
+    {
+      "name": "moon_jsc1a_18_peak",
+      "added_mass_kg": 1700.0,
+      "eigenvalue_per_s2": 287.35632183907984,
+      "expected_per_s2": 287.35632183908046,
+      "mass_from_eigen_kg": 3480.0000000000077,
+      "expected_mass_kg": 3480.0,
+      "relative_error": 2.175966073991731e-15,
+      "ledger": {
+        "shield": {
+          "mass_kg": 1700.0,
+          "nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "distribution": "uniform per listed node; geometry weights must be supplied separately for nonuniform meshes"
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "mars_jez1_peak",
+      "added_mass_kg": 0.0,
+      "eigenvalue_per_s2": 543.478260869565,
+      "expected_per_s2": 543.4782608695652,
+      "mass_from_eigen_kg": 1840.0000000000007,
+      "expected_mass_kg": 1840.0,
+      "relative_error": 4.1836756281554695e-16,
+      "ledger": {},
+      "pass": true
+    },
+    {
+      "name": "mars_jez1_peak",
+      "added_mass_kg": 1700.0,
+      "eigenvalue_per_s2": 282.4858757062145,
+      "expected_per_s2": 282.4858757062147,
+      "mass_from_eigen_kg": 3540.0000000000027,
+      "expected_mass_kg": 3540.0,
+      "relative_error": 8.049028110690414e-16,
+      "ledger": {
+        "shield": {
+          "mass_kg": 1700.0,
+          "nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "distribution": "uniform per listed node; geometry weights must be supplied separately for nonuniform meshes"
+        }
+      },
+      "pass": true
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference",
+      "added_mass_kg": 0.0,
+      "eigenvalue_per_s2": 641.509433962279,
+      "expected_per_s2": 641.5094339622642,
+      "mass_from_eigen_kg": 1558.8235294117287,
+      "expected_mass_kg": 1558.8235294117646,
+      "relative_error": 2.3038303291233365e-14,
+      "ledger": {},
+      "pass": true
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference",
+      "added_mass_kg": 1700.0,
+      "eigenvalue_per_s2": 306.85920577618026,
+      "expected_per_s2": 306.85920577617327,
+      "mass_from_eigen_kg": 3258.8235294116907,
+      "expected_mass_kg": 3258.823529411765,
+      "relative_error": 2.2784848517724587e-14,
+      "ledger": {
+        "shield": {
+          "mass_kg": 1700.0,
+          "nodes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "distribution": "uniform per listed node; geometry weights must be supplied separately for nonuniform meshes"
+        }
+      },
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

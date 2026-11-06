@@ -1,0 +1,147 @@
+{
+  "runtime": "3.4.0",
+  "cases": [
+    {
+      "name": "moon_jsc1a_18_peak",
+      "confinement_Pa": 15000.0,
+      "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+      "expected_sigma1_Pa": 89943.74138456627,
+      "computed_sigma1_Pa": 89943.74138456622,
+      "yield_relative_error": 4.853672419345409e-16,
+      "lateral_stress_relative_error": 1.5764574830730755e-15,
+      "pass_": true,
+      "pass": true
+    },
+    {
+      "name": "moon_jsc1a_18_peak",
+      "confinement_Pa": 30000.0,
+      "initial_hydrostatic_max_error_Pa": 7.275957614183426e-12,
+      "expected_sigma1_Pa": 179887.48276913253,
+      "computed_sigma1_Pa": 179887.48276913245,
+      "yield_relative_error": 4.853672419345409e-16,
+      "lateral_stress_relative_error": 7.275957614183426e-16,
+      "pass_": true,
+      "pass": true
+    },
+    {
+      "name": "moon_jsc1a_18_peak",
+      "confinement_Pa": 60000.0,
+      "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+      "expected_sigma1_Pa": 359774.96553826507,
+      "computed_sigma1_Pa": 359774.9655382651,
+      "yield_relative_error": 1.6178908064484698e-16,
+      "lateral_stress_relative_error": 1.2126596023639044e-16,
+      "pass_": true,
+      "pass": true
+    },
+    {
+      "name": "moon_jsc1a_18_residual",
+      "confinement_Pa": 15000.0,
+      "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+      "expected_sigma1_Pa": 63336.319390297285,
+      "computed_sigma1_Pa": 63336.31939029725,
+      "yield_relative_error": 5.743906248598695e-16,
+      "lateral_stress_relative_error": 1.4551915228366853e-15,
+      "pass_": true,
+      "pass": true
+    },
+    {
+      "name": "moon_jsc1a_18_residual",
+      "confinement_Pa": 30000.0,
+      "initial_hydrostatic_max_error_Pa": 7.275957614183426e-12,
+      "expected_sigma1_Pa": 126672.63878059457,
+      "computed_sigma1_Pa": 126672.63878059461,
+      "yield_relative_error": 3.446343749159217e-16,
+      "lateral_stress_relative_error": 3.637978807091713e-16,
+      "pass_": true,
+      "pass": true
+    },
+    {
+      "name": "moon_jsc1a_18_residual",
+      "confinement_Pa": 60000.0,
+      "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+      "expected_sigma1_Pa": 253345.27756118914,
+      "computed_sigma1_Pa": 253345.27756118905,
+      "yield_relative_error": 3.446343749159217e-16,
+      "lateral_stress_relative_error": 7.275957614183426e-16,
+      "pass_": true,
+      "pass": true
+    },
+    {
+      "name": "mars_jez1_peak",
+      "confinement_Pa": 15000.0,
+      "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+      "expected_sigma1_Pa": 84384.07706826621,
+      "computed_sigma1_Pa": 80435.94478666627,
+      "yield_relative_error": 0.04678764547493871,
+      "lateral_stress_relative_error": 1.5764574830730755e-15,
+      "pass_": true,
+      "pass": false
+    },
+    {
+      "name": "mars_jez1_peak",
+      "confinement_Pa": 30000.0,
+      "initial_hydrostatic_max_error_Pa": 7.275957614183426e-12,
+      "expected_sigma1_Pa": 155288.38735465117,
+      "computed_sigma1_Pa": 151340.25507305126,
+      "yield_relative_error": 0.025424517240835793,
+      "lateral_stress_relative_error": 1.697723443309466e-15,
+      "pass_": true,
+      "pass": false
+    },
+    {
+      "name": "mars_jez1_peak",
+      "confinement_Pa": 60000.0,
+      "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+      "expected_sigma1_Pa": 297097.00792742113,
+      "computed_sigma1_Pa": 293148.8756458213,
+      "yield_relative_error": 0.013289034141213433,
+      "lateral_stress_relative_error": 3.637978807091713e-16,
+      "pass_": true,
+      "pass": false
+    },
+    {
+      "name": "mars_jez1_residual",
+      "confinement_Pa": 15000.0,
+      "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+      "expected_sigma1_Pa": 81680.63601672072,
+      "computed_sigma1_Pa": 77688.04535560826,
+      "yield_relative_error": 0.04888050406824862,
+      "lateral_stress_relative_error": 2.546585164964199e-15,
+      "pass_": true,
+      "pass": false
+    },
+    {
+      "name": "mars_jez1_residual",
+      "confinement_Pa": 30000.0,
+      "initial_hydrostatic_max_error_Pa": 7.275957614183426e-12,
+      "expected_sigma1_Pa": 149729.71484926736,
+      "computed_sigma1_Pa": 145737.1241881551,
+      "yield_relative_error": 0.02666531933979559,
+      "lateral_stress_relative_error": 7.275957614183426e-16,
+      "pass_": true,
+      "pass": false
+    },
+    {
+      "name": "mars_jez1_residual",
+      "confinement_Pa": 60000.0,
+      "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+      "expected_sigma1_Pa": 285827.8725143607,
+      "computed_sigma1_Pa": 281835.28185324837,
+      "yield_relative_error": 0.01396851407803743,
+      "lateral_stress_relative_error": 2.4253192047278088e-16,
+      "pass_": true,
+      "pass": false
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference",
+      "steps": 450,
+      "peak_tau_Pa": 38045.898101472856,
+      "equilibrium_relative_error": 2.363772298859832e-09,
+      "vertical_stress_relative_error": 1.950934965861961e-09,
+      "pass": true,
+      "scope": "constant vertical effective stress, free volume change, no pore fluid or liquefaction validation"
+    }
+  ],
+  "all_pass": false
+}
