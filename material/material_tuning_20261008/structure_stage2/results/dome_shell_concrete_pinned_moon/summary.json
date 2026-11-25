@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "dome",
+  "material": "shell_concrete",
+  "planet": "moon",
+  "support": "pinned",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 30000000.0,
+    "nu": 0.2,
+    "rho": 2.4,
+    "thickness": 0.02
+  },
+  "nodes": 2401,
+  "elements": 2304,
+  "surface_area_m2": 98.13750166813792,
+  "mass_tonne": 4.710600080070652,
+  "weight_kN": 7.631172129714456,
+  "max_displacement_m": 4.1103738840208025e-06,
+  "min_uz_m": -4.1103738840208025e-06,
+  "max_uz_m": 4.546601296328787e-08,
+  "mean_base_uz_m": 0.0,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -4.836409051023338e-15,
+    -1.635844237846129e-15,
+    -1.9539925233402755e-14
+  ],
+  "moment_residual_kNm": [
+    1.510803201293376e-14,
+    -3.714812745608809e-14,
+    -4.1598668953923834e-15
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -7.631172129714466
+  ],
+  "relative_force_residual": 2.646504086803475e-15,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

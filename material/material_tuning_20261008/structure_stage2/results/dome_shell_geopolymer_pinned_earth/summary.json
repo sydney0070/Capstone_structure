@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "dome",
+  "material": "shell_geopolymer",
+  "planet": "earth",
+  "support": "pinned",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 8130000.0,
+    "nu": 0.2,
+    "rho": 1.75,
+    "thickness": 0.02
+  },
+  "nodes": 2401,
+  "elements": 2304,
+  "surface_area_m2": 98.13750166813792,
+  "mass_tonne": 3.434812558384851,
+  "weight_kN": 33.69551119775539,
+  "max_displacement_m": 6.697193337236568e-05,
+  "min_uz_m": -6.697193337236568e-05,
+  "max_uz_m": 7.407955764612634e-07,
+  "mean_base_uz_m": 0.0,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -8.104628079763643e-15,
+    -4.718447854656915e-16,
+    8.526512829121202e-14
+  ],
+  "moment_residual_kNm": [
+    -2.0418801198462955e-13,
+    1.3971180982952358e-13,
+    2.036912305491967e-14
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -33.69551119775531
+  ],
+  "relative_force_residual": 2.541903645951665e-15,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

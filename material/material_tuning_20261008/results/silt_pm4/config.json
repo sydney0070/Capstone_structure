@@ -1,0 +1,40 @@
+{
+  "kind": "soil2dcv",
+  "material": "PM4Silt",
+  "params": {
+    "Su": 25.0,
+    "Su_ratio": 0.25,
+    "G0": 500.0,
+    "hpo": 0.5,
+    "rho": 1.8,
+    "Su_factor": 1.0,
+    "pa": 101.3,
+    "nu": 0.333333333333,
+    "e": 0.9
+  },
+  "bounds": {
+    "Su": [
+      15.0,
+      40.0
+    ],
+    "G0": [
+      250.0,
+      800.0
+    ],
+    "hpo": [
+      0.2,
+      1.0
+    ]
+  },
+  "name": "silt_pm4",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

@@ -1,0 +1,21 @@
+﻿source,locator,quantity,unit,reported_value,interpretation_limit
+Spohn2022,"Figure 20(d), Section 6.7",local shallow boundaries,cm,0–1 dust/sand; 1–19 duricrust; 19–31 sand; gravel below31 within penetrated interval,local interpretation; not a borehole to metres
+Spohn2022,Section 6.7,duricrust density,kg/m3,950–1100,inferred range; specimen midpoint1025 is a choice
+Spohn2022,Section 6.7,sand density,kg/m3,1300–1500,inferred; 1300 selected
+Spohn2022,Section 6.7,gravel mixture density,kg/m3,about1600,15 vol-% rocks estimate
+Spohn2022,Section 6.4,duricrust cohesion,Pa,"about5800 at assumed phi30 deg, rho1200 kg/m3","conditional slope inference, transferred to selected density"
+Spohn2022,Section 6.4,duricrust cohesion range,Pa,2000–15000,penetration-model dependent and conditional on phi30–40 deg
+Spohn2022,Sections 6.2–6.4,penetration resistance,Pa,crust350000–700000; deeper4900000 ±400000,NEVER used as E or UCS
+Brinkman2022,"Table 4, PDF p.13",effective shallow E,MPa,11.48 (+5.91 / -2.23),"wave-based effective value, not static isolated crust"
+Brinkman2022,"Table 4, PDF p.13",effective shallow nu,1,.28 (+.12 / -.051),"selected with E, derive G/K consistently"
+Brinkman2022,"Table 4, PDF p.13",reported modal G and K,MPa,G4.47 (+2.00/-.83); K7.79 (+1.60/-1.55),independently summarized modes; do not combine all modes as one consistent elastic tuple
+Brinkman2022,Results and Table 4,Vp; Vs,m/s,Vp119 (+45/-21); Vs63 (+11/-7),"bulk shallow volume, not separate layer velocities"
+Murdoch2018,"Table 2, supplied PDF pp.15–16","predicted 1m rho,Vp,Vs,confinement",SI,rho1307; Vp157.9; Vs94.6; p5440,existing rounded E28.4MPa nu.22 rho1300 candidate retained
+Dotson2024,Figures5–6,MGS1/MGS1S peak strength at low density,"deg,Pa",phi35.5/34; c≈280,"previous graph reading / reported friction, approximate, transferred to1300"
+Kenda2020,"Table1, archived PDF p.4",expected E and nu,"MPa,1","surface7.5,.22; 1m28,.22; coarse520,.24; fractured13000,.28; basalt65000,.25","reference order of magnitude, not local core calibration"
+Morgan2018,"PDF p.39, terrestrial analogue",fractured basalt density,kg/m3,2760,terrestrial reference used in prelanding model
+Hobiger2021,"Table2, PDF p.7",sediment modified-prior Vp and Vs,m/s,750 and417,"prior, not final inversion stiffness or measured30–75m point"
+PDMY02,suggested parameters table,Dr30/40/50/60/75 complete reference sets,SI,see materials.json and per-parameter CSV,Earth reference; G/K80kPa scaled to101kPa using d=.5; not a Mars relative-density measurement
+Shallow2008,"PDF p.17, first example",QzSimple2 spring101,"N,m",Qult38020; z50.00274347; type1; suction.1; damping.05,static fixture uses zero damping
+Shallow2008,"PDF p.17, first example",PySimple2 spring105,"N,m",Pult102000; y50.0145067; type1; drag.1; damping.05,static fixture uses zero damping
+Shallow2008,"PDF p.17, first example",TzSimple2 spring106,"N,m",Tult100000; z50.0142222; type1,only documented one optional damping argument; fixture uses zero

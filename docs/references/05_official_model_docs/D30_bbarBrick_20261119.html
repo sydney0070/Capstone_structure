@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1.10.45. bbarBrick Element &mdash; OpenSees Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=224b24c6" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js?v=b3ba4146"></script>
+      <script src="../../../../_static/doctools.js?v=888ff710"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="3.1.10.46. SSPbrick Element" href="SSPbrick.html" />
+    <link rel="prev" title="3.1.10.44. stdBrick Element" href="stdBrick.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html">
+            
+              <img src="../../../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Applications for Users</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../interpreters.html">1. OpenSees Interpreters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../install.html">2. Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../userManual.html">3. Command Manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../modelCommands.html">3.1. Model Commands</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../model.html">3.1.1. model Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../node.html">3.1.2. node Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../spConstraints.html">3.1.3. SP_Constraint Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mpConstraints.html">3.1.4. MP_Constraint Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../material/uniaxialMaterial.html">3.1.5. uniaxialMaterial Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../material/ndMaterial.html">3.1.6. nDMaterial Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../section.html">3.1.7. section Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../geomTransf.html">3.1.8. Geometric Transformation Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../beamIntegration.html">3.1.9. Beam Integration Command</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../element.html">3.1.10. Element Command</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="zeroLength.html">3.1.10.1. ZeroLength Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthSection.html">3.1.10.2. ZeroLength Section Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthND.html">3.1.10.3. ZeroLengthND Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CoupledZeroLength.html">3.1.10.4. CoupledZeroLength Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthContact.html">3.1.10.5. zeroLengthContact Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthContactNTS2D.html">3.1.10.6. zeroLengthContactNTS2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthInterface2D.html">3.1.10.7. zeroLengthInterface2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthImpact3D.html">3.1.10.8. zeroLengthImpact3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthContactASDimplex.html">3.1.10.9. ZeroLengthContactASDimplex Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Truss.html">3.1.10.10. Truss Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CorotationalTruss.html">3.1.10.11. Corotational Truss Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="InertiaTruss.html">3.1.10.12. InertiaTruss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="elasticBeamColumn.html">3.1.10.13. Elastic Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dispBeamColumn.html">3.1.10.14. Displacement-Based Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="forceBeamColumn.html">3.1.10.15. Force-Based Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ModElasticBeam.html">3.1.10.16. Modified Elastic Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticBeamColumnElementWithStiffnessModifiers.html">3.1.10.17. Elastic Beam Column Element with Stiffness Modifiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticTimoshenkoBeamColumnElement.html">3.1.10.18. Elastic Timoshenko Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BeamWithHingesElement.html">3.1.10.19. Beam With Hinges Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gradientInelasticBeamColumn.html">3.1.10.20. Gradient Inelastic (GI) Beam-Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FlexureShearInteractionDisplacementBasedBeamColumnElement.html">3.1.10.21. Flexure-Shear Interaction Displacement-Based Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MVLEM.html">3.1.10.22. MVLEM Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MVLEM_3D.html">3.1.10.23. MVLEM_3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SFI_MVLEM_3D.html">3.1.10.24. SFI-MVLEM-3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="E_SFI_MVLEM_3D.html">3.1.10.25. E-SFI-MVLEM-3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dispBeamColumnAsym.html">3.1.10.26. Displacement-Based Beam Element (Asymmetric Sections)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mixedBeamColumnAsym.html">3.1.10.27. Mixed Beam Element (Asymmetric Sections)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="E_SFI.html">3.1.10.28. E-SFI Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDShellQ4.html">3.1.10.29. ASDShellQ4 Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Quad.html">3.1.10.30. Quadrilateral Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSPquad.html">3.1.10.31. SSPquad Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Shell.html">3.1.10.32. Shell Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellDKGQ.html">3.1.10.33. ShellDKGQ Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellNLDKGQ.html">3.1.10.34. ShellNLDKGQ Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellNL.html">3.1.10.35. ShellNL Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BbarPlaneStrainQuadrilateral.html">3.1.10.36. Bbar Plane Strain Quadrilateral Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bbarQuad.html">3.1.10.37. Bbar Plane Strain Quad Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="EnhancedStrainQuadrilateral.html">3.1.10.38. Enhanced Strain Quadrilateral Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MEFI.html">3.1.10.39. MEFI Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tri31.html">3.1.10.40. Tri31 Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellDKGT.html">3.1.10.41. ShellDKGT Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellNLDKGT.html">3.1.10.42. ShellNLDKGT Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDShellT3.html">3.1.10.43. ASDShellT3 Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stdBrick.html">3.1.10.44. stdBrick Element</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">3.1.10.45. bbarBrick Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSPbrick.html">3.1.10.46. SSPbrick Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FourNodeTetrahedron.html">3.1.10.47. FourNodeTetrahedron Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TenNodeTetrahedron.html">3.1.10.48. TenNodeTetrahedron Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BeamColumnJoint.html">3.1.10.49. BeamColumnJoint Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticTubularJoint.html">3.1.10.50. ElasticTubularJoint Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Joint2D.html">3.1.10.51. Joint2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Inno3DPnPJoint.html">3.1.10.52. Inno3DPnPJoint Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="LehighJoint2D.html">3.1.10.53. LehighJoint2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TwoNodeLink.html">3.1.10.54. Two Node Link Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElastomericBearingPlasticity.html">3.1.10.55. ElastomericBearingPlasticity Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElastomericBearingBouc-Wen.html">3.1.10.56. ElastomericBearingBouc-Wen Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FlatSliderBearingElement.html">3.1.10.57. FlatSliderBearingElement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SingleFrictionPendulumBearing.html">3.1.10.58. SingleFrictionPendulumBearing Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TripleFrictionPendulumBearing.html">3.1.10.59. TripleFrictionPendulumBearing Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TripleFrictionPendulum.html">3.1.10.60. TripleFrictionPendulum Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MultipleShearSpring.html">3.1.10.61. MultipleShearSpring Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="KikuchiBearing.html">3.1.10.62. KikuchiBearing Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="YamamotoBiaxialHDR.html">3.1.10.63. YamamotoBiaxialHDR Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElastomericX.html">3.1.10.64. ElastomericX Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="LeadRubberX.html">3.1.10.65. LeadRubberX Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="HDR.html">3.1.10.66. HDR Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RJWatsonEQSBearing.html">3.1.10.67. RJWatsonEQSBearing Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FPBearingPTV.html">3.1.10.68. FPBearingPTV Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TripleFrictionPendulumX.html">3.1.10.69. TripleFrictionPendulumX Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FourNodeQuadUP.html">3.1.10.70. FourNodeQuadUP Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BrickUP.html">3.1.10.71. BrickUP Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bbarQuadUP.html">3.1.10.72. bbarQuadUP Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bbarBrickUP.html">3.1.10.73. bbarBrickUP Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NineFourNodeQuadUP.html">3.1.10.74. NineFourNodeQuadUP Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TwentyEightNodeBrickUP.html">3.1.10.75. TwentyEightNodeBrickUP Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSPquadUP.html">3.1.10.76. SSPquadUP Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSPbrickUP.html">3.1.10.77. SSPbrickUP Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleContact2D.html">3.1.10.78. SimpleContact2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleContact3D.html">3.1.10.79. SimpleContact3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BeamContact2D.html">3.1.10.80. BeamContact2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BeamContact3D.html">3.1.10.81. BeamContact3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BeamEndContact3D.html">3.1.10.82. BeamEndContact3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CatenaryCableElement.html">3.1.10.83. CatenaryCableElement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PML.html">3.1.10.84. PML Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShallowFoundationGen.html">3.1.10.85. ShallowFoundationGen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SurfaceLoad.html">3.1.10.86. SurfaceLoad Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="VS3D4.html">3.1.10.87. VS3D4 Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AC3D8.html">3.1.10.88. AC3D8 Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASI3D8.html">3.1.10.89. ASI3D8 Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AV3D4.html">3.1.10.90. AV3D4 Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDEmbeddedNodeElement.html">3.1.10.91. ASDEmbeddedNode Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDAbsorbingBoundary.html">3.1.10.92. ASDAbsorbingBoundary Element (2D and 3D)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RockingBC.html">3.1.10.93. RockingBC Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FSIFluidBoundaryElement2D.html">3.1.10.94. FSIFluidBoundaryElement2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FSIFluidElement2D.html">3.1.10.95. FSIFluidElement2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FSIInterfaceElement2D.html">3.1.10.96. FSIInterfaceElement2D Element</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../timeSeries.html">3.1.11. Time Series Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pattern.html">3.1.12. Pattern Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../damping.html">3.1.13. Damping Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mass.html">3.1.14. mass Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../region.html">3.1.15. region Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../block.html">3.1.16. block Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../analysisCommands.html">3.2. Analysis Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../outputCommands.html">3.3. Output Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../miscCommands.html">3.4. Misc. Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../userExamples.html">4. Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../messageBoard.html">5. Questions, Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/license.html">6. Copyright and License</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework for Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/sourceCode.html">1. Source Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/build.html">2. Building Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/references.html">3. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/extend.html">4. Extending Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/contribute.html">5. Contributing Code &amp; Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/issues.html">6. Issues</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">OpenSees Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a></li>
+          <li class="breadcrumb-item"><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a></li>
+          <li class="breadcrumb-item"><a href="../element.html"><span class="section-number">3.1.10. </span>Element Command</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1.10.45. </span>bbarBrick Element</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/user/manual/model/elements/bbarBrick.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bbarbrick-element">
+<h1><span class="section-number">3.1.10.45. </span>bbarBrick Element<a class="headerlink" href="#bbarbrick-element" title="Permalink to this heading"></a></h1>
+<p>This command is used to construct an eight-node mixed volume/pressure brick element object, which uses a trilinear isoparametric formulation.</p>
+<div class="admonition-command admonition">
+<p class="admonition-title">Command</p>
+<p><strong>element bbarBrick $eleTag $node1 $node2 $node3 $node4 $node5 $node6 $node7 $node8 $matTag &lt;$b1 $b2 $b3&gt;</strong></p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Argument</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$eleTag</p></td>
+<td><p><em>integer</em></p></td>
+<td><p>unique element object tag</p></td>
+</tr>
+<tr class="row-odd"><td><p>$node1 .. $node8</p></td>
+<td><p>8 <em>integer</em></p></td>
+<td><p>nodes of brick (ordered as shown in fig below)</p></td>
+</tr>
+<tr class="row-even"><td><p>$matTag</p></td>
+<td><p><em>integer</em></p></td>
+<td><p>tag of nDMaterial</p></td>
+</tr>
+<tr class="row-odd"><td><p>$b1 $b2 $b3</p></td>
+<td><p><em>list float</em></p></td>
+<td><p>optional: body forces in global x y z directions</p></td>
+</tr>
+</tbody>
+</table>
+<figure class="align-center" id="id1">
+<img alt="../../../../_images/brick.png" src="../../../../_images/brick.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.10.22 </span><span class="caption-text">bbarBrick Element Node Numbering</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The valid queries to a Brick element when creating an ElementRecorder object are ‘forces’, ‘stresses,’ (‘strains’ version &gt; 2.2.0) and ‘material $matNum matArg1 matArg2 …’ Where $matNum refers to the material object at the integration point corresponding to the node numbers in the isoparametric domain.</p>
+<p>This element can only be defined after a <a class="reference internal" href="../model.html#model"><span class="std std-numref">Section 3.1.1</span></a> with <strong>-ndm 3 -ndf 3</strong></p>
+</div>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<p>The following example constructs a bbar brick element with tag <strong>1</strong> between nodes <strong>1, 2, 3, 4, 5, 6, 7, 8</strong> with an nDMaterial of tag <strong>1</strong> and body forces given by varaiables <strong>b1, b2, b3</strong>.</p>
+<ol class="arabic simple">
+<li><p><strong>Tcl Code</strong></p></li>
+</ol>
+<div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="nv">element</span><span class="w"> </span>bbarBrick<span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nv">$b1</span><span class="w"> </span><span class="nv">$b2</span><span class="w"> </span><span class="nv">$b3</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Python Code</strong></p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">element</span><span class="p">(</span><span class="s1">&#39;bbarBrick&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="n">b1</span><span class="p">,</span> <span class="n">b2</span><span class="p">,</span> <span class="n">b3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>Code Developed by: <strong>Edward Love, Sandia National Laboratories</strong></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, The Regents of the University of California.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2431545-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-2431545-1', {
+          'anonymize_ip': false,
+      });
+    </script>  
+
+  <style>
+         .wy-nav-content { max-width: none; }
+  </style>
+
+
+
+</body>
+</html>

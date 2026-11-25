@@ -1,0 +1,13 @@
+{
+  "total_sources": 98,
+  "total_pdf_files": 35,
+  "new_sources": 10,
+  "new_files": 14,
+  "review_sources": 16,
+  "review_full_pdf": 7,
+  "review_missing": [
+    "R2"
+  ],
+  "old_file_hashes_preserved": true,
+  "local_links_verified": true
+}

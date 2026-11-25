@@ -1,0 +1,25 @@
+[
+  {
+    "file": "01_ground/nasa_lunar_simulant_guide_2024.pdf",
+    "action": "restored identical local copy",
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/references_20261109/01_ground/nasa_lunar_simulant_guide_2024.pdf"
+  },
+  {
+    "file": "01_ground/connolly_carrier_2023_lunar_profile.pdf",
+    "action": "restored identical local copy",
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/references_20261109/01_ground/connolly_carrier_2023_lunar_profile.pdf"
+  },
+  {
+    "file": "01_ground/R08_NASA_Mechanical_Properties_Lunar_Regolith.html",
+    "action": "pre-existing missing file; corrected active index to source shortcut",
+    "old_manifest": [
+      {
+        "source_id": "R08",
+        "file": "01_ground/R08_NASA_Mechanical_Properties_Lunar_Regolith.html",
+        "bytes": 94309,
+        "sha256": "24d6252617cb8e09461bdad61a1d1f0c1327b333f7d306afdce720cda78b68ea",
+        "source_url": "https://ntrs.nasa.gov/citations/19940004207"
+      }
+    ]
+  }
+]

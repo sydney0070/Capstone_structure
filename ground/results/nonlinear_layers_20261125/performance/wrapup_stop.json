@@ -1,0 +1,7 @@
+{
+  "reason": "Stop optional solver comparisons to finish after user requested completion timing",
+  "stopped_owned_child_pids": [
+    59356,
+    59357
+  ]
+}

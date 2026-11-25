@@ -1,0 +1,115 @@
+{
+  "id": "basalt_hb_gsi40",
+  "group": "nonlinear_20261125",
+  "layer": "fractured_basalt",
+  "family": "DruckerPrager",
+  "parameters": {
+    "E_Pa": 13000000000.0,
+    "nu": 0.28,
+    "G_Pa": 5078125000.0,
+    "K_Pa": 9848484848.48485,
+    "density_kg_m3": 2760.0,
+    "c_Pa": 493528.88604571985,
+    "phi_deg": 64.68592072253622,
+    "psi_deg": 0.0,
+    "hardening": 0.0
+  },
+  "evidence": {
+    "E_Pa": {
+      "source": "Kenda2020",
+      "locator": "Table 1, fractured bedrock",
+      "kind": "published_reference",
+      "note": ""
+    },
+    "nu": {
+      "source": "Kenda2020",
+      "locator": "Table 1, fractured bedrock",
+      "kind": "published_reference",
+      "note": ""
+    },
+    "density_kg_m3": {
+      "source": "Morgan2018",
+      "locator": "Section 4.1, terrestrial fractured basalt analogy",
+      "kind": "analogue_transfer",
+      "note": "Effective continuum; no joint failure strength inferred"
+    },
+    "G_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "K_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "c_Pa": {
+      "source": "VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue",
+      "locator": "see calibration record",
+      "kind": "derived_calibration",
+      "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+    },
+    "phi_deg": {
+      "source": "VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue",
+      "locator": "see calibration record",
+      "kind": "derived_calibration",
+      "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+    },
+    "psi_deg": {
+      "source": "modelling_assumption",
+      "locator": "nonassociated flow",
+      "kind": "assumed",
+      "note": "Zero dilation; requires volumetric-strain calibration"
+    },
+    "hardening": {
+      "source": "modelling_assumption",
+      "locator": "perfect plasticity",
+      "kind": "assumed",
+      "note": "No measured hardening/softening curve"
+    }
+  },
+  "mars_calibrated": false,
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+  "notes": [
+    "Actual DP c/phi and target physical MC c/phi are stored separately.",
+    "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+    "Elastoplastic law may remain on its elastic branch at service loads."
+  ],
+  "law": "DruckerPrager",
+  "calibration": {
+    "target_mode": "triaxial",
+    "target_MC_c_Pa": 493528.88604571985,
+    "target_MC_phi_deg": 64.68592072253622,
+    "target_source": "VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue",
+    "independent_validation": false,
+    "GSI": 40,
+    "mi": 22.4,
+    "D": 0.0,
+    "micro_porosity_analogue": 0.04,
+    "sigma_ci_Pa": 123898062.86463402,
+    "sigma_ci_source": "Villeneuve2021 Table3 basalt empirical UCS=33.32*porosity^(-.408)MPa; SEE59.5MPa for full range",
+    "mi_source": "Villeneuve2021 Table2 Etna basalt porosity.04 mi22.4",
+    "GSI_source": "55 recommended average volcanic rock mass;40/70 sensitivity assumptions, not Mars measurements",
+    "constants": {
+      "mb": 2.627949320511217,
+      "s": 0.0012726338013398079,
+      "a": 0.5113684695702436
+    },
+    "fit_sigma3_range_Pa": [
+      0.0,
+      500000.0
+    ],
+    "fit_points": 101,
+    "fit_max_relative_error": 0.07271867167725465,
+    "fit_kind": "minimax relative linear MC fit, then DP triaxial mapping",
+    "formula_note": "Canonical a=.5+(exp(-GSI/15)-exp(-20/3))/6 from HoekBrown2019; plus sign in Villeneuve Eq8 not used."
+  }
+}

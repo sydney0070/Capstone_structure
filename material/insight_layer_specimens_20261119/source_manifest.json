@@ -1,0 +1,86 @@
+[
+  {
+    "id": "Spohn2022",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/spohn_2022_insight_hp3.pdf",
+    "url": "https://doi.org/10.1007/s11214-022-00941-z",
+    "exists": true,
+    "sha256": "5dd3372f576c7ccf0e23790d7c240e5371050a6c28998e7911c516a6d506e340"
+  },
+  {
+    "id": "Brinkman2022",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G07_Brinkman_et_al_2022_In_Situ_Regolith_Seismic_Velocity_Measurement_at_the_InSight_Lan.pdf",
+    "url": "https://doi.org/10.1029/2022JE007229",
+    "exists": true,
+    "sha256": "2b4bb798ecbd5c66079645e70277d4b23bce2a310f4022fe016161b3c738bf2c"
+  },
+  {
+    "id": "Murdoch2018",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G14_Murdoch_2018_InSight_Lander_Flexible_Modes_AAM.pdf",
+    "url": "https://doi.org/10.1007/s11214-018-0553-y",
+    "exists": true,
+    "sha256": "a694f67f68f0cace7bb05c8f74b70901bd2e658bcd8c6b0409c9399f1d3fe0e5"
+  },
+  {
+    "id": "Dotson2024",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/R13_Regolith_Cohesion_Shear_Strength_2024.pdf",
+    "url": "https://arxiv.org/abs/2403.11029",
+    "exists": true,
+    "sha256": "181027971988e8d4e55fefbfc8dcf774a828ffb531a7ac40a79368d8ee94825e"
+  },
+  {
+    "id": "Morgan2018",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G12_Morgan_2018_InSight_Regolith_Properties.pdf",
+    "url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+    "exists": true,
+    "sha256": "7e3f47af267230c2933d77b3ab701ea08076634cf3d9913b8446c3a0097597b9"
+  },
+  {
+    "id": "Hobiger2021",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G15_Hobiger_2021_InSight_Shallow_Structure.pdf",
+    "url": "https://doi.org/10.1038/s41467-021-26957-7",
+    "exists": true,
+    "sha256": "c76b68ea8ac46b7cb2f1b787594a8c0d2dd43a7a72af9741db240a8f45750890"
+  },
+  {
+    "id": "Kenda2020",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G16_Kenda_2020_Compliance.pdf",
+    "url": "https://doi.org/10.1029/2020JE006387",
+    "exists": true,
+    "sha256": "5d1b00886d35aaeede666ae42e3df70984091ef95bbd79fc8204387964b450a9"
+  },
+  {
+    "id": "Shallow2008",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/04_SSI_and_numerics/R20_ShallowFoundationGen_2008.pdf",
+    "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/documents/ShallowDocumentation.pdf",
+    "exists": true,
+    "sha256": "4d115ae4594aabb122093d3fece5fcf47b029dd906476a48a54f3a55adde0d94"
+  },
+  {
+    "id": "PDMY02",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/PressureDependentMultiYield02.html",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+    "exists": true,
+    "sha256": "fc3e785ab22f421f4aa7ce889d1caa4af5be59f5d41140f26351c06b1370d754"
+  },
+  {
+    "id": "DP_command",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/DruckerPrager.html",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+    "exists": true,
+    "sha256": "379ad6335575f55b1c0223432627c6a7da4f5f6d26b16a4b20111c72419e7295"
+  },
+  {
+    "id": "Hysteretic_command",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D31_Hysteretic_20261119.html",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+    "exists": true,
+    "sha256": "99970d1f93cf5f780b770b046c4ca0499f6fe5b74373b39e8b910d83451d4226"
+  },
+  {
+    "id": "ElasticPPGap_command",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D16_ElasticPPGap.html",
+    "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/170.htm",
+    "exists": true,
+    "sha256": "a1b439f2c582a35811f0af40cf8b9d3f6ae7b66a2d852c625a9131353b51e90f"
+  }
+]

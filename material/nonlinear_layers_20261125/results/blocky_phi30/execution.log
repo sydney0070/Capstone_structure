@@ -1,0 +1,4 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+WARNING - the 'fullGenLapack' eigen solver is VERY SLOW. Consider using the default eigen solver./Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/run_specimens.py:122: DeprecationWarning: `trapz` is deprecated. Use `trapezoid` instead, or one of the numerical integration functions in `scipy.integrate`.
+  shear_work_Pa=float(np.trapz(a[:,1],a[:,0])),work_scope='Shear work along this path, not a measured damping ratio or complete dissipation measure')
+{"id": "blocky_phi30", "passed": true, "tests": 8, "error": null}

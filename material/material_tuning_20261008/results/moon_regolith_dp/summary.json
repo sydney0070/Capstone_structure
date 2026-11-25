@@ -1,0 +1,15 @@
+{
+  "case": "moon_regolith_dp",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "opensees": "3.8.0",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "points": 481,
+  "units": [
+    "engineering shear strain",
+    "shear stress (kPa)"
+  ],
+  "y_min": -4.6797415342978566,
+  "y_max": 4.84970255806167,
+  "physical_validation": "NOT_EVALUATED_WITHOUT_INDEPENDENT_EXPERIMENT",
+  "history_sha256": "7c369b859f180584c3dcba8c15c95849bb5cff3275faa9a14eb15371d03f0e5a"
+}

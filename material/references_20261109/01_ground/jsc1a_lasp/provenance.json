@@ -1,0 +1,44 @@
+{
+  "status": "SOURCE_REVIEW_ONLY_NOT_FITTED_OR_VALIDATED",
+  "source_file": "JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf",
+  "source_sha256": "f30aeba051b2b03d3053bc58ddfa5efb1c941562beea0c76015ea5b7f8dadef8",
+  "source_url": "https://ares.jsc.nasa.gov/projects/simulants/attachments/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf",
+  "report": "LASP Document 105525, Rev A, 2007-10-04",
+  "observations": 46,
+  "conditions": {
+    "material": "JSC-1A, Earth laboratory simulant",
+    "nominal_density_g_cm3": [
+      1.7,
+      1.8,
+      1.9
+    ],
+    "nominal_confinement_kPa": [
+      15,
+      30,
+      60
+    ],
+    "loading": "monotonic triaxial compression, dry tamped specimens, pore space open to atmosphere",
+    "specimen_diameter_mm": 74.6,
+    "specimen_height_mm": 150,
+    "displacement_rate_in_per_hour_as_reported": 0.0197,
+    "condition_source_pdf_pages": [
+      7,
+      8,
+      12
+    ]
+  },
+  "limitations": [
+    "46 tabulated test summaries, not 46 raw stress-strain histories.",
+    "Italic formatting and source-selected averaging are not encoded; do not auto-select training rows.",
+    "Table 6 has an inconsistent heading; original column retained without relabeling as confirmed strain.",
+    "Text on PDF page 20 reports phi=42.9 deg at 1.7 g/cm3; summary on page 28 reports 43.9 deg. Neither selected automatically.",
+    "Missing values remain null. No zero filling and no manufactured curves.",
+    "Source reports specimen working/retesting may reduce strength; test IDs do not establish independent virgin specimens.",
+    "Etan is not established as small-strain dynamic modulus Gmax or a universal pressure-independent elastic modulus.",
+    "Cyclic response, damping, uplift contact and lunar in-situ conditions are not validated."
+  ],
+  "stress_angle_flags": [
+    "J1A_60_18D"
+  ],
+  "diagnostic_formula": "phi(c=0)=asin((sigma1-sigma3)/(sigma1+sigma3)); flag >0.3 deg; no source value overwritten"
+}

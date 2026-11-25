@@ -1,0 +1,47 @@
+{
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "shape": "dome",
+  "material": "shell_aluminum",
+  "planet": "moon",
+  "support": "contact_anchor",
+  "geometry": {
+    "radius": 5.0,
+    "rise": 2.5,
+    "height": 6.0,
+    "neck_radius": 3.0
+  },
+  "mesh": {
+    "n": 12
+  },
+  "thickness": 0.02,
+  "gravity_factor": 1.0,
+  "foundation": {
+    "k_horizontal_per_m": 10000.0,
+    "k_vertical_per_m": 20000.0
+  },
+  "material_override": {},
+  "material_config": null,
+  "horizontal_force_kN": 10.0,
+  "pressure_path_kPa": [
+    0.0,
+    0.025,
+    0.05,
+    0.075,
+    0.1,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1.0,
+    0.6,
+    0.2,
+    0.0
+  ],
+  "max_pressure_step_kPa": 0.05,
+  "anchor": {
+    "stiffness_per_m": 50000.0,
+    "allowable_tension_per_m": 5.0
+  },
+  "scope": "UNILATERAL_VERTICAL_CONTACT_WITH_INDEPENDENT_LATERAL_GUIDES"
+}

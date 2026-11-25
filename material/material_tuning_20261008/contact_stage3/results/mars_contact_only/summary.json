@@ -1,0 +1,24 @@
+{
+  "status": "NO_STATIC_CONTACT_EQUILIBRIUM",
+  "attempted_stop": {
+    "phase": "pressure",
+    "pressure_kPa": 0.25,
+    "reason": "resultant_outside_support_polygon"
+  },
+  "interpretation": "NECESSARY_EQUILIBRIUM_CHECK_AND_ELASTIC_TIE_DEMAND_NOT_COLLAPSE_PREDICTION",
+  "last_converged_pressure_kPa": 0.2,
+  "planet": "mars",
+  "support": "contact_only",
+  "horizontal_force_kN": 10.0,
+  "mass_tonne": 5.299425090079451,
+  "weight_kN": 19.660867084194898,
+  "total_anchor_allowable_kN": 0.0,
+  "max_gap_m": 1.546944838813617e-05,
+  "peak_anchor_tension_kN": 0.0,
+  "peak_anchor_utilization": 0.0,
+  "max_force_residual": 1.5815113737869342e-14,
+  "max_moment_residual_kNm": 0.007627894720767969,
+  "opensees": "3.8.0",
+  "steps": 17,
+  "mesh_n": 48
+}

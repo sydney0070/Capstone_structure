@@ -1,0 +1,511 @@
+{
+  "schema": 1,
+  "created": "2026-11-12",
+  "units": "m N s kg Pa K; alpha is LINEAR per K; engineering strain order xx yy zz xy yz xz",
+  "mechanical_base_path": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/configs/catalog.json",
+  "mechanical_base_sha256": "c26e7e067a4ac59a30c55df688f702f2fe946e05dba3d01aee3e60da593de8f5",
+  "status": "RESEARCH_THERMAL_INPUTS_NOT_EXPERIMENTAL_RETUNING",
+  "environment": {
+    "reference_temperature_K": 219.69442627047763,
+    "minimum_K": 163.997,
+    "maximum_K": 266.106,
+    "source_sample_count": 85027,
+    "valid_sensor_range_K": [
+      160,
+      300
+    ],
+    "reference_basis": "arithmetic mean of valid deduplicated native-rate TWINS tip-temperature proxies; explicit research stress-free-temperature assumption",
+    "thermal_transfer_scope": "air-proxy envelope only; NOT measured temperature of every material/soil layer; no solar/radiative/conductive heat-transfer solution",
+    "sources": [
+      {
+        "path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/MARS_DATA/twins_calib_1217_01.csv",
+        "sha256": "141dbec4a263f73b593105c14e36b5ff5b12d43c250192dfdb09384154fe8816"
+      },
+      {
+        "path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/MARS_DATA/twins_calib_1218_01.csv",
+        "sha256": "73fd6ed24cd2ea9a2f79d704dc6d50f10a6d0c3ea5d1d0e8152bfcb0adc95756"
+      }
+    ],
+    "temperature_assignment_status": "PROVISIONAL_AWAITING_USER_NUMERIC_INPUT",
+    "observed_proxy_minimum_K": 163.997,
+    "observed_proxy_maximum_K": 266.106,
+    "observed_proxy_mean_K": 219.69442627047763
+  },
+  "materials": {
+    "steel_s355_coupon": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 1.2e-05,
+      "status": "CONVENTIONAL_REFERENCE_NOT_THERMAL_FIT",
+      "sources": [
+        "steel",
+        "concrete"
+      ],
+      "scope": "12e-6/K retained from legacy dome steel; rebar transfer is conventional, not SD400 product test",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "steel_s355_nominal": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 1.2e-05,
+      "status": "CONVENTIONAL_REFERENCE_NOT_THERMAL_FIT",
+      "sources": [
+        "steel",
+        "concrete"
+      ],
+      "scope": "12e-6/K retained from legacy dome steel; rebar transfer is conventional, not SD400 product test",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "al6061_t6_extrusion": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "model": "nist_6061_length_curve",
+      "reference_length_temperature_K": 293.0,
+      "data_temperature_range_K": [
+        4.0,
+        300.0
+      ],
+      "fit_error_relative_to_source_data_percent": 4.0,
+      "length_fit": {
+        "coefficients": [
+          -412.77,
+          -0.30389,
+          0.0087696,
+          -9.9821e-06,
+          0.0
+        ],
+        "scale": 1e-05,
+        "low_break_K": 18.0,
+        "low_constant": -415.45
+      },
+      "status": "PUBLISHED_TEMPERATURE_FUNCTION",
+      "sources": [
+        "al_nist"
+      ],
+      "scope": "integrate published length curve between material temperature and explicit reference; do not use room-temperature23.6e-6/K at all Mars temperatures",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "concrete_c30_prototype": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 1e-05,
+      "status": "CONVENTIONAL_REFERENCE_NOT_MIX_CALIBRATED",
+      "sources": [
+        "steel",
+        "concrete"
+      ],
+      "scope": "normal-weight concrete reference, mix/aggregate/moisture and cold-service effects unmeasured",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "rebar_sd400_prototype": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 1.2e-05,
+      "status": "CONVENTIONAL_REFERENCE_NOT_THERMAL_FIT",
+      "sources": [
+        "steel",
+        "concrete"
+      ],
+      "scope": "12e-6/K retained from legacy dome steel; rebar transfer is conventional, not SD400 product test",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "cfrp_as4_8552_ud_rtd": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "model": "constant_orthotropic",
+      "alpha_principal_per_K": [
+        0.0,
+        3.261e-05,
+        3.261e-05
+      ],
+      "source_alpha1_per_K": 1e-20,
+      "source_fiber_volume_fraction": 0.5742,
+      "status": "TRANSFERRED_RESEARCH_ORTHOTROPIC_MODEL",
+      "sources": [
+        "cfrp"
+      ],
+      "scope": "ply axes1=fiber,2=transverse,3=thickness; cross-ply/laminate expansion must be calculated, not replaced by scalar0",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "sintered_jsc1a_high_porosity": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_ANALOGUE_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "upper-end terrestrial basalt-aggregate analogue chosen for sensitivity, NOT a measured sintered JSC-1A coefficient; porosity-specific CTE unidentified",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "sintered_jsc1a_low_porosity": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_ANALOGUE_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "upper-end terrestrial basalt-aggregate analogue chosen for sensitivity, NOT a measured sintered JSC-1A coefficient; porosity-specific CTE unidentified",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "moon_jsc1a_17_peak": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "effective dry bulk continuum trial coefficient; grain CTE does not identify bulk thermal strain, compaction/ratcheting not calibrated; peak/residual keep same thermal input",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "moon_jsc1a_17_residual": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "effective dry bulk continuum trial coefficient; grain CTE does not identify bulk thermal strain, compaction/ratcheting not calibrated; peak/residual keep same thermal input",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "moon_jsc1a_18_peak": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "effective dry bulk continuum trial coefficient; grain CTE does not identify bulk thermal strain, compaction/ratcheting not calibrated; peak/residual keep same thermal input",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "moon_jsc1a_18_residual": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "effective dry bulk continuum trial coefficient; grain CTE does not identify bulk thermal strain, compaction/ratcheting not calibrated; peak/residual keep same thermal input",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "moon_jsc1a_19_peak": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "effective dry bulk continuum trial coefficient; grain CTE does not identify bulk thermal strain, compaction/ratcheting not calibrated; peak/residual keep same thermal input",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "moon_jsc1a_19_residual": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "effective dry bulk continuum trial coefficient; grain CTE does not identify bulk thermal strain, compaction/ratcheting not calibrated; peak/residual keep same thermal input",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "mars_jez1_peak": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "effective dry bulk continuum trial coefficient; grain CTE does not identify bulk thermal strain, compaction/ratcheting not calibrated; peak/residual keep same thermal input",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "mars_jez1_residual": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "effective dry bulk continuum trial coefficient; grain CTE does not identify bulk thermal strain, compaction/ratcheting not calibrated; peak/residual keep same thermal input",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "earth_sand_dr50_pdmy02": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        5.5e-06,
+        1.1e-05,
+        1.65e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 1.1e-05,
+      "status": "PROVISIONAL_EFFECTIVE_SKELETON_ASSUMPTION",
+      "sources": [
+        "concrete"
+      ],
+      "scope": "terrestrial quartz-rich aggregate analogue; effective sand skeleton CTE unmeasured; saturated record has NO water thermal expansion or thermal pore-pressure model",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "earth_sand_dr50_dry_reference": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        5.5e-06,
+        1.1e-05,
+        1.65e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 1.1e-05,
+      "status": "PROVISIONAL_EFFECTIVE_SKELETON_ASSUMPTION",
+      "sources": [
+        "concrete"
+      ],
+      "scope": "terrestrial quartz-rich aggregate analogue; effective sand skeleton CTE unmeasured; saturated record has NO water thermal expansion or thermal pore-pressure model",
+      "mechanical_thermal_stress_applicable": true
+    },
+    "shield_loose_jsc1a": {
+      "reference_temperature_K": 219.69442627047763,
+      "research_temperature_range_K": [
+        163.997,
+        266.106
+      ],
+      "experimental_thermal_calibration": false,
+      "temperature_dependent_strength_calibrated": false,
+      "assumptions_acknowledged_for_research": true,
+      "sensitivity_alpha_per_K": [
+        4e-06,
+        8e-06,
+        1.2e-05
+      ],
+      "model": "constant_isotropic",
+      "alpha_linear_per_K": 8e-06,
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "sources": [
+        "concrete",
+        "regolith_gap"
+      ],
+      "scope": "effective dry bulk continuum trial coefficient; grain CTE does not identify bulk thermal strain, compaction/ratcheting not calibrated; peak/residual keep same thermal input; coefficient is bookkeeping only; preserve mass and do not create stiffness or thermal load",
+      "mechanical_thermal_stress_applicable": false
+    }
+  },
+  "sources": {
+    "steel": {
+      "url": "https://eurocodes.jrc.ec.europa.eu/sites/default/files/2021-12/handbook3.pdf",
+      "location": "Chapter IV, IV-7; conventional structural steel 12e-6/K, concrete 10e-6/K",
+      "scope": "ordinary building thermal-action reference; not measured Martian cryogenic product data"
+    },
+    "al_nist": {
+      "url": "https://trc.nist.gov/cryogenics/materials/6061%20Aluminum/6061_T6Aluminum_rev.htm",
+      "location": "Linear expansion fit, 4–300 K, relative to L293; coefficients a=-412.77,b=-.30389,c=.0087696,d=-9.9821e-6, scale1e-5",
+      "scope": "published 6061-T6 fit; no mechanical strength/temper degradation calibration"
+    },
+    "concrete": {
+      "url": "https://www.fhwa.dot.gov/publications/research/infrastructure/pavements/pccp/thermal.cfm",
+      "location": "PCC typical8–12 microstrain/K, basalt aggregate6–8, steel11–12",
+      "scope": "terrestrial reference; specific mix/moisture/cryogenic expansion not identified"
+    },
+    "cfrp": {
+      "url": "https://www.mdpi.com/2504-477x/5/2/63",
+      "location": "Table1: AS4-8552 model alphaX1e-20/K, alphaY/Z3.261e-5/K, Vf.5742",
+      "scope": "curing-process research model; transferred thermal coefficients, not NIAR RTD qualification CTE or cryogenic measurement"
+    },
+    "regolith_gap": {
+      "url": "https://doi.org/10.1016/j.jnoncrysol.2010.04.049",
+      "scope": "glass made from melted JSC-1A differs from porous sintered and loose simulants; no numeric coefficient transferred from that glass paper"
+    },
+    "nd_wrapper": {
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/InitStrain.html",
+      "scope": "modern3D wrapper sigma=f(eps+eps0); negative thermal strain required; unavailable in installed3.4.0"
+    }
+  }
+}

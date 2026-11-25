@@ -1,0 +1,186 @@
+{
+  "t4": {
+    "status": "MEASUREMENT_AND_IDENTIFIABILITY_REVIEW_REQUIRED",
+    "training_only": true,
+    "initial_window": [
+      {
+        "csv": "specimen_1.csv",
+        "points_10_to_50_MPa": 1,
+        "apparent_slope_GPa": null,
+        "total_points": 16,
+        "negative_strain_points": 0
+      },
+      {
+        "csv": "specimen_2.csv",
+        "points_10_to_50_MPa": 2,
+        "apparent_slope_GPa": 59.05135740570668,
+        "total_points": 19,
+        "negative_strain_points": 0
+      },
+      {
+        "csv": "specimen_3.csv",
+        "points_10_to_50_MPa": 1,
+        "apparent_slope_GPa": null,
+        "total_points": 28,
+        "negative_strain_points": 7
+      }
+    ],
+    "E_profiles": [
+      {
+        "E_GPa": 60,
+        "train_nrmse": 0.05875628193647498,
+        "parameters": {
+          "sig0": 114680.95784180079,
+          "sigInf": 300000.00002881547,
+          "delta": 16.434831052055515
+        },
+        "boundary_parameters": [
+          "sigInf"
+        ],
+        "optimizer_success": true,
+        "nfev": 15
+      },
+      {
+        "E_GPa": 70,
+        "train_nrmse": 0.0738914056843253,
+        "parameters": {
+          "sig0": 110598.1883857341,
+          "sigInf": 300000.0000002111,
+          "delta": 17.824539624009958
+        },
+        "boundary_parameters": [
+          "sigInf"
+        ],
+        "optimizer_success": true,
+        "nfev": 5
+      },
+      {
+        "E_GPa": 80,
+        "train_nrmse": 0.0884717061466102,
+        "parameters": {
+          "sig0": 105565.91137664809,
+          "sigInf": 300000.0000000045,
+          "delta": 19.687376431894684
+        },
+        "boundary_parameters": [
+          "sigInf"
+        ],
+        "optimizer_success": true,
+        "nfev": 6
+      }
+    ],
+    "normalized_local_sensitivity_condition": 1034.4168745868096,
+    "saturation_delta_sensitivity_cosine": 0.9995764822089555,
+    "source_sha256": {
+      "specimen_1.csv": "811d8f9d589741778348e530f6200a68ca0b544915dafe539e5a54e51d8fe767",
+      "specimen_2.csv": "82c846716f8f1ddbc4a2f3c76acecf34fa6bfb6a93a0d6c6d3653dbe6255971c",
+      "specimen_3.csv": "208c813ed8d2e07391966c1d2e7e1214421d2032e4410b794fdf20729479f416"
+    },
+    "bounds_unchanged": {
+      "E": [
+        60000000.0,
+        80000000.0
+      ],
+      "sig0": [
+        50000.0,
+        300000.0
+      ],
+      "sigInf": [
+        300000.0,
+        500000.0
+      ],
+      "delta": [
+        1.0,
+        400.0
+      ]
+    }
+  },
+  "t6": {
+    "status": "MEASUREMENT_AND_IDENTIFIABILITY_REVIEW_REQUIRED",
+    "training_only": true,
+    "initial_window": [
+      {
+        "csv": "specimen_1.csv",
+        "points_10_to_50_MPa": 2,
+        "apparent_slope_GPa": 76.2056536121569,
+        "total_points": 23,
+        "negative_strain_points": 0
+      },
+      {
+        "csv": "specimen_2.csv",
+        "points_10_to_50_MPa": 2,
+        "apparent_slope_GPa": 72.05637169910605,
+        "total_points": 23,
+        "negative_strain_points": 0
+      }
+    ],
+    "E_profiles": [
+      {
+        "E_GPa": 60,
+        "train_nrmse": 0.0256121478981525,
+        "parameters": {
+          "sig0": 171541.83767454413,
+          "sigInf": 300000.0,
+          "delta": 23.87730457152875
+        },
+        "boundary_parameters": [
+          "sigInf"
+        ],
+        "optimizer_success": true,
+        "nfev": 2
+      },
+      {
+        "E_GPa": 70,
+        "train_nrmse": 0.04492744042488678,
+        "parameters": {
+          "sig0": 165666.130958352,
+          "sigInf": 300000.0000000005,
+          "delta": 27.113934515983097
+        },
+        "boundary_parameters": [
+          "sigInf"
+        ],
+        "optimizer_success": true,
+        "nfev": 6
+      },
+      {
+        "E_GPa": 80,
+        "train_nrmse": 0.06612657189829328,
+        "parameters": {
+          "sig0": 160397.6538274708,
+          "sigInf": 300000.00000001694,
+          "delta": 29.86928301384122
+        },
+        "boundary_parameters": [
+          "sigInf"
+        ],
+        "optimizer_success": true,
+        "nfev": 6
+      }
+    ],
+    "normalized_local_sensitivity_condition": 356.2517211841061,
+    "saturation_delta_sensitivity_cosine": 0.9991819971677417,
+    "source_sha256": {
+      "specimen_1.csv": "f1fa5a8ca7a3a41b2ad34b6ea7b59e62dba2765a7defad2764f9045c426743d1",
+      "specimen_2.csv": "1fa40b8efed5b93ba37f79963a2fdbbe15a0d8840d70b60a388804daad52b0ea"
+    },
+    "bounds_unchanged": {
+      "E": [
+        60000000.0,
+        80000000.0
+      ],
+      "sig0": [
+        50000.0,
+        300000.0
+      ],
+      "sigInf": [
+        300000.0,
+        500000.0
+      ],
+      "delta": [
+        1.0,
+        400.0
+      ]
+    }
+  }
+}

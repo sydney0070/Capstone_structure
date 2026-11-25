@@ -1,0 +1,18 @@
+{
+  "rebar_replay_matched": [
+    "01_A64.csv",
+    "02_A65.csv",
+    "03_A66.csv",
+    "04_A67.csv",
+    "05_A68.csv",
+    "06_A69.csv"
+  ],
+  "baseline_files_unchanged": true,
+  "original_acceptance_unchanged": true,
+  "aluminum_training_hashes_unchanged": true,
+  "aluminum_profiles_converged": 6,
+  "script_sha256": {
+    "refine_rebar.py": "38444666caba4e7c43e836c949f776e7434139ae27b0e78948e0a4ca7393919f",
+    "audit_aluminum.py": "3cef5a10f31acd19f531c197b4d4d2b65961dd7999e042c6ba4d199276f46ebd"
+  }
+}

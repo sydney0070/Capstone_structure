@@ -1,0 +1,24 @@
+{
+  "status": "NO_STATIC_CONTACT_EQUILIBRIUM",
+  "attempted_stop": {
+    "phase": "pressure",
+    "pressure_kPa": 0.64,
+    "reason": "resultant_outside_support_polygon"
+  },
+  "interpretation": "NECESSARY_EQUILIBRIUM_CHECK_AND_ELASTIC_TIE_DEMAND_NOT_COLLAPSE_PREDICTION",
+  "last_converged_pressure_kPa": 0.6,
+  "planet": "earth",
+  "support": "contact_only",
+  "horizontal_force_kN": 10.0,
+  "mass_tonne": 5.299425090079451,
+  "weight_kN": 51.98736013367968,
+  "total_anchor_allowable_kN": 0.0,
+  "max_gap_m": 4.5029383326105807e-07,
+  "peak_anchor_tension_kN": 0.0,
+  "peak_anchor_utilization": 0.0,
+  "max_force_residual": 8.429627782482302e-15,
+  "max_moment_residual_kNm": 0.007652890455984718,
+  "opensees": "3.8.0",
+  "steps": 25,
+  "mesh_n": 48
+}

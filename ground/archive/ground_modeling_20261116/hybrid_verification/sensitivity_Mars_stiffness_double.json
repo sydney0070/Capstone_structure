@@ -1,0 +1,24 @@
+{
+  "body": "Mars",
+  "factor": 2.0,
+  "spacing": 1.0,
+  "width": 6.0,
+  "frame": false,
+  "penalty": 10.0,
+  "soil_mass_kg": 933952.0,
+  "materials": {
+    "mars_insight_duricrust_proxy": 0.04907407407407407,
+    "mars_jez1_peak": 0.6175925925925926,
+    "basalt_elastic_analogue": 0.33333333333333337
+  },
+  "additional_settlement_m": 0.00024153990607280287,
+  "differential_settlement_m": 5.5880515999933225e-06,
+  "force_error": 4.6247410628408246e-17,
+  "contact_normal_relative_error": 3.1808949165905386e-15,
+  "friction_capacity_excess_N": 0,
+  "contact_mpc_error_m": 0.0,
+  "max_contact_penetration_m": 1.9977839542371836e-05,
+  "gravity_stress_samples": 144,
+  "pass": true,
+  "variant": "stiffness_double"
+}

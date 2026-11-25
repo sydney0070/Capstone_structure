@@ -1,0 +1,51 @@
+{
+  "case": "rebar_ucsd_grade60_a6",
+  "units": "kN,m,s,tonne,kPa",
+  "synthetic": false,
+  "conditions_confirmed": true,
+  "source": "NHERI SimCenter quoFEM qfem-0028; UCSD Grade60 A6 group; Carreño et al 2020 DOI 10.1061/(ASCE)ST.1943-541X.0002505. Stress MPa converted to kPa, strain fraction as supplied.",
+  "tests": [
+    {
+      "csv": "01_A64.csv",
+      "role": "train",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "02_A65.csv",
+      "role": "train",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "03_A66.csv",
+      "role": "train",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "04_A67.csv",
+      "role": "train",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "05_A68.csv",
+      "role": "validation",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "06_A69.csv",
+      "role": "validation",
+      "channels": {
+        "y": 1.0
+      }
+    }
+  ]
+}

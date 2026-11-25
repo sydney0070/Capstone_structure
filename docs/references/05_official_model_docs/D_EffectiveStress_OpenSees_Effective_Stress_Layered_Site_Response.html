@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Effective Stress Site Response Analysis of a Layered Soil Column - OpenSeesWiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"avLkEIGagyjOz29KAHYdVQAAAE0","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column","wgTitle":"Effective Stress Site Response Analysis of a Layered Soil Column","wgCurRevisionId":8574,"wgRevisionId":8574,"wgArticleId":2066,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column","wgRelevantArticleId":2066,"wgIsProbablyEditable":false,
+"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.treeandmenu","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/wiki/load.php?lang=en&amp;modules=skins.vector.styles.legacy&amp;only=styles&amp;skin=vector">
+<script async="" src="/wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.41.0">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<link rel="icon" href="/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/opensearch_desc.php" title="OpenSeesWiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://opensees.ist.berkeley.edu/wiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="OpenSeesWiki Atom feed" href="/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ9N5Q2MXT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XZ9N5Q2MXT');
+</script>
+</head>
+<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column rootpage-Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column skin-vector action-view"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Effective Stress Site Response Analysis of a Layered Soil Column</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From OpenSeesWiki</div>
+		<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Example prepared by: <span style="color:blue"> Christopher McGann and Pedro Arduino, University of Washington</span>
+</p>
+<hr />
+<p><a href="/wiki/index.php?title=Examples" title="Examples"> Return to OpenSees Examples Page</a>
+</p><p>This article describes the OpenSees implementation of an effective stress site response analysis of a layered deposit of cohesionless soil underlain by an elastic half-space.  A single column of soil is modeled in 2D (with periodic boundary conditions to emulate a 1D analysis) and is subject to an earthquake excitation.  Nine node quadrilateral elements with both displacement and pore pressure degrees of freedom enable the model to track changes in pore pressure and effective stress during the earthquake excitation.  A Lysmer-Kuhlemeyer (1969) dashpot is utilized to account for the finite rigidity of the underlying elastic medium.  
+</p><p>This article also briefly introduces the user to the pre- and post-process visualization tool <a rel="nofollow" class="external text" href="http://gid.cimne.upc.es/home">GiD</a>.  Specifically, the means to generate GiD-compatible results from the data returned by the OpenSees recorders are provided and discussed.  GiD is a powerful tool for visualizing data and generating meshes, among other things.  It is especially helpful when working with 2D and 3D problems in OpenSees.  The GiD tool can be downloaded from <a rel="nofollow" class="external free" href="http://gid.cimne.upc.es/download">http://gid.cimne.upc.es/download</a>.
+</p><p><br />
+<b>Note:</b>  Most of the details of this analysis are identical to those in the <a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)" title="Site Response Analysis of a Layered Soil Column (Total Stress Analysis)"> Total Stress Site Response Analysis of a Layered Soil Column</a> example posted in the Practical Examples area of this manual.  This article will emphasize the attributes which are particular to the effective stress analysis.  The user is referred to the total stress example for further information on details which may be omitted or quickly explained here.
+</p><p><br />
+Provided with this article are several files.  Files which are required for the analysis are indicated.  The files include:
+</p>
+<ul><li>The example input file, <a href="/wiki/index.php?title=FreeFieldEffective.tcl" title="FreeFieldEffective.tcl">freeFieldEffective.tcl</a> (<b>required for analysis</b>)</li>
+<li>The velocity time history of the selected earthquake record, velocityHistory.out (<b>required for analysis</b>)</li>
+<li>A GiD post-process mesh file, freeFieldEffective.flavia.msh  (generated automatically by running <a href="/wiki/index.php?title=FreeFieldEffective.tcl" title="FreeFieldEffective.tcl">freeFieldEffective.tcl</a>)</li>
+<li>A Matlab script, flaviaWriter.m, which can be used to reformat the recorded displacement, pore pressure, and stress data into a file which can be read by GiD for post-process visulization.  Non-Matlab users may find the process represented by this file useful in creating an alternative means for accomplishing this reformatting.</li>
+<li>The post-process results file, freeFieldEffective.flavia.res, which is generated through the use of the flaviaWriter.m script.  This file, combined with the file freeFieldEffective.flavia.msh, allows the user to visualize the results of the site response analysis using GiD.</li></ul>
+<p>All of the files mentioned above can be downloaded <a href="/wiki/images/b/bd/SiteResponseEffective.zip" class="internal" title="SiteResponseEffective.zip"> by clicking here</a>.
+</p><p><br />
+To run this example, the user must download the input file, <a href="/wiki/index.php?title=FreeFieldEffective.tcl" title="FreeFieldEffective.tcl">freeFieldEffective.tcl</a>, and the velocity time history file, velocityHistory.out, and place them in a single directory.  Once this has been done, the user can then run the analysis.  The additional files described above are not essential to the analysis.  They are provided to demonstrate how to use the GiD tool to visualize results from this type of analysis.
+</p><p>For further information into a site response analysis using OpenSees, the user is referred to the previously-mentioned <a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)" title="Site Response Analysis of a Layered Soil Column (Total Stress Analysis)"> total stress site response analysis example</a> and/or the large set of examples developed at the University of California at San Diego available at <a rel="nofollow" class="external free" href="http://cyclic.ucsd.edu/opensees">http://cyclic.ucsd.edu/opensees</a>.  These examples utilize a wide variety of element and material formulations, as well as different boundary and loading conditions than those used in this example.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Model_Description"><span class="tocnumber">1</span> <span class="toctext">Model Description</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Mesh_Geometry"><span class="tocnumber">1.1</span> <span class="toctext">Mesh Geometry</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Boundary_Conditions"><span class="tocnumber">1.2</span> <span class="toctext">Boundary Conditions</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Material_and_Element_Definitions"><span class="tocnumber">1.3</span> <span class="toctext">Material and Element Definitions</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Recorders_and_Analysis"><span class="tocnumber">1.4</span> <span class="toctext">Recorders and Analysis</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Analysis_Results"><span class="tocnumber">2</span> <span class="toctext">Analysis Results</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#GiD_Visualization"><span class="tocnumber">3</span> <span class="toctext">GiD Visualization</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Model_Description">Model Description</span></h2>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:EffStressSiteModel.png" class="mw-file-description"><img src="/wiki/images/9/9f/EffStressSiteModel.png" decoding="async" width="344" height="375" class="mw-file-element" /></a><figcaption>Fig 1.  Layered soil profile with 2% slope modeled by the example discussed in this article.  The flat soil profile is the same, only without a slope.</figcaption></figure>
+<p>The site response analysis discussed in this article is for a soil profile consisting of a 10 m thick layer of loose sand (Dr = 40%) above a 20 m thick layer of more dense sand (Dr = 75%).  The profile is assumed to be on an infinite slope with a 2% grade.  A schematic representation of the analyzed soil profile is shown in Fig. 1.  The entire soil profile is underlain by an elastic half-space which represents the finite rigidity of an underlying medium such as bedrock.  The groundwater table is located at a depth of 2 m, therefore, saturated unit weights are used for the soil below this point and effective stress analysis is considered through the use of nine-node quadrilateral elements which are able to simulate fluid-solid coupling.
+</p>
+<h3><span class="mw-headline" id="Mesh_Geometry">Mesh Geometry</span></h3>
+<p>The general layout of the model is similar to that discussed in the previously-posted <a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)" title="Site Response Analysis of a Layered Soil Column (Total Stress Analysis)"> total stress site response analysis example</a>, however, the elements have nine nodes instead of four.  A single nine-node element is shown in Fig. 2 to demonstrate the layout of the nodes and the order of element connectivity.  The corner nodes (shown in blue in Fig. 2) have three degrees of freedom, two translational and one pore pressure, and the interior nodes (red in Fig. 2) have only two translational degrees of freedom.  
+</p>
+<figure class="mw-halign-left" typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:NineNodeElem.png" class="mw-file-description"><img src="/wiki/images/6/60/NineNodeElem.png" decoding="async" width="180" height="191" class="mw-file-element" /></a><figcaption>Fig 2.  Nine node quadrilateral element.</figcaption></figure>
+<p>The implementation of the nine node quadrilateral element requires that the two types of nodes, and their corresponding fixities, be created in an appropriate domain.  The pore pressure nodes their fixities must be preceded by the command 
+</p>
+<pre>model BasicBuilder -ndm 2 -ndf 3, 
+</pre>
+<p>indicating that the domain has 2 dimensions and 3 degrees of freedom.  The interior nodes and corresponding fixities must be preceded by the command 
+</p>
+<pre>model BasicBuilder -ndm 2 -ndf 2, 
+</pre>
+<p>indicating that the domain has 2 dimensions and 2 degrees of freedom.  The node and fixity definitions are the only major aspects of the model for which care must be taken with respect to the domain, however, since the load is applied to a corner node during the dynamic analysis, the correct domain must be redefined prior to the definition of the loading object.
+</p><p>The example analysis provided in the file <a href="/wiki/index.php?title=FreeFieldEffective.tcl" title="FreeFieldEffective.tcl">freeFieldEffective.tcl</a> is set-up in a manner such that the user need only define the geometry of the soil profile and groundwater table (<b>Note:</b> if the ground water table is not located at the surface, an additional soil layer must be included to differentiate the dry or moist soil above the gwt from the saturated soil below the gwt).  The nodes are generated automatically based on the input geometry information.  The input file is also set up such that different vertical element sizes can be used within each soil layer.
+</p>
+<h3><span class="mw-headline" id="Boundary_Conditions">Boundary Conditions</span></h3>
+<p>The appropriate boundary conditions are also automatically generated based on the input geometry.  The nodes at the base of the soil column are fixed against vertical translation and the pore pressure nodes above the groundwater table are fixed in the pore pressure dof (representing an open drainage condition).  Periodic boundary conditions are assumed for the purposes of mimicking a 1D analysis.  This is done though the use of the <a href="/wiki/index.php?title=EqualDOF_command" title="EqualDOF command">equalDOF command</a>.  For the periodic boundary condition, each of the nodes which share the same vertical location are given equal translational degrees of freedom.  
+<b>Note:</b> The pore pressure degrees of freedom for corner nodes at a particular vertical location should not be linked using the <a href="/wiki/index.php?title=EqualDOF_command" title="EqualDOF command">equalDOF command</a>.  Through the creation of this example, it was found that this can cause problems in the analysis.
+</p>
+<h3><span class="mw-headline" id="Material_and_Element_Definitions">Material and Element Definitions</span></h3>
+<p>The soil constitutive behavior is modeled using the <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1551.htm">PressureDependMultiYield02</a> nDMaterial object.  Since no attempt was made to model an actual soil deposit, the material parameters are based upon the recommended table of parameters available on the <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1551.htm">PressureDependMultiYield02</a> page for the appropriate relative densities.  
+</p><p><b>Note:</b> The mass density input values for the material objects should be total mass densities, i.e. above the groundwater table, the mass density should reflect dry or moist conditions, and below the groundwater table, the mass density should be the saturated value.  For elements with free pore pressure degrees of freedom (those below the water table), the 9_4_QuadUP element computes the effective mass density using the input value from the material object and the fluid mass density specified during the element generation.
+</p><p><br />
+Included with the material definitions for each soil layer are additional parameters which are used by the 9_4_QuadUP element.  These include the element thickness, the horizontal and vertical body forces on the element, the undrained bulk modulus, and the horizontal and vertical permeabilities.  The example is set-up such that these values can vary from layer to layer.  The creators of the 9_4_QuadUP element recommend an undrained bulk modulus which is equal to the bulk modulus of the fluid (2.2e6 kPa for water) divided by the porosity of the soil layer.  For the layer above the groundwater table, a small value (5e-6 kPa) is used as the undrained bulk modulus.
+</p><p><b>Note:</b> Gravity must be incorporated into an analysis using the 9_4_QuadUP element in a manner which differs from that used for the standard four node <a href="/wiki/index.php?title=Quad_Element" title="Quad Element">quad element</a>.  With the four node quad element, gravity is typically considered through the use of body forces which represent the unit weight of the soil.  In the case of the nine node quad element, the body forces should not be the unit weights, instead they should have magnitudes equal to the components of gravity only, i.e. for an analysis of level ground using SI units, the vertical body force should be -9.81 and the horizontal body force should be zero.  The infinite slope conditions of this example are modeled by using horizontal and vertical gravity components computed from the angle of the sloping ground as the body forces acting on the elements.
+</p><p><br />
+The 9_4_QuadUP elements are created automatically based on the input soil geometry and the material definitions.    The 9_4_QuadUP element should be defined in the following manner:
+</p>
+<pre>element 9_4_QuadUP eleID nodei nodej nodek nodel nodem noden nodep nodeq noder thickness matID uBulk fMass hPerm vPerm hBody vBody
+</pre>
+<p>where <tt>uBulk</tt> is the undrained bulk modulus, <tt>fMass</tt> is the fluid mass density, <tt>hPerm</tt> and <tt>vPerm</tt> are the horizontal and vertical permeabilites, and <tt>hBody</tt> and <tt>vBody</tt> are the horizontal and vertical body forces.  The nodal connectivity pattern matches that shown in Fig. 2.  In this example, the fluid is water, therefore, the fluid mass density for each layer is set to 1.0 Mg/m^3.
+</p><p><br />
+The permeabilities for all of the elements are initially set to 1.0 m/s to ensure that hydrostatic conditions exist after the application of gravity in the model.  If the permeability of a particular layer is too low, it may take many gravity analysis steps in order to reach hydrostatic pressure conditions.  Prior to the application of the ground motion, the permeabilities of each soil layer are updated using the <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1560.htm">updateParameter</a> command to their respective assigned values so pore pressure generation during the horizontal excitation is captured appropriately.  The usage of the updateParameter command seems to differ from that documented <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1560.htm">here</a>.  Parameter tags must be defined for each permeability parameter (horizontal and vertical) for each element.  Then these tags can be used to update the corresponding parameters.
+<br style="clear: both" />
+</p><p>An example of the parameter update process for two elements is provided here.  To set the parameter tags:
+</p>
+<pre>#          tag             eleTag  parameterType
+parameter  10001  element  1       vPerm
+parameter  10002  element  1       hPerm
+parameter  10003  element  2       vPerm
+parameter  10004  element  2       hPerm
+</pre>
+<p>To update the permeability parameters:
+</p>
+<pre>#                tag    parameterValue
+updateParameter  10001  1.0e-4
+updateParameter  10002  1.0e-4
+updateParameter  10003  1.0e-5
+updateParameter  10004  1.0e-5
+</pre>
+<p>It seems to help to make the parameter tags different from any of the other tags used in the model (e.g. material, element tags), hence the numbers in this example start at 10001 and increase incrementally.  As might be expected, the parameter tags must be defined before the parameters can be updated.  The example input file included with this article is set up to automatically generate the parameter tags and update the permeability parameters.
+</p><p><br />
+The Lysmer-Kuhlemeyer (1969) dashpot nodes, material, and element are defined as described in the <a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)" title="Site Response Analysis of a Layered Soil Column (Total Stress Analysis)"> total stress site response analysis example</a> using a bedrock shear wave velocity of 700 m/s and a bedrock mass density of 2.5 Mg/m^3.
+</p>
+<h3><span class="mw-headline" id="Recorders_and_Analysis">Recorders and Analysis</span></h3>
+<p>The analysis consists of a gravity stage followed by a dynamic excitation stage.  The recorders are separated in to two groups based on the analysis stages.  The information recorded by the gravity recorders is useful to confirm that the model has been generated properly and that the appropriate conditions exist prior to the application of the horizontal excitation.  A good place to start when working with a new model is the gravity phase.  If the model doesn't converge or gives incorrect results under gravity loads, then it can never be expected to work properly in the remainder of the analysis. 
+</p><p>The main details of the analysis phases are discussed in the <a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)" title="Site Response Analysis of a Layered Soil Column (Total Stress Analysis)"> total stress site response analysis example</a>, however, there are several differences which will be discussed here.  Due to the way in which this model is constrained, it seems that use of the <a href="/wiki/index.php?title=Penalty_Method" title="Penalty Method"> penalty method</a> works better than the <a href="/wiki/index.php?title=Transformation_Method" title="Transformation Method"> transformation constraints</a> used in the total stress example.  The penalty factors specified in the example may need to be adjusted if changes are made to the geometry or parameters.  The analysis seemed to run more smoothly using the <a href="/wiki/index.php?title=Krylov-Newton_Algorithm" title="Krylov-Newton Algorithm"> Krylov-Newton algorithm</a> as opposed to the standard <a href="/wiki/index.php?title=Newton_Algorithm" title="Newton Algorithm"> Newton algorithm</a>, however, the user is encouraged to experiment with different algorithms for their analyses.  As previously noted above, the domain must be redefined to include three degrees of freedom prior to the definition of the loading object since the node at which the load is applied has three degrees of freedom.
+<br style="clear: both" />
+</p>
+<h2><span class="mw-headline" id="Analysis_Results">Analysis Results</span></h2>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:EffDepthSummary.png" class="mw-file-description"><img src="/wiki/images/6/61/EffDepthSummary.png" decoding="async" width="380" height="302" class="mw-file-element" /></a><figcaption>Fig 3.  Comparison of residual displacements for flat ground and a 2% grade after the conclusion of the excitation.</figcaption></figure>
+<p>The fluid-solid coupling modeled by the 9_4_QuadUP element allows for the simulations of events such as liquefaction and lateral spreading.  To demonstrate these situations, two distinct analyses were performed using the same soil profile.  One analysis considers the 2% slope shown in Fig. 1 (and represented in the provided input file), and the other analysis considers level ground conditions.  The flat ground case was simulated by setting the variable <tt>grade</tt> located in the material definition section of the input file to zero.  In both cases, a portion of the loose sand layer becomes liquefied during the application of the ground motion.  This fact is demonstrated in the included figures.
+</p><p>Fig. 3 shows the residual displacement profiles for the two conditions after the conclusion of the ground motion.  As shown, there horizontal displacement of the upper portion of the soil column relative to the column base differs based upon the slope of the ground.  With a 2% grade, approximately four times more relative displacement occurs, indicative of liquefaction-induced lateral spreading.
+</p><p>Figs. 4 and 5 summarize the soil behavior at depths of 3 m (above the liquefied zone), 7 m (in the middle of the liquefied zone), and 16 m (below the liquefied zone) for the level ground and sloping ground cases, respectively.  These figures show the shear stress-strain behavior, the stress paths plotted on axes of shear stress vs. vertical effective stress, and the pore pressure ratios (computed as the ratio of excess pore pressure to initial effective vertical stress) as they vary with time.  Included in the stress path plots are the failure and phase transformation surfaces for each respective location.
+</p>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:FlatSummaryNew.png" class="mw-file-description"><img src="/wiki/images/8/8b/FlatSummaryNew.png" decoding="async" width="657" height="527" class="mw-file-element" /></a><figcaption>Fig 4.  Summary of stress, strain, and excess pore pressure response for three depths in the flat ground analysis.</figcaption></figure>
+<p>For both ground conditions, the results presented in Figs. 4 and 5 at a depth of 7 m are indicative of liquefaction.  The pore pressure ratios both approach 1.0 (they never seem to quite get there in any of the simulations performed, there is likely som sort of tolerance in the elements) over a portion of the shaking, then become reduced with continued shaking.  The stress path plots correspond, showing that the vertical effective stresses are reduced down towards zero as the soil liquefies, then strength is gained as the pore pressures dissipate with further shaking.  The effects of the slope can be observed in Fig. 5, with the oscillations on the stress path plot being centered about a point which is not the zero shear stress axis.  
+</p><p>The user can confirm the correct implementation of their downloaded version of this example by generating similar plots and comparing them to those included here.  When generating the displacement profile plot, be sure to subtract the displacement of the base of the soil column from the values in order to create a plot which is the equivalent of that shown in Fig. 3.
+</p>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:SlopeSummaryNew.png" class="mw-file-description"><img src="/wiki/images/8/8a/SlopeSummaryNew.png" decoding="async" width="663" height="527" class="mw-file-element" /></a><figcaption>Fig 5.  Summary of stress, strain, and excess pore pressure response for three depths in the sloping ground analysis.</figcaption></figure>
+<p><br style="clear: both" />
+</p>
+<h2><span class="mw-headline" id="GiD_Visualization">GiD Visualization</span></h2>
+<p>As previously discussed, several files have been included in this article for the purpose of visualizing results in the pre- and post-processing tool <a rel="nofollow" class="external text" href="http://gid.cimne.upc.es/home">GiD</a>.  The files related to this purpose are available for download <a href="/wiki/images/b/bd/SiteResponseEffective.zip" class="internal" title="SiteResponseEffective.zip"> here</a>.  The files are:
+</p>
+<ul><li>freeFieldEffective.flavia.msh</li>
+<li>freeFieldEffective.flavia.res</li>
+<li>flaviaWriter.m script</li></ul>
+<p>The files freeFieldEffective.flavia.msh and freeFieldEffective.flavia.res can be used to visualize the results of the example analysis in GiD without even running the example in OpenSees.  They were produced by running the example and provided so the user can experiment with GiD visualization if desired.  To accomplish this, the user should take the following steps:
+</p>
+<ol><li>download and install copy of GiD</li>
+<li>save a blank project with the name freeFieldEffective.gid</li>
+<li>place the files freeFieldEffective.flavia.msh and freeFieldEffective.flavia.res into the freeFieldEffective.gid directory</li>
+<li>with this project open, select the Postprocess option in the 'files' menu</li></ol>
+<p>The program will then load the post-processing data contained in freeFieldEffective.flavia.msh and freeFieldEffective.flavia.res, and the results represented in these files can be visualized in GiD.
+</p><p>The file freeFieldEffective.flavia.msh contains a list of the nodes and elements used in the analysis in a format that GiD understands.  This file is automatically created by running the example <a href="/wiki/index.php?title=FreeFieldEffective.tcl" title="FreeFieldEffective.tcl">freeFieldEffective.tcl</a> in OpenSees, so if modifications are made to the mesh geometry in the example, this information should be readily available.
+</p><p>The file freeFieldEffective.flavia.res contains the data recorded during the analysis by the OpenSees recorders in a format that GiD can read.  The Matlab script, flaviaWriter.m, was used to convert the data recorded during the example analysis into this format.  The user can use this Matlab script to convert the included quantities of nodal displacement, nodal pore pressure, nodal pore pressure ratio, and elemental stress from the OpenSees output to the proper GiD format.  This script can also be used as a template for generating additional visualization parameters for GiD.  Further information on the formats for the *.flavia.msh and *.flavia.res can be found in the customization manual available at <a rel="nofollow" class="external free" href="http://gid.cimne.upc.es/support/manuals">http://gid.cimne.upc.es/support/manuals</a>.
+</p><p>As an example of the visualization possibilities accorded by working with OpenSees and GiD, an animation of the soil column response during the beginning of the excitation can be viewed <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/wiki/images/d/d4/FlatAnimation.gif">by clicking here</a>.  This animation is for the level ground case, and shows the nodal deformations and pore pressure ratios during the dynamic excitation.  Note how the pore pressures become very high in the lower portions of the loose sand layer during the strong shaking, then they begin to dissipate once the strongest parts of the shaking have passed.  This is the same behavior observed at the 7 m depth in Fig. 4.  
+</p><p>A future example to be posted on this site will describe the processes involved in using GiD as a pre-processor for OpenSees.  This is especially effective for two- and three-dimensional problems.  Further information on using the post-processing capabilities will also be discussed in this future example.
+<br style="clear: both" />
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ol><li>Kramer, S.L. (1996). <i>Geotechnical Earthquake Engineering.</i> Prentice Hall, Upper Saddle River, NJ.</li>
+<li>Lysmer, J. and Kuhlemeyer, A.M. (1969). "Finite dynamic model for infinite media," <i>Journal of the Engineering Mechanics Division, ASCE</i>, <b>95</b>, 859-877.</li></ol>
+<p><a href="/wiki/index.php?title=Examples" title="Examples"> Return to OpenSees Examples Page</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20261110054648
+Cache expiry: 86400
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.016 seconds
+Real time usage: 0.017 seconds
+Preprocessor visited node count: 54/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key mediawiki-mediawiki:pcache:idhash:2066-0!canonical and timestamp 20261110054648 and revision id 8574. Rendering was triggered because: page-view
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://opensees.ist.berkeley.edu/wiki/index.php?title=Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column&amp;oldid=8574">https://opensees.ist.berkeley.edu/wiki/index.php?title=Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column&amp;oldid=8574</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-login" class="mw-list-item"><a href="/wiki/index.php?title=Special:UserLogin&amp;returnto=Effective+Stress+Site+Response+Analysis+of+a+Layered+Soil+Column" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/index.php?title=Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="/wiki/index.php?title=Talk:Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected mw-list-item"><a href="/wiki/index.php?title=Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="/wiki/index.php?title=Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li><li id="ca-history" class="mw-list-item"><a href="/wiki/index.php?title=Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<h3 >Search</h3>
+	<form action="/wiki/index.php" id="searchform" class="vector-search-box-form">
+		<div id="simpleSearch"
+			class="vector-search-box-inner"
+			 data-search-loc="header-navigation">
+			<input class="vector-search-box-input"
+				 type="search" name="search" placeholder="Search OpenSeesWiki" aria-label="Search OpenSeesWiki" autocapitalize="sentences" title="Search OpenSeesWiki [f]" accesskey="f" id="searchInput"
+			>
+			<input type="hidden" name="title" value="Special:Search">
+			<input id="mw-searchButton"
+				 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+			<input id="searchButton"
+				 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel" class="vector-legacy-sidebar">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/index.php?title=Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation"  >
+	<h3
+		id="p-navigation-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-OpenSees-Home" class="mw-list-item"><a href="http://opensees.berkeley.edu" rel="nofollow"><span>OpenSees Home</span></a></li><li id="n-Message-Board" class="mw-list-item"><a href="http://opensees.berkeley.edu/index.php" rel="nofollow"><span>Message Board</span></a></li><li id="n-OpenSees-Wiki" class="mw-list-item"><a href="http://opensees.berkeley.edu/wiki/index.php" rel="nofollow"><span>OpenSees Wiki</span></a></li><li id="n-User-Documetation" class="mw-list-item"><a href="http://opensees.berkeley.edu/wiki/index.php/OpenSees_User" rel="nofollow"><span>User Documetation</span></a></li><li id="n-Download-Page" class="mw-list-item"><a href="http://opensees.berkeley.edu/OpenSees/user/download.php" rel="nofollow"><span>Download Page</span></a></li><li id="n-Source-Code" class="mw-list-item"><a href="http://opensees.berkeley.edu/WebSVN/listing.php?repname=OpenSees&amp;path=%2Ftrunk%2FSRC" rel="nofollow"><span>Source Code</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/index.php?title=Special:WhatLinksHere/Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/index.php?title=Special:RecentChangesLinked/Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/wiki/index.php?title=Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column&amp;oldid=8574" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/wiki/index.php?title=Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column&amp;action=info" title="More information about this page"><span>Page information</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 24 March 2011, at 18:40.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="/wiki/index.php?title=OpenSeesWiki:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/index.php?title=OpenSeesWiki:About">About OpenSeesWiki</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/index.php?title=OpenSeesWiki:General_disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":73,"wgPageParseReport":{"limitreport":{"cputime":"0.016","walltime":"0.017","ppvisitednodes":{"value":54,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20261110054648","ttl":86400,"transientcontent":false}}});});</script>
+</body>
+</html>

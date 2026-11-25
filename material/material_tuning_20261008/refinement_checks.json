@@ -1,0 +1,80 @@
+[
+  {
+    "case": "sand_pdmy02",
+    "substeps_base": 1,
+    "substeps_fine": 2,
+    "relative_max_path_error": 0.0001527372665825346,
+    "project_tolerance": 0.02,
+    "passed": true,
+    "max_eps_v_difference": 1.0556949662093862e-06
+  },
+  {
+    "case": "clay_pimy",
+    "substeps_base": 1,
+    "substeps_fine": 2,
+    "relative_max_path_error": 0.003752181197659405,
+    "project_tolerance": 0.02,
+    "passed": true,
+    "max_eps_v_difference": 1.254859829690261e-06
+  },
+  {
+    "case": "moon_regolith_dp",
+    "substeps_base": 10,
+    "substeps_fine": 20,
+    "relative_max_path_error": 0.0012922269446353893,
+    "project_tolerance": 0.02,
+    "passed": true,
+    "max_eps_v_difference": 1.7114741802439095e-07
+  },
+  {
+    "case": "mars_regolith_dp",
+    "substeps_base": 10,
+    "substeps_fine": 20,
+    "relative_max_path_error": 0.0009078720335469266,
+    "project_tolerance": 0.02,
+    "passed": true,
+    "max_eps_v_difference": 1.9091212590382903e-07
+  },
+  {
+    "case": "sand_pm4",
+    "substeps_base": 1,
+    "substeps_fine": 2,
+    "relative_max_path_error": 0.0026118405911885042,
+    "project_tolerance": 0.02,
+    "passed": true,
+    "max_ru_equivalent_difference": 0.0001958025942467856
+  },
+  {
+    "case": "silt_pm4",
+    "substeps_base": 1,
+    "substeps_fine": 2,
+    "relative_max_path_error": 0.0016146523694212872,
+    "project_tolerance": 0.02,
+    "passed": true,
+    "max_ru_equivalent_difference": 7.552481956307755e-05
+  },
+  {
+    "case": "shell_steel",
+    "substeps_base": 1,
+    "substeps_fine": 2,
+    "relative_max_path_error": 3.410103667634842e-10,
+    "project_tolerance": 0.02,
+    "passed": true
+  },
+  {
+    "case": "shell_aluminum",
+    "substeps_base": 1,
+    "substeps_fine": 2,
+    "relative_max_path_error": 1.8090403208128662e-10,
+    "project_tolerance": 0.02,
+    "passed": true
+  },
+  {
+    "case": "interface_friction",
+    "substeps_base": 1,
+    "substeps_fine": 2,
+    "relative_max_path_error": 5.1159076974726115e-15,
+    "project_tolerance": 0.02,
+    "passed": true
+  }
+]

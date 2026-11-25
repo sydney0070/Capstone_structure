@@ -1,0 +1,6 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 48 iterations  current Norm: 14809.1 (max: 0.201296, Norm deltaX: 0.000353417)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 0.3
+OpenSees > analyze failed, returned: -3 error flag

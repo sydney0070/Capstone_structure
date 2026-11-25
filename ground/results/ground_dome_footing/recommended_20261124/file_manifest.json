@@ -1,0 +1,177 @@
+[
+  {
+    "file": "README.txt",
+    "bytes": 937,
+    "sha256": "c3a22e21eb5b5bedd8d3af25510152945f457e01944fb0604b9dbb54c98be88c"
+  },
+  {
+    "file": "comparison.html",
+    "bytes": 8453,
+    "sha256": "a46d099dac5c558f8bf0b7f22f76d3ca7eb4cfacc253b599e0b11ab56b62f604"
+  },
+  {
+    "file": "comparison.json",
+    "bytes": 8845,
+    "sha256": "e2ac1d2120f1e089e76bbc84841bf4e85322b7372c80ab49689659807b27b24e"
+  },
+  {
+    "file": "comparison_sources.json",
+    "bytes": 883,
+    "sha256": "84e8dad4b74fc910681b21ee8350cf178f6ae34740cdfbc99195ec2a560dbb25"
+  },
+  {
+    "file": "execution.log",
+    "bytes": 1763,
+    "sha256": "d1fcf4216731924305cd355e35dfd07516992a2e22ecdba0b4a8472cbbb1f172"
+  },
+  {
+    "file": "force_balance.csv",
+    "bytes": 362,
+    "sha256": "361b79aef8274851a0cd7b1a0ae95b3c5878ab75437fd0e9426767631694a684"
+  },
+  {
+    "file": "material_changes.csv",
+    "bytes": 3688,
+    "sha256": "4a1dd3252f62312dd568e84ae7be9a3cda79207d471e75123b30c58a1e638b1a"
+  },
+  {
+    "file": "material_state_summary.csv",
+    "bytes": 1710,
+    "sha256": "5f976090cadf86da949465dd581dcafd9854892e2621eefd368de8f56ac21a08"
+  },
+  {
+    "file": "model/ground_geometry.html",
+    "bytes": 5241433,
+    "sha256": "2e9215f49bf484efed096fb8a5115774aac619d005dcd4298cc7bd0743146d90"
+  },
+  {
+    "file": "model/ground_geometry.json",
+    "bytes": 387743,
+    "sha256": "294fc0d46b74bcebd60c07e17a998fe3fcdbc6c3078009ab3810ba6352ad8554"
+  },
+  {
+    "file": "model/opensees.log",
+    "bytes": 91,
+    "sha256": "bdf979f97940d7424486f4dedd490ef6ee834fb5b4005763f2b58574818041bb"
+  },
+  {
+    "file": "model/summary.json",
+    "bytes": 13299,
+    "sha256": "1ec1a1d3e1dc61e7ce088b0f296e9ff863071bf17eee2a23f816ac8e52c3b669"
+  },
+  {
+    "file": "run/depressurized_material_state.csv",
+    "bytes": 6949521,
+    "sha256": "a6b749df7fce544b056f8a6f505ae89457d2ce583c1da8f325bbb60c497c5cb9"
+  },
+  {
+    "file": "run/footing_settlement.html",
+    "bytes": 5448485,
+    "sha256": "06f8cad3e42d5a2bb40aad367d2b3f6122b49d63f3f05f8b2c3d638f7e8bb750"
+  },
+  {
+    "file": "run/footing_settlement.json",
+    "bytes": 594795,
+    "sha256": "076549ae4a6e2927174b6747e8da3c1945a734a7c29677536d56892bf6c1e476"
+  },
+  {
+    "file": "run/footing_settlement_pressurized.html",
+    "bytes": 5449111,
+    "sha256": "46dadd8bb7f46b09d38e040cc95d38001ec8f65c91ab5c7ead05bea80e3e87e3"
+  },
+  {
+    "file": "run/footing_settlement_pressurized.json",
+    "bytes": 595421,
+    "sha256": "32bdbcef8bf097361ca1a8db923931c1170d0f2984f91dc87d8cb595dfc13467"
+  },
+  {
+    "file": "run/gravity_material_state.csv",
+    "bytes": 6803230,
+    "sha256": "1fce1070b6f8781d30a838a84f1977734533eb1757faa7ed91ca2b2d12a62960"
+  },
+  {
+    "file": "run/model_checkpoint.json",
+    "bytes": 130,
+    "sha256": "c19306b2591c8cd7101d4a961c7b7b35bf1e8d48103a184cf7fa5af6ff622e93"
+  },
+  {
+    "file": "run/opensees.log",
+    "bytes": 91,
+    "sha256": "bdf979f97940d7424486f4dedd490ef6ee834fb5b4005763f2b58574818041bb"
+  },
+  {
+    "file": "run/pressurized_material_state.csv",
+    "bytes": 6956489,
+    "sha256": "414c79d51f9acda283420bd0391fe94ac183db583f75a7462935abcdfe19b11d"
+  },
+  {
+    "file": "run/solver_attempts.jsonl",
+    "bytes": 14034,
+    "sha256": "76f6fa82c55ac379d1c7c1f585f5490aa0e0b8ed28222d0251f5521cd57a3179"
+  },
+  {
+    "file": "run/solver_checkpoint.json",
+    "bytes": 254,
+    "sha256": "6e10d4a21e0d286b3aa65c4e7b0779768f1b89c0dea44f88295d8cc1a702c990"
+  },
+  {
+    "file": "run/stage_displacements.npz",
+    "bytes": 200735,
+    "sha256": "f73f7b2cd9acba1194e9aedec59b349ef628f16ecf2d6e6276a5529f30c8d26b"
+  },
+  {
+    "file": "run/summary.json",
+    "bytes": 22283,
+    "sha256": "dd643f864aa50d6f5da2a3f9384fccd788754804e49881a7db9395a368820318"
+  },
+  {
+    "file": "settlement_comparison.csv",
+    "bytes": 498,
+    "sha256": "45fb2dc9ee819f9ee2fc0bc0ca21f5c7eb7938dd27455e87c73608541ccfef00"
+  },
+  {
+    "file": "settlement_comparison.png",
+    "bytes": 34895,
+    "sha256": "011ff30bfdbb63dc68b8073e45618e7755a1cabc05897084e7fa79e8641c080f"
+  },
+  {
+    "file": "settlement_section.png",
+    "bytes": 180094,
+    "sha256": "61052536c603526cbf37a6ea07ff1ad8e150bd3a4ad87079ad12e0a7ef5764e0"
+  },
+  {
+    "file": "source_snapshot/Mars_recommended_20261124.json",
+    "bytes": 1042,
+    "sha256": "278e1446b12bb92521629c3f8935ffe0138f68cc776b5315b7d5e84bb8192b20"
+  },
+  {
+    "file": "source_snapshot/compare_material_profile_run.py",
+    "bytes": 14221,
+    "sha256": "9b631a0f6a724a3742c547278aa68763dbeaf060c021fd3d26c1aee6e3727292"
+  },
+  {
+    "file": "source_snapshot/ground_dome_footing.py",
+    "bytes": 14251,
+    "sha256": "e53f3eccf228b8221ade89bb83037e0233280cf6bee2c38ccc02903d139870e3"
+  },
+  {
+    "file": "source_snapshot/manifest.json",
+    "bytes": 836,
+    "sha256": "1510f2e4d755c6e291b2ee6c94f3c66ddea299dff780ded0c9a0112dd3a7002c"
+  },
+  {
+    "file": "source_snapshot/material_audit.py",
+    "bytes": 3094,
+    "sha256": "155504f86fc6a1afdc48c94a2020afcb8c9baee1d36de3fb5e83ca0ce85b967e"
+  },
+  {
+    "file": "source_snapshot/materials.py",
+    "bytes": 2502,
+    "sha256": "df7d565c61c33454aed3c12edb5796364e169cfaf8bcf1001e29d96743d51b62"
+  },
+  {
+    "file": "source_snapshot/materials_recommended_20261124.json",
+    "bytes": 9844,
+    "sha256": "6a0a4c53e1310430101fd704248d9bd98f6b38612f8907c7352d68b1283f357c"
+  }
+]

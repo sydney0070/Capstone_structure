@@ -1,0 +1,54 @@
+[
+  {
+    "old": "CODE_REVIEW_20261109_KO.md",
+    "new": "docs/reviews/CODE_REVIEW_20261109_KO.md"
+  },
+  {
+    "old": "REVISION_20261109_KO.md",
+    "new": "docs/reviews/REVISION_20261109_KO.md"
+  },
+  {
+    "old": "GROUND_MATERIAL_REVIEW_20261107_KO.md",
+    "new": "docs/reference/GROUND_MATERIAL_REVIEW_20261107_KO.md"
+  },
+  {
+    "old": "MODEL_OVERVIEW_20261109_KO.md",
+    "new": "docs/MODEL_OVERVIEW_20261109_KO.md"
+  },
+  {
+    "old": "MATERIAL_EVALUATION.md",
+    "new": "material/docs/MATERIAL_EVALUATION.md"
+  },
+  {
+    "old": "material.zip",
+    "new": "material/archive/material_original.zip"
+  },
+  {
+    "old": "import openseespy.ini",
+    "new": "archive/misc/import openseespy.ini"
+  },
+  {
+    "old": "test_material_evaluation.py",
+    "new": "material/tests/test_material_evaluation.py"
+  },
+  {
+    "old": "structure/results_mars_integrated",
+    "new": "integrated/results/mars_integrated_legacy"
+  },
+  {
+    "old": "structure/results_mars_integrated_20261107",
+    "new": "integrated/results/mars_integrated_20261107"
+  },
+  {
+    "old": "structure/results_mars_ssi_integrated_20261109",
+    "new": "integrated/results/mars_ssi_20261109"
+  },
+  {
+    "old": "ground/ground_modeling/results_ground_20261109",
+    "new": "ground/results/ground_20261109"
+  },
+  {
+    "old": "ground/ground_modeling/hybrid_results",
+    "new": "integrated/results/reference_legacy"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "musiol2016",
+    "url": "https://gfzpublic.gfz.de/rest/items/item_1802896_4/component/file_1802898/content",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "spohn2022",
+    "url": "https://link.springer.com/content/pdf/10.1007/s11214-022-00941-z.pdf",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "lunar_profile",
+    "url": "https://ntrs.nasa.gov/api/citations/20220018853/downloads/LPSC%202023%20Abstract_Connolly_Carrier_v2.pdf",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "hydro6061",
+    "url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "niar_as4",
+    "url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "nist6061",
+    "url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "dp",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "pdmy02",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "steel02",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "concrete02",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "flat_slider",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/Flat_Slider_Bearing_Element",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "id": "dp_engine_340",
+    "url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/material/nD/UWmaterials/DruckerPrager.cpp",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "status": "unavailable",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  }
+]

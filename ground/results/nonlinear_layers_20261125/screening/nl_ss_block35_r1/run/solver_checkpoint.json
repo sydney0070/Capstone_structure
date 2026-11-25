@@ -1,0 +1,8 @@
+{
+  "elapsed_s": 654.8739551249892,
+  "event": "attempt_started",
+  "pattern": 800002,
+  "before": 0.875,
+  "increment": 0.0625,
+  "algorithm": "NewtonLineSearch"
+}

@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "units": "Pa, strain (-), J/m^3",
+    "experimentally_calibrated": false,
+    "warning": "Materials are uniaxial prototypes. Not an RC shell/section."
+  },
+  "tests": {
+    "concrete_monotonic_compression": {
+      "test": "concrete_monotonic_compression",
+      "material": "concrete",
+      "n_points": 301,
+      "min_strain": -0.006,
+      "max_strain": 0.0,
+      "min_stress_MPa": -30.0,
+      "max_stress_MPa": 0.0,
+      "initial_secant_GPa": 29.9925,
+      "reference_initial_tangent_GPa": 30.0,
+      "zero_stress_unloading_strains": [],
+      "strain_path_work_J_per_m3": 111999.1425,
+      "closed_strain_excursion_work": [],
+      "status": "NUMERICAL_MATERIAL_RESPONSE_ONLY_NOT_EXPERIMENTAL_VALIDATION",
+      "compressive_peak_strain": -0.002,
+      "compressive_peak_stress_MPa": -30.0,
+      "expected_peak_MPa": -30.0,
+      "step_refinement_max_knot_difference_MPa": 0.0,
+      "step_refinement_relative_knot_difference": 0.0
+    },
+    "concrete_monotonic_tension": {
+      "test": "concrete_monotonic_tension",
+      "material": "concrete",
+      "n_points": 301,
+      "min_strain": 0.0,
+      "max_strain": 0.0025,
+      "min_stress_MPa": 0.0,
+      "max_stress_MPa": 2.9999999999999996,
+      "initial_secant_GPa": 30.0,
+      "reference_initial_tangent_GPa": 30.0,
+      "zero_stress_unloading_strains": [],
+      "strain_path_work_J_per_m3": 3150.054,
+      "closed_strain_excursion_work": [],
+      "status": "NUMERICAL_MATERIAL_RESPONSE_ONLY_NOT_EXPERIMENTAL_VALIDATION",
+      "expected_tensile_strength_MPa": 3.0,
+      "step_refinement_max_knot_difference_MPa": 0.0,
+      "step_refinement_relative_knot_difference": 0.0
+    },
+    "concrete_cyclic": {
+      "test": "concrete_cyclic",
+      "material": "concrete",
+      "n_points": 801,
+      "min_strain": -0.005,
+      "max_strain": 0.0,
+      "min_stress_MPa": -30.0,
+      "max_stress_MPa": 2.988461538461538,
+      "initial_secant_GPa": 29.924999999999997,
+      "reference_initial_tangent_GPa": 30.0,
+      "zero_stress_unloading_strains": [
+        -9.511733535200619e-05,
+        -9.386006663493585e-05,
+        -0.0003135802469135804,
+        -0.00030279540898438614,
+        -0.0010894693998176094,
+        -0.0010661080093636436,
+        -0.0024151971191873783
+      ],
+      "strain_path_work_J_per_m3": 117140.6689826441,
+      "closed_strain_excursion_work": [
+        {
+          "from_knot": 0,
+          "to_knot": 2,
+          "net_work_J_per_m3": 3931.7508944543697,
+          "note": "Net path work; not exact dissipated energy if internal state changes"
+        },
+        {
+          "from_knot": 2,
+          "to_knot": 4,
+          "net_work_J_per_m3": 20297.24280370791,
+          "note": "Net path work; not exact dissipated energy if internal state changes"
+        },
+        {
+          "from_knot": 4,
+          "to_knot": 6,
+          "net_work_J_per_m3": 50454.00368531283,
+          "note": "Net path work; not exact dissipated energy if internal state changes"
+        },
+        {
+          "from_knot": 6,
+          "to_knot": 8,
+          "net_work_J_per_m3": 42457.671599168985,
+          "note": "Net path work; not exact dissipated energy if internal state changes"
+        }
+      ],
+      "status": "NUMERICAL_MATERIAL_RESPONSE_ONLY_NOT_EXPERIMENTAL_VALIDATION",
+      "step_refinement_max_knot_difference_MPa": 0.0,
+      "step_refinement_relative_knot_difference": 0.0
+    },
+    "steel_monotonic_tension": {
+      "test": "steel_monotonic_tension",
+      "material": "steel",
+      "n_points": 401,
+      "min_strain": 0.0,
+      "max_strain": 0.02,
+      "min_stress_MPa": 0.0,
+      "max_stress_MPa": 436.0000000000001,
+      "initial_secant_GPa": 199.99999999999997,
+      "reference_initial_tangent_GPa": 200.0,
+      "zero_stress_unloading_strains": [],
+      "strain_path_work_J_per_m3": 7920093.522689676,
+      "closed_strain_excursion_work": [],
+      "status": "NUMERICAL_MATERIAL_RESPONSE_ONLY_NOT_EXPERIMENTAL_VALIDATION",
+      "nominal_yield_strain": 0.002,
+      "nominal_yield_stress_MPa": 400.0,
+      "step_refinement_max_knot_difference_MPa": 0.0,
+      "step_refinement_relative_knot_difference": 0.0
+    },
+    "steel_monotonic_compression": {
+      "test": "steel_monotonic_compression",
+      "material": "steel",
+      "n_points": 401,
+      "min_strain": -0.02,
+      "max_strain": 0.0,
+      "min_stress_MPa": -436.0000000000001,
+      "max_stress_MPa": 0.0,
+      "initial_secant_GPa": 199.99999999999997,
+      "reference_initial_tangent_GPa": 200.0,
+      "zero_stress_unloading_strains": [],
+      "strain_path_work_J_per_m3": 7920093.522689676,
+      "closed_strain_excursion_work": [],
+      "status": "NUMERICAL_MATERIAL_RESPONSE_ONLY_NOT_EXPERIMENTAL_VALIDATION",
+      "step_refinement_max_knot_difference_MPa": 0.0,
+      "step_refinement_relative_knot_difference": 0.0
+    },
+    "steel_cyclic": {
+      "test": "steel_cyclic",
+      "material": "steel",
+      "n_points": 901,
+      "min_strain": -0.01,
+      "max_strain": 0.01,
+      "min_stress_MPa": -393.62685041850693,
+      "max_stress_MPa": 405.9999984881715,
+      "initial_secant_GPa": 200.0,
+      "reference_initial_tangent_GPa": 200.0,
+      "zero_stress_unloading_strains": [
+        0.0028583515258389486,
+        -0.00282438011024966,
+        0.0029816230052125596,
+        -0.0029604603071886368,
+        0.007583803779042253,
+        -0.007513565184837452,
+        0.007568073378779863,
+        -0.007563665368458443
+      ],
+      "strain_path_work_J_per_m3": 25899668.72849901,
+      "closed_strain_excursion_work": [
+        {
+          "from_knot": 0,
+          "to_knot": 9,
+          "net_work_J_per_m3": 25899668.72849901,
+          "note": "Net path work; not exact dissipated energy if internal state changes"
+        },
+        {
+          "from_knot": 1,
+          "to_knot": 3,
+          "net_work_J_per_m3": 3431250.3702417114,
+          "note": "Net path work; not exact dissipated energy if internal state changes"
+        },
+        {
+          "from_knot": 2,
+          "to_knot": 4,
+          "net_work_J_per_m3": 3327418.339182418,
+          "note": "Net path work; not exact dissipated energy if internal state changes"
+        },
+        {
+          "from_knot": 5,
+          "to_knot": 7,
+          "net_work_J_per_m3": 9595096.02007689,
+          "note": "Net path work; not exact dissipated energy if internal state changes"
+        },
+        {
+          "from_knot": 6,
+          "to_knot": 8,
+          "net_work_J_per_m3": 9442068.071511552,
+          "note": "Net path work; not exact dissipated energy if internal state changes"
+        }
+      ],
+      "status": "NUMERICAL_MATERIAL_RESPONSE_ONLY_NOT_EXPERIMENTAL_VALIDATION",
+      "step_refinement_max_knot_difference_MPa": 0.0,
+      "step_refinement_relative_knot_difference": 0.0
+    }
+  }
+}

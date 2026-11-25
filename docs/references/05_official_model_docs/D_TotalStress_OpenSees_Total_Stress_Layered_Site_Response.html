@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Site Response Analysis of a Layered Soil Column (Total Stress Analysis) - OpenSeesWiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"avLkD4GagyjOz29KAHYdTgAAAE4","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)","wgTitle":"Site Response Analysis of a Layered Soil Column (Total Stress Analysis)","wgCurRevisionId":8573,"wgRevisionId":8573,"wgArticleId":1238,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)","wgRelevantArticleId":1238,
+"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","user.styles":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready"};RLPAGEMODULES=["ext.treeandmenu","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/wiki/load.php?lang=en&amp;modules=skins.vector.styles.legacy&amp;only=styles&amp;skin=vector">
+<script async="" src="/wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/wiki/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.41.0">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1000">
+<link rel="icon" href="/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/opensearch_desc.php" title="OpenSeesWiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://opensees.ist.berkeley.edu/wiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="OpenSeesWiki Atom feed" href="/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ9N5Q2MXT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XZ9N5Q2MXT');
+</script>
+</head>
+<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Site_Response_Analysis_of_a_Layered_Soil_Column_Total_Stress_Analysis rootpage-Site_Response_Analysis_of_a_Layered_Soil_Column_Total_Stress_Analysis skin-vector action-view"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Site Response Analysis of a Layered Soil Column (Total Stress Analysis)</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From OpenSeesWiki</div>
+		<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Example prepared by: <span style="color:blue"> Christopher McGann and Pedro Arduino, University of Washington</span>
+</p>
+<hr />
+<p><a href="/wiki/index.php?title=Examples" title="Examples"> Return to OpenSees Examples Page</a>
+</p><p>This article describes the OpenSees implementation of a site response analysis a soil deposit located above an elastic half-space using total stress analysis.  A single soil column is modeled in two-dimensions and is subject to an earthquake ground motion in a manner which accounts for the finite rigidity of the underlying medium.
+</p><p>Provided with this article are three input files which execute this analysis in different ways.
+</p>
+<ul><li><a href="/wiki/index.php?title=FreeFieldSingle.tcl" title="FreeFieldSingle.tcl">freeFieldSingle.tcl</a> has a single soil layer for simplicity and is intended to outline the basic analysis approach.</li>
+<li><a href="/wiki/index.php?title=FreeFieldIndepend.tcl" title="FreeFieldIndepend.tcl">freeFieldIndepend.tcl</a> and <a href="/wiki/index.php?title=FreeFieldDepend.tcl" title="FreeFieldDepend.tcl">freeFieldDepend.tcl</a> are two approaches to a comparison study with the 1D wave propagation analysis tools ProShake and ProShakeNL (<a rel="nofollow" class="external free" href="http://www.proshake.com/">http://www.proshake.com/</a>).  Each approach breaks the soil up into a series of sublayers, however, one uses the <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1558.htm">PressureIndependMultiYield</a> material with user-generated modulus reduction (G/Gmax) curves while the other uses the <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1550.htm">PressureDependMultiYield</a> material with automatically-generated G/Gmax curves.</li></ul>
+<p>Also included is the velocity time history of the selected ground motion, velocityHistory.out.  This file is required for the analysis.
+</p><p>Several helpful files are included as well:
+</p>
+<ul><li>GilroyNo1EW.out, the acceleration time history for the selected ground motion, as downloaded from the <a rel="nofollow" class="external text" href="http://peer.berkeley.edu/nga/">Peer NGA strong motion database</a>, with the header information removed.</li>
+<li>processMotion.m, a Matlab script which reshapes the GilroyNo1EW.out acceleration history into a column vector, then integrates this using the trapezoidal method to obtain the velocity time history needed for the site response analysis.</li>
+<li>accelPlot.m and respSpectra.m, Matlab scripts which produce the verification plots included in this article from the recorded results.</li></ul>
+<p>Download them all in a compressed file: <a href="/wiki/images/c/cf/SiteResponseAnalysis.zip" class="internal" title="SiteResponseAnalysis.zip">siteResponseAnalysis.zip</a>
+</p><p>To run this example, the user must download the one of the input files and the velocity time history file, velocityHistory.out, and place them in a single directory.  Once this has been done, the user can then run the analysis.  The <a rel="nofollow" class="external text" href="http://www.mathworks.com">Matlab</a> scripts and the acceleration time history files are not essential to the analysis, however, they are provided to demonstrate how an alternative acceleration time history can be converted into the analysis and how certain plots can be obtained from the recorded output.
+</p><p>A large set of similar examples has been developed at the University of California at San Diego.  They are available at <a rel="nofollow" class="external free" href="http://cyclic.ucsd.edu/opensees">http://cyclic.ucsd.edu/opensees</a>.  These examples utilize a wide variety of element and material formulations, as well as different boundary and loading conditions than those used in this example.  The user is referred to these examples for further information on how to set up a site response model in OpenSees.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Model_Description"><span class="tocnumber">1</span> <span class="toctext">Model Description</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Soil_Profile_Geometry"><span class="tocnumber">1.1</span> <span class="toctext">Soil Profile Geometry</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Mesh_Geometry"><span class="tocnumber">1.2</span> <span class="toctext">Mesh Geometry</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Soil_Nodes"><span class="tocnumber">1.3</span> <span class="toctext">Soil Nodes</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Dashpot_Nodes"><span class="tocnumber">1.4</span> <span class="toctext">Dashpot Nodes</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Boundary_Conditions_and_Equal_Degrees-of-Freedom"><span class="tocnumber">1.5</span> <span class="toctext">Boundary Conditions and Equal Degrees-of-Freedom</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Soil_Material_Properties_and_Objects"><span class="tocnumber">1.6</span> <span class="toctext">Soil Material Properties and Objects</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Soil_Elements"><span class="tocnumber">1.7</span> <span class="toctext">Soil Elements</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Dashpot_Material_and_Element"><span class="tocnumber">1.8</span> <span class="toctext">Dashpot Material and Element</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Recorders"><span class="tocnumber">1.9</span> <span class="toctext">Recorders</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Gravity_Loading_and_Analysis"><span class="tocnumber">1.10</span> <span class="toctext">Gravity Loading and Analysis</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Horizontal_Loading_and_Analysis"><span class="tocnumber">1.11</span> <span class="toctext">Horizontal Loading and Analysis</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Representative_Results"><span class="tocnumber">2</span> <span class="toctext">Representative Results</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Comparison_of_Results_with_One-Dimensional_Analysis_Tools"><span class="tocnumber">3</span> <span class="toctext">Comparison of Results with One-Dimensional Analysis Tools</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Model_Description">Model Description</span></h2>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:SiteRespModel.png" class="mw-file-description"><img src="/wiki/images/c/cf/SiteRespModel.png" decoding="async" width="521" height="495" class="mw-file-element" /></a><figcaption>Fig 1.  Schematic representation of the site response model.  Node numbers in blue, element numbers in red.</figcaption></figure>
+<p>In this article, the site response analyses are performed for soil deposits which are underlain by an elastic half-space, which simulates the finite rigidity an underlying medium such as bedrock.  It is assumed that there is no groundwater, therefore, total stress analysis is used in this example.  The soil is modeled in two-dimensions with two degrees-of-freedom using the plane strain formulation of the <a href="/wiki/index.php?title=Quad_Element" title="Quad Element">quad element</a> element.  The provided input files consider only a single layer of soil, however, the files <a href="/wiki/index.php?title=FreeFieldIndepend.tcl" title="FreeFieldIndepend.tcl">freeFieldIndepend.tcl</a> and <a href="/wiki/index.php?title=FreeFieldDepend.tcl" title="FreeFieldDepend.tcl">freeFieldDepend.tcl</a>, consider a soil profile which has a parabolically-increasing shear wave velocity profile with depth.  This is accomplished using sublayers, thus, the use of multiple soil layers in an OpenSees site response analysis is demonstrated.  A general schematic of the model is shown in Fig. 1.  In this example, the horizontal direction is the first degree-of-freedom and the vertical is the second.  The soil node, element, and layer numbering schemes all begin at the bottom. 
+</p><p><b>Note:</b> The remainder of the main model description in this article, when not otherwise specified, refers to the simpler of the three provided input files, <a href="/wiki/index.php?title=FreeFieldSingle.tcl" title="FreeFieldSingle.tcl">freeFieldSingle.tcl</a>, with the intention of highlighting the main site response analysis details.  The other input files are essentially the same, with the main difference being the complexity introduced by the inclusion of multiple layers.  The more complex files are explained later in this article during the discussion of the comparison study.
+</p><p>To account for the finite rigidity of the underlying half-space, a Lysmer-Kuhlemeyer (1969) dashpot is incorporated at the base of the soil column using a <a href="/wiki/index.php?title=ZeroLength_Element" title="ZeroLength Element">zeroLength element</a> and the <a href="/wiki/index.php?title=Viscous_Material" title="Viscous Material"> viscous uniaxial material</a>.  The Lysmer-Kuhlemeyer (1969) dashpot is assigned a dashpot coefficient equal to the product of the mass density and shear wave velocity of the underlying layer with the area of the base of the soil column.  In this example, the properties of a bedrock layer are used for the half-space.  The soil column is excited at the base by a horizontal force time history which is proportional to the known velocity time history of the ground motion.  Further information on this modeling approach can be found in Joyner and Chen (1975) and Lysmer (1978) among others.
+</p><p>The horizontal force time history is applied as a <a href="/wiki/index.php?title=Path_TimeSeries" title="Path TimeSeries">Path TimeSeries</a> object using the file, velocityHistory.out.  The force history is obtained by multiplying the known velocity time history by a constant factor set as the product of the area of the base of the soil column (width x thickness) with the mass density and shear wave velocity of the underlying layer.  The area of the soil column is included to ensure proportional loading for any desired horizontal element size.  The provided Matlab script, processMotion.m, shows how the velocity time history was obtained from the selected acceleration time history.  
+</p>
+<h3><span class="mw-headline" id="Soil_Profile_Geometry">Soil Profile Geometry</span></h3>
+<p>For the simple soil profile considered in the file <a href="/wiki/index.php?title=FreeFieldSingle.tcl" title="FreeFieldSingle.tcl">freeFieldSingle.tcl</a>, the soil profile geometry is controlled entirely by the thickness of the soil deposit.  In this example, this value is set at 40 meters.  
+</p><p>In the multi-layered soil profiles in the other input files, the soil profile geometry is controlled by a specified number of layers and the thicknesses of each individual soil layer.  In this case the overall thickness of the soil profile is the sum of the layer thicknesses.
+</p>
+<h3><span class="mw-headline" id="Mesh_Geometry">Mesh Geometry</span></h3>
+<p>The geometry of the mesh is based upon the concept of resolving the propagation of the shear waves at or below a particular frequency by ensuring that an adequate number of elements fit within the wavelength of the chosen shear wave.  This ensures that the mesh is refined enough such that the desired aspects of the propagating waves are well captured in the analysis.
+</p><p>This is accomplished in the model by specifying the highest frequency which the user wishes to be well resolved and the number of elements that the user desires to be in one wavelength of a shear wave propagating at this frequency.  The wavelength used to define the mesh geometry is determined by dividing the minimum shear wave velocity of the soil profile by the specified cutoff frequency.  In the provided examples there are either 8 or 10 elements per wavelength.  The largest value possible value for the specified frequency is the sampling frequency of the ground motion.  The provided examples use 100 Hz for the cutoff frequency.
+</p><p>The horizontal size of the elements is set to be the minimum vertical element size in the soil column.  The number of nodes and the total number of elements are computed automatically.  The number of elements is based on the computed element size and the thickness of the soil deposit.  For <i>n</i> total elements, there are <i>2n + 1</i> total nodes.
+</p>
+<h3><span class="mw-headline" id="Soil_Nodes">Soil Nodes</span></h3>
+<p>The soil nodes are created automatically from the input geometry and meshing information.  As shown in Fig. 1, the node numbering scheme is left-to-right, top-to-bottom.  Nodes with even numbers fall on the y-axis, and the odd-numbered nodes are spaced horizontally by the computed horizontal element size.
+</p>
+<h3><span class="mw-headline" id="Dashpot_Nodes">Dashpot Nodes</span></h3>
+<p>A single <a href="/wiki/index.php?title=ZeroLength_Element" title="ZeroLength Element">zeroLength element</a> is used to define the Lysmer-Kuhlemeyer (1969) dashpot, therefore, only two nodes are required.  These nodes are arbitrarily assigned numbers 2000 and 2001.  If the user has modified the meshing information such that there are more than 2000 nodes in the soil column, the dashpot node numbers will need to be changed.
+</p>
+<h3><span class="mw-headline" id="Boundary_Conditions_and_Equal_Degrees-of-Freedom">Boundary Conditions and Equal Degrees-of-Freedom</span></h3>
+<p>The nodes at the base of the column are fixed against displacements in the y-direction in accordance with the assumption that the soil layers are underlain by bedrock.  The remaining soil nodes are then tied together using the <a href="/wiki/index.php?title=EqualDOF_command" title="EqualDOF command">equalDOF command</a> in order to achieve a simple shear deformation pattern.  This is done by declaring equalDOF for every pair of nodes which share the same y-coordinate.  
+</p><p>One of the dashpot nodes is fully fixed (node 2000), while the other is fixed only against displacements in the y-direction (node 2001).  To incorporate the dashpot element into the total model, equalDOF is again used, this time linking the horizontal degrees-of-freedom of the partially fixed dashpot node and one of the nodes at the base of the soil column.
+</p>
+<h3><span class="mw-headline" id="Soil_Material_Properties_and_Objects">Soil Material Properties and Objects</span></h3>
+<p>A series of material properties are required to define the constitutive behavior of the soil and the underlying elastic half-space.  The main soil properties are the mass density, the shear wave velocity, and Poisson's ratio.  From these, the elastic, shear, and bulk moduli are computed.  Poisson's ratio is set as zero in these examples for the purposes of emulating a one-dimensional analysis.  With Poisson's ratio at zero, no vertical accelerations are generated.  
+</p><p>The remaining soil properties correspond to the particular constitutive model selected in each analysis, either <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1550.htm">PressureDependMultiYield</a> or <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1558.htm">PressureIndependMultiYield</a>.  For these examples, these properties are largely based on the recommendations detailed on the <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1550.htm">PressureDependMultiYield</a> or <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1558.htm">PressureIndependMultiYield</a> pages of the OpenSees command manual.
+</p><p>For the case of multiple layers, one material object is created for each layer using the material properties defined in the input file.  With the exception of a few global properties, each layer is given a separate set of properties.
+</p><p>During the creation of these examples is was noted that using too few yield surfaces in these nested surface models, or using poorly spaced user-generated surfaces, can cause high frequency shaking to develop in the model.  This appears to be due to the way in which these constitutive models work.  There is not one consistent tangent over the length of the backbone curve, instead, a smooth backbone curve is approximated using a series of linear segments.  If there are too few, or poorly spaced, yield surfaces, a dramatic change in stiffness can occur as the stress path crosses a particular yield surface, resulting in a shock which is manifested as the observed high frequency shaking.  This behavior can be alleviated by using a larger number of yield surfaces, resulting in a smoother approximation to the backbone curve of the soil.  Care should be taken, however, depending upon the intentions of the analysis.  As the number of surfaces increases, the time needed to complete the analysis also increases, and in the end, the inclusion of this high frequency shaking does not significantly alter the results of the simulation.  It is recommended that the user keep these ideas in mind when selecting the number of surfaces to use in a particular analysis.
+</p>
+<h3><span class="mw-headline" id="Soil_Elements">Soil Elements</span></h3>
+<p>Four-node quad elements are used to model the soil using the plane strain formulation of the <a href="/wiki/index.php?title=Quad_Element" title="Quad Element">quad element</a>.  The element connectivity uses a counterclockwise pattern for the previously-described node numbering scheme (see Fig. 1). The soil elements in each layer are assigned the material tag of the material object corresponding to that layer.  A unit thickness is used in all examples.  The self-weight of the soil is considered as a body force acting on each element.  The body force is set as the unit weight of the soil in each layer, which is determined from the respective mass density input value.
+</p>
+<h3><span class="mw-headline" id="Dashpot_Material_and_Element">Dashpot Material and Element</span></h3>
+<p>The <a href="/wiki/index.php?title=Viscous_Material" title="Viscous Material"> viscous uniaxial material</a> is used to define the Lysmer-Kuhlemeyer (1969) dashpot.  This material model requires a single input, the dashpot coefficient, <i>c</i>.  Following the method of Joyner and Chen (1975), the dashpot coefficient is defined as the product of the mass density and shear wave velocity of the underlying medium, which, in this example, is assumed to have the properties of bedrock.  The dashpot coefficient must also include the area of the base of the soil column to maintain proportional results for any horizontal element size.  Since the elements are created with unit thickness, this area is simply the computed horizontal element size.
+</p><p>A <a href="/wiki/index.php?title=ZeroLength_Element" title="ZeroLength Element">zeroLength element</a> is used for the Lysmer-Kuhlemeyer (1969) dashpot.  This element connects the two previously-defined dashpot nodes and is assigned the material tag of the Viscous uniaxial material object in the first degree-of-freedom (horizontal direction).
+</p>
+<h3><span class="mw-headline" id="Recorders">Recorders</span></h3>
+<p>The <a href="/wiki/index.php?title=Recorder_Command" title="Recorder Command">recorders</a> defined for this example document the following items:
+</p>
+<ul><li>the nodal displacements, velocities, and accelerations in both degrees-of-freedom</li>
+<li>the stress and strain response at each Gauss point in each element</li></ul>
+<p>The recorded nodal values are the true values for each parameter, not relative values as with the uniformExcitation command.  
+</p><p>Two sets of recorders are included to capture the response of the soil during the gravity analysis (which is sometimes useful to ensure proper model generation) and the response of the soil during the application of the ground motion.  These files are differentiated by a naming scheme in which the records corresponding to the gravity analysis are named 'Gacceleration', 'Gstress', etc ...
+</p>
+<h3><span class="mw-headline" id="Gravity_Loading_and_Analysis">Gravity Loading and Analysis</span></h3>
+<p>The gravity analysis in this example is conducted as a <a href="/wiki/index.php?title=Analysis_Command" title="Analysis Command">transient analysis</a> with very large time steps, thus simulating a static analysis while avoiding the conflicts which may occur when mixing static and transient analyses.  The self-weight of the soil elements provides the loads, therefore, no loading object is required.  Gravity is applied for ten steps with entirely elastic constitutive behavior.  This allows the material objects to update various parameters to account for confining pressure.  Once these steps have converged, the material objects are updated using the <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1559.htm">updateMaterialStage command</a> to consider elastoplastic behavior, and the gravity analysis is repeated for 40 steps.
+</p>
+<h3><span class="mw-headline" id="Horizontal_Loading_and_Analysis">Horizontal Loading and Analysis</span></h3>
+<p>Using the method of Joyner and Chen (1975), dynamic excitation is applied as a force time history to the base of the soil column, at the node which shares equal degrees-of-freedom with the Lysmer-Kuhlemeyer (1969) dashpot.  This force history is obtained by multiplying the velocity time history of the recorded ground motion by the mass density and shear wave velocity of the underlying bedrock layer and the area of the base of the soil column (the horizontal element size in these examples).  This technique considers the finite rigidity of the underlying layer by allowing energy to be radiated back into the underlying material.
+</p><p>The force history is applied to the model as a <a href="/wiki/index.php?title=Path_TimeSeries" title="Path TimeSeries">Path TimeSeries</a> object using a <a href="/wiki/index.php?title=Plain_Pattern" title="Plain Pattern">Plain load pattern</a> object.  The actual force applied to the node in each time step is the product of the load factor indicated in the pattern object (1.0 in this example), the additional load factor included in the timeSeries object, and the value found in the file, velocityHistory.out, at that time step.  The load factor included in the timeSeries object is used to create a force history from the velocity history found in the namesake file.  
+</p><p>The transient analysis is conducted with the <a href="/wiki/index.php?title=Newmark_Method" title="Newmark Method"> Newmark integrator</a> using the gamma and beta coefficients defined near the top of the input file.  These values are set at 0.5 and 0.25, respectively to ensure there is no numerical damping in the analysis. 
+</p><p>Since these models consider elastoplastic soil behavior, there is inherent hysteretic damping which occurs, however, a small amount of Rayleigh damping is used so there is still some damping at low strain values.  The level of Rayleigh damping is controlled by the damping ratio and the circular frequencies of two modes of vibration.  This type of approach is discussed in most dynamic analysis texts, such as Chopra (2007).
+</p><p>The time step used in the analysis is selected to meet stability considerations using the Courant-Friedrich-Lewy (CFL) condition (discussed well by LeVeque, 2007).  Meeting the requirements of this condition ensures that the time step is small enough for stability given the maximum shear wave velocity and the minimum vertical element size in the model.  The example files are set up such that the analysis time step and the corresponding number of steps are automatically generated to satisfy this condition.  If the required time step is larger than the time step increment found in the recorded ground motion, the value specified in the ground motion is used.  If the user alters the shear wave velocity profile such that the lowest layer does not have the highest shear wave velocity, then the value of $vsMax used in this routine will need to be updated.
+</p>
+<h2><span class="mw-headline" id="Representative_Results">Representative Results</span></h2>
+<p>Several plots displaying results obtained from running the example site response analysis from the file, <a href="/wiki/index.php?title=FreeFieldSingle.tcl" title="FreeFieldSingle.tcl">freeFieldSingle.tcl</a>, are provided for use as a means of verification.  These plots were generated using the Matlab scripts accelPlot.m, and respSpectra.m, which are available for download with the rest of the files in a compressed folder <a href="/wiki/images/c/cf/SiteResponseAnalysis.zip" class="internal" title="SiteResponseAnalysis.zip">here</a>.  
+</p><p>Fig. 2 shows the acceleration response at the ground surface (top of the soil column).  This figure was created by simply plotting the recorded response at each time increment.  The m-file, accelPlot.m was used to create the figure.  
+</p><p>Fig. 3 shows the computed acceleration, velocity, and displacement response spectra at the ground surface.  The figure was created using the m-files, accelPlot.m and respSpectra.m.
+</p>
+<figure class="mw-halign-left" typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:SurfAccelSingle.png" class="mw-file-description"><img src="/wiki/images/4/4b/SurfAccelSingle.png" decoding="async" width="386" height="302" class="mw-file-element" /></a><figcaption>Fig 2.  Acceleration time history response of at the ground surface of the soil column.</figcaption></figure>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:LogSpectraSingle.png" class="mw-file-description"><img src="/wiki/images/6/60/LogSpectraSingle.png" decoding="async" width="383" height="302" class="mw-file-element" /></a><figcaption>Fig 3.  Acceleration, velocity, and displacement response spectra at the ground surface of the soil column.</figcaption></figure>
+<p><br style="clear: both" />
+</p>
+<h2><span class="mw-headline" id="Comparison_of_Results_with_One-Dimensional_Analysis_Tools">Comparison of Results with One-Dimensional Analysis Tools</span></h2>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:SurfAccelIndepend.png" class="mw-file-description"><img src="/wiki/images/8/82/SurfAccelIndepend.png" decoding="async" width="391" height="302" class="mw-file-element" /></a><figcaption>Fig 4.  Acceleration time history response of at the ground surface of the soil column for freeFieldIndepend.tcl analysis as compared to ProShake and ProShakeNL results.</figcaption></figure>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:LogSpectraIndepend.png" class="mw-file-description"><img src="/wiki/images/f/f7/LogSpectraIndepend.png" decoding="async" width="384" height="302" class="mw-file-element" /></a><figcaption>Fig 5.  Acceleration, velocity, and displacement response spectra at the ground surface of the soil column  for freeFieldIndepend.tcl analysis as compared to ProShake and ProShakeNL results.</figcaption></figure>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:SurfAccelDepend.png" class="mw-file-description"><img src="/wiki/images/8/81/SurfAccelDepend.png" decoding="async" width="390" height="302" class="mw-file-element" /></a><figcaption>Fig 6.  Acceleration time history response of at the ground surface of the soil column for freeFieldDepend.tcl analysis as compared to ProShake and ProShakeNL results.</figcaption></figure>
+<figure typeof="mw:File/Frame"><a href="/wiki/index.php?title=File:LogSpectraDepend.png" class="mw-file-description"><img src="/wiki/images/9/96/LogSpectraDepend.png" decoding="async" width="381" height="302" class="mw-file-element" /></a><figcaption>Fig 7.  Acceleration, velocity, and displacement response spectra at the ground surface of the soil column  for freeFieldDepend.tcl analysis as compared to ProShake and ProShakeNL results.</figcaption></figure>
+<p>To validate the site response analysis framework used in these examples, a comparison study was accomplished using the one-dimensional, equivalent linear site response analysis program <a rel="nofollow" class="external text" href="http://www.proshake.com/">ProShake</a> and the one-dimensional, nonlinear site response analysis program ProShakeNL.  The input files <a href="/wiki/index.php?title=FreeFieldIndepend.tcl" title="FreeFieldIndepend.tcl">freeFieldIndepend.tcl</a> and <a href="/wiki/index.php?title=FreeFieldDepend.tcl" title="FreeFieldDepend.tcl">freeFieldDepend.tcl</a> were used for this purpose.
+</p><p>In the comparison study, a sand deposit having a parabolically-increasing shear wave velocity profile with depth was selected.  This profile is implemented in OpenSees using 30 material layers, each having a specified shear wave velocity, which is then used to compute appropriate values for the shear and bulk moduli.  It is important to note that the pressure dependency exponent is set to zero so the input values of shear and bulk modulus for each layer are not updated based on the overburden stress in each element.
+</p><p>The layering scheme was set up to match that used in the 1D analyses, with each layer having appropriate material parameters, and all analyses used the same ground motion applied to the base of the soil deposit.  The 1D analyses include an infinite elastic half-space below the soil deposit, and these layers were assigned properties corresponding the bedrock properties used in the OpenSees analyses.  
+</p><p>The two example input files represent two separate approaches to this comparison study.  In the file, <a href="/wiki/index.php?title=FreeFieldIndepend.tcl" title="FreeFieldIndepend.tcl">freeFieldIndepend.tcl</a>, the soil is defined using the <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1558.htm">PressureIndependMultiYield</a> nDMaterial, and the user-generated modulus reduction (G/Gmax) option is used, with the selected G/Gmax curves matching those used in the Shake analyses.  Using this approach, the strength of each soil layer is defined entirely by the input G/Gmax data and the shear modulus value assigned to that layer.  Parameters such as friction angle and cohesion are not used for this purpose.  Though the material is called 'pressure independent', it is important to note that pressure dependency was manually introduced into the model by specifying the shear wave velocity of each layer.  If it is also assumed that the confining pressure will not dramatically change during the excitation, then this approach becomes even more acceptable, especially in a free-field analysis where 2D elements are used to mimic a 1D analysis.
+</p><p>Figs. 4 and 5 show the surface acceleration histories and the response spectra at the surface, respectively, obtained from the analysis using the file, <a href="/wiki/index.php?title=FreeFieldIndepend.tcl" title="FreeFieldIndepend.tcl">freeFieldIndepend.tcl</a>, alongside the results obtained from ProShake and ProShakeNL.  As shown, the OpenSees analysis correlates well with the results obtained using the nonlinear 1D analysis (ProShakeNL).  It is interesting to note the differences between the equivalent-linear approach of ProShake and the nonlinear approaches used by OpenSees and ProShakeNL.  As shown in Fig. 4, during the low amplitude shaking near the beginning of the motion, the ProShake results are significantly different from the others.  In the nonlinear analyses, during this initial low amplitude shaking the response is elastic.  Plastic behavior does not occur until the stronger shaking which occurs later in the motion.  In the equivalent-linear approach, this type of response cannot be captured for a strong motion such as that used in this example.  If the largest shaking is enough to produce plastic response, then the soil acts as if it is plastic during the entire motion.  One way to use an equivalent-linear analysis tool to check nonlinear results is to use motions in which the amplitudes are scaled down.
+</p><p>The second comparison example, found in the file, <a href="/wiki/index.php?title=FreeFieldDepend.tcl" title="FreeFieldDepend.tcl">freeFieldDepend.tcl</a>, represents a more typical approach to a site response analysis of a sand profile in OpenSees.  The <a rel="nofollow" class="external text" href="http://opensees.berkeley.edu/OpenSees/manuals/usermanual/1550.htm">PressureDependMultiYield</a> nDMaterial is used, with soil properties corresponding to those used in the two Shake analyses, and automatically-generated yield surfaces (G/Gmax) curves.  In this case, the constitutive model used the specified friction angle to define the strength of each layer, however, in order to maintain a shear wave velocity profile which corresponds to the other analyses, the pressure dependency exponent is set to zero and the shear wave values are input manually for each layer.  If this was not a desired aspect of the analysis, a single material could be used along with a non-zero pressure dependency exponent to produce a pressure-dependent stiffness profile.
+</p><p>Figs. 6 and 7 show the surface acceleration histories and the response spectra at the surface, respectively, obtained from the analysis using the file, <a href="/wiki/index.php?title=FreeFieldDepend.tcl" title="FreeFieldDepend.tcl">freeFieldDepend.tcl</a>, alongside the results obtained from ProShake and ProShakeNL.  As shown, the OpenSees analysis correlates well with the results obtained using ProShakeNL during lower amplitude shaking, though it deviates during the stronger shaking portions of the motion.  The peak ground acceleration returned using this approach correlates fairly well with the equivalent-linear results, though this may be coincidental to the amount of Rayleigh damping used in the analysis.
+</p><p>This comparison study has demonstrated that a site response analysis conducted in OpenSees using the approaches detailed in these examples is capable of producing results which correlate well with commonly used site response analysis approaches.  The approach that is selected should depend upon the objectives of the particular analysis in which they will be used.  If the goal of the analysis is to emulate results obtained using a 1D analysis tool, the approach used in <a href="/wiki/index.php?title=FreeFieldIndepend.tcl" title="FreeFieldIndepend.tcl">freeFieldIndepend.tcl</a> is recommended, however, it is noted that care should be taken when attempting to use this approach in a two-dimensional analysis (i.e. more than just a single soil column).  For 2D analyses, it is often easier and more realistic to define materials with pressure dependent strength, such as sands, using and approach similar to that in <a href="/wiki/index.php?title=FreeFieldDepend.tcl" title="FreeFieldDepend.tcl">freeFieldDepend.tcl</a>.
+</p>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<ol><li>Chopra, A.K. (2007). <i>Dynamics of Structures,</i> Third Edition,  Pearson Prentice Hall.</li>
+<li>Joyner, W.B. and Chen, A.T.F. (1975). "Calculation of nonlinear ground response in earthquakes," <i>Bulletin of the Seismological Society of America</i>, Vol. 65, No. 5, pp. 1315-1336, October 1975.</li>
+<li>LeVeque, R.J. (2007). <i>Finite Difference Methods for Ordinary and Partial Differential Equations,</i> Society for Industrial and Applied Mathematics, Philadelphia.</li>
+<li>Lysmer, J. (1978). "Analytical procedures in soil dynamics," Report No. UCB/EERC-78/29, University of California at Berkeley, Earthquake Engineering Research Center, Richmond, CA.</li>
+<li>Lysmer, J. and Kuhlemeyer, A.M. (1969). "Finite dynamic model for infinite media," <i>Journal of the Engineering Mechanics Division, ASCE</i>, <b>95</b>, 859-877.</li></ol>
+<p><a href="/wiki/index.php?title=Examples" title="Examples"> Return to OpenSees Examples Page</a>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20261110032923
+Cache expiry: 86400
+Reduced expiry: false
+Complications: [show‐toc]
+CPU time usage: 0.020 seconds
+Real time usage: 0.022 seconds
+Preprocessor visited node count: 87/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/100
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+
+<!-- Saved in parser cache with key mediawiki-mediawiki:pcache:idhash:1238-0!canonical and timestamp 20261110032923 and revision id 8573. Rendering was triggered because: page-view
+ -->
+</div>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://opensees.ist.berkeley.edu/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)&amp;oldid=8573">https://opensees.ist.berkeley.edu/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)&amp;oldid=8573</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="vector-menu mw-portlet mw-portlet-personal vector-user-menu-legacy" aria-labelledby="p-personal-label" role="navigation"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-login" class="mw-list-item"><a href="/wiki/index.php?title=Special:UserLogin&amp;returnto=Site+Response+Analysis+of+a+Layered+Soil+Column+%28Total+Stress+Analysis%29" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="vector-menu mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-namespaces-label" role="navigation"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="new mw-list-item"><a href="/wiki/index.php?title=Talk:Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t"><span>Discussion</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	/>
+	<label
+		id="p-variants-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="vector-menu mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy" aria-labelledby="p-views-label" role="navigation"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected mw-list-item"><a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li><li id="ca-history" class="mw-list-item"><a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	/>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<h3 >Search</h3>
+	<form action="/wiki/index.php" id="searchform" class="vector-search-box-form">
+		<div id="simpleSearch"
+			class="vector-search-box-inner"
+			 data-search-loc="header-navigation">
+			<input class="vector-search-box-input"
+				 type="search" name="search" placeholder="Search OpenSeesWiki" aria-label="Search OpenSeesWiki" autocapitalize="sentences" title="Search OpenSeesWiki [f]" accesskey="f" id="searchInput"
+			>
+			<input type="hidden" name="title" value="Special:Search">
+			<input id="mw-searchButton"
+				 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+			<input id="searchButton"
+				 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel" class="vector-legacy-sidebar">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/index.php?title=Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation"  >
+	<h3
+		id="p-navigation-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-OpenSees-Home" class="mw-list-item"><a href="http://opensees.berkeley.edu" rel="nofollow"><span>OpenSees Home</span></a></li><li id="n-Message-Board" class="mw-list-item"><a href="http://opensees.berkeley.edu/index.php" rel="nofollow"><span>Message Board</span></a></li><li id="n-OpenSees-Wiki" class="mw-list-item"><a href="http://opensees.berkeley.edu/wiki/index.php" rel="nofollow"><span>OpenSees Wiki</span></a></li><li id="n-User-Documetation" class="mw-list-item"><a href="http://opensees.berkeley.edu/wiki/index.php/OpenSees_User" rel="nofollow"><span>User Documetation</span></a></li><li id="n-Download-Page" class="mw-list-item"><a href="http://opensees.berkeley.edu/OpenSees/user/download.php" rel="nofollow"><span>Download Page</span></a></li><li id="n-Source-Code" class="mw-list-item"><a href="http://opensees.berkeley.edu/WebSVN/listing.php?repname=OpenSees&amp;path=%2Ftrunk%2FSRC" rel="nofollow"><span>Source Code</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-tb" class="vector-menu mw-portlet mw-portlet-tb vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/index.php?title=Special:WhatLinksHere/Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/index.php?title=Special:RecentChangesLinked/Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/index.php?title=Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)&amp;oldid=8573" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/wiki/index.php?title=Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)&amp;action=info" title="More information about this page"><span>Page information</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 24 March 2011, at 18:39.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="/wiki/index.php?title=OpenSeesWiki:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/index.php?title=OpenSeesWiki:About">About OpenSeesWiki</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/index.php?title=OpenSeesWiki:General_disclaimer">Disclaimers</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":70,"wgPageParseReport":{"limitreport":{"cputime":"0.020","walltime":"0.022","ppvisitednodes":{"value":87,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20261110032923","ttl":86400,"transientcontent":false}}});});</script>
+</body>
+</html>

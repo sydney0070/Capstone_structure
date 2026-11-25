@@ -1,0 +1,85 @@
+{
+  "id": "surface_dp_trial",
+  "group": "first_comparison",
+  "layer": "local_surface_0_1cm",
+  "family": "DruckerPrager",
+  "parameters": {
+    "E_Pa": 7500000.0,
+    "nu": 0.22,
+    "G_Pa": 3073770.4918032787,
+    "K_Pa": 4464285.714285714,
+    "density_kg_m3": 1200.0,
+    "phi_deg": 30.0,
+    "c_Pa": 0.0,
+    "psi_deg": 0.0,
+    "hardening": 0.0
+  },
+  "evidence": {
+    "E_Pa": {
+      "source": "Kenda2020",
+      "locator": "Table 1, surface regolith",
+      "kind": "transferred",
+      "note": "Expected effective surface properties, not dust-only measurements"
+    },
+    "nu": {
+      "source": "Kenda2020",
+      "locator": "Table 1, surface regolith",
+      "kind": "transferred",
+      "note": "Expected effective surface properties, not dust-only measurements"
+    },
+    "density_kg_m3": {
+      "source": "Spohn2022",
+      "locator": "Section 6.7, Figure 20",
+      "kind": "inferred",
+      "note": "Approximate loose surface mixture density"
+    },
+    "G_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "K_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "phi_deg": {
+      "source": "specimen_assumption",
+      "locator": "unbonded granular sensitivity",
+      "kind": "assumed",
+      "note": "c=0 and phi are trial envelope choices; no layer-specific shear test"
+    },
+    "c_Pa": {
+      "source": "specimen_assumption",
+      "locator": "unbonded granular sensitivity",
+      "kind": "assumed",
+      "note": "c=0 and phi are trial envelope choices; no layer-specific shear test"
+    },
+    "psi_deg": {
+      "source": "specimen_assumption",
+      "locator": "non-associated flow",
+      "kind": "assumed",
+      "note": "Zero dilation; not measured"
+    },
+    "hardening": {
+      "source": "specimen_assumption",
+      "locator": "perfect plasticity",
+      "kind": "assumed",
+      "note": "No measured hardening/softening curve"
+    }
+  },
+  "mars_calibrated": false,
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "status": "SOURCE_BASED_INITIAL_TRIAL",
+  "notes": [
+    "Unit cube is a material test, not the actual thickness of this geological unit.",
+    "No selfweight; confinement is an imposed laboratory test condition."
+  ]
+}

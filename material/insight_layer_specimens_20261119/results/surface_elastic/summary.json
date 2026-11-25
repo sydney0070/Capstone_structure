@@ -1,0 +1,56 @@
+{
+  "id": "surface_elastic",
+  "family": "ElasticIsotropic",
+  "status": "SOURCE_BASED_INITIAL_TRIAL",
+  "mars_calibrated": false,
+  "tests": [
+    {
+      "test": "triaxial_load_unload",
+      "pressure_Pa": 5000.0,
+      "initial_E_Pa": 7500000.000000012,
+      "expected_E_Pa": 7500000.0,
+      "confinement_max_error_Pa": 3.637978807091713e-12,
+      "force_balance_max_error_N": 1.5916157281026244e-12,
+      "final_strain": 0.0,
+      "final_q_Pa": 0.0,
+      "checks": {
+        "elastic_modulus": true,
+        "confinement": true,
+        "homogeneity": true,
+        "force_balance": true,
+        "finite": true,
+        "elastic_curve": true,
+        "return_to_origin": true
+      },
+      "passed": true
+    },
+    {
+      "test": "triaxial_load_unload",
+      "pressure_Pa": 50000.0,
+      "initial_E_Pa": 7499999.999999641,
+      "expected_E_Pa": 7500000.0,
+      "confinement_max_error_Pa": 3.637978807091713e-11,
+      "force_balance_max_error_N": 2.1827872842550278e-11,
+      "final_strain": 0.0,
+      "final_q_Pa": 2.1827872842550278e-11,
+      "checks": {
+        "elastic_modulus": true,
+        "confinement": true,
+        "homogeneity": true,
+        "force_balance": true,
+        "finite": true,
+        "elastic_curve": true,
+        "return_to_origin": true
+      },
+      "passed": true
+    }
+  ],
+  "mass_test": {
+    "expected_kg": 1200.0,
+    "recovered_kg": 1199.9999999999989,
+    "relative_error": 9.992007221626409e-16,
+    "passed": true
+  },
+  "passed": true,
+  "elapsed_seconds": 0.06470295799954329
+}

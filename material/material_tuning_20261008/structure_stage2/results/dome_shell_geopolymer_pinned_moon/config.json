@@ -1,0 +1,26 @@
+{
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "shape": "dome",
+  "material": "shell_geopolymer",
+  "planet": "moon",
+  "support": "pinned",
+  "geometry": {
+    "radius": 5.0,
+    "rise": 2.5,
+    "height": 6.0,
+    "neck_radius": 3.0
+  },
+  "mesh": {
+    "n": 48
+  },
+  "thickness": 0.02,
+  "gravity_factor": 1.0,
+  "pressure_kPa": 0.0,
+  "foundation": {
+    "k_horizontal_per_m": 10000.0,
+    "k_vertical_per_m": 20000.0
+  },
+  "material_override": {},
+  "material_config": null
+}

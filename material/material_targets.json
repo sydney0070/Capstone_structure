@@ -1,0 +1,21 @@
+{
+  "description": "실험/검증자료의 허용 구간을 입력. null은 합격이 아니라 자료 부족. 숫자를 입력할 때 근거(source)를 반드시 기록.",
+  "context": {
+    "conditions_confirmed": false,
+    "soil_description": null,
+    "test": "drained_constant_sigma_v_simple_shear",
+    "sigma_v_kPa": 100.0,
+    "gamma_amplitude": 0.01,
+    "cycles": 3
+  },
+  "bounds": {
+    "G0_kPa": null,
+    "Gsec_last_kPa": null,
+    "G_ratio_last": null,
+    "D_last_percent": null,
+    "tau_peak_observed_kPa": null,
+    "eps_v_final_percent": null,
+    "G_last_over_first": null,
+    "tau_last_over_first": null
+  }
+}

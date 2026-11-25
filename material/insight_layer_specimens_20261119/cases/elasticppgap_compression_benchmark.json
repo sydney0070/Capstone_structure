@@ -1,0 +1,70 @@
+{
+  "id": "elasticppgap_compression_benchmark",
+  "group": "uniaxial_comparison",
+  "layer": "conditional_normal_contact_only",
+  "family": "ElasticPPGap",
+  "parameters": {
+    "stiffness_N_m": 11480000.0,
+    "yield_force_N": -21091.789367798978,
+    "gap_m": 0.0,
+    "hardening_ratio": 0.0,
+    "damage": "damage",
+    "area_m2": 1.0,
+    "height_m": 1.0
+  },
+  "evidence": {
+    "stiffness_N_m": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "c5800 phi30; E11.48MPa; p=.5kPa; A=h=1",
+      "kind": "synthetic_mechanics",
+      "note": "k=EA/h; fy=A[2p sin(phi)+2c cos(phi)]/[1-sin(phi)]. Not measured joint strength or footing capacity."
+    },
+    "yield_force_N": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "c5800 phi30; E11.48MPa; p=.5kPa; A=h=1",
+      "kind": "synthetic_mechanics",
+      "note": "k=EA/h; fy=A[2p sin(phi)+2c cos(phi)]/[1-sin(phi)]. Not measured joint strength or footing capacity."
+    },
+    "gap_m": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "c5800 phi30; E11.48MPa; p=.5kPa; A=h=1",
+      "kind": "synthetic_mechanics",
+      "note": "k=EA/h; fy=A[2p sin(phi)+2c cos(phi)]/[1-sin(phi)]. Not measured joint strength or footing capacity."
+    },
+    "hardening_ratio": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "c5800 phi30; E11.48MPa; p=.5kPa; A=h=1",
+      "kind": "synthetic_mechanics",
+      "note": "k=EA/h; fy=A[2p sin(phi)+2c cos(phi)]/[1-sin(phi)]. Not measured joint strength or footing capacity."
+    },
+    "damage": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "c5800 phi30; E11.48MPa; p=.5kPa; A=h=1",
+      "kind": "synthetic_mechanics",
+      "note": "k=EA/h; fy=A[2p sin(phi)+2c cos(phi)]/[1-sin(phi)]. Not measured joint strength or footing capacity."
+    },
+    "area_m2": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "c5800 phi30; E11.48MPa; p=.5kPa; A=h=1",
+      "kind": "synthetic_mechanics",
+      "note": "k=EA/h; fy=A[2p sin(phi)+2c cos(phi)]/[1-sin(phi)]. Not measured joint strength or footing capacity."
+    },
+    "height_m": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "c5800 phi30; E11.48MPa; p=.5kPa; A=h=1",
+      "kind": "synthetic_mechanics",
+      "note": "k=EA/h; fy=A[2p sin(phi)+2c cos(phi)]/[1-sin(phi)]. Not measured joint strength or footing capacity."
+    }
+  },
+  "mars_calibrated": false,
+  "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+  "geometry": {
+    "type": "zeroLength",
+    "direction": 3
+  },
+  "displacement_scale_m": 0.0018372638822124546,
+  "notes": [
+    "Force N versus relative displacement m, not continuum stress versus strain.",
+    "Independent spring fixture; no automatic normal/shear coupling or tributary ring-area calibration."
+  ]
+}

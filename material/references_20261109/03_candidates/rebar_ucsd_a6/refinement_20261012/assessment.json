@@ -1,0 +1,117 @@
+{
+  "status": "REUSED_HOLDOUT_SCREENING_PASSED_NEW_VALIDATION_REQUIRED",
+  "numerical_screening_passed": true,
+  "baseline_objective": 0.0014055618166322768,
+  "selected_training_objective": 0.0008331384040805015,
+  "selected_start": 3,
+  "selected_config_sha256": "3793eabaafdd0d0adf94567ebcc83792be2a15ba8e489593b5761c1832c3e0ec",
+  "tests": [
+    {
+      "csv": "01_A64.csv",
+      "role": "train",
+      "nrmse": 0.033214255250020794,
+      "peak_error": 0.021910926251739706,
+      "baseline": {
+        "nrmse": 0.02518931997185859,
+        "peak_error": 0.09217148279397194
+      },
+      "increment_1_to_2": 0.0,
+      "increment_2_to_4": 0.0,
+      "reaction_error": 0.0,
+      "passes": true
+    },
+    {
+      "csv": "02_A65.csv",
+      "role": "train",
+      "nrmse": 0.023804128078094206,
+      "peak_error": 0.06428096481089947,
+      "baseline": {
+        "nrmse": 0.020674063253276247,
+        "peak_error": 0.12245747654387083
+      },
+      "increment_1_to_2": 3.5512273737880635e-16,
+      "increment_2_to_4": 0.0,
+      "reaction_error": 0.0,
+      "passes": true
+    },
+    {
+      "csv": "03_A66.csv",
+      "role": "train",
+      "nrmse": 0.03054235935040004,
+      "peak_error": 0.04737797725840216,
+      "baseline": {
+        "nrmse": 0.028401269517846578,
+        "peak_error": 0.04658251270867726
+      },
+      "increment_1_to_2": 2.6951698209020613e-16,
+      "increment_2_to_4": 0.0,
+      "reaction_error": 0.0,
+      "passes": true
+    },
+    {
+      "csv": "04_A67.csv",
+      "role": "train",
+      "nrmse": 0.023124522374597233,
+      "peak_error": 0.027727026843490037,
+      "baseline": {
+        "nrmse": 0.02039564883262385,
+        "peak_error": 0.07172000466157481
+      },
+      "increment_1_to_2": 7.569928439796281e-17,
+      "increment_2_to_4": 1.5139856879592562e-16,
+      "reaction_error": 0.0,
+      "passes": true
+    },
+    {
+      "csv": "05_A68.csv",
+      "role": "validation",
+      "nrmse": 0.03206730581909626,
+      "peak_error": 0.04075757436641673,
+      "baseline": {
+        "nrmse": 0.02603052617407402,
+        "peak_error": 0.08238841329620326
+      },
+      "increment_1_to_2": 1.438972565063981e-16,
+      "increment_2_to_4": 2.877945130127962e-16,
+      "reaction_error": 0.0,
+      "passes": true
+    },
+    {
+      "csv": "06_A69.csv",
+      "role": "validation",
+      "nrmse": 0.025300772017820366,
+      "peak_error": 0.05320147009051835,
+      "baseline": {
+        "nrmse": 0.02373177506717902,
+        "peak_error": 0.11084200123019593
+      },
+      "increment_1_to_2": 1.42067747745701e-16,
+      "increment_2_to_4": 1.0655081080927575e-16,
+      "reaction_error": 0.0,
+      "passes": true
+    }
+  ],
+  "boundary_parameters": [],
+  "normalized_local_sensitivity_condition": 35.08545738272668,
+  "sensitivity_singular_values": [
+    0.5611869946604496,
+    0.40416366591599934,
+    0.18620760017077662,
+    0.1128709746802543,
+    0.03903800529855368,
+    0.029156770976373265,
+    0.015994860449980452
+  ],
+  "elapsed_seconds": 5.460468458943069,
+  "source_files_unchanged": true,
+  "holdout_policy": "Previously observed holdouts, not fresh blind validation. No holdout-based selection or retry.",
+  "parameter_values": {
+    "E": 218990793.242567,
+    "Fy": 512792.12957484694,
+    "b": 0.012883719874934632,
+    "cR1": 0.9266119550797753,
+    "cR2": 0.14308864810974845,
+    "a1": 0.06331854194239019,
+    "a3": 0.04637773159038757
+  }
+}

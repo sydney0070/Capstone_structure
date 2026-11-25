@@ -1,0 +1,21 @@
+﻿specimen,layer,E_MPa,density_kg_m3,input_DP_c_Pa,input_DP_phi_deg,target_MC_c_Pa,target_MC_phi_deg,mode,source,HB_fit_error_pct
+crust_tc,duricrust,11.48,1025.0,5800.0,30.0,5800.0,30.0,triaxial,Spohn2022 slope inference at assumed phi30/rho1200; transferred to rho1025,
+crust_ss,duricrust,11.48,1025.0,4765.186250294946,25.3769335251523,5800.0,30.0,simple_shear,Spohn2022 slope inference at assumed phi30/rho1200; transferred to rho1025,
+mgs1_tc,sand,28.4,1300,235.66368868562228,35.5,235.66368868562228,35.5,triaxial,Dotson2024 Eq2/Table4; Fig6 nearest-density friction,
+mgs1_ss,sand,28.4,1300,197.06006164318362,30.81395784142527,235.66368868562228,35.5,simple_shear,Dotson2024 Eq2/Table4; Fig6 nearest-density friction,
+mgs1_ss_nearest,sand,28.4,1300,209.1200656286953,30.81395784142527,250.08622058320785,35.5,simple_shear,"Dotson2024 Table4 fit at nearest tested density, transferred to1300",
+mgs1s_tc,sand,28.4,1300,238.15604205438487,34.0,238.15604205438487,34.0,triaxial,Dotson2024 Eq2/Table4; Fig6 nearest-density friction,
+mgs1s_ss,sand,28.4,1300,197.9034479885197,29.270831676723198,238.15604205438487,34.0,simple_shear,Dotson2024 Eq2/Table4; Fig6 nearest-density friction,
+mgs1s_ss_nearest,sand,28.4,1300,203.78780386243662,29.270831676723198,245.23724715321072,34.0,simple_shear,"Dotson2024 Table4 fit at nearest tested density, transferred to1300",
+blocky_phi20,blocky_ejecta,520.0,1700.0,0.0,20.0,0.0,20.0,triaxial,Hughes2022 Section6.2 broken/blasted cohesionless rock phi20–40deg; transferred from Gale/terrestrial range to InSight scenario,
+blocky_phi30,blocky_ejecta,520.0,1700.0,0.0,30.0,0.0,30.0,triaxial,Hughes2022 Section6.2 broken/blasted cohesionless rock phi20–40deg; transferred from Gale/terrestrial range to InSight scenario,
+blocky_phi35,blocky_ejecta,520.0,1700.0,0.0,35.0,0.0,35.0,triaxial,Hughes2022 Section6.2 broken/blasted cohesionless rock phi20–40deg; transferred from Gale/terrestrial range to InSight scenario,
+blocky_phi40,blocky_ejecta,520.0,1700.0,0.0,40.0,0.0,40.0,triaxial,Hughes2022 Section6.2 broken/blasted cohesionless rock phi20–40deg; transferred from Gale/terrestrial range to InSight scenario,
+blocky_c1000_phi30,blocky_ejecta,520.0,1700.0,1000.0,30.0,1000.0,30.0,triaxial,"Hughes2022 granular regolith c1–5kPa; bonded-mixture sensitivity, not measured InSight blocky ejecta",
+blocky_c5000_phi30,blocky_ejecta,520.0,1700.0,5000.0,30.0,5000.0,30.0,triaxial,"Hughes2022 granular regolith c1–5kPa; bonded-mixture sensitivity, not measured InSight blocky ejecta",
+blocky_ss_phi30,blocky_ejecta,520.0,1700.0,0.0,25.3769335251523,0.0,30.0,simple_shear,Hughes2022 phi20–40deg range; simple-shear-matched zero-cohesion scenario,
+blocky_ss_phi35,blocky_ejecta,520.0,1700.0,0.0,30.293842858754743,0.0,35.0,simple_shear,Hughes2022 phi20–40deg range; simple-shear-matched zero-cohesion scenario,
+basalt_hb_gsi40,fractured_basalt,13000.0,2760.0,493528.88604571985,64.68592072253622,493528.88604571985,64.68592072253622,triaxial,VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue,7.271867167725466
+basalt_hb_gsi55,fractured_basalt,13000.0,2760.0,1141302.914434007,64.82881742615024,1141302.914434007,64.82881742615024,triaxial,VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue,2.5834648339624944
+basalt_hb_gsi70,fractured_basalt,13000.0,2760.0,2743042.524953436,63.65027840054451,2743042.524953436,63.65027840054451,triaxial,VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue,0.6028540002091449
+basalt_lab_reference,laboratory_reference_only,13000.0,2760.0,46500000.0,46.7,46500000.0,46.7,triaxial,VilleneuveHeap2021 Table1 Etna basalt lava porosity.04; c46.5±3.95MPa phi46.7±.95deg,

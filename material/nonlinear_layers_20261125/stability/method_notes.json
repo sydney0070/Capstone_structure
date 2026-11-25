@@ -1,0 +1,10 @@
+{
+  "initial_probe": "The native3.4.0 element-material tangent response is not exposed; the generic DP factory is not a direct3D test object.",
+  "resolution": "NDTest stresses are queried through an identity InitialStateAnalysisWrapper to obtain the same ThreeDimensional DP copy that a brick requests; InitialStateAnalysis is never activated.",
+  "method": "Central strain differences around a small positive plastic trial increment, without committing the perturbations. Comparison is with the continuum loading tangent, not a measured experimental tangent.",
+  "source_urls": [
+    "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/NDTest.html",
+    "https://opensees.berkeley.edu/wiki/index.php/InitialStateAnalysisWrapper"
+  ],
+  "changes_to_ground_material_values": false
+}

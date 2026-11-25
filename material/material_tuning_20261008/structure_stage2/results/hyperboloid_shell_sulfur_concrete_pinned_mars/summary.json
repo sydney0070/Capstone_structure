@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "hyperboloid",
+  "material": "shell_sulfur_concrete",
+  "planet": "mars",
+  "support": "pinned",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 15000000.0,
+    "nu": 0.2,
+    "rho": 2.0,
+    "thickness": 0.02
+  },
+  "nodes": 9408,
+  "elements": 9216,
+  "surface_area_m2": 176.94900253646972,
+  "mass_tonne": 7.077960101459124,
+  "weight_kN": 26.25923197641335,
+  "max_displacement_m": 4.864733952997912e-05,
+  "min_uz_m": -4.682684030064735e-05,
+  "max_uz_m": 0.0,
+  "mean_base_uz_m": 0.0,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    4.726774527341604e-14,
+    3.309852392163748e-15,
+    -3.481659405224491e-13
+  ],
+  "moment_residual_kNm": [
+    -3.6274353570805845e-13,
+    -4.4950848598901416e-13,
+    1.1169633247198e-13
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -26.259231976413353
+  ],
+  "relative_force_residual": 1.33810259473421e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

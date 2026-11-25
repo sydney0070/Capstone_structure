@@ -1,0 +1,3170 @@
+[
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_steel",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 15.40758776189773,
+    "weight_kN": 151.14843594421674,
+    "max_displacement_m": 1.1936162578189752e-05,
+    "min_uz_m": -1.1936162578189752e-05,
+    "max_uz_m": 5.333847887364303e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -2.4091839634365897e-14,
+      -1.5776269179923474e-13,
+      2.8421709430404007e-13
+    ],
+    "moment_residual_kNm": [
+      -6.765091958849112e-13,
+      1.2194238674378965e-13,
+      3.5813019216845987e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -151.1484359442171
+    ],
+    "relative_force_residual": 2.1565445874800155e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_steel",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 15.40758776189773,
+    "weight_kN": 24.960292174274326,
+    "max_displacement_m": 1.971109416581726e-06,
+    "min_uz_m": -1.971109416581726e-06,
+    "max_uz_m": 8.808189171793833e-08,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.0547118733938987e-15,
+      -1.9012569296705806e-14,
+      0.0
+    ],
+    "moment_residual_kNm": [
+      -2.5233396101775885e-14,
+      7.910013789802495e-15,
+      7.278726232851085e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -24.96029217427438
+    ],
+    "relative_force_residual": 7.628837624549743e-16,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_steel",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 15.40758776189773,
+    "weight_kN": 57.16215059664058,
+    "max_displacement_m": 4.514083910813767e-06,
+    "min_uz_m": -4.514083910813767e-06,
+    "max_uz_m": 2.017184063417107e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.5154544286133387e-14,
+      -6.56558141187702e-14,
+      -4.263256414560601e-14
+    ],
+    "moment_residual_kNm": [
+      -3.805289416902724e-14,
+      1.794649498454426e-13,
+      1.7625137460619555e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -57.162150596640736
+    ],
+    "relative_force_residual": 1.3949147303490443e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_steel",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 15.40758776189773,
+    "weight_kN": 151.14843594421674,
+    "max_displacement_m": 0.0003357633985333346,
+    "min_uz_m": -0.0003357633985333346,
+    "max_uz_m": -0.00023626572524914897,
+    "mean_base_uz_m": -0.00024073253499927154,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.4221401833935943e-12,
+      -1.7690059151540142e-11,
+      -8.782308213994838e-12
+    ],
+    "moment_residual_kNm": [
+      9.154626709473312e-12,
+      3.280557596407885e-11,
+      2.6084380374311845e-11
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -151.1484359442171
+    ],
+    "relative_force_residual": 1.310053437967206e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_steel",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 15.40758776189773,
+    "weight_kN": 24.960292174274326,
+    "max_displacement_m": 5.544716673028728e-05,
+    "min_uz_m": -5.544716673028728e-05,
+    "max_uz_m": -3.901635829804413e-05,
+    "mean_base_uz_m": -3.9753996605394676e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.0523491800196183e-12,
+      -1.1163159762399206e-12,
+      5.215383680479135e-12
+    ],
+    "moment_residual_kNm": [
+      3.2439883028076433e-12,
+      2.5740795129083893e-12,
+      5.28716575704312e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -24.96029217427438
+    ],
+    "relative_force_residual": 2.177996609425665e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_steel",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 15.40758776189773,
+    "weight_kN": 57.16215059664058,
+    "max_displacement_m": 0.00012698085714157926,
+    "min_uz_m": -0.00012698085714157926,
+    "max_uz_m": -8.935227733689465e-05,
+    "mean_base_uz_m": -9.104156012716294e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.6910223221699994e-12,
+      -2.491679074814363e-12,
+      8.107292615022743e-12
+    ],
+    "moment_residual_kNm": [
+      6.676909025671307e-12,
+      8.395337376676526e-12,
+      3.22418688676137e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -57.162150596640736
+    ],
+    "relative_force_residual": 1.5129732509994498e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_aluminum",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 5.299425090079451,
+    "weight_kN": 51.98736013367942,
+    "max_displacement_m": 1.1815698618173345e-05,
+    "min_uz_m": -1.1815698618173345e-05,
+    "max_uz_m": 6.662855695401111e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -8.271161533457416e-15,
+      -2.348121697082206e-14,
+      7.815970093361102e-14
+    ],
+    "moment_residual_kNm": [
+      2.0178737153431214e-14,
+      3.045523902511782e-14,
+      6.192615864542006e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -51.98736013367968
+    ],
+    "relative_force_residual": 1.5778598137614598e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_aluminum",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 5.299425090079451,
+    "weight_kN": 8.585068645928711,
+    "max_displacement_m": 1.951216285569993e-06,
+    "min_uz_m": -1.951216285569993e-06,
+    "max_uz_m": 1.1002880964883233e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -8.906070325664928e-15,
+      -1.601149768326593e-15,
+      8.881784197001252e-15
+    ],
+    "moment_residual_kNm": [
+      2.626880917649954e-14,
+      8.422841417388138e-15,
+      5.268355196541563e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -8.585068645928754
+    ],
+    "relative_force_residual": 1.4769161617921346e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_aluminum",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 5.299425090079451,
+    "weight_kN": 19.660867084194763,
+    "max_displacement_m": 4.468526184854762e-06,
+    "min_uz_m": -4.468526184854762e-06,
+    "max_uz_m": 2.5197955789948334e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.6306400674181987e-14,
+      1.7381929229287607e-15,
+      -1.0658141036401503e-14
+    ],
+    "moment_residual_kNm": [
+      6.200031807401807e-14,
+      2.139521199095995e-14,
+      3.838943052336674e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -19.660867084194898
+    ],
+    "relative_force_residual": 9.947687386907725e-16,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_aluminum",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 5.299425090079451,
+    "weight_kN": 51.98736013367942,
+    "max_displacement_m": 0.00014863234259764675,
+    "min_uz_m": -0.00014863234259764675,
+    "max_uz_m": -8.173028152145343e-05,
+    "mean_base_uz_m": -8.277188967055688e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      6.510070260645762e-14,
+      1.3800663041925213e-14,
+      -2.2737367544323206e-13
+    ],
+    "moment_residual_kNm": [
+      8.543298447155623e-12,
+      -5.743592667445396e-12,
+      -5.221269649225759e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -51.98736013367968
+    ],
+    "relative_force_residual": 4.557109840031292e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_aluminum",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 5.299425090079451,
+    "weight_kN": 8.585068645928711,
+    "max_displacement_m": 2.4544790520712625e-05,
+    "min_uz_m": -2.4544790520712625e-05,
+    "max_uz_m": -1.3496743737481604e-05,
+    "mean_base_uz_m": -1.3668752422661154e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -7.097794574306704e-14,
+      2.2804073969053637e-14,
+      2.220446049250313e-13
+    ],
+    "moment_residual_kNm": [
+      -1.8747183709935666e-12,
+      2.432567060110802e-12,
+      -4.3425406400808184e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -8.585068645928754
+    ],
+    "relative_force_residual": 2.7282920838466612e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_aluminum",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 5.299425090079451,
+    "weight_kN": 19.660867084194763,
+    "max_displacement_m": 5.621060051348443e-05,
+    "min_uz_m": -5.621060051348443e-05,
+    "max_uz_m": -3.090920942349553e-05,
+    "mean_base_uz_m": -3.1303130548192294e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -6.590145096296851e-13,
+      -9.190157118363136e-14,
+      -2.842170943040401e-14
+    ],
+    "moment_residual_kNm": [
+      -1.1923799621282871e-12,
+      -6.461818927161467e-13,
+      3.83439524803671e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -19.660867084194898
+    ],
+    "relative_force_residual": 3.3874312750198427e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_concrete",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 4.710600080070652,
+    "weight_kN": 46.2109867854931,
+    "max_displacement_m": 2.4890597408793015e-05,
+    "min_uz_m": -2.4890597408793015e-05,
+    "max_uz_m": 2.753219673888194e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -2.78388423424758e-14,
+      -3.1204205885870806e-14,
+      2.842170943040401e-14
+    ],
+    "moment_residual_kNm": [
+      1.0182306386941065e-13,
+      7.96949312098505e-14,
+      8.472389456670726e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -46.210986785493056
+    ],
+    "relative_force_residual": 1.0941513891119513e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_concrete",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 4.710600080070652,
+    "weight_kN": 7.631172129714456,
+    "max_displacement_m": 4.1103738840208025e-06,
+    "min_uz_m": -4.1103738840208025e-06,
+    "max_uz_m": 4.546601296328787e-08,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -4.836409051023338e-15,
+      -1.635844237846129e-15,
+      -1.9539925233402755e-14
+    ],
+    "moment_residual_kNm": [
+      1.510803201293376e-14,
+      -3.714812745608809e-14,
+      -4.1598668953923834e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -7.631172129714466
+    ],
+    "relative_force_residual": 2.646504086803475e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_concrete",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 4.710600080070652,
+    "weight_kN": 17.47632629706212,
+    "max_displacement_m": 9.413263647973697e-06,
+    "min_uz_m": -9.413263647973697e-06,
+    "max_uz_m": 1.0412278277394252e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -6.453171330633722e-15,
+      -7.42114703022878e-15,
+      -1.0658141036401503e-14
+    ],
+    "moment_residual_kNm": [
+      7.609516315676412e-14,
+      1.4008542589816209e-14,
+      -2.0304938286308527e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -17.47632629706207
+    ],
+    "relative_force_residual": 8.298177537707394e-16,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_concrete",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 4.710600080070652,
+    "weight_kN": 46.2109867854931,
+    "max_displacement_m": 0.00016322037154841172,
+    "min_uz_m": -0.00016322037154841172,
+    "max_uz_m": -7.303100995297811e-05,
+    "mean_base_uz_m": -7.355802650572486e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -7.620987174661309e-13,
+      -4.3153089523476545e-14,
+      8.739675649849232e-13
+    ],
+    "moment_residual_kNm": [
+      -9.451033705643042e-13,
+      -4.21220523738608e-12,
+      1.3967365671250394e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -46.210986785493056
+    ],
+    "relative_force_residual": 2.5110424673695382e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_concrete",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 4.710600080070652,
+    "weight_kN": 7.631172129714456,
+    "max_displacement_m": 2.695382282451035e-05,
+    "min_uz_m": -2.695382282451035e-05,
+    "max_uz_m": -1.2060166781223504e-05,
+    "mean_base_uz_m": -1.2147197037642854e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.175101682626689e-13,
+      -6.074270905941373e-14,
+      2.5579538487363607e-13
+    ],
+    "moment_residual_kNm": [
+      -2.1713241014215123e-13,
+      -8.539669622484314e-13,
+      2.921414218292619e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -7.631172129714466
+    ],
+    "relative_force_residual": 3.773666558822017e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_concrete",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 4.710600080070652,
+    "weight_kN": 17.47632629706212,
+    "max_displacement_m": 6.172758190057048e-05,
+    "min_uz_m": -6.172758190057048e-05,
+    "max_uz_m": -2.7619270838473906e-05,
+    "mean_base_uz_m": -2.7818580870156076e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -7.721601136267964e-14,
+      -3.302025173013614e-13,
+      -1.8829382497642655e-13
+    ],
+    "moment_residual_kNm": [
+      -1.3812321512235437e-12,
+      -3.1429106279318164e-12,
+      -2.6955941506466736e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -17.47632629706207
+    ],
+    "relative_force_residual": 2.219457266423641e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sintered_regolith",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 38.509155654577505,
+    "max_displacement_m": 3.111324676099243e-05,
+    "min_uz_m": -3.111324676099243e-05,
+    "max_uz_m": 3.441524592359809e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.049160758270773e-14,
+      1.0949574580365606e-14,
+      1.4921397450962104e-13
+    ],
+    "moment_residual_kNm": [
+      7.989030444133238e-14,
+      -3.636262298212234e-14,
+      2.7804147872956264e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -38.50915565457747
+    ],
+    "relative_force_residual": 3.894725477978649e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sintered_regolith",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 6.359310108095368,
+    "max_displacement_m": 5.137967355026645e-06,
+    "min_uz_m": -5.137967355026645e-06,
+    "max_uz_m": 5.683251620409615e-08,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -4.309053114326389e-15,
+      3.322862818233574e-15,
+      2.220446049250313e-14
+    ],
+    "moment_residual_kNm": [
+      1.3377699555755518e-14,
+      3.0090404994076447e-15,
+      2.471547272397956e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -6.359310108095356
+    ],
+    "relative_force_residual": 3.594962815152651e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sintered_regolith",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 14.563605247551738,
+    "max_displacement_m": 1.176657955996774e-05,
+    "min_uz_m": -1.176657955996774e-05,
+    "max_uz_m": 1.3015347846744575e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -2.248201624865942e-15,
+      7.445433158892456e-15,
+      -2.842170943040401e-14
+    ],
+    "moment_residual_kNm": [
+      2.6260135559119657e-14,
+      -1.4554872064531654e-14,
+      7.839215387939191e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -14.563605247551775
+    ],
+    "relative_force_residual": 2.0233062050491567e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sintered_regolith",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 38.509155654577505,
+    "max_displacement_m": 0.0001517984056714774,
+    "min_uz_m": -0.0001517984056714774,
+    "max_uz_m": -6.099920593761525e-05,
+    "mean_base_uz_m": -6.129363312698656e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      3.483463517639507e-13,
+      2.4677632257690473e-14,
+      -1.2150280781497713e-12
+    ],
+    "moment_residual_kNm": [
+      -1.1960404455030327e-12,
+      -2.2604724082136984e-12,
+      -1.8435631889426424e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -38.50915565457747
+    ],
+    "relative_force_residual": 3.28290266458007e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sintered_regolith",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 6.359310108095368,
+    "max_displacement_m": 2.5067626624648467e-05,
+    "min_uz_m": -2.5067626624648467e-05,
+    "max_uz_m": -1.007326336584578e-05,
+    "mean_base_uz_m": -1.0121884369594366e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      2.5951463200613034e-15,
+      9.012503747540241e-14,
+      -3.197442310920451e-14
+    ],
+    "moment_residual_kNm": [
+      -2.3531919685418345e-13,
+      -2.6991153452907146e-13,
+      6.139405906882635e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -6.359310108095356
+    ],
+    "relative_force_residual": 1.5043157656158182e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sintered_regolith",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 14.563605247551738,
+    "max_displacement_m": 5.7407959739162716e-05,
+    "min_uz_m": -5.7407959739162716e-05,
+    "max_uz_m": -2.306901672054776e-05,
+    "mean_base_uz_m": -2.318036482172523e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.1284723155924326e-13,
+      2.7956873468127984e-14,
+      -2.0605739337042905e-13
+    ],
+    "moment_residual_kNm": [
+      3.048255007784273e-13,
+      2.289170372357652e-13,
+      -1.5570479204141707e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -14.563605247551775
+    ],
+    "relative_force_residual": 1.6245422068017286e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_geopolymer",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.434812558384851,
+    "weight_kN": 33.69551119775539,
+    "max_displacement_m": 6.697193337236568e-05,
+    "min_uz_m": -6.697193337236568e-05,
+    "max_uz_m": 7.407955764612634e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -8.104628079763643e-15,
+      -4.718447854656915e-16,
+      8.526512829121202e-14
+    ],
+    "moment_residual_kNm": [
+      -2.0418801198462955e-13,
+      1.3971180982952358e-13,
+      2.036912305491967e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -33.69551119775531
+    ],
+    "relative_force_residual": 2.541903645951665e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_geopolymer",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.434812558384851,
+    "weight_kN": 5.564396344583459,
+    "max_displacement_m": 1.1059585327546549e-05,
+    "min_uz_m": -1.1059585327546549e-05,
+    "max_uz_m": 1.2233321446148732e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.8041124150158794e-16,
+      6.704706234650359e-16,
+      6.217248937900877e-15
+    ],
+    "moment_residual_kNm": [
+      -3.366651033474832e-14,
+      -5.049698723405549e-15,
+      1.575562597055935e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -5.564396344583453
+    ],
+    "relative_force_residual": 1.1242725901809944e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_geopolymer",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.434812558384851,
+    "weight_kN": 12.743154591607796,
+    "max_displacement_m": 2.532781578098593e-05,
+    "min_uz_m": -2.532781578098593e-05,
+    "max_uz_m": 2.801581639827733e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.339206523454095e-15,
+      8.638922910364499e-16,
+      2.3092638912203256e-14
+    ],
+    "moment_residual_kNm": [
+      -4.1226137087457815e-14,
+      -3.38824020923445e-14,
+      1.2036378838065076e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -12.743154591607764
+    ],
+    "relative_force_residual": 1.8164705315673708e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_geopolymer",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.434812558384851,
+    "weight_kN": 33.69551119775539,
+    "max_displacement_m": 0.00017959065696747755,
+    "min_uz_m": -0.00017959065696747755,
+    "max_uz_m": -5.3523884638874594e-05,
+    "mean_base_uz_m": -5.362844297523667e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      4.975186929101483e-14,
+      -1.949795582680056e-14,
+      -3.552713678800501e-14
+    ],
+    "moment_residual_kNm": [
+      -2.7286998615511093e-12,
+      -1.6349009819560667e-13,
+      -5.120482485564788e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -33.69551119775531
+    ],
+    "relative_force_residual": 1.9043634133177788e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_geopolymer",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.434812558384851,
+    "weight_kN": 5.564396344583459,
+    "max_displacement_m": 2.965717271022475e-05,
+    "min_uz_m": -2.965717271022475e-05,
+    "max_uz_m": -8.83880663761315e-06,
+    "mean_base_uz_m": -8.856073151874003e-06,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.7954387976359953e-14,
+      -2.0709786591995237e-14,
+      2.4868995751603507e-14
+    ],
+    "moment_residual_kNm": [
+      -3.1772314271726054e-13,
+      -5.614771343177838e-14,
+      9.779648088439612e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -5.564396344583453
+    ],
+    "relative_force_residual": 6.651172322057237e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_geopolymer",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.434812558384851,
+    "weight_kN": 12.743154591607796,
+    "max_displacement_m": 6.791858688576204e-05,
+    "min_uz_m": -6.791858688576204e-05,
+    "max_uz_m": -2.0241958410828796e-05,
+    "mean_base_uz_m": -2.0281500860155807e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      2.8151092568151626e-14,
+      -3.138512970360557e-14,
+      1.0658141036401503e-14
+    ],
+    "moment_residual_kNm": [
+      -6.136918230537081e-13,
+      -1.6982921145769492e-13,
+      6.193392569701387e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -12.743154591607764
+    ],
+    "relative_force_residual": 3.4125657264982328e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sulfur_concrete",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 38.509155654577505,
+    "max_displacement_m": 4.148432901465506e-05,
+    "min_uz_m": -4.148432901465506e-05,
+    "max_uz_m": 4.588699456480325e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.8013368574543165e-14,
+      -1.7964796317215814e-14,
+      7.105427357601002e-14
+    ],
+    "moment_residual_kNm": [
+      4.108800973068316e-14,
+      -1.3839211894517423e-13,
+      -2.884498195854235e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -38.50915565457747
+    ],
+    "relative_force_residual": 1.959828821883543e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sulfur_concrete",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 6.359310108095368,
+    "max_displacement_m": 6.8506231400348e-06,
+    "min_uz_m": -6.8506231400348e-06,
+    "max_uz_m": 7.577668827214349e-08,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -2.3071822230491534e-15,
+      -1.1622647289044608e-15,
+      1.687538997430238e-14
+    ],
+    "moment_residual_kNm": [
+      2.714966923153539e-14,
+      -2.0721976651955076e-14,
+      -4.6178338930502605e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -6.359310108095356
+    ],
+    "relative_force_residual": 2.684565870485418e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sulfur_concrete",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 14.563605247551738,
+    "max_displacement_m": 1.568877274662378e-05,
+    "min_uz_m": -1.568877274662378e-05,
+    "max_uz_m": 1.735379712899086e-07,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -5.322131624296844e-15,
+      -5.9657140338842396e-15,
+      -1.9539925233402755e-14
+    ],
+    "moment_residual_kNm": [
+      1.0541556776794136e-13,
+      4.041363597939718e-15,
+      -2.0577289872036886e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -14.563605247551775
+    ],
+    "relative_force_residual": 1.449652373074947e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sulfur_concrete",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 38.509155654577505,
+    "max_displacement_m": 0.00016530320515706706,
+    "min_uz_m": -0.00016530320515706706,
+    "max_uz_m": -6.107519189710131e-05,
+    "mean_base_uz_m": -6.129145118660586e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -3.5109415374989794e-13,
+      -3.837476051630144e-13,
+      1.3500311979441904e-13
+    ],
+    "moment_residual_kNm": [
+      -3.3065976172419465e-13,
+      -1.4933082981977153e-12,
+      1.5430654295042407e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -38.50915565457747
+    ],
+    "relative_force_residual": 1.395406973900725e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sulfur_concrete",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 6.359310108095368,
+    "max_displacement_m": 2.7297776998414593e-05,
+    "min_uz_m": -2.7297776998414593e-05,
+    "max_uz_m": -1.0085811505944139e-05,
+    "mean_base_uz_m": -1.0121524049164527e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -5.343295250703761e-14,
+      3.367370798894924e-16,
+      1.971756091734278e-13
+    ],
+    "moment_residual_kNm": [
+      -3.74921068583417e-13,
+      -2.150387615369731e-13,
+      2.704594082511423e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -6.359310108095356
+    ],
+    "relative_force_residual": 3.2124173039802904e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "dome",
+    "material": "shell_sulfur_concrete",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 2401,
+    "elements": 2304,
+    "surface_area_m2": 98.13750166813792,
+    "mass_tonne": 3.9255000667255358,
+    "weight_kN": 14.563605247551738,
+    "max_displacement_m": 6.251527942229503e-05,
+    "min_uz_m": -6.251527942229503e-05,
+    "max_uz_m": -2.3097753510521935e-05,
+    "mean_base_uz_m": -2.3179539643456456e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -2.115668751301314e-14,
+      -6.104115458046615e-14,
+      -1.7763568394002505e-15
+    ],
+    "moment_residual_kNm": [
+      -5.386421560518717e-13,
+      -1.2248089912084148e-12,
+      2.769549337343104e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -14.563605247551775
+    ],
+    "relative_force_residual": 4.437640122996117e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_steel",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 27.780993398225228,
+    "weight_kN": 272.5315452365895,
+    "max_displacement_m": 3.533666083127753e-05,
+    "min_uz_m": -3.38124086717933e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -4.60964599824365e-13,
+      -3.398947789889917e-13,
+      1.1198153515579179e-11
+    ],
+    "moment_residual_kNm": [
+      -6.4083039520864956e-12,
+      -5.368816502482332e-12,
+      -2.0634418261677805e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -272.5315452365949
+    ],
+    "relative_force_residual": 4.1143090292160645e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_steel",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 27.780993398225228,
+    "weight_kN": 45.00520930512487,
+    "max_displacement_m": 5.835411880392157e-06,
+    "min_uz_m": -5.583700514606228e-06,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -4.4297898682543746e-14,
+      -3.913536161803677e-15,
+      4.476419235288631e-13
+    ],
+    "moment_residual_kNm": [
+      1.187294435684186e-13,
+      -5.247920153994556e-13,
+      -3.234793627857662e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -45.00520930512709
+    ],
+    "relative_force_residual": 9.995408029249077e-15,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_steel",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 27.780993398225228,
+    "weight_kN": 103.0674855074156,
+    "max_displacement_m": 1.3363813627317893e-05,
+    "min_uz_m": -1.2787363524190877e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.454392162258955e-14,
+      -3.438638263020266e-13,
+      -4.334310688136611e-12
+    ],
+    "moment_residual_kNm": [
+      -1.706516033780262e-12,
+      -4.0208114615580826e-13,
+      -4.3081670328327795e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -103.0674855074257
+    ],
+    "relative_force_residual": 4.2185504623139874e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_steel",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 27.780993398225228,
+    "weight_kN": 272.5315452365895,
+    "max_displacement_m": 0.0007360380503698187,
+    "min_uz_m": -0.0007359664469074636,
+    "max_uz_m": -0.00043376678087716445,
+    "mean_base_uz_m": -0.00043376678087765007,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -6.991074386064611e-12,
+      -2.336195121100376e-12,
+      8.532197171007283e-11
+    ],
+    "moment_residual_kNm": [
+      1.304274887446569e-10,
+      -3.834244033384948e-11,
+      -4.667542088975067e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -272.5315452365949
+    ],
+    "relative_force_residual": 3.1423804223379567e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_steel",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 27.780993398225228,
+    "weight_kN": 45.00520930512487,
+    "max_displacement_m": 0.00012154756795063762,
+    "min_uz_m": -0.00012153574352566687,
+    "max_uz_m": -7.163121152101162e-05,
+    "mean_base_uz_m": -7.163121152107417e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -2.0601853556456717e-12,
+      -2.55881896692276e-12,
+      9.2157392828085e-12
+    ],
+    "moment_residual_kNm": [
+      8.150582404067883e-12,
+      1.2671318855295155e-11,
+      -1.8999096519295433e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -45.00520930512709
+    ],
+    "relative_force_residual": 2.1739150622310086e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_steel",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 200000000.0,
+      "nu": 0.3,
+      "rho": 7.85,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 27.780993398225228,
+    "weight_kN": 103.0674855074156,
+    "max_displacement_m": 0.0002783589364790919,
+    "min_uz_m": -0.00027833185708610694,
+    "max_uz_m": -0.0001640443177425923,
+    "mean_base_uz_m": -0.0001640443177427022,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      2.552541511491313e-12,
+      -3.052452309354104e-12,
+      1.3017142919125035e-11
+    ],
+    "moment_residual_kNm": [
+      -2.753152483188849e-11,
+      3.257465130968029e-11,
+      -5.3313647152709265e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -103.0674855074257
+    ],
+    "relative_force_residual": 1.3206609950390013e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_aluminum",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 9.555246136969641,
+    "weight_kN": 93.73696460367219,
+    "max_displacement_m": 3.447267354488368e-05,
+    "min_uz_m": -3.291783965087818e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -4.796163466380676e-14,
+      -6.55586696041155e-14,
+      -1.6200374375330284e-12
+    ],
+    "moment_residual_kNm": [
+      2.15983581670535e-12,
+      -2.560777978555251e-12,
+      -2.2447363137100463e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -93.736964603672
+    ],
+    "relative_force_residual": 1.730451394742611e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_aluminum",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 9.555246136969641,
+    "weight_kN": 15.47949874189082,
+    "max_displacement_m": 5.6927350808050675e-06,
+    "min_uz_m": -5.435973520327319e-06,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.7194579093882112e-14,
+      -4.689304500260505e-14,
+      -1.0373923942097463e-12
+    ],
+    "moment_residual_kNm": [
+      2.533707109117275e-13,
+      -3.233637316246707e-13,
+      -7.173177526326996e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -15.479498741891602
+    ],
+    "relative_force_residual": 6.7094811178722e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_aluminum",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 9.555246136969641,
+    "weight_kN": 35.44996316815737,
+    "max_displacement_m": 1.3037066141852128e-05,
+    "min_uz_m": -1.2449050469398457e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.6181500583911657e-14,
+      -8.363448822379382e-14,
+      -1.0942358130705543e-12
+    ],
+    "moment_residual_kNm": [
+      -1.3631909599931204e-13,
+      -7.14596784523458e-13,
+      3.3850010285210363e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -35.44996316815782
+    ],
+    "relative_force_residual": 3.0960444580600973e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_aluminum",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 9.555246136969641,
+    "weight_kN": 93.73696460367219,
+    "max_displacement_m": 0.00035686744563410007,
+    "min_uz_m": -0.00035672060873929534,
+    "max_uz_m": -0.00014919366985581328,
+    "mean_base_uz_m": -0.00014919366985591395,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -4.256039964900538e-12,
+      -4.232008184107215e-12,
+      -3.1533886613033246e-11
+    ],
+    "moment_residual_kNm": [
+      1.8114656614564165e-11,
+      -4.140925796702888e-11,
+      -5.595785918397439e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -93.736964603672
+    ],
+    "relative_force_residual": 3.4244757787220437e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_aluminum",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 9.555246136969641,
+    "weight_kN": 15.47949874189082,
+    "max_displacement_m": 5.8932238728502486e-05,
+    "min_uz_m": -5.8907990433948984e-05,
+    "max_uz_m": -2.463748676517003e-05,
+    "mean_base_uz_m": -2.4637486765189088e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.9047957655615733e-13,
+      -1.184725646770511e-13,
+      -1.0878409284487134e-11
+    ],
+    "moment_residual_kNm": [
+      9.5013627282562e-13,
+      2.724929656916508e-13,
+      -1.760689656363575e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -15.479498741891602
+    ],
+    "relative_force_residual": 7.029117658361576e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_aluminum",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 69000000.0,
+      "nu": 0.33,
+      "rho": 2.7,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 9.555246136969641,
+    "weight_kN": 35.44996316815737,
+    "max_displacement_m": 0.00013496210227359622,
+    "min_uz_m": -0.0001349065706854452,
+    "max_uz_m": -5.64228863572905e-05,
+    "mean_base_uz_m": -5.6422886357328255e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -6.97913948854989e-13,
+      4.1985143266421974e-13,
+      -1.5731416169728618e-11
+    ],
+    "moment_residual_kNm": [
+      5.689406222820551e-12,
+      -1.4033276277136686e-11,
+      -4.089427865235692e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -35.44996316815782
+    ],
+    "relative_force_residual": 4.4435831658862283e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_concrete",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 8.493552121751119,
+    "weight_kN": 83.32174631437847,
+    "max_displacement_m": 7.718011872593596e-05,
+    "min_uz_m": -7.429185498906128e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.372790769949006e-13,
+      -2.9726221484338566e-14,
+      1.5916157281026244e-12
+    ],
+    "moment_residual_kNm": [
+      1.2166369162123048e-12,
+      -7.126590984007919e-13,
+      5.825163167112372e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -83.3217463143739
+    ],
+    "relative_force_residual": 1.9176285049321158e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_concrete",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 8.493552121751119,
+    "weight_kN": 13.759554437236813,
+    "max_displacement_m": 1.2745340707032681e-05,
+    "min_uz_m": -1.2268379722961941e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      2.3203661214665772e-14,
+      -1.7943979635504093e-14,
+      8.01136934569513e-13
+    ],
+    "moment_residual_kNm": [
+      -2.366627144082169e-13,
+      6.680567557482142e-13,
+      3.673396791397211e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -13.759554437235504
+    ],
+    "relative_force_residual": 5.826305952884362e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_concrete",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 8.493552121751119,
+    "weight_kN": 31.51107837169665,
+    "max_displacement_m": 2.9188403717963535e-05,
+    "min_uz_m": -2.8096104180368342e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -4.163336342344337e-16,
+      1.206673649889467e-14,
+      1.644906433284632e-12
+    ],
+    "moment_residual_kNm": [
+      -5.879418697295284e-13,
+      2.278403160582698e-13,
+      1.7596802871707757e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -31.511078371693966
+    ],
+    "relative_force_residual": 5.220229932064741e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_concrete",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 8.493552121751119,
+    "weight_kN": 83.32174631437847,
+    "max_displacement_m": 0.00041812593668787173,
+    "min_uz_m": -0.0004176024520070014,
+    "max_uz_m": -0.0001326165954274814,
+    "mean_base_uz_m": -0.00013261659542752126,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.1958767309749874e-12,
+      -8.21037063775852e-14,
+      -3.979039320256561e-13
+    ],
+    "moment_residual_kNm": [
+      -1.2229857002110895e-11,
+      -2.5689519955740536e-12,
+      4.075497095935217e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -83.3217463143739
+    ],
+    "relative_force_residual": 1.5158206061729754e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_concrete",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 8.493552121751119,
+    "weight_kN": 13.759554437236813,
+    "max_displacement_m": 6.904831982008e-05,
+    "min_uz_m": -6.896187280855745e-05,
+    "max_uz_m": -2.1899988235732977e-05,
+    "mean_base_uz_m": -2.1899988235737873e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      6.814687703027289e-14,
+      6.914658247601972e-14,
+      7.531752999057062e-13
+    ],
+    "moment_residual_kNm": [
+      -8.587380223404519e-13,
+      1.7061707949239668e-12,
+      5.293857723427932e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -13.759554437235504
+    ],
+    "relative_force_residual": 5.5191215262019845e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_concrete",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 30000000.0,
+      "nu": 0.2,
+      "rho": 2.4,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 8.493552121751119,
+    "weight_kN": 31.51107837169665,
+    "max_displacement_m": 0.00015812917687187364,
+    "min_uz_m": -0.0001579312025430178,
+    "max_uz_m": -5.01536767620744e-05,
+    "mean_base_uz_m": -5.015367676209095e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -3.2257529980483923e-13,
+      2.9289921615419177e-13,
+      1.3535839116229909e-12
+    ],
+    "moment_residual_kNm": [
+      -1.0081247317035173e-11,
+      -6.412422676183027e-13,
+      2.576185095948586e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -31.511078371693966
+    ],
+    "relative_force_residual": 4.512643032315422e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sintered_regolith",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 69.434788595314,
+    "max_displacement_m": 9.647514840747174e-05,
+    "min_uz_m": -9.286481873636806e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.1157741397482823e-14,
+      2.298022883095996e-13,
+      5.087485988042317e-12
+    ],
+    "moment_residual_kNm": [
+      -7.825838038944126e-13,
+      5.783255818680999e-13,
+      2.1385120838564063e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -69.43478859530747
+    ],
+    "relative_force_residual": 7.334487173291134e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sintered_regolith",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 11.46629536436378,
+    "max_displacement_m": 1.5931675883796464e-05,
+    "min_uz_m": -1.5335474653707104e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -7.743805596760467e-15,
+      2.93723378952393e-14,
+      -2.6290081223123707e-13
+    ],
+    "moment_residual_kNm": [
+      -1.6749199342274527e-13,
+      1.0783561543714626e-13,
+      4.851574551213192e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -11.46629536436385
+    ],
+    "relative_force_residual": 2.3080675285691205e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sintered_regolith",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 26.25923197641335,
+    "max_displacement_m": 3.648550464745492e-05,
+    "min_uz_m": -3.512013022546107e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.8457457784393227e-14,
+      1.0762571389655307e-13,
+      -4.298783551348606e-13
+    ],
+    "moment_residual_kNm": [
+      -9.487712898094953e-13,
+      2.3638729862440755e-13,
+      -1.80611512124016e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -26.259231976413353
+    ],
+    "relative_force_residual": 1.689046263258075e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sintered_regolith",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 69.434788595314,
+    "max_displacement_m": 0.0003975365587341823,
+    "min_uz_m": -0.0003966758573809025,
+    "max_uz_m": -0.00011051382952291086,
+    "mean_base_uz_m": -0.00011051382952294091,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.833311280563521e-12,
+      9.887640200159622e-13,
+      7.929656931082718e-12
+    ],
+    "moment_residual_kNm": [
+      -1.980694858706458e-12,
+      4.892856952931623e-13,
+      -8.723977974248354e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -69.43478859530747
+    ],
+    "relative_force_residual": 1.1807722539688097e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sintered_regolith",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 11.46629536436378,
+    "max_displacement_m": 6.564823905707338e-05,
+    "min_uz_m": -6.550610488863867e-05,
+    "max_uz_m": -1.824999019644144e-05,
+    "mean_base_uz_m": -1.8249990196448535e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -1.3790357744625226e-13,
+      3.7976357435625005e-13,
+      -1.1368683772161603e-13
+    ],
+    "moment_residual_kNm": [
+      -1.5383433425256093e-12,
+      1.0866637450979155e-12,
+      -5.194499037960145e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -11.46629536436385
+    ],
+    "relative_force_residual": 3.660442305143993e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sintered_regolith",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 20000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 26.25923197641335,
+    "max_displacement_m": 0.0001503425721612845,
+    "min_uz_m": -0.00015001706736815726,
+    "max_uz_m": -4.179473063506771e-05,
+    "mean_base_uz_m": -4.179473063507918e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      7.19008186322867e-14,
+      3.3802145454129163e-13,
+      1.531219595563016e-12
+    ],
+    "moment_residual_kNm": [
+      -3.0868596073143335e-12,
+      -2.6299101785198786e-13,
+      4.992369298917526e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -26.259231976413353
+    ],
+    "relative_force_residual": 5.977832855979479e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_geopolymer",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 6.193215088776626,
+    "weight_kN": 60.75544002089871,
+    "max_displacement_m": 0.00020766483359533944,
+    "min_uz_m": -0.00019989352126517895,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.3100631690576847e-14,
+      2.2745000327617504e-13,
+      3.424815986363683e-12
+    ],
+    "moment_residual_kNm": [
+      3.819457904609293e-13,
+      1.843629415798631e-12,
+      5.213715308590749e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -60.75544002089563
+    ],
+    "relative_force_residual": 5.649511251595063e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_geopolymer",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 6.193215088776626,
+    "weight_kN": 10.033008443818135,
+    "max_displacement_m": 3.429327527261748e-05,
+    "min_uz_m": -3.300993929149126e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -3.3514857555871913e-15,
+      3.7669520280836366e-14,
+      -3.126388037344441e-13
+    ],
+    "moment_residual_kNm": [
+      -4.403301494215287e-14,
+      -2.309376648246264e-13,
+      -3.994218232863867e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -10.033008443818625
+    ],
+    "relative_force_residual": 3.1388176650813926e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_geopolymer",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 6.193215088776626,
+    "weight_kN": 22.976827979361286,
+    "max_displacement_m": 7.85358341119896e-05,
+    "min_uz_m": -7.559683627866767e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      9.71445146547012e-17,
+      5.3405196931421983e-14,
+      8.029132914089132e-13
+    ],
+    "moment_residual_kNm": [
+      -4.7276325196710873e-14,
+      -5.660593521694679e-13,
+      3.7826049350992275e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -22.97682797936077
+    ],
+    "relative_force_residual": 3.5021694113657385e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_geopolymer",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 6.193215088776626,
+    "weight_kN": 60.75544002089871,
+    "max_displacement_m": 0.000491975441609073,
+    "min_uz_m": -0.0004887459175052285,
+    "max_uz_m": -9.669960083255654e-05,
+    "mean_base_uz_m": -9.669960083257558e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      4.3615111522399275e-13,
+      7.681560970735726e-13,
+      6.743050562363351e-12
+    ],
+    "moment_residual_kNm": [
+      -4.555077222169064e-12,
+      -2.928775277855067e-12,
+      -3.896703862527435e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -60.75544002089563
+    ],
+    "relative_force_residual": 1.1193505276753598e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_geopolymer",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 6.193215088776626,
+    "weight_kN": 10.033008443818135,
+    "max_displacement_m": 8.124365090795484e-05,
+    "min_uz_m": -8.071033500089316e-05,
+    "max_uz_m": -1.5968741421890093e-05,
+    "mean_base_uz_m": -1.59687414218928e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -6.223493942414393e-14,
+      1.442784552852508e-13,
+      -1.474376176702208e-13
+    ],
+    "moment_residual_kNm": [
+      4.636789131128351e-13,
+      -6.268987065571885e-13,
+      -1.4317690080527702e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -10.033008443818625
+    ],
+    "relative_force_residual": 2.1476108514727728e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_geopolymer",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 8130000.0,
+      "nu": 0.2,
+      "rho": 1.75,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 6.193215088776626,
+    "weight_kN": 22.976827979361286,
+    "max_displacement_m": 0.00018605799065956585,
+    "min_uz_m": -0.00018483663139092703,
+    "max_uz_m": -3.657038930568722e-05,
+    "mean_base_uz_m": -3.6570389305693006e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -3.3806291099836017e-14,
+      2.1637175663904453e-13,
+      1.4352963262354024e-12
+    ],
+    "moment_residual_kNm": [
+      -2.4488214579218094e-13,
+      5.721985385509498e-14,
+      -2.364862361142262e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -22.97682797936077
+    ],
+    "relative_force_residual": 6.31900720997718e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sulfur_concrete",
+    "planet": "earth",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 69.434788595314,
+    "max_displacement_m": 0.00012863353120986664,
+    "min_uz_m": -0.00012381975831507897,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -5.895284260759581e-14,
+      4.798939023942239e-14,
+      5.357492227631155e-12
+    ],
+    "moment_residual_kNm": [
+      -1.586163229118101e-12,
+      -9.1070553875916e-13,
+      1.1540912057090883e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -69.43478859530747
+    ],
+    "relative_force_residual": 7.716638291618423e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sulfur_concrete",
+    "planet": "moon",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 11.46629536436378,
+    "max_displacement_m": 2.1242234511722566e-05,
+    "min_uz_m": -2.044729953827116e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -3.469446951953614e-17,
+      -5.913672329604935e-15,
+      -1.723066134218243e-13
+    ],
+    "moment_residual_kNm": [
+      -2.900554111709346e-13,
+      -3.2052485665623465e-14,
+      5.028398238704577e-14
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -11.46629536436385
+    ],
+    "relative_force_residual": 1.503607416884269e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sulfur_concrete",
+    "planet": "mars",
+    "support": "pinned",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 26.25923197641335,
+    "max_displacement_m": 4.864733952997912e-05,
+    "min_uz_m": -4.682684030064735e-05,
+    "max_uz_m": 0.0,
+    "mean_base_uz_m": 0.0,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      4.726774527341604e-14,
+      3.309852392163748e-15,
+      -3.481659405224491e-13
+    ],
+    "moment_residual_kNm": [
+      -3.6274353570805845e-13,
+      -4.4950848598901416e-13,
+      1.1169633247198e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -26.259231976413353
+    ],
+    "relative_force_residual": 1.33810259473421e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sulfur_concrete",
+    "planet": "earth",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 69.434788595314,
+    "max_displacement_m": 0.000439287996834932,
+    "min_uz_m": -0.00043790260488024983,
+    "max_uz_m": -0.00011051382952292382,
+    "mean_base_uz_m": -0.0001105138295229425,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      1.894040480010517e-13,
+      2.6828525365872935e-13,
+      8.881784197001252e-12
+    ],
+    "moment_residual_kNm": [
+      -1.261874779725615e-11,
+      1.3743554905243371e-12,
+      5.398923175291803e-13
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -69.43478859530747
+    ],
+    "relative_force_residual": 1.280028897229241e-13,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sulfur_concrete",
+    "planet": "moon",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 11.46629536436378,
+    "max_displacement_m": 7.254297195436572e-05,
+    "min_uz_m": -7.231419163157506e-05,
+    "max_uz_m": -1.8249990196443348e-05,
+    "mean_base_uz_m": -1.8249990196449084e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      -2.1170565300820954e-14,
+      2.7408752363229534e-14,
+      2.291500322826323e-13
+    ],
+    "moment_residual_kNm": [
+      -1.1685315224699216e-12,
+      -7.173376476155013e-13,
+      9.119808286111892e-15
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -11.46629536436385
+    ],
+    "relative_force_residual": 2.0211618635190528e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  },
+  {
+    "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+    "opensees": "3.8.0",
+    "shape": "hyperboloid",
+    "material": "shell_sulfur_concrete",
+    "planet": "mars",
+    "support": "linear_springs",
+    "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+    "elastic_params_used": {
+      "E": 15000000.0,
+      "nu": 0.2,
+      "rho": 2.0,
+      "thickness": 0.02
+    },
+    "nodes": 9408,
+    "elements": 9216,
+    "surface_area_m2": 176.94900253646972,
+    "mass_tonne": 7.077960101459124,
+    "weight_kN": 26.25923197641335,
+    "max_displacement_m": 0.00016613236169811326,
+    "min_uz_m": -0.00016560842651442881,
+    "max_uz_m": -4.179473063506561e-05,
+    "mean_base_uz_m": -4.1794730635078175e-05,
+    "required_hold_down_kN": 0.0,
+    "force_residual_kN": [
+      7.069345109300684e-14,
+      -1.068038967499038e-13,
+      8.988365607365267e-13
+    ],
+    "moment_residual_kNm": [
+      -1.2399480946991543e-12,
+      3.8116038103552796e-13,
+      1.3593932943932585e-12
+    ],
+    "load_resultant_kN": [
+      0.0,
+      0.0,
+      -26.259231976413353
+    ],
+    "relative_force_residual": 3.457512336963257e-14,
+    "warnings": [
+      "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+    ]
+  }
+]

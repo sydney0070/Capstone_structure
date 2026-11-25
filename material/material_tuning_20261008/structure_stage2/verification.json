@@ -1,0 +1,286 @@
+{
+  "checks": [
+    {
+      "check": "spherical_cap_area",
+      "error": 0.006046830901733191,
+      "tolerance": 0.01,
+      "passed": true
+    },
+    {
+      "check": "pressure_projected_area",
+      "error": 1.4432899320127035e-15,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "dome_pinned_force_balance",
+      "error": 1.8954031033853356e-16,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "dome_pinned_moment_balance",
+      "error": 4.192445013612198e-14,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "dome_pinned_gravity_scaling",
+      "error": 2.9873992602183134e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "dome_pinned_mass_invariant",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "dome_linear_springs_force_balance",
+      "error": 1.4128734465349508e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "dome_linear_springs_moment_balance",
+      "error": 8.570850183309242e-13,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "dome_linear_springs_gravity_scaling",
+      "error": 5.483150332322698e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "dome_linear_springs_mass_invariant",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "dome_spring_settlement_equilibrium",
+      "error": 1.3100631690576847e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "dome_rigid_support_limit",
+      "error": 2.652256608873023e-07,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_pinned_force_balance",
+      "error": 2.1973938535400513e-15,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_pinned_moment_balance",
+      "error": 6.91203578400924e-13,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_pinned_gravity_scaling",
+      "error": 4.329931962582706e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_pinned_mass_invariant",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_linear_springs_force_balance",
+      "error": 1.6015109789858332e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_linear_springs_moment_balance",
+      "error": 1.7313028604216288e-11,
+      "tolerance": 1e-06,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_linear_springs_gravity_scaling",
+      "error": 1.5045830999507575e-13,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_linear_springs_mass_invariant",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_spring_settlement_equilibrium",
+      "error": 1.7541523789077473e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_rigid_support_limit",
+      "error": 1.864559985859124e-07,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "check": "elastic_E_inverse_scaling",
+      "error": 0.0,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "pressure_independent_of_gravity",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "check": "pressure_hold_down_balance",
+      "error": 1.3433698597964394e-14,
+      "tolerance": 1e-09,
+      "passed": true
+    },
+    {
+      "check": "dome_pinned_mesh_48_to_72",
+      "error": 0.0010443904037812368,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "dome_linear_springs_mesh_48_to_72",
+      "error": 0.009566117183463674,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_pinned_mesh_48_to_72",
+      "error": 0.00013430985889861802,
+      "tolerance": 0.02,
+      "passed": true
+    },
+    {
+      "check": "hyperboloid_linear_springs_mesh_48_to_72",
+      "error": 0.008639086386039163,
+      "tolerance": 0.02,
+      "passed": true
+    }
+  ],
+  "mesh": [
+    {
+      "shape": "dome",
+      "support": "pinned",
+      "rows": [
+        {
+          "n": 12,
+          "max_displacement_m": 1.1554060771271106e-05,
+          "area": 97.5811241891065
+        },
+        {
+          "n": 24,
+          "max_displacement_m": 1.1757957643249418e-05,
+          "area": 98.02581226514138
+        },
+        {
+          "n": 48,
+          "max_displacement_m": 1.1815698618173345e-05,
+          "area": 98.13750166813792
+        },
+        {
+          "n": 72,
+          "max_displacement_m": 1.1828051721887111e-05,
+          "area": 98.1582048794174
+        }
+      ]
+    },
+    {
+      "shape": "dome",
+      "support": "linear_springs",
+      "rows": [
+        {
+          "n": 12,
+          "max_displacement_m": 0.0001340879884110868,
+          "area": 97.5811241891065
+        },
+        {
+          "n": 24,
+          "max_displacement_m": 0.0001431864369828026,
+          "area": 98.02581226514138
+        },
+        {
+          "n": 48,
+          "max_displacement_m": 0.00014863234259764675,
+          "area": 98.13750166813792
+        },
+        {
+          "n": 72,
+          "max_displacement_m": 0.0001500679098083509,
+          "area": 98.1582048794174
+        }
+      ]
+    },
+    {
+      "shape": "hyperboloid",
+      "support": "pinned",
+      "rows": [
+        {
+          "n": 12,
+          "max_displacement_m": 3.429265793015163e-05,
+          "area": 176.7974743584714
+        },
+        {
+          "n": 24,
+          "max_displacement_m": 3.444328288963365e-05,
+          "area": 176.91858144745316
+        },
+        {
+          "n": 48,
+          "max_displacement_m": 3.447267354488368e-05,
+          "area": 176.94900253646972
+        },
+        {
+          "n": 72,
+          "max_displacement_m": 3.447730418674421e-05,
+          "area": 176.95464241185613
+        }
+      ]
+    },
+    {
+      "shape": "hyperboloid",
+      "support": "linear_springs",
+      "rows": [
+        {
+          "n": 12,
+          "max_displacement_m": 0.0003062548843738974,
+          "area": 176.7974743584714
+        },
+        {
+          "n": 24,
+          "max_displacement_m": 0.00034231289766685014,
+          "area": 176.91858144745316
+        },
+        {
+          "n": 48,
+          "max_displacement_m": 0.00035686744563410007,
+          "area": 176.94900253646972
+        },
+        {
+          "n": 72,
+          "max_displacement_m": 0.0003599773208055542,
+          "area": 176.95464241185613
+        }
+      ]
+    }
+  ],
+  "all_passed": true,
+  "scope": "Elastic aluminium demo. Mesh tolerance 2% is a project choice, not a design standard."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "FITTED_REQUIRES_PARAMETER_OR_MEASUREMENT_REVIEW",
+  "numerical_screening_passed": true,
+  "tests": [
+    {
+      "csv": "specimen_1.csv",
+      "role": "train",
+      "nrmse": 0.025542164160974875,
+      "peak_error": 0.020164699772737823,
+      "increment_error": 8.583694054119396e-11,
+      "passes": true
+    },
+    {
+      "csv": "specimen_2.csv",
+      "role": "train",
+      "nrmse": 0.02568194092917117,
+      "peak_error": 0.022335927301153802,
+      "increment_error": 8.72452091417786e-11,
+      "passes": true
+    },
+    {
+      "csv": "specimen_3.csv",
+      "role": "validation",
+      "nrmse": 0.02448727933558718,
+      "peak_error": 0.013299632660684175,
+      "increment_error": 8.520642690496695e-11,
+      "passes": true
+    }
+  ],
+  "boundary_parameters": [
+    "E",
+    "sigInf"
+  ],
+  "mandatory_review": "ELASTIC_STRAIN_AND_MACHINE_COMPLIANCE_NOT_CONFIRMED",
+  "scope": "AW6014 T6, 23 C, rolling 0 degrees, 15 mm/min; engineering strain <=2%; axial monotonic response only. Elastic strain/compliance review required. nu=.33 assumed, H=0 fixed; no multiaxial/isotropy/cyclic validation.",
+  "optimizer_success": true
+}

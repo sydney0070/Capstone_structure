@@ -1,0 +1,23 @@
+{
+  "id": "pysimple2_reference",
+  "family": "PySimple2",
+  "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+  "mars_calibrated": false,
+  "tests": [
+    {
+      "test": "committed_uniaxial_material_history",
+      "steps": 1100,
+      "max_force_N": 96551.86216722731,
+      "min_force_N": -96476.00913367033,
+      "scope": "Material tester on the same defined zeroLength law; no global spring equilibrium solve or ring area conversion.",
+      "checks": {
+        "finite": true,
+        "responds": true,
+        "force_capacity_bound": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "elapsed_seconds": 0.006073750002542511
+}

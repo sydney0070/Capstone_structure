@@ -1,0 +1,15 @@
+{
+  "case": "aluminum_aw6014_t4_axial",
+  "status": "FITTED_REQUIRES_INDEPENDENT_VALIDATION",
+  "opensees": "3.8.0",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "points": 19,
+  "units": [
+    "axial strain",
+    "axial stress (kPa)"
+  ],
+  "y_min": 0.0,
+  "y_max": 159544.75272421757,
+  "physical_validation": "NOT_EVALUATED_WITHOUT_INDEPENDENT_EXPERIMENT",
+  "history_sha256": "0edae6f63ee323c6f97523cd5a393edeede1a76132d74627825f29fdcb9cefea"
+}

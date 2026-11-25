@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-25",
+  "new_ids": [
+    "G17",
+    "G18",
+    "G19",
+    "G20",
+    "R28",
+    "R29"
+  ],
+  "sources": [
+    {
+      "id": "G17",
+      "title": "Villeneuve & Heap (2021), Calculating cohesion and internal friction angle of volcanic rocks and rock masses",
+      "group": "01_ground",
+      "group_label": "지반·행성 레골리스",
+      "used_for": "비선형 층별 재료 및 평가·검증 방법",
+      "used_section": "Table1–3; Eqs5–14; GSI55 recommendation; canonical a sign checked against HoekBrown2019",
+      "prior_scope": "Basalt analogue strength/upscaling; not InSight measurements",
+      "kind": "논문·보고서",
+      "url": "https://doi.org/10.30909/vol.04.02.279293",
+      "files": [
+        "01_ground/G17_Villeneuve_Heap_2021_Volcanic_Rock_Strength.pdf",
+        "01_ground/G17_Villeneuve_Heap_2021_Supplement.xlsx"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true,
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "G18",
+      "title": "Hoek & Brown (2019), The Hoek–Brown failure criterion and GSI – 2018 edition",
+      "group": "01_ground",
+      "group_label": "지반·행성 레골리스",
+      "used_for": "비선형 층별 재료 및 평가·검증 방법",
+      "used_section": "Eqs3–6, PDF p2; application range and tension cutoff",
+      "prior_scope": "Rock-mass strength criterion; GSI/D uncertainty must be retained",
+      "kind": "논문·보고서",
+      "url": "https://doi.org/10.1016/j.jrmge.2018.08.001",
+      "files": [
+        "01_ground/G18_Hoek_Brown_2019_GSI.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true,
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "G19",
+      "title": "Hughes et al. (2022), Canyon Wall and Floor Debris Deposits in Aeolis Mons, Mars",
+      "group": "01_ground",
+      "group_label": "지반·행성 레골리스",
+      "used_for": "비선형 층별 재료 및 평가·검증 방법",
+      "used_section": "Section6.2, PDF p16, granular and broken-rock phi20–40deg/c0 or1–5kPa ranges",
+      "prior_scope": "Gale/terrestrial analogue range, not measured InSight blocky ejecta",
+      "kind": "논문·보고서",
+      "url": "https://doi.org/10.1029/2021JE006848",
+      "files": [
+        "01_ground/G19_Hughes_2022_Blocky_Regolith.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true,
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "G20",
+      "title": "Coleman (2024), Megaflood Erosion on Mars—How Lava-Filled Craters Became Mesas",
+      "group": "01_ground",
+      "group_label": "지반·행성 레골리스",
+      "used_for": "비선형 층별 재료 및 평가·검증 방법",
+      "used_section": "Section rock mechanics, fractured/jointed basalt comparison",
+      "prior_scope": "Publisher HTML read; full PDF unavailable(403); not InSight calibration",
+      "kind": "논문·보고서",
+      "url": "https://doi.org/10.1029/2023JE007997",
+      "files": [
+        "01_ground/G20_Coleman_2024_original_unavailable.webloc"
+      ],
+      "status": "원문 PDF 미확보(출처 링크 보관)",
+      "full_text_available": false,
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "R28",
+      "title": "NASA-STD-7009B (2024), Standard for Models and Simulations",
+      "group": "04_SSI_and_numerics",
+      "group_label": "SSI·기초·수치해석 선행연구",
+      "used_for": "비선형 층별 재료 및 평가·검증 방법",
+      "used_section": "Credibility, verification/validation, project acceptance and uncertainty requirements",
+      "prior_scope": "General V&V framework; not a soil constitutive tolerance table",
+      "kind": "공식표준",
+      "url": "https://standards.nasa.gov/node/263",
+      "files": [
+        "04_SSI_and_numerics/R28_NASA_STD_7009B_2024.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true,
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "R29",
+      "title": "Goldberg & Ricks (2022), Lessons Learned and Best Practices for Utilizing a Generalized Composite Impact Model",
+      "group": "04_SSI_and_numerics",
+      "group_label": "SSI·기초·수치해석 선행연구",
+      "used_for": "비선형 층별 재료 및 평가·검증 방법",
+      "used_section": "Single Element Verification Procedure Summary",
+      "prior_scope": "Method precedent for multi-path, load/unload element checks; composite study, not soil data",
+      "kind": "논문·보고서",
+      "url": "https://ntrs.nasa.gov/citations/20220004943",
+      "files": [
+        "04_SSI_and_numerics/R29_Goldberg_Ricks_2022_Single_Element_Verification.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true,
+      "reviewed_on": "2026-11-25"
+    }
+  ],
+  "download_log": "/private/tmp/nonlinear_literature_20261125/downloads.json"
+}

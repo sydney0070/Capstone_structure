@@ -1,0 +1,143 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+{
+  "source_run": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/refined_gravity100/nl_ss_block35_r2/run",
+  "kinematic_verification": {
+    "native_patch_max_strain_error": 2.371692252312041e-20,
+    "affine_patch_max_strain_error": 4.743384504624082e-20,
+    "native_GP_to_offline_order": [
+      0,
+      4,
+      3,
+      7,
+      1,
+      5,
+      2,
+      6
+    ],
+    "reference": "Warped8-node cube with prescribed non-affine displacements; exact affine completeness checked independently"
+  },
+  "mesh_coordinates_and_tags_match": true,
+  "stage_material_strain_ranges": [
+    {
+      "stage": "gravity",
+      "material": "mars_nl25_basalt_hb_gsi55",
+      "gauss_points": 12960,
+      "max_engineering_shear_strain_pct": 0.0014100387870545062,
+      "max_postgravity_increment_shear_strain_pct": 0.0,
+      "max_abs_total_volume_strain_pct": 0.0014052530383647757,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 2.0493903532248073e-15,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "gravity",
+      "material": "mars_nl25_blocky_phi35",
+      "gauss_points": 7776,
+      "max_engineering_shear_strain_pct": 0.01102571106619737,
+      "max_postgravity_increment_shear_strain_pct": 0.0,
+      "max_abs_total_volume_strain_pct": 0.01090129649475275,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 1.243203243081427e-15,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "gravity",
+      "material": "mars_nl25_crust_tc",
+      "gauss_points": 1824,
+      "max_engineering_shear_strain_pct": 0.04764473491228284,
+      "max_postgravity_increment_shear_strain_pct": 0.0,
+      "max_abs_total_volume_strain_pct": 0.021122554164204308,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 2.758940340172207e-14,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "gravity",
+      "material": "mars_nl25_mgs1_ss",
+      "gauss_points": 5472,
+      "max_engineering_shear_strain_pct": 0.1332981167934188,
+      "max_postgravity_increment_shear_strain_pct": 0.0,
+      "max_abs_total_volume_strain_pct": 0.03258610072734087,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 8.110030769088186e-15,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "depressurized",
+      "material": "mars_nl25_basalt_hb_gsi55",
+      "gauss_points": 12960,
+      "max_engineering_shear_strain_pct": 0.0016631348173067042,
+      "max_postgravity_increment_shear_strain_pct": 0.0005548213253001065,
+      "max_abs_total_volume_strain_pct": 0.0016149658031721459,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 1.835713988226189e-15,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "depressurized",
+      "material": "mars_nl25_blocky_phi35",
+      "gauss_points": 7776,
+      "max_engineering_shear_strain_pct": 0.0237169995354463,
+      "max_postgravity_increment_shear_strain_pct": 0.018103729762075693,
+      "max_abs_total_volume_strain_pct": 0.02020392845012937,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 1.3415734657268623e-15,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "depressurized",
+      "material": "mars_nl25_crust_tc",
+      "gauss_points": 1824,
+      "max_engineering_shear_strain_pct": 0.061462268804971756,
+      "max_postgravity_increment_shear_strain_pct": 0.027831434431499633,
+      "max_abs_total_volume_strain_pct": 0.02980815755007143,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 3.273539981791344e-14,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "depressurized",
+      "material": "mars_nl25_mgs1_ss",
+      "gauss_points": 5472,
+      "max_engineering_shear_strain_pct": 0.18929645300843237,
+      "max_postgravity_increment_shear_strain_pct": 0.07166598292163336,
+      "max_abs_total_volume_strain_pct": 0.03193755765123652,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 1.5785615660132972e-14,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "pressurized",
+      "material": "mars_nl25_basalt_hb_gsi55",
+      "gauss_points": 12960,
+      "max_engineering_shear_strain_pct": 0.0014180787107241552,
+      "max_postgravity_increment_shear_strain_pct": 0.00011685953744911673,
+      "max_abs_total_volume_strain_pct": 0.0014156792984092996,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 2.213793694915504e-15,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "pressurized",
+      "material": "mars_nl25_blocky_phi35",
+      "gauss_points": 7776,
+      "max_engineering_shear_strain_pct": 0.011808597282061985,
+      "max_postgravity_increment_shear_strain_pct": 0.004478033036833027,
+      "max_abs_total_volume_strain_pct": 0.011460281566116422,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 1.1234366907992401e-15,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "pressurized",
+      "material": "mars_nl25_crust_tc",
+      "gauss_points": 1824,
+      "max_engineering_shear_strain_pct": 0.05923091990081797,
+      "max_postgravity_increment_shear_strain_pct": 0.019888966333708617,
+      "max_abs_total_volume_strain_pct": 0.027781319446887463,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 3.805064479368349e-14,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    },
+    {
+      "stage": "pressurized",
+      "material": "mars_nl25_mgs1_ss",
+      "gauss_points": 5472,
+      "max_engineering_shear_strain_pct": 0.1882038281987911,
+      "max_postgravity_increment_shear_strain_pct": 0.07040559115003113,
+      "max_abs_total_volume_strain_pct": 0.034960932843362214,
+      "bbar_elastic_bulk_pressure_strain_error_relative": 1.3955319207425235e-14,
+      "scope": "Committed phase snapshots; max principal strain difference is engineering maximum shear strain; no independent G/Gmax curve validation"
+    }
+  ],
+  "scope": "Offline exact small-strain bbar kinematics from saved nodal displacements, not a new load analysis or experimental strain measurement"
+}

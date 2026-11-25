@@ -1,0 +1,36 @@
+{
+  "kind": "spring",
+  "material": "PySimple1",
+  "params": {
+    "soil_type": 2,
+    "pult": 200.0,
+    "y50": 0.01,
+    "Cd": 0.1,
+    "c": 0.0
+  },
+  "bounds": {
+    "pult": [
+      100.0,
+      350.0
+    ],
+    "y50": [
+      0.003,
+      0.025
+    ],
+    "Cd": [
+      0.0,
+      0.3
+    ]
+  },
+  "name": "pile_py",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.05,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

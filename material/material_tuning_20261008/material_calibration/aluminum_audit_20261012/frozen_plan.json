@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-12",
+  "E_profiles_GPa": [
+    60,
+    70,
+    80
+  ],
+  "purpose": "Diagnose training-data support for E and saturation parameters; not accepted material values.",
+  "fixed": "Original nu=0.33, H=0, shell thickness and strain preprocessing retained.",
+  "selection": "No holdout reading or new final material selection.",
+  "max_nfev": 150,
+  "initial_window": "Strictly positive strain with corrected stress 10 to 50 MPa. Descriptive apparent slope only.",
+  "limitations": "A sparse low-stress window cannot establish true E or quantify machine compliance."
+}

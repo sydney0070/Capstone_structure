@@ -1,0 +1,57 @@
+{
+  "id": "duricrust_elastic",
+  "group": "first_comparison",
+  "layer": "local_duricrust_1_19cm_approx",
+  "family": "ElasticIsotropic",
+  "parameters": {
+    "E_Pa": 11480000.0,
+    "nu": 0.28,
+    "G_Pa": 4484375.0,
+    "K_Pa": 8696969.696969697,
+    "density_kg_m3": 1025.0
+  },
+  "evidence": {
+    "E_Pa": {
+      "source": "Brinkman2022",
+      "locator": "Table 4, PDF p.13",
+      "kind": "transferred",
+      "note": "Select E=11.48 MPa and nu=.28; effective shallow volume, not isolated crust. Derive G/K consistently; do not mix independent modal estimates."
+    },
+    "nu": {
+      "source": "Brinkman2022",
+      "locator": "Table 4, PDF p.13",
+      "kind": "transferred",
+      "note": "Select E=11.48 MPa and nu=.28; effective shallow volume, not isolated crust. Derive G/K consistently; do not mix independent modal estimates."
+    },
+    "density_kg_m3": {
+      "source": "Spohn2022",
+      "locator": "Section 6.7, range 950–1100 kg/m3",
+      "kind": "assumed_within_inferred_range",
+      "note": "Midpoint 1025 chosen for this specimen, not directly measured"
+    },
+    "G_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "K_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    }
+  },
+  "mars_calibrated": false,
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "status": "SOURCE_BASED_INITIAL_TRIAL",
+  "notes": [
+    "Unit cube is a material test, not the actual thickness of this geological unit.",
+    "No selfweight; confinement is an imposed laboratory test condition."
+  ]
+}

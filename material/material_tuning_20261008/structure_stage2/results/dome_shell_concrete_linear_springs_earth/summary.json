@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "dome",
+  "material": "shell_concrete",
+  "planet": "earth",
+  "support": "linear_springs",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 30000000.0,
+    "nu": 0.2,
+    "rho": 2.4,
+    "thickness": 0.02
+  },
+  "nodes": 2401,
+  "elements": 2304,
+  "surface_area_m2": 98.13750166813792,
+  "mass_tonne": 4.710600080070652,
+  "weight_kN": 46.2109867854931,
+  "max_displacement_m": 0.00016322037154841172,
+  "min_uz_m": -0.00016322037154841172,
+  "max_uz_m": -7.303100995297811e-05,
+  "mean_base_uz_m": -7.355802650572486e-05,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -7.620987174661309e-13,
+    -4.3153089523476545e-14,
+    8.739675649849232e-13
+  ],
+  "moment_residual_kNm": [
+    -9.451033705643042e-13,
+    -4.21220523738608e-12,
+    1.3967365671250394e-12
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -46.210986785493056
+  ],
+  "relative_force_residual": 2.5110424673695382e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

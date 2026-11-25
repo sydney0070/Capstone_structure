@@ -1,0 +1,348 @@
+{
+  "boundary": "restrained",
+  "reference_temperature_K": 219.69442627047763,
+  "assumed_cte_scale": 1.0,
+  "rows": 284,
+  "study": "common TWINS proxy temperature applied to material-point benchmarks, NOT actual component/soil temperature",
+  "quasistatic": true,
+  "rate_or_creep_effects": false,
+  "full_SSI_coupling": false,
+  "experimental_thermal_calibration": false,
+  "mechanical_strength_temperature_dependence": false,
+  "records": [
+    {
+      "name": "steel_s355_coupon",
+      "status": "CONVENTIONAL_REFERENCE_NOT_THERMAL_FIT",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 111514918.58613132,
+      "maximum_thermal_strain_components": [
+        0.0005461922647542675,
+        0.0005461922647542675,
+        0.0005461922647542675,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "steel_s355_nominal",
+      "status": "CONVENTIONAL_REFERENCE_NOT_THERMAL_FIT",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 473016376.62775147,
+      "maximum_thermal_strain_components": [
+        0.0005461922647542675,
+        0.0005461922647542675,
+        0.0005461922647542675,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "al6061_t6_extrusion",
+      "status": "PUBLISHED_TEMPERATURE_FUNCTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 356718842.21056783,
+      "maximum_thermal_strain_components": [
+        0.0009952385697789001,
+        0.0009952385697789001,
+        0.0009952385697789001,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "concrete_c30_prototype",
+      "status": "CONVENTIONAL_REFERENCE_NOT_MIX_CALIBRATED",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 12101025.420536919,
+      "maximum_thermal_strain_components": [
+        0.0004551602206285563,
+        0.0004551602206285563,
+        0.0004551602206285563,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "rebar_sd400_prototype",
+      "status": "CONVENTIONAL_REFERENCE_NOT_THERMAL_FIT",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 109238452.95085227,
+      "maximum_thermal_strain_components": [
+        0.0005461922647542675,
+        0.0005461922647542675,
+        0.0005461922647542675,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "cfrp_as4_8552_ud_rtd",
+      "status": "TRANSFERRED_RESEARCH_ORTHOTROPIC_MODEL",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 33117869.14153907,
+      "maximum_thermal_strain_components": [
+        0.0,
+        0.001484277479469722,
+        0.001484277479469722,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity",
+      "status": "PROVISIONAL_ANALOGUE_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 6797282.577524775,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "sintered_jsc1a_low_porosity",
+      "status": "PROVISIONAL_ANALOGUE_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 11263449.788759964,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "moon_jsc1a_17_peak",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 110411.03133537399,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "moon_jsc1a_17_residual",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 110411.03133537399,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "moon_jsc1a_18_peak",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 118846.49005190226,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "moon_jsc1a_18_residual",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 118846.49005190226,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "moon_jsc1a_19_peak",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 113800.98203453959,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "moon_jsc1a_19_residual",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 113800.98203453959,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "mars_jez1_peak",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 133904.17804121898,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "mars_jez1_residual",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 133904.17804121898,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    },
+    {
+      "name": "earth_sand_dr50_pdmy02",
+      "status": "PROVISIONAL_EFFECTIVE_SKELETON_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 1012762.6647379056,
+      "maximum_thermal_strain_components": [
+        0.0005006762426914119,
+        0.0005006762426914119,
+        0.0005006762426914119,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "50kPa isotropic preload then PDMYstage1"
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference",
+      "status": "PROVISIONAL_EFFECTIVE_SKELETON_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": true,
+      "maximum_stress_vector_norm_Pa": 1012762.6647379056,
+      "maximum_thermal_strain_components": [
+        0.0005006762426914119,
+        0.0005006762426914119,
+        0.0005006762426914119,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "50kPa isotropic preload then PDMYstage1"
+    },
+    {
+      "name": "shield_loose_jsc1a",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "applied_assumed_CTE_scale": 1.0,
+      "finite": true,
+      "thermal_stress_applicable": false,
+      "maximum_stress_vector_norm_Pa": 0.0,
+      "maximum_thermal_strain_components": [
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.00036412817650284497,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mechanical_stage": "original mechanical law"
+    }
+  ],
+  "completed_records": 19,
+  "complete": true,
+  "source_hashes": {
+    "thermal.py": "9daabee6f1a8df0baeb1620d3f0a32ed5bf5e1a8a02abf2ca869e2c476b5b861",
+    "thermal_catalog.json": "b441105ceeca9395221fb83896e00dc4c34d32072a5de8c1d57dd4f8db37474a",
+    "mars_temperature_proxy.csv": "11693eaf9528bc27078e7e655d18ebdd7b1d8f3037711318b31051130311e482",
+    "verify_thermal.py": "0604f3a6064e843c6cc0251507598afa4d33f3a9f6802914ebd3d810b60df036",
+    "catalog_with_thermal.json": "5929b01ea65ee18c8dbd6ae4ac98ba5518f63c3a3bcd6f60843c36684fcef75e",
+    "prepare_catalog.py": "e1a7bf134f7d7545e24fd342f8daacd38ed85ef9218c7fcc1be7033bcf9c4b00",
+    "evaluate_mars_history.py": "35253a7690ab36937a8ce4badfdbd2958d98863d0bd30f5b4731c51b6192fd5e"
+  }
+}

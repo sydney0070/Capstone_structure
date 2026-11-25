@@ -1,0 +1,26 @@
+[
+  {
+    "body": "Earth",
+    "returncode": 0,
+    "elapsed_s": 4.995898246765137,
+    "pass_result": true,
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/hybrid_results/Earth/summary.json",
+    "settlement_mm": 0.0711890176087667
+  },
+  {
+    "body": "Moon",
+    "returncode": 0,
+    "elapsed_s": 5.361888885498047,
+    "pass_result": true,
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/hybrid_results/Moon/summary.json",
+    "settlement_mm": 0.8169577393502556
+  },
+  {
+    "body": "Mars",
+    "returncode": 0,
+    "elapsed_s": 3.505155086517334,
+    "pass_result": true,
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/hybrid_results/Mars/summary.json",
+    "settlement_mm": 0.4824470238622941
+  }
+]

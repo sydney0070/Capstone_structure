@@ -1,0 +1,21 @@
+{
+  "case": "gravity200_r3/nl_ss_block35_r3",
+  "pid": 57685,
+  "sample_duration_s": 1.0,
+  "sampling_interval_ms": 1.0,
+  "observed_CPU_percent": 98.5,
+  "observed_wall_elapsed": "36:37",
+  "observed_CPU_time": "36:27.32",
+  "process_physical_footprint": "2.0G",
+  "process_peak_footprint": "2.5G",
+  "architecture": "x86_64 translated",
+  "observed_main_stack": [
+    "StaticAnalysis::analyze",
+    "AcceleratedNewton::solveCurrentStep",
+    "UmfpackGenLinSolver::solve",
+    "umfpack_di_numeric",
+    "umfdi_kernel/front growth and memory allocation"
+  ],
+  "interpretation": "During this1-second sample, the stalled call was in numeric sparse factorization. This does not establish the cause of every failed run, matrix singularity, or a material return-map infinite loop.",
+  "raw_profile": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/performance/native_call_sample_57685.txt"
+}

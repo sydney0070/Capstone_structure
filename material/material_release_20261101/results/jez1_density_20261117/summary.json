@@ -1,0 +1,93 @@
+{
+  "analysis": "OpenSees single-element triaxial compression, no specimen selfweight",
+  "scope": "Density-only numerical sensitivity with shared constitutive parameters",
+  "opensees_version": "3.4.0",
+  "material_id": "mars_jez1_residual",
+  "shared_parameters": {
+    "E_Pa": 30000000.0,
+    "nu": 0.3,
+    "G_Pa": 11538461.538461538,
+    "K_Pa": 24999999.999999996,
+    "phi_deg": 39.7,
+    "c_Pa": 3200,
+    "psi_deg": 0
+  },
+  "reference_density_kg_m3": 1840,
+  "comparison_density_kg_m3": 1300,
+  "cases": [
+    {
+      "confinement_kPa": 5.0,
+      "specimens": {
+        "1840": {
+          "initial_axial_modulus_MPa": 30.0,
+          "plateau_q_kPa": 31.314583461689523
+        },
+        "1300": {
+          "initial_axial_modulus_MPa": 30.0,
+          "plateau_q_kPa": 31.314583461689523
+        }
+      },
+      "max_curve_difference_kPa": 0.0
+    },
+    {
+      "confinement_kPa": 15.0,
+      "specimens": {
+        "1840": {
+          "initial_axial_modulus_MPa": 30.0,
+          "plateau_q_kPa": 66.68063601672085
+        },
+        "1300": {
+          "initial_axial_modulus_MPa": 30.0,
+          "plateau_q_kPa": 66.68063601672085
+        }
+      },
+      "max_curve_difference_kPa": 0.0
+    },
+    {
+      "confinement_kPa": 25.0,
+      "specimens": {
+        "1840": {
+          "initial_axial_modulus_MPa": 29.999999999999993,
+          "plateau_q_kPa": 102.04668857175176
+        },
+        "1300": {
+          "initial_axial_modulus_MPa": 29.999999999999993,
+          "plateau_q_kPa": 102.04668857175176
+        }
+      },
+      "max_curve_difference_kPa": 0.0
+    },
+    {
+      "confinement_kPa": 50.0,
+      "specimens": {
+        "1840": {
+          "initial_axial_modulus_MPa": 30.000000000000007,
+          "plateau_q_kPa": 190.46181995932972
+        },
+        "1300": {
+          "initial_axial_modulus_MPa": 30.000000000000007,
+          "plateau_q_kPa": 190.46181995932972
+        }
+      },
+      "max_curve_difference_kPa": 0.0
+    },
+    {
+      "confinement_kPa": 75.0,
+      "specimens": {
+        "1840": {
+          "initial_axial_modulus_MPa": 29.99999999999997,
+          "plateau_q_kPa": 278.8769513469077
+        },
+        "1300": {
+          "initial_axial_modulus_MPa": 29.99999999999997,
+          "plateau_q_kPa": 278.8769513469077
+        }
+      },
+      "max_curve_difference_kPa": 0.0
+    }
+  ],
+  "mass_from_eigenvalue_kg_per_m3": {
+    "1840": 1840.0000000000007,
+    "1300": 1300.0000000000002
+  }
+}

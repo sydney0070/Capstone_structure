@@ -1,0 +1,15 @@
+{
+  "case": "silt_pm4",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "opensees": "3.8.0",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "points": 481,
+  "units": [
+    "engineering shear strain",
+    "shear stress (kPa)"
+  ],
+  "y_min": -12.22456573704349,
+  "y_max": 24.59971684597269,
+  "physical_validation": "NOT_EVALUATED_WITHOUT_INDEPENDENT_EXPERIMENT",
+  "history_sha256": "160ce12baa281aa470c7acaef51304f14d3016f72158f7eacdc1d3939892ad9b"
+}

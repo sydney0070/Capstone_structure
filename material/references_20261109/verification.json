@@ -1,0 +1,378 @@
+{
+  "completed_on": "2026-11-09T18:40:21.390345+09:00",
+  "copied_files": 148,
+  "all_copies_equal_original": true,
+  "downloaded_files": 11,
+  "unavailable_downloads": [
+    "niar_as4"
+  ],
+  "pdf_files": [
+    {
+      "path": "01_ground/connolly_carrier_2023_lunar_profile.pdf",
+      "bytes": 149514,
+      "sha256": "8fed5f0c72d12f39f6e1237ec03edc397c46ea2a553540736a58ebe7ea087617"
+    },
+    {
+      "path": "01_ground/jez1_2021.pdf",
+      "bytes": 4125514,
+      "sha256": "e6e7d8176834dfe6eca6d8cdc39a00aefe4ce38d8e5961b12cd44ca367a08bed"
+    },
+    {
+      "path": "01_ground/jsc1a_lasp/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf",
+      "bytes": 3235736,
+      "sha256": "f30aeba051b2b03d3053bc58ddfa5efb1c941562beea0c76015ea5b7f8dadef8"
+    },
+    {
+      "path": "01_ground/musiol_2016_basalt.pdf",
+      "bytes": 3274003,
+      "sha256": "f8bc0d93dfc261f4d7e0db36d2839650e185862a352445a8f196f76530c7947b"
+    },
+    {
+      "path": "01_ground/nasa_lunar_simulant_guide_2024.pdf",
+      "bytes": 5783538,
+      "sha256": "52e52b195ef25e26004c8bb06b9d88614c64dcf3d0a8f4a3a5c64b94d3cd9c16"
+    },
+    {
+      "path": "01_ground/spohn_2022_insight_hp3.pdf",
+      "bytes": 14154940,
+      "sha256": "5dd3372f576c7ccf0e23790d7c240e5371050a6c28998e7911c516a6d506e340"
+    },
+    {
+      "path": "03_candidates/hydro_6061_2019.pdf",
+      "bytes": 419400,
+      "sha256": "cc3cc79ef34d7ccd2a69fe5216f726be23d23d0b07e12c2ea1091adbba7fd009"
+    },
+    {
+      "path": "03_candidates/sintered_jsc1a_leag2016.pdf",
+      "bytes": 3261436,
+      "sha256": "be6521cead79a29980208847eef5e5e62ac7ba36ff274049c2352114f6049385"
+    }
+  ],
+  "source_ids": 19,
+  "unique_material_ids": 29,
+  "all_material_source_ids_resolved": true,
+  "all_registry_local_files_exist": true,
+  "new_navigation_links_valid": true,
+  "large_original_hashes_verified": true,
+  "original_recorded_source_hashes": [
+    {
+      "catalog": "release",
+      "id": "s355_coupon",
+      "matches_recorded_hash": true
+    },
+    {
+      "catalog": "release",
+      "id": "sintered2016",
+      "matches_recorded_hash": true
+    },
+    {
+      "catalog": "release",
+      "id": "lasp_jsc1a",
+      "matches_recorded_hash": true
+    },
+    {
+      "catalog": "ground",
+      "id": "s355_coupon",
+      "matches_recorded_hash": true
+    },
+    {
+      "catalog": "ground",
+      "id": "sintered2016",
+      "matches_recorded_hash": true
+    },
+    {
+      "catalog": "ground",
+      "id": "lasp_jsc1a",
+      "matches_recorded_hash": true
+    }
+  ],
+  "catalogue_audit": {
+    "sources": [
+      {
+        "path": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/configs/catalog.json",
+        "sha256": "c26e7e067a4ac59a30c55df688f702f2fe946e05dba3d01aee3e60da593de8f5",
+        "records": 19
+      },
+      {
+        "path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/materials.json",
+        "sha256": "0f0db5e41ef6bb6c88cfe34b585d9f1c96b00e71343452e834204121ceae2d76",
+        "records": 19
+      }
+    ],
+    "checked_records": 29,
+    "duplicate_names": [
+      "moon_jsc1a_17_peak",
+      "moon_jsc1a_17_residual",
+      "moon_jsc1a_18_peak",
+      "moon_jsc1a_18_residual",
+      "moon_jsc1a_19_peak",
+      "moon_jsc1a_19_residual",
+      "mars_jez1_peak",
+      "mars_jez1_residual",
+      "earth_sand_dr50_dry_reference"
+    ],
+    "units": "m,N,s,kg,Pa",
+    "restrictions": {
+      "steel_s355_coupon": {
+        "status": "PREVIOUS_COUPON_CALIBRATION_CURRENT_RUNTIME_REPLAY_IN_RESULTS",
+        "assumptions": [
+          "density7850 and nu0.30 are conventional assumptions; not identified from coupon"
+        ]
+      },
+      "steel_s355_nominal": {
+        "status": "NOMINAL_ASSUMPTION_NOT_GRADE_THICKNESS_CERTIFIED",
+        "assumptions": [
+          "S355 nominal reference; actual steel grade/product/thickness not received; EPP postyield is sensitivity model"
+        ]
+      },
+      "al6061_t6_extrusion": {
+        "status": "LITERATURE_ELASTIC_AND_YIELD_REFERENCE",
+        "assumptions": [
+          "nu0.33 assumed; EPP afteryield NOT calibrated; no welding/heat exposure degradation; sheet products require new product reference"
+        ]
+      },
+      "concrete_c30_prototype": {
+        "status": "FIXED_PROTOTYPE_NOT_EXPERIMENTALLY_CALIBRATED",
+        "assumptions": [
+          "C30/SD400 inherited prototype, NOT explicitly chosen grade by user",
+          "softening not objective under arbitrary element/integration changes; no confinement enhancement"
+        ]
+      },
+      "rebar_sd400_prototype": {
+        "status": "NOMINAL_PROTOTYPE_NOT_UCSD_A6_CALIBRATION",
+        "assumptions": []
+      },
+      "cfrp_as4_8552_ud_rtd": {
+        "status": "ELASTIC_PLY_WITH_MEAN_FIRST_ONSET_SCREENING",
+        "assumptions": [
+          "E3=E2,G13=G12,nu23=.35,G23=E2/(2(1+nu23)) transverse isotropy; out-of-plane constants NOT measured here",
+          "no progressive damage/delamination/impact; compression and tension moduli differ in source; single linear E uses tension normalized value"
+        ]
+      },
+      "sintered_jsc1a_high_porosity": {
+        "status": "ELASTIC_COMPRESSION_SCREEN_ONLY_TENSION_CAPACITY_UNKNOWN",
+        "assumptions": [
+          "mean properties not allowable; no extrapolation to bonded regolith; 2016 source only"
+        ]
+      },
+      "sintered_jsc1a_low_porosity": {
+        "status": "ELASTIC_COMPRESSION_SCREEN_ONLY_TENSION_CAPACITY_UNKNOWN",
+        "assumptions": [
+          "mean properties not allowable; no extrapolation to bonded regolith; 2016 source only"
+        ]
+      },
+      "moon_jsc1a_17_peak": {
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      },
+      "moon_jsc1a_17_residual": {
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      },
+      "moon_jsc1a_18_peak": {
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      },
+      "moon_jsc1a_18_residual": {
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      },
+      "moon_jsc1a_19_peak": {
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      },
+      "moon_jsc1a_19_residual": {
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      },
+      "mars_jez1_peak": {
+        "status": "PUBLISHED_SHEAR_STRENGTH_STIFFNESS_UNIDENTIFIED",
+        "assumptions": [
+          "E30MPa and nu.30 explicitly assumed; E sensitivity0.5/1/2 mandatory",
+          "triaxial-matched DP cannot exactly reproduce measured direct shear at every path",
+          "no liquefaction parameters inferred from dry direct shear"
+        ]
+      },
+      "mars_jez1_residual": {
+        "status": "PUBLISHED_SHEAR_STRENGTH_STIFFNESS_UNIDENTIFIED",
+        "assumptions": [
+          "E30MPa and nu.30 explicitly assumed; E sensitivity0.5/1/2 mandatory",
+          "triaxial-matched DP cannot exactly reproduce measured direct shear at every path",
+          "no liquefaction parameters inferred from dry direct shear"
+        ]
+      },
+      "earth_sand_dr50_pdmy02": {
+        "status": "OFFICIAL_SUGGESTED_EXAMPLE_NOT_SITE_CALIBRATED",
+        "assumptions": [
+          "rho is saturated total density; bbarBrick has NO pore-pressure DOF",
+          "water table/buoyancy/pore pressure NOT implicit; earth saturated model must supply initial effective stress or use u-p formulation for site use",
+          "G/K scaled80to101kPa with pressure exponent0.5; source table ambiguity explicitly interpreted",
+          "numerical_c is NOT soil Mohr-Coulomb cohesion"
+        ]
+      },
+      "earth_sand_dr50_dry_reference": {
+        "status": "ASSUMED_DRY_DENSITY_OFFICIAL_SKELETON_PARAMETERS",
+        "assumptions": [
+          "grain density2650kg/m3 assumed, e.70 gives dry bulk1558.82kg/m3",
+          "constitutive skeleton suggested sand parameters; not a site or dry-soil experimental calibration",
+          "G/K scaled80to101kPa with exponent.5 to resolve source reference-pressure ambiguity",
+          "no groundwater/pore-pressure DOF; numerical_c300Pa NOT physical cohesion"
+        ]
+      },
+      "shield_loose_jsc1a": {
+        "status": "BULK_DENSITY_REFERENCE_WITH_SETTLEMENT_SENSITIVITY",
+        "assumptions": [
+          "nominal1.7g/cc test condition; thickness explicit; density range1700-1900 for sensitivity",
+          "no fictitious shell tensile/flexural stiffness; retaining shell is separate material",
+          "soil redistribution/contact/settlement not captured by fixed attached mass"
+        ]
+      },
+      "earth_sand_dr30_dry_reference": {
+        "status": "OFFICIAL_SKELETON_WITH_ASSUMED_DRY_DENSITY",
+        "assumptions": [
+          "Dr30 official suggested skeleton; not site calibration",
+          "grain density2650 assumed, dry bulk2650/(1+0.85)",
+          "G/K at80kPa scaled to101kPa by sqrt(101/80)",
+          "no pore-pressure DOF; numerical_c300Pa is not MC cohesion"
+        ]
+      },
+      "earth_sand_dr75_dry_reference": {
+        "status": "OFFICIAL_SKELETON_WITH_ASSUMED_DRY_DENSITY",
+        "assumptions": [
+          "Dr75 official suggested skeleton; not site calibration",
+          "grain density2650 assumed, dry bulk2650/(1+0.55)",
+          "G/K at80kPa scaled to101kPa by sqrt(101/80)",
+          "no pore-pressure DOF; numerical_c300Pa is not MC cohesion"
+        ]
+      },
+      "basalt_elastic_analogue": {
+        "status": "PUBLISHED_MODEL_PARAMETERS_TRANSFERRED_AS_ANALOGUE",
+        "assumptions": [
+          "E40GPa nu.30 rho2900 from crust column Table1, not a tested local core",
+          "shared basalt analogue for all three bodies, not a claim that every Earth/Moon site is basaltic",
+          "no joints, crushing or tensile failure; bonded continuum boundaries",
+          "clast/lens distribution and rock depth are explicit scenario assumptions"
+        ]
+      },
+      "mars_insight_duricrust_proxy": {
+        "status": "LITERATURE_STRENGTH_AND_BULK_WAVE_MODULUS_PROXY",
+        "assumptions": [
+          "c5.8kPa inferred at phi30 rho1200; not an independent triaxial fit",
+          "E11.48MPa nu.28 are shallow bulk wave estimates at40-80Hz, assigned to crust as proxy",
+          "not a measured static crust-only E; sensitivity0.5/1/2 required",
+          "top1cm dust omitted in prepared-surface reference; no vacuum/thermal or rate calibration"
+        ]
+      },
+      "earth_sand_dr30_dp_reference": {
+        "status": "OFFICIAL_SAND_REFERENCE_MAPPED_TO_STATIC_DP_NOT_CYCLIC_CALIBRATION",
+        "assumptions": [
+          "Dr30 official suggested skeleton; not site calibration",
+          "grain density2650 assumed, dry bulk2650/(1+0.85)",
+          "G/K at80kPa scaled to101kPa by sqrt(101/80)",
+          "no pore-pressure DOF; numerical_c300Pa is not MC cohesion",
+          "Explicit simpler DP alternative to PDMY02: constant reference E/G/K, no pressure-dependent elastic modulus, no contraction/dilation cyclic law",
+          "triaxial compression matching; not fitting actual sand experiments; reference modulus sensitivity required"
+        ]
+      },
+      "earth_sand_dr50_dp_reference": {
+        "status": "OFFICIAL_SAND_REFERENCE_MAPPED_TO_STATIC_DP_NOT_CYCLIC_CALIBRATION",
+        "assumptions": [
+          "grain density2650kg/m3 assumed, e.70 gives dry bulk1558.82kg/m3",
+          "constitutive skeleton suggested sand parameters; not a site or dry-soil experimental calibration",
+          "G/K scaled80to101kPa with exponent.5 to resolve source reference-pressure ambiguity",
+          "no groundwater/pore-pressure DOF; numerical_c300Pa NOT physical cohesion",
+          "Explicit simpler DP alternative to PDMY02: constant reference E/G/K, no pressure-dependent elastic modulus, no contraction/dilation cyclic law",
+          "triaxial compression matching; not fitting actual sand experiments; reference modulus sensitivity required"
+        ]
+      },
+      "earth_sand_dr75_dp_reference": {
+        "status": "OFFICIAL_SAND_REFERENCE_MAPPED_TO_STATIC_DP_NOT_CYCLIC_CALIBRATION",
+        "assumptions": [
+          "Dr75 official suggested skeleton; not site calibration",
+          "grain density2650 assumed, dry bulk2650/(1+0.55)",
+          "G/K at80kPa scaled to101kPa by sqrt(101/80)",
+          "no pore-pressure DOF; numerical_c300Pa is not MC cohesion",
+          "Explicit simpler DP alternative to PDMY02: constant reference E/G/K, no pressure-dependent elastic modulus, no contraction/dilation cyclic law",
+          "triaxial compression matching; not fitting actual sand experiments; reference modulus sensitivity required"
+        ]
+      },
+      "moon_field_proxy_17": {
+        "status": "HYBRID_FIELD_COHESION_AND_SIMULANT_STIFFNESS_STRENGTH_PROXY",
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated",
+          "Explicit field-proxy alternative: Apollo/Carrier cohesion combined with JSC-1A E/rho/phi; NOT a refit of JSC-1A experiment",
+          "Cohesion Table18 averages520/900/3000Pa refer to0-15/0-30/30-60cm ranges; assignment to chosen thick layers is assumed; compare cohesionless option",
+          "No low-pressure tensile/adhesive fracture calibration"
+        ]
+      },
+      "moon_field_proxy_18": {
+        "status": "HYBRID_FIELD_COHESION_AND_SIMULANT_STIFFNESS_STRENGTH_PROXY",
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated",
+          "Explicit field-proxy alternative: Apollo/Carrier cohesion combined with JSC-1A E/rho/phi; NOT a refit of JSC-1A experiment",
+          "Cohesion Table18 averages520/900/3000Pa refer to0-15/0-30/30-60cm ranges; assignment to chosen thick layers is assumed; compare cohesionless option",
+          "No low-pressure tensile/adhesive fracture calibration"
+        ]
+      },
+      "moon_field_proxy_19": {
+        "status": "HYBRID_FIELD_COHESION_AND_SIMULANT_STIFFNESS_STRENGTH_PROXY",
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated",
+          "Explicit field-proxy alternative: Apollo/Carrier cohesion combined with JSC-1A E/rho/phi; NOT a refit of JSC-1A experiment",
+          "Cohesion Table18 averages520/900/3000Pa refer to0-15/0-30/30-60cm ranges; assignment to chosen thick layers is assumed; compare cohesionless option",
+          "No low-pressure tensile/adhesive fracture calibration"
+        ]
+      }
+    },
+    "conclusion": "Numerical range/consistency checks only; not experimental calibration or design certification"
+  },
+  "scope": "Reference organization and integrity only; no model parameters or analysis implementation changed."
+}

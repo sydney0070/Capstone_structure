@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-25",
+  "new_ids": [
+    "R30"
+  ],
+  "sources": [
+    {
+      "id": "R30",
+      "title": "McGann, Arduino & Mackenzie-Helnwein (2012), Development of Simplified Analysis Procedure for Piles in Laterally Spreading Layered Soils, PEER2012/05",
+      "group": "04_SSI_and_numerics",
+      "group_label": "SSI·기초·수치해석 선행연구",
+      "used_for": "비선형 층별 재료 및 평가·검증 방법",
+      "used_section": "Section4.5.1–4.5.5, printed pp48–60: confined compression, triaxial compression, simple shear, hydrostatic extension, multi-element test",
+      "prior_scope": "Direct OpenSees DruckerPrager test-method source; terrestrial numerical verification, not Mars field validation",
+      "kind": "논문·보고서",
+      "url": "https://peer.berkeley.edu/sites/default/files/webpeer-2012-05-christopher_r._mcgann_pedro_arduino_and_peter_mackenzie_helnwein.pdf",
+      "files": [
+        "04_SSI_and_numerics/R30_McGann_2012_OpenSees_DP_Verification.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true,
+      "reviewed_on": "2026-11-25"
+    }
+  ],
+  "download_log": "/private/tmp/nonlinear_literature_20261125/downloads.json"
+}

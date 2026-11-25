@@ -1,0 +1,34 @@
+{
+  "kind": "shell",
+  "material": "ElasticOrthotropic",
+  "params": {
+    "Ex": 130000000.0,
+    "Ey": 9000000.0,
+    "Ez": 9000000.0,
+    "nu_xy": 0.28,
+    "nu_yz": 0.35,
+    "nu_zx": 0.01938461538,
+    "Gxy": 5000000.0,
+    "Gyz": 3300000.0,
+    "Gzx": 5000000.0,
+    "rho": 1.6,
+    "thickness": 0.02
+  },
+  "bounds": {
+    "Ex": [
+      90000000.0,
+      170000000.0
+    ]
+  },
+  "name": "shell_cfrp_elastic",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.0001,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

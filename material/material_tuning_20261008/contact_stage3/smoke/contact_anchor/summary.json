@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETED_REQUESTED_PATH",
+  "attempted_stop": null,
+  "interpretation": "NECESSARY_EQUILIBRIUM_CHECK_AND_ELASTIC_TIE_DEMAND_NOT_COLLAPSE_PREDICTION",
+  "last_converged_pressure_kPa": 0.0,
+  "planet": "moon",
+  "support": "contact_anchor",
+  "horizontal_force_kN": 10.0,
+  "mass_tonne": 5.269380706211749,
+  "weight_kN": 8.536396744063032,
+  "total_anchor_allowable_kN": 156.96412394599923,
+  "max_gap_m": 4.988367605134835e-05,
+  "peak_anchor_tension_kN": 69.77256164114155,
+  "peak_anchor_utilization": 0.49883676051348347,
+  "max_force_residual": 3.40075670079862e-15,
+  "max_moment_residual_kNm": 0.07484302469503135,
+  "opensees": "3.8.0",
+  "steps": 54,
+  "mesh_n": 12
+}

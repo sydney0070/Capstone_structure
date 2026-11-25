@@ -1,0 +1,472 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1.6.4. Drucker Prager Material &mdash; OpenSees Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=224b24c6" />
+
+  
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js?v=b3ba4146"></script>
+      <script src="../../../../_static/doctools.js?v=888ff710"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../../../../_static/copybutton.js?v=f281be69"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="3.1.6.5. Manzari Dafalias Material" href="ManzariDafalias.html" />
+    <link rel="prev" title="3.1.6.3. J2 Plasticity Material" href="J2Plasticity.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html">
+            
+              <img src="../../../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Applications for Users</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../interpreters.html">1. OpenSees Interpreters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../install.html">2. Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../userManual.html">3. Command Manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../modelCommands.html">3.1. Model Commands</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../model/model.html">3.1.1. model Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/node.html">3.1.2. node Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/spConstraints.html">3.1.3. SP_Constraint Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/mpConstraints.html">3.1.4. MP_Constraint Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../uniaxialMaterial.html">3.1.5. uniaxialMaterial Command</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../ndMaterial.html">3.1.6. nDMaterial Command</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="ElasticIsotropic.html">3.1.6.1. Elastic Isotropic Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticOrthotropic.html">3.1.6.2. Elastic Orthotropic Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="J2Plasticity.html">3.1.6.3. J2 Plasticity Material</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">3.1.6.4. Drucker Prager Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ManzariDafalias.html">3.1.6.5. Manzari Dafalias Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BoundingCamClay.html">3.1.6.6. Bounding Cam Clay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PM4Sand.html">3.1.6.7. PM4Sand Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PM4Silt.html">3.1.6.8. PM4Silt Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PressureIndependentMultiYield.html">3.1.6.9. Pressure Independent Multi Yield</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PressureDependentMultiYield.html">3.1.6.10. Pressure Dependent Multi Yield</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PressureDependentMultiYield02.html">3.1.6.11. Pressure Dependent Multi Yield 02</a></li>
+<li class="toctree-l4"><a class="reference internal" href="J2CyclicBoundingSurface.html">3.1.6.12. J2CyclicBoundingSurface Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SAniSandMS.html">3.1.6.13. SANISAND-MS Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Orthotropic.html">3.1.6.14. Orthotropic Material Wrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Series3D.html">3.1.6.15. Series3D Material Wrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Parallel3D.html">3.1.6.16. Parallel3D Material Wrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="InitStrain.html">3.1.6.17. InitStrain Material Wrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDConcrete3D.html">3.1.6.18. ASDConcrete3D Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDPlasticMaterial3D.html">3.1.6.19. ASDPlasticMaterial3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="OrthotropicRAConcrete.html">3.1.6.20. OrthotropicRAConcrete Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SmearedSteelDoubleLayer.html">3.1.6.21. SmearedSteelDoubleLayer Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FAM_CS.html">3.1.6.22. FAM_CS Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NDTest.html">3.1.6.23. NDTest Command</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../section.html">3.1.7. section Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/geomTransf.html">3.1.8. Geometric Transformation Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/beamIntegration.html">3.1.9. Beam Integration Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/element.html">3.1.10. Element Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/timeSeries.html">3.1.11. Time Series Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/pattern.html">3.1.12. Pattern Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/damping.html">3.1.13. Damping Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/mass.html">3.1.14. mass Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/region.html">3.1.15. region Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/block.html">3.1.16. block Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../analysisCommands.html">3.2. Analysis Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../outputCommands.html">3.3. Output Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../miscCommands.html">3.4. Misc. Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../userExamples.html">4. Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../messageBoard.html">5. Questions, Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/license.html">6. Copyright and License</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework for Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/sourceCode.html">1. Source Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/build.html">2. Building Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/references.html">3. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/extend.html">4. Extending Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/contribute.html">5. Contributing Code &amp; Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/issues.html">6. Issues</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">OpenSees Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a></li>
+          <li class="breadcrumb-item"><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a></li>
+          <li class="breadcrumb-item"><a href="../ndMaterial.html"><span class="section-number">3.1.6. </span>nDMaterial Command</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1.6.4. </span>Drucker Prager Material</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/user/manual/material/ndMaterials/DruckerPrager.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="drucker-prager-material">
+<span id="druckerprager"></span><h1><span class="section-number">3.1.6.4. </span>Drucker Prager Material<a class="headerlink" href="#drucker-prager-material" title="Permalink to this heading"></a></h1>
+<p>Code Developed by: <a class="reference external" href="https://www.ce.washington.edu/facultyfinder/peter-mackenzie-helnwein">Peter Mackenzie-Helnwein</a> and <a class="reference external" href="https://www.ce.washington.edu/facultyfinder/pedro-arduino">Pedro Arduino</a> at U.Washington.</p>
+<p>This command is used to construct an multi dimensional material object that has a Drucker-Prager yield criterion.</p>
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">nDMaterial</span> <span class="pre">DruckerPrager</span> <span class="pre">$matTag</span> <span class="pre">$k</span> <span class="pre">$G</span> <span class="pre">$sigmaY</span> <span class="pre">$rho</span> <span class="pre">$rhoBar</span> <span class="pre">$Kinf</span> <span class="pre">$Ko</span> <span class="pre">$delta1</span> <span class="pre">$delta2</span> <span class="pre">$H</span> <span class="pre">$theta</span> <span class="pre">$density</span> <span class="pre">&lt;$atmPressure&gt;</span></span></dt>
+<dd></dd></dl>
+
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Argument</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$matTag</p></td>
+<td><p><em>float</em></p></td>
+<td><p>integer tag identifying material</p></td>
+</tr>
+<tr class="row-odd"><td><p>$k</p></td>
+<td><p><em>float</em></p></td>
+<td><p>bulk modulus</p></td>
+</tr>
+<tr class="row-even"><td><p>$G</p></td>
+<td><p><em>float</em></p></td>
+<td><p>shear modulus</p></td>
+</tr>
+<tr class="row-odd"><td><p>$sigmaY</p></td>
+<td><p><em>float</em></p></td>
+<td><p>yield stress</p></td>
+</tr>
+<tr class="row-even"><td><p>$rho</p></td>
+<td><p><em>float</em></p></td>
+<td><p>frictional strength parameter</p></td>
+</tr>
+<tr class="row-odd"><td><p>$rhoBar</p></td>
+<td><p><em>float</em></p></td>
+<td><p>controls evolution of plastic volume change: 0 ≤ $rhoBar ≤ $rho</p></td>
+</tr>
+<tr class="row-even"><td><p>$Kinf</p></td>
+<td><p><em>float</em></p></td>
+<td><p>nonlinear isotropic strain hardening parameter: $Kinf ≥ 0</p></td>
+</tr>
+<tr class="row-odd"><td><p>$Ko</p></td>
+<td><p><em>float</em></p></td>
+<td><p>nonlinear isotropic strain hardening parameter: $Ko ≥ 0</p></td>
+</tr>
+<tr class="row-even"><td><p>$delta1</p></td>
+<td><p><em>float</em></p></td>
+<td><p>nonlinear isotropic strain hardening parameter: $delta1 ≥ 0</p></td>
+</tr>
+<tr class="row-odd"><td><p>$delta2</p></td>
+<td><p><em>float</em></p></td>
+<td><p>tension softening parameter: $delta2 ≥ 0</p></td>
+</tr>
+<tr class="row-even"><td><p>$H</p></td>
+<td><p><em>float</em></p></td>
+<td><p>linear strain hardening parameter: $H ≥ 0</p></td>
+</tr>
+<tr class="row-odd"><td><p>$theta</p></td>
+<td><p><em>float</em></p></td>
+<td><p>controls relative proportions of isotropic and kinematic hardening: 0 ≤ $theta ≤ 1</p></td>
+</tr>
+<tr class="row-even"><td><p>$density</p></td>
+<td><p><em>float</em></p></td>
+<td><p>mass density of the material</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;$atmPressure&gt;</p></td>
+<td><p><em>float</em></p></td>
+<td><p>optional atmospheric pressure for update of elastic bulk and shear moduli (default = 101 kPa)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The material formulations for the Drucker-Prager object are “ThreeDimensional” and “PlaneStrain”</p>
+</div>
+<p>The yield condition for the Drucker-Prager model can be expressed as</p>
+<div class="math notranslate nohighlight">
+\[f\left(\mathbf{\sigma}, q^{iso}, \mathbf{q}^{kin}\right) = \left\| \mathbf{s} + \mathbf{q}^{kin} \right\| + \rho I_1 + \sqrt{\frac{2}{3}} q^{iso} - \sqrt{\frac{2}{3}} \sigma_Y^{} \leq 0\]</div>
+<p>in which</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{s} = \mathrm{dev} (\mathbf{\sigma}) = \mathbf{\sigma} - \frac{1}{3} I_1 \mathbf{1}\]</div>
+<p>is the deviatoric stress tensor,</p>
+<div class="math notranslate nohighlight">
+\[I_1 = \mathrm{tr}(\mathbf{\sigma})\]</div>
+<p>is the first invariant of the stress tensor, and the parameters .. math::rho_{}^{}&lt;/math&gt; and .. math::sigma_Y^{}&lt;/math&gt; are positive material constants.</p>
+<p>The isotropic hardening stress is defined as</p>
+<div class="math notranslate nohighlight">
+\[q^{iso} = \theta H \alpha^{iso} + (K_{\infty} - K_o) \exp(-\delta_1 \alpha^{iso})\]</div>
+<p>The kinematic hardening stress (or back-stress) is defined as</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{q}^{kin} = -(1 - \theta) \frac{2}{3} H \mathbb{I}^{dev} : \mathbf{\alpha}^{kin}\]</div>
+<p>The yield condition for the tension cutoff yield surface is defined as</p>
+<div class="math notranslate nohighlight">
+\[f_2(\mathbf{\sigma}, q^{ten}) = I_1 + q^{ten} \leq 0\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[q^{ten} = T_o \exp(-\delta_2^{} \alpha^{ten})\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[T_o = \sqrt{\frac{2}{3}} \frac{\sigma_Y}{\rho}\]</div>
+<p>Further, general, information on theory for the Drucker-Prager yield criterion can be found at wikipedia here</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The valid queries to the Drucker-Prager material when creating an ElementRecorder are ‘strain’ and ‘stress’ (as with all nDmaterial) as well as ‘state’. The query ‘state’ records a vector of state variables during a particular analysis. The columns of this vector are as follows. (Note: If the option ‘-time’ is included in the creation of the recorder, the first column will be the time variable for each recorded point and the columns below are shifted accordingly.)</p>
+<p>Column 1 - First invariant of the stress tensor, <span class="math notranslate nohighlight">\(I_1 = \mathrm{tr}(\mathbf{\sigma})\)</span>.
+Column 2 - The following tensor norm, <span class="math notranslate nohighlight">\(\left\| \mathbf{s} + \mathbf{q}^{kin} \right\| `, where .. math::\mathbf{s}\)</span> is the deviatoric stress tensor and <span class="math notranslate nohighlight">\(\mathbf{q}^{kin}\)</span> is the back-stress tensor.
+Column 3 - First invariant of the plastic strain tensor, <span class="math notranslate nohighlight">\(\mathrm{tr}(\mathbf{\varepsilon}^p) `.
+Column 4 - Norm of the deviatoric plastic strain tensor, :math:\)</span>left| mathbf{e}^p right| <a href="#id1"><span class="problematic" id="id2">`</span></a>.</p>
+<p>The Drucker-Prager strength parameters <span class="math notranslate nohighlight">\(\rho ` and :math:\)</span>sigma_Y ` can be related to the Mohr-Coulomb friction angle, <span class="math notranslate nohighlight">\(\phi `, and cohesive intercept, :math:`c\)</span>, by evaluating the yield surfaces in a deviatoric plane as described by Chen and Saleeb (1994). By relating the two yield surfaces in triaxial compression, the following expressions are determined</p>
+<div class="math notranslate nohighlight">
+\[\rho = \frac{2 \sqrt{2} \sin \phi}{\sqrt{3} (3 - \sin \phi)}\]</div>
+<div class="math notranslate nohighlight">
+\[\sigma_Y = \frac{6 c \cos \phi}{\sqrt{2} (3 - \sin \phi)}\]</div>
+</div>
+<div role="list" class="citation-list">
+<div class="citation" id="drucker-prager1952" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Drucker-Prager1952<span class="fn-bracket">]</span></span>
+<p>Drucker, D. C. and Prager, W., “Soil mechanics and plastic analysis for limit design.” Quarterly of Applied Mathematics, vol. 10, no. 2, pp. 157–165, 1952.</p>
+</div>
+<div class="citation" id="chen-saleeb1994" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Chen-Saleeb1994<span class="fn-bracket">]</span></span>
+<p>Chen, W. F. and Saleeb, A. F., Constitutive Equations for Engineering Materials Volume I: Elasticity and Modeling. Elsevier Science B.V., Amsterdam, 1994.</p>
+</div>
+</div>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<p>This example provides the input file and corresponding results for a confined triaxial compression (CTC) test using a single 8-node brick element and the Drucker-Prager constitutive model. A schematic representation of this test is shown below, (a) depicts the application of hydrostatic pressure, and (b) depicts the application of the deviator stress. Also shown is the stress path resulting from this test plotted on the meridian plane. As shown, the element is loaded until failure, at which point the model can no longer converge, as this is a stress-controlled analysis.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../../../_images/DruckerPrager.png"><img alt="../../../../_images/DruckerPrager.png" src="../../../../_images/DruckerPrager.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.6.1 </span><span class="caption-text">Drucker Prager Example</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span>#########################################################
+##
+# File is generated for the purposes of testing the#
+#Drucker-Prager model --&gt; conventional triaxial #
+# compression test#
+##
+#   Created:  03.16.2009 CRM#
+#   Updated:  12.02.2011 CRM#
+##
+# ---&gt; Basic units used are kN and meters#
+##
+#########################################################
+
+#-------------------------------------------------------
+# create the modelBuilder and build the model
+#-------------------------------------------------------
+wipe
+
+model BasicBuilder -ndm 3 -ndf 3
+
+#--create the nodes
+node 11.00.00.0
+node 21.01.00.0
+node 3 0.01.00.0
+node 40.00.00.0
+node 51.00.01.0
+node 6 1.01.01.0
+node 7 0.01.01.0
+node 8 0.00.01.0
+
+#--triaxial test boundary conditions
+fix 1 0 1 1
+fix 2 0 0 1
+fix 31 0 1
+fix 4 1 1 1
+fix 50 1 0
+fix 6 0 0 0
+fix 71 0 0
+fix 8 1 1 0
+
+#--define material parameters for the model
+#---bulk modulus
+set k       27777.78
+#---shear modulus
+set G       9259.26
+#---yield stress
+set sigY    5.0
+#---failure surface and associativity
+set rho     0.398
+set rhoBar  0.398
+#---isotropic hardening
+set Kinf    0.0
+set Ko     0.0
+set delta1  0.0
+#---kinematic hardening
+set H     0.0
+set theta   1.0
+#---tension softening
+set delta2  0.0
+#---mass density
+        set mDen    1.7
+
+#--material models
+#   type         tag  k   G   sigY   rho   rhoBar   Kinf   Ko   delta1   delta2   H   theta   density 
+nDMaterial DruckerPrager 2    $k  $G  $sigY  $rho  $rhoBar  $Kinf  $Ko  $delta1  $delta2  $H  $theta  $mDen
+
+#--create the element
+#type tag  nodesmatID  bforce1  bforce2  bforce3
+element stdBrick 1    1 2 3 4 5 6 7 8   2      0.0      0.0      0.0
+
+puts &quot;model Built...&quot;
+
+#-------------------------------------------------------
+# create the recorders
+#-------------------------------------------------------
+set step 0.1
+
+# record nodal displacements
+recorder Node -file displacements1.out -time -dT $step -nodeRange 1 8 -dof 1 2 3 disp
+
+# record the element stress, strain, and state at one of the Gauss points
+recorder Element -ele 1 -time -file stress1.out  -dT $step  material 2 stress
+recorder Element -ele 1 -time -file strain1.out  -dT $step  material 2 strain
+recorder Element -ele 1 -time -file state1.out   -dT $step  material 2 state
+
+puts &quot;recorders set...&quot;
+
+#-------------------------------------------------------
+# create the loading
+#-------------------------------------------------------
+
+#--pressure magnitude
+set p 10.0
+set pNode [expr -$p/4] 
+
+#--loading object for hydrostatic pressure
+pattern Plain 1 {Series -time {0 10 100} -values {0 1 1} -factor 1} { 
+    load 1  $pNode 0.00.0
+    load 2  $pNode$pNode0.0
+    load 3  0.0$pNode  0.0
+    load 5  $pNode  0.00.0
+    load 6  $pNode$pNode0.0
+    load 7 0.0$pNode0.0
+}
+
+#--loading object deviator stress
+pattern Plain 2 {Series -time {0 10 100} -values {0 1 5} -factor 1} { 
+    load 5  0.00.0$pNode
+    load 6  0.00.0$pNode
+    load 7  0.00.0$pNode
+    load 8  0.00.0$pNode
+}
+
+#-------------------------------------------------------
+# create the analysis
+#-------------------------------------------------------
+
+integrator LoadControl 0.1
+numberer RCM
+system SparseGeneral
+constraints Transformation
+test NormDispIncr 1e-5 10 1
+algorithm Newton
+analysis Static
+
+puts &quot;starting the hydrostatic analysis...&quot;
+set startT [clock seconds]
+analyze 1000
+
+set endT [clock seconds]
+puts &quot;triaxial shear application finished...&quot;
+puts &quot;loading analysis execution time: [expr $endT-$startT] seconds.&quot;
+
+wipe
+</pre></div>
+</div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, The Regents of the University of California.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2431545-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-2431545-1', {
+          'anonymize_ip': false,
+      });
+    </script>  
+
+  <style>
+         .wy-nav-content { max-width: none; }
+  </style>
+
+
+
+</body>
+</html>

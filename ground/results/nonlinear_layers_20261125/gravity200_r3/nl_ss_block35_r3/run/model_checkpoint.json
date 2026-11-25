@@ -1,0 +1,7 @@
+{
+  "candidate": null,
+  "static_steps": 200,
+  "primary_algorithm": "Newton",
+  "complete": false,
+  "safe_verdict": false
+}

@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "dome",
+  "material": "shell_aluminum",
+  "planet": "mars",
+  "support": "pinned",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 69000000.0,
+    "nu": 0.33,
+    "rho": 2.7,
+    "thickness": 0.02
+  },
+  "nodes": 2401,
+  "elements": 2304,
+  "surface_area_m2": 98.13750166813792,
+  "mass_tonne": 5.299425090079451,
+  "weight_kN": 19.660867084194763,
+  "max_displacement_m": 4.468526184854762e-06,
+  "min_uz_m": -4.468526184854762e-06,
+  "max_uz_m": 2.5197955789948334e-07,
+  "mean_base_uz_m": 0.0,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -1.6306400674181987e-14,
+    1.7381929229287607e-15,
+    -1.0658141036401503e-14
+  ],
+  "moment_residual_kNm": [
+    6.200031807401807e-14,
+    2.139521199095995e-14,
+    3.838943052336674e-14
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -19.660867084194898
+  ],
+  "relative_force_residual": 9.947687386907725e-16,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

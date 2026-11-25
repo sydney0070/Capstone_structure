@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "dome",
+  "material": "shell_sintered_regolith",
+  "planet": "earth",
+  "support": "linear_springs",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 20000000.0,
+    "nu": 0.2,
+    "rho": 2.0,
+    "thickness": 0.02
+  },
+  "nodes": 2401,
+  "elements": 2304,
+  "surface_area_m2": 98.13750166813792,
+  "mass_tonne": 3.9255000667255358,
+  "weight_kN": 38.509155654577505,
+  "max_displacement_m": 0.0001517984056714774,
+  "min_uz_m": -0.0001517984056714774,
+  "max_uz_m": -6.099920593761525e-05,
+  "mean_base_uz_m": -6.129363312698656e-05,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    3.483463517639507e-13,
+    2.4677632257690473e-14,
+    -1.2150280781497713e-12
+  ],
+  "moment_residual_kNm": [
+    -1.1960404455030327e-12,
+    -2.2604724082136984e-12,
+    -1.8435631889426424e-13
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -38.50915565457747
+  ],
+  "relative_force_residual": 3.28290266458007e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

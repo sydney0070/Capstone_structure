@@ -1,0 +1,18 @@
+[
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/analysis_mgs1_20261118/run/summary.json",
+    "sha256": "914e94303e98cbe75dc645d031d4282421cabc4f121d64ee73b3213982be0103"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/recommended_20261124/run/summary.json",
+    "sha256": "dd643f864aa50d6f5da2a3f9384fccd788754804e49881a7db9395a368820318"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/materials.json",
+    "sha256": "b9c2c062f312925f65d6728af9fa4447ebc9ee54c1b418527dca2085ce08da17"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/compare_material_profile_run.py",
+    "sha256": "9b631a0f6a724a3742c547278aa68763dbeaf060c021fd3d26c1aee6e3727292"
+  }
+]

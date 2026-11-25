@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>혼합 3D 지반 · 해석 결과</title>
+<style>
+:root{color-scheme:light;--ink:#192c3c;--muted:#607382;--line:#dbe4e9;--accent:#167b83}
+*{box-sizing:border-box}body{margin:0;background:#edf2f5;color:var(--ink);font:14px -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+header{padding:22px 28px;background:#142e40;color:#fff;display:flex;justify-content:space-between;gap:20px;align-items:center}h1{font-size:23px;margin:4px 0 8px}header p{margin:0;color:#bfd2df;font-size:13px}.eyebrow{letter-spacing:2px;font-size:11px;color:#83d1cb}.badge{border:1px solid #577688;border-radius:20px;padding:8px 14px;white-space:nowrap;font-size:12px}
+main{display:grid;grid-template-columns:300px minmax(0,1fr);gap:16px;max-width:1800px;margin:auto;padding:16px}.card{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}aside{padding:20px;align-self:start}.section{border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:18px}.section:last-child{border:0;margin-bottom:0;padding-bottom:0}h2{font-size:14px;margin:0 0 12px}label.field{display:block;font-size:12px;color:var(--muted);margin:12px 0 5px}select,input[type=number]{width:100%;padding:9px;border:1px solid #bfcfd9;border-radius:6px;color:var(--ink);background:white;font:inherit}input[type=checkbox]{accent-color:var(--accent)}button{border:1px solid #bdcfd7;background:white;color:var(--ink);padding:8px 12px;border-radius:6px;cursor:pointer;font:inherit}button:hover{background:#edf6f5}button.primary{background:var(--accent);color:white;border-color:var(--accent)}button:disabled{opacity:.4;cursor:default}.row{display:flex;gap:7px;align-items:center;margin-top:8px}.row>*{flex:1}.check{display:block;margin:10px 0;font-size:12px}.note{font-size:11px;color:var(--muted);line-height:1.65;margin:10px 0 0}.material{display:flex;gap:7px;align-items:start;padding:8px 0;border-top:1px solid #eef2f4;cursor:pointer}.material .swatch{width:10px;height:10px;border-radius:3px;flex-shrink:0;margin-top:4px}.material span.name{font-size:11px;line-height:1.4;overflow-wrap:anywhere}.material small{display:block;font-size:10px;color:var(--muted);margin-top:4px}.stats{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line)}.stat{padding:14px 18px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat span{display:block;color:var(--muted);font-size:11px;margin-bottom:6px}.stat strong{font-size:18px;font-variant-numeric:tabular-nums}.viewer-top{display:flex;justify-content:space-between;gap:16px;padding:12px 18px;background:#f8fafb;border-bottom:1px solid var(--line);font-size:12px}#plot{height:600px;width:100%}#history{height:190px;width:100%}.transport{padding:14px 18px;border-top:1px solid var(--line)}.transport-row{display:flex;gap:12px;align-items:center}.transport-row input{flex:1;min-width:50px;accent-color:var(--accent)}.transport-row select{width:110px;font-size:12px}.transport-row output{min-width:94px;font-variant-numeric:tabular-nums;font-size:12px}.bottom-note{padding:12px 18px;margin:0;border-top:1px solid var(--line)}#error{display:none;background:#fff0ed;color:#a63c28;padding:16px;white-space:pre-wrap}.status-ok{color:#087467}.hidden{display:none!important}
+@media(max-width:900px){main{grid-template-columns:1fr}aside{display:grid;grid-template-columns:1fr 1fr;gap:20px}.section{margin:0}.section:last-child{grid-column:1/-1}#plot{height:500px}header{padding:18px}h1{font-size:20px}.badge{display:none}.transport-row{flex-wrap:wrap}}
+</style>
+<script>__PLOTLY_BUNDLE__</script></head>
+<body><header><div><div class="eyebrow">CAPSTONE · GROUND / SSI</div><h1 id="title">혼합 3D 지반</h1><p id="subtitle"></p></div><div class="badge" id="badge"></div></header>
+<main><aside class="card">
+<section class="section"><h2>01 · 지형과 단면</h2>
+<label class="field" for="view">보기</label><select id="view"><option value="full">전체 3D 지반</option><option value="half">Y 중간면 반쪽 · 요소 단위 단면</option><option value="surface">지표면만</option></select>
+<label class="field" for="color">색상</label><select id="color"><option value="material">재료 분포</option><option value="elevation">초기 표고 [m]</option><option value="magnitude">기준 대비 변위 크기 [mm]</option><option value="vertical">기준 대비 수직 변위 [mm]</option></select>
+<label class="check"><input id="edges" type="checkbox"> 요소 경계 표시</label><label class="check"><input id="structure" type="checkbox" checked> 기초·예제 구조물 표시</label>
+<button id="camera">시점 초기화</button></section>
+<section class="section"><h2>02 · 변형 표시</h2>
+<label class="field" for="reference">변위 기준</label><select id="reference"><option value="undeformed">미변형 형상</option><option value="total">최초 형상 대비 전체 변위</option><option value="gravity">조립체 자중 평형 이후 변위</option><option value="dynamic">동적 해석 시작 이후 변위</option></select>
+<label class="field" for="scale">변형 확대 배율</label><input id="scale" type="number" value="1" min="0" max="100000000" step="any">
+<div class="row"><button id="actual">실제 크기 ×1</button><button id="auto">자동 확대</button></div>
+<p class="note">초기 형상에 선택한 기준 대비 변위 × 배율을 표시합니다. 배율은 화면에만 적용되며 실제 변위 수치는 바뀌지 않습니다.</p></section>
+<section class="section"><h2>03 · 재료별 표시</h2><div id="materials"></div><p class="note">체적비는 전체 계산 영역 기준입니다. E는 입력 강성이며 표시 색상은 응력·파괴 여부를 뜻하지 않습니다.</p></section>
+</aside>
+<section class="card"><div id="error" role="alert"></div><div class="stats"><div class="stat"><span>현재 시간</span><strong id="time">—</strong></div><div class="stat"><span>현재 기록 절점 최대 |Δu|</span><strong id="max">—</strong></div><div class="stat"><span>화면 변형 배율</span><strong id="factor">—</strong></div></div>
+<div class="viewer-top"><span id="state"></span><span id="renderStatus" class="status-ok">불러오는 중</span></div><div id="plot"></div>
+<div class="transport"><div class="transport-row"><button class="primary" id="play">▶ 재생</button><button id="start">처음</button><input id="timeline" aria-label="해석 시간 프레임" type="range" min="0" max="0" value="0" step="1"><output id="frameLabel"></output><select id="speed" aria-label="재생 속도"><option value="0.02">속도 0.02×</option><option value="0.1">속도 0.1×</option><option value="1">속도 1×</option><option value="5">속도 5×</option></select></div><p id="animationNote" class="note"></p></div>
+<div id="history"></div><p id="scope" class="note bottom-note"></p><p class="note bottom-note">형상은 절점 병진 변위를 연결해 표시합니다. 부재 회전에 따른 곡률·균열·입자 이동은 표현하지 않습니다. 표시 결과는 계산 모델의 응답이며 현장 정확도나 설계 안전성 검증을 대신하지 않습니다.</p></section></main>
+<script id="ground-data" type="application/json">__GROUND_PAYLOAD__</script>
+<script>
+'use strict';
+const D=JSON.parse(document.getElementById('ground-data').textContent),$=id=>document.getElementById(id);
+const materialMap=new Map(D.materials.map(m=>[m.name,m])),visible=new Set(materialMap.keys());
+let frame=0,playing=false,anchorWall=0,anchorTime=0,rendering=false,dirty=false,chartReference=null,chartReady=false,renderCount=0;
+const camera={eye:{x:1.65,y:-2.0,z:1.1},up:{x:0,y:0,z:1}},zero=D.xyz.map(()=>[0,0,0]),cache=new Map();
+const bounds=[0,1,2].map(a=>[Math.min(...D.xyz.map(p=>p[a])),Math.max(...D.xyz.map(p=>p[a]))]);
+const span=Math.max(...bounds.map(b=>b[1]-b[0]),1);
+const fmt=n=>Math.abs(n)>0&&Math.abs(n)<.001?n.toExponential(3):n.toLocaleString('en-US',{maximumFractionDigits:5});
+function fail(e){$('error').style.display='block';$('error').textContent='뷰어 오류: '+e.message;$('renderStatus').textContent='표시 실패';stop();}
+window.addEventListener('error',e=>fail(e.error||new Error(e.message)));window.addEventListener('unhandledrejection',e=>fail(e.reason));
+$('title').textContent=D.body+' · 혼합 3D 지반';$('subtitle').textContent=`지반 요소 ${D.total_elements.toLocaleString()}개 · 지반 절점 ${D.total_nodes.toLocaleString()}개 · 길이 m / 변위 mm`;
+$('badge').textContent=D.has_dynamic?'실제 해석 이력 · 동적 재생':'정적 해석 결과';$('reference').value=D.default_reference;
+$('reference').querySelector('[value=dynamic]').disabled=!D.has_dynamic;
+$('timeline').max=D.frames.length-1;
+for(const id of ['play','start','timeline','speed'])$(id).disabled=!D.has_dynamic;
+$('animationNote').textContent=D.has_dynamic?`적분 ${D.integration_steps}단계 중 초기 상태 포함 ${D.frames.length}프레임 저장. 실제 시간 순으로 재생하며, 프레임 사이 최대 응답은 생략될 수 있습니다. 아래 그래프도 저장 프레임 기준입니다.`:'동적 해석을 실행하지 않아 재생 기능은 꺼져 있습니다. --dynamic pulse 또는 --dynamic incident로 실행하면 실제 변위 이력이 추가됩니다.';
+const meta=D.metadata,terrain=meta.terrain||{};
+$('scope').textContent=(terrain.kind==='native_DEM'?`원본 DEM · 초기 패드 ${terrain.prepare_pad?'적용':'미적용'} · 원본 간격 ${(terrain.native_spacing_m||[]).map(v=>v.toFixed(2)).join(' × ')} m. `:'합성 기준 지형. ')+(meta.input?`입력: ${meta.input.kind||meta.input.input||'지정 동적 입력'}. `:'')+'기본 영역은 연결 시험용이며 메시·영역 크기 독립성은 아직 확보되지 않았습니다.';
+for(const m of D.materials){const label=document.createElement('label');label.className='material';const cb=document.createElement('input');cb.type='checkbox';cb.checked=true;cb.setAttribute('aria-label',m.name);cb.onchange=()=>{cb.checked?visible.add(m.name):visible.delete(m.name);requestDraw();};const sw=document.createElement('span');sw.className='swatch';sw.style.background=m.color;const text=document.createElement('span');text.className='name';text.textContent=m.name;const detail=document.createElement('small');detail.textContent=`체적 ${(100*m.volume_fraction).toFixed(1)}% · E ${fmt(m.E_MPa)} MPa · ρ ${fmt(m.density)} kg/m³`;text.append(detail);label.append(cb,sw,text);$('materials').append(label);}
+function baseline(ref){return ref==='gravity'?D.gravity:ref==='dynamic'?D.dynamic_reference:zero;}
+function delta(k,ref){if(ref==='undeformed')return zero;const b=baseline(ref);return D.frames[k].map((p,i)=>p.map((v,a)=>v-b[i][a]));}
+function metrics(ref){if(cache.has(ref))return cache.get(ref);let peak=0,vertical=0;const curve=[];for(let k=0;k<D.frames.length;k++){const u=delta(k,ref);let max=0;for(const p of u){max=Math.max(max,Math.hypot(...p));vertical=Math.max(vertical,Math.abs(p[2]));}peak=Math.max(peak,max);curve.push(max*1000);}const m={peak,vertical,curve};cache.set(ref,m);return m;}
+function autoScale(){const peak=metrics($('reference').value).peak;const s=peak<1e-10?1:Math.min(1e5,Math.max(1,.035*span/peak));$('scale').value=Number(s.toPrecision(4));requestDraw();}
+function stop(){playing=false;$('play').textContent='▶ 재생';}
+function tick(now){if(!playing)return;const target=anchorTime+(now-anchorWall)/1000*Number($('speed').value);let k=frame;while(k+1<D.times.length&&D.times[k+1]<=target)k++;if(k!==frame){frame=k;$('timeline').value=frame;requestDraw();}if(target>=D.times.at(-1)){frame=D.times.length-1;$('timeline').value=frame;requestDraw();stop();return;}requestAnimationFrame(tick);}
+$('play').onclick=()=>{if(playing){stop();return;}if(frame===D.times.length-1){frame=0;$('timeline').value=0;requestDraw();}playing=true;anchorWall=performance.now();anchorTime=D.times[frame];$('play').textContent='❚❚ 일시정지';requestAnimationFrame(tick);};
+$('start').onclick=()=>{stop();frame=0;$('timeline').value=0;requestDraw();};
+$('timeline').oninput=()=>{stop();frame=Number($('timeline').value);requestDraw();};
+$('speed').onchange=()=>{anchorWall=performance.now();anchorTime=D.times[frame];};
+for(const id of ['view','color','edges','structure'])$(id).onchange=requestDraw;
+$('reference').onchange=autoScale;$('scale').onchange=()=>{let x=Number($('scale').value);if(!Number.isFinite(x)||x<0||x>1e8){$('scale').value=1;}requestDraw();};
+$('actual').onclick=()=>{$('scale').value=1;requestDraw();};$('auto').onclick=autoScale;
+$('camera').onclick=()=>Plotly.relayout('plot',{'scene.camera':camera});
+function lineTrace(pairs,points,name,color,width){const c=[[],[],[]];for(const [a,b] of pairs)for(let d=0;d<3;d++)c[d].push(points[a][d],points[b][d],null);return {type:'scatter3d',mode:'lines',x:c[0],y:c[1],z:c[2],line:{color,width},name,showlegend:false,hoverinfo:'skip'};}
+async function requestDraw(){dirty=true;if(rendering)return;rendering=true;try{while(dirty){dirty=false;await draw();}}catch(e){fail(e);}finally{rendering=false;}}
+async function draw(){
+ const ref=$('reference').value,mode=$('view').value,color=$('color').value,scale=Number($('scale').value)||0,k=frame,u=delta(k,ref),m=metrics(ref);
+ const points=D.xyz.map((p,i)=>p.map((v,a)=>v+scale*u[i][a]));
+ const values=D.xyz.map((p,i)=>color==='elevation'?p[2]:color==='vertical'?1000*u[i][2]:1000*Math.hypot(...u[i]));
+ const lo=color==='elevation'?bounds[2][0]:color==='vertical'?-1000*m.vertical:0;
+ const hi=color==='elevation'?bounds[2][1]:color==='vertical'?1000*m.vertical:1000*m.peak;
+ const cmin=hi>lo?lo:lo-1e-9,cmax=hi>lo?hi:hi+1e-9;
+ const traces=[];let bar=false;
+ const meshes=[...D.geometry[mode],...($('structure').checked?D.attachments:[])];
+ for(const mesh of meshes){if(mesh.kind==='soil'&&!visible.has(mesh.name))continue;if(mesh.kind==='frame'){traces.push(lineTrace(mesh.segments,points,mesh.name,'#273d50',7));continue;}
+  const ids=mesh.nodes,xyz=ids.map(i=>points[i]),tri=mesh.triangles;const colored=mesh.kind==='soil'&&color!=='material';
+  const trace={type:'mesh3d',name:mesh.name,x:xyz.map(p=>p[0]),y:xyz.map(p=>p[1]),z:xyz.map(p=>p[2]),i:tri.map(t=>t[0]),j:tri.map(t=>t[1]),k:tri.map(t=>t[2]),color:mesh.kind==='soil'?materialMap.get(mesh.name).color:'#c4cdd4',flatshading:true,opacity:1,showlegend:false,lighting:{ambient:.65,diffuse:.75,specular:.12},customdata:ids.map(i=>[D.node_tags[i],1000*Math.hypot(...u[i]),1000*u[i][2]]),hovertemplate:'%{fullData.name}<br>node %{customdata[0]}<br>표시 좌표 %{x:.3f}, %{y:.3f}, %{z:.3f} m<br>실제 |Δu| %{customdata[1]:.6g} mm<br>실제 Δuz %{customdata[2]:.6g} mm<extra></extra>'};
+  if(colored){Object.assign(trace,{intensity:ids.map(i=>values[i]),intensitymode:'vertex',colorscale:color==='vertical'?'RdBu':'Viridis',cmin,cmax,showscale:!bar,colorbar:{title:{text:color==='elevation'?'표고 [m]':'변위 [mm]'},thickness:14,len:.65}});bar=true;}
+  traces.push(trace);
+  if($('edges').checked)traces.push(lineTrace(mesh.edges.map(([a,b])=>[ids[a],ids[b]]),points,'요소 경계','#536672',1));
+ }
+ const margin=.08*span+scale*m.peak;
+ const ranges=bounds.map(b=>[b[0]-margin,b[1]+margin]);
+ const layout={uirevision:'ground-camera',margin:{l:0,r:10,t:4,b:0},paper_bgcolor:'#fff',font:{family:'Arial, sans-serif',color:'#314959'},scene:{uirevision:'ground-camera',camera,aspectmode:'data',xaxis:{title:{text:'X · 동쪽 [m]'},range:ranges[0],backgroundcolor:'#f3f7f9',gridcolor:'#d6e1e7',showbackground:true},yaxis:{title:{text:'Y · 북쪽 [m]'},range:ranges[1],backgroundcolor:'#f3f7f9',gridcolor:'#d6e1e7',showbackground:true},zaxis:{title:{text:'Z [m]'},range:ranges[2],backgroundcolor:'#f3f7f9',gridcolor:'#d6e1e7',showbackground:true}}};
+ await Plotly.react('plot',traces,layout,{responsive:true,displaylogo:false,toImageButtonOptions:{format:'png',filename:D.body+'_ground_view',scale:2}});
+ $('time').textContent=D.has_dynamic?D.times[k].toFixed(4)+' s':'정적 결과';$('max').textContent=fmt(m.curve[k])+' mm';$('factor').textContent='×'+fmt(scale);$('frameLabel').textContent=(k+1)+' / '+D.frames.length;
+ $('state').textContent=$('view').selectedOptions[0].text+' · '+$('reference').selectedOptions[0].text;
+ $('renderStatus').textContent='표시 완료';$('plot').dataset.frame=String(k);$('plot').dataset.renderCount=String(++renderCount);
+ if(D.has_dynamic){const shape={type:'line',x0:D.times[k],x1:D.times[k],y0:0,y1:1,yref:'paper',line:{color:'#ce704b',width:2}};
+  if(chartReference!==ref||!chartReady){await Plotly.react('history',[{x:D.times,y:m.curve,type:'scatter',mode:'lines',line:{color:'#167b83',width:2},hovertemplate:'%{x:.5f} s<br>최대 |Δu| %{y:.6g} mm<extra></extra>'}],{margin:{l:65,r:25,t:28,b:38},title:{text:'저장 프레임 · 기록 절점 최대 변위',font:{size:12}},xaxis:{title:{text:'시간 [s]'}},yaxis:{title:{text:'|Δu| [mm]'},rangemode:'tozero'},shapes:[shape],paper_bgcolor:'#fff',plot_bgcolor:'#f6f9fa'},{responsive:true,displaylogo:false});chartReady=true;chartReference=ref;}else{await Plotly.relayout('history',{shapes:[shape]});}
+ }else{$('history').classList.add('hidden');}
+}
+autoScale();
+</script></body></html>

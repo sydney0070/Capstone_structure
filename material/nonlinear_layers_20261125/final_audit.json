@@ -1,0 +1,184 @@
+{
+  "specimens": {
+    "count": 20,
+    "loading_paths": 167,
+    "mass_checks": 20,
+    "all_passed": true,
+    "exact_material_snapshots": true
+  },
+  "active_catalog": {
+    "specimen_parameters_identical": true,
+    "Mars_layers_all_DruckerPrager": true,
+    "selected": "nl_ss_block35",
+    "reference_config_preserved": true
+  },
+  "syntax_files": [
+    "material/nonlinear_layers_20261125/run_ground.py",
+    "material/nonlinear_layers_20261125/check_stability.py",
+    "material/nonlinear_layers_20261125/cleanup_ground.py",
+    "material/nonlinear_layers_20261125/sync_ground_catalog.py",
+    "material/nonlinear_layers_20261125/build_materials.py",
+    "material/nonlinear_layers_20261125/compare_ground.py",
+    "material/nonlinear_layers_20261125/final_audit.py",
+    "material/nonlinear_layers_20261125/run_specimens.py",
+    "material/nonlinear_layers_20261125/evaluate.py",
+    "material/nonlinear_layers_20261125/strain_audit.py",
+    "ground/ground_modeling/ground_dome_footing.py",
+    "ground/ground_modeling/ground_20261107.py",
+    "ground/ground_modeling/ground_hybrid/materials.py",
+    "ground/ground_modeling/ground_hybrid/config.py"
+  ],
+  "cleanup": {
+    "deleted_files": 38,
+    "duplicate_paths_preserved": 21,
+    "saved_before_after_hash_checks": 26,
+    "original_saved_manifest_checks": 20,
+    "active_inputs_retained": true
+  },
+  "literature": {
+    "new_file_hash_checks": 10,
+    "new_PDFs": 8,
+    "unavailable_full_text": "G20 Coleman2024 is a link only, not a downloaded PDF"
+  },
+  "additional_stability_diagnostic": {
+    "native_tangent_checks": 2,
+    "direct_tensor_formula_checks": 2,
+    "conditional_localization_concern": true,
+    "scope": "Loading-tangent snapshot screen; not a global collapse or failure-cause proof"
+  },
+  "strain_postprocessing": {
+    "native_warped_patch_verified": true,
+    "affine_completeness_verified": true,
+    "all_ground_GP_bulk_strain_pressure_consistent": true,
+    "stages": 3,
+    "material_groups": 12
+  },
+  "ground_cases": [
+    {
+      "case": "bonded_sensitivity/nl_ss_bond1k_r2",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "bonded_sensitivity/nl_ss_bond5k_r2",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "gravity200_r2/nl_ss_block35_r2",
+      "complete": true,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "gravity200_r3/nl_ss_block35_r3",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "mesh_r3/nl_ss_block35_r3",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "refined_gravity100/nl_ss_block30_r2",
+      "complete": true,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "refined_gravity100/nl_ss_block35_r2",
+      "complete": true,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "refined_phi40/nl_ss_block40_r2",
+      "complete": true,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "refinement32/nl_ss_block30_r2",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "refinement32/nl_ss_block40_r2",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "retry32/nl_ss_block35_r1",
+      "complete": true,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "screening/nl_mgs1s_block35_r1",
+      "complete": true,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "screening/nl_ss_block30_r1",
+      "complete": true,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "screening/nl_ss_block35_r1",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "screening/nl_ss_block40_r1",
+      "complete": true,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "screening/nl_tc_block35_r1",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "step64/nl_ss_block35_r2",
+      "complete": true,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "superlu_r2/nl_ss_block35_r2",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    },
+    {
+      "case": "superlu_r3/nl_ss_block35_r3",
+      "complete": false,
+      "parameters_and_entry_hash_match": true
+    }
+  ],
+  "pending_ground_cases": [],
+  "entrypoints": {
+    "column_static30": {
+      "complete": true,
+      "elements": 12,
+      "analysis_performed": true
+    },
+    "ground_static60": {
+      "complete": true,
+      "elements": 2352,
+      "analysis_performed": true
+    },
+    "dome_default_geometry": {
+      "complete": true,
+      "elements": 3504,
+      "analysis_performed": false
+    }
+  },
+  "report_local_links": {
+    "checked": 47,
+    "broken": []
+  },
+  "runtime_observed_at_audit": {
+    "python": "3.10.18 (main, Jun  5 2025, 08:13:51) [Clang 14.0.6 ]",
+    "python_executable": "/Users/sydney/anaconda3/envs/cap/bin/python",
+    "OpenSees": "3.4.0",
+    "numpy": "2.2.6"
+  },
+  "complete": true,
+  "scope": "File integrity, parameter transfer and implemented-formula checks; not field validation or global-stability certification",
+  "independent_Mars_validation": false
+}

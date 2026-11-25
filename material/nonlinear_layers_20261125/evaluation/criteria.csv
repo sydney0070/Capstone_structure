@@ -1,0 +1,11 @@
+﻿id,metric,formula,relative_limit,kind,basis,limit_pct,threshold
+N_E,Initial and unloading Young modulus,abs(E_FE/E_input-1),1e-05,numerical verification,Project tolerance; load/unload path method R30/R29,0.001,
+N_G,Initial shear modulus,abs(G_FE/G_input-1),0.0001,numerical verification,Project tolerance; elastic probe before yielding,0.01,
+N_Y,DP compression/tension yield,abs(q_FE/q_DP_analytic-1),0.0001,numerical verification,"Implemented DP surface, independently calculated scalar analytic formula",0.01,
+N_SS,Fully developed DP simple-shear resistance,abs(tau_FE/tau_DP_analytic-1),0.0001,numerical verification,Project tolerance; equal normal stresses and zero dilation at steady shear,0.01,
+N_M,1m3 consistent material mass,abs((k/eigenvalue)/(rho*V)-1),1e-07,numerical verification,Rigid translation eigenproblem; not a measured density test,9.999999999999999e-06,
+N_F,Force balance / confinement / GP spread,max(abs(residual))/reference,1e-05,numerical verification,Project tolerance; FE reactions and controlled pressure,0.001,
+C_SS,Literature MC shear envelope,abs(tau_FE/(c_target+p*tan(phi_target))-1),0.05,calibration screening,"5% is project screening target, not a tolerance prescribed by the papers",5.0,
+C_HB,Compression-fitted DP against HB equation,abs(sigma1_DP/sigma1_HB-1),0.1,analogue surrogate screening,10% is project target within sigma3=0–500kPa; not independent data validation,10.0,
+G_MESH,Settlement between mesh/step comparisons,abs(s_new/s_reference-1),0.05,solution verification,Project screening target; failure to meet means unresolved discretization sensitivity,5.0,
+S_Q,Conditional plastic-loading stability screen,min_sampled_normal det(Q)/G^3,,conditional stability diagnostic,R31 acoustic-tensor rationale; DP tangent derived and checked against native stress differences; limited directions/states,,"Positive sampled determinants; a negative value flags possible localization, not global collapse"

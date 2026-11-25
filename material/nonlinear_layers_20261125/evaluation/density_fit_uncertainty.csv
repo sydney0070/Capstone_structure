@@ -1,0 +1,7 @@
+﻿specimen,nominal_density_g_cm3,nominal_c_Pa,lower_corner_c_Pa,upper_corner_c_Pa,scope
+mgs1_tc,1.3,235.66368868562228,164.90914816833018,335.1931123644537,"Deterministic coefficient-corner sensitivity; covariance absent, not a confidence interval; density extrapolation retained"
+mgs1_ss,1.3,235.66368868562228,164.90914816833018,335.1931123644537,"Deterministic coefficient-corner sensitivity; covariance absent, not a confidence interval; density extrapolation retained"
+mgs1_ss_nearest,1.3,235.66368868562228,164.90914816833018,335.1931123644537,"Deterministic coefficient-corner sensitivity; covariance absent, not a confidence interval; density extrapolation retained"
+mgs1s_tc,1.3,238.15604205438487,140.28776647563672,385.4525573908331,"Deterministic coefficient-corner sensitivity; covariance absent, not a confidence interval; density extrapolation retained"
+mgs1s_ss,1.3,238.15604205438487,140.28776647563672,385.4525573908331,"Deterministic coefficient-corner sensitivity; covariance absent, not a confidence interval; density extrapolation retained"
+mgs1s_ss_nearest,1.3,238.15604205438487,140.28776647563672,385.4525573908331,"Deterministic coefficient-corner sensitivity; covariance absent, not a confidence interval; density extrapolation retained"

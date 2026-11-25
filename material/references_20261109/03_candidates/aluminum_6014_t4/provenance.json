@@ -1,0 +1,50 @@
+{
+  "source_doi": "10.5281/zenodo.21993433",
+  "license": "CC-BY-SA-4.0",
+  "source_sha256": "3d809225dbf113adadeed81dad499d26d7355249a1388ea759b9a1900986c638",
+  "zip_member": "EN-AW6014_T4/base/TS17_EX01-AW6014_T4-SEP1230-2,0mm-0°-15mm_min-23°C.xlsx",
+  "sheet": "Tabelle1",
+  "specimens": [
+    {
+      "id": "EN_AW6014_T4_2,0mm_0°_0,01 [1/s]_1",
+      "role": "train",
+      "used_points": 16,
+      "removed_initial_stress_kPa": 2951.775304716481,
+      "max_strain": 0.01967625,
+      "source_columns": "D:E"
+    },
+    {
+      "id": "EN_AW6014_T4_2,0mm_0°_0,01 [1/s]_2",
+      "role": "train",
+      "used_points": 19,
+      "removed_initial_stress_kPa": 2951.775304716481,
+      "max_strain": 0.01970865,
+      "source_columns": "J:K"
+    },
+    {
+      "id": "EN_AW6014_T4_2,0mm_0°_0,01 [1/s]_3",
+      "role": "train",
+      "used_points": 28,
+      "removed_initial_stress_kPa": 2951.775304716481,
+      "max_strain": 0.019461899999999997,
+      "source_columns": "P:Q"
+    },
+    {
+      "id": "EN_AW6014_T4_2,0mm_0°_0,01 [1/s]_4",
+      "role": "validation",
+      "used_points": 19,
+      "removed_initial_stress_kPa": 2951.775304716481,
+      "max_strain": 0.0197318,
+      "source_columns": "V:W"
+    },
+    {
+      "id": "EN_AW6014_T4_2,0mm_0°_0,01 [1/s]_5",
+      "role": "validation",
+      "used_points": 19,
+      "removed_initial_stress_kPa": 2951.775304716481,
+      "max_strain": 0.0195257,
+      "source_columns": "AB:AC"
+    }
+  ],
+  "processing": "Stress MPa to kPa; strain percent to fraction; initial stress removed; stop before FIRST strain>0.02; preserve all earlier points including reversals/noise; no true-stress conversion for this small-strain phenomenological fit."
+}

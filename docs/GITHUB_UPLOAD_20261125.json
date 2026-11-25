@@ -1,0 +1,201 @@
+{
+  "date": "2026-11-25",
+  "base_remote_commit": "8fd7409b3472cb36367c627ee0eb8ffee04206f9",
+  "requested_scope": [
+    "material",
+    "ground",
+    "docs"
+  ],
+  "supporting_scope": "SSI plus structure/integrated source and inputs; unrelated structure/integrated result archives omitted",
+  "copied_files": 2989,
+  "excluded_large_files": [
+    {
+      "path": "material/archive/material_original.zip",
+      "bytes": 155765500,
+      "sha256": "e69906d10b67e72010220c0743f860b59d88bb1eb7f93f3d5ed2e105cdecdceb",
+      "reason": "External DEM or historical backup larger than GitHub regular-file limit; original remains local"
+    },
+    {
+      "path": "ground/ground_modeling/DTEEC_037262_1845_036761_1845_U01.IMG",
+      "bytes": 722880332,
+      "sha256": "303c16c214aa7c626fde35e34e0053f0a031fc7c0e9848893a0ec0953762d300",
+      "reason": "External DEM or historical backup larger than GitHub regular-file limit; original remains local"
+    },
+    {
+      "path": "ground/ground_modeling/ldem_1024_90s_75s_000_030.img",
+      "bytes": 943718400,
+      "sha256": "0b8c42a4ee7741c9fb444b4325417beeac29a96b7bff9248cd56e8bb8142f24e",
+      "reason": "External DEM or historical backup larger than GitHub regular-file limit; original remains local"
+    },
+    {
+      "path": "ground/ground_modeling/megt00n000hb.img",
+      "bytes": 129761280,
+      "sha256": "f57274b5e459ab35a1975ca5f186f98bdb929475a4557098a7c632b9aa175c75",
+      "reason": "External DEM or historical backup larger than GitHub regular-file limit; original remains local"
+    }
+  ],
+  "paper_library": "docs/references/index.html",
+  "notes": [
+    "Report HTML and result CSV files are intentionally tracked.",
+    "Cached bytecode and macOS metadata are excluded.",
+    "Existing remote-only files are preserved.",
+    "Large-file exclusions do not delete local originals."
+  ],
+  "local_only_auxiliary_files": [
+    {
+      "path": "structure/MARS_DATA 복사본",
+      "reason": "Pre-existing broken auxiliary symlink; local original unchanged"
+    },
+    {
+      "path": "ground/results/nonlinear_layers_20261125/performance/native_call_sample_57685.txt",
+      "reason": "Raw operating-system sample retained locally; compact profiling_observation.json is included"
+    }
+  ],
+  "user_scope_update": "Shared Mars terrain, meteorology and seismic input data omitted; generated verification results and papers included",
+  "additional_exclusions": [
+    {
+      "path": "material/references_20261109/03_candidates/earlier_raw/aluminum_TRR285-processed_data.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/references_20261109/03_candidates/earlier_raw/stressStrain.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "ground/archive/ground_modeling_20261116/stationxml.xb.elyse.2019.151.sxml",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "docs/references/07_observations/stationxml.xb.elyse.2019.151.xml",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "docs/references/07_observations/S1222a_ACC.mseed",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "material/material_release_20261101/research/rc_transform_results.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/material_release_20261101/research/rc_probe_results.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/references_20261109/06_site_and_input/motion_window_enu.json",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "material/references_20261109/06_site_and_input/ground_run_context.json",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "material/references_20261109/06_site_and_input/motion_full_enu.json",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "material/references_20261109/06_site_and_input/stationxml.xb.elyse.2019.151.xml",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "material/references_20261109/06_site_and_input/large_originals.json",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "ground/ground_modeling/xb.elyse.03.bhu.mqs2019drgb.1.mseed",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "ground/ground_modeling/xb.elyse.03.bhv.mqs2019drgb.1.mseed",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "ground/ground_modeling/xb.elyse.03.bhw.mqs2019drgb.1.mseed",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "ground/ground_modeling/megt00n000hb.lbl",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "ground/ground_modeling/stationxml.xb.elyse.2019.151.xml",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "docs/references/01_ground.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "structure/MARS_DATA/twins_calib_1218_01.csv",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "structure/MARS_DATA/ps_calib_1218_01.csv",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "structure/MARS_DATA/ps_calib_1217_01.csv",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "structure/MARS_DATA/twins_calib_1217_01.csv",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "structure/MARS_DATA/S1222a_ACC.mseed",
+      "reason": "Shared Mars observation/input data excluded at user request"
+    },
+    {
+      "path": "material/rc_step3_diagnostics/results_rc_diagnostics.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/rc_element_comparison/results_rc_element_comparison.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/rc_step2/results_rc_step2.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/rc_step3_final_validation/results_rc_final_validation.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/rc_step3_fix/results_rc_step3.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/material_tuning_20261008/material_tuning_only_20261012.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/material_tuning_20261008/material_tuning_with_structure_20261012.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/material_tuning_20261008/material_tuning_20261008.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/material_tuning_20261008/material_tuning_only_20261012_v2.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "structure/MARS_DATA (1).zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/insight_specimen_evaluation_20261124.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/rc_step2_package.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    },
+    {
+      "path": "material/insight_layer_specimens_20261123.zip",
+      "reason": "Redundant project/reference ZIP backup; expanded files included"
+    }
+  ]
+}

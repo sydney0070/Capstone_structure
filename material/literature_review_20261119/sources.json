@@ -1,0 +1,214 @@
+{
+  "review_date": "2026-11-19",
+  "source_policy": "Primary scientific publications, author/institution repositories, and official OpenSees documentation only.",
+  "sources": [
+    {
+      "id": "G1",
+      "authors": "Golombek et al.",
+      "year": 2020,
+      "title": "Geology of the InSight landing site on Mars",
+      "url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+      "doi": "10.1038/s41467-020-14679-1",
+      "locator": "Figure 9; discussion on printed pp. 6–7",
+      "evidence": "Observed shallow duricrust and grains; interpreted deeper blocky ejecta and fractured basalt. Salt cementation is a hypothesis, not a layer-by-layer chemical assay.",
+      "archive_id": "G09",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G09_Golombek_2020_InSight_Geology.pdf"
+      ],
+      "archive_status": "원문 PDF 확보"
+    },
+    {
+      "id": "G2",
+      "authors": "Warner et al.",
+      "year": 2020,
+      "title": "An Impact Crater Origin for the InSight Landing Site at Homestead Hollow, Mars",
+      "url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+      "doi": "10.1029/2019JE006333",
+      "locator": "Near-surface stratigraphy interpretation",
+      "evidence": "Impact-generated fine and coarse regolith; estimates do not establish a universal 13 m interface.",
+      "archive_id": "G10",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G10_Warner_2020_Homestead_Hollow.pdf"
+      ],
+      "archive_status": "원문 PDF 확보"
+    },
+    {
+      "id": "G3",
+      "authors": "Cannon et al.",
+      "year": 2019,
+      "title": "Mars global simulant MGS-1: A Rocknest-based open standard for basaltic martian regolith simulants",
+      "url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+      "doi": "10.1016/j.icarus.2018.08.019",
+      "locator": "Sections 1–2; mineralogical design",
+      "evidence": "Basaltic mineral analogy based on Gale/Rocknest; not measured InSight deep-layer mineral fractions.",
+      "archive_id": "G11",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G11_Cannon_2019_MGS1_Mineralogy.pdf"
+      ],
+      "archive_status": "원문 PDF 확보"
+    },
+    {
+      "id": "G4",
+      "authors": "Morgan et al.",
+      "year": 2018,
+      "title": "A Pre-Landing Assessment of Regolith Properties at the InSight Landing Site",
+      "url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+      "locator": "Sections 1.3 and 2.3–2.4",
+      "evidence": "Pre-landing reference estimates; distinction between low-cohesion sand, bonded soils, density and friction. Not a calibration of the 3–13 m unit.",
+      "archive_id": "G12",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G12_Morgan_2018_InSight_Regolith_Properties.pdf"
+      ],
+      "archive_status": "원문 PDF 확보"
+    },
+    {
+      "id": "R1",
+      "authors": "Harden, Hutchinson, Martin and Kutter",
+      "year": 2005,
+      "title": "Numerical Modeling of the Nonlinear Cyclic Response of Shallow Foundations",
+      "url": "https://peer.berkeley.edu/sites/default/files/peer_504_c._harden_t._hutchinson_g._martin_b._kutter.pdf",
+      "locator": "PEER 2005/04, Chapter 3, Sections 3.3.1–3.3.5; printed pp. 27–37, PDF pp. 46–56",
+      "evidence": "OpenSees BNWF research evaluates ElasticPPGap, general hysteretic, QzSimple1, PySimple1 and TzSimple1. Earth sand/clay experiments, not Mars.",
+      "archive_id": "R18",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/04_SSI_and_numerics/R18_Harden_2005_PEER_2005_04.pdf"
+      ],
+      "archive_status": "원문 PDF 확보"
+    },
+    {
+      "id": "R2",
+      "authors": "Raychowdhury and Hutchinson",
+      "year": 2009,
+      "title": "Performance evaluation of a nonlinear Winkler-based shallow foundation model using centrifuge test results",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/eqe.902",
+      "doi": "10.1002/eqe.902",
+      "locator": "Earthquake Engineering & Structural Dynamics 38, 679–698; accessible abstract",
+      "evidence": "Centrifuge validation for square/strip footings on Earth sand/clay. Publisher abstract checked; exact spring command names cross-checked with R3/R4.",
+      "archive_id": "R26",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/04_SSI_and_numerics/R26_Raychowdhury_Hutchinson_2009_original_unavailable.webloc"
+      ],
+      "archive_status": "원문 PDF 미확보(서지·원 출처 링크 보관)"
+    },
+    {
+      "id": "R3",
+      "authors": "NEHRP Consultants Joint Venture / NIST",
+      "year": 2012,
+      "title": "Soil-Structure Interaction for Building Structures",
+      "url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+      "official_url": "https://www.nehrp.gov/pdf/nistgcr12-917-21.pdf",
+      "locator": "GCR 12-917-21, printed pp. 2-36–2-38, PDF pp. 68–70",
+      "evidence": "Describes OpenSees QzSimple2, PxSimple1 and TxSimple1 roles in 2D BNWF. Official 13 MB URL exceeded web parser size; contractor revision was read.",
+      "archive_id": "R27",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/04_SSI_and_numerics/R27_NIST_2012_GCR_12_917_21_REV1.pdf"
+      ],
+      "archive_status": "원문 PDF 확보"
+    },
+    {
+      "id": "R4",
+      "authors": "Raychowdhury / OpenSees",
+      "year": 2008,
+      "title": "ShallowFoundationGen implementation documentation",
+      "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/documents/ShallowDocumentation.pdf",
+      "locator": "Example material commands for shallow foundations",
+      "evidence": "Official example uses QzSimple2, PySimple2, TzSimple2. Older literature also uses PxSimple1/TxSimple1 terminology.",
+      "archive_id": "R20",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/04_SSI_and_numerics/R20_ShallowFoundationGen_2008.pdf"
+      ],
+      "archive_status": "원문 PDF 확보"
+    },
+    {
+      "id": "D1",
+      "title": "OpenSees bbarBrick documentation",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+      "evidence": "matTag must identify an nDMaterial in a 3D, 3-DOF model.",
+      "archive_id": "D30",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D30_bbarBrick_20261119.html"
+      ],
+      "archive_status": "공식 웹페이지 확보(PDF 아님)"
+    },
+    {
+      "id": "D2",
+      "title": "OpenSees QzSimple1 documentation",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html",
+      "evidence": "Capacity is a force, Z50 a displacement. Original backbones are pile-tip relations.",
+      "archive_id": "D15",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D15_QzSimple1.html",
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D15_QzSimple1_20261119.html"
+      ],
+      "archive_status": "공식 웹페이지 확보(PDF 아님)"
+    },
+    {
+      "id": "D3",
+      "title": "OpenSees PySimple1 documentation",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html",
+      "evidence": "Original p-y relation; capacity is a nodal force after multiplying distributed resistance by tributary length.",
+      "archive_id": "D13",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D13_PySimple1.html",
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D13_PySimple1_20261119.html"
+      ],
+      "archive_status": "공식 웹페이지 확보(PDF 아님)"
+    },
+    {
+      "id": "D4",
+      "title": "OpenSees TzSimple1 documentation",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html",
+      "evidence": "Original pile shaft t-z relation; capacity is a force after tributary-area conversion.",
+      "archive_id": "D14",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D14_TzSimple1.html",
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D14_TzSimple1_20261119.html"
+      ],
+      "archive_status": "공식 웹페이지 확보(PDF 아님)"
+    },
+    {
+      "id": "D5",
+      "title": "OpenSees ElasticPPGap documentation",
+      "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/170.htm",
+      "evidence": "Compression-only sign convention; default recentering differs from damage option.",
+      "archive_id": "D16",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D16_ElasticPPGap.html"
+      ],
+      "archive_status": "공식 웹페이지 확보(PDF 아님)"
+    },
+    {
+      "id": "D6",
+      "title": "OpenSees Hysteretic documentation",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+      "evidence": "User-defined asymmetric envelopes, pinching, energy/ductility damage and unloading stiffness rules.",
+      "archive_id": "D31",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/D31_Hysteretic_20261119.html"
+      ],
+      "archive_status": "공식 웹페이지 확보(PDF 아님)"
+    },
+    {
+      "id": "D7",
+      "title": "OpenSees PressureDependMultiYield02 documentation",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+      "evidence": "Supports 3D, pressure-dependent moduli and cyclic contraction/dilation; example sand parameters are not Mars calibration.",
+      "archive_id": "D_pdmy02",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/PressureDependentMultiYield02.html"
+      ],
+      "archive_status": "공식 웹페이지 확보(PDF 아님)"
+    },
+    {
+      "id": "D8",
+      "title": "OpenSees DruckerPrager documentation",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+      "evidence": "3D pressure-sensitive continuum model; strength, plastic volume change and hardening need calibration.",
+      "archive_id": "D_dp",
+      "archive_files": [
+        "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/05_official_model_docs/DruckerPrager.html"
+      ],
+      "archive_status": "공식 웹페이지 확보(PDF 아님)"
+    }
+  ]
+}

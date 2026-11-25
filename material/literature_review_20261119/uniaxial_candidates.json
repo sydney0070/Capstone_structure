@@ -1,0 +1,147 @@
+{
+  "review_date": "2026-11-19",
+  "status": "LITERATURE_SHORTLIST_NOT_CALIBRATED",
+  "candidates": [
+    {
+      "name": "QzSimple2",
+      "priority": "primary_vertical_spring",
+      "role": "Shallow-footing q-z vertical bearing, uplift and cyclic settlement model",
+      "required_inputs": [
+        "tributary ultimate vertical force",
+        "reference displacement",
+        "tension ratio",
+        "radiation damping",
+        "backbone/shape calibration"
+      ],
+      "sources": [
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "application": "Distributed springs below a footing; not a material for each geological layer or bbarBrick.",
+      "mars_calibrated": false,
+      "constructor_recognized_in_local_engine": true,
+      "proposed_layer_or_interface": {
+        "location": "At the footing underside, depth 3 m; represents equivalent response of the underlying layered ground",
+        "layer_context": "3–13 m blocky ejecta plus deeper support",
+        "confidence": "engineering_recommendation_based_on_terrestrial_shallow_foundation_models"
+      }
+    },
+    {
+      "name": "ElasticPPGap",
+      "priority": "simple_contact_comparison",
+      "role": "Compression-only elastic–plastic normal contact/gap spring",
+      "required_inputs": [
+        "normal spring stiffness",
+        "yield force",
+        "initial gap",
+        "postyield ratio",
+        "damage/recentering rule"
+      ],
+      "sources": [
+        "R1",
+        "D5"
+      ],
+      "application": "Simplified contact or equivalent vertical compression sensitivity. Accumulated settlement must be checked for the chosen rule.",
+      "mars_calibrated": false,
+      "constructor_recognized_in_local_engine": true,
+      "proposed_layer_or_interface": {
+        "location": "Simplified compression-only contact; conditional normal opening/closure at explicit rock joints",
+        "layer_context": "Contact/interface only; not a constitutive model for the entire 13–30 m rock layer",
+        "confidence": "conditional_interface_idealization"
+      }
+    },
+    {
+      "name": "Hysteretic",
+      "priority": "data_driven_envelope",
+      "role": "Fit measured normal or shear cyclic response",
+      "required_inputs": [
+        "positive/negative backbone points",
+        "pinching",
+        "damage",
+        "unloading stiffness exponent"
+      ],
+      "sources": [
+        "R1",
+        "D6"
+      ],
+      "application": "Requires force–displacement calibration; no automatic confinement dependence.",
+      "mars_calibrated": false,
+      "constructor_recognized_in_local_engine": true,
+      "proposed_layer_or_interface": {
+        "location": "Conditional fit to a duricrust normal/shear test or reduced response",
+        "layer_context": "0–0.2 m duricrust",
+        "confidence": "conditional_data_fit_proposal_not_Mars_layer_validation"
+      }
+    },
+    {
+      "name": "QzSimple1",
+      "priority": "vertical_reference",
+      "role": "Established pile-tip q-z material studied in shallow-foundation BNWF",
+      "required_inputs": [
+        "qzType",
+        "ultimate force",
+        "Z50",
+        "suction ratio",
+        "damping"
+      ],
+      "sources": [
+        "R1",
+        "D2"
+      ],
+      "application": "Reference comparison; original sand/clay pile backbones require adaptation for the ring footing.",
+      "mars_calibrated": false,
+      "constructor_recognized_in_local_engine": true,
+      "proposed_layer_or_interface": {
+        "location": "Reference vertical spring comparison below the footing",
+        "layer_context": "Equivalent support, not a distinct layer material",
+        "confidence": "pile_origin_backbone_requires_adaptation"
+      }
+    },
+    {
+      "name": "PySimple2",
+      "priority": "horizontal_complement",
+      "role": "Shallow-footing side passive resistance / gapping",
+      "required_inputs": [
+        "ultimate lateral force",
+        "reference displacement",
+        "drag ratio",
+        "damping"
+      ],
+      "sources": [
+        "R3",
+        "R4"
+      ],
+      "application": "Complement to vertical springs for embedded footings; literature PxSimple1 terminology is not an accepted command in this installed engine.",
+      "mars_calibrated": false,
+      "constructor_recognized_in_local_engine": true,
+      "proposed_layer_or_interface": {
+        "location": "Soil-contacting sides of an embedded footing, approximately 0–3 m",
+        "layer_context": "Duricrust and sandy regolith where contact actually exists",
+        "confidence": "shallow_foundation_role_transfer_requires_calibration"
+      }
+    },
+    {
+      "name": "TzSimple2",
+      "priority": "horizontal_complement",
+      "role": "Shallow-footing base shear/sliding resistance",
+      "required_inputs": [
+        "ultimate shear force",
+        "reference displacement",
+        "damping"
+      ],
+      "sources": [
+        "R3",
+        "R4"
+      ],
+      "application": "Needs interface friction calibration and treatment of reduced resistance during uplift; literature TxSimple1 terminology is not an accepted command in this installed engine.",
+      "mars_calibrated": false,
+      "constructor_recognized_in_local_engine": true,
+      "proposed_layer_or_interface": {
+        "location": "Tangential direction of the footing underside at depth 3 m",
+        "layer_context": "Foundation–blocky-ejecta interface",
+        "confidence": "interface_friction_calibration_and_normal_force_coupling_required"
+      }
+    }
+  ]
+}

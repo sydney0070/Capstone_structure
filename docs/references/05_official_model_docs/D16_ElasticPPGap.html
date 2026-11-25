@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Elastic-Perfectly Plastic Gap Material </title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="Generator" content="Author-it">
+<meta name="Keywords" content="Elastic-Perfectly Plastic Gap Material">
+<link rel="stylesheet" type="text/css" href="44.css">
+</head>
+<body bgcolor="#EFEFEF" text="#000000" link="#000080" alink="#008000" vlink="#000080"><table class="relatedtopics" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td width= "18">
+<p class="bodytext"><a href="171.htm" target="_self"><img src="125.gif" alt="Previous Topic" height="17" width="18" vspace="0" hspace="0" align="bottom" border="0"></a></p></td>
+<td width= "18">
+<p class="bodytext"><a href="169.htm" target="_self"><img src="124.gif" alt="Next Topic" height="17" width="18" vspace="0" hspace="0" align="bottom" border="0"></a></p></td>
+<td width= "48">
+<p class="bodytext"><a href="toc18735.htm" target="TOC"><img src="122.gif" alt="Book Contents" height="17" width="48" vspace="0" hspace="0" align="bottom" border="0"></a></p></td>
+</tr>
+</table>
+<h2 class="heading2">Elastic-Perfectly Plastic Gap Material</h2>
+<p class="bodytext">This command is used to construct an elastic perfectly-plastic gap uniaxial material object.</p>
+<p class="tableheading">uniaxialMaterial ElasticPPGap $matTag $E $Fy $gap &lt;$eta&gt; &lt;damage&gt;</p>
+<p class="tablebodytext">      </p>
+<table width="585" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td width="151"><p class="tablebodytext"><strong class="specialbold">$matTag</strong></p>
+</td>
+<td width="434"><p class="tablebodytext">unique material object integer tag</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="151"><p class="tablebodytext"><strong class="specialbold">$E</strong></p>
+</td>
+<td width="434"><p class="tablebodytext">tangent stiffness</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="151"><p class="tablebodytext"><strong class="specialbold">$Fy</strong></p>
+</td>
+<td width="434"><p class="tablebodytext">stress or force at which material reaches plastic state</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="151"><p class="tablebodytext"><strong class="specialbold">$gap</strong></p>
+</td>
+<td width="434"><p class="tablebodytext">initial gap (strain or deformation)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="151"><p class="tablebodytext"><strong class="specialbold">$eta</strong></p>
+</td>
+<td width="434"><p class="tablebodytext">hardening ratio (=Eh/E), which can be negative</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="151"><p class="tablebodytext"><strong class="specialbold">damage</strong></p>
+</td>
+<td width="434"><p class="tablebodytext">a switch to accumulate damage in the material. If damage is omitted, default value, the gap material &quot;re-centers&quot; on load reversal.</p>
+</td>
+</tr>
+
+</table>
+<p class="tablebodytext"></p>
+<p class="tablebodytext"><strong class="buttons">NOTE:</strong> To create a compression-only gap element, NEGATIVE values need to be specified for $Fy and $gap.</p>
+<p class="tablebodytext"></p>
+<p class="tablebodytext"><img src="514.gif" alt="Gap Material Ojbect" height="276" width="651" vspace="0" hspace="0" align="bottom" border="0"></p>
+<table class="relatedtopics" cellpadding="0" cellspacing="0" border="0">
+<tr valign="top">
+<td>
+<p class="bodytext"><a href="171.htm" target="_self"><img src="125.gif" alt="Previous Topic" height="17" width="18" vspace="0" hspace="0" align="bottom" border="0"></a></p></td>
+<td>
+<p class="bodytext"><a href="169.htm" target="_self"><img src="124.gif" alt="Next Topic" height="17" width="18" vspace="0" hspace="0" align="bottom" border="0"></a></p></td>
+</tr>
+</table>
+
+</body>
+</html>

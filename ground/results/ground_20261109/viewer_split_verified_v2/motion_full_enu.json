@@ -1,0 +1,22 @@
+{
+  "data_type": "surface_observed_acceleration_NOT_base_input",
+  "units": "m/s^2",
+  "coordinate_system": "E,N,Up",
+  "dt_s": 0.1,
+  "samples": 29999,
+  "start_utc": "2022-05-04T23:13:07.901000Z",
+  "source_file": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/MARS_DATA/S1222a_ACC.mseed",
+  "event": "S1222a",
+  "channels": [
+    "XB.ELYSE.02.BHE",
+    "XB.ELYSE.02.BHN",
+    "XB.ELYSE.02.BHZ"
+  ],
+  "frequency_band_hz": [
+    0.05,
+    1.0
+  ],
+  "response_removed_in_this_step": false,
+  "units_basis": "Supplied S1222a_ACC product assumed calibrated in m/s^2; MiniSEED has no unit metadata",
+  "caution": "Surface SEIS data must not be treated as verified bedrock input motion."
+}

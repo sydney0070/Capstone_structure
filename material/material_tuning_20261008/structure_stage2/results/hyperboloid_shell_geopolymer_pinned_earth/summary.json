@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "hyperboloid",
+  "material": "shell_geopolymer",
+  "planet": "earth",
+  "support": "pinned",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 8130000.0,
+    "nu": 0.2,
+    "rho": 1.75,
+    "thickness": 0.02
+  },
+  "nodes": 9408,
+  "elements": 9216,
+  "surface_area_m2": 176.94900253646972,
+  "mass_tonne": 6.193215088776626,
+  "weight_kN": 60.75544002089871,
+  "max_displacement_m": 0.00020766483359533944,
+  "min_uz_m": -0.00019989352126517895,
+  "max_uz_m": 0.0,
+  "mean_base_uz_m": 0.0,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    1.3100631690576847e-14,
+    2.2745000327617504e-13,
+    3.424815986363683e-12
+  ],
+  "moment_residual_kNm": [
+    3.819457904609293e-13,
+    1.843629415798631e-12,
+    5.213715308590749e-13
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -60.75544002089563
+  ],
+  "relative_force_residual": 5.649511251595063e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

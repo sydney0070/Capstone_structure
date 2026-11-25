@@ -1,0 +1,56 @@
+{
+  "id": "qzsimple1_reference",
+  "group": "uniaxial_comparison",
+  "layer": "footing_vertical_equivalent",
+  "family": "QzSimple1",
+  "parameters": {
+    "soil_type": 1,
+    "ultimate_force_N": 38020.0,
+    "z50_m": 0.00274347,
+    "suction": 0.1,
+    "damping": 0.0
+  },
+  "evidence": {
+    "soil_type": {
+      "source": "Shallow2008",
+      "locator": "same force and Z50 as spring101, transferred to QzSimple1",
+      "kind": "comparison_transfer",
+      "note": "qzType=1 and suction=.1; damping zero. Same inputs do not guarantee identical backbones."
+    },
+    "ultimate_force_N": {
+      "source": "Shallow2008",
+      "locator": "same force and Z50 as spring101, transferred to QzSimple1",
+      "kind": "comparison_transfer",
+      "note": "qzType=1 and suction=.1; damping zero. Same inputs do not guarantee identical backbones."
+    },
+    "z50_m": {
+      "source": "Shallow2008",
+      "locator": "same force and Z50 as spring101, transferred to QzSimple1",
+      "kind": "comparison_transfer",
+      "note": "qzType=1 and suction=.1; damping zero. Same inputs do not guarantee identical backbones."
+    },
+    "suction": {
+      "source": "Shallow2008",
+      "locator": "same force and Z50 as spring101, transferred to QzSimple1",
+      "kind": "comparison_transfer",
+      "note": "qzType=1 and suction=.1; damping zero. Same inputs do not guarantee identical backbones."
+    },
+    "damping": {
+      "source": "Shallow2008",
+      "locator": "same force and Z50 as spring101, transferred to QzSimple1",
+      "kind": "comparison_transfer",
+      "note": "qzType=1 and suction=.1; damping zero. Same inputs do not guarantee identical backbones."
+    }
+  },
+  "mars_calibrated": false,
+  "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+  "geometry": {
+    "type": "zeroLength",
+    "direction": 3
+  },
+  "displacement_scale_m": 0.00274347,
+  "notes": [
+    "Force N versus relative displacement m, not continuum stress versus strain.",
+    "Independent spring fixture; no automatic normal/shear coupling or tributary ring-area calibration."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "case": "aluminum_aw6014_t4_axial",
+  "units": "kN,m,s,tonne,kPa",
+  "synthetic": false,
+  "conditions_confirmed": true,
+  "source": "Boehnke et al DOI 10.5281/zenodo.21993433 v2; base series; supplied engineering stress MPa and strain percent, see source.xlsx and provenance.json.",
+  "tests": [
+    {
+      "csv": "specimen_1.csv",
+      "role": "train",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "specimen_2.csv",
+      "role": "train",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "specimen_3.csv",
+      "role": "train",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "specimen_4.csv",
+      "role": "validation",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "specimen_5.csv",
+      "role": "validation",
+      "channels": {
+        "y": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "completed_steps": 300,
+  "dt_s": 0.09999999999990905,
+  "sample_node": 1093,
+  "experimental": true,
+  "material_model": "elastic",
+  "input_csv": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/insight_results/insight_acceleration_enu.csv",
+  "hirise_dtm": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/DTEEC_037262_1845_036761_1845_U01.IMG",
+  "dem_center_row": null,
+  "dem_center_col": null,
+  "input_scale": 1.0,
+  "animation_stride": 10,
+  "boundary_condition": "experimental_fixed_base_free_sides"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "hyperboloid",
+  "material": "shell_aluminum",
+  "planet": "moon",
+  "support": "pinned",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 69000000.0,
+    "nu": 0.33,
+    "rho": 2.7,
+    "thickness": 0.02
+  },
+  "nodes": 9408,
+  "elements": 9216,
+  "surface_area_m2": 176.94900253646972,
+  "mass_tonne": 9.555246136969641,
+  "weight_kN": 15.47949874189082,
+  "max_displacement_m": 5.6927350808050675e-06,
+  "min_uz_m": -5.435973520327319e-06,
+  "max_uz_m": 0.0,
+  "mean_base_uz_m": 0.0,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -1.7194579093882112e-14,
+    -4.689304500260505e-14,
+    -1.0373923942097463e-12
+  ],
+  "moment_residual_kNm": [
+    2.533707109117275e-13,
+    -3.233637316246707e-13,
+    -7.173177526326996e-14
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -15.479498741891602
+  ],
+  "relative_force_residual": 6.7094811178722e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "spring",
+  "material": "QzSimple1",
+  "params": {
+    "qz_type": 2,
+    "qult": 1000.0,
+    "z50": 0.01,
+    "suction": 0.0,
+    "c": 0.0
+  },
+  "bounds": {
+    "qult": [
+      500.0,
+      2000.0
+    ],
+    "z50": [
+      0.003,
+      0.03
+    ]
+  },
+  "name": "pile_qz",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.05,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

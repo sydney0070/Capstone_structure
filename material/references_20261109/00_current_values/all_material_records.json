@@ -1,0 +1,1181 @@
+{
+  "steel_s355_coupon": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "frame uniaxial cyclic; selected coupon scope",
+        "law": "Steel02",
+        "params": {
+          "Fy": 384169991.6153107,
+          "E": 204167883330.06158,
+          "b": 0.005258681303754453,
+          "R0": 27.07856524323407,
+          "cR1": 0.925,
+          "cR2": 0.15,
+          "a1": 0.04153616162729537,
+          "a2": 1.0,
+          "a3": 0.03987259361694604,
+          "a4": 1.0
+        },
+        "density_kg_m3": 7850,
+        "nu": 0.3,
+        "status": "PREVIOUS_COUPON_CALIBRATION_CURRENT_RUNTIME_REPLAY_IN_RESULTS",
+        "sources": [
+          "s355_coupon"
+        ],
+        "assumptions": [
+          "density7850 and nu0.30 are conventional assumptions; not identified from coupon"
+        ]
+      }
+    }
+  ],
+  "steel_s355_nominal": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "general steel baseline beam/shell/solid",
+        "law": "J2PerfectPlastic",
+        "E_Pa": 200000000000.0,
+        "nu": 0.3,
+        "G_Pa": 76923076923.07692,
+        "K_Pa": 166666666666.66666,
+        "fy_Pa": 355000000.0,
+        "density_kg_m3": 7850,
+        "status": "NOMINAL_ASSUMPTION_NOT_GRADE_THICKNESS_CERTIFIED",
+        "sources": [],
+        "assumptions": [
+          "S355 nominal reference; actual steel grade/product/thickness not received; EPP postyield is sensitivity model"
+        ]
+      }
+    }
+  ],
+  "al6061_t6_extrusion": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "frame/skin/solid",
+        "law": "J2PerfectPlastic",
+        "E_Pa": 70358592182.72911,
+        "nu": 0.33,
+        "G_Pa": 26450598564.935753,
+        "K_Pa": 68979011943.85207,
+        "fy_Pa": 240000000.0,
+        "fu_min_Pa": 260000000.0,
+        "density_kg_m3": 2712.6306615999065,
+        "temperature_K": 293.0,
+        "status": "LITERATURE_ELASTIC_AND_YIELD_REFERENCE",
+        "sources": [
+          "hydro6061",
+          "nist6061"
+        ],
+        "assumptions": [
+          "nu0.33 assumed; EPP afteryield NOT calibrated; no welding/heat exposure degradation; sheet products require new product reference"
+        ]
+      }
+    }
+  ],
+  "concrete_c30_prototype": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "RC unconfined concrete fiber",
+        "law": "Concrete02",
+        "params": {
+          "fpc": -30000000.0,
+          "epsc0": -0.002,
+          "fpcu": -6000000.0,
+          "epsU": -0.006,
+          "lam": 0.1,
+          "ft": 3000000.0,
+          "Ets": 1500000000.0
+        },
+        "E_Pa": 30000000000.0,
+        "nu": 0.2,
+        "G_Pa": 12500000000.0,
+        "K_Pa": 16666666666.666668,
+        "density_kg_m3": 2400,
+        "status": "FIXED_PROTOTYPE_NOT_EXPERIMENTALLY_CALIBRATED",
+        "sources": [],
+        "assumptions": [
+          "C30/SD400 inherited prototype, NOT explicitly chosen grade by user",
+          "softening not objective under arbitrary element/integration changes; no confinement enhancement"
+        ]
+      }
+    }
+  ],
+  "rebar_sd400_prototype": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "RC reinforcing fibers",
+        "law": "Steel02",
+        "params": {
+          "Fy": 400000000.0,
+          "E": 200000000000.0,
+          "b": 0.01,
+          "R0": 18,
+          "cR1": 0.925,
+          "cR2": 0.15
+        },
+        "density_kg_m3": 7850,
+        "status": "NOMINAL_PROTOTYPE_NOT_UCSD_A6_CALIBRATION",
+        "sources": []
+      }
+    }
+  ],
+  "cfrp_as4_8552_ud_rtd": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "orthotropic ply; laminate axes and stacking explicit",
+        "law": "ElasticOrthotropic",
+        "E1_Pa": 127277219631.88127,
+        "E2_Pa": 9238974772.84512,
+        "G12_Pa": 4826330105.2176,
+        "nu12": 0.302,
+        "nu23": 0.35,
+        "density_kg_m3": 1590,
+        "ply_thickness_m": 0.00018796,
+        "Xt_mean_Pa": 1995825393.6533408,
+        "Xc_mean_Pa": 1397567303.3251536,
+        "Yt_mean_Pa": 63914400.10766736,
+        "Yc_mean_Pa": 267861320.83957678,
+        "S_offset02_Pa": 55158058.345344,
+        "status": "ELASTIC_PLY_WITH_MEAN_FIRST_ONSET_SCREENING",
+        "sources": [
+          "niar_as4"
+        ],
+        "assumptions": [
+          "E3=E2,G13=G12,nu23=.35,G23=E2/(2(1+nu23)) transverse isotropy; out-of-plane constants NOT measured here",
+          "no progressive damage/delamination/impact; compression and tension moduli differ in source; single linear E uses tension normalized value"
+        ]
+      }
+    }
+  ],
+  "sintered_jsc1a_high_porosity": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "structural regolith candidate",
+        "law": "ElasticIsotropic",
+        "E_Pa": 5475000000.0,
+        "nu": 0.246,
+        "G_Pa": 2197030497.592295,
+        "K_Pa": 3592519685.03937,
+        "density_kg_m3": 2200,
+        "fc_mean_Pa": 84300000.0,
+        "ft_Pa": null,
+        "porosity": 0.1178,
+        "E_sample_n": 5,
+        "compression_sample_n": 8,
+        "status": "ELASTIC_COMPRESSION_SCREEN_ONLY_TENSION_CAPACITY_UNKNOWN",
+        "sources": [
+          "sintered2016"
+        ],
+        "assumptions": [
+          "mean properties not allowable; no extrapolation to bonded regolith; 2016 source only"
+        ]
+      }
+    }
+  ],
+  "sintered_jsc1a_low_porosity": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "structural regolith candidate",
+        "law": "ElasticIsotropic",
+        "E_Pa": 8358000000.0,
+        "nu": 0.266,
+        "G_Pa": 3300947867.2985783,
+        "K_Pa": 5952991452.991453,
+        "density_kg_m3": 2600,
+        "fc_mean_Pa": 202300000.0,
+        "ft_Pa": null,
+        "porosity": 0.0144,
+        "E_sample_n": 6,
+        "compression_sample_n": 8,
+        "status": "ELASTIC_COMPRESSION_SCREEN_ONLY_TENSION_CAPACITY_UNKNOWN",
+        "sources": [
+          "sintered2016"
+        ],
+        "assumptions": [
+          "mean properties not allowable; no extrapolation to bonded regolith; 2016 source only"
+        ]
+      }
+    }
+  ],
+  "moon_jsc1a_17_peak": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 15100000.0,
+        "nu": 0.3,
+        "G_Pa": 5807692.307692307,
+        "K_Pa": 12583333.333333332,
+        "density_kg_m3": 1705.0,
+        "phi_deg": 42.97203456434001,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    },
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 15100000.0,
+        "nu": 0.3,
+        "G_Pa": 5807692.307692307,
+        "K_Pa": 12583333.333333332,
+        "density_kg_m3": 1705.0,
+        "phi_deg": 42.97203456434001,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    }
+  ],
+  "moon_jsc1a_17_residual": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 15100000.0,
+        "nu": 0.3,
+        "G_Pa": 5807692.307692307,
+        "K_Pa": 12583333.333333332,
+        "density_kg_m3": 1705.0,
+        "phi_deg": 35.2,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    },
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 15100000.0,
+        "nu": 0.3,
+        "G_Pa": 5807692.307692307,
+        "K_Pa": 12583333.333333332,
+        "density_kg_m3": 1705.0,
+        "phi_deg": 35.2,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    }
+  ],
+  "moon_jsc1a_18_peak": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 20450000.000000004,
+        "nu": 0.3,
+        "G_Pa": 7865384.615384617,
+        "K_Pa": 17041666.666666668,
+        "density_kg_m3": 1780.0,
+        "phi_deg": 45.57215332353432,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    },
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 20450000.000000004,
+        "nu": 0.3,
+        "G_Pa": 7865384.615384617,
+        "K_Pa": 17041666.666666668,
+        "density_kg_m3": 1780.0,
+        "phi_deg": 45.57215332353432,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    }
+  ],
+  "moon_jsc1a_18_residual": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 20450000.000000004,
+        "nu": 0.3,
+        "G_Pa": 7865384.615384617,
+        "K_Pa": 17041666.666666668,
+        "density_kg_m3": 1780.0,
+        "phi_deg": 38.1,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    },
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 20450000.000000004,
+        "nu": 0.3,
+        "G_Pa": 7865384.615384617,
+        "K_Pa": 17041666.666666668,
+        "density_kg_m3": 1780.0,
+        "phi_deg": 38.1,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    }
+  ],
+  "moon_jsc1a_19_peak": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 17250000.0,
+        "nu": 0.3,
+        "G_Pa": 6634615.384615384,
+        "K_Pa": 14374999.999999998,
+        "density_kg_m3": 1880.0,
+        "phi_deg": 49.4848957431355,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    },
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 17250000.0,
+        "nu": 0.3,
+        "G_Pa": 6634615.384615384,
+        "K_Pa": 14374999.999999998,
+        "density_kg_m3": 1880.0,
+        "phi_deg": 49.4848957431355,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    }
+  ],
+  "moon_jsc1a_19_residual": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 17250000.0,
+        "nu": 0.3,
+        "G_Pa": 6634615.384615384,
+        "K_Pa": 14374999.999999998,
+        "density_kg_m3": 1880.0,
+        "phi_deg": 39.8,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    },
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 17250000.0,
+        "nu": 0.3,
+        "G_Pa": 6634615.384615384,
+        "K_Pa": 14374999.999999998,
+        "density_kg_m3": 1880.0,
+        "phi_deg": 39.8,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "status": "SUMMARY_STRENGTH_FIT_WITH_ASSUMED_ELASTIC_AND_FLOW",
+        "sources": [
+          "lasp_jsc1a",
+          "dp"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated"
+        ]
+      }
+    }
+  ],
+  "mars_jez1_peak": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 30000000.0,
+        "nu": 0.3,
+        "G_Pa": 11538461.538461538,
+        "K_Pa": 24999999.999999996,
+        "density_kg_m3": 1840,
+        "phi_deg": 40.6,
+        "c_Pa": 3100,
+        "psi_deg": 0,
+        "status": "PUBLISHED_SHEAR_STRENGTH_STIFFNESS_UNIDENTIFIED",
+        "sources": [
+          "jez1",
+          "dp"
+        ],
+        "assumptions": [
+          "E30MPa and nu.30 explicitly assumed; E sensitivity0.5/1/2 mandatory",
+          "triaxial-matched DP cannot exactly reproduce measured direct shear at every path",
+          "no liquefaction parameters inferred from dry direct shear"
+        ]
+      }
+    },
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 30000000.0,
+        "nu": 0.3,
+        "G_Pa": 11538461.538461538,
+        "K_Pa": 24999999.999999996,
+        "density_kg_m3": 1840,
+        "phi_deg": 40.6,
+        "c_Pa": 3100,
+        "psi_deg": 0,
+        "status": "PUBLISHED_SHEAR_STRENGTH_STIFFNESS_UNIDENTIFIED",
+        "sources": [
+          "jez1",
+          "dp"
+        ],
+        "assumptions": [
+          "E30MPa and nu.30 explicitly assumed; E sensitivity0.5/1/2 mandatory",
+          "triaxial-matched DP cannot exactly reproduce measured direct shear at every path",
+          "no liquefaction parameters inferred from dry direct shear"
+        ]
+      }
+    }
+  ],
+  "mars_jez1_residual": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 30000000.0,
+        "nu": 0.3,
+        "G_Pa": 11538461.538461538,
+        "K_Pa": 24999999.999999996,
+        "density_kg_m3": 1840,
+        "phi_deg": 39.7,
+        "c_Pa": 3200,
+        "psi_deg": 0,
+        "status": "PUBLISHED_SHEAR_STRENGTH_STIFFNESS_UNIDENTIFIED",
+        "sources": [
+          "jez1",
+          "dp"
+        ],
+        "assumptions": [
+          "E30MPa and nu.30 explicitly assumed; E sensitivity0.5/1/2 mandatory",
+          "triaxial-matched DP cannot exactly reproduce measured direct shear at every path",
+          "no liquefaction parameters inferred from dry direct shear"
+        ]
+      }
+    },
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 30000000.0,
+        "nu": 0.3,
+        "G_Pa": 11538461.538461538,
+        "K_Pa": 24999999.999999996,
+        "density_kg_m3": 1840,
+        "phi_deg": 39.7,
+        "c_Pa": 3200,
+        "psi_deg": 0,
+        "status": "PUBLISHED_SHEAR_STRENGTH_STIFFNESS_UNIDENTIFIED",
+        "sources": [
+          "jez1",
+          "dp"
+        ],
+        "assumptions": [
+          "E30MPa and nu.30 explicitly assumed; E sensitivity0.5/1/2 mandatory",
+          "triaxial-matched DP cannot exactly reproduce measured direct shear at every path",
+          "no liquefaction parameters inferred from dry direct shear"
+        ]
+      }
+    }
+  ],
+  "earth_sand_dr50_pdmy02": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "Earth reference sand; drained effective stress skeleton",
+        "law": "PressureDependMultiYield02",
+        "density_kg_m3": 1900,
+        "G_Pa": 112361025.27122116,
+        "K_Pa": 261801188.8819453,
+        "phi_deg": 33.5,
+        "p_ref_Pa": 101000,
+        "peak_shear_strain": 0.1,
+        "pressure_exponent": 0.5,
+        "PTAngle_deg": 25.5,
+        "contrac1": 0.045,
+        "contrac3": 0.15,
+        "dilat1": 0.06,
+        "dilat3": 0.15,
+        "contrac2": 5.0,
+        "dilat2": 3.0,
+        "liquefac1": 1.0,
+        "liquefac2": 0.0,
+        "e": 0.7,
+        "cs1": 0.9,
+        "cs2": 0.02,
+        "cs3": 0.7,
+        "pa_Pa": 101000,
+        "numerical_c_Pa": 300.0,
+        "n_surfaces": 20,
+        "status": "OFFICIAL_SUGGESTED_EXAMPLE_NOT_SITE_CALIBRATED",
+        "sources": [
+          "pdmy02"
+        ],
+        "assumptions": [
+          "rho is saturated total density; bbarBrick has NO pore-pressure DOF",
+          "water table/buoyancy/pore pressure NOT implicit; earth saturated model must supply initial effective stress or use u-p formulation for site use",
+          "G/K scaled80to101kPa with pressure exponent0.5; source table ambiguity explicitly interpreted",
+          "numerical_c is NOT soil Mohr-Coulomb cohesion"
+        ],
+        "E_Pa": 294894956.18742275,
+        "nu": 0.3122653316645807
+      }
+    }
+  ],
+  "earth_sand_dr50_dry_reference": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "Earth dry reference sand; dry total stress equals effective stress",
+        "law": "PressureDependMultiYield02",
+        "density_kg_m3": 1558.8235294117646,
+        "G_Pa": 112361025.27122116,
+        "K_Pa": 261801188.8819453,
+        "phi_deg": 33.5,
+        "p_ref_Pa": 101000,
+        "peak_shear_strain": 0.1,
+        "pressure_exponent": 0.5,
+        "PTAngle_deg": 25.5,
+        "contrac1": 0.045,
+        "contrac3": 0.15,
+        "dilat1": 0.06,
+        "dilat3": 0.15,
+        "contrac2": 5.0,
+        "dilat2": 3.0,
+        "liquefac1": 1.0,
+        "liquefac2": 0.0,
+        "e": 0.7,
+        "cs1": 0.9,
+        "cs2": 0.02,
+        "cs3": 0.7,
+        "pa_Pa": 101000,
+        "numerical_c_Pa": 300.0,
+        "n_surfaces": 20,
+        "status": "ASSUMED_DRY_DENSITY_OFFICIAL_SKELETON_PARAMETERS",
+        "sources": [
+          "pdmy02"
+        ],
+        "assumptions": [
+          "grain density2650kg/m3 assumed, e.70 gives dry bulk1558.82kg/m3",
+          "constitutive skeleton suggested sand parameters; not a site or dry-soil experimental calibration",
+          "G/K scaled80to101kPa with exponent.5 to resolve source reference-pressure ambiguity",
+          "no groundwater/pore-pressure DOF; numerical_c300Pa NOT physical cohesion"
+        ],
+        "E_Pa": 294894956.18742275,
+        "nu": 0.3122653316645807
+      }
+    },
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "Earth dry reference sand; dry total stress equals effective stress",
+        "law": "PressureDependMultiYield02",
+        "density_kg_m3": 1558.8235294117646,
+        "G_Pa": 112361025.27122116,
+        "K_Pa": 261801188.8819453,
+        "phi_deg": 33.5,
+        "p_ref_Pa": 101000,
+        "peak_shear_strain": 0.1,
+        "pressure_exponent": 0.5,
+        "PTAngle_deg": 25.5,
+        "contrac1": 0.045,
+        "contrac3": 0.15,
+        "dilat1": 0.06,
+        "dilat3": 0.15,
+        "contrac2": 5.0,
+        "dilat2": 3.0,
+        "liquefac1": 1.0,
+        "liquefac2": 0.0,
+        "e": 0.7,
+        "cs1": 0.9,
+        "cs2": 0.02,
+        "cs3": 0.7,
+        "pa_Pa": 101000,
+        "numerical_c_Pa": 300.0,
+        "n_surfaces": 20,
+        "status": "ASSUMED_DRY_DENSITY_OFFICIAL_SKELETON_PARAMETERS",
+        "sources": [
+          "pdmy02"
+        ],
+        "assumptions": [
+          "grain density2650kg/m3 assumed, e.70 gives dry bulk1558.82kg/m3",
+          "constitutive skeleton suggested sand parameters; not a site or dry-soil experimental calibration",
+          "G/K scaled80to101kPa with exponent.5 to resolve source reference-pressure ambiguity",
+          "no groundwater/pore-pressure DOF; numerical_c300Pa NOT physical cohesion"
+        ],
+        "E_Pa": 294894956.18742275,
+        "nu": 0.3122653316645807
+      }
+    }
+  ],
+  "shield_loose_jsc1a": [
+    {
+      "catalog": "release",
+      "record": {
+        "role": "loose shielding mass plus gravity load on retaining shell",
+        "law": "MassOnly",
+        "density_kg_m3": 1700,
+        "status": "BULK_DENSITY_REFERENCE_WITH_SETTLEMENT_SENSITIVITY",
+        "sources": [
+          "lasp_jsc1a"
+        ],
+        "assumptions": [
+          "nominal1.7g/cc test condition; thickness explicit; density range1700-1900 for sensitivity",
+          "no fictitious shell tensile/flexural stiffness; retaining shell is separate material",
+          "soil redistribution/contact/settlement not captured by fixed attached mass"
+        ]
+      }
+    }
+  ],
+  "earth_sand_dr30_dry_reference": [
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "Earth dry reference sand; dry total stress equals effective stress",
+        "law": "PressureDependMultiYield02",
+        "density_kg_m3": 1432.4324324324323,
+        "G_Pa": 67416615.16273269,
+        "K_Pa": 179777640.43395385,
+        "phi_deg": 31,
+        "p_ref_Pa": 101000,
+        "peak_shear_strain": 0.1,
+        "pressure_exponent": 0.5,
+        "PTAngle_deg": 31,
+        "contrac1": 0.087,
+        "contrac3": 0.18,
+        "dilat1": 0,
+        "dilat3": 0,
+        "contrac2": 5.0,
+        "dilat2": 3.0,
+        "liquefac1": 1.0,
+        "liquefac2": 0.0,
+        "e": 0.85,
+        "cs1": 0.9,
+        "cs2": 0.02,
+        "cs3": 0.7,
+        "pa_Pa": 101000,
+        "numerical_c_Pa": 300.0,
+        "n_surfaces": 20,
+        "status": "OFFICIAL_SKELETON_WITH_ASSUMED_DRY_DENSITY",
+        "sources": [
+          "pdmy02_table"
+        ],
+        "assumptions": [
+          "Dr30 official suggested skeleton; not site calibration",
+          "grain density2650 assumed, dry bulk2650/(1+0.85)",
+          "G/K at80kPa scaled to101kPa by sqrt(101/80)",
+          "no pore-pressure DOF; numerical_c300Pa is not MC cohesion"
+        ],
+        "E_Pa": 179777640.43395382,
+        "nu": 0.3333333333333333
+      }
+    }
+  ],
+  "earth_sand_dr75_dry_reference": [
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "Earth dry reference sand; dry total stress equals effective stress",
+        "law": "PressureDependMultiYield02",
+        "density_kg_m3": 1709.6774193548385,
+        "G_Pa": 146069332.85258752,
+        "K_Pa": 292138665.70517504,
+        "phi_deg": 36.5,
+        "p_ref_Pa": 101000,
+        "peak_shear_strain": 0.1,
+        "pressure_exponent": 0.5,
+        "PTAngle_deg": 26,
+        "contrac1": 0.013,
+        "contrac3": 0,
+        "dilat1": 0.3,
+        "dilat3": 0,
+        "contrac2": 5.0,
+        "dilat2": 3.0,
+        "liquefac1": 1.0,
+        "liquefac2": 0.0,
+        "e": 0.55,
+        "cs1": 0.9,
+        "cs2": 0.02,
+        "cs3": 0.7,
+        "pa_Pa": 101000,
+        "numerical_c_Pa": 300.0,
+        "n_surfaces": 20,
+        "status": "OFFICIAL_SKELETON_WITH_ASSUMED_DRY_DENSITY",
+        "sources": [
+          "pdmy02_table"
+        ],
+        "assumptions": [
+          "Dr75 official suggested skeleton; not site calibration",
+          "grain density2650 assumed, dry bulk2650/(1+0.55)",
+          "G/K at80kPa scaled to101kPa by sqrt(101/80)",
+          "no pore-pressure DOF; numerical_c300Pa is not MC cohesion"
+        ],
+        "E_Pa": 375606855.9066536,
+        "nu": 0.2857142857142857
+      }
+    }
+  ],
+  "basalt_elastic_analogue": [
+    {
+      "catalog": "ground",
+      "record": {
+        "law": "ElasticIsotropic",
+        "E_Pa": 40000000000.0,
+        "nu": 0.3,
+        "G_Pa": 15384615384.615383,
+        "K_Pa": 33333333333.33333,
+        "density_kg_m3": 2900,
+        "role": "coherent rock domains / basal rock analogue",
+        "status": "PUBLISHED_MODEL_PARAMETERS_TRANSFERRED_AS_ANALOGUE",
+        "sources": [
+          "musiol2016"
+        ],
+        "assumptions": [
+          "E40GPa nu.30 rho2900 from crust column Table1, not a tested local core",
+          "shared basalt analogue for all three bodies, not a claim that every Earth/Moon site is basaltic",
+          "no joints, crushing or tensile failure; bonded continuum boundaries",
+          "clast/lens distribution and rock depth are explicit scenario assumptions"
+        ]
+      }
+    }
+  ],
+  "mars_insight_duricrust_proxy": [
+    {
+      "catalog": "ground",
+      "record": {
+        "law": "DruckerPrager",
+        "E_Pa": 11480000.0,
+        "nu": 0.28,
+        "G_Pa": 4484375.0,
+        "K_Pa": 8696969.696969697,
+        "density_kg_m3": 1200,
+        "phi_deg": 30.0,
+        "c_Pa": 5800.0,
+        "psi_deg": 0.0,
+        "role": "shallow cohesive crust analogue",
+        "status": "LITERATURE_STRENGTH_AND_BULK_WAVE_MODULUS_PROXY",
+        "sources": [
+          "spohn2022"
+        ],
+        "assumptions": [
+          "c5.8kPa inferred at phi30 rho1200; not an independent triaxial fit",
+          "E11.48MPa nu.28 are shallow bulk wave estimates at40-80Hz, assigned to crust as proxy",
+          "not a measured static crust-only E; sensitivity0.5/1/2 required",
+          "top1cm dust omitted in prepared-surface reference; no vacuum/thermal or rate calibration"
+        ]
+      }
+    }
+  ],
+  "earth_sand_dr30_dp_reference": [
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry granular ground: constant elastic stiffness, frictional perfect plasticity",
+        "law": "DruckerPrager",
+        "density_kg_m3": 1432.4324324324323,
+        "G_Pa": 67416615.16273269,
+        "K_Pa": 179777640.43395385,
+        "phi_deg": 31,
+        "p_ref_Pa": 101000,
+        "peak_shear_strain": 0.1,
+        "pressure_exponent": 0.5,
+        "PTAngle_deg": 31,
+        "contrac1": 0.087,
+        "contrac3": 0.18,
+        "dilat1": 0,
+        "dilat3": 0,
+        "contrac2": 5.0,
+        "dilat2": 3.0,
+        "liquefac1": 1.0,
+        "liquefac2": 0.0,
+        "e": 0.85,
+        "cs1": 0.9,
+        "cs2": 0.02,
+        "cs3": 0.7,
+        "pa_Pa": 101000,
+        "numerical_c_Pa": 300.0,
+        "n_surfaces": 20,
+        "status": "OFFICIAL_SAND_REFERENCE_MAPPED_TO_STATIC_DP_NOT_CYCLIC_CALIBRATION",
+        "sources": [
+          "pdmy02_table"
+        ],
+        "assumptions": [
+          "Dr30 official suggested skeleton; not site calibration",
+          "grain density2650 assumed, dry bulk2650/(1+0.85)",
+          "G/K at80kPa scaled to101kPa by sqrt(101/80)",
+          "no pore-pressure DOF; numerical_c300Pa is not MC cohesion",
+          "Explicit simpler DP alternative to PDMY02: constant reference E/G/K, no pressure-dependent elastic modulus, no contraction/dilation cyclic law",
+          "triaxial compression matching; not fitting actual sand experiments; reference modulus sensitivity required"
+        ],
+        "E_Pa": 179777640.43395382,
+        "nu": 0.3333333333333333,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "reference_pdmy_record": "earth_sand_dr30_dry_reference"
+      }
+    }
+  ],
+  "earth_sand_dr50_dp_reference": [
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry granular ground: constant elastic stiffness, frictional perfect plasticity",
+        "law": "DruckerPrager",
+        "density_kg_m3": 1558.8235294117646,
+        "G_Pa": 112361025.27122116,
+        "K_Pa": 261801188.8819453,
+        "phi_deg": 33.5,
+        "p_ref_Pa": 101000,
+        "peak_shear_strain": 0.1,
+        "pressure_exponent": 0.5,
+        "PTAngle_deg": 25.5,
+        "contrac1": 0.045,
+        "contrac3": 0.15,
+        "dilat1": 0.06,
+        "dilat3": 0.15,
+        "contrac2": 5.0,
+        "dilat2": 3.0,
+        "liquefac1": 1.0,
+        "liquefac2": 0.0,
+        "e": 0.7,
+        "cs1": 0.9,
+        "cs2": 0.02,
+        "cs3": 0.7,
+        "pa_Pa": 101000,
+        "numerical_c_Pa": 300.0,
+        "n_surfaces": 20,
+        "status": "OFFICIAL_SAND_REFERENCE_MAPPED_TO_STATIC_DP_NOT_CYCLIC_CALIBRATION",
+        "sources": [
+          "pdmy02"
+        ],
+        "assumptions": [
+          "grain density2650kg/m3 assumed, e.70 gives dry bulk1558.82kg/m3",
+          "constitutive skeleton suggested sand parameters; not a site or dry-soil experimental calibration",
+          "G/K scaled80to101kPa with exponent.5 to resolve source reference-pressure ambiguity",
+          "no groundwater/pore-pressure DOF; numerical_c300Pa NOT physical cohesion",
+          "Explicit simpler DP alternative to PDMY02: constant reference E/G/K, no pressure-dependent elastic modulus, no contraction/dilation cyclic law",
+          "triaxial compression matching; not fitting actual sand experiments; reference modulus sensitivity required"
+        ],
+        "E_Pa": 294894956.18742275,
+        "nu": 0.3122653316645807,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "reference_pdmy_record": "earth_sand_dr50_dry_reference"
+      }
+    }
+  ],
+  "earth_sand_dr75_dp_reference": [
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry granular ground: constant elastic stiffness, frictional perfect plasticity",
+        "law": "DruckerPrager",
+        "density_kg_m3": 1709.6774193548385,
+        "G_Pa": 146069332.85258752,
+        "K_Pa": 292138665.70517504,
+        "phi_deg": 36.5,
+        "p_ref_Pa": 101000,
+        "peak_shear_strain": 0.1,
+        "pressure_exponent": 0.5,
+        "PTAngle_deg": 26,
+        "contrac1": 0.013,
+        "contrac3": 0,
+        "dilat1": 0.3,
+        "dilat3": 0,
+        "contrac2": 5.0,
+        "dilat2": 3.0,
+        "liquefac1": 1.0,
+        "liquefac2": 0.0,
+        "e": 0.55,
+        "cs1": 0.9,
+        "cs2": 0.02,
+        "cs3": 0.7,
+        "pa_Pa": 101000,
+        "numerical_c_Pa": 300.0,
+        "n_surfaces": 20,
+        "status": "OFFICIAL_SAND_REFERENCE_MAPPED_TO_STATIC_DP_NOT_CYCLIC_CALIBRATION",
+        "sources": [
+          "pdmy02_table"
+        ],
+        "assumptions": [
+          "Dr75 official suggested skeleton; not site calibration",
+          "grain density2650 assumed, dry bulk2650/(1+0.55)",
+          "G/K at80kPa scaled to101kPa by sqrt(101/80)",
+          "no pore-pressure DOF; numerical_c300Pa is not MC cohesion",
+          "Explicit simpler DP alternative to PDMY02: constant reference E/G/K, no pressure-dependent elastic modulus, no contraction/dilation cyclic law",
+          "triaxial compression matching; not fitting actual sand experiments; reference modulus sensitivity required"
+        ],
+        "E_Pa": 375606855.9066536,
+        "nu": 0.2857142857142857,
+        "c_Pa": 0.0,
+        "psi_deg": 0.0,
+        "reference_pdmy_record": "earth_sand_dr75_dry_reference"
+      }
+    }
+  ],
+  "moon_field_proxy_17": [
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 15100000.0,
+        "nu": 0.3,
+        "G_Pa": 5807692.307692307,
+        "K_Pa": 12583333.333333332,
+        "density_kg_m3": 1705.0,
+        "phi_deg": 42.97203456434001,
+        "c_Pa": 520.0,
+        "psi_deg": 0.0,
+        "status": "HYBRID_FIELD_COHESION_AND_SIMULANT_STIFFNESS_STRENGTH_PROXY",
+        "sources": [
+          "lasp_jsc1a",
+          "dp",
+          "nasa_lunar_guide2024"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated",
+          "Explicit field-proxy alternative: Apollo/Carrier cohesion combined with JSC-1A E/rho/phi; NOT a refit of JSC-1A experiment",
+          "Cohesion Table18 averages520/900/3000Pa refer to0-15/0-30/30-60cm ranges; assignment to chosen thick layers is assumed; compare cohesionless option",
+          "No low-pressure tensile/adhesive fracture calibration"
+        ]
+      }
+    }
+  ],
+  "moon_field_proxy_18": [
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 20450000.000000004,
+        "nu": 0.3,
+        "G_Pa": 7865384.615384617,
+        "K_Pa": 17041666.666666668,
+        "density_kg_m3": 1780.0,
+        "phi_deg": 45.57215332353432,
+        "c_Pa": 900.0,
+        "psi_deg": 0.0,
+        "status": "HYBRID_FIELD_COHESION_AND_SIMULANT_STIFFNESS_STRENGTH_PROXY",
+        "sources": [
+          "lasp_jsc1a",
+          "dp",
+          "nasa_lunar_guide2024"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated",
+          "Explicit field-proxy alternative: Apollo/Carrier cohesion combined with JSC-1A E/rho/phi; NOT a refit of JSC-1A experiment",
+          "Cohesion Table18 averages520/900/3000Pa refer to0-15/0-30/30-60cm ranges; assignment to chosen thick layers is assumed; compare cohesionless option",
+          "No low-pressure tensile/adhesive fracture calibration"
+        ]
+      }
+    }
+  ],
+  "moon_field_proxy_19": [
+    {
+      "catalog": "ground",
+      "record": {
+        "role": "dry simulant ground reference",
+        "law": "DruckerPrager",
+        "E_Pa": 17250000.0,
+        "nu": 0.3,
+        "G_Pa": 6634615.384615384,
+        "K_Pa": 14374999.999999998,
+        "density_kg_m3": 1880.0,
+        "phi_deg": 49.4848957431355,
+        "c_Pa": 3000.0,
+        "psi_deg": 0.0,
+        "status": "HYBRID_FIELD_COHESION_AND_SIMULANT_STIFFNESS_STRENGTH_PROXY",
+        "sources": [
+          "lasp_jsc1a",
+          "dp",
+          "nasa_lunar_guide2024"
+        ],
+        "assumptions": [
+          "constant static E at30kPa subgroup; not Gmax",
+          "psi0 non-dilatant baseline, not measured dilation fit",
+          "no postpeak transition; peak/residual are SEPARATE bounding laws",
+          "reference test confinement15-60kPa; shallow lunar confinement often below evidence",
+          "temperature,vacuum,reduced-gravity grain response not calibrated",
+          "Explicit field-proxy alternative: Apollo/Carrier cohesion combined with JSC-1A E/rho/phi; NOT a refit of JSC-1A experiment",
+          "Cohesion Table18 averages520/900/3000Pa refer to0-15/0-30/30-60cm ranges; assignment to chosen thick layers is assumed; compare cohesionless option",
+          "No low-pressure tensile/adhesive fracture calibration"
+        ]
+      }
+    }
+  ]
+}

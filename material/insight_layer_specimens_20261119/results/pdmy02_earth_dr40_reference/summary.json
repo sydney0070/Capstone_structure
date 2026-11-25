@@ -1,0 +1,60 @@
+{
+  "id": "pdmy02_earth_dr40_reference",
+  "family": "PressureDependMultiYield02",
+  "status": "OFFICIAL_EARTH_REFERENCE_NOT_MARS",
+  "mars_calibrated": false,
+  "tests": [
+    {
+      "test": "drained_constant_vertical_stress_cyclic_shear",
+      "pressure_Pa": 5000.0,
+      "element": "SSPbrick",
+      "initial_mean_pressure_Pa": 3235.2941176470576,
+      "steps": 540,
+      "step_bisections": 0,
+      "error": null,
+      "peak_tau_Pa": 3935.3410380738146,
+      "final_tau_Pa": 3871.2653727342317,
+      "force_balance_relative_error": 9.758656294343942e-08,
+      "vertical_stress_relative_error": 4.892161541647511e-08,
+      "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+      "checks": {
+        "complete": true,
+        "finite": true,
+        "force_balance": true,
+        "vertical_stress": true,
+        "stress_force": true
+      },
+      "passed": true
+    },
+    {
+      "test": "drained_constant_vertical_stress_cyclic_shear",
+      "pressure_Pa": 80000.0,
+      "element": "SSPbrick",
+      "initial_mean_pressure_Pa": 51764.70588235292,
+      "steps": 540,
+      "step_bisections": 0,
+      "error": null,
+      "peak_tau_Pa": 54413.049119749856,
+      "final_tau_Pa": 42687.702738879714,
+      "force_balance_relative_error": 2.6012676435974424e-08,
+      "vertical_stress_relative_error": 1.3748868150287308e-08,
+      "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+      "checks": {
+        "complete": true,
+        "finite": true,
+        "force_balance": true,
+        "vertical_stress": true,
+        "stress_force": true
+      },
+      "passed": true
+    }
+  ],
+  "mass_test": {
+    "expected_kg": 1800,
+    "recovered_kg": 1800.0000000000125,
+    "relative_error": 6.8833827526759706e-15,
+    "passed": true
+  },
+  "passed": true,
+  "elapsed_seconds": 0.32578795800509397
+}

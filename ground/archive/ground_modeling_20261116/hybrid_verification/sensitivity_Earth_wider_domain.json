@@ -1,0 +1,25 @@
+{
+  "body": "Earth",
+  "factor": 1.0,
+  "spacing": 1.0,
+  "width": 12.0,
+  "frame": false,
+  "penalty": 10.0,
+  "soil_mass_kg": 3128501.2205754123,
+  "materials": {
+    "earth_sand_dr30_dp_reference": 0.1753472222222222,
+    "earth_sand_dr50_dp_reference": 0.3246527777777778,
+    "earth_sand_dr75_dp_reference": 0.33333333333333326,
+    "basalt_elastic_analogue": 0.16666666666666666
+  },
+  "additional_settlement_m": 5.560045371731487e-05,
+  "differential_settlement_m": 4.951440213991345e-06,
+  "force_error": 8.476241475259515e-16,
+  "contact_normal_relative_error": 5.1328689650781054e-15,
+  "friction_capacity_excess_N": 0,
+  "contact_mpc_error_m": 0.0,
+  "max_contact_penetration_m": 9.22825967925641e-06,
+  "gravity_stress_samples": 512,
+  "pass": true,
+  "variant": "wider_domain"
+}

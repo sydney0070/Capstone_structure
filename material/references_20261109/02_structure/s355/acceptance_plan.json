@@ -1,0 +1,15 @@
+{
+  "status": "PROJECT_SCREENING_CRITERIA_NOT_DESIGN_STANDARD",
+  "validation_range_nrmse_max": 0.05,
+  "validation_peak_stress_relative_error_max": 0.1,
+  "require_optimizer_success": true,
+  "require_independent_specimen": true,
+  "criterion_defined_before_fitting": true,
+  "not_claimed": [
+    "material grade population certification",
+    "fracture",
+    "fatigue",
+    "temperature/vacuum",
+    "multiaxial J2 calibration"
+  ]
+}

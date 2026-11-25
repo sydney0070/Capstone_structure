@@ -1,0 +1,30 @@
+{
+  "kind": "contact",
+  "material": "zeroLengthContactASDimplex",
+  "params": {
+    "Kn": 1000000.0,
+    "Kt": 200000.0,
+    "mu": 0.5
+  },
+  "bounds": {
+    "Kt": [
+      100000.0,
+      400000.0
+    ],
+    "mu": [
+      0.2,
+      0.8
+    ]
+  },
+  "name": "interface_friction",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

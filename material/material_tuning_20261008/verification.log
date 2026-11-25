@@ -1,0 +1,26 @@
+test_bad_input_rejected (__main__.PhysicsChecks.test_bad_input_rejected) ... ok
+test_contact_force_and_penetration (__main__.PhysicsChecks.test_contact_force_and_penetration) ... ZeroLengthContactASDimplex element - Implemented: Akan, OD., Petracca, M., Camata, G., Spacone, E. & Lai, CG. (2020)
+ok
+test_dashpot_rate (__main__.PhysicsChecks.test_dashpot_rate) ... ok
+test_elastic_shear_and_reaction (__main__.PhysicsChecks.test_elastic_shear_and_reaction) ... SSPbrick element - Written: C.McGann, P.Arduino, P.Mackenzie-Helnwein, U.Washington
+ok
+test_elastic_shell_and_poisson (__main__.PhysicsChecks.test_elastic_shell_and_poisson) ... ok
+test_gap_no_tension (__main__.PhysicsChecks.test_gap_no_tension) ... ok
+test_metal_elastic_limit (__main__.PhysicsChecks.test_metal_elastic_limit) ... ok
+test_orthotropic_shell (__main__.PhysicsChecks.test_orthotropic_shell) ... ok
+test_pile_unit_conversion (__main__.PhysicsChecks.test_pile_unit_conversion) ... ok
+test_planet_stress (__main__.PhysicsChecks.test_planet_stress) ... ok
+test_pm4_proxy_labels (__main__.PhysicsChecks.test_pm4_proxy_labels) ... PM4Sand nDmaterial - Written: L.Chen, P.Arduino, U.Washington
+SSPquad element - Written: C.McGann, P.Arduino, P.Mackenzie-Helnwein, U.Washington
+1 initialize
+PM4Silt nDmaterial - Written: L.Chen, P.Arduino, U.Washington
+1 initialize
+ok
+test_soil_equilibrium (__main__.PhysicsChecks.test_soil_equilibrium) ... DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+ok
+test_uniaxial_concrete_peak (__main__.PhysicsChecks.test_uniaxial_concrete_peak) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.338s
+
+OK

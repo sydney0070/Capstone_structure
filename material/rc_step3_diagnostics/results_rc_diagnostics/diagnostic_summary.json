@@ -1,0 +1,167 @@
+{
+  "model_status": "PROVISIONAL_NOT_CALIBRATED",
+  "adaptive": false,
+  "steps": 60,
+  "cases": {
+    "baseline_24x12_ip5": {
+      "case": "baseline_24x12_ip5",
+      "geometry": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 24,
+        "nz": 12
+      },
+      "nip": 5,
+      "steps": 60,
+      "status": "COMPLETED",
+      "error": null,
+      "points": 540,
+      "peak_abs_force_kN": 76.13828570009679,
+      "max_balance_abs_N": 0.0069716239704575855,
+      "max_balance_rel_peak": 9.156528685080078e-08,
+      "worst_balance_at": {
+        "segment": 2,
+        "substep": 25,
+        "u_m": 0.0005000000000000024,
+        "load_factor_N": 8624.96105401882,
+        "reaction_x_N": -8624.95408239485
+      },
+      "endpoint_u_m": 4.347650711666873e-17,
+      "endpoint_F_kN": 37.972463457991324,
+      "equilibrium_pass": true,
+      "validation_pass": true
+    },
+    "mid_36x18_ip5": {
+      "case": "mid_36x18_ip5",
+      "geometry": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 36,
+        "nz": 18
+      },
+      "nip": 5,
+      "steps": 60,
+      "status": "COMPLETED",
+      "error": null,
+      "points": 540,
+      "peak_abs_force_kN": 76.12151417827089,
+      "max_balance_abs_N": 1.2434629939380102,
+      "max_balance_rel_peak": 1.6335237250088233e-05,
+      "worst_balance_at": {
+        "segment": 5,
+        "substep": 37,
+        "u_m": 0.005100000000000004,
+        "load_factor_N": 60655.72315488788,
+        "reaction_x_N": -60656.966617881815
+      },
+      "endpoint_u_m": 4.347650711666873e-17,
+      "endpoint_F_kN": 37.92044458986283,
+      "equilibrium_pass": true,
+      "validation_pass": true
+    },
+    "refined_48x24_ip5": {
+      "case": "refined_48x24_ip5",
+      "geometry": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "nip": 5,
+      "steps": 60,
+      "status": "COMPLETED",
+      "error": null,
+      "points": 540,
+      "peak_abs_force_kN": 56.58273946494839,
+      "max_balance_abs_N": 102373.34994005396,
+      "max_balance_rel_peak": 1.3443167321019103,
+      "worst_balance_at": {
+        "segment": 4,
+        "substep": 60,
+        "u_m": -0.006000000000000008,
+        "load_factor_N": 31766.992921550802,
+        "reaction_x_N": 70606.35701850316
+      },
+      "endpoint_u_m": 1.091791587692903e-16,
+      "endpoint_F_kN": 31.01742066398183,
+      "equilibrium_pass": false,
+      "validation_pass": false
+    },
+    "base_24x12_ip7": {
+      "case": "base_24x12_ip7",
+      "geometry": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 24,
+        "nz": 12
+      },
+      "nip": 7,
+      "steps": 60,
+      "status": "COMPLETED",
+      "error": null,
+      "points": 540,
+      "peak_abs_force_kN": 75.81777477941654,
+      "max_balance_abs_N": 0.016246659615717363,
+      "max_balance_rel_peak": 2.1428562975515274e-07,
+      "worst_balance_at": {
+        "segment": 3,
+        "substep": 37,
+        "u_m": 0.0025500000000000024,
+        "load_factor_N": 48321.5605472928,
+        "reaction_x_N": -48321.576793952416
+      },
+      "endpoint_u_m": 4.347650711666873e-17,
+      "endpoint_F_kN": 43.7813433314636,
+      "equilibrium_pass": true,
+      "validation_pass": true
+    },
+    "refined_48x24_ip7": {
+      "case": "refined_48x24_ip7",
+      "geometry": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "nip": 7,
+      "steps": 60,
+      "status": "FAILED",
+      "error": "Failed at target=0.006, segment=3, substep=10, du=0.00015000000000000001",
+      "points": 129,
+      "peak_abs_force_kN": 7857534148482.306,
+      "max_balance_abs_N": 7836208504849453.0,
+      "max_balance_rel_peak": 0.9972859623350193,
+      "worst_balance_at": {
+        "segment": 3,
+        "substep": 9,
+        "u_m": -0.0016499999999715787,
+        "load_factor_N": -7857534148482306.0,
+        "reaction_x_N": 21325643632852.676
+      },
+      "endpoint_u_m": -0.0016499999999715787,
+      "endpoint_F_kN": -7857534148482.306,
+      "equilibrium_pass": false,
+      "validation_pass": false
+    }
+  }
+}

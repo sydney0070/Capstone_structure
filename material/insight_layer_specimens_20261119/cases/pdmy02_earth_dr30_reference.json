@@ -1,0 +1,183 @@
+{
+  "id": "pdmy02_earth_dr30_reference",
+  "group": "followup_reference",
+  "layer": "earth_sand_reference_only",
+  "family": "PressureDependMultiYield02",
+  "parameters": {
+    "density_kg_m3": 1700,
+    "G_Pa": 67416615.16273269,
+    "K_Pa": 179777640.43395385,
+    "phi_deg": 31,
+    "peak_shear_strain": 0.1,
+    "p_ref_Pa": 101000.0,
+    "pressure_exponent": 0.5,
+    "PTAngle_deg": 31,
+    "contrac1": 0.087,
+    "contrac3": 0.18,
+    "dilat1": 0,
+    "dilat3": 0,
+    "n_surfaces": 20,
+    "contrac2": 5.0,
+    "dilat2": 3.0,
+    "liquefac1": 1.0,
+    "liquefac2": 0.0,
+    "e": 0.85,
+    "cs1": 0.9,
+    "cs2": 0.02,
+    "cs3": 0.7,
+    "pa_Pa": 101000.0,
+    "numerical_c_Pa": 300.0
+  },
+  "evidence": {
+    "density_kg_m3": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "G_Pa": {
+      "source": "PDMY02",
+      "locator": "suggested G/K at 80 kPa; scaled (101/80)^.5",
+      "kind": "derived",
+      "note": "RefPress=101kPa matches gamma_peak reference; all SI units"
+    },
+    "K_Pa": {
+      "source": "PDMY02",
+      "locator": "suggested G/K at 80 kPa; scaled (101/80)^.5",
+      "kind": "derived",
+      "note": "RefPress=101kPa matches gamma_peak reference; all SI units"
+    },
+    "phi_deg": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "peak_shear_strain": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "p_ref_Pa": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "pressure_exponent": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "PTAngle_deg": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "contrac1": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "contrac3": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "dilat1": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "dilat3": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "n_surfaces": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "contrac2": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "dilat2": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "liquefac1": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "liquefac2": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "e": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "cs1": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "cs2": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "cs3": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "pa_Pa": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    },
+    "numerical_c_Pa": {
+      "source": "PDMY02",
+      "locator": "suggested parameters table / documented defaults",
+      "kind": "official_earth_reference",
+      "note": ""
+    }
+  },
+  "mars_calibrated": false,
+  "status": "OFFICIAL_EARTH_REFERENCE_NOT_MARS",
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "notes": [
+    "Official rho is saturated bulk density. Dr is the official table label, not inferred Mars relative density.",
+    "Dry/effective-stress mechanical fixture only; no pore pressure, u-p element or liquefaction claim."
+  ]
+}

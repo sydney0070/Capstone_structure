@@ -1,0 +1,64 @@
+{
+  "id": "local_gravel_dp_trial",
+  "family": "DruckerPrager",
+  "status": "SOURCE_BASED_INITIAL_TRIAL",
+  "mars_calibrated": false,
+  "tests": [
+    {
+      "test": "triaxial_load_unload",
+      "pressure_Pa": 5000.0,
+      "initial_E_Pa": 28400000.000000007,
+      "expected_E_Pa": 28400000.0,
+      "confinement_max_error_Pa": 1.000444171950221e-11,
+      "force_balance_max_error_N": 1.4551915228366852e-11,
+      "final_strain": 0.0009472437789234732,
+      "final_q_Pa": 8.185452315956354e-12,
+      "expected_yield_q_Pa": 13450.861660713319,
+      "computed_yield_q_Pa": 13450.861660713332,
+      "yield_relative_error": 8.881784197001252e-16,
+      "expected_residual_strain": 0.0009472437789234732,
+      "checks": {
+        "elastic_modulus": true,
+        "confinement": true,
+        "homogeneity": true,
+        "force_balance": true,
+        "finite": true,
+        "yield_strength": true,
+        "elastic_unloading": true
+      },
+      "passed": true
+    },
+    {
+      "test": "triaxial_load_unload",
+      "pressure_Pa": 50000.0,
+      "initial_E_Pa": 28399999.99999999,
+      "expected_E_Pa": 28400000.0,
+      "confinement_max_error_Pa": 1.0186340659856796e-10,
+      "force_balance_max_error_N": 8.731149137020111e-11,
+      "final_strain": 0.009472437789234732,
+      "final_q_Pa": 1.1641532182693481e-10,
+      "expected_yield_q_Pa": 134508.61660713318,
+      "computed_yield_q_Pa": 134508.6166071333,
+      "yield_relative_error": 8.881784197001252e-16,
+      "expected_residual_strain": 0.009472437789234732,
+      "checks": {
+        "elastic_modulus": true,
+        "confinement": true,
+        "homogeneity": true,
+        "force_balance": true,
+        "finite": true,
+        "yield_strength": true,
+        "elastic_unloading": true
+      },
+      "passed": true
+    }
+  ],
+  "mass_test": {
+    "expected_kg": 1600.0,
+    "recovered_kg": 1599.9999999999936,
+    "relative_error": 3.9968028886505635e-15,
+    "passed": true
+  },
+  "passed": true,
+  "elapsed_seconds": 0.15067899999849033
+}

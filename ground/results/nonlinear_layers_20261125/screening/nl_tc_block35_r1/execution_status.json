@@ -1,0 +1,32 @@
+{
+  "profile": "nl_tc_block35",
+  "radial_subdivisions": 1,
+  "command": [
+    "/Users/sydney/anaconda3/envs/cap/bin/python",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_dome_footing.py",
+    "--material-profile",
+    "nl_tc_block35",
+    "--radial-subdivisions",
+    "1",
+    "--html",
+    "--output-dir",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/screening/nl_tc_block35_r1/run"
+  ],
+  "complete": false,
+  "entry_sha256": "548fbc132b6086355342663252579f53ad206895272c3ff135d800e649253d06",
+  "started_on": "2026-11-25",
+  "run_dir": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/screening/nl_tc_block35_r1/run",
+  "returncode": -15,
+  "elapsed_s": 431.90846225002315,
+  "limit_reason": "native_attempt_no_return_limit",
+  "last_checkpoint": {
+    "elapsed_s": 247.87087966600666,
+    "event": "attempt_started",
+    "pattern": 800002,
+    "before": 0.875,
+    "increment": 0.125,
+    "algorithm": "NewtonLineSearch"
+  },
+  "stage": "depressurized",
+  "error": null
+}

@@ -1,0 +1,34 @@
+usage: ground_20261107.py [-h] [--ground-width GROUND_WIDTH]
+                          [--spacing SPACING] [--depth DEPTH]
+                          [--duration DURATION] [--warmup WARMUP] [--dt DT]
+                          [--freqmax FREQMAX] [--max-runtime MAX_RUNTIME]
+                          [--static-steps STATIC_STEPS]
+                          [--max-frames MAX_FRAMES] [--quick] [--static-only]
+                          [--ground-history] [--no-html]
+                          [--visual-scale VISUAL_SCALE]
+                          [--boundary {viscous-sides,fixed-box}]
+                          [--output-dir OUTPUT_DIR]
+
+Mars ground ONLY: nonlinear gravity + ELYSE motion, no foundation/structure.
+Public entry point: ground_20261107.py. This runner owns its OpenSees domain.
+
+options:
+  -h, --help            show this help message and exit
+  --ground-width GROUND_WIDTH
+  --spacing SPACING
+  --depth DEPTH
+  --duration DURATION
+  --warmup WARMUP
+  --dt DT
+  --freqmax FREQMAX
+  --max-runtime MAX_RUNTIME
+  --static-steps STATIC_STEPS
+  --max-frames MAX_FRAMES
+  --quick               1 s warmup + 1 s target; connection check only
+  --static-only
+  --ground-history
+  --no-html
+  --visual-scale VISUAL_SCALE
+                        display only; default automatic
+  --boundary {viscous-sides,fixed-box}
+  --output-dir OUTPUT_DIR

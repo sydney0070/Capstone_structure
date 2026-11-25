@@ -1,0 +1,61 @@
+{
+  "source": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028",
+  "commit": "c30196dda348d0a33b2aeb508825c5f340a7521b",
+  "specimens": [
+    {
+      "id": "01_A64",
+      "role": "train",
+      "points": 342,
+      "strain_offset": 2.7298918e-06,
+      "stress_offset_kPa": 0.000317837939796057,
+      "input_sha256": "8e3dd0d6dbe5762508d3592fcc6030bbc67506bc54d2657ffc318af761c96f9f",
+      "output_sha256": "2e601ed9daac7b53064c36874337370c5c1885e9093d2dea7676a67ead27aa8b"
+    },
+    {
+      "id": "02_A65",
+      "role": "train",
+      "points": 347,
+      "strain_offset": -2.8550605e-06,
+      "stress_offset_kPa": 258.9252928635113,
+      "input_sha256": "12a5019f65ef517aa580eea2b87ad3388ccce43a5d98e78ba7063f25f02b0b31",
+      "output_sha256": "f030d5a5f7b07b1369b4b8f85023de2c1c1dad9362bdb7f07eb21074ec2d83bf"
+    },
+    {
+      "id": "03_A66",
+      "role": "train",
+      "points": 342,
+      "strain_offset": -4.7783669e-06,
+      "stress_offset_kPa": -258.9250411457509,
+      "input_sha256": "38ebf668c469a0c751f45ee2e30fb158f8beecc6e27849c129e27524448db12c",
+      "output_sha256": "1a1b0979d09dfcbc85eab2cb93dc023d85d34888bb8748a2b970ba0bbbe441a3"
+    },
+    {
+      "id": "04_A67",
+      "role": "train",
+      "points": 246,
+      "strain_offset": 4.4571857e-06,
+      "stress_offset_kPa": 776.7759065591739,
+      "input_sha256": "5d31ca20524e78c806fe09fd537f5f19807a8c0701c68fbbad99bf622d3ce739",
+      "output_sha256": "8ed5538f4ba2e49794848a8e64fef52ebc242c8a6cba78a6d354112cbbbee27d"
+    },
+    {
+      "id": "05_A68",
+      "role": "validation",
+      "points": 348,
+      "strain_offset": 0.0,
+      "stress_offset_kPa": -258.925271887094,
+      "input_sha256": "61e3a73ccf7a6a16310d1b5f2e2f9424fe01478dfe99b794728810b5d5e1e5e9",
+      "output_sha256": "fbadc8c81794562429cb45b26caddcad9f515c7774d706265f947ed8ef184520"
+    },
+    {
+      "id": "06_A69",
+      "role": "validation",
+      "points": 349,
+      "strain_offset": 0.0,
+      "stress_offset_kPa": 517.850550766227,
+      "input_sha256": "ef266bd0a41f6dee1c84b49ba49d2d8edbcc92888ce8c02e18d11ee2431ce468",
+      "output_sha256": "cd9cf84efe868be2157d112c6547f5c69b656d00e4f710f6d9f3fc00ef513b08"
+    }
+  ],
+  "processing": "Source every-20th-point files; no additional downsampling; initial small offsets removed; full chronological histories retained; 4 train / 2 holdout selected by ID before optimization."
+}

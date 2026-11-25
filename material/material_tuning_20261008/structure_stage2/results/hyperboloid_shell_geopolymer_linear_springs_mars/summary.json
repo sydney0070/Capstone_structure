@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "hyperboloid",
+  "material": "shell_geopolymer",
+  "planet": "mars",
+  "support": "linear_springs",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 8130000.0,
+    "nu": 0.2,
+    "rho": 1.75,
+    "thickness": 0.02
+  },
+  "nodes": 9408,
+  "elements": 9216,
+  "surface_area_m2": 176.94900253646972,
+  "mass_tonne": 6.193215088776626,
+  "weight_kN": 22.976827979361286,
+  "max_displacement_m": 0.00018605799065956585,
+  "min_uz_m": -0.00018483663139092703,
+  "max_uz_m": -3.657038930568722e-05,
+  "mean_base_uz_m": -3.6570389305693006e-05,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -3.3806291099836017e-14,
+    2.1637175663904453e-13,
+    1.4352963262354024e-12
+  ],
+  "moment_residual_kNm": [
+    -2.4488214579218094e-13,
+    5.721985385509498e-14,
+    -2.364862361142262e-15
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -22.97682797936077
+  ],
+  "relative_force_residual": 6.31900720997718e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

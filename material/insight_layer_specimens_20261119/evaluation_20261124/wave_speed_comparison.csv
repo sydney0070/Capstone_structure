@@ -1,0 +1,19 @@
+﻿specimen,quantity,unit,predicted,reference,signed_difference_pct,reported_low,reported_high,within_reported_interval,source,context,independent_validation
+surface_elastic,Vs,m/s,50.611020636182246,63.0,-19.665046609234526,56.0,74.0,False,Brinkman2022,Effective shallow-volume plausibility; not isolated-layer measurements,False
+surface_elastic,Vp,m/s,84.47211753996807,119.0,-29.015027277337758,98.0,164.0,False,Brinkman2022,Effective shallow-volume plausibility; not isolated-layer measurements,False
+surface_dp_trial,Vs,m/s,50.611020636182246,63.0,-19.665046609234526,56.0,74.0,False,Brinkman2022,Effective shallow-volume plausibility; not isolated-layer measurements,False
+surface_dp_trial,Vp,m/s,84.47211753996807,119.0,-29.015027277337758,98.0,164.0,False,Brinkman2022,Effective shallow-volume plausibility; not isolated-layer measurements,False
+duricrust_elastic,Vs,m/s,66.14378277661477,63.0,4.990131391452013,56.0,74.0,True,Brinkman2022,Effective shallow-volume plausibility; not isolated-layer measurements,False
+duricrust_elastic,Vp,m/s,119.65860528261985,119.0,0.5534498173276114,98.0,164.0,True,Brinkman2022,Effective shallow-volume plausibility; not isolated-layer measurements,False
+duricrust_dp,Vs,m/s,66.14378277661477,63.0,4.990131391452013,56.0,74.0,True,Brinkman2022,Effective shallow-volume plausibility; not isolated-layer measurements,False
+duricrust_dp,Vp,m/s,119.65860528261985,119.0,0.5534498173276114,98.0,164.0,True,Brinkman2022,Effective shallow-volume plausibility; not isolated-layer measurements,False
+sand_elastic_1300,Vs,m/s,94.62209963970884,94.6,0.02336114134127154,,,,Murdoch2018,Predicted1m source used for input; rounding consistency only,False
+sand_elastic_1300,Vp,m/s,157.92862942048322,157.9,0.01813136192729825,,,,Murdoch2018,Predicted1m source used for input; rounding consistency only,False
+sand_mgs1_dp_1300,Vs,m/s,94.62209963970884,94.6,0.02336114134127154,,,,Murdoch2018,Predicted1m source used for input; rounding consistency only,False
+sand_mgs1_dp_1300,Vp,m/s,157.92862942048322,157.9,0.01813136192729825,,,,Murdoch2018,Predicted1m source used for input; rounding consistency only,False
+sand_mgs1s_dp_1300,Vs,m/s,94.62209963970884,94.6,0.02336114134127154,,,,Murdoch2018,Predicted1m source used for input; rounding consistency only,False
+sand_mgs1s_dp_1300,Vp,m/s,157.92862942048322,157.9,0.01813136192729825,,,,Murdoch2018,Predicted1m source used for input; rounding consistency only,False
+fractured_basalt_elastic,Vs,m/s,1356.4292691912988,1700.0,-20.210042988747134,,,,Morgan2018/Hobiger2021,"Different model reference: compare cross-source scenario, not a fit requirement",False
+fractured_basalt_elastic,Vp,m/s,2453.8728766710105,3000.0,-18.204237444299654,,,,Morgan2018/Hobiger2021,"Different model reference: compare cross-source scenario, not a fit requirement",False
+sediment_elastic_prior,Vs,m/s,417.0,417.0,0.0,,,,Hobiger2021,Same prior used to calculate inputs: algebraic identity,False
+sediment_elastic_prior,Vp,m/s,750.0,750.0,0.0,,,,Hobiger2021,Same prior used to calculate inputs: algebraic identity,False

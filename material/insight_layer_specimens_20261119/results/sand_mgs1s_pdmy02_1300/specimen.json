@@ -1,0 +1,185 @@
+{
+  "id": "sand_mgs1s_pdmy02_1300",
+  "group": "followup_mars_trial",
+  "layer": "sandy_regolith_1300",
+  "family": "PressureDependMultiYield02",
+  "parameters": {
+    "density_kg_m3": 1300,
+    "G_Pa": 11639344.262295082,
+    "K_Pa": 16904761.904761903,
+    "phi_deg": 34.0,
+    "peak_shear_strain": 0.1,
+    "p_ref_Pa": 5000.0,
+    "pressure_exponent": 0.5,
+    "PTAngle_deg": 25.5,
+    "contrac1": 0.045,
+    "contrac3": 0.15,
+    "dilat1": 0.06,
+    "dilat3": 0.15,
+    "n_surfaces": 20,
+    "contrac2": 5.0,
+    "dilat2": 3.0,
+    "liquefac1": 1.0,
+    "liquefac2": 0.0,
+    "e": 0.7,
+    "cs1": 0.9,
+    "cs2": 0.02,
+    "cs3": 0.7,
+    "pa_Pa": 101000.0,
+    "numerical_c_Pa": 300.0
+  },
+  "evidence": {
+    "density_kg_m3": {
+      "source": "Spohn2022",
+      "locator": "Section 6.7, sand 1300–1500 kg/m3",
+      "kind": "selected_inferred_reference",
+      "note": "1300 is also the previously saved target density"
+    },
+    "G_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "K_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "phi_deg": {
+      "source": "Dotson2024",
+      "locator": "Figures 5–6; previously digitized set",
+      "kind": "simulant_transfer_approximate",
+      "note": "c≈280 Pa, phi near rho1310–1320 transferred to rho1300. Direct-shear normal stress .097–.68 kPa, not foundation pressure validation"
+    },
+    "peak_shear_strain": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "p_ref_Pa": {
+      "source": "specimen_assumption",
+      "locator": "5 kPa reference pressure",
+      "kind": "assumed",
+      "note": "Anchor copied initial stiffness at 5 kPa; source did not identify this pressure dependence"
+    },
+    "pressure_exponent": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "PTAngle_deg": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "contrac1": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "contrac3": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "dilat1": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "dilat3": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "n_surfaces": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "contrac2": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "dilat2": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "liquefac1": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "liquefac2": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "e": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "cs1": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "cs2": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "cs3": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "pa_Pa": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    },
+    "numerical_c_Pa": {
+      "source": "PDMY02",
+      "locator": "Dr50 defaults transferred to uncalibrated trial",
+      "kind": "proxy_assumption",
+      "note": "Not identified by Mars observations. No claim of Mars Dr50 or matching physical c."
+    }
+  },
+  "mars_calibrated": false,
+  "status": "UNCALIBRATED_MARS_SENSITIVITY_SEED",
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "notes": [
+    "Operational sensitivity seed only. All cyclic/critical-state parameters and e=.70 are transferred assumptions.",
+    "e=.70 is not density-derived. Grain density and grading need independent measurement.",
+    "numerical_c=300 Pa is model regularization, not the DP c=280 Pa calibration.",
+    "Low-pressure and cyclic experimental calibration required before ground use."
+  ]
+}

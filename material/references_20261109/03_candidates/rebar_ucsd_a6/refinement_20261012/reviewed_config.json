@@ -1,0 +1,59 @@
+{
+  "kind": "uniaxial",
+  "material": "Steel02",
+  "params": {
+    "Fy": 512792.12957484694,
+    "E": 218990793.242567,
+    "b": 0.012883719874934632,
+    "R0": 20.0,
+    "cR1": 0.9266119550797753,
+    "cR2": 0.14308864810974845,
+    "a1": 0.06331854194239019,
+    "a2": 1.0,
+    "a3": 0.04637773159038757,
+    "a4": 1.0
+  },
+  "bounds": {
+    "E": [
+      150000000.0,
+      250000000.0
+    ],
+    "Fy": [
+      300000.0,
+      700000.0
+    ],
+    "b": [
+      0.0001,
+      0.1
+    ],
+    "cR1": [
+      0.7,
+      0.98
+    ],
+    "cR2": [
+      0.01,
+      0.2
+    ],
+    "a1": [
+      0.0,
+      0.1
+    ],
+    "a3": [
+      0.0,
+      0.1
+    ]
+  },
+  "name": "rebar_ucsd_grade60_a6",
+  "status": "REUSED_HOLDOUT_SCREENING_PASSED_NEW_VALIDATION_REQUIRED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  },
+  "calibration_scope": "UCSD Grade 60 A6 group supplied histories; ASTM subclass mapping not asserted; not buckling, fracture or all Grade 60 products.",
+  "validation_note": "Previously observed holdouts, not fresh blind validation. No holdout-based selection or retry."
+}

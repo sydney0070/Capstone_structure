@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "hyperboloid",
+  "material": "shell_steel",
+  "planet": "mars",
+  "support": "linear_springs",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 200000000.0,
+    "nu": 0.3,
+    "rho": 7.85,
+    "thickness": 0.02
+  },
+  "nodes": 9408,
+  "elements": 9216,
+  "surface_area_m2": 176.94900253646972,
+  "mass_tonne": 27.780993398225228,
+  "weight_kN": 103.0674855074156,
+  "max_displacement_m": 0.0002783589364790919,
+  "min_uz_m": -0.00027833185708610694,
+  "max_uz_m": -0.0001640443177425923,
+  "mean_base_uz_m": -0.0001640443177427022,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    2.552541511491313e-12,
+    -3.052452309354104e-12,
+    1.3017142919125035e-11
+  ],
+  "moment_residual_kNm": [
+    -2.753152483188849e-11,
+    3.257465130968029e-11,
+    -5.3313647152709265e-12
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -103.0674855074257
+  ],
+  "relative_force_residual": 1.3206609950390013e-13,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

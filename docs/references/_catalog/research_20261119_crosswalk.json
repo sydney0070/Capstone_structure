@@ -1,0 +1,191 @@
+{
+  "date": "2026-11-19",
+  "review_sources": [
+    {
+      "review_id": "G1",
+      "archive_id": "G09",
+      "files": [
+        "01_ground/G09_Golombek_2020_InSight_Geology.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true
+    },
+    {
+      "review_id": "G2",
+      "archive_id": "G10",
+      "files": [
+        "01_ground/G10_Warner_2020_Homestead_Hollow.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true
+    },
+    {
+      "review_id": "G3",
+      "archive_id": "G11",
+      "files": [
+        "01_ground/G11_Cannon_2019_MGS1_Mineralogy.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true
+    },
+    {
+      "review_id": "G4",
+      "archive_id": "G12",
+      "files": [
+        "01_ground/G12_Morgan_2018_InSight_Regolith_Properties.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true
+    },
+    {
+      "review_id": "R1",
+      "archive_id": "R18",
+      "files": [
+        "04_SSI_and_numerics/R18_Harden_2005_PEER_2005_04.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true
+    },
+    {
+      "review_id": "R2",
+      "archive_id": "R26",
+      "files": [
+        "04_SSI_and_numerics/R26_Raychowdhury_Hutchinson_2009_original_unavailable.webloc"
+      ],
+      "status": "원문 PDF 미확보(서지·원 출처 링크 보관)",
+      "full_text_available": false
+    },
+    {
+      "review_id": "R3",
+      "archive_id": "R27",
+      "files": [
+        "04_SSI_and_numerics/R27_NIST_2012_GCR_12_917_21_REV1.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true
+    },
+    {
+      "review_id": "R4",
+      "archive_id": "R20",
+      "files": [
+        "04_SSI_and_numerics/R20_ShallowFoundationGen_2008.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true
+    },
+    {
+      "review_id": "D1",
+      "archive_id": "D30",
+      "files": [
+        "05_official_model_docs/D30_bbarBrick_20261119.html"
+      ],
+      "status": "공식 웹페이지 확보(PDF 아님)",
+      "full_text_available": true
+    },
+    {
+      "review_id": "D2",
+      "archive_id": "D15",
+      "files": [
+        "05_official_model_docs/D15_QzSimple1.html",
+        "05_official_model_docs/D15_QzSimple1_20261119.html"
+      ],
+      "status": "공식 웹페이지 확보(PDF 아님)",
+      "full_text_available": true
+    },
+    {
+      "review_id": "D3",
+      "archive_id": "D13",
+      "files": [
+        "05_official_model_docs/D13_PySimple1.html",
+        "05_official_model_docs/D13_PySimple1_20261119.html"
+      ],
+      "status": "공식 웹페이지 확보(PDF 아님)",
+      "full_text_available": true
+    },
+    {
+      "review_id": "D4",
+      "archive_id": "D14",
+      "files": [
+        "05_official_model_docs/D14_TzSimple1.html",
+        "05_official_model_docs/D14_TzSimple1_20261119.html"
+      ],
+      "status": "공식 웹페이지 확보(PDF 아님)",
+      "full_text_available": true
+    },
+    {
+      "review_id": "D5",
+      "archive_id": "D16",
+      "files": [
+        "05_official_model_docs/D16_ElasticPPGap.html"
+      ],
+      "status": "공식 웹페이지 확보(PDF 아님)",
+      "full_text_available": true
+    },
+    {
+      "review_id": "D6",
+      "archive_id": "D31",
+      "files": [
+        "05_official_model_docs/D31_Hysteretic_20261119.html"
+      ],
+      "status": "공식 웹페이지 확보(PDF 아님)",
+      "full_text_available": true
+    },
+    {
+      "review_id": "D7",
+      "archive_id": "D_pdmy02",
+      "files": [
+        "05_official_model_docs/PressureDependentMultiYield02.html"
+      ],
+      "status": "공식 웹페이지 확보(PDF 아님)",
+      "full_text_available": true
+    },
+    {
+      "review_id": "D8",
+      "archive_id": "D_dp",
+      "files": [
+        "05_official_model_docs/DruckerPrager.html"
+      ],
+      "status": "공식 웹페이지 확보(PDF 아님)",
+      "full_text_available": true
+    }
+  ],
+  "previously_supplied_pdfs": [
+    {
+      "archive_id": "G13",
+      "file": "01_ground/G13_Golombek_2023_InSight_Robotic_Arm.pdf",
+      "original_local_file": "/Users/sydney/Downloads/s11214-023-00964-0.pdf",
+      "sha256": "9717e9f0e5152fc2e9ac3366755819cf6628d7ddb55c63458f6f4a7a4009440a",
+      "pdfinfo": "Title:           Results from InSight Robotic Arm Activities\nSubject:         Space Sci Rev, doi:10.1007/s11214-023-00964-0\nAuthor:          M. Golombek\nCreator:         VTeX PDF Tools\nProducer:        Acrobat Distiller 23.0 (Windows)\nCreationDate:    Tue Apr 18 20:23:17 2023 KST\nModDate:         Tue Apr 18 20:23:44 2023 KST\nCustom Metadata: yes\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           70\nEncrypted:       no\nPage size:       439.37 x 666.142 pts\nPage rot:        0\nFile size:       11806943 bytes\nOptimized:       yes\nPDF version:     1.4\n"
+    },
+    {
+      "archive_id": "G14",
+      "file": "01_ground/G14_Murdoch_2018_InSight_Lander_Flexible_Modes_AAM.pdf",
+      "original_local_file": "/Users/sydney/Downloads/InSightLanderFlexibleModes_Changes.pdf",
+      "sha256": "a694f67f68f0cace7bb05c8f74b70901bd2e658bcd8c6b0409c9399f1d3fe0e5",
+      "pdfinfo": "Producer:        OpenPDF 1.4.2\nCreationDate:    Tue Nov 17 18:10:19 2026 KST\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           30\nEncrypted:       no\nPage size:       595 x 842 pts (A4)\nPage rot:        0\nFile size:       4597199 bytes\nOptimized:       no\nPDF version:     1.5\n"
+    },
+    {
+      "archive_id": "R13",
+      "file": "01_ground/R13_Regolith_Cohesion_Shear_Strength_2024.pdf",
+      "original_local_file": "/Users/sydney/Downloads/2403.11029v1.pdf",
+      "sha256": "181027971988e8d4e55fefbfc8dcf774a828ffb531a7ac40a79368d8ee94825e",
+      "status": "existing_identical_pdf_reused"
+    }
+  ],
+  "new_files": [
+    "01_ground/R08_NASA_Mechanical_Properties_Lunar_Regolith_original_unavailable.webloc",
+    "05_official_model_docs/D13_PySimple1_20261119.html",
+    "05_official_model_docs/D14_TzSimple1_20261119.html",
+    "05_official_model_docs/D15_QzSimple1_20261119.html",
+    "01_ground/G09_Golombek_2020_InSight_Geology.pdf",
+    "01_ground/G10_Warner_2020_Homestead_Hollow.pdf",
+    "01_ground/G11_Cannon_2019_MGS1_Mineralogy.pdf",
+    "01_ground/G12_Morgan_2018_InSight_Regolith_Properties.pdf",
+    "04_SSI_and_numerics/R26_Raychowdhury_Hutchinson_2009_original_unavailable.webloc",
+    "04_SSI_and_numerics/R27_NIST_2012_GCR_12_917_21_REV1.pdf",
+    "05_official_model_docs/D30_bbarBrick_20261119.html",
+    "05_official_model_docs/D31_Hysteretic_20261119.html",
+    "01_ground/G13_Golombek_2023_InSight_Robotic_Arm.pdf",
+    "01_ground/G14_Murdoch_2018_InSight_Lander_Flexible_Modes_AAM.pdf"
+  ]
+}

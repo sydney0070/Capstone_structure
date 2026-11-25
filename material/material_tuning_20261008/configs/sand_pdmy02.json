@@ -1,0 +1,53 @@
+{
+  "kind": "soil3d",
+  "material": "PressureDependMultiYield02",
+  "params": {
+    "rho": 1.9,
+    "G": 100000.0,
+    "K": 233000.0,
+    "phi": 33.5,
+    "gamma_peak": 0.1,
+    "p_ref": 101.0,
+    "d": 0.5,
+    "phi_pt": 25.5,
+    "contraction1": 0.045,
+    "contraction3": 0.15,
+    "dilation1": 0.06,
+    "dilation3": 0.15,
+    "surfaces": 20,
+    "contraction2": 5.0,
+    "dilation2": 3.0,
+    "liquefaction1": 1.0,
+    "liquefaction2": 0.0,
+    "e": 0.7,
+    "cs1": 0.9,
+    "cs2": 0.02,
+    "cs3": 0.7,
+    "pa": 101.0
+  },
+  "bounds": {
+    "G": [
+      60000.0,
+      140000.0
+    ],
+    "phi": [
+      30.0,
+      38.0
+    ],
+    "contraction1": [
+      0.005,
+      0.1
+    ]
+  },
+  "name": "sand_pdmy02",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

@@ -1,0 +1,1038 @@
+[
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/configs/catalog.json",
+    "destination": "00_current_values/release_catalog.json",
+    "bytes": 18797,
+    "sha256": "c26e7e067a4ac59a30c55df688f702f2fe946e05dba3d01aee3e60da593de8f5",
+    "role": "current_catalog_snapshot"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/materials.json",
+    "destination": "00_current_values/ground_catalog.json",
+    "bytes": 25713,
+    "sha256": "0f0db5e41ef6bb6c88cfe34b585d9f1c96b00e71343452e834204121ceae2d76",
+    "role": "current_catalog_snapshot"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Mars.json",
+    "destination": "00_current_values/Mars.json",
+    "bytes": 1614,
+    "sha256": "043fa2821be40bdc3ea624f8ffd3f2047ec71529aaa65e2b2772f90bf6869662",
+    "role": "base_scenario_not_runtime_override"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Moon.json",
+    "destination": "00_current_values/Moon.json",
+    "bytes": 1667,
+    "sha256": "544cee5906b8dcb0fb90ddbfe41d9dcaacb9b824e7fe2dc6b11333b936b9d5b2",
+    "role": "base_scenario_not_runtime_override"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Earth.json",
+    "destination": "00_current_values/Earth.json",
+    "bytes": 1689,
+    "sha256": "6dc1a70363984f1dd6bbe345df7851e5ed20b40a5f6fd0724e40e2a06f2ac97a",
+    "role": "base_scenario_not_runtime_override"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_20261107.py",
+    "destination": "00_current_values/code_snapshot/ground/ground_modeling/ground_20261107.py",
+    "bytes": 21235,
+    "sha256": "9c71639c5778b42966e5e54f4ee00be5a8b233bb565e56573f5ea4192d3f02ff",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_only_20261109.py",
+    "destination": "00_current_values/code_snapshot/ground/ground_modeling/ground_only_20261109.py",
+    "bytes": 11273,
+    "sha256": "3b2cca45ba5038807e25d723ab4cd9af0c39eb96ed058859abade9592a7bfb50",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/materials.py",
+    "destination": "00_current_values/code_snapshot/ground/ground_modeling/ground_hybrid/materials.py",
+    "bytes": 2023,
+    "sha256": "d3c4818eaadb5f2e944b30c2275a3e627c1ce96e7baec802aa51268cc88215af",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/build_catalog.py",
+    "destination": "00_current_values/code_snapshot/material/material_release_20261101/build_catalog.py",
+    "bytes": 11557,
+    "sha256": "052654d3c9c45a84ca761451267064dbe52be21eb7bc764747eae5436f0fc1d2",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/capmat/materials.py",
+    "destination": "00_current_values/code_snapshot/material/material_release_20261101/capmat/materials.py",
+    "bytes": 4602,
+    "sha256": "492fd210db17ba590d7f7e5441680e20fd3a2c81bc8719ecf56e74e7bca85001",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/materials_20261107.py",
+    "destination": "00_current_values/code_snapshot/material/materials_20261107.py",
+    "bytes": 5395,
+    "sha256": "1a248656da3e367eb9bf8244b40236f698cb907440182f93e6210ed5c2fb8417",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/structure/dome_in_mars_tuned.py",
+    "destination": "00_current_values/code_snapshot/structure/dome_in_mars_tuned.py",
+    "bytes": 147096,
+    "sha256": "6284b1fc899c94876f34d0f363baffec7b3ed307eade118789e92a3ad3dcf766",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/structure/ring_foundation_rc.py",
+    "destination": "00_current_values/code_snapshot/structure/ring_foundation_rc.py",
+    "bytes": 11415,
+    "sha256": "cac3112cfd07394e951348754cf14b1d534a78520217ea84d8c856ef057c9bb7",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/structure/planet_foundations_20261109.py",
+    "destination": "00_current_values/code_snapshot/structure/planet_foundations_20261109.py",
+    "bytes": 7487,
+    "sha256": "0b37b7e4c603ee1742ac1fbe2f812832136dd8a85368d3d4c198c2e95a571fd5",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/SSI/parameters.py",
+    "destination": "00_current_values/code_snapshot/SSI/parameters.py",
+    "bytes": 1684,
+    "sha256": "42f2120e14c092b443b1f30f05a43f74a4e6a631081c2d37b9cf4749eb7a5b38",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/SSI/contact.py",
+    "destination": "00_current_values/code_snapshot/SSI/contact.py",
+    "bytes": 4800,
+    "sha256": "fff3ed014429054d1a0127edc0fa37e1ab7f1a78e6f09d0f9d8519cd2dd64ae1",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/SSI/connectors_20261109.py",
+    "destination": "00_current_values/code_snapshot/SSI/connectors_20261109.py",
+    "bytes": 2127,
+    "sha256": "efaf6de51a4ff0d73ae8bd70cb6cc51d57cabc02e92cd1d1d4e7e1836643ba54",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/integrated/mars_ssi_integrated_20261109.py",
+    "destination": "00_current_values/code_snapshot/integrated/mars_ssi_integrated_20261109.py",
+    "bytes": 29732,
+    "sha256": "ac378f9331d8614ef106a39d0ffb9f87506284a7953e9fe0e4c3179bcae3ebc6",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/integrated/planet_foundation_demo_20261109.py",
+    "destination": "00_current_values/code_snapshot/integrated/planet_foundation_demo_20261109.py",
+    "bytes": 14229,
+    "sha256": "35772ec8883a32ff812a7d30815e0b639492caf273a64f29dff3fd6a2504ffb6",
+    "role": "parameter_trace_snapshot_not_entrypoint"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/jsc1a_lasp_review_20261019/provenance.json",
+    "destination": "01_ground/jsc1a_lasp/provenance.json",
+    "bytes": 1944,
+    "sha256": "558def5fa2ad99fe4df5e21454bd18c07039c1d37f72b4f91e37b00e67270479",
+    "role": "ground_extraction_or_review"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/jsc1a_lasp_review_20261019/triaxial_observations.json",
+    "destination": "01_ground/jsc1a_lasp/triaxial_observations.json",
+    "bytes": 43860,
+    "sha256": "0abb75eafcc0d70765b8e450f754fa632879119216b4ab277263ad2dd19b6863",
+    "role": "ground_extraction_or_review"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/mars_jez1_strength/README.md",
+    "destination": "01_ground/jez1_inputs/README.md",
+    "bytes": 2120,
+    "sha256": "dc79285dadfb87073b7a5d2d34d0b16ae265edf3d930f846f1d60938e1b26e01",
+    "role": "ground_extraction_or_review"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/mars_jez1_strength/published_inputs.json",
+    "destination": "01_ground/jez1_inputs/published_inputs.json",
+    "bytes": 3081,
+    "sha256": "59685f494d83180b4f9cf833ff947dfd52847a5dbf1e5bf81498d8fba824780e",
+    "role": "ground_extraction_or_review"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/regolith_sources_20261019/REVIEW_KO.md",
+    "destination": "01_ground/regolith_review/REVIEW_KO.md",
+    "bytes": 7570,
+    "sha256": "12b471e3f4e9c1ee8cb21972b4fd8e1465546967ccd7ad749b5bc33bff222321",
+    "role": "ground_extraction_or_review"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/regolith_sources_20261019/jez1_README_before_review.md",
+    "destination": "01_ground/regolith_review/jez1_README_before_review.md",
+    "bytes": 1410,
+    "sha256": "c8bc364a19e066621329a5ed4cd1f8d6ae86d15f8f45af2e96a4f8dd2ec0fa6e",
+    "role": "ground_extraction_or_review"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/regolith_sources_20261019/jez1_published_inputs_before_review.json",
+    "destination": "01_ground/regolith_review/jez1_published_inputs_before_review.json",
+    "bytes": 1883,
+    "sha256": "778fc7e93ec24dc5aeaf502fe87ee156e8675b347b9222cfbd53814106966773",
+    "role": "ground_extraction_or_review"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/regolith_sources_20261019/source_manifest.json",
+    "destination": "01_ground/regolith_review/source_manifest.json",
+    "bytes": 572,
+    "sha256": "e4789e63995a62618efb6862cfd429f502427fd13fc07a45b8b96bf7ebac9b73",
+    "role": "ground_extraction_or_review"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/regolith_sources_20261019/jez1_2021.pdf",
+    "destination": "01_ground/jez1_2021.pdf",
+    "bytes": 4125514,
+    "sha256": "e6e7d8176834dfe6eca6d8cdc39a00aefe4ce38d8e5961b12cd44ca367a08bed",
+    "role": "existing_reference_copy"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/regolith_sources_20261019/nasa_guide_2024.pdf",
+    "destination": "01_ground/nasa_lunar_simulant_guide_2024.pdf",
+    "bytes": 5783538,
+    "sha256": "52e52b195ef25e26004c8bb06b9d88614c64dcf3d0a8f4a3a5c64b94d3cd9c16",
+    "role": "existing_reference_copy"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/jsc1a_lasp_review_20261019/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf",
+    "destination": "01_ground/jsc1a_lasp/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf",
+    "bytes": 3235736,
+    "sha256": "f30aeba051b2b03d3053bc58ddfa5efb1c941562beea0c76015ea5b7f8dadef8",
+    "role": "existing_reference_copy"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/research/sintered_jsc1a_leag2016.pdf",
+    "destination": "03_candidates/sintered_jsc1a_leag2016.pdf",
+    "bytes": 3261436,
+    "sha256": "be6521cead79a29980208847eef5e5e62ac7ba36ff274049c2352114f6049385",
+    "role": "existing_reference_copy"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/research/moon_strength_fits.json",
+    "destination": "01_ground/moon_strength_fits.json",
+    "bytes": 2706,
+    "sha256": "3035e16c558af3077b018fd3c1ff9490e1cba4143d07dae2b34da1d425aa3c7d",
+    "role": "existing_reference_copy"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/research/dp_mapping_note.md",
+    "destination": "04_model_docs/dp_mapping_note.md",
+    "bytes": 1446,
+    "sha256": "9d12c9020e1e8e1647090fd33e901f81a42c7723f8fd51d3288d5a0ea7ee9317",
+    "role": "existing_reference_copy"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/research/J2_SI_note.md",
+    "destination": "04_model_docs/J2_SI_note.md",
+    "bytes": 950,
+    "sha256": "f6e9ea56a60eeb2d14c6d2e7b07d15f00e87706a284574878deff700e79590f1",
+    "role": "existing_reference_copy"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/Database_References.bib",
+    "destination": "02_structure/s355/Database_References.bib",
+    "bytes": 4513,
+    "sha256": "8af2268ae0187364f61e76ab87bccbaac89d158c2a5c6a23a029be0d3f44ca9b",
+    "role": "existing_reference_copy"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/Overall_Summary.csv",
+    "destination": "02_structure/s355/Overall_Summary.csv",
+    "bytes": 135564,
+    "sha256": "d4fc11c511296f57e392156fd89cc252c80f55e000da8d7a91d51f51675ee558",
+    "role": "existing_reference_copy"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/RESULTS_KO.md",
+    "destination": "02_structure/s355/RESULTS_KO.md",
+    "bytes": 2332,
+    "sha256": "8085ef7af76d067da157e5cb1d88a0468f31a0f9a052d284093a537f335af585",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/acceptance_plan.json",
+    "destination": "02_structure/s355/acceptance_plan.json",
+    "bytes": 436,
+    "sha256": "172ff0fefeef74e6bf3f879c7d5d6a15936b77ee0db5cb845aaff651190d80c7",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/assessment.json",
+    "destination": "02_structure/s355/assessment.json",
+    "bytes": 1675,
+    "sha256": "ff58e8004df58dadfbc136880c894e7686ddb751b8d9198901e40baca3613042",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/provenance.json",
+    "destination": "02_structure/s355/provenance.json",
+    "bytes": 9308,
+    "sha256": "e6eeea11f0815a4ed52c9aac4b07d585aa213f2e2876e9e9fdb1bad474de10cc",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/reviewed_config.json",
+    "destination": "02_structure/s355/reviewed_config.json",
+    "bytes": 1047,
+    "sha256": "485d09555f79915041b492a953abab9199d11b79bea963ae675ef89a6df3944b",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/starting_config.json",
+    "destination": "02_structure/s355/starting_config.json",
+    "bytes": 807,
+    "sha256": "1d20c4f9ab9f55efa524f38732ff094788d05f0d7f86121a0408a985f44e7aad",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/targets.json",
+    "destination": "02_structure/s355/targets.json",
+    "bytes": 812,
+    "sha256": "bd2ce4d45a7c2495ec5865c57dc0c0bcadd4b679daeafe5e1a4c53220557940f",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/train_LP4_id0.csv",
+    "destination": "02_structure/s355/train_LP4_id0.csv",
+    "bytes": 72148,
+    "sha256": "abccab3c783bd47cf153106c8f5e63a636cec16a6c0ac881eda24bc1210c9557",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/train_LP4_id0_source.csv",
+    "destination": "02_structure/s355/train_LP4_id0_source.csv",
+    "bytes": 85723,
+    "sha256": "1d0352b174803af88358713ed811a93c7221dd20fcd4ca8671f91adb1443b521",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/train_LP6_id8.csv",
+    "destination": "02_structure/s355/train_LP6_id8.csv",
+    "bytes": 4317,
+    "sha256": "cefbf5453bc9c0aaaaae1e577fb1666ba41f45ddff7b4641f7602db0341bea3a",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/train_LP6_id8_source.csv",
+    "destination": "02_structure/s355/train_LP6_id8_source.csv",
+    "bytes": 15426,
+    "sha256": "49acbf4a43a06314cad488fd66d32e9c922d36cc5557cd054e4aaa8c9b4b9856",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/validation_LP2_id3.csv",
+    "destination": "02_structure/s355/validation_LP2_id3.csv",
+    "bytes": 2684,
+    "sha256": "1a038fb43ebc8c707234835e7390e5cd7fa6eebecdb266e8dfa0b615c9486cfb",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/validation_LP2_id3_source.csv",
+    "destination": "02_structure/s355/validation_LP2_id3_source.csv",
+    "bytes": 3865,
+    "sha256": "dc26073819951759f4377690434c0a390d268f2ab77c4dc0b7a146eeaf7484ae",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/validation_LP9_id6.csv",
+    "destination": "02_structure/s355/validation_LP9_id6.csv",
+    "bytes": 5078,
+    "sha256": "40d736d4a320a574bddd97df81489d9669611be941241a19f7725979412458d2",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/validation_LP9_id6_source.csv",
+    "destination": "02_structure/s355/validation_LP9_id6_source.csv",
+    "bytes": 16367,
+    "sha256": "0bf1b1407c8dfbbc3d3e7c068d34460019c0ecc15e3ee2dc566258636252a843",
+    "role": "selected_s355_coupon_and_calibration_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/fitted/best_config.json",
+    "destination": "02_structure/s355/fitted/best_config.json",
+    "bytes": 874,
+    "sha256": "2ca6d169580713b6c52d160e4ca2ffc4449df8f530a41a8a5716cddb72194df1",
+    "role": "s355_fit_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/fitted/fit_report.json",
+    "destination": "02_structure/s355/fitted/fit_report.json",
+    "bytes": 498,
+    "sha256": "5047102cdc141a542e5cac38d4f38811698b83606a38bc509e0354e408f7cfe3",
+    "role": "s355_fit_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/fitted/manifest_used.json",
+    "destination": "02_structure/s355/fitted/manifest_used.json",
+    "bytes": 812,
+    "sha256": "bd2ce4d45a7c2495ec5865c57dc0c0bcadd4b679daeafe5e1a4c53220557940f",
+    "role": "s355_fit_evidence"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/01_A64.csv",
+    "destination": "03_candidates/rebar_ucsd_a6/01_A64.csv",
+    "bytes": 17348,
+    "sha256": "22795db5da0d6d20812ac3db3c3a588d4319f921ed62cce391da885a26b98702",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/02_A65.csv",
+    "destination": "03_candidates/rebar_ucsd_a6/02_A65.csv",
+    "bytes": 17632,
+    "sha256": "1122b7a37157317c0ac0b82ad5427e308bee135c94609971c012a21b9e0d6eeb",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/03_A66.csv",
+    "destination": "03_candidates/rebar_ucsd_a6/03_A66.csv",
+    "bytes": 17539,
+    "sha256": "a262dc3c75fc73f00699e1da3257fa3930532d3c26318c7442739bcabc797898",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/04_A67.csv",
+    "destination": "03_candidates/rebar_ucsd_a6/04_A67.csv",
+    "bytes": 12453,
+    "sha256": "d22510bf9b36ae1e5d623eef2ed0625f2b2a2dd3434a52a72bc5c57d7feb4c62",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/05_A68.csv",
+    "destination": "03_candidates/rebar_ucsd_a6/05_A68.csv",
+    "bytes": 17654,
+    "sha256": "e6c03339dfd035dcdbd3293746b746d967c7d1dc2b812b243e8d07a3d963c27b",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/06_A69.csv",
+    "destination": "03_candidates/rebar_ucsd_a6/06_A69.csv",
+    "bytes": 17730,
+    "sha256": "3d24cd23557f7527afcd178975f087350c3c8c7c63d59c31224bf7b4f08c4b2e",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/RESULTS_KO.md",
+    "destination": "03_candidates/rebar_ucsd_a6/RESULTS_KO.md",
+    "bytes": 1548,
+    "sha256": "b982d982bfb33aba2bd1dfd66b8d19a4b6640035f286527d6ff736e90ef228cc",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/acceptance_plan.json",
+    "destination": "03_candidates/rebar_ucsd_a6/acceptance_plan.json",
+    "bytes": 530,
+    "sha256": "d855fd8b1ea94982cc4b0326b029ad69093f52cb744b23d35bda6c20964cd748",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/assessment.json",
+    "destination": "03_candidates/rebar_ucsd_a6/assessment.json",
+    "bytes": 1595,
+    "sha256": "35e23239d97ec9cbfb4a543589e85c6aa3873d8dc53f7bff0000f6f18965c2bc",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/provenance.json",
+    "destination": "03_candidates/rebar_ucsd_a6/provenance.json",
+    "bytes": 2459,
+    "sha256": "59b76cf79ca8d13a7618c67a81ef447fa660b2d7abf73e8bdcc1988d41d405cd",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/reviewed_config.json",
+    "destination": "03_candidates/rebar_ucsd_a6/reviewed_config.json",
+    "bytes": 1057,
+    "sha256": "e38e387bbcd82c461c7a047bbe75668bc44e8d7ce2bfcdb5bc360849330dfb64",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/starting_config.json",
+    "destination": "03_candidates/rebar_ucsd_a6/starting_config.json",
+    "bytes": 976,
+    "sha256": "8258bf8bd4e3d550f919facef93c17c14275c24b8681e564bc7d3d5a3c59fa59",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/targets.json",
+    "destination": "03_candidates/rebar_ucsd_a6/targets.json",
+    "bytes": 988,
+    "sha256": "b9428b4fd61ce17f1757583c1aeee41499c088452ebaa12f89a9ae1a58db2940",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/RESULTS_KO.md",
+    "destination": "03_candidates/aluminum_6014_t4/RESULTS_KO.md",
+    "bytes": 1560,
+    "sha256": "559fd7f7b110c2075da66ec7f2a1b01b521530afdeed816fd78ce67b1b57c30f",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/acceptance_plan.json",
+    "destination": "03_candidates/aluminum_6014_t4/acceptance_plan.json",
+    "bytes": 613,
+    "sha256": "2a1c53dce442328da930864a5ddaca0fa2ac095cf351434ee562c9ba2dd5d6e7",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/assessment.json",
+    "destination": "03_candidates/aluminum_6014_t4/assessment.json",
+    "bytes": 1573,
+    "sha256": "b16fb38f018cedb67993b969b6d32bdde138e4c0ad47109173c8f72b1fa5ae4d",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/provenance.json",
+    "destination": "03_candidates/aluminum_6014_t4/provenance.json",
+    "bytes": 1712,
+    "sha256": "cf24a6d7e1696826cf029c714abb6e89823a215fdc8648d06f91868b477b733b",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/reviewed_config.json",
+    "destination": "03_candidates/aluminum_6014_t4/reviewed_config.json",
+    "bytes": 961,
+    "sha256": "b67006bdcc0220defff75c13714391a00370654d82cbddaf69191ebeffed3660",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/source.xlsx",
+    "destination": "03_candidates/aluminum_6014_t4/source.xlsx",
+    "bytes": 55178,
+    "sha256": "3d809225dbf113adadeed81dad499d26d7355249a1388ea759b9a1900986c638",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/specimen_1.csv",
+    "destination": "03_candidates/aluminum_6014_t4/specimen_1.csv",
+    "bytes": 804,
+    "sha256": "811d8f9d589741778348e530f6200a68ca0b544915dafe539e5a54e51d8fe767",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/specimen_2.csv",
+    "destination": "03_candidates/aluminum_6014_t4/specimen_2.csv",
+    "bytes": 954,
+    "sha256": "82c846716f8f1ddbc4a2f3c76acecf34fa6bfb6a93a0d6c6d3653dbe6255971c",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/specimen_3.csv",
+    "destination": "03_candidates/aluminum_6014_t4/specimen_3.csv",
+    "bytes": 1413,
+    "sha256": "208c813ed8d2e07391966c1d2e7e1214421d2032e4410b794fdf20729479f416",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/specimen_4.csv",
+    "destination": "03_candidates/aluminum_6014_t4/specimen_4.csv",
+    "bytes": 954,
+    "sha256": "2431029a2568c999c088ddb18b7c41c7d6d8d6c4969ff3e135b80f5be42015e0",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/specimen_5.csv",
+    "destination": "03_candidates/aluminum_6014_t4/specimen_5.csv",
+    "bytes": 954,
+    "sha256": "174c69ce083e7c7c81fd313c74831a6594db357560b42c4f9379770b1ef8e797",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/starting_config.json",
+    "destination": "03_candidates/aluminum_6014_t4/starting_config.json",
+    "bytes": 968,
+    "sha256": "10e358b5f4b4399727a7f10ac632ad7d8447986e42ac30cc3392cc63130d057b",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t4/targets.json",
+    "destination": "03_candidates/aluminum_6014_t4/targets.json",
+    "bytes": 876,
+    "sha256": "a78a84f92e72b04bf83ad4ba8cc5815cd19428b017a57b0c933bcf86ca94d4ca",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/RESULTS_KO.md",
+    "destination": "03_candidates/aluminum_6014_t6/RESULTS_KO.md",
+    "bytes": 1451,
+    "sha256": "4cc8ac470ba56ba119bf337383d6356d790ab13361f040333a206fd28f37caca",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/acceptance_plan.json",
+    "destination": "03_candidates/aluminum_6014_t6/acceptance_plan.json",
+    "bytes": 613,
+    "sha256": "5a93a9ae9a207010176bbc3bcc38ff810b3398c7c727906aaa2aa58205d60421",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/assessment.json",
+    "destination": "03_candidates/aluminum_6014_t6/assessment.json",
+    "bytes": 1157,
+    "sha256": "0bbdd4368667ce80a885a7fe75ee2097af8dffa754520a4e5485b7d8942a469a",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/provenance.json",
+    "destination": "03_candidates/aluminum_6014_t6/provenance.json",
+    "bytes": 1201,
+    "sha256": "c80e8bed287bf0bfb1b22fcf85e71b2d81d5c9f92aa9246b5942f2ffb5ffc1bd",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/reviewed_config.json",
+    "destination": "03_candidates/aluminum_6014_t6/reviewed_config.json",
+    "bytes": 984,
+    "sha256": "8854ff2296ef6d84d42ad5517481de62494ae72da3f9d36fb0040503ff22b93a",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/source.xlsx",
+    "destination": "03_candidates/aluminum_6014_t6/source.xlsx",
+    "bytes": 38629,
+    "sha256": "c7b8bd4659ab04922cd8de17fbde28b82c99e0e9aaf826ebae173e303ceca1ef",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/specimen_1.csv",
+    "destination": "03_candidates/aluminum_6014_t6/specimen_1.csv",
+    "bytes": 1154,
+    "sha256": "f1fa5a8ca7a3a41b2ad34b6ea7b59e62dba2765a7defad2764f9045c426743d1",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/specimen_2.csv",
+    "destination": "03_candidates/aluminum_6014_t6/specimen_2.csv",
+    "bytes": 1154,
+    "sha256": "1fa40b8efed5b93ba37f79963a2fdbbe15a0d8840d70b60a388804daad52b0ea",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/specimen_3.csv",
+    "destination": "03_candidates/aluminum_6014_t6/specimen_3.csv",
+    "bytes": 1154,
+    "sha256": "335d50f482d445bb9fb2c7061eb73723ff28b566bbfa6eaefb94972491fa6b26",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/starting_config.json",
+    "destination": "03_candidates/aluminum_6014_t6/starting_config.json",
+    "bytes": 968,
+    "sha256": "2e22b4607ec26d9f3b12e42d0cbd51ef0e94a9d162321535a43ee54e86a65852",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/aluminum_6014_t6/targets.json",
+    "destination": "03_candidates/aluminum_6014_t6/targets.json",
+    "bytes": 647,
+    "sha256": "881723ccae1eb61cb77906137560d1074bab76b32ac5d39c7e2fbcf78786154c",
+    "role": "historical_calibration_not_default_material"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/refinement_20261012/RESULTS_KO.md",
+    "destination": "03_candidates/rebar_ucsd_a6/refinement_20261012/RESULTS_KO.md",
+    "bytes": 2714,
+    "sha256": "01aad08e71933e3afa3188c6d89ad6adad620a69af55ab2b565bf3466da4c693",
+    "role": "historical_rebar_refinement_not_sd400_default"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/refinement_20261012/acceptance_plan.json",
+    "destination": "03_candidates/rebar_ucsd_a6/refinement_20261012/acceptance_plan.json",
+    "bytes": 530,
+    "sha256": "d855fd8b1ea94982cc4b0326b029ad69093f52cb744b23d35bda6c20964cd748",
+    "role": "historical_rebar_refinement_not_sd400_default"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/refinement_20261012/assessment.json",
+    "destination": "03_candidates/rebar_ucsd_a6/refinement_20261012/assessment.json",
+    "bytes": 3421,
+    "sha256": "f99285a10c05a4086d21601704ea9ae247102dc4e5c20e3523a6425d3b20df35",
+    "role": "historical_rebar_refinement_not_sd400_default"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/refinement_20261012/baseline_config.json",
+    "destination": "03_candidates/rebar_ucsd_a6/refinement_20261012/baseline_config.json",
+    "bytes": 1072,
+    "sha256": "ffe7c29b29434e916ec7241ab5331e53c3aa7975acc36396ffb0a5e891e8618a",
+    "role": "historical_rebar_refinement_not_sd400_default"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/refinement_20261012/execution_verification.json",
+    "destination": "03_candidates/rebar_ucsd_a6/refinement_20261012/execution_verification.json",
+    "bytes": 511,
+    "sha256": "193982440d7110b01a3f3a410101227535bc10344c5c3e75f6161eac50989d85",
+    "role": "historical_rebar_refinement_not_sd400_default"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/refinement_20261012/frozen_plan.json",
+    "destination": "03_candidates/rebar_ucsd_a6/refinement_20261012/frozen_plan.json",
+    "bytes": 2823,
+    "sha256": "f134e2485847b7ae9965f7229a7b5d5d193c91d02e322df2af9571d07af88f15",
+    "role": "historical_rebar_refinement_not_sd400_default"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/refinement_20261012/reviewed_config.json",
+    "destination": "03_candidates/rebar_ucsd_a6/refinement_20261012/reviewed_config.json",
+    "bytes": 1208,
+    "sha256": "2b2e10e1f0d61106b3495ea49ce6b140cd11008d8ebd04b3bd9920de7b8a5251",
+    "role": "historical_rebar_refinement_not_sd400_default"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/refinement_20261012/training_candidates.json",
+    "destination": "03_candidates/rebar_ucsd_a6/refinement_20261012/training_candidates.json",
+    "bytes": 1893,
+    "sha256": "0bb912eee3692fa746e39093427420e06218db040ab76254b710b02c91f4dee8",
+    "role": "historical_rebar_refinement_not_sd400_default"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/rebar_ucsd_a6/refinement_20261012/training_selected_config.json",
+    "destination": "03_candidates/rebar_ucsd_a6/refinement_20261012/training_selected_config.json",
+    "bytes": 1080,
+    "sha256": "3793eabaafdd0d0adf94567ebcc83792be2a15ba8e489593b5761c1832c3e0ec",
+    "role": "historical_rebar_refinement_not_sd400_default"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/01_A64_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/01_A64_input_data.txt",
+    "bytes": 8651,
+    "sha256": "8e3dd0d6dbe5762508d3592fcc6030bbc67506bc54d2657ffc318af761c96f9f",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/01_A64_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/01_A64_output_data.txt",
+    "bytes": 8693,
+    "sha256": "2e601ed9daac7b53064c36874337370c5c1885e9093d2dea7676a67ead27aa8b",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/02_A65_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/02_A65_input_data.txt",
+    "bytes": 8801,
+    "sha256": "12a5019f65ef517aa580eea2b87ad3388ccce43a5d98e78ba7063f25f02b0b31",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/02_A65_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/02_A65_output_data.txt",
+    "bytes": 8828,
+    "sha256": "f030d5a5f7b07b1369b4b8f85023de2c1c1dad9362bdb7f07eb21074ec2d83bf",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/03_A66_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/03_A66_input_data.txt",
+    "bytes": 8788,
+    "sha256": "38ebf668c469a0c751f45ee2e30fb158f8beecc6e27849c129e27524448db12c",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/03_A66_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/03_A66_output_data.txt",
+    "bytes": 8749,
+    "sha256": "1a1b0979d09dfcbc85eab2cb93dc023d85d34888bb8748a2b970ba0bbbe441a3",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/04_A67_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/04_A67_input_data.txt",
+    "bytes": 6195,
+    "sha256": "5d31ca20524e78c806fe09fd537f5f19807a8c0701c68fbbad99bf622d3ce739",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/04_A67_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/04_A67_output_data.txt",
+    "bytes": 6254,
+    "sha256": "8ed5538f4ba2e49794848a8e64fef52ebc242c8a6cba78a6d354112cbbbee27d",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/05_A68_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/05_A68_input_data.txt",
+    "bytes": 8801,
+    "sha256": "61e3a73ccf7a6a16310d1b5f2e2f9424fe01478dfe99b794728810b5d5e1e5e9",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/05_A68_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/05_A68_output_data.txt",
+    "bytes": 8850,
+    "sha256": "fbadc8c81794562429cb45b26caddcad9f515c7774d706265f947ed8ef184520",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/06_A69_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/06_A69_input_data.txt",
+    "bytes": 8848,
+    "sha256": "ef266bd0a41f6dee1c84b49ba49d2d8edbcc92888ce8c02e18d11ee2431ce468",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/06_A69_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/06_A69_output_data.txt",
+    "bytes": 8878,
+    "sha256": "cd9cf84efe868be2157d112c6547f5c69b656d00e4f710f6d9f3fc00ef513b08",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/07_A74_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/07_A74_input_data.txt",
+    "bytes": 8651,
+    "sha256": "318947c1e6d25e7529ff99c7d56844cd00ffba007341313dea6abfb0a965830c",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/07_A74_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/07_A74_output_data.txt",
+    "bytes": 8698,
+    "sha256": "5d05898fa25c8c38ace4b89dfc6de8c6028ff238d3f525a20abc19be0cff2bbf",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/08_A75_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/08_A75_input_data.txt",
+    "bytes": 8801,
+    "sha256": "b351b447fe195787a4827f08260448fde4d943cc5ed701f5c3b544a61535733b",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/08_A75_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/08_A75_output_data.txt",
+    "bytes": 8829,
+    "sha256": "6ee314b1391aa7f28d4e441314fdd403eb20499c2b6f9483586d205b8cc58ba5",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/09_A76_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/09_A76_input_data.txt",
+    "bytes": 8787,
+    "sha256": "a91098e313f3331addeb524c5953480cdde892ec469a56224382673e9f77f4f9",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/09_A76_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/09_A76_output_data.txt",
+    "bytes": 8743,
+    "sha256": "adda68ccb25e21c33f39f56822b1f14dfd931fcfd9f2e761b56cf970ac25f43d",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/10_A77_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/10_A77_input_data.txt",
+    "bytes": 6196,
+    "sha256": "13cbcf5b514c5825f97c57b0f05892acbaa3b0fe804601fbb0097a282ec63581",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/10_A77_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/10_A77_output_data.txt",
+    "bytes": 6260,
+    "sha256": "20c30d21e008e8b46d000ce9efced65a64495d5c6165510905b6207060b708c5",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/11_A78_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/11_A78_input_data.txt",
+    "bytes": 9109,
+    "sha256": "4acb798990e575ea2317a5c655e7092e0787ce13f8d7c214970046be36697dab",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/11_A78_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/11_A78_output_data.txt",
+    "bytes": 9154,
+    "sha256": "07672fb468f5716d41ac9488f9b4116279c228aeb7be07ee1d4694e3dc732f6c",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/12_A79_input_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/12_A79_input_data.txt",
+    "bytes": 9202,
+    "sha256": "7ee4f4caef2dee85ec3c6274ec510a938c3258590e97e58f3d3c65a33b5ea8a3",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/12_A79_output_data.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/12_A79_output_data.txt",
+    "bytes": 9239,
+    "sha256": "553667175a1abb07ed02fde3ef2cee3f31e4b2dc310ad56f1ae39d11b8ceced2",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/SOURCE_LICENSE.txt",
+    "destination": "03_candidates/rebar_ucsd_raw/SOURCE_LICENSE.txt",
+    "bytes": 1949,
+    "sha256": "48e469a422f92a5f2ee6086b28ed9557544f91da692ee72686fa6d4bcd26686e",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/rebar_ucsd/src_input.json",
+    "destination": "03_candidates/rebar_ucsd_raw/src_input.json",
+    "bytes": 10803,
+    "sha256": "c6d3f05624037609cdc8154f43c405cd69019c9b99dbaa6022700c90ca714956",
+    "role": "historical_rebar_source_data"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/stressStrain.zip",
+    "destination": "03_candidates/earlier_raw/stressStrain.zip",
+    "bytes": 202730,
+    "sha256": "51f6eb3263a70d934500d20dd6243b641732180e2f49e8b1c14b04f9e0b54c6c",
+    "role": "candidate_data_not_default_calibration"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/lunar_database_metadata.json",
+    "destination": "03_candidates/earlier_raw/lunar_database_metadata.json",
+    "bytes": 15224,
+    "sha256": "43a2baf982825d17d96d6fd8abe905520fd7d59e3cd441035ea53e7baf069e2d",
+    "role": "candidate_data_not_default_calibration"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/lunar_simulants.csv",
+    "destination": "03_candidates/earlier_raw/lunar_simulants.csv",
+    "bytes": 8027,
+    "sha256": "9340f2d535fb4fc924e381df26e7c74913b5d3aba2d99e3742b0c26fc33c4f38",
+    "role": "candidate_data_not_default_calibration"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/cfrp_smartfan_transversal.xlsx",
+    "destination": "03_candidates/earlier_raw/cfrp_smartfan_transversal.xlsx",
+    "bytes": 161904,
+    "sha256": "e58892fea6db328a75f281e99c67265f43a07f8515c971c711f796b1b24c5796",
+    "role": "candidate_data_not_default_calibration"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/aluminum_README.md",
+    "destination": "03_candidates/earlier_raw/aluminum_README.md",
+    "bytes": 12060,
+    "sha256": "1a4dde34b571df3f7115c252e0a62298375da83f38f35430ab398fc78ccb7b8e",
+    "role": "candidate_data_not_default_calibration"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/aluminum_mapping-EN_AW6014_T4.yml",
+    "destination": "03_candidates/earlier_raw/aluminum_mapping-EN_AW6014_T4.yml",
+    "bytes": 3495,
+    "sha256": "fe7bc797884c006ba74bbe76b08be590660f972147c510d133ebf6cce92892b9",
+    "role": "candidate_data_not_default_calibration"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/aluminum_mapping-EN_AW6014_T6.yml",
+    "destination": "03_candidates/earlier_raw/aluminum_mapping-EN_AW6014_T6.yml",
+    "bytes": 2967,
+    "sha256": "00811ee92c4446f93c267b44f64fa7bb388351bb012bdedeab506c751ba0c22d",
+    "role": "candidate_data_not_default_calibration"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/raw/aluminum_TRR285-processed_data.zip",
+    "destination": "03_candidates/earlier_raw/aluminum_TRR285-processed_data.zip",
+    "bytes": 7636825,
+    "sha256": "c2bf085333e30cdcd0c318fe0a43eace6ed0ac844f775c6a876808ec9250f84f",
+    "role": "candidate_data_not_default_calibration"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/MODEL_OVERVIEW_20261109_KO.md",
+    "destination": "05_project_notes/docs/MODEL_OVERVIEW_20261109_KO.md",
+    "bytes": 13549,
+    "sha256": "7b8805d96e6158980bac645771c761012464192abf25c23777e1c1ba692f08ba",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/reference/GROUND_MATERIAL_REVIEW_20261107_KO.md",
+    "destination": "05_project_notes/docs/reference/GROUND_MATERIAL_REVIEW_20261107_KO.md",
+    "bytes": 22619,
+    "sha256": "3a818434628b6795f840cab0f5ecdf292ff0215044bad4d06b2d7071202bf5ad",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/docs/MATERIAL_EVALUATION.md",
+    "destination": "05_project_notes/material/docs/MATERIAL_EVALUATION.md",
+    "bytes": 13105,
+    "sha256": "8abed9de6622d27bd38fe68cc4a391e53f9cf7e63ee73c20d94ff6140907dfc9",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/SOURCES.md",
+    "destination": "05_project_notes/material/material_tuning_20261008/SOURCES.md",
+    "bytes": 13767,
+    "sha256": "c7b59b3c70c874f14741d59e38ba6b35d054e906f7bdaf593ac6cb22e69070a6",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/RESEARCH_REPORT_KO.md",
+    "destination": "05_project_notes/material/material_tuning_20261008/RESEARCH_REPORT_KO.md",
+    "bytes": 27556,
+    "sha256": "7feec6ef19c150e8fa542349506d5b417f45795b1bbfda472502ac7ba024eae4",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/README.md",
+    "destination": "05_project_notes/material/material_tuning_20261008/material_calibration/README.md",
+    "bytes": 4066,
+    "sha256": "87f34c963d0e687c52abc256ad6e454df8d943f2b184ece0bc15642f998b6130",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/MATERIAL_MAP_KO.md",
+    "destination": "05_project_notes/material/material_tuning_20261008/material_calibration/MATERIAL_MAP_KO.md",
+    "bytes": 10503,
+    "sha256": "5867ea65e6c2faa7ced4f17027f89b564d938fc5d9345541012dce16bcafe16b",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/MATERIAL_STATUS_KO.md",
+    "destination": "05_project_notes/material/material_tuning_20261008/material_calibration/MATERIAL_STATUS_KO.md",
+    "bytes": 4297,
+    "sha256": "2022e59ad62c5b72bb66917328a365087af11ce7e7917b2c79b96b9e8ed08409",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/README.md",
+    "destination": "05_project_notes/material/material_release_20261101/README.md",
+    "bytes": 10369,
+    "sha256": "63cc6ef8638a988af7a135855dd2c14b409f2f753c41fe5f3e3d0c21e2c4f0fb",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/research_20261109/artifacts/material_evidence_inventory.json",
+    "destination": "05_project_notes/research_20261109/artifacts/material_evidence_inventory.json",
+    "bytes": 46941,
+    "sha256": "a541dde957f6e154050427ca27f4faed81c9d699fd708f6459edb77d8d662a7c",
+    "role": "internal_report_not_primary_experiment"
+  },
+  {
+    "source": "/Users/sydney/Downloads/mars_moon_dome_foundation_research_summary.md",
+    "destination": "05_project_notes/mars_moon_dome_foundation_research_summary.md",
+    "bytes": 7436,
+    "sha256": "a68296e74cd2bdbf95ec2864cb876e21e1c734d4947288487a906150a91f6f7c",
+    "role": "user_supplied_background_not_verified_material_coefficients"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/stationxml.xb.elyse.2019.151.xml",
+    "destination": "06_site_and_input/stationxml.xb.elyse.2019.151.xml",
+    "bytes": 81731990,
+    "sha256": "b947292143b43383785e700f0aef0f30918355c7deb9ec5cb109ea47baaf7493",
+    "role": "actual_station_metadata"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_20261109/run_20261109_174344_f30e3d/motion_full_enu.json",
+    "destination": "06_site_and_input/motion_full_enu.json",
+    "bytes": 714,
+    "sha256": "5677018a833b271047602884e387e55f05a699a2d7b01814d4b864b22248d655",
+    "role": "processed_motion_metadata_from_named_completed_run"
+  },
+  {
+    "source": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_20261109/run_20261109_174344_f30e3d/motion_window_enu.json",
+    "destination": "06_site_and_input/motion_window_enu.json",
+    "bytes": 1615,
+    "sha256": "2970f2a26e97e82d28b5b79eafcfa73f6530ef095c6e23cd728acbfc3c01793d",
+    "role": "processed_motion_metadata_from_named_completed_run"
+  }
+]

@@ -1,0 +1,49 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+[static 800001] factor=0.0500, increment=0.05
+[static 800001] factor=0.1000, increment=0.05
+[static 800001] factor=0.1500, increment=0.05
+[static 800001] factor=0.2000, increment=0.05
+[static 800001] factor=0.2500, increment=0.05
+[static 800001] factor=0.3000, increment=0.05
+[static 800001] factor=0.3500, increment=0.05
+[static 800001] factor=0.4000, increment=0.05
+[static 800001] factor=0.4500, increment=0.05
+[static 800001] factor=0.5000, increment=0.05
+[static 800001] factor=0.5500, increment=0.05
+[static 800001] factor=0.6000, increment=0.05
+[static 800001] factor=0.6500, increment=0.05
+[static 800001] factor=0.7000, increment=0.05
+[static 800001] factor=0.7500, increment=0.05
+[static 800001] factor=0.8000, increment=0.05
+[static 800001] factor=0.8500, increment=0.05
+[static 800001] factor=0.9000, increment=0.05
+[static 800001] factor=0.9500, increment=0.05
+[static 800001] factor=1.0000, increment=0.05
+[static 800002] factor=0.1250, increment=0.125
+[static 800002] factor=0.2500, increment=0.125
+[static 800002] factor=0.3750, increment=0.125
+[static 800002] factor=0.5000, increment=0.125
+[static 800002] factor=0.6250, increment=0.125
+[static 800002] factor=0.7500, increment=0.125
+[static 800002] factor=0.8750, increment=0.125
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 1.37438e+12 (max: 0.01503, Norm deltaX: 638.222)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 5.30848e+13 (max: 0.01503, Norm deltaX: 80.7076)
+NewtonLineSearch::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 1.3641e+13 (max: 0.01503, Norm deltaX: 39001.7)
+NewtonRaphson::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1
+OpenSees > analyze failed, returned: -3 error flag
+[static 800002] factor=0.8750, increment=0.125
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 1.15003e+10 (max: 0.01503, Norm deltaX: 4.47144)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 0.9375
+OpenSees > analyze failed, returned: -3 error flag

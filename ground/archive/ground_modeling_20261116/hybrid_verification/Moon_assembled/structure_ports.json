@@ -1,0 +1,413 @@
+{
+  "units": "m N s kg Pa",
+  "ndm": 3,
+  "ndf": 6,
+  "coordinates": "global model reference coordinates",
+  "ports": [
+    {
+      "node": 300000,
+      "coord_m": [
+        -1.0,
+        -1.0,
+        0.0
+      ],
+      "tributary_area_m2": 0.24999999999999997,
+      "gravity_displacement_m_rad": [
+        5.545533701673552e-06,
+        2.9126402926078364e-08,
+        -0.004398174199129895,
+        2.30768116320095e-06,
+        5.292487439802276e-07,
+        -5.902059954422386e-10
+      ]
+    },
+    {
+      "node": 300001,
+      "coord_m": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "tributary_area_m2": 0.49999999999999994,
+      "gravity_displacement_m_rad": [
+        5.518426116921975e-06,
+        1.4734442675256057e-08,
+        -0.0043993924739480425,
+        2.0847960848025128e-07,
+        2.8051142908326635e-06,
+        1.3071914540302638e-09
+      ]
+    },
+    {
+      "node": 300002,
+      "coord_m": [
+        1.0,
+        -1.0,
+        0.0
+      ],
+      "tributary_area_m2": 0.24999999999999997,
+      "gravity_displacement_m_rad": [
+        5.489344159187347e-06,
+        3.165694964570694e-08,
+        -0.0044037831508184685,
+        2.2790610298100726e-06,
+        5.083666401702115e-06,
+        2.3213528304916522e-09
+      ]
+    },
+    {
+      "node": 300003,
+      "coord_m": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "tributary_area_m2": 0.49999999999999994,
+      "gravity_displacement_m_rad": [
+        5.531507172060864e-06,
+        1.1022021622459337e-12,
+        -0.004396569686243778,
+        3.329958980480121e-14,
+        2.620631945153571e-06,
+        -7.411549468614118e-13
+      ]
+    },
+    {
+      "node": 300004,
+      "coord_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tributary_area_m2": 1.0,
+      "gravity_displacement_m_rad": [
+        5.517526957220184e-06,
+        3.614592004727181e-13,
+        -0.004399484218199471,
+        3.161924262900283e-14,
+        2.8116060034225667e-06,
+        -7.400925577546016e-13
+      ]
+    },
+    {
+      "node": 300005,
+      "coord_m": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "tributary_area_m2": 0.5,
+      "gravity_displacement_m_rad": [
+        5.502750017710359e-06,
+        -3.78185823730151e-13,
+        -0.004402196861707498,
+        3.086548729492954e-14,
+        3.0052666257085776e-06,
+        -7.393550020188184e-13
+      ]
+    },
+    {
+      "node": 300006,
+      "coord_m": [
+        -1.0,
+        1.0,
+        0.0
+      ],
+      "tributary_area_m2": 0.24999999999999997,
+      "gravity_displacement_m_rad": [
+        5.545535184258448e-06,
+        -2.912419654301262e-08,
+        -0.0043981741990629705,
+        -2.3076810967935165e-06,
+        5.292487484565772e-07,
+        5.887223881619959e-10
+      ]
+    },
+    {
+      "node": 300007,
+      "coord_m": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "tributary_area_m2": 0.5,
+      "gravity_displacement_m_rad": [
+        5.518427596904219e-06,
+        -1.4733719857626902e-08,
+        -0.004399392473885087,
+        -2.084795454335129e-07,
+        2.805114293266326e-06,
+        -1.3086721636406577e-09
+      ]
+    },
+    {
+      "node": 300008,
+      "coord_m": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "tributary_area_m2": 0.25,
+      "gravity_displacement_m_rad": [
+        5.489345637866276e-06,
+        -3.165770613659376e-08,
+        -0.00440378315075688,
+        -2.279060968270844e-06,
+        5.083666402093089e-06,
+        -2.3228312920993204e-09
+      ]
+    }
+  ],
+  "connection": "reuse these nodes for beams/shells; build structure BEFORE initialize_gravity; caller provides section/member mass",
+  "constraint_handler": "Plain; no rigidLink/rigidDiaphragm/chained MP constraints",
+  "raft": {
+    "nodes": [
+      300000,
+      300001,
+      300002,
+      300003,
+      300004,
+      300005,
+      300006,
+      300007,
+      300008
+    ],
+    "ground_to_raft": {
+      "10006": 300000,
+      "10007": 300001,
+      "10008": 300002,
+      "10011": 300003,
+      "10012": 300004,
+      "10013": 300005,
+      "10016": 300006,
+      "10017": 300007,
+      "10018": 300008
+    },
+    "weights_m2": {
+      "300000": 0.24999999999999997,
+      "300001": 0.49999999999999994,
+      "300002": 0.24999999999999997,
+      "300003": 0.49999999999999994,
+      "300004": 1.0,
+      "300005": 0.5,
+      "300006": 0.24999999999999997,
+      "300007": 0.5,
+      "300008": 0.25
+    },
+    "shell_elements": [
+      300000,
+      300001,
+      300002,
+      300003
+    ],
+    "contacts": [
+      {
+        "element_tag": 300004,
+        "normal_axis": 3,
+        "foundation_node": 300000,
+        "ground_node": 10006,
+        "auxiliary_nodes": [
+          300009,
+          300010
+        ],
+        "Kn_N_m": 125833333.33333333,
+        "Kt_N_m": 48397435.89743589,
+        "mu": 0.35,
+        "cohesive_force_N": 0.0,
+        "area_m2": 0.24999999999999997,
+        "estimated_penetration_m": 9.933774834437085e-05,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied",
+        "contact_scope": "translational point friction/uplift; no tensile bond or cohesion; fixed normal and small relative slip; no added physical rotational stiffness; force-controlled assembly requires Plain handler with identity equalDOF and homogeneous SP; use DisplacementControl for settlement; nonzero prescribed SP needs separate verified integration"
+      },
+      {
+        "element_tag": 300005,
+        "normal_axis": 3,
+        "foundation_node": 300001,
+        "ground_node": 10007,
+        "auxiliary_nodes": [
+          300011,
+          300012
+        ],
+        "Kn_N_m": 251666666.66666666,
+        "Kt_N_m": 96794871.79487178,
+        "mu": 0.35,
+        "cohesive_force_N": 0.0,
+        "area_m2": 0.49999999999999994,
+        "estimated_penetration_m": 9.933774834437085e-05,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied",
+        "contact_scope": "translational point friction/uplift; no tensile bond or cohesion; fixed normal and small relative slip; no added physical rotational stiffness; force-controlled assembly requires Plain handler with identity equalDOF and homogeneous SP; use DisplacementControl for settlement; nonzero prescribed SP needs separate verified integration"
+      },
+      {
+        "element_tag": 300006,
+        "normal_axis": 3,
+        "foundation_node": 300002,
+        "ground_node": 10008,
+        "auxiliary_nodes": [
+          300013,
+          300014
+        ],
+        "Kn_N_m": 125833333.33333333,
+        "Kt_N_m": 48397435.89743589,
+        "mu": 0.35,
+        "cohesive_force_N": 0.0,
+        "area_m2": 0.24999999999999997,
+        "estimated_penetration_m": 9.933774834437085e-05,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied",
+        "contact_scope": "translational point friction/uplift; no tensile bond or cohesion; fixed normal and small relative slip; no added physical rotational stiffness; force-controlled assembly requires Plain handler with identity equalDOF and homogeneous SP; use DisplacementControl for settlement; nonzero prescribed SP needs separate verified integration"
+      },
+      {
+        "element_tag": 300007,
+        "normal_axis": 3,
+        "foundation_node": 300003,
+        "ground_node": 10011,
+        "auxiliary_nodes": [
+          300015,
+          300016
+        ],
+        "Kn_N_m": 251666666.66666666,
+        "Kt_N_m": 96794871.79487178,
+        "mu": 0.35,
+        "cohesive_force_N": 0.0,
+        "area_m2": 0.49999999999999994,
+        "estimated_penetration_m": 9.933774834437085e-05,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied",
+        "contact_scope": "translational point friction/uplift; no tensile bond or cohesion; fixed normal and small relative slip; no added physical rotational stiffness; force-controlled assembly requires Plain handler with identity equalDOF and homogeneous SP; use DisplacementControl for settlement; nonzero prescribed SP needs separate verified integration"
+      },
+      {
+        "element_tag": 300008,
+        "normal_axis": 3,
+        "foundation_node": 300004,
+        "ground_node": 10012,
+        "auxiliary_nodes": [
+          300017,
+          300018
+        ],
+        "Kn_N_m": 503333333.33333343,
+        "Kt_N_m": 193589743.58974355,
+        "mu": 0.35,
+        "cohesive_force_N": 0.0,
+        "area_m2": 1.0,
+        "estimated_penetration_m": 9.933774834437085e-05,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied",
+        "contact_scope": "translational point friction/uplift; no tensile bond or cohesion; fixed normal and small relative slip; no added physical rotational stiffness; force-controlled assembly requires Plain handler with identity equalDOF and homogeneous SP; use DisplacementControl for settlement; nonzero prescribed SP needs separate verified integration"
+      },
+      {
+        "element_tag": 300009,
+        "normal_axis": 3,
+        "foundation_node": 300005,
+        "ground_node": 10013,
+        "auxiliary_nodes": [
+          300019,
+          300020
+        ],
+        "Kn_N_m": 251666666.66666672,
+        "Kt_N_m": 96794871.79487178,
+        "mu": 0.35,
+        "cohesive_force_N": 0.0,
+        "area_m2": 0.5,
+        "estimated_penetration_m": 9.933774834437085e-05,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied",
+        "contact_scope": "translational point friction/uplift; no tensile bond or cohesion; fixed normal and small relative slip; no added physical rotational stiffness; force-controlled assembly requires Plain handler with identity equalDOF and homogeneous SP; use DisplacementControl for settlement; nonzero prescribed SP needs separate verified integration"
+      },
+      {
+        "element_tag": 300010,
+        "normal_axis": 3,
+        "foundation_node": 300006,
+        "ground_node": 10016,
+        "auxiliary_nodes": [
+          300021,
+          300022
+        ],
+        "Kn_N_m": 125833333.33333333,
+        "Kt_N_m": 48397435.89743589,
+        "mu": 0.35,
+        "cohesive_force_N": 0.0,
+        "area_m2": 0.24999999999999997,
+        "estimated_penetration_m": 9.933774834437085e-05,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied",
+        "contact_scope": "translational point friction/uplift; no tensile bond or cohesion; fixed normal and small relative slip; no added physical rotational stiffness; force-controlled assembly requires Plain handler with identity equalDOF and homogeneous SP; use DisplacementControl for settlement; nonzero prescribed SP needs separate verified integration"
+      },
+      {
+        "element_tag": 300011,
+        "normal_axis": 3,
+        "foundation_node": 300007,
+        "ground_node": 10017,
+        "auxiliary_nodes": [
+          300023,
+          300024
+        ],
+        "Kn_N_m": 251666666.66666672,
+        "Kt_N_m": 96794871.79487178,
+        "mu": 0.35,
+        "cohesive_force_N": 0.0,
+        "area_m2": 0.5,
+        "estimated_penetration_m": 9.933774834437085e-05,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied",
+        "contact_scope": "translational point friction/uplift; no tensile bond or cohesion; fixed normal and small relative slip; no added physical rotational stiffness; force-controlled assembly requires Plain handler with identity equalDOF and homogeneous SP; use DisplacementControl for settlement; nonzero prescribed SP needs separate verified integration"
+      },
+      {
+        "element_tag": 300012,
+        "normal_axis": 3,
+        "foundation_node": 300008,
+        "ground_node": 10018,
+        "auxiliary_nodes": [
+          300025,
+          300026
+        ],
+        "Kn_N_m": 125833333.33333334,
+        "Kt_N_m": 48397435.897435896,
+        "mu": 0.35,
+        "cohesive_force_N": 0.0,
+        "area_m2": 0.25,
+        "estimated_penetration_m": 9.933774834437085e-05,
+        "scope": "interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied",
+        "contact_scope": "translational point friction/uplift; no tensile bond or cohesion; fixed normal and small relative slip; no added physical rotational stiffness; force-controlled assembly requires Plain handler with identity equalDOF and homogeneous SP; use DisplacementControl for settlement; nonzero prescribed SP needs separate verified integration"
+      }
+    ],
+    "bounds_m": [
+      -1.0,
+      1.0,
+      -1.0,
+      1.0
+    ],
+    "thickness_m": 0.4,
+    "mass_kg": 4014.4,
+    "mu": 0.35,
+    "reinforcement_ratios": [
+      0.01,
+      0.01,
+      0.0
+    ],
+    "material": {
+      "tag": 300000,
+      "reinforcement_volume_fractions": [
+        0.01,
+        0.01,
+        0.0
+      ],
+      "normal_stiffness_Pa": [
+        [
+          34666666666.66667,
+          8166666666.666667,
+          8166666666.666667
+        ],
+        [
+          8166666666.666667,
+          34666666666.66667,
+          8166666666.666667
+        ],
+        [
+          8166666666.666667,
+          8166666666.666667,
+          32666666666.666668
+        ]
+      ],
+      "shear_modulus_Pa": 12250000000.0,
+      "density_kg_m3": 2509.0,
+      "mass_in_material": true,
+      "scope": "initial elastic bonded RC Voigt reference, x/y/z bar families; NOT nonlinear RC solid or cracked stiffness; do not add steel mass twice"
+    },
+    "scope": "elastic RC, zero offset contact plane, fixed-normal point friction; no slab cracking or staged installation",
+    "interface_evidence": "Mars: JEZ-1 smooth steel friction transferred to raft surface as assumption; Earth/Moon: assumed0.35; no adhesion"
+  }
+}

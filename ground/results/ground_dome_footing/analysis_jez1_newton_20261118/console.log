@@ -1,0 +1,25 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+[static 800001] factor=0.0125, increment=0.0125
+[static 800001] factor=0.0250, increment=0.0125
+[static 800001] factor=0.0375, increment=0.0125
+[static 800001] factor=0.0500, increment=0.0125
+[static 800001] factor=0.0625, increment=0.0125
+[static 800001] factor=0.0750, increment=0.0125
+[static 800001] factor=0.0875, increment=0.0125
+[static 800001] factor=0.1000, increment=0.0125
+[static 800001] factor=0.1125, increment=0.0125
+[static 800001] factor=0.1250, increment=0.0125
+[static 800001] factor=0.1375, increment=0.0125
+[static 800001] factor=0.1500, increment=0.0125
+[static 800001] factor=0.1625, increment=0.0125
+[static 800001] factor=0.1750, increment=0.0125
+[static 800001] factor=0.1875, increment=0.0125
+[static 800001] factor=0.2000, increment=0.0125
+[static 800001] factor=0.2125, increment=0.0125
+[static 800001] factor=0.2250, increment=0.0125
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 2.01249e+28 (max: 0.201296, Norm deltaX: 5.28187e+19)
+NewtonRaphson::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 0.2375
+OpenSees > analyze failed, returned: -3 error flag
+[static 800001] factor=0.2375, increment=0.0125

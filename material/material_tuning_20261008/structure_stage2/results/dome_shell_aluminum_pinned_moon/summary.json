@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "dome",
+  "material": "shell_aluminum",
+  "planet": "moon",
+  "support": "pinned",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 69000000.0,
+    "nu": 0.33,
+    "rho": 2.7,
+    "thickness": 0.02
+  },
+  "nodes": 2401,
+  "elements": 2304,
+  "surface_area_m2": 98.13750166813792,
+  "mass_tonne": 5.299425090079451,
+  "weight_kN": 8.585068645928711,
+  "max_displacement_m": 1.951216285569993e-06,
+  "min_uz_m": -1.951216285569993e-06,
+  "max_uz_m": 1.1002880964883233e-07,
+  "mean_base_uz_m": 0.0,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -8.906070325664928e-15,
+    -1.601149768326593e-15,
+    8.881784197001252e-15
+  ],
+  "moment_residual_kNm": [
+    2.626880917649954e-14,
+    8.422841417388138e-15,
+    5.268355196541563e-15
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -8.585068645928754
+  ],
+  "relative_force_residual": 1.4769161617921346e-15,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

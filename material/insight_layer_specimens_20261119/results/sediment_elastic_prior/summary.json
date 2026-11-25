@@ -1,0 +1,56 @@
+{
+  "id": "sediment_elastic_prior",
+  "family": "ElasticIsotropic",
+  "status": "SOURCE_BASED_INITIAL_TRIAL",
+  "mars_calibrated": false,
+  "tests": [
+    {
+      "test": "triaxial_load_unload",
+      "pressure_Pa": 5000.0,
+      "initial_E_Pa": 754558814.2569302,
+      "expected_E_Pa": 754558814.2569305,
+      "confinement_max_error_Pa": 2.546585164964199e-11,
+      "force_balance_max_error_N": 5.820766091346741e-11,
+      "final_strain": 0.0,
+      "final_q_Pa": 2.7284841053187847e-12,
+      "checks": {
+        "elastic_modulus": true,
+        "confinement": true,
+        "homogeneity": true,
+        "force_balance": true,
+        "finite": true,
+        "elastic_curve": true,
+        "return_to_origin": true
+      },
+      "passed": true
+    },
+    {
+      "test": "triaxial_load_unload",
+      "pressure_Pa": 50000.0,
+      "initial_E_Pa": 754558814.2569306,
+      "expected_E_Pa": 754558814.2569305,
+      "confinement_max_error_Pa": 4.3655745685100555e-11,
+      "force_balance_max_error_N": 5.820766091346741e-11,
+      "final_strain": 0.0,
+      "final_q_Pa": 2.1827872842550278e-11,
+      "checks": {
+        "elastic_modulus": true,
+        "confinement": true,
+        "homogeneity": true,
+        "force_balance": true,
+        "finite": true,
+        "elastic_curve": true,
+        "return_to_origin": true
+      },
+      "passed": true
+    }
+  ],
+  "mass_test": {
+    "expected_kg": 1700.0,
+    "recovered_kg": 1700.0000000002017,
+    "relative_error": 1.1857181902996672e-13,
+    "passed": true
+  },
+  "passed": true,
+  "elapsed_seconds": 0.05956024999613874
+}

@@ -1,0 +1,58 @@
+{
+  "status": "FITTED_BUT_NOT_ACCEPTED",
+  "numerical_screening_passed": false,
+  "tests": [
+    {
+      "csv": "01_A64.csv",
+      "role": "train",
+      "nrmse": 0.02518931997185859,
+      "peak_error": 0.09217148279397194,
+      "increment_error": 3.3654382516197843e-16,
+      "passes": true
+    },
+    {
+      "csv": "02_A65.csv",
+      "role": "train",
+      "nrmse": 0.020674063253276247,
+      "peak_error": 0.12245747654387083,
+      "increment_error": 6.734337424123017e-16,
+      "passes": false
+    },
+    {
+      "csv": "03_A66.csv",
+      "role": "train",
+      "nrmse": 0.028401269517846578,
+      "peak_error": 0.04658251270867726,
+      "increment_error": 9.722369313970732e-17,
+      "passes": true
+    },
+    {
+      "csv": "04_A67.csv",
+      "role": "train",
+      "nrmse": 0.02039564883262385,
+      "peak_error": 0.07172000466157481,
+      "increment_error": 7.160369233239868e-17,
+      "passes": true
+    },
+    {
+      "csv": "05_A68.csv",
+      "role": "validation",
+      "nrmse": 0.02603052617407402,
+      "peak_error": 0.08238841329620326,
+      "increment_error": 2.691911494097016e-16,
+      "passes": true
+    },
+    {
+      "csv": "06_A69.csv",
+      "role": "validation",
+      "nrmse": 0.02373177506717902,
+      "peak_error": 0.11084200123019593,
+      "increment_error": 6.734799395977049e-17,
+      "passes": false
+    }
+  ],
+  "boundary_parameters": [],
+  "mandatory_review": null,
+  "scope": "UCSD Grade 60 A6 group supplied histories; ASTM subclass mapping not asserted; not buckling, fracture or all Grade 60 products.",
+  "optimizer_success": true
+}

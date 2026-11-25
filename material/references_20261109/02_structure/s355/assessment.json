@@ -1,0 +1,50 @@
+{
+  "status": "VALIDATED_WITHIN_SELECTED_COUPON_SCOPE",
+  "optimizer_success": true,
+  "tests": [
+    {
+      "csv": "train_LP4_id0.csv",
+      "role": "train",
+      "range_nrmse": 0.013356071115439416,
+      "peak_stress_relative_error": 0.058634020612412234,
+      "increment_refinement_relative_error": 0.0,
+      "passes_screening": true
+    },
+    {
+      "csv": "train_LP6_id8.csv",
+      "role": "train",
+      "range_nrmse": 0.02040937768696201,
+      "peak_stress_relative_error": 0.027978597828266498,
+      "increment_refinement_relative_error": 0.0,
+      "passes_screening": true
+    },
+    {
+      "csv": "validation_LP2_id3.csv",
+      "role": "validation",
+      "range_nrmse": 0.029835337624339084,
+      "peak_stress_relative_error": 0.05195566486764938,
+      "increment_refinement_relative_error": 0.0,
+      "passes_screening": true
+    },
+    {
+      "csv": "validation_LP9_id6.csv",
+      "role": "validation",
+      "range_nrmse": 0.03328711437183406,
+      "peak_stress_relative_error": 0.07178740439965317,
+      "increment_refinement_relative_error": 0.0,
+      "passes_screening": true
+    }
+  ],
+  "boundary_parameters": [],
+  "normalized_sensitivity_singular_values": [
+    0.19707293161657627,
+    0.1705466623913503,
+    0.14391044681789636,
+    0.0423083175837297,
+    0.034238344947259344,
+    0.01901465321168949
+  ],
+  "sensitivity_condition_number": 10.36426641193873,
+  "warning": "Local sensitivity is not parameter uniqueness or statistical confidence; selected scope is not general grade certification.",
+  "applicability": "Same S355 J2+M HEM320 web material source, selected room-temperature pre-fracture history prefixes only."
+}

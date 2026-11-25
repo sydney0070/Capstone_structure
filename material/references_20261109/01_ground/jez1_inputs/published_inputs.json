@@ -1,0 +1,109 @@
+{
+  "status": "LITERATURE_STRENGTH_TRANSFER_ONLY_NOT_CALIBRATED",
+  "source_doi": "10.3390/app11157052",
+  "source_locations": "Table 4; Figure 10 and section 4.3",
+  "license": "CC-BY-4.0",
+  "material": "JEZ-1 simulant tested on Earth; not in-situ Mars soil",
+  "density_tonne_m3": 1.84,
+  "relative_density": 0.8628,
+  "normal_stresses_kPa": [
+    25,
+    50,
+    75
+  ],
+  "inputs": [
+    {
+      "surface": "soil",
+      "state": "peak",
+      "angle_deg": 40.6,
+      "cohesion_or_adhesion_kPa": 3.1,
+      "friction_coefficient": 0.8571036610748987
+    },
+    {
+      "surface": "soil",
+      "state": "residual",
+      "angle_deg": 39.7,
+      "cohesion_or_adhesion_kPa": 3.2,
+      "friction_coefficient": 0.8302159954806118
+    },
+    {
+      "surface": "smooth_steel",
+      "state": "peak",
+      "angle_deg": 18.9,
+      "cohesion_or_adhesion_kPa": 1.5,
+      "friction_coefficient": 0.342376525728683
+    },
+    {
+      "surface": "smooth_steel",
+      "state": "residual",
+      "angle_deg": 16.7,
+      "cohesion_or_adhesion_kPa": 1.5,
+      "friction_coefficient": 0.3000143778165491
+    },
+    {
+      "surface": "rough_steel",
+      "state": "peak",
+      "angle_deg": 36.2,
+      "cohesion_or_adhesion_kPa": 4.3,
+      "friction_coefficient": 0.7318893615113481
+    },
+    {
+      "surface": "rough_steel",
+      "state": "residual",
+      "angle_deg": 33.2,
+      "cohesion_or_adhesion_kPa": 2.8,
+      "friction_coefficient": 0.6543816636121457
+    }
+  ],
+  "not_identified": [
+    "K",
+    "G",
+    "dilatancy",
+    "hardening",
+    "contact_Kn",
+    "contact_Kt",
+    "low-stress extrapolation"
+  ],
+  "model_caveat": "DruckerPrager compression-meridian mapping is not direct-shear calibration. Existing zeroLengthContactASDimplex coupon has no adhesion, so mu alone cannot reproduce these envelopes; no targets are manufactured from the fitted envelopes.",
+  "normal_stresses_kPa_scope": "soil-soil direct shear only; see interface_normal_stresses_kPa",
+  "interface_normal_stresses_kPa": [
+    25,
+    50,
+    75,
+    100
+  ],
+  "shear_test_conditions": {
+    "source": "sections 2.2 and 3.2, PDF pages 4-5",
+    "shear_rate_mm_min": 0.5,
+    "max_horizontal_displacement_mm": 10,
+    "upper_box_plan_mm": [
+      100,
+      100
+    ],
+    "mean_soil_sample_height_mm": 31.59,
+    "mean_interface_sample_height_mm": 27.58,
+    "roughness_Ra_um": {
+      "smooth": 1.0,
+      "rough": 45.1
+    },
+    "rough_surface": "2 mm epoxy/Fontainebleau sand layer; not a generic steel finish"
+  },
+  "oedometer_published_summary": {
+    "status": "LITERATURE_SUMMARY_NOT_FITTED",
+    "source": "sections 3.1 and 4.1, Figure 5, PDF pages 4 and 6",
+    "dry_sample": true,
+    "loading_effective_vertical_stresses_kPa": [
+      12.5,
+      25,
+      50,
+      100,
+      200,
+      400,
+      800
+    ],
+    "unloading_endpoint_kPa": 50,
+    "compression_index_Cc": 0.131,
+    "swelling_index_Cs": 0.03,
+    "caveat": "Not directly K or G; curve digitization and model suitability review remain. Not a permeability or time-dependent consolidation calibration."
+  }
+}

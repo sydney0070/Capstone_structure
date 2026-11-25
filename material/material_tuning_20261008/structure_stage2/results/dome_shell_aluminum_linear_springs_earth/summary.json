@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "dome",
+  "material": "shell_aluminum",
+  "planet": "earth",
+  "support": "linear_springs",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 69000000.0,
+    "nu": 0.33,
+    "rho": 2.7,
+    "thickness": 0.02
+  },
+  "nodes": 2401,
+  "elements": 2304,
+  "surface_area_m2": 98.13750166813792,
+  "mass_tonne": 5.299425090079451,
+  "weight_kN": 51.98736013367942,
+  "max_displacement_m": 0.00014863234259764675,
+  "min_uz_m": -0.00014863234259764675,
+  "max_uz_m": -8.173028152145343e-05,
+  "mean_base_uz_m": -8.277188967055688e-05,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    6.510070260645762e-14,
+    1.3800663041925213e-14,
+    -2.2737367544323206e-13
+  ],
+  "moment_residual_kNm": [
+    8.543298447155623e-12,
+    -5.743592667445396e-12,
+    -5.221269649225759e-13
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -51.98736013367968
+  ],
+  "relative_force_residual": 4.557109840031292e-15,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

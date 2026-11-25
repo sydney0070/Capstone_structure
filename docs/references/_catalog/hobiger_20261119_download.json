@@ -1,0 +1,29 @@
+{
+  "file": "01_ground/G15_Hobiger_2021_InSight_Shallow_Structure.pdf",
+  "source_url": "https://www.nature.com/articles/s41467-021-26957-7.pdf",
+  "sha256": "c76b68ea8ac46b7cb2f1b787594a8c0d2dd43a7a72af9741db240a8f45750890",
+  "bytes": 7985444,
+  "pdfinfo": "Title:           The shallow structure of Mars at the InSight landing site from inversion of ambient vibrations\nSubject:         Nature Communications, doi:10.1038/s41467-021-26957-7\nKeywords:        \nAuthor:          M. Hobiger\nCreator:         Springer\nProducer:        iText® 5.3.5 ©2000-2012 1T3XT BVBA (SPRINGER SBM; licensed version)\nCreationDate:    Tue Nov  9 23:15:03 2021 KST\nModDate:         Mon Nov 15 21:17:22 2021 KST\nCustom Metadata: no\nMetadata Stream: yes\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            AcroForm\nJavaScript:      no\nPages:           13\nEncrypted:       no\nPage size:       595.276 x 782.362 pts\nPage rot:        0\nFile size:       7985444 bytes\nOptimized:       no\nPDF version:     1.4\n",
+  "attempts": [
+    {
+      "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/8ea9bb8e-fe8b-451f-a6fe-5b533cc4a56c/content",
+      "http_status": 429
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8611082/pdf/41467_2021_Article_26957.pdf",
+      "http_status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8611082/pdf/41467_2021_Article_26957.pdf"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8611082/pdf/41467_2021_Article_26957.pdf",
+      "error": "Non-PDF response"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-021-26957-7.pdf",
+      "http_status": 200,
+      "final_url": "https://www.nature.com/articles/s41467-021-26957-7.pdf"
+    }
+  ],
+  "doi": "10.1038/s41467-021-26957-7",
+  "full_text_available": true
+}

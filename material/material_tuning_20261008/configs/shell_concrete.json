@@ -1,0 +1,27 @@
+{
+  "kind": "shell",
+  "material": "ElasticIsotropic",
+  "params": {
+    "E": 30000000.0,
+    "nu": 0.2,
+    "rho": 2.4,
+    "thickness": 0.02
+  },
+  "bounds": {
+    "E": [
+      15000000.0,
+      45000000.0
+    ]
+  },
+  "name": "shell_concrete",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.0001,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

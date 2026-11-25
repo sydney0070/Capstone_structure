@@ -1,0 +1,41 @@
+{
+  "profile": "nl_ss_block30",
+  "radial_subdivisions": 2,
+  "footing_steps": 32,
+  "algorithm": "Newton",
+  "solver_policy": "primary_only",
+  "command": [
+    "/Users/sydney/anaconda3/envs/cap/bin/python",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_dome_footing.py",
+    "--material-profile",
+    "nl_ss_block30",
+    "--radial-subdivisions",
+    "2",
+    "--footing-steps",
+    "32",
+    "--static-algorithm",
+    "Newton",
+    "--solver-policy",
+    "primary_only",
+    "--html",
+    "--output-dir",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/refinement32/nl_ss_block30_r2/run"
+  ],
+  "complete": false,
+  "entry_sha256": "dd5d99518e9173e0d41e571ea10739eba011a7f2398a8904eda4e6fcd84642e6",
+  "started_on": "2026-11-25",
+  "run_dir": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/refinement32/nl_ss_block30_r2/run",
+  "returncode": -15,
+  "elapsed_s": 200.54454233299475,
+  "limit_reason": "native_attempt_no_return_limit",
+  "last_checkpoint": {
+    "elapsed_s": 16.48621254201862,
+    "event": "attempt_started",
+    "pattern": 800001,
+    "before": 0.2,
+    "increment": 0.05,
+    "algorithm": "Newton"
+  },
+  "stage": "gravity",
+  "error": null
+}

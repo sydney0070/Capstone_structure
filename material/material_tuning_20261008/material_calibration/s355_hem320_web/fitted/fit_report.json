@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "E": 204167883.33006158,
+    "Fy": 384169.9916153107,
+    "b": 0.005258681303754453,
+    "R0": 27.07856524323407,
+    "a1": 0.04153616162729537,
+    "a3": 0.03987259361694604
+  },
+  "train_nrmse": 0.017247135025993995,
+  "optimizer_success": true,
+  "optimizer_message": "Optimization terminated successfully.",
+  "evaluations": 3295,
+  "failed_trial_examples": [],
+  "seed": 20261008,
+  "opensees": "3.8.0",
+  "synthetic": false,
+  "validation_nrmse": 0.0316083798569451
+}

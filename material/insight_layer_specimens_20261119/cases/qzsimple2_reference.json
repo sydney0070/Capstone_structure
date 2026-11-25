@@ -1,0 +1,56 @@
+{
+  "id": "qzsimple2_reference",
+  "group": "uniaxial_comparison",
+  "layer": "footing_vertical_equivalent",
+  "family": "QzSimple2",
+  "parameters": {
+    "soil_type": 1,
+    "ultimate_force_N": 38020.0,
+    "z50_m": 0.00274347,
+    "suction": 0.1,
+    "damping": 0.0
+  },
+  "evidence": {
+    "soil_type": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17, first example, center/end spring 101",
+      "kind": "earth_example",
+      "note": "Original qzType=1. Static damping set to zero instead of original .05; not a Mars force capacity."
+    },
+    "ultimate_force_N": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17, first example, center/end spring 101",
+      "kind": "earth_example",
+      "note": "Original qzType=1. Static damping set to zero instead of original .05; not a Mars force capacity."
+    },
+    "z50_m": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17, first example, center/end spring 101",
+      "kind": "earth_example",
+      "note": "Original qzType=1. Static damping set to zero instead of original .05; not a Mars force capacity."
+    },
+    "suction": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17, first example, center/end spring 101",
+      "kind": "earth_example",
+      "note": "Original qzType=1. Static damping set to zero instead of original .05; not a Mars force capacity."
+    },
+    "damping": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17, first example, center/end spring 101",
+      "kind": "earth_example",
+      "note": "Original qzType=1. Static damping set to zero instead of original .05; not a Mars force capacity."
+    }
+  },
+  "mars_calibrated": false,
+  "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+  "geometry": {
+    "type": "zeroLength",
+    "direction": 3
+  },
+  "displacement_scale_m": 0.00274347,
+  "notes": [
+    "Force N versus relative displacement m, not continuum stress versus strain.",
+    "Independent spring fixture; no automatic normal/shear coupling or tributary ring-area calibration."
+  ]
+}

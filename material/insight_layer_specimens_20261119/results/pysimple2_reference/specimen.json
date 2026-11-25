@@ -1,0 +1,56 @@
+{
+  "id": "pysimple2_reference",
+  "group": "uniaxial_comparison",
+  "layer": "embedded_footing_side",
+  "family": "PySimple2",
+  "parameters": {
+    "soil_type": 1,
+    "ultimate_force_N": 102000.0,
+    "y50_m": 0.0145067,
+    "drag": 0.1,
+    "damping": 0.0
+  },
+  "evidence": {
+    "soil_type": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17 spring105",
+      "kind": "earth_example",
+      "note": "Static damping zero; clay-type reference, not Mars calibration"
+    },
+    "ultimate_force_N": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17 spring105",
+      "kind": "earth_example",
+      "note": "Static damping zero; clay-type reference, not Mars calibration"
+    },
+    "y50_m": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17 spring105",
+      "kind": "earth_example",
+      "note": "Static damping zero; clay-type reference, not Mars calibration"
+    },
+    "drag": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17 spring105",
+      "kind": "earth_example",
+      "note": "Static damping zero; clay-type reference, not Mars calibration"
+    },
+    "damping": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17 spring105",
+      "kind": "earth_example",
+      "note": "Static damping zero; clay-type reference, not Mars calibration"
+    }
+  },
+  "mars_calibrated": false,
+  "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+  "geometry": {
+    "type": "zeroLength",
+    "direction": 1
+  },
+  "displacement_scale_m": 0.0145067,
+  "notes": [
+    "Force N versus relative displacement m, not continuum stress versus strain.",
+    "Independent spring fixture; no automatic normal/shear coupling or tributary ring-area calibration."
+  ]
+}

@@ -1,0 +1,767 @@
+{
+  "body": "Earth",
+  "stage": "static_loaded",
+  "boundary": "static_box",
+  "engine": "3.4.0",
+  "mesh": {
+    "nx": 5,
+    "ny": 5,
+    "nz": 8,
+    "max_aspect_ratio": 4.0,
+    "depth_levels_m": [
+      0.0,
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0,
+      12.0
+    ],
+    "orientation": {
+      "operations": [],
+      "mean_dx_m": 1.5,
+      "mean_dy_m": 1.5
+    }
+  },
+  "nodes": 225,
+  "elements": 128,
+  "soil_mass_kg": 781588.1429816912,
+  "soil_volume_m3": 432.0,
+  "material_volume_fractions": {
+    "earth_sand_dr30_dp_reference": 0.18518518518518517,
+    "earth_sand_dr50_dp_reference": 0.3148148148148148,
+    "earth_sand_dr75_dp_reference": 0.3333333333333333,
+    "basalt_elastic_analogue": 0.16666666666666666
+  },
+  "gravity": {
+    "final_factor": 1.0,
+    "attempts": [
+      {
+        "before": 0.0,
+        "increment": 0.05,
+        "after": 0.05,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.05,
+        "increment": 0.05,
+        "after": 0.1,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.1,
+        "increment": 0.05,
+        "after": 0.15000000000000002,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.15000000000000002,
+        "increment": 0.05,
+        "after": 0.2,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.2,
+        "increment": 0.05,
+        "after": 0.25,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.25,
+        "increment": 0.05,
+        "after": 0.3,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.3,
+        "increment": 0.05,
+        "after": 0.35,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.35,
+        "increment": 0.05,
+        "after": 0.39999999999999997,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.39999999999999997,
+        "increment": 0.05,
+        "after": 0.44999999999999996,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.44999999999999996,
+        "increment": 0.05,
+        "after": 0.49999999999999994,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.49999999999999994,
+        "increment": 0.05,
+        "after": 0.5499999999999999,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.5499999999999999,
+        "increment": 0.05,
+        "after": 0.6,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.6,
+        "increment": 0.05,
+        "after": 0.65,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.65,
+        "increment": 0.05,
+        "after": 0.7000000000000001,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.7000000000000001,
+        "increment": 0.05,
+        "after": 0.7500000000000001,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.7500000000000001,
+        "increment": 0.05,
+        "after": 0.8000000000000002,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.8000000000000002,
+        "increment": 0.05,
+        "after": 0.8500000000000002,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.8500000000000002,
+        "increment": 0.05,
+        "after": 0.9000000000000002,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.9000000000000002,
+        "increment": 0.05,
+        "after": 0.9500000000000003,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      },
+      {
+        "before": 0.9500000000000003,
+        "increment": 0.04999999999999971,
+        "after": 1.0,
+        "code": 0,
+        "algorithm": "KrylovNewton"
+      }
+    ],
+    "post_stage_equilibrated": true,
+    "stage_attempts": [],
+    "force_balance": {
+      "applied_N": [
+        0.0,
+        0.0,
+        -7755241.9666503975
+      ],
+      "reaction_N": [
+        -1.3164935808163136e-10,
+        -2.335850448250317e-10,
+        7755241.96665039
+      ],
+      "residual_N": [
+        -1.3164935808163136e-10,
+        -2.335850448250317e-10,
+        -7.450580596923828e-09
+      ],
+      "relative_error": 9.613373458571327e-16
+    },
+    "construction": "all assembled selfweights ramped together; PDMY small elastic seating then nonlinear gravity; no stress-free staged installation",
+    "pdmy_elastic_seating_fraction": null,
+    "max_ground_displacement_m": 0.0018401515009860995
+  },
+  "extra": {
+    "static": {
+      "final_factor": 1.0,
+      "attempts": [
+        {
+          "before": 0.0,
+          "increment": 0.05,
+          "after": 0.05,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.05,
+          "increment": 0.05,
+          "after": 0.1,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.1,
+          "increment": 0.05,
+          "after": 0.15000000000000002,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.15000000000000002,
+          "increment": 0.05,
+          "after": 0.2,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.2,
+          "increment": 0.05,
+          "after": 0.25,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.25,
+          "increment": 0.05,
+          "after": 0.3,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.3,
+          "increment": 0.05,
+          "after": 0.35,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.35,
+          "increment": 0.05,
+          "after": 0.39999999999999997,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.39999999999999997,
+          "increment": 0.05,
+          "after": 0.44999999999999996,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.44999999999999996,
+          "increment": 0.05,
+          "after": 0.49999999999999994,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.49999999999999994,
+          "increment": 0.05,
+          "after": 0.5499999999999999,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.5499999999999999,
+          "increment": 0.05,
+          "after": 0.6,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.6,
+          "increment": 0.05,
+          "after": 0.65,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.65,
+          "increment": 0.05,
+          "after": 0.7000000000000001,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.7000000000000001,
+          "increment": 0.05,
+          "after": 0.7500000000000001,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.7500000000000001,
+          "increment": 0.05,
+          "after": 0.8000000000000002,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.8000000000000002,
+          "increment": 0.05,
+          "after": 0.8500000000000002,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.8500000000000002,
+          "increment": 0.05,
+          "after": 0.9000000000000002,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.9000000000000002,
+          "increment": 0.05,
+          "after": 0.9500000000000003,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        },
+        {
+          "before": 0.9500000000000003,
+          "increment": 0.04999999999999971,
+          "after": 1.0,
+          "code": 0,
+          "algorithm": "KrylovNewton"
+        }
+      ],
+      "force_balance": {
+        "applied_N": [
+          200.0,
+          0.0,
+          -7795241.9666503975
+        ],
+        "reaction_N": [
+          -200.00000000015945,
+          3.051354724448174e-10,
+          7795241.966650392
+        ],
+        "residual_N": [
+          -1.5944578990456648e-10,
+          3.051354724448174e-10,
+          -5.587935447692871e-09
+        ],
+        "relative_error": 7.18198490587658e-16
+      },
+      "max_incremental_ground_displacement_m": 7.041785465354028e-05
+    },
+    "frame": {
+      "ports": [
+        300000,
+        300006,
+        300002,
+        300008
+      ],
+      "top_nodes": [
+        450000,
+        450001,
+        450002,
+        450003
+      ],
+      "gravity_loads": {
+        "450000": [
+          0.0,
+          0.0,
+          -10965.1275,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "300000": [
+          0.0,
+          0.0,
+          -1155.1275,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "450001": [
+          0.0,
+          0.0,
+          -10965.1275,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "300006": [
+          0.0,
+          0.0,
+          -1155.1275,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "450002": [
+          0.0,
+          0.0,
+          -10965.1275,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "300002": [
+          0.0,
+          0.0,
+          -1155.1275,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "450003": [
+          0.0,
+          0.0,
+          -10965.1275,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "300008": [
+          0.0,
+          0.0,
+          -1155.1275,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "member_mass_kg": 942.0,
+      "lumped_mass_kg": 4000.0,
+      "scope": "four independent elastic steel columns, illustrative connection test only"
+    }
+  },
+  "material_scope": "literature references and explicit assumptions; numerical checks are not field calibration",
+  "raft_response": {
+    "mean_additional_settlement_m": 7.118303582844417e-05,
+    "mean_convention": "tributary-area weighted",
+    "differential_settlement_m": 3.0993359939036035e-06,
+    "contact": {
+      "total_normal_N": 127862.28399999929,
+      "max_penetration_m": 1.4138957168787934e-05,
+      "max_mpc_error_m": 0.0,
+      "rows": [
+        {
+          "element": 300004,
+          "ground_node": 10006,
+          "raft_node": 300000,
+          "area_m2": 0.24999999999999997,
+          "normal_N": 12400.869119080953,
+          "shear_N": 1656.1398820945983,
+          "pressure_Pa": 49603.47647632382,
+          "relative_displacement_m": [
+            -3.3793533880208083e-06,
+            -3.5663732983832013e-06,
+            -1.3795785826476847e-05
+          ],
+          "friction_limit_N": 4340.304191678333,
+          "mpc_error_m": 0.0
+        },
+        {
+          "element": 300005,
+          "ground_node": 10007,
+          "raft_node": 300001,
+          "area_m2": 0.49999999999999994,
+          "normal_N": 14719.085503980205,
+          "shear_N": 770.0845117488658,
+          "pressure_Pa": 29438.171007960413,
+          "relative_displacement_m": [
+            -1.9356975396744123e-07,
+            -1.1257564441517447e-06,
+            -8.187383852881116e-06
+          ],
+          "friction_limit_N": 5151.679926393072,
+          "mpc_error_m": 0.0
+        },
+        {
+          "element": 300006,
+          "ground_node": 10008,
+          "raft_node": 300002,
+          "area_m2": 0.24999999999999997,
+          "normal_N": 12709.341787504829,
+          "shear_N": 1882.962620345009,
+          "pressure_Pa": 50837.36715001932,
+          "relative_displacement_m": [
+            3.972254013680859e-06,
+            -3.9274855653335515e-06,
+            -1.4138957166004136e-05
+          ],
+          "friction_limit_N": 4448.26962562669,
+          "mpc_error_m": 0.0
+        },
+        {
+          "element": 300007,
+          "ground_node": 10011,
+          "raft_node": 300003,
+          "area_m2": 0.49999999999999994,
+          "normal_N": 14816.156881120678,
+          "shear_N": 631.1442296499694,
+          "pressure_Pa": 29632.31376224136,
+          "relative_displacement_m": [
+            -9.361849866334731e-07,
+            3.334984026841918e-14,
+            -8.241379097732567e-06
+          ],
+          "friction_limit_N": 5185.654908392237,
+          "mpc_error_m": 0.0
+        },
+        {
+          "element": 300008,
+          "ground_node": 10012,
+          "raft_node": 300004,
+          "area_m2": 1.0,
+          "normal_N": 18588.322750178784,
+          "shear_N": 175.9995294563872,
+          "pressure_Pa": 18588.322750178784,
+          "relative_displacement_m": [
+            -1.3053127113512917e-07,
+            1.2628783277820772e-14,
+            -5.169809411590233e-06
+          ],
+          "friction_limit_N": 6505.912962562574,
+          "mpc_error_m": 0.0
+        },
+        {
+          "element": 300009,
+          "ground_node": 10013,
+          "raft_node": 300005,
+          "area_m2": 0.5,
+          "normal_N": 14799.211547568026,
+          "shear_N": 868.4265891498113,
+          "pressure_Pa": 29598.42309513605,
+          "relative_displacement_m": [
+            1.2881492003915818e-06,
+            2.9080235220075206e-14,
+            -8.23195337965564e-06
+          ],
+          "friction_limit_N": 5179.724041648808,
+          "mpc_error_m": 0.0
+        },
+        {
+          "element": 300010,
+          "ground_node": 10016,
+          "raft_node": 300006,
+          "area_m2": 0.24999999999999997,
+          "normal_N": 12400.869124878318,
+          "shear_N": 1656.1398779670903,
+          "pressure_Pa": 49603.47649951328,
+          "relative_displacement_m": [
+            -3.3793534081809675e-06,
+            3.566373262411435e-06,
+            -1.3795785832926332e-05
+          ],
+          "friction_limit_N": 4340.304193707411,
+          "mpc_error_m": 0.0
+        },
+        {
+          "element": 300011,
+          "ground_node": 10017,
+          "raft_node": 300007,
+          "area_m2": 0.5,
+          "normal_N": 14719.085495680323,
+          "shear_N": 770.0844848775206,
+          "pressure_Pa": 29438.170991360646,
+          "relative_displacement_m": [
+            -1.9356975002560824e-07,
+            1.1257564043859602e-06,
+            -8.187383848264366e-06
+          ],
+          "friction_limit_N": 5151.679923488113,
+          "mpc_error_m": 0.0
+        },
+        {
+          "element": 300012,
+          "ground_node": 10018,
+          "raft_node": 300008,
+          "area_m2": 0.25,
+          "normal_N": 12709.341790007154,
+          "shear_N": 1882.962601322349,
+          "pressure_Pa": 50837.36716002862,
+          "relative_displacement_m": [
+            3.97225399351796e-06,
+            3.9274855054616045e-06,
+            -1.4138957168787934e-05
+          ],
+          "friction_limit_N": 4448.269626502503,
+          "mpc_error_m": 0.0
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "node": 300000,
+        "coordinate_m": [
+          -1.0,
+          -1.0,
+          0.0
+        ],
+        "displacement_m_rad": [
+          6.807014793512363e-06,
+          1.4961902082902937e-07,
+          -0.0019168138865240116,
+          1.1104219153069033e-05,
+          -7.97941475872136e-06,
+          7.383112057469638e-09
+        ],
+        "additional_settlement_m": 6.924731708292452e-05
+      },
+      {
+        "node": 300001,
+        "coordinate_m": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "displacement_m_rad": [
+          6.659057713219578e-06,
+          5.0907082122532236e-08,
+          -0.0019110916762295497,
+          -5.768002531659346e-07,
+          1.4002392395263548e-06,
+          1.3395954745315664e-08
+        ],
+        "additional_settlement_m": 7.13006935843983e-05
+      },
+      {
+        "node": 300002,
+        "coordinate_m": [
+          1.0,
+          -1.0,
+          0.0
+        ],
+        "displacement_m_rad": [
+          6.494710998352423e-06,
+          1.7414174719136368e-07,
+          -0.0019207143156848513,
+          1.0744578332462816e-05,
+          1.3555944435608705e-05,
+          1.6486155312537038e-08
+        ],
+        "additional_settlement_m": 7.038361310596382e-05
+      },
+      {
+        "node": 300003,
+        "coordinate_m": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "displacement_m_rad": [
+          6.6943715658753364e-06,
+          1.1803140054331837e-13,
+          -0.0019089577801155437,
+          -2.6661587208778945e-13,
+          2.461540564475626e-06,
+          5.65733563104223e-14
+        ],
+        "additional_settlement_m": 7.080039004821528e-05
+      },
+      {
+        "node": 300004,
+        "coordinate_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "displacement_m_rad": [
+          6.649370663730957e-06,
+          1.7526067362993504e-13,
+          -0.001912637094981309,
+          -2.735569356620416e-13,
+          2.2202184064084075e-06,
+          5.6001207639484355e-14
+        ],
+        "additional_settlement_m": 7.234665307682812e-05
+      },
+      {
+        "node": 300005,
+        "coordinate_m": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "displacement_m_rad": [
+          6.591876983450549e-06,
+          2.30342359535151e-13,
+          -0.0019130471558241058,
+          -2.7292010554888756e-13,
+          9.945017578162387e-07,
+          5.5012794193218944e-14
+        ],
+        "additional_settlement_m": 7.173827203214357e-05
+      },
+      {
+        "node": 300006,
+        "coordinate_m": [
+          -1.0,
+          1.0,
+          0.0
+        ],
+        "displacement_m_rad": [
+          6.807014682751272e-06,
+          -1.4961878140129672e-07,
+          -0.001916813887055893,
+          -1.1104219687868805e-05,
+          -7.979414735713015e-06,
+          -7.383000711442355e-09
+        ],
+        "additional_settlement_m": 6.924731755926939e-05
+      },
+      {
+        "node": 300007,
+        "coordinate_m": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "displacement_m_rad": [
+          6.6590576015257095e-06,
+          -5.0906730582211114e-08,
+          -0.0019110916767789766,
+          5.767997044840339e-07,
+          1.4002392458303867e-06,
+          -1.3395842660462116e-08
+        ],
+        "additional_settlement_m": 7.130069411449033e-05
+      },
+      {
+        "node": 300008,
+        "coordinate_m": [
+          1.0,
+          1.0,
+          0.0
+        ],
+        "displacement_m_rad": [
+          6.494710887390824e-06,
+          -1.741412828119509e-07,
+          -0.0019207143162305513,
+          -1.0744578879871058e-05,
+          1.3555944425208417e-05,
+          -1.648604332137837e-08
+        ],
+        "additional_settlement_m": 7.038361364114184e-05
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "hyperboloid",
+  "material": "shell_concrete",
+  "planet": "earth",
+  "support": "linear_springs",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 30000000.0,
+    "nu": 0.2,
+    "rho": 2.4,
+    "thickness": 0.02
+  },
+  "nodes": 9408,
+  "elements": 9216,
+  "surface_area_m2": 176.94900253646972,
+  "mass_tonne": 8.493552121751119,
+  "weight_kN": 83.32174631437847,
+  "max_displacement_m": 0.00041812593668787173,
+  "min_uz_m": -0.0004176024520070014,
+  "max_uz_m": -0.0001326165954274814,
+  "mean_base_uz_m": -0.00013261659542752126,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -1.1958767309749874e-12,
+    -8.21037063775852e-14,
+    -3.979039320256561e-13
+  ],
+  "moment_residual_kNm": [
+    -1.2229857002110895e-11,
+    -2.5689519955740536e-12,
+    4.075497095935217e-12
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -83.3217463143739
+  ],
+  "relative_force_residual": 1.5158206061729754e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

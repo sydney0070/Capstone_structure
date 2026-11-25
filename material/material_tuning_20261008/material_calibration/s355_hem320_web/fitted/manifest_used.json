@@ -1,0 +1,37 @@
+{
+  "case": "structural_steel_s355_hem320_web",
+  "units": "kN,m,s,tonne,kPa",
+  "synthetic": false,
+  "conditions_confirmed": true,
+  "source": "Hartloper et al. 2022, DOI 10.5281/zenodo.6965147; El Jisr 2022 DOI 10.5075/epfl-thesis-8700; S355 J2+M HEM320 web; see provenance.json for conversion and trial IDs.",
+  "tests": [
+    {
+      "csv": "train_LP4_id0.csv",
+      "role": "train",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "train_LP6_id8.csv",
+      "role": "train",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "validation_LP2_id3.csv",
+      "role": "validation",
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "validation_LP9_id6.csv",
+      "role": "validation",
+      "channels": {
+        "y": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "Fy": 379999.99872978276,
+    "b": 0.015000000508953875
+  },
+  "train_nrmse": 8.92943697917031e-10,
+  "optimizer_success": true,
+  "optimizer_message": "Optimization terminated successfully.",
+  "evaluations": 429,
+  "failed_trial_examples": [],
+  "seed": 20261008,
+  "opensees": "3.8.0",
+  "synthetic": true,
+  "validation_nrmse": 8.688081409095537e-10
+}

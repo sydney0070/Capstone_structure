@@ -1,0 +1,38 @@
+{
+  "engine_version": "3.4.0",
+  "scope": "Constructor recognition only; arbitrary syntax probes, no load analysis, physical calibration or material selection performed.",
+  "results": {
+    "QzSimple1": {
+      "constructor_recognized": true
+    },
+    "QzSimple2": {
+      "constructor_recognized": true
+    },
+    "PySimple1": {
+      "constructor_recognized": true
+    },
+    "PySimple2": {
+      "constructor_recognized": true
+    },
+    "PxSimple1": {
+      "constructor_recognized": false,
+      "error": "See stderr output"
+    },
+    "TzSimple1": {
+      "constructor_recognized": true
+    },
+    "TzSimple2": {
+      "constructor_recognized": true
+    },
+    "TxSimple1": {
+      "constructor_recognized": false,
+      "error": "See stderr output"
+    },
+    "ElasticPPGap": {
+      "constructor_recognized": true
+    },
+    "Hysteretic": {
+      "constructor_recognized": true
+    }
+  }
+}

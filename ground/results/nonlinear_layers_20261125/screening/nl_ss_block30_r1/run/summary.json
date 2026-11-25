@@ -1,0 +1,751 @@
+{
+  "complete": true,
+  "material_profile": {
+    "name": "nl_ss_block30",
+    "requested_name": "nl_ss_block30",
+    "selection_status": "provisional_pending_ground_comparison",
+    "profile_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Mars_nonlinear_20261125_profiles.json",
+    "profile_sha256": "3b7e9737cf654828c550482ed4f71d4e6d4e3ff851568c092c9a2935991d08dd",
+    "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+    "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+    "note": "All four layers elastoplastic; input strength fitting/analogue assumptions retained; same geometry and loading"
+  },
+  "ground_domain_m": [
+    90.0,
+    90.0,
+    30.0
+  ],
+  "footing": {
+    "centerline_radius_m": 20.0,
+    "outer_diameter_m": 54.0,
+    "width_m": 14.0,
+    "embedment_m": 3.0,
+    "flange_thickness_m": 2.5,
+    "cover_thickness_m": 6.2,
+    "dome_mass_t": 200.0,
+    "ring_mass_t": 10260.0,
+    "circular_footprint_m2": 1759.291886010284,
+    "modeled_footprint_m2": 1739.2639830889407
+  },
+  "loads": {
+    "source": "\uad6c\uc870\ubb3c\ud300 PPT slides 16\u201318, selected 14 m footing",
+    "downforce_N": 150300000.0,
+    "pressure_plan_area_m2": 1200.0,
+    "net_internal_pressure_Pa": 100600.0,
+    "dome_uplift_N": 120720000.0,
+    "pressurized_net_compression_N": 29580000.0,
+    "depressurized_contact_pressure_Pa": 86415.86410193266,
+    "pressurized_contact_pressure_Pa": 17007.19401287537
+  },
+  "scope": "Vertical settlement under area-distributed equivalent thrust only. Initial gravity is equilibrated on the excavated ground. Foundation/soil interaction, uplift resistance, structural design and soil failure are outside this analysis.",
+  "ground_mesh": {
+    "kind": "square_core_polygon_rings_square_farfield",
+    "sectors": 24,
+    "radial_subdivisions": 1,
+    "plan_refinement": 1,
+    "vertical_subdivisions": 1,
+    "nz": 12,
+    "max_aspect_ratio": 138.19805153394634,
+    "depth_levels_m": [
+      0.0,
+      0.2,
+      0.6000000000000001,
+      1.0,
+      3.0,
+      6.333333333333334,
+      9.666666666666668,
+      13.0,
+      16.4,
+      19.8,
+      23.2,
+      26.6,
+      30.0
+    ]
+  },
+  "ground_elements": 1968,
+  "ground_nodes": 2413,
+  "ground_mass_kg": 542209029.9850203,
+  "ground_materials": {
+    "mars_nl25_crust_tc": {
+      "E_Pa": 11480000.0,
+      "nu": 0.28,
+      "G_Pa": 4484375.0,
+      "K_Pa": 8696969.696969697,
+      "density_kg_m3": 1025.0,
+      "phi_deg": 30.0,
+      "c_Pa": 5800.0,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "specimen_id": "crust_tc",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Brinkman2022",
+          "locator": "Table 4, PDF p.13",
+          "kind": "transferred",
+          "note": "Select E=11.48 MPa and nu=.28; effective shallow volume, not isolated crust. Derive G/K consistently; do not mix independent modal estimates."
+        },
+        "nu": {
+          "source": "Brinkman2022",
+          "locator": "Table 4, PDF p.13",
+          "kind": "transferred",
+          "note": "Select E=11.48 MPa and nu=.28; effective shallow volume, not isolated crust. Derive G/K consistently; do not mix independent modal estimates."
+        },
+        "density_kg_m3": {
+          "source": "Spohn2022",
+          "locator": "Section 6.7, range 950\u20131100 kg/m3",
+          "kind": "assumed_within_inferred_range",
+          "note": "Midpoint 1025 chosen for this specimen, not directly measured"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "phi_deg": {
+          "source": "Spohn2022 slope inference at assumed phi30/rho1200; transferred to rho1025",
+          "locator": "see calibration record",
+          "kind": "literature_range_scenario",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "c_Pa": {
+          "source": "Spohn2022 slope inference at assumed phi30/rho1200; transferred to rho1025",
+          "locator": "see calibration record",
+          "kind": "literature_range_scenario",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "psi_deg": {
+          "source": "modelling_assumption",
+          "locator": "nonassociated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; requires volumetric-strain calibration"
+        },
+        "hardening": {
+          "source": "modelling_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "calibration": {
+        "target_mode": "triaxial",
+        "target_MC_c_Pa": 5800.0,
+        "target_MC_phi_deg": 30.0,
+        "target_source": "Spohn2022 slope inference at assumed phi30/rho1200; transferred to rho1025",
+        "independent_validation": false
+      },
+      "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+      "role": "duricrust",
+      "assumptions": [
+        "Actual DP c/phi and target physical MC c/phi are stored separately.",
+        "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+        "Elastoplastic law may remain on its elastic branch at service loads."
+      ],
+      "mars_calibrated": false,
+      "name": "mars_nl25_crust_tc",
+      "tag": 10002,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    },
+    "mars_nl25_mgs1_ss": {
+      "E_Pa": 28400000.0,
+      "nu": 0.22,
+      "G_Pa": 11639344.262295082,
+      "K_Pa": 16904761.904761903,
+      "density_kg_m3": 1300,
+      "phi_deg": 30.81395784142527,
+      "c_Pa": 197.06006164318362,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "specimen_id": "mgs1_ss",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Murdoch2018",
+          "locator": "Table 2; existing 1300 kg/m3 candidate",
+          "kind": "transferred",
+          "note": "Rounded E=28.4 MPa, nu=.22 from previous cross-source initial set"
+        },
+        "nu": {
+          "source": "Murdoch2018",
+          "locator": "Table 2; existing 1300 kg/m3 candidate",
+          "kind": "transferred",
+          "note": "Rounded E=28.4 MPa, nu=.22 from previous cross-source initial set"
+        },
+        "density_kg_m3": {
+          "source": "Spohn2022",
+          "locator": "Section 6.7, sand 1300\u20131500 kg/m3",
+          "kind": "selected_inferred_reference",
+          "note": "1300 is also the previously saved target density"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "phi_deg": {
+          "source": "Dotson2024 Eq2/Table4; Fig6 nearest-density friction",
+          "locator": "see calibration record",
+          "kind": "derived_calibration",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "c_Pa": {
+          "source": "Dotson2024 Eq2/Table4; Fig6 nearest-density friction",
+          "locator": "see calibration record",
+          "kind": "derived_calibration",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "psi_deg": {
+          "source": "modelling_assumption",
+          "locator": "nonassociated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; requires volumetric-strain calibration"
+        },
+        "hardening": {
+          "source": "modelling_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "calibration": {
+        "target_mode": "simple_shear",
+        "target_MC_c_Pa": 235.66368868562228,
+        "target_MC_phi_deg": 35.5,
+        "target_source": "Dotson2024 Eq2/Table4; Fig6 nearest-density friction",
+        "independent_validation": false,
+        "A_Pa": 4.96,
+        "k": 2.97,
+        "target_density_g_cm3": 1.3,
+        "measured_density_min_g_cm3": 1.32,
+        "density_extrapolated": true,
+        "uncertainty_note": "Slight density extrapolation; phi held at nearby density, fit covariance unavailable"
+      },
+      "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+      "role": "sand",
+      "assumptions": [
+        "Actual DP c/phi and target physical MC c/phi are stored separately.",
+        "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+        "Elastoplastic law may remain on its elastic branch at service loads."
+      ],
+      "mars_calibrated": false,
+      "name": "mars_nl25_mgs1_ss",
+      "tag": 10003,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    },
+    "mars_nl25_blocky_phi30": {
+      "E_Pa": 520000000.0,
+      "nu": 0.24,
+      "G_Pa": 209677419.3548387,
+      "K_Pa": 333333333.3333333,
+      "density_kg_m3": 1700.0,
+      "phi_deg": 30.0,
+      "c_Pa": 0.0,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "specimen_id": "blocky_phi30",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Kenda2020",
+          "locator": "Table 1, coarse ejecta",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "nu": {
+          "source": "Kenda2020",
+          "locator": "Table 1, coarse ejecta",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "density_kg_m3": {
+          "source": "existing_project_reference",
+          "locator": "mars_insight_blocky_ejecta",
+          "kind": "transferred_model_density",
+          "note": "1700 carried over from published reference density scenario, not core measurement"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "phi_deg": {
+          "source": "Hughes2022 Section6.2 broken/blasted cohesionless rock phi20\u201340deg; transferred from Gale/terrestrial range to InSight scenario",
+          "locator": "see calibration record",
+          "kind": "literature_range_scenario",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "c_Pa": {
+          "source": "Hughes2022 Section6.2 broken/blasted cohesionless rock phi20\u201340deg; transferred from Gale/terrestrial range to InSight scenario",
+          "locator": "see calibration record",
+          "kind": "literature_range_scenario",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "psi_deg": {
+          "source": "modelling_assumption",
+          "locator": "nonassociated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; requires volumetric-strain calibration"
+        },
+        "hardening": {
+          "source": "modelling_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "calibration": {
+        "target_mode": "triaxial",
+        "target_MC_c_Pa": 0.0,
+        "target_MC_phi_deg": 30.0,
+        "target_source": "Hughes2022 Section6.2 broken/blasted cohesionless rock phi20\u201340deg; transferred from Gale/terrestrial range to InSight scenario",
+        "independent_validation": false
+      },
+      "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+      "role": "blocky_ejecta",
+      "assumptions": [
+        "Actual DP c/phi and target physical MC c/phi are stored separately.",
+        "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+        "Elastoplastic law may remain on its elastic branch at service loads."
+      ],
+      "mars_calibrated": false,
+      "name": "mars_nl25_blocky_phi30",
+      "tag": 10001,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    },
+    "mars_nl25_basalt_hb_gsi55": {
+      "E_Pa": 13000000000.0,
+      "nu": 0.28,
+      "G_Pa": 5078125000.0,
+      "K_Pa": 9848484848.48485,
+      "density_kg_m3": 2760.0,
+      "c_Pa": 1141302.914434007,
+      "phi_deg": 64.82881742615024,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "specimen_id": "basalt_hb_gsi55",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Kenda2020",
+          "locator": "Table 1, fractured bedrock",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "nu": {
+          "source": "Kenda2020",
+          "locator": "Table 1, fractured bedrock",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "density_kg_m3": {
+          "source": "Morgan2018",
+          "locator": "Section 4.1, terrestrial fractured basalt analogy",
+          "kind": "analogue_transfer",
+          "note": "Effective continuum; no joint failure strength inferred"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "c_Pa": {
+          "source": "VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue",
+          "locator": "see calibration record",
+          "kind": "derived_calibration",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "phi_deg": {
+          "source": "VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue",
+          "locator": "see calibration record",
+          "kind": "derived_calibration",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "psi_deg": {
+          "source": "modelling_assumption",
+          "locator": "nonassociated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; requires volumetric-strain calibration"
+        },
+        "hardening": {
+          "source": "modelling_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "calibration": {
+        "target_mode": "triaxial",
+        "target_MC_c_Pa": 1141302.914434007,
+        "target_MC_phi_deg": 64.82881742615024,
+        "target_source": "VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue",
+        "independent_validation": false,
+        "GSI": 55,
+        "mi": 22.4,
+        "D": 0.0,
+        "micro_porosity_analogue": 0.04,
+        "sigma_ci_Pa": 123898062.86463402,
+        "sigma_ci_source": "Villeneuve2021 Table3 basalt empirical UCS=33.32*porosity^(-.408)MPa; SEE59.5MPa for full range",
+        "mi_source": "Villeneuve2021 Table2 Etna basalt porosity.04 mi22.4",
+        "GSI_source": "55 recommended average volcanic rock mass;40/70 sensitivity assumptions, not Mars measurements",
+        "constants": {
+          "mb": 4.4902936554406665,
+          "s": 0.006737946999085467,
+          "a": 0.5040481499008612
+        },
+        "fit_sigma3_range_Pa": [
+          0.0,
+          500000.0
+        ],
+        "fit_points": 101,
+        "fit_max_relative_error": 0.025834648339624944,
+        "fit_kind": "minimax relative linear MC fit, then DP triaxial mapping",
+        "formula_note": "Canonical a=.5+(exp(-GSI/15)-exp(-20/3))/6 from HoekBrown2019; plus sign in Villeneuve Eq8 not used."
+      },
+      "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+      "role": "fractured_basalt",
+      "assumptions": [
+        "Actual DP c/phi and target physical MC c/phi are stored separately.",
+        "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+        "Elastoplastic law may remain on its elastic branch at service loads."
+      ],
+      "mars_calibrated": false,
+      "name": "mars_nl25_basalt_hb_gsi55",
+      "tag": 10000,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    }
+  },
+  "ground_layers": [
+    {
+      "bottom_m": 0.2,
+      "material": "mars_nl25_crust_tc",
+      "role": "duricrust",
+      "density_kg_m3": 1025.0
+    },
+    {
+      "bottom_m": 3.0,
+      "material": "mars_nl25_mgs1_ss",
+      "role": "sand",
+      "density_kg_m3": 1300
+    },
+    {
+      "bottom_m": 13.0,
+      "material": "mars_nl25_blocky_phi30",
+      "role": "blocky_ejecta",
+      "density_kg_m3": 1700.0
+    },
+    {
+      "bottom_m": null,
+      "material": "mars_nl25_basalt_hb_gsi55",
+      "role": "fractured_basalt",
+      "density_kg_m3": 2760.0
+    }
+  ],
+  "analysis_performed": true,
+  "stage": "complete",
+  "solver_progress": {
+    "event": "attempt_finished",
+    "pattern": 800003,
+    "before": 0.875,
+    "increment": 0.125,
+    "after": 1.0,
+    "code": 0,
+    "algorithm": "KrylovNewton",
+    "iterations": 5,
+    "unbalance_norm_N": 9.880440548323067e-08
+  },
+  "elapsed_s": 221.64005316700786,
+  "last_committed_ground_displacement_m": 0.0028277074529891874,
+  "gravity": {
+    "final_factor": 1.0,
+    "attempts": 20,
+    "linear_system": "UmfPack",
+    "force_balance": {
+      "applied_N": [
+        0.0,
+        0.0,
+        -2012137710.2744186
+      ],
+      "reaction_N": [
+        -9.778887033462524e-09,
+        8.032657206058502e-09,
+        2012137710.2744198
+      ],
+      "residual_N": [
+        -9.778887033462524e-09,
+        8.032657206058502e-09,
+        1.1920928955078125e-06
+      ],
+      "relative_error": 5.924843311648401e-16
+    },
+    "physical_support_force_error": 1.0052439583979707e-14,
+    "physical_support_moment_error": 8.62266636176677e-16,
+    "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact",
+    "material_state": {
+      "by_material": {
+        "mars_nl25_crust_tc": {
+          "elements": 132,
+          "gauss_points": 1056,
+          "max_mean_compression_Pa": 417.933970612158,
+          "max_q_Pa": 1674.332171467966,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.0,
+          "gauss_points_with_plastic_norm_above_threshold": 0,
+          "elements_with_plastic_norm_above_threshold": 0
+        },
+        "mars_nl25_mgs1_ss": {
+          "elements": 396,
+          "gauss_points": 3168,
+          "max_mean_compression_Pa": 5314.482279130958,
+          "max_q_Pa": 6974.010878184523,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.0002235381658049721,
+          "gauss_points_with_plastic_norm_above_threshold": 1680,
+          "elements_with_plastic_norm_above_threshold": 268
+        },
+        "mars_nl25_blocky_phi30": {
+          "elements": 540,
+          "gauss_points": 4320,
+          "max_mean_compression_Pa": 37525.3626622359,
+          "max_q_Pa": 45030.43519403103,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 1.5662496749361446e-05,
+          "gauss_points_with_plastic_norm_above_threshold": 3488,
+          "elements_with_plastic_norm_above_threshold": 540
+        },
+        "mars_nl25_basalt_hb_gsi55": {
+          "elements": 900,
+          "gauss_points": 7200,
+          "max_mean_compression_Pa": 138174.9413273145,
+          "max_q_Pa": 143451.50498871718,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.0,
+          "gauss_points_with_plastic_norm_above_threshold": 0,
+          "elements_with_plastic_norm_above_threshold": 0
+        }
+      },
+      "scope": "Stress and DP plastic-strain norm diagnostics. Norm change is not a plastic-strain tensor increment, bearing-capacity factor or collapse check."
+    }
+  },
+  "depressurized": {
+    "final_factor": 1.0,
+    "attempts": 8,
+    "linear_system": "UmfPack",
+    "force_balance": {
+      "applied_N": [
+        0.0,
+        0.0,
+        -2162437710.274418
+      ],
+      "reaction_N": [
+        -2.3283064365386963e-09,
+        -8.032657206058502e-09,
+        2162437710.2744193
+      ],
+      "residual_N": [
+        -2.3283064365386963e-09,
+        -8.032657206058502e-09,
+        1.430511474609375e-06
+      ],
+      "relative_error": 6.615385566995128e-16
+    },
+    "physical_support_force_error": 7.307617726148944e-16,
+    "physical_support_moment_error": 4.5809246876703994e-17,
+    "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact",
+    "average_mm": 1.3561219151865769,
+    "maximum_mm": 1.8935786941463666,
+    "material_state": {
+      "by_material": {
+        "mars_nl25_crust_tc": {
+          "elements": 132,
+          "gauss_points": 1056,
+          "max_mean_compression_Pa": 231.73257214764033,
+          "max_q_Pa": 3005.2253767117763,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.0,
+          "gauss_points_with_plastic_norm_above_threshold": 0,
+          "elements_with_plastic_norm_above_threshold": 0,
+          "max_abs_norm_change_since_gravity": 0.0,
+          "gauss_points_with_changed_norm_since_gravity": 0
+        },
+        "mars_nl25_mgs1_ss": {
+          "elements": 396,
+          "gauss_points": 3168,
+          "max_mean_compression_Pa": 5299.226332906358,
+          "max_q_Pa": 6955.162769347044,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.0003844791957370381,
+          "gauss_points_with_plastic_norm_above_threshold": 2792,
+          "elements_with_plastic_norm_above_threshold": 380,
+          "max_abs_norm_change_since_gravity": 0.00021826627565743741,
+          "gauss_points_with_changed_norm_since_gravity": 2696
+        },
+        "mars_nl25_blocky_phi30": {
+          "elements": 540,
+          "gauss_points": 4320,
+          "max_mean_compression_Pa": 67945.63546200303,
+          "max_q_Pa": 81534.76255440363,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.00011727420119539749,
+          "gauss_points_with_plastic_norm_above_threshold": 4320,
+          "elements_with_plastic_norm_above_threshold": 540,
+          "max_abs_norm_change_since_gravity": 0.00011727420119539749,
+          "gauss_points_with_changed_norm_since_gravity": 2184
+        },
+        "mars_nl25_basalt_hb_gsi55": {
+          "elements": 900,
+          "gauss_points": 7200,
+          "max_mean_compression_Pa": 158745.420591976,
+          "max_q_Pa": 166977.16100472817,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.0,
+          "gauss_points_with_plastic_norm_above_threshold": 0,
+          "elements_with_plastic_norm_above_threshold": 0,
+          "max_abs_norm_change_since_gravity": 0.0,
+          "gauss_points_with_changed_norm_since_gravity": 0
+        }
+      },
+      "scope": "Stress and DP plastic-strain norm diagnostics. Norm change is not a plastic-strain tensor increment, bearing-capacity factor or collapse check."
+    }
+  },
+  "pressurized": {
+    "final_factor": 1.0,
+    "attempts": 8,
+    "linear_system": "UmfPack",
+    "force_balance": {
+      "applied_N": [
+        0.0,
+        0.0,
+        -2041717710.2744195
+      ],
+      "reaction_N": [
+        -4.423782229423523e-09,
+        -6.752088665962219e-09,
+        2041717710.2744186
+      ],
+      "residual_N": [
+        -4.423782229423523e-09,
+        -6.752088665962219e-09,
+        -9.5367431640625e-07
+      ],
+      "relative_error": 4.671108419591094e-16
+    },
+    "physical_support_force_error": 4.671228686761687e-16,
+    "physical_support_moment_error": 1.9232906485117923e-17,
+    "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact",
+    "average_mm": 0.4109308560554719,
+    "maximum_mm": 0.6045391761027151,
+    "material_state": {
+      "by_material": {
+        "mars_nl25_crust_tc": {
+          "elements": 132,
+          "gauss_points": 1056,
+          "max_mean_compression_Pa": 391.90204442802496,
+          "max_q_Pa": 2360.2636881458207,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.0,
+          "gauss_points_with_plastic_norm_above_threshold": 0,
+          "elements_with_plastic_norm_above_threshold": 0,
+          "max_abs_norm_change_since_gravity": 0.0,
+          "gauss_points_with_changed_norm_since_gravity": 0
+        },
+        "mars_nl25_mgs1_ss": {
+          "elements": 396,
+          "gauss_points": 3168,
+          "max_mean_compression_Pa": 5691.229016772947,
+          "max_q_Pa": 7392.684439117019,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.0003844791957370381,
+          "gauss_points_with_plastic_norm_above_threshold": 2792,
+          "elements_with_plastic_norm_above_threshold": 380,
+          "max_abs_norm_change_since_gravity": 0.00021826627565743741,
+          "gauss_points_with_changed_norm_since_gravity": 2696
+        },
+        "mars_nl25_blocky_phi30": {
+          "elements": 540,
+          "gauss_points": 4320,
+          "max_mean_compression_Pa": 41070.28977555628,
+          "max_q_Pa": 47907.683988667966,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.00011727420119539749,
+          "gauss_points_with_plastic_norm_above_threshold": 4320,
+          "elements_with_plastic_norm_above_threshold": 540,
+          "max_abs_norm_change_since_gravity": 0.00011727420119539749,
+          "gauss_points_with_changed_norm_since_gravity": 2184
+        },
+        "mars_nl25_basalt_hb_gsi55": {
+          "elements": 900,
+          "gauss_points": 7200,
+          "max_mean_compression_Pa": 139482.57647658806,
+          "max_q_Pa": 144548.83136735755,
+          "dp_state_recorded": true,
+          "plastic_strain_norm_threshold": 1e-08,
+          "max_plastic_strain_norm": 0.0,
+          "gauss_points_with_plastic_norm_above_threshold": 0,
+          "elements_with_plastic_norm_above_threshold": 0,
+          "max_abs_norm_change_since_gravity": 0.0,
+          "gauss_points_with_changed_norm_since_gravity": 0
+        }
+      },
+      "scope": "Stress and DP plastic-strain norm diagnostics. Norm change is not a plastic-strain tensor increment, bearing-capacity factor or collapse check."
+    }
+  },
+  "viewer": {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/screening/nl_ss_block30_r1/run/footing_settlement.html",
+    "frames": 1,
+    "nodes": 2413,
+    "structures": 0,
+    "offline": true,
+    "reference": "total"
+  },
+  "pressurized_viewer": {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/screening/nl_ss_block30_r1/run/footing_settlement_pressurized.html",
+    "frames": 1,
+    "nodes": 2413,
+    "structures": 0,
+    "offline": true,
+    "reference": "total"
+  }
+}

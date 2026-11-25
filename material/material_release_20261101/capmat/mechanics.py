@@ -11,18 +11,8 @@ def shielding(thickness_m,area_m2,gravity_m_s2,*,density_kg_m3=1700):
  mass=density_kg_m3*thickness_m*area_m2
  return dict(mass_kg=mass,weight_N=mass*gravity_m_s2,areal_mass_kg_m2=density_kg_m3*thickness_m,pressure_vertical_Pa=density_kg_m3*thickness_m*gravity_m_s2,
              convention='thickness measured normal to local actual surface; area is actual surface area; weight acts globally vertical, not surface-normal; mass added once')
-def contact_parameters(area_m2,adjacent_E_Pa,adjacent_G_Pa,element_height_m,max_pressure_Pa,allowed_penetration_m,mu,*,penalty_factor=10.,adhesion_Pa=0.):
- _positive(area_m2=area_m2,adjacent_E_Pa=adjacent_E_Pa,adjacent_G_Pa=adjacent_G_Pa,element_height_m=element_height_m,max_pressure_Pa=max_pressure_Pa,allowed_penetration_m=allowed_penetration_m,penalty_factor=penalty_factor)
- if not math.isfinite(mu) or mu<0 or not math.isfinite(adhesion_Pa) or adhesion_Pa<0:raise ValueError('nonnegative mu and adhesion required')
- kn=max(penalty_factor*adjacent_E_Pa/element_height_m,max_pressure_Pa/allowed_penetration_m)
- kt=penalty_factor*adjacent_G_Pa/element_height_m
- return dict(Kn_N_m=kn*area_m2,Kt_N_m=kt*area_m2,mu=mu,cohesive_force_N=adhesion_Pa*area_m2,area_m2=area_m2,estimated_penetration_m=max_pressure_Pa/kn,
-             scope='interface penalty only, NOT foundation impedance; test penalty0.5/1/2 and mesh sensitivity; no cohesive tension bond implied')
-def radiation_dashpots(density_kg_m3,K_Pa,G_Pa,area_m2):
- _positive(density_kg_m3=density_kg_m3,K_Pa=K_Pa,G_Pa=G_Pa,area_m2=area_m2)
- vs=math.sqrt(G_Pa/density_kg_m3);vp=math.sqrt((K_Pa+4*G_Pa/3)/density_kg_m3)
- return dict(Vs_m_s=vs,Vp_m_s=vp,Ct_N_s_m=density_kg_m3*vs*area_m2,Cn_N_s_m=density_kg_m3*vp*area_m2,
-             scope='local plane-wave absorbing boundary approximation, not static foundation spring; assign only on appropriate far boundaries; do not duplicate radiation damping')
+from SSI.parameters import contact_parameters, radiation_dashpots
+
 def reduced_Q(m):
  E1,E2,nu,G=m['E1_Pa'],m['E2_Pa'],m['nu12'],m['G12_Pa'];den=1-nu*nu*E2/E1
  if den<=0:raise ValueError('nonpositive orthotropic compliance')

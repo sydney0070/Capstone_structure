@@ -1,0 +1,26 @@
+{
+  "archived_on": "2026-11-23",
+  "source_id": "G16",
+  "file": "01_ground/G16_Kenda_2020_Compliance.pdf",
+  "sha256": "5d1b00886d35aaeede666ae42e3df70984091ef95bbd79fc8204387964b450a9",
+  "pdf_pages": 25,
+  "table_checked": "Table1 PDF p.4; extracted and visually inspected",
+  "attempts": [
+    {
+      "url": "https://oatao.univ-toulouse.fr/26921/1/Kenda_26921.pdf",
+      "result": "timeout"
+    },
+    {
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2020JE006387",
+      "result": "403"
+    },
+    {
+      "url": "https://web.lmd.jussieu.fr/~aslmd/pub/REF/2020JGRE..12506387K.pdf",
+      "result": "404"
+    },
+    {
+      "url": "https://hal.science/hal-03657932/document",
+      "result": "PDF retrieved and verified"
+    }
+  ]
+}

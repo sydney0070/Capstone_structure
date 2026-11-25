@@ -1,0 +1,133 @@
+[
+  {
+    "id": "musiol2016",
+    "url": "https://gfzpublic.gfz.de/rest/items/item_1802896_4/component/file_1802898/content",
+    "destination": "01_ground/musiol_2016_basalt.pdf",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "application/pdf; charset=UTF-8",
+    "final_url": "https://gfzpublic.gfz.de/rest/items/item_1802896_4/component/file_1802898/content",
+    "status": "saved",
+    "bytes": 3274003,
+    "sha256": "f8bc0d93dfc261f4d7e0db36d2839650e185862a352445a8f196f76530c7947b"
+  },
+  {
+    "id": "spohn2022",
+    "url": "https://link.springer.com/content/pdf/10.1007/s11214-022-00941-z.pdf",
+    "destination": "01_ground/spohn_2022_insight_hp3.pdf",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "application/pdf",
+    "final_url": "https://link.springer.com/content/pdf/10.1007/s11214-022-00941-z.pdf?error=cookies_not_supported&code=d9cc1f5e-1ee0-4757-8a52-c0e5111f4a2b",
+    "status": "saved",
+    "bytes": 14154940,
+    "sha256": "5dd3372f576c7ccf0e23790d7c240e5371050a6c28998e7911c516a6d506e340"
+  },
+  {
+    "id": "lunar_profile",
+    "url": "https://ntrs.nasa.gov/api/citations/20220018853/downloads/LPSC%202023%20Abstract_Connolly_Carrier_v2.pdf",
+    "destination": "01_ground/connolly_carrier_2023_lunar_profile.pdf",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "application/pdf",
+    "final_url": "https://ntrs.nasa.gov/api/citations/20220018853/downloads/LPSC%202023%20Abstract_Connolly_Carrier_v2.pdf",
+    "status": "saved",
+    "bytes": 149514,
+    "sha256": "8fed5f0c72d12f39f6e1237ec03edc397c46ea2a553540736a58ebe7ea087617"
+  },
+  {
+    "id": "hydro6061",
+    "url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+    "destination": "03_candidates/hydro_6061_2019.pdf",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "application/pdf",
+    "final_url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+    "status": "saved",
+    "bytes": 419400,
+    "sha256": "cc3cc79ef34d7ccd2a69fe5216f726be23d23d0b07e12c2ea1091adbba7fd009"
+  },
+  {
+    "id": "niar_as4",
+    "url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+    "destination": null,
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "text/html",
+    "final_url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+    "status": "unavailable",
+    "error": "response is not a PDF"
+  },
+  {
+    "id": "nist6061",
+    "url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061",
+    "destination": "03_candidates/nist_6061_t6.html",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061",
+    "status": "saved",
+    "bytes": 83310,
+    "sha256": "d93b08cc5d7cf94a03b2b9e72e4bbd0cef779dce75ea310070a180be7ec07d70"
+  },
+  {
+    "id": "dp",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+    "destination": "04_model_docs/DruckerPrager.html",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+    "status": "saved",
+    "bytes": 25332,
+    "sha256": "379ad6335575f55b1c0223432627c6a7da4f5f6d26b16a4b20111c72419e7295"
+  },
+  {
+    "id": "pdmy02",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+    "destination": "04_model_docs/PressureDependentMultiYield02.html",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+    "status": "saved",
+    "bytes": 26080,
+    "sha256": "fc3e785ab22f421f4aa7ce889d1caa4af5be59f5d41140f26351c06b1370d754"
+  },
+  {
+    "id": "steel02",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html",
+    "destination": "04_model_docs/Steel02.html",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html",
+    "status": "saved",
+    "bytes": 24697,
+    "sha256": "f0f1444bf83857b18407733b30375560ef33b834de881175f81f03734b272e9d"
+  },
+  {
+    "id": "concrete02",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html",
+    "destination": "04_model_docs/Concrete02.html",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html",
+    "status": "saved",
+    "bytes": 21069,
+    "sha256": "57320e03907e654a63c23a602c45fa693ed20861a72a5b267da1ce34448aa144"
+  },
+  {
+    "id": "flat_slider",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/Flat_Slider_Bearing_Element",
+    "destination": "04_model_docs/FlatSliderBearing.html",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "text/html; charset=UTF-8",
+    "final_url": "https://opensees.berkeley.edu/wiki/index.php/Flat_Slider_Bearing_Element",
+    "status": "saved",
+    "bytes": 30718,
+    "sha256": "5a49dc5d995ef62471b45aee187c6c45734c5b6ba8cf1544a38b2fb20e55db20"
+  },
+  {
+    "id": "dp_engine_340",
+    "url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/material/nD/UWmaterials/DruckerPrager.cpp",
+    "destination": "04_model_docs/DruckerPrager_v3.4.0.cpp",
+    "attempted_on": "2026-11-09 Asia/Seoul",
+    "content_type": "text/plain; charset=utf-8",
+    "final_url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/material/nD/UWmaterials/DruckerPrager.cpp",
+    "status": "saved",
+    "bytes": 26517,
+    "sha256": "f421155becb6ad5a1215b14f41cb4d38e894ef53a44484b8fd05877d2f49414a"
+  }
+]

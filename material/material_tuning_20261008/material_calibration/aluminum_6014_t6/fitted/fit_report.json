@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "E": 60000000.0,
+    "sig0": 171541.8530233908,
+    "sigInf": 300000.0,
+    "delta": 23.87726258624206
+  },
+  "train_nrmse": 0.025612147898171553,
+  "optimizer_success": true,
+  "optimizer_message": "Optimization terminated successfully.",
+  "evaluations": 1542,
+  "failed_trial_examples": [],
+  "seed": 20261008,
+  "opensees": "3.8.0",
+  "synthetic": false,
+  "validation_nrmse": 0.02448727933558718
+}

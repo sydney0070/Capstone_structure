@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "hyperboloid",
+  "material": "shell_sulfur_concrete",
+  "planet": "moon",
+  "support": "linear_springs",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 15000000.0,
+    "nu": 0.2,
+    "rho": 2.0,
+    "thickness": 0.02
+  },
+  "nodes": 9408,
+  "elements": 9216,
+  "surface_area_m2": 176.94900253646972,
+  "mass_tonne": 7.077960101459124,
+  "weight_kN": 11.46629536436378,
+  "max_displacement_m": 7.254297195436572e-05,
+  "min_uz_m": -7.231419163157506e-05,
+  "max_uz_m": -1.8249990196443348e-05,
+  "mean_base_uz_m": -1.8249990196449084e-05,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -2.1170565300820954e-14,
+    2.7408752363229534e-14,
+    2.291500322826323e-13
+  ],
+  "moment_residual_kNm": [
+    -1.1685315224699216e-12,
+    -7.173376476155013e-13,
+    9.119808286111892e-15
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -11.46629536436385
+  ],
+  "relative_force_residual": 2.0211618635190528e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

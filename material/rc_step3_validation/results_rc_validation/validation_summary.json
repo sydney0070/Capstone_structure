@@ -1,0 +1,148 @@
+{
+  "status": "PROTOTYPE_NUMERICAL_VERIFICATION_NOT_CALIBRATION",
+  "tests": {
+    "axial_equilibrium": {
+      "load_N": -360000.0,
+      "support_reaction_N": 359999.99999999045,
+      "absolute_force_imbalance_N": 9.546056389808655e-09,
+      "relative_force_imbalance": 2.651682330502404e-14,
+      "equilibrium_pass_1e-4": true,
+      "fiber_results": {
+        "concrete_bottom": {
+          "status": "RECORDED",
+          "points": 1,
+          "min_stress_MPa": -1.42451,
+          "max_stress_MPa": -1.42451,
+          "min_strain": -4.8061e-05,
+          "max_strain": -4.8061e-05
+        },
+        "steel_bottom": {
+          "status": "RECORDED",
+          "points": 1,
+          "min_stress_MPa": -9.6122,
+          "max_stress_MPa": -9.6122,
+          "min_strain": -4.8061e-05,
+          "max_strain": -4.8061e-05
+        },
+        "steel_top": {
+          "status": "RECORDED",
+          "points": 1,
+          "min_stress_MPa": -9.6122,
+          "max_stress_MPa": -9.6122,
+          "min_strain": -4.8061e-05,
+          "max_strain": -4.8061e-05
+        },
+        "concrete_top": {
+          "status": "RECORDED",
+          "points": 1,
+          "min_stress_MPa": -1.42451,
+          "max_stress_MPa": -1.42451,
+          "min_strain": -4.8061e-05,
+          "max_strain": -4.8061e-05
+        }
+      }
+    },
+    "increment_60": {
+      "status": "COMPLETED",
+      "points": 541,
+      "max_abs_force_kN": 76.13828562821895,
+      "endpoint_force_kN": 37.97246346259575,
+      "endpoint_displacement_m": -3.144186300207963e-18,
+      "support_reaction_x_N": -37972.46348162631,
+      "support_reaction_moment_Nm": 113917.39039141117,
+      "horizontal_equilibrium_rel": 5.011675229579121e-10,
+      "path_integral_J": 2957.428210542051,
+      "fiber_results": {
+        "concrete_bottom": {
+          "status": "RECORDED",
+          "points": 540,
+          "min_stress_MPa": -21.1152,
+          "max_stress_MPa": 2.9892,
+          "min_strain": -0.000911587,
+          "max_strain": 0.0172556
+        },
+        "steel_bottom": {
+          "status": "RECORDED",
+          "points": 540,
+          "min_stress_MPa": -324.025,
+          "max_stress_MPa": 417.523,
+          "min_strain": -0.000382555,
+          "max_strain": 0.0159462
+        },
+        "steel_top": {
+          "status": "RECORDED",
+          "points": 540,
+          "min_stress_MPa": -349.617,
+          "max_stress_MPa": 418.578,
+          "min_strain": -0.000342298,
+          "max_strain": 0.0149277
+        },
+        "concrete_top": {
+          "status": "RECORDED",
+          "points": 540,
+          "min_stress_MPa": -13.1756,
+          "max_stress_MPa": 2.99928,
+          "min_strain": -0.000502252,
+          "max_strain": 0.0161697
+        }
+      }
+    },
+    "increment_120": {
+      "status": "COMPLETED",
+      "points": 1081,
+      "max_abs_force_kN": 76.13827898385127,
+      "endpoint_force_kN": 37.97236162901751,
+      "endpoint_displacement_m": 5.46979996018937e-17,
+      "support_reaction_x_N": -37972.36195273022,
+      "support_reaction_moment_Nm": 113917.08495842929,
+      "horizontal_equilibrium_rel": 8.52495592774645e-09,
+      "path_integral_J": 2958.204265675493,
+      "fiber_results": {
+        "concrete_bottom": {
+          "status": "RECORDED",
+          "points": 1080,
+          "min_stress_MPa": -21.1152,
+          "max_stress_MPa": 2.99748,
+          "min_strain": -0.000911588,
+          "max_strain": 0.0172555
+        },
+        "steel_bottom": {
+          "status": "RECORDED",
+          "points": 1080,
+          "min_stress_MPa": -324.028,
+          "max_stress_MPa": 417.525,
+          "min_strain": -0.000382555,
+          "max_strain": 0.015946
+        },
+        "steel_top": {
+          "status": "RECORDED",
+          "points": 1080,
+          "min_stress_MPa": -349.619,
+          "max_stress_MPa": 418.568,
+          "min_strain": -0.000342298,
+          "max_strain": 0.0149276
+        },
+        "concrete_top": {
+          "status": "RECORDED",
+          "points": 1080,
+          "min_stress_MPa": -13.1928,
+          "max_stress_MPa": 2.99928,
+          "min_strain": -0.000503015,
+          "max_strain": 0.0161695
+        }
+      }
+    },
+    "increment_sensitivity": {
+      "rms_force_difference_kN": 0.017825301713289155,
+      "max_force_difference_kN": 0.1763657857344043,
+      "peak_force_rel_difference": 8.726711157429558e-08
+    }
+  },
+  "warnings": [
+    "Applied load at tip is a reference unit load; reported load factor has units N.",
+    "At end of displacement-controlled cycles, u=0 does not mean F=0. Residual displacement requires load-controlled unloading to zero force.",
+    "Fiber recorder covers selected concrete/steel fibers only, not all fibers.",
+    "Directly comparing path-integral values for open paths does not prove dissipated energy.",
+    "Increment sensitivity on 60 vs 120 subdivisions does not establish mesh/objectivity or experimental calibration."
+  ]
+}

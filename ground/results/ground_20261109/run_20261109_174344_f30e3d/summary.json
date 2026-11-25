@@ -1,0 +1,591 @@
+{
+  "model": "Mars ground only",
+  "complete": true,
+  "safe_verdict": false,
+  "parameters": {
+    "ground_width": 60.0,
+    "spacing": 5.0,
+    "depth": 12.0,
+    "duration": 1.0,
+    "warmup": 1.0,
+    "dt": 0.05,
+    "freqmax": 1.0,
+    "max_runtime": 180.0,
+    "static_steps": 20,
+    "max_frames": 101,
+    "quick": true,
+    "static_only": false,
+    "ground_history": true,
+    "no_html": false,
+    "visual_scale": null,
+    "boundary": "viscous-sides",
+    "output_dir": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_20261109/run_20261109_174344_f30e3d",
+    "worker": true
+  },
+  "structure_count": 0,
+  "foundation_count": 0,
+  "contact_count": 0,
+  "code_sha256": {
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_only_20261109.py": "3b2cca45ba5038807e25d723ab4cd9af0c39eb96ed058859abade9592a7bfb50",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_20261107.py": "9c71639c5778b42966e5e54f4ee00be5a8b233bb565e56573f5ea4192d3f02ff",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/response_viewer_20261109.py": "8b06fd663f8c6b2b471a5cf4b27898692dff1aa3b919a7a9b84ccf6007be689e",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/insight_dynamic_viewer.py": "befbdd5cc977202f077d700b4f914ee9971f2a2d9c51dc0be5bb573f60d8073a",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/insight_motion.py": "02afb5184bb7ce0d467c6567647097e4697920ebab6a8088606fc200c129675a",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_history_20261109.py": "dc559a6429698df206880d3127d8b5af3b55fb561187cb90415eeeb045925275",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/insight_site_dem.py": "1b877a307e012ed2f8184d580c764b9f9fcd60d204984e8636e3cfb96229d301",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_modeling.py": "3a920227eb62469d0be4183ca534812e0061297fa7293889f22efaf89ef03aad",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/material/materials_20261107.py": "1a248656da3e367eb9bf8244b40236f698cb907440182f93e6210ed5c2fb8417",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/SSI/interface.py": "2ff51d688ed7f1b2682d25f52d2d017a2d711ee71278c77b1ddc2b7e29b96a2c",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/SSI/__init__.py": "7c0f89987f8fabee3775377d684a557b67e05a298526ec0a2ff469adfd799e85",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/SSI/parameters.py": "42f2120e14c092b443b1f30f05a43f74a4e6a631081c2d37b9cf4749eb7a5b38",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/SSI/connectors_20261109.py": "efaf6de51a4ff0d73ae8bd70cb6cc51d57cabc02e92cd1d1d4e7e1836643ba54",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/SSI/contact.py": "fff3ed014429054d1a0127edc0fa37e1ab7f1a78e6f09d0f9d8519cd2dd64ae1",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/conforming_mesh.py": "db0821812eae3139311e7909a2352d96fc73385cd95a4a5a9c72b4fd3cb6ea42",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/process_control.py": "8095e20a37fdcd87ab4fdb806d040b2be73f3dda41631791fac6ab9b3991f6ac",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/verification.py": "0433d7eb275ff6e90eb6552bd11c0fcea2df3988c1e1d80a391cb6137a77a0eb",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/run_journal.py": "a37b9e0ac97cc5337be1c0eb336bdcd3af8947216d670e4f6bf790b10d8e49e4",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/viewer.py": "2591561c7ddc761731737f2b0c6040d8cac65cce6b43b89c2fc50b9d9efba25a",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/config.py": "24e8aed92c94252c715b18b3f7911bf076c6e89614c941fb164b7c89aafbcede",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/solver.py": "df207bb9462f928313f0d8bdad13e8923e904b59efcca37312924881a443b9ca",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/materials.py": "d3c4818eaadb5f2e944b30c2275a3e627c1ce96e7baec802aa51268cc88215af",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/io.py": "d6f6522369610c88ca807250638678a2f8869be4aeb26f54ef1591c96b281fb2",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/interface.py": "0eea6d228ec72c5af60092f56da92d7d65433717ac716f2e5f4cdab8bc2803fa",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/terrain.py": "892cb2b70e28c835dd62dc8b3f5a25f732affc66f82bd67bcb6e53d219e82d1d",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/__init__.py": "7f939c94b68e3afd4eff3485d6ba1ef0234451bb3ce810549b1bad29dbd6de6d",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/bounded_run.py": "5575f960c3c42246efe332794f6b459a1c09a23e86dc02a79df9f7163241c4a2",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/mesh.py": "cc51e1830c3ed287228e3ebcee6b03aac4a16d569b86e6d45e3c6b871e2c1753",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/sensitivity.py": "734d7affb349f85465b6e7e48c8f0cbe14444403767910804eb1b1932a39d8ec",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/cli.py": "a8004226b7662898cdb3d5967879f73c433fc254ed6f186685e1641309ec34da",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/viewer_verification.py": "c08d41f12002ce98c27df09991d87328bd543c59c66a5c671c351080810b59dc",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/dynamics.py": "d08c8011faaa14a31c209752b16c2202ea49ddfb88bf026dabfb24523526f2db",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/smoke.py": "fa75bd6560e17e7891812cebc16071972d82a2102e904a723899ea011094a764",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Earth_pdmy02_optional.json": "3306e0035769a142bc238a28ee59e5f2a9fe7fd8c2dd95eb7f0d5b8b169e69a4",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Mars_large_candidate.json": "1aec4d850056eac0d0fc5c048954793bb27338058d33f945f75ac92f3f0de51d",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Earth_large_candidate.json": "e77dc05cb5586e9306fddbe5027040c66de37f2a801ddd6084d7f86a596ed098",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Moon.json": "544cee5906b8dcb0fb90ddbfe41d9dcaacb9b824e7fe2dc6b11333b936b9d5b2",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Earth.json": "6dc1a70363984f1dd6bbe345df7851e5ed20b40a5f6fd0724e40e2a06f2ac97a",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Moon_large_candidate.json": "4633b37b41137a2e684bbc959d927b03f2735c33bebb24a2005682f78ad35272",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/materials.json": "0f0db5e41ef6bb6c88cfe34b585d9f1c96b00e71343452e834204121ceae2d76",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Mars.json": "043fa2821be40bdc3ea624f8ffd3f2047ec71529aaa65e2b2772f90bf6869662"
+  },
+  "runtime": {
+    "python": "3.10.18 (main, Jun  5 2025, 08:13:51) [Clang 14.0.6 ]",
+    "opensees": "3.4.0",
+    "numpy": "2.2.6"
+  },
+  "site": {
+    "station": "ELYSE",
+    "latitude_deg": 4.502384,
+    "longitude_deg": 135.623447,
+    "row_0based": 7551.892876146303,
+    "col_0based": 3659.5991311532416,
+    "projection": "north-up planetocentric equirectangular",
+    "pixel_scale_m": 1.0117900853855,
+    "caveat": "Coordinate conversion, not independent DEM/station datum co-registration verification",
+    "kind": "insight_station_centered_flat_reference",
+    "width_m": 60.0,
+    "local_origin": "ELYSE StationXML coordinates; x East, y North, z Up",
+    "local_z0_dem_elevation_m": -2616.8784595678494,
+    "station_metadata_elevation_m": -2613.4,
+    "dem_minus_station_elevation_m": -3.4784595678493133,
+    "dem_elevation_range_m": [
+      -2617.25174820614,
+      -2615.6917087037377
+    ],
+    "max_flattening_difference_m": 1.1867508641116729,
+    "terrain_mode": "horizontal reference at station DEM elevation; actual relief sampled but not applied",
+    "geology_scope": "Unchanged assumed InSight crust proxy + JEZ-1 + basalt; not measured ELYSE stratigraphy",
+    "source_files": {
+      "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/DTEEC_037262_1845_036761_1845_U01.IMG": "303c16c214aa7c626fde35e34e0053f0a031fc7c0e9848893a0ec0953762d300",
+      "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/stationxml.xb.elyse.2019.151.xml": "b947292143b43383785e700f0aef0f30918355c7deb9ec5cb109ea47baaf7493"
+    },
+    "coordinate_caveat": "Station metadata anchor near InSight lander, not an independent lander-to-SEIS survey; DEM vertical disagreement retained"
+  },
+  "ground_elements": 1176,
+  "ground_nodes": 1575,
+  "mesh": {
+    "nx": 15,
+    "ny": 15,
+    "nz": 6,
+    "max_aspect_ratio": 25.0,
+    "depth_levels_m": [
+      0.0,
+      0.2,
+      0.6000000000000001,
+      1.0,
+      4.5,
+      8.0,
+      12.0
+    ],
+    "orientation": {
+      "operations": [],
+      "mean_dx_m": 4.285714285714286,
+      "mean_dy_m": 4.285714285714286
+    }
+  },
+  "ground_materials": {
+    "basalt_elastic_analogue": {
+      "law": "ElasticIsotropic",
+      "E_Pa": 40000000000.0,
+      "nu": 0.3,
+      "G_Pa": 15384615384.615383,
+      "K_Pa": 33333333333.33333,
+      "density_kg_m3": 2900,
+      "role": "coherent rock domains / basal rock analogue",
+      "status": "PUBLISHED_MODEL_PARAMETERS_TRANSFERRED_AS_ANALOGUE",
+      "sources": [
+        "musiol2016"
+      ],
+      "assumptions": [
+        "E40GPa nu.30 rho2900 from crust column Table1, not a tested local core",
+        "shared basalt analogue for all three bodies, not a claim that every Earth/Moon site is basaltic",
+        "no joints, crushing or tensile failure; bonded continuum boundaries",
+        "clast/lens distribution and rock depth are explicit scenario assumptions"
+      ],
+      "name": "basalt_elastic_analogue",
+      "tag": 10000,
+      "active_law": "ElasticIsotropic",
+      "mass_in_material": true
+    },
+    "mars_insight_duricrust_proxy": {
+      "law": "DruckerPrager",
+      "E_Pa": 11480000.0,
+      "nu": 0.28,
+      "G_Pa": 4484375.0,
+      "K_Pa": 8696969.696969697,
+      "density_kg_m3": 1200,
+      "phi_deg": 30.0,
+      "c_Pa": 5800.0,
+      "psi_deg": 0.0,
+      "role": "shallow cohesive crust analogue",
+      "status": "LITERATURE_STRENGTH_AND_BULK_WAVE_MODULUS_PROXY",
+      "sources": [
+        "spohn2022"
+      ],
+      "assumptions": [
+        "c5.8kPa inferred at phi30 rho1200; not an independent triaxial fit",
+        "E11.48MPa nu.28 are shallow bulk wave estimates at40-80Hz, assigned to crust as proxy",
+        "not a measured static crust-only E; sensitivity0.5/1/2 required",
+        "top1cm dust omitted in prepared-surface reference; no vacuum/thermal or rate calibration"
+      ],
+      "name": "mars_insight_duricrust_proxy",
+      "tag": 10001,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    },
+    "mars_jez1_peak": {
+      "role": "dry simulant ground reference",
+      "law": "DruckerPrager",
+      "E_Pa": 30000000.0,
+      "nu": 0.3,
+      "G_Pa": 11538461.538461538,
+      "K_Pa": 24999999.999999996,
+      "density_kg_m3": 1840,
+      "phi_deg": 40.6,
+      "c_Pa": 3100,
+      "psi_deg": 0,
+      "status": "PUBLISHED_SHEAR_STRENGTH_STIFFNESS_UNIDENTIFIED",
+      "sources": [
+        "jez1",
+        "dp"
+      ],
+      "assumptions": [
+        "E30MPa and nu.30 explicitly assumed; E sensitivity0.5/1/2 mandatory",
+        "triaxial-matched DP cannot exactly reproduce measured direct shear at every path",
+        "no liquefaction parameters inferred from dry direct shear"
+      ],
+      "name": "mars_jez1_peak",
+      "tag": 10002,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    }
+  },
+  "ground_revision": {
+    "date": "20261107",
+    "materials_checked": [
+      "basalt_elastic_analogue",
+      "mars_insight_duricrust_proxy",
+      "mars_jez1_peak"
+    ],
+    "max_element_aspect_ratio": 25.0,
+    "mass_kg": 94291200.00000021,
+    "site_claim": "ELYSE-centred flat ground only; analogue layers, not measured site stratigraphy",
+    "constitutive_scope": "DP pressure-independent elastic stiffness + frictional plasticity; no G/Gmax/damping curve refit"
+  },
+  "assembly_gate": "only 3DOF ground nodes and bbarBrick ground elements before boundary activation",
+  "resolution": {
+    "target_frequency_Hz": 1.0,
+    "min_elements_per_shear_wavelength": 12.226167292601009,
+    "suggested_dt_s": 9.282856703161403e-05,
+    "mesh_target_pass": true,
+    "scope": "Frequency/mesh heuristic using reference G,K; not a time/mesh convergence proof",
+    "integration_dt_s": 0.05,
+    "samples_per_input_cycle": 20.0,
+    "temporal_bandwidth_pass": true
+  },
+  "elapsed_s": 38.462139416020364,
+  "gravity": {
+    "final_factor": 1.0,
+    "attempts": 20,
+    "linear_system": "UmfPack",
+    "force_balance": {
+      "applied_N": [
+        0.0,
+        0.0,
+        -349914643.200002
+      ],
+      "reaction_N": [
+        -8.149072527885437e-10,
+        -1.4842953532934189e-09,
+        349914643.1999997
+      ],
+      "residual_N": [
+        -8.149072527885437e-10,
+        -1.4842953532934189e-09,
+        -2.3245811462402344e-06
+      ],
+      "relative_error": 6.643282320786271e-15
+    },
+    "physical_support_force_error": 6.6432821208486145e-15,
+    "physical_support_moment_error": 2.82841551650987e-17,
+    "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact"
+  },
+  "static_history": {
+    "committed_samples": 21,
+    "gauss_points": 9408,
+    "max_plastic_strain_norm": 4.803027861140032e-19,
+    "max_incremental_plastic_strain_norm": 4.803027861140032e-19,
+    "max_abs_strain": 0.001044989325714287,
+    "final": {
+      "max_plastic_strain_increment_norm": 3.300256027089074e-19,
+      "incremental_plastic_GP_count_above_1e_8": 0,
+      "element_at_max_increment": 10806,
+      "ip_at_max_increment": 5,
+      "time": 1.0,
+      "gauss_points": 9408,
+      "max_plastic_strain_norm": 3.300256027089074e-19,
+      "plastic_GP_count_above_1e_8": 0,
+      "element_at_max": 10806,
+      "ip_at_max": 5,
+      "abs_strain_max": 0.001044989325714287,
+      "internal_work_incremental_J": 331393.53432576044,
+      "plastic_work_incremental_J": -4.508011552544514e-12,
+      "elastic_energy_change_J": 331393.5343257605,
+      "work_decomposition_residual_J": -5.820766091346741e-11,
+      "ground_volume_m3": 43199.999999999425,
+      "plastic_volume_above_1e_8_m3": 0.0,
+      "incremental_plastic_volume_above_1e_8_m3": 0.0,
+      "integrated_plastic_strain_norm_m3": 2.315711997710836e-15,
+      "integrated_incremental_plastic_strain_norm_m3": 2.315711997710836e-15,
+      "volume_mean_incremental_plastic_strain_norm": 5.360444439145525e-20
+    },
+    "scope": "all 8 GP of positive-Jacobian trilinear bbarBrick; detJ weights; e_plastic=e-C^-1 sigma for constant elastic moduli; incremental trapezoidal work, not full system energy or damage acceptance"
+  },
+  "boundary": {
+    "kind": "fixed_base_viscous_sides",
+    "released_dofs": 360,
+    "side_nodes": 336,
+    "base_nodes_retained": 225,
+    "transition_movement_m": 5.258064976546642e-18,
+    "caveat": "Reference impedances, fixed base, no free-field boundary; static reactions conserved; rest/attenuation checks required"
+  },
+  "motion": {
+    "data_type": "surface_observed_acceleration_NOT_base_input",
+    "units": "m/s^2",
+    "coordinate_system": "E,N,Up",
+    "dt_s": 0.1,
+    "samples": 29999,
+    "start_utc": "2022-05-04T23:13:07.901000Z",
+    "source_file": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/MARS_DATA/S1222a_ACC.mseed",
+    "event": "S1222a",
+    "channels": [
+      "XB.ELYSE.02.BHE",
+      "XB.ELYSE.02.BHN",
+      "XB.ELYSE.02.BHZ"
+    ],
+    "frequency_band_hz": [
+      0.05,
+      1.0
+    ],
+    "response_removed_in_this_step": false,
+    "units_basis": "Supplied S1222a_ACC product assumed calibrated in m/s^2; MiniSEED has no unit metadata",
+    "caution": "Surface SEIS data must not be treated as verified bedrock input motion.",
+    "source_sha256": "ba80d301a7c1c7ac18290bcdc68b238e75df687e82525a1c7e0308537e0b9b85",
+    "source_peak_s": 1124.8999999996163,
+    "source_start_s": 1123.3999999996167,
+    "target_start_source_s": 1124.3999999996165,
+    "target_end_source_s": 1125.3999999996163,
+    "target_start_model_s": 0.9999999999996589,
+    "effective_warmup_s": 0.9999999999996589,
+    "requested_warmup_s": 1.0,
+    "requested_duration_s": 1.0,
+    "effective_duration_s": 0.9999999999996589,
+    "requested_target_start_s": null,
+    "warmup_truncated": false,
+    "allow_short_warmup": false,
+    "selection": "peak_acceleration_window_NOT_global_max_displacement",
+    "target_retapered": false,
+    "zero_warmup_warning": false,
+    "units_verification": "Supplied ACC product assumed m/s2; original product calibration history still external",
+    "history_caveat": "Truncated preceding history; warmup sensitivity required for nonlinear assessment"
+  },
+  "dynamic_history": {
+    "committed_samples": 41,
+    "gauss_points": 9408,
+    "max_plastic_strain_norm": 5.387449170129892e-19,
+    "max_incremental_plastic_strain_norm": 7.477262203573247e-19,
+    "max_abs_strain": 0.0010449908589152289,
+    "final": {
+      "max_plastic_strain_increment_norm": 5.44773242066509e-19,
+      "incremental_plastic_GP_count_above_1e_8": 0,
+      "element_at_max_increment": 10943,
+      "ip_at_max_increment": 2,
+      "time": 2.000000000000001,
+      "gauss_points": 9408,
+      "max_plastic_strain_norm": 4.729812561200143e-19,
+      "plastic_GP_count_above_1e_8": 0,
+      "element_at_max": 10963,
+      "ip_at_max": 5,
+      "abs_strain_max": 0.0010449904536171185,
+      "internal_work_incremental_J": 0.17245851018238606,
+      "plastic_work_incremental_J": 1.2983942071383648e-12,
+      "elastic_energy_change_J": 0.1724585102056153,
+      "work_decomposition_residual_J": -2.4527657682682502e-11,
+      "ground_volume_m3": 43199.999999999425,
+      "plastic_volume_above_1e_8_m3": 0.0,
+      "incremental_plastic_volume_above_1e_8_m3": 0.0,
+      "integrated_plastic_strain_norm_m3": 3.017947328143681e-15,
+      "integrated_incremental_plastic_strain_norm_m3": 3.607710979425929e-15,
+      "volume_mean_incremental_plastic_strain_norm": 8.351182822745316e-20
+    },
+    "scope": "all 8 GP of positive-Jacobian trilinear bbarBrick; detJ weights; e_plastic=e-C^-1 sigma for constant elastic moduli; incremental trapezoidal work, not full system energy or damage acceptance"
+  },
+  "dynamic": {
+    "steps": 40,
+    "committed_samples": 40,
+    "max_increment_m": 1.545349461003687e-08,
+    "attempts": [
+      {
+        "t": 0.0,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.05,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.1,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.15000000000000002,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.2,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.25,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.3,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.35,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.39999999999999997,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.44999999999999996,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.49999999999999994,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.5499999999999999,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.6,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.65,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.7000000000000001,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.7500000000000001,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.8000000000000002,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.8500000000000002,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.9000000000000002,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 0.9500000000000003,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.0000000000000002,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.0500000000000003,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.1000000000000003,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.1500000000000004,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.2000000000000004,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.2500000000000004,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.3000000000000005,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.3500000000000005,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.4000000000000006,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.4500000000000006,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.5000000000000007,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.5500000000000007,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.6000000000000008,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.6500000000000008,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.7000000000000008,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.7500000000000009,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.800000000000001,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.850000000000001,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.900000000000001,
+        "dt": 0.05,
+        "code": 0
+      },
+      {
+        "t": 1.950000000000001,
+        "dt": 0.05,
+        "code": 0
+      }
+    ],
+    "scope": "every committed substep; ground response only; relative to imposed base excitation"
+  },
+  "final_ground_state": {
+    "sampled_elements": 1176,
+    "integration_point": "1..8",
+    "sampled_gauss_points": 9408,
+    "abs_stress_component_max_Pa": 75674.80733048232,
+    "abs_strain_component_max": 0.0010449904536171185,
+    "DP_max_yield_function_Pa": -5751.194734267393,
+    "DP_element_at_max": 10362,
+    "DP_ip_at_max": 8,
+    "lunar_low_pressure_screen": {},
+    "scope": "8 Gauss point(s) per element at snapshot time. DP shear surface diagnostic only; tensile surface not checked. Mean pressure screen is not triaxial confinement validation. Not time extrema, plastic work, bearing capacity or failure verdict."
+  },
+  "viewer": {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_20261109/run_20261109_174344_f30e3d/ground_response.html",
+    "frames": 41,
+    "nodes": 1575,
+    "structures": 0,
+    "offline": true,
+    "reference": "dynamic"
+  }
+}

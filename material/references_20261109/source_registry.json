@@ -1,0 +1,509 @@
+{
+  "s355_coupon": {
+    "id": "s355_coupon",
+    "catalog_records": [
+      {
+        "catalog": "release",
+        "url": "https://doi.org/10.5281/zenodo.6965147",
+        "scope": "S355 J2+M HEM320 web selected room-temperature prefracture prefixes |strain| <= 0.02",
+        "local": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/reviewed_config.json",
+        "sha256": "485d09555f79915041b492a953abab9199d11b79bea963ae675ef89a6df3944b"
+      },
+      {
+        "catalog": "ground",
+        "url": "https://doi.org/10.5281/zenodo.6965147",
+        "scope": "S355 J2+M HEM320 web selected room-temperature prefracture prefixes |strain| <= 0.02",
+        "local": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/s355_hem320_web/reviewed_config.json",
+        "sha256": "485d09555f79915041b492a953abab9199d11b79bea963ae675ef89a6df3944b"
+      }
+    ],
+    "local_files": [
+      "02_structure/s355/provenance.json",
+      "02_structure/s355/reviewed_config.json"
+    ],
+    "title": "Database of Uniaxial Cyclic and Tensile Coupon Tests for Structural Metallic Materials, v1.0.0",
+    "used_by_materials": [
+      "steel_s355_coupon"
+    ]
+  },
+  "hydro6061": {
+    "id": "hydro6061",
+    "catalog_records": [
+      {
+        "catalog": "release",
+        "url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+        "location": "p2 tensile properties, T6/T6511 extruded products",
+        "scope": "minimum strength; no weld HAZ reduction or cyclic data"
+      },
+      {
+        "catalog": "ground",
+        "url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+        "location": "p2 tensile properties, T6/T6511 extruded products",
+        "scope": "minimum strength; no weld HAZ reduction or cyclic data"
+      }
+    ],
+    "local_files": [
+      "03_candidates/hydro_6061_2019.pdf"
+    ],
+    "download": {
+      "id": "hydro6061",
+      "url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+      "destination": "03_candidates/hydro_6061_2019.pdf",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "application/pdf",
+      "final_url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+      "status": "saved",
+      "bytes": 419400,
+      "sha256": "cc3cc79ef34d7ccd2a69fe5216f726be23d23d0b07e12c2ea1091adbba7fd009"
+    },
+    "url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+    "used_by_materials": [
+      "al6061_t6_extrusion"
+    ]
+  },
+  "nist6061": {
+    "id": "nist6061",
+    "catalog_records": [
+      {
+        "catalog": "release",
+        "url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061",
+        "location": "Young modulus polynomial, 2-295 K; fit error 1%"
+      },
+      {
+        "catalog": "ground",
+        "url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061",
+        "location": "Young modulus polynomial, 2-295 K; fit error 1%"
+      }
+    ],
+    "local_files": [
+      "03_candidates/nist_6061_t6.html"
+    ],
+    "download": {
+      "id": "nist6061",
+      "url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061",
+      "destination": "03_candidates/nist_6061_t6.html",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061",
+      "status": "saved",
+      "bytes": 83310,
+      "sha256": "d93b08cc5d7cf94a03b2b9e72e4bbd0cef779dce75ea310070a180be7ec07d70"
+    },
+    "url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061",
+    "used_by_materials": [
+      "al6061_t6_extrusion"
+    ]
+  },
+  "niar_as4": {
+    "id": "niar_as4",
+    "catalog_records": [
+      {
+        "catalog": "release",
+        "url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+        "location": "CAM-RP-2010-002 RevA, Table2-1 PDFp30 RTD normalized means; nominal ply .0074in; density specimens",
+        "scope": "dry 75F; mean qualification results, NOT design allowables; downloaded PDF blocked, table accessed through indexed primary PDF"
+      },
+      {
+        "catalog": "ground",
+        "url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+        "location": "CAM-RP-2010-002 RevA, Table2-1 PDFp30 RTD normalized means; nominal ply .0074in; density specimens",
+        "scope": "dry 75F; mean qualification results, NOT design allowables; downloaded PDF blocked, table accessed through indexed primary PDF"
+      }
+    ],
+    "local_files": [],
+    "download": {
+      "id": "niar_as4",
+      "url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+      "destination": null,
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "text/html",
+      "final_url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+      "status": "unavailable",
+      "error": "response is not a PDF"
+    },
+    "url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+    "used_by_materials": [
+      "cfrp_as4_8552_ud_rtd"
+    ]
+  },
+  "sintered2016": {
+    "id": "sintered2016",
+    "catalog_records": [
+      {
+        "catalog": "release",
+        "url": "https://www.hou.usra.edu/meetings/leag2016/eposter/5082.pdf",
+        "local": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/research/sintered_jsc1a_leag2016.pdf",
+        "scope": "Indyk/Benaroya 2016 JSC-1A sintered small cylinders, same-source groups; no tensile data",
+        "sha256": "be6521cead79a29980208847eef5e5e62ac7ba36ff274049c2352114f6049385"
+      },
+      {
+        "catalog": "ground",
+        "url": "https://www.hou.usra.edu/meetings/leag2016/eposter/5082.pdf",
+        "local": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_release_20261101/research/sintered_jsc1a_leag2016.pdf",
+        "scope": "Indyk/Benaroya 2016 JSC-1A sintered small cylinders, same-source groups; no tensile data",
+        "sha256": "be6521cead79a29980208847eef5e5e62ac7ba36ff274049c2352114f6049385"
+      }
+    ],
+    "local_files": [
+      "03_candidates/sintered_jsc1a_leag2016.pdf"
+    ],
+    "used_by_materials": [
+      "sintered_jsc1a_high_porosity",
+      "sintered_jsc1a_low_porosity"
+    ]
+  },
+  "lasp_jsc1a": {
+    "id": "lasp_jsc1a",
+    "catalog_records": [
+      {
+        "catalog": "release",
+        "local": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/jsc1a_lasp_review_20261019/triaxial_observations.json",
+        "scope": "LASP/JSC-1A Tons1-3 Earth-gravity dry drained triaxial summary; measured sigma3 15-60kPa; simulant not in-situ Moon",
+        "sha256": "0abb75eafcc0d70765b8e450f754fa632879119216b4ab277263ad2dd19b6863"
+      },
+      {
+        "catalog": "ground",
+        "local": "/Users/sydney/Desktop/capstone/Capstone_structure/material/material_tuning_20261008/material_calibration/jsc1a_lasp_review_20261019/triaxial_observations.json",
+        "scope": "LASP/JSC-1A Tons1-3 Earth-gravity dry drained triaxial summary; measured sigma3 15-60kPa; simulant not in-situ Moon",
+        "sha256": "0abb75eafcc0d70765b8e450f754fa632879119216b4ab277263ad2dd19b6863"
+      }
+    ],
+    "local_files": [
+      "01_ground/jsc1a_lasp/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf",
+      "01_ground/jsc1a_lasp/triaxial_observations.json",
+      "01_ground/moon_strength_fits.json"
+    ],
+    "url": "https://ares.jsc.nasa.gov/projects/simulants/attachments/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf",
+    "used_by_materials": [
+      "moon_field_proxy_17",
+      "moon_field_proxy_18",
+      "moon_field_proxy_19",
+      "moon_jsc1a_17_peak",
+      "moon_jsc1a_17_residual",
+      "moon_jsc1a_18_peak",
+      "moon_jsc1a_18_residual",
+      "moon_jsc1a_19_peak",
+      "moon_jsc1a_19_residual",
+      "shield_loose_jsc1a"
+    ]
+  },
+  "jez1": {
+    "id": "jez1",
+    "catalog_records": [
+      {
+        "catalog": "release",
+        "url": "https://www.mdpi.com/2076-3417/11/15/7052",
+        "scope": "dry tamped JEZ-1 Dr86.28%, direct shear .5mm/min, sigma_n25-75kPa soil,25-100kPa interfaces; simulant not in-situ Mars"
+      },
+      {
+        "catalog": "ground",
+        "url": "https://www.mdpi.com/2076-3417/11/15/7052",
+        "scope": "dry tamped JEZ-1 Dr86.28%, direct shear .5mm/min, sigma_n25-75kPa soil,25-100kPa interfaces; simulant not in-situ Mars"
+      }
+    ],
+    "local_files": [
+      "01_ground/jez1_2021.pdf",
+      "01_ground/jez1_inputs/published_inputs.json"
+    ],
+    "used_by_materials": [
+      "mars_jez1_peak",
+      "mars_jez1_residual"
+    ]
+  },
+  "pdmy02": {
+    "id": "pdmy02",
+    "catalog_records": [
+      {
+        "catalog": "release",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+        "scope": "suggested Dr50% sand parameters, illustrative not site calibration; G/K listed at80kPa whereas reference pressure listed101kPa"
+      },
+      {
+        "catalog": "ground",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+        "scope": "suggested Dr50% sand parameters, illustrative not site calibration; G/K listed at80kPa whereas reference pressure listed101kPa"
+      }
+    ],
+    "local_files": [
+      "04_model_docs/PressureDependentMultiYield02.html"
+    ],
+    "download": {
+      "id": "pdmy02",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+      "destination": "04_model_docs/PressureDependentMultiYield02.html",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+      "status": "saved",
+      "bytes": 26080,
+      "sha256": "fc3e785ab22f421f4aa7ce889d1caa4af5be59f5d41140f26351c06b1370d754"
+    },
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+    "used_by_materials": [
+      "earth_sand_dr50_dp_reference",
+      "earth_sand_dr50_dry_reference",
+      "earth_sand_dr50_pdmy02"
+    ]
+  },
+  "dp": {
+    "id": "dp",
+    "catalog_records": [
+      {
+        "catalog": "release",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+        "scope": "triaxial compression matching convention; same phi does not reproduce MC in all Lode-angle paths"
+      },
+      {
+        "catalog": "ground",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+        "scope": "triaxial compression matching convention; same phi does not reproduce MC in all Lode-angle paths"
+      }
+    ],
+    "local_files": [
+      "04_model_docs/DruckerPrager.html"
+    ],
+    "download": {
+      "id": "dp",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+      "destination": "04_model_docs/DruckerPrager.html",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+      "status": "saved",
+      "bytes": 25332,
+      "sha256": "379ad6335575f55b1c0223432627c6a7da4f5f6d26b16a4b20111c72419e7295"
+    },
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+    "used_by_materials": [
+      "mars_jez1_peak",
+      "mars_jez1_residual",
+      "moon_field_proxy_17",
+      "moon_field_proxy_18",
+      "moon_field_proxy_19",
+      "moon_jsc1a_17_peak",
+      "moon_jsc1a_17_residual",
+      "moon_jsc1a_18_peak",
+      "moon_jsc1a_18_residual",
+      "moon_jsc1a_19_peak",
+      "moon_jsc1a_19_residual"
+    ]
+  },
+  "pdmy02_table": {
+    "id": "pdmy02_table",
+    "catalog_records": [
+      {
+        "catalog": "ground",
+        "url": "https://opensees.berkeley.edu/wiki/index.php/PressureDependMultiYield02_Material",
+        "location": "suggested Dr30/50/75 table",
+        "scope": "constitutive examples, not a physical site"
+      }
+    ],
+    "local_files": [],
+    "used_by_materials": [
+      "earth_sand_dr30_dp_reference",
+      "earth_sand_dr30_dry_reference",
+      "earth_sand_dr75_dp_reference",
+      "earth_sand_dr75_dry_reference"
+    ]
+  },
+  "musiol2016": {
+    "id": "musiol2016",
+    "catalog_records": [
+      {
+        "catalog": "ground",
+        "url": "https://gfzpublic.gfz.de/rest/items/item_1802896_4/component/file_1802898/content",
+        "doi": "10.1002/2015JE004896",
+        "location": "Table1 crust column",
+        "scope": "basaltic elastic analogue; transfer to local SSI explicitly assumed"
+      }
+    ],
+    "local_files": [
+      "01_ground/musiol_2016_basalt.pdf"
+    ],
+    "download": {
+      "id": "musiol2016",
+      "url": "https://gfzpublic.gfz.de/rest/items/item_1802896_4/component/file_1802898/content",
+      "destination": "01_ground/musiol_2016_basalt.pdf",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "application/pdf; charset=UTF-8",
+      "final_url": "https://gfzpublic.gfz.de/rest/items/item_1802896_4/component/file_1802898/content",
+      "status": "saved",
+      "bytes": 3274003,
+      "sha256": "f8bc0d93dfc261f4d7e0db36d2839650e185862a352445a8f196f76530c7947b"
+    },
+    "url": "https://gfzpublic.gfz.de/rest/items/item_1802896_4/component/file_1802898/content",
+    "title": "Lithospheric flexure and gravity spreading of Olympus Mons volcano, Mars",
+    "used_by_materials": [
+      "basalt_elastic_analogue"
+    ]
+  },
+  "spohn2022": {
+    "id": "spohn2022",
+    "catalog_records": [
+      {
+        "catalog": "ground",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9734249/",
+        "doi": "10.1007/s11214-022-00941-z",
+        "location": "sections6.4,6.5,6.6",
+        "scope": "InSight shallow regolith/crust; no deep Jezero stratigraphy"
+      }
+    ],
+    "local_files": [
+      "01_ground/spohn_2022_insight_hp3.pdf"
+    ],
+    "download": {
+      "id": "spohn2022",
+      "url": "https://link.springer.com/content/pdf/10.1007/s11214-022-00941-z.pdf",
+      "destination": "01_ground/spohn_2022_insight_hp3.pdf",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "application/pdf",
+      "final_url": "https://link.springer.com/content/pdf/10.1007/s11214-022-00941-z.pdf?error=cookies_not_supported&code=d9cc1f5e-1ee0-4757-8a52-c0e5111f4a2b",
+      "status": "saved",
+      "bytes": 14154940,
+      "sha256": "5dd3372f576c7ccf0e23790d7c240e5371050a6c28998e7911c516a6d506e340"
+    },
+    "url": "https://link.springer.com/content/pdf/10.1007/s11214-022-00941-z.pdf",
+    "publisher_url": "https://link.springer.com/article/10.1007/s11214-022-00941-z",
+    "title": "The InSight HP3 Penetrator (Mole) on Mars: Soil Properties Derived from the Penetration Attempts and Related Activities",
+    "used_by_materials": [
+      "mars_insight_duricrust_proxy"
+    ]
+  },
+  "lunar_profile": {
+    "id": "lunar_profile",
+    "catalog_records": [
+      {
+        "catalog": "ground",
+        "url": "https://ntrs.nasa.gov/api/citations/20220018853/downloads/LPSC%202023%20Abstract_Connolly_Carrier_v2.pdf",
+        "scope": "density increases with depth; not source for chosen layer boundaries"
+      }
+    ],
+    "local_files": [
+      "01_ground/connolly_carrier_2023_lunar_profile.pdf"
+    ],
+    "download": {
+      "id": "lunar_profile",
+      "url": "https://ntrs.nasa.gov/api/citations/20220018853/downloads/LPSC%202023%20Abstract_Connolly_Carrier_v2.pdf",
+      "destination": "01_ground/connolly_carrier_2023_lunar_profile.pdf",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "application/pdf",
+      "final_url": "https://ntrs.nasa.gov/api/citations/20220018853/downloads/LPSC%202023%20Abstract_Connolly_Carrier_v2.pdf",
+      "status": "saved",
+      "bytes": 149514,
+      "sha256": "8fed5f0c72d12f39f6e1237ec03edc397c46ea2a553540736a58ebe7ea087617"
+    },
+    "url": "https://ntrs.nasa.gov/api/citations/20220018853/downloads/LPSC%202023%20Abstract_Connolly_Carrier_v2.pdf",
+    "used_by_materials": []
+  },
+  "layered_example": {
+    "id": "layered_example",
+    "catalog_records": [
+      {
+        "catalog": "ground",
+        "url": "https://opensees.ist.berkeley.edu/wiki/index.php?title=Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column",
+        "scope": "method precedent for layered reference scenarios; its saturated u-p physics are not copied into dry solids"
+      }
+    ],
+    "local_files": [],
+    "used_by_materials": []
+  },
+  "nasa_lunar_guide2024": {
+    "id": "nasa_lunar_guide2024",
+    "catalog_records": [
+      {
+        "catalog": "ground",
+        "url": "https://ntrs.nasa.gov/api/citations/20240011783/downloads/Lunar_Regolith_Simulant_Users_Guide_Rev_A_28OCT.pdf",
+        "location": "Table18 p48; cohesion depth summaries",
+        "scope": "field reference cohesion; not measured cohesion of JSC-1A specimens"
+      }
+    ],
+    "local_files": [
+      "01_ground/nasa_lunar_simulant_guide_2024.pdf"
+    ],
+    "used_by_materials": [
+      "moon_field_proxy_17",
+      "moon_field_proxy_18",
+      "moon_field_proxy_19"
+    ]
+  },
+  "steel02": {
+    "id": "steel02",
+    "catalog_records": [],
+    "local_files": [
+      "04_model_docs/Steel02.html"
+    ],
+    "download": {
+      "id": "steel02",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html",
+      "destination": "04_model_docs/Steel02.html",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html",
+      "status": "saved",
+      "bytes": 24697,
+      "sha256": "f0f1444bf83857b18407733b30375560ef33b834de881175f81f03734b272e9d"
+    },
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html",
+    "used_by_materials": []
+  },
+  "concrete02": {
+    "id": "concrete02",
+    "catalog_records": [],
+    "local_files": [
+      "04_model_docs/Concrete02.html"
+    ],
+    "download": {
+      "id": "concrete02",
+      "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html",
+      "destination": "04_model_docs/Concrete02.html",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html",
+      "status": "saved",
+      "bytes": 21069,
+      "sha256": "57320e03907e654a63c23a602c45fa693ed20861a72a5b267da1ce34448aa144"
+    },
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html",
+    "used_by_materials": []
+  },
+  "flat_slider": {
+    "id": "flat_slider",
+    "catalog_records": [],
+    "local_files": [
+      "04_model_docs/FlatSliderBearing.html"
+    ],
+    "download": {
+      "id": "flat_slider",
+      "url": "https://opensees.berkeley.edu/wiki/index.php/Flat_Slider_Bearing_Element",
+      "destination": "04_model_docs/FlatSliderBearing.html",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "text/html; charset=UTF-8",
+      "final_url": "https://opensees.berkeley.edu/wiki/index.php/Flat_Slider_Bearing_Element",
+      "status": "saved",
+      "bytes": 30718,
+      "sha256": "5a49dc5d995ef62471b45aee187c6c45734c5b6ba8cf1544a38b2fb20e55db20"
+    },
+    "url": "https://opensees.berkeley.edu/wiki/index.php/Flat_Slider_Bearing_Element",
+    "used_by_materials": []
+  },
+  "dp_engine_340": {
+    "id": "dp_engine_340",
+    "catalog_records": [],
+    "local_files": [
+      "04_model_docs/DruckerPrager_v3.4.0.cpp"
+    ],
+    "download": {
+      "id": "dp_engine_340",
+      "url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/material/nD/UWmaterials/DruckerPrager.cpp",
+      "destination": "04_model_docs/DruckerPrager_v3.4.0.cpp",
+      "attempted_on": "2026-11-09 Asia/Seoul",
+      "content_type": "text/plain; charset=utf-8",
+      "final_url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/material/nD/UWmaterials/DruckerPrager.cpp",
+      "status": "saved",
+      "bytes": 26517,
+      "sha256": "f421155becb6ad5a1215b14f41cb4d38e894ef53a44484b8fd05877d2f49414a"
+    },
+    "url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/material/nD/UWmaterials/DruckerPrager.cpp",
+    "used_by_materials": []
+  }
+}

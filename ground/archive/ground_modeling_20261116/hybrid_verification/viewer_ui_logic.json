@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "scope": "JavaScript logic with mocked DOM/Plotly; no browser rendering claimed",
+  "checks": [
+    "syntax",
+    "initial plot data",
+    "playback to final time",
+    "deformed coordinates vs solver",
+    "fixed displacement color scale",
+    "half cut topology",
+    "material hide",
+    "undeformed baseline",
+    "reset"
+  ]
+}

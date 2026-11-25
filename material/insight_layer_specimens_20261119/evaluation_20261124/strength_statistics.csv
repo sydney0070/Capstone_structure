@@ -1,0 +1,5 @@
+﻿specimen,n,graph_reference_MAPE_pct,graph_reference_max_error_pct,graph_reference_RMSE_Pa,graph_reference_NRMSE_pct,table4_extrapolated_MAPE_pct,note
+sand_mgs1_dp_1300,4,16.57014534310433,16.570178530079005,95.28170538556967,17.251814131230482,27.9037443815059,RMSE across four normal-stress envelope points; not a stress-strain time-series RMSE or independent validation
+sand_mgs1_pdmy02_1300,4,18.260781114902937,21.526685775985644,98.0919346973472,17.760637452105517,29.838184994736416,RMSE across four normal-stress envelope points; not a stress-strain time-series RMSE or independent validation
+sand_mgs1s_dp_1300,4,17.660662764500508,17.660686809196967,98.61602063228423,18.34738419324042,28.646314323865354,RMSE across four normal-stress envelope points; not a stress-strain time-series RMSE or independent validation
+sand_mgs1s_pdmy02_1300,4,17.338361806003462,19.89631796735376,91.53396824382598,17.029777426970625,28.352127829647845,RMSE across four normal-stress envelope points; not a stress-strain time-series RMSE or independent validation

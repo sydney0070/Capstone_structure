@@ -1,0 +1,47 @@
+{
+  "kind": "soil3d",
+  "material": "DruckerPrager",
+  "params": {
+    "rho": 1.65,
+    "G": 20000.0,
+    "K": 45000.0,
+    "cohesion": 0.5,
+    "phi": 35.0,
+    "psi": 5.0,
+    "H": 100.0,
+    "theta": 1.0,
+    "pa": 101.0
+  },
+  "bounds": {
+    "G": [
+      5000.0,
+      50000.0
+    ],
+    "cohesion": [
+      0.05,
+      2.0
+    ],
+    "phi": [
+      28.0,
+      45.0
+    ]
+  },
+  "name": "mars_regolith_dp",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 6.121499999999999,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 10
+  },
+  "planet": {
+    "name": "mars",
+    "gravity": 3.71,
+    "depth": 1.0,
+    "surcharge": 0.0,
+    "condition": "dry_demo_not_site_calibrated"
+  }
+}

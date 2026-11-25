@@ -1,0 +1,104 @@
+﻿specimen,axis,pressure_Pa,FE_q_Pa,target_MC_q_Pa,cross_path_difference_pct,interpretation
+crust_tc,z,500.0,21091.789367798985,21091.789367798978,4.440892098500626e-14,"TC mapping target, not independent experiment"
+crust_tc,z,5000.0,30091.789367798985,30091.789367798978,2.220446049250313e-14,"TC mapping target, not independent experiment"
+crust_tc,z,50000.0,120091.78936779905,120091.78936779896,6.661338147750939e-14,"TC mapping target, not independent experiment"
+crust_tc,x,5000.0,30091.789367798992,30091.789367798978,4.440892098500626e-14,"TC mapping target, not independent experiment"
+crust_tc,y,5000.0,30091.78936779899,30091.789367798978,4.440892098500626e-14,"TC mapping target, not independent experiment"
+crust_ss,z,500.0,15818.842025849235,21091.789367798978,-24.99999999999999,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+crust_ss,z,5000.0,22568.84202584924,30091.789367798978,-24.99999999999998,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+crust_ss,z,50000.0,90068.84202584921,120091.78936779896,-25.00000000000001,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+crust_ss,x,5000.0,22568.842025849255,30091.789367798978,-24.999999999999922,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+crust_ss,y,5000.0,22568.842025849248,30091.789367798978,-24.999999999999957,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_tc,z,500.0,2300.0827241467355,2300.082724146733,8.881784197001252e-14,"TC mapping target, not independent experiment"
+mgs1_tc,z,5000.0,14764.579368190502,14764.57936819049,6.661338147750939e-14,"TC mapping target, not independent experiment"
+mgs1_tc,z,50000.0,139409.5458086282,139409.54580862809,8.881784197001252e-14,"TC mapping target, not independent experiment"
+mgs1_tc,x,5000.0,14764.579368190494,14764.57936819049,2.220446049250313e-14,"TC mapping target, not independent experiment"
+mgs1_tc,y,5000.0,14764.579368190494,14764.57936819049,2.220446049250313e-14,"TC mapping target, not independent experiment"
+mgs1_ss,z,500.0,1744.2131713028273,2300.082724146733,-24.167372199628957,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_ss,z,5000.0,11196.36851857027,14764.57936819049,-24.167372199628943,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_ss,z,50000.0,105717.92199124474,139409.54580862809,-24.167372199628932,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_ss,x,5000.0,11196.368518570267,14764.57936819049,-24.167372199628968,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_ss,y,5000.0,11196.368518570272,14764.57936819049,-24.167372199628932,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_ss_nearest,z,500.0,1786.6841082173212,2356.0888763089642,-24.167372199628968,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_ss_nearest,z,5000.0,11238.839455484764,14820.58552035272,-24.167372199628957,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_ss_nearest,z,50000.0,105760.39292815921,139465.5519607903,-24.167372199628932,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_ss_nearest,x,5000.0,11238.83945548476,14820.58552035272,-24.16737219962898,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1_ss_nearest,y,5000.0,11238.839455484765,14820.58552035272,-24.167372199628932,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_tc,z,500.0,2164.378761074687,2164.378761074686,6.661338147750939e-14,"TC mapping target, not independent experiment"
+mgs1s_tc,z,5000.0,13581.472929618185,13581.472929618174,8.881784197001252e-14,"TC mapping target, not independent experiment"
+mgs1s_tc,z,50000.0,127752.41461505315,127752.41461505307,6.661338147750939e-14,"TC mapping target, not independent experiment"
+mgs1s_tc,x,5000.0,13581.47292961818,13581.472929618174,4.440892098500626e-14,"TC mapping target, not independent experiment"
+mgs1s_tc,y,5000.0,13581.472929618183,13581.472929618174,6.661338147750939e-14,"TC mapping target, not independent experiment"
+mgs1s_ss,z,500.0,1632.3043688787216,2164.378761074686,-24.58323846847267,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_ss,z,5000.0,10242.707051799076,13581.472929618174,-24.58323846847268,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_ss,z,50000.0,96346.73388100264,127752.41461505307,-24.58323846847267,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_ss,x,5000.0,10242.707051799069,13581.472929618174,-24.583238468472736,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_ss,y,5000.0,10242.707051799076,13581.472929618174,-24.58323846847268,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_ss_nearest,z,500.0,1652.392090649058,2191.0143807465,-24.58323846847268,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_ss_nearest,z,5000.0,10262.794773569412,13608.10854928999,-24.58323846847269,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_ss_nearest,z,50000.0,96366.82160277295,127779.05023472487,-24.58323846847268,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_ss_nearest,x,5000.0,10262.794773569416,13608.10854928999,-24.583238468472658,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+mgs1s_ss_nearest,y,5000.0,10262.794773569412,13608.10854928999,-24.58323846847269,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_phi20,z,5000.0,5198.033645807377,5198.033645807373,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_phi20,z,50000.0,51980.33645807374,51980.336458073725,2.220446049250313e-14,"TC mapping target, not independent experiment"
+blocky_phi20,z,200000.0,207921.34583229496,207921.3458322949,2.220446049250313e-14,"TC mapping target, not independent experiment"
+blocky_phi20,x,50000.0,51980.33645807376,51980.336458073725,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_phi20,y,50000.0,51980.33645807377,51980.336458073725,8.881784197001252e-14,"TC mapping target, not independent experiment"
+blocky_phi30,z,5000.0,10000.000000000004,9999.999999999998,4.440892098500626e-14,"TC mapping target, not independent experiment"
+blocky_phi30,z,50000.0,100000.00000000006,99999.99999999999,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_phi30,z,200000.0,400000.00000000023,399999.99999999994,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_phi30,x,50000.0,100000.00000000009,99999.99999999999,1.1102230246251565e-13,"TC mapping target, not independent experiment"
+blocky_phi30,y,50000.0,100000.00000000001,99999.99999999999,2.220446049250313e-14,"TC mapping target, not independent experiment"
+blocky_phi35,z,5000.0,13450.861660713328,13450.861660713319,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_phi35,z,50000.0,134508.61660713327,134508.61660713318,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_phi35,z,200000.0,538034.4664285331,538034.4664285327,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_phi35,x,50000.0,134508.61660713336,134508.61660713318,1.3322676295501878e-13,"TC mapping target, not independent experiment"
+blocky_phi35,y,50000.0,134508.61660713333,134508.61660713318,1.1102230246251565e-13,"TC mapping target, not independent experiment"
+blocky_phi40,z,5000.0,17994.549660566958,17994.549660566947,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_phi40,z,50000.0,179945.4966056695,179945.49660566944,2.220446049250313e-14,"TC mapping target, not independent experiment"
+blocky_phi40,z,200000.0,719781.986422678,719781.9864226778,2.220446049250313e-14,"TC mapping target, not independent experiment"
+blocky_phi40,x,50000.0,179945.49660566947,179945.49660566944,2.220446049250313e-14,"TC mapping target, not independent experiment"
+blocky_phi40,y,50000.0,179945.49660566956,179945.49660566944,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_c1000_phi30,z,5000.0,13464.10161513776,13464.101615137753,4.440892098500626e-14,"TC mapping target, not independent experiment"
+blocky_c1000_phi30,z,50000.0,103464.1016151378,103464.10161513774,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_c1000_phi30,z,200000.0,403464.1016151381,403464.1016151377,1.1102230246251565e-13,"TC mapping target, not independent experiment"
+blocky_c1000_phi30,x,50000.0,103464.10161513783,103464.10161513774,8.881784197001252e-14,"TC mapping target, not independent experiment"
+blocky_c1000_phi30,y,50000.0,103464.10161513783,103464.10161513774,8.881784197001252e-14,"TC mapping target, not independent experiment"
+blocky_c5000_phi30,z,5000.0,27320.50807568877,27320.50807568877,0.0,"TC mapping target, not independent experiment"
+blocky_c5000_phi30,z,50000.0,117320.50807568885,117320.50807568876,6.661338147750939e-14,"TC mapping target, not independent experiment"
+blocky_c5000_phi30,z,200000.0,417320.5080756891,417320.50807568873,8.881784197001252e-14,"TC mapping target, not independent experiment"
+blocky_c5000_phi30,x,50000.0,117320.50807568892,117320.50807568876,1.3322676295501878e-13,"TC mapping target, not independent experiment"
+blocky_c5000_phi30,y,50000.0,117320.5080756889,117320.50807568876,1.1102230246251565e-13,"TC mapping target, not independent experiment"
+blocky_ss_phi30,z,5000.0,7500.000000000002,9999.999999999998,-24.999999999999968,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_ss_phi30,z,50000.0,75000.00000000001,99999.99999999999,-24.99999999999998,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_ss_phi30,z,200000.0,300000.00000000006,399999.99999999994,-24.99999999999998,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_ss_phi30,x,50000.0,75000.0,99999.99999999999,-24.99999999999999,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_ss_phi30,y,50000.0,75000.00000000004,99999.99999999999,-24.999999999999943,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_ss_phi35,z,5000.0,10178.981038146116,13450.861660713319,-24.32469164502351,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_ss_phi35,z,50000.0,101789.81038146115,134508.61660713318,-24.32469164502351,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_ss_phi35,z,200000.0,407159.2415258446,538034.4664285327,-24.32469164502351,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_ss_phi35,x,50000.0,101789.8103814611,134508.61660713318,-24.324691645023556,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+blocky_ss_phi35,y,50000.0,101789.81038146111,134508.61660713318,-24.324691645023545,SS-fitted DP does not also fit physical-MC triaxial compression; model-form tradeoff
+basalt_hb_gsi40,z,0.0,4395284.510535007,4395284.510534997,2.220446049250313e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi40,z,50000.0,5336707.17866238,5336707.178662362,3.552713678800501e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi40,z,200000.0,8160975.183044478,8160975.183044456,2.6645352591003757e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi40,z,500000.0,13809511.19180869,13809511.191808645,3.3306690738754696e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi40,x,50000.0,5336707.178662382,5336707.178662362,3.774758283725532e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi40,y,50000.0,5336707.178662383,5336707.178662362,3.9968028886505635e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi55,z,0.0,10223867.896587351,10223867.896587314,3.552713678800501e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi55,z,50000.0,11176954.935947167,11176954.935947137,2.6645352591003757e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi55,z,200000.0,14036216.054026641,14036216.054026606,2.4424906541753444e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi55,z,500000.0,19754738.290185627,19754738.29018554,4.440892098500626e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi55,x,50000.0,11176954.935947167,11176954.935947137,2.6645352591003757e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi55,y,50000.0,11176954.935947176,11176954.935947137,3.552713678800501e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi70,z,0.0,23436291.63741142,23436291.637411356,2.6645352591003757e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi70,z,50000.0,24298770.303605035,24298770.303605,1.3322676295501878e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi70,z,200000.0,26886206.30218599,26886206.30218592,2.6645352591003757e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi70,z,500000.0,32061078.299347844,32061078.299347762,2.6645352591003757e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi70,x,50000.0,24298770.30360504,24298770.303605,1.5543122344752192e-13,"TC mapping target, not independent experiment"
+basalt_hb_gsi70,y,50000.0,24298770.303605035,24298770.303605,1.3322676295501878e-13,"TC mapping target, not independent experiment"
+basalt_lab_reference,z,0.0,234293622.75922653,234293622.75922617,1.5543122344752192e-13,"TC mapping target, not independent experiment"
+basalt_lab_reference,z,10000000.0,287761655.67128867,287761655.6712884,1.1102230246251565e-13,"TC mapping target, not independent experiment"
+basalt_lab_reference,z,20000000.0,341229688.58335096,341229688.5833506,1.1102230246251565e-13,"TC mapping target, not independent experiment"
+basalt_lab_reference,x,10000000.0,287761655.67128855,287761655.6712884,6.661338147750939e-14,"TC mapping target, not independent experiment"
+basalt_lab_reference,y,10000000.0,287761655.6712888,287761655.6712884,1.5543122344752192e-13,"TC mapping target, not independent experiment"

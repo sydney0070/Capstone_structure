@@ -1,0 +1,38 @@
+{
+  "profile": "nl_ss_block30",
+  "radial_subdivisions": 1,
+  "command": [
+    "/Users/sydney/anaconda3/envs/cap/bin/python",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_dome_footing.py",
+    "--material-profile",
+    "nl_ss_block30",
+    "--radial-subdivisions",
+    "1",
+    "--html",
+    "--output-dir",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/screening/nl_ss_block30_r1/run"
+  ],
+  "complete": true,
+  "entry_sha256": "548fbc132b6086355342663252579f53ad206895272c3ff135d800e649253d06",
+  "started_on": "2026-11-25",
+  "run_dir": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/screening/nl_ss_block30_r1/run",
+  "returncode": 0,
+  "elapsed_s": 224.88203649999923,
+  "limit_reason": null,
+  "last_checkpoint": {
+    "elapsed_s": 217.7386843749846,
+    "event": "attempt_finished",
+    "pattern": 800003,
+    "before": 0.875,
+    "increment": 0.125,
+    "after": 1.0,
+    "code": 0,
+    "algorithm": "KrylovNewton",
+    "iterations": 5,
+    "unbalance_norm_N": 9.880440548323067e-08
+  },
+  "stage": "complete",
+  "error": null,
+  "max_settlement_mm": 1.8935786941463666,
+  "pressurized_max_mm": 0.6045391761027151
+}

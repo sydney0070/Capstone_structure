@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-12",
+  "material": "Steel02",
+  "case": "rebar_ucsd_grade60_a6",
+  "reason": "Training specimen A65 also exceeded the existing 10% extremum criterion.",
+  "objective": "mean over train specimens of 0.8*curve_NRMSE^2 + 0.1*positive_peak_error^2 + 0.1*negative_peak_error^2",
+  "curve_scale": "max(stress range, max absolute stress)",
+  "peak_scale": "max absolute experimental stress",
+  "seed": 20261012,
+  "starts": 5,
+  "jitter_normalized_sd": 0.06,
+  "max_nfev": 250,
+  "parameter_keys": [
+    "E",
+    "Fy",
+    "b",
+    "cR1",
+    "cR2",
+    "a1",
+    "a3"
+  ],
+  "bounds": {
+    "E": [
+      150000000.0,
+      250000000.0
+    ],
+    "Fy": [
+      300000.0,
+      700000.0
+    ],
+    "b": [
+      0.0001,
+      0.1
+    ],
+    "cR1": [
+      0.7,
+      0.98
+    ],
+    "cR2": [
+      0.01,
+      0.2
+    ],
+    "a1": [
+      0.0,
+      0.1
+    ],
+    "a3": [
+      0.0,
+      0.1
+    ]
+  },
+  "acceptance": {
+    "criterion_defined_before_fitting": true,
+    "nrmse_max": 0.05,
+    "peak_error_max": 0.1,
+    "increment_error_max": 0.01,
+    "require_optimizer_success": true,
+    "scope": "UCSD Grade 60 A6 group supplied histories; ASTM subclass mapping not asserted; not buckling, fracture or all Grade 60 products.",
+    "not_claimed": [
+      "grade population certification",
+      "buckling",
+      "fracture",
+      "fatigue"
+    ],
+    "notes": "Project screening criteria. No closed-loop energy acceptance claim for these irregular open-ended paths."
+  },
+  "train": [
+    "01_A64.csv",
+    "02_A65.csv",
+    "03_A66.csv",
+    "04_A67.csv"
+  ],
+  "validation": [
+    "05_A68.csv",
+    "06_A69.csv"
+  ],
+  "holdout_policy": "Previously observed holdouts, not fresh blind validation. No holdout-based selection or retry.",
+  "source_sha256": {
+    "fitted/best_config.json": "ffe7c29b29434e916ec7241ab5331e53c3aa7975acc36396ffb0a5e891e8618a",
+    "starting_config.json": "8258bf8bd4e3d550f919facef93c17c14275c24b8681e564bc7d3d5a3c59fa59",
+    "targets.json": "b9428b4fd61ce17f1757583c1aeee41499c088452ebaa12f89a9ae1a58db2940",
+    "acceptance_plan.json": "d855fd8b1ea94982cc4b0326b029ad69093f52cb744b23d35bda6c20964cd748",
+    "provenance.json": "59b76cf79ca8d13a7618c67a81ef447fa660b2d7abf73e8bdcc1988d41d405cd",
+    "01_A64.csv": "22795db5da0d6d20812ac3db3c3a588d4319f921ed62cce391da885a26b98702",
+    "02_A65.csv": "1122b7a37157317c0ac0b82ad5427e308bee135c94609971c012a21b9e0d6eeb",
+    "03_A66.csv": "a262dc3c75fc73f00699e1da3257fa3930532d3c26318c7442739bcabc797898",
+    "04_A67.csv": "d22510bf9b36ae1e5d623eef2ed0625f2b2a2dd3434a52a72bc5c57d7feb4c62",
+    "05_A68.csv": "e6c03339dfd035dcdbd3293746b746d967c7d1dc2b812b243e8d07a3d963c27b",
+    "06_A69.csv": "3d24cd23557f7527afcd178975f087350c3c8c7c63d59c31224bf7b4f08c4b2e"
+  },
+  "units": "kN,m,s,tonne,kPa",
+  "opensees": "3.8.0"
+}

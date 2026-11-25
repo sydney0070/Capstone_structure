@@ -1,0 +1,13 @@
+﻿stage,material,elements,gauss_points,max_mean_compression_kPa,max_q_kPa,DP_state_recorded,plastic_gp_count,max_plastic_strain_norm,max_abs_norm_change_since_gravity,changed_gp_count_since_gravity
+gravity,mars_recommended_duricrust_dp_20261124,228,1824,0.2578126601574959,2.013019320814807,True,0,0.0,,
+gravity,mars_recommended_sand_mgs1_dp_1300_20261124,684,5472,4.954989078780253,7.701400262609161,True,1400,0.0002954214557361153,,
+gravity,mars_recommended_blocky_ejecta_elastic_20261124,972,7776,36.336063209102434,46.06660619375537,False,,,,
+gravity,mars_recommended_fractured_basalt_elastic_20261124,1620,12960,138.39287868698148,143.15278276072863,False,,,,
+depressurized,mars_recommended_duricrust_dp_20261124,228,1824,0.2292175778029541,3.0107662043504866,True,0,0.0,0.0,0
+depressurized,mars_recommended_sand_mgs1_dp_1300_20261124,684,5472,4.934518550614529,7.562066828502019,True,4204,0.0005067883221134367,0.0002535954664188493,4204
+depressurized,mars_recommended_blocky_ejecta_elastic_20261124,972,7776,66.86821317462989,94.72472861543022,False,,,,
+depressurized,mars_recommended_fractured_basalt_elastic_20261124,1620,12960,159.16920854880215,168.11754452778374,False,,,,
+pressurized,mars_recommended_duricrust_dp_20261124,228,1824,0.2354630560683166,2.7992086478607887,True,0,0.0,0.0,0
+pressurized,mars_recommended_sand_mgs1_dp_1300_20261124,684,5472,5.34513877645052,8.263285169983401,True,4204,0.0005067883221134367,0.0002535954664188493,4204
+pressurized,mars_recommended_blocky_ejecta_elastic_20261124,972,7776,37.72350661098066,47.869519032887574,False,,,,
+pressurized,mars_recommended_fractured_basalt_elastic_20261124,1620,12960,139.54243229820725,144.0936535799274,False,,,,

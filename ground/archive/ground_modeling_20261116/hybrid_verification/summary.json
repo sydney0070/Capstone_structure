@@ -1,0 +1,612 @@
+{
+  "engine": "3.4.0",
+  "elapsed_s": 48.108484983444214,
+  "cases": [
+    {
+      "name": "geometry_consistent_gravity",
+      "seconds": 0.06410789489746094,
+      "mass_relative_error": 0.0,
+      "moment_relative_error": 2.4859788292664947e-15,
+      "invalid_terrain_rejected": true,
+      "pass": true
+    },
+    {
+      "name": "API_guards",
+      "seconds": 0.8551411628723145,
+      "existing_structure_preserved": true,
+      "collision_rejected": true,
+      "domain_intact": true,
+      "unsupported_staged_installation_rejected": true,
+      "pass": true
+    },
+    {
+      "name": "structure_port_transfer",
+      "seconds": 1.1976830959320068,
+      "max_six_dof_difference": 0.0,
+      "raft_rotation_norm_rad": 9.913582196081529e-06,
+      "force_balance": {
+        "applied_N": [
+          100.0,
+          50.0,
+          -7706860.946650394
+        ],
+        "reaction_N": [
+          -100.00000000001432,
+          -50.00000000014552,
+          7706860.946650389
+        ],
+        "residual_N": [
+          -1.432454155292362e-11,
+          -1.4551915228366852e-10,
+          -5.587935447692871e-09
+        ],
+        "relative_error": 7.253033413699232e-16
+      },
+      "pass": true
+    },
+    {
+      "name": "material_checks",
+      "seconds": 2.727566957473755,
+      "cases": [
+        {
+          "name": "earth_sand_dr30_dp_reference",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 2.2737367544323206e-13,
+          "expected_sigma1_Pa": 3124.0350974544244,
+          "computed_sigma1_Pa": 3124.0350974547327,
+          "yield_relative_error": 9.869245840171635e-14,
+          "lateral_stress_relative_error": 1.596163201611489e-13,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "earth_sand_dr30_dp_reference",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+          "expected_sigma1_Pa": 46860.52646181637,
+          "computed_sigma1_Pa": 46860.52646181704,
+          "yield_relative_error": 1.4284690144279887e-14,
+          "lateral_stress_relative_error": 1.430938330789407e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "earth_sand_dr30_dp_reference",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+          "expected_sigma1_Pa": 187442.10584726548,
+          "computed_sigma1_Pa": 187442.1058472653,
+          "yield_relative_error": 9.316102268008623e-16,
+          "lateral_stress_relative_error": 2.78911708543698e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "earth_sand_dr50_dp_reference",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 1.1368683772161603e-13,
+          "expected_sigma1_Pa": 3463.6578660546684,
+          "computed_sigma1_Pa": 3463.6578660543746,
+          "yield_relative_error": 8.481403187990831e-14,
+          "lateral_stress_relative_error": 1.3369572116062044e-13,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "earth_sand_dr50_dp_reference",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 1.8189894035458565e-12,
+          "expected_sigma1_Pa": 51954.86799082003,
+          "computed_sigma1_Pa": 51954.86799082083,
+          "yield_relative_error": 1.5404818999859507e-14,
+          "lateral_stress_relative_error": 1.5158245029548804e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "earth_sand_dr50_dp_reference",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 7.275957614183426e-12,
+          "expected_sigma1_Pa": 207819.4719632801,
+          "computed_sigma1_Pa": 207819.471963279,
+          "yield_relative_error": 5.3216647454060114e-15,
+          "lateral_stress_relative_error": 8.488617216547331e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "earth_sand_dr75_dp_reference",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 2.2737367544323206e-13,
+          "expected_sigma1_Pa": 3936.1117422281905,
+          "computed_sigma1_Pa": 3936.111742228244,
+          "yield_relative_error": 1.3632790662143731e-14,
+          "lateral_stress_relative_error": 1.4551915228366852e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "earth_sand_dr75_dp_reference",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+          "expected_sigma1_Pa": 59041.67613342286,
+          "computed_sigma1_Pa": 59041.67613342368,
+          "yield_relative_error": 1.3925472043590884e-14,
+          "lateral_stress_relative_error": 1.406685138742129e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "earth_sand_dr75_dp_reference",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+          "expected_sigma1_Pa": 236166.70453369143,
+          "computed_sigma1_Pa": 236166.70453369172,
+          "yield_relative_error": 1.232342658724857e-15,
+          "lateral_stress_relative_error": 5.093170329928398e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_jsc1a_17_peak",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 2.2737367544323206e-13,
+          "expected_sigma1_Pa": 5282.2221691922205,
+          "computed_sigma1_Pa": 5282.222169192168,
+          "yield_relative_error": 9.986458542105716e-15,
+          "lateral_stress_relative_error": 1.000444171950221e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_jsc1a_17_peak",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 7.275957614183426e-12,
+          "expected_sigma1_Pa": 79233.3325378833,
+          "computed_sigma1_Pa": 79233.3325378834,
+          "yield_relative_error": 1.2856130536963683e-15,
+          "lateral_stress_relative_error": 1.2126596023639043e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_jsc1a_17_peak",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 2.9103830456733704e-11,
+          "expected_sigma1_Pa": 316933.3301515332,
+          "computed_sigma1_Pa": 316933.33015153324,
+          "yield_relative_error": 1.8365900767090976e-16,
+          "lateral_stress_relative_error": 3.637978807091713e-16,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_jsc1a_18_peak",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 2.2737367544323206e-13,
+          "expected_sigma1_Pa": 5996.249425637751,
+          "computed_sigma1_Pa": 5996.24942563782,
+          "yield_relative_error": 1.1527471995945346e-14,
+          "lateral_stress_relative_error": 2.205524651799351e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_jsc1a_18_peak",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+          "expected_sigma1_Pa": 89943.74138456627,
+          "computed_sigma1_Pa": 89943.74138456622,
+          "yield_relative_error": 4.853672419345409e-16,
+          "lateral_stress_relative_error": 1.5764574830730755e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_jsc1a_18_peak",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+          "expected_sigma1_Pa": 359774.96553826507,
+          "computed_sigma1_Pa": 359774.9655382651,
+          "yield_relative_error": 1.6178908064484698e-16,
+          "lateral_stress_relative_error": 1.2126596023639044e-16,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_jsc1a_19_peak",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 2.2737367544323206e-13,
+          "expected_sigma1_Pa": 7341.491740663923,
+          "computed_sigma1_Pa": 7341.491740664007,
+          "yield_relative_error": 1.1397344779351674e-14,
+          "lateral_stress_relative_error": 1.0913936421275139e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_jsc1a_19_peak",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+          "expected_sigma1_Pa": 110122.37610995886,
+          "computed_sigma1_Pa": 110122.37610995905,
+          "yield_relative_error": 1.7178606623950347e-15,
+          "lateral_stress_relative_error": 1.0913936421275138e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_jsc1a_19_peak",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+          "expected_sigma1_Pa": 440489.50443983544,
+          "computed_sigma1_Pa": 440489.5044398358,
+          "yield_relative_error": 7.928587672592468e-16,
+          "lateral_stress_relative_error": 7.275957614183426e-16,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "mars_jez1_peak",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 1.1368683772161603e-13,
+          "expected_sigma1_Pa": 18206.72080097358,
+          "computed_sigma1_Pa": 18206.72080097365,
+          "yield_relative_error": 3.796488016175123e-15,
+          "lateral_stress_relative_error": 3.2969182939268646e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "mars_jez1_peak",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+          "expected_sigma1_Pa": 84384.07706826621,
+          "computed_sigma1_Pa": 84384.07706826636,
+          "yield_relative_error": 1.724485914160611e-15,
+          "lateral_stress_relative_error": 2.4253192047278086e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "mars_jez1_peak",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+          "expected_sigma1_Pa": 297097.00792742113,
+          "computed_sigma1_Pa": 297097.00792742125,
+          "yield_relative_error": 3.9184279451031806e-16,
+          "lateral_stress_relative_error": 6.063298011819521e-16,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "mars_insight_duricrust_proxy",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 1.1368683772161603e-13,
+          "expected_sigma1_Pa": 23091.789367798974,
+          "computed_sigma1_Pa": 23091.78936779902,
+          "yield_relative_error": 2.0480753456959205e-15,
+          "lateral_stress_relative_error": 2.2509993868879975e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "mars_insight_duricrust_proxy",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+          "expected_sigma1_Pa": 65091.78936779898,
+          "computed_sigma1_Pa": 65091.789367798956,
+          "yield_relative_error": 3.35339880107038e-16,
+          "lateral_stress_relative_error": 1.2126596023639043e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "mars_insight_duricrust_proxy",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+          "expected_sigma1_Pa": 200091.78936779898,
+          "computed_sigma1_Pa": 200091.789367799,
+          "yield_relative_error": 1.4545239736567332e-16,
+          "lateral_stress_relative_error": 3.637978807091713e-16,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_field_proxy_17",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 2.2737367544323206e-13,
+          "expected_sigma1_Pa": 7672.463056257436,
+          "computed_sigma1_Pa": 7672.463056257476,
+          "yield_relative_error": 5.2157653395765166e-15,
+          "lateral_stress_relative_error": 7.048583938740194e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_field_proxy_17",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 7.275957614183426e-12,
+          "expected_sigma1_Pa": 81623.57342494851,
+          "computed_sigma1_Pa": 81623.57342494847,
+          "yield_relative_error": 5.348423727765518e-16,
+          "lateral_stress_relative_error": 1.940255363782247e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_field_proxy_17",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 2.9103830456733704e-11,
+          "expected_sigma1_Pa": 319323.5710385984,
+          "computed_sigma1_Pa": 319323.5710385984,
+          "yield_relative_error": 0.0,
+          "lateral_stress_relative_error": 2.4253192047278088e-16,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_field_proxy_18",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 2.2737367544323206e-13,
+          "expected_sigma1_Pa": 10403.952698212519,
+          "computed_sigma1_Pa": 10403.952698212537,
+          "yield_relative_error": 1.748363777027142e-15,
+          "lateral_stress_relative_error": 1.546140993013978e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_field_proxy_18",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+          "expected_sigma1_Pa": 94351.44465714104,
+          "computed_sigma1_Pa": 94351.44465714095,
+          "yield_relative_error": 9.253858453092895e-16,
+          "lateral_stress_relative_error": 2.546585164964199e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_field_proxy_18",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+          "expected_sigma1_Pa": 364182.6688108398,
+          "computed_sigma1_Pa": 364182.6688108399,
+          "yield_relative_error": 1.5983094720990432e-16,
+          "lateral_stress_relative_error": 1.2126596023639044e-16,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_field_proxy_19",
+          "confinement_Pa": 1000.0,
+          "initial_hydrostatic_max_error_Pa": 2.2737367544323206e-13,
+          "expected_sigma1_Pa": 23598.604112296878,
+          "computed_sigma1_Pa": 23598.604112297002,
+          "yield_relative_error": 5.241465929616768e-15,
+          "lateral_stress_relative_error": 2.8194335754960775e-14,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_field_proxy_19",
+          "confinement_Pa": 15000.0,
+          "initial_hydrostatic_max_error_Pa": 3.637978807091713e-12,
+          "expected_sigma1_Pa": 126379.48848159182,
+          "computed_sigma1_Pa": 126379.48848159208,
+          "yield_relative_error": 2.0726027400305247e-15,
+          "lateral_stress_relative_error": 2.0615213240186375e-15,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "moon_field_proxy_19",
+          "confinement_Pa": 60000.0,
+          "initial_hydrostatic_max_error_Pa": 1.4551915228366852e-11,
+          "expected_sigma1_Pa": 456746.6168114684,
+          "computed_sigma1_Pa": 456746.6168114683,
+          "yield_relative_error": 1.2743971990381227e-16,
+          "lateral_stress_relative_error": 9.701276818911235e-16,
+          "pass_": true,
+          "pass": true
+        },
+        {
+          "name": "earth_sand_dr30_dry_reference",
+          "steps": 450,
+          "peak_tau_Pa": 34429.645742005894,
+          "equilibrium_relative_error": 2.43657949318934e-09,
+          "vertical_stress_relative_error": 1.9859257736243307e-09,
+          "pass": true,
+          "scope": "constant vertical effective stress, free volume change, no pore fluid or liquefaction validation"
+        },
+        {
+          "name": "earth_sand_dr50_dry_reference",
+          "steps": 450,
+          "peak_tau_Pa": 38045.898101472856,
+          "equilibrium_relative_error": 2.363772298859832e-09,
+          "vertical_stress_relative_error": 1.950934965861961e-09,
+          "pass": true,
+          "scope": "constant vertical effective stress, free volume change, no pore fluid or liquefaction validation"
+        },
+        {
+          "name": "earth_sand_dr75_dry_reference",
+          "steps": 450,
+          "peak_tau_Pa": 46393.665416472155,
+          "equilibrium_relative_error": 2.1151419645223017e-09,
+          "vertical_stress_relative_error": 1.9735563546419143e-09,
+          "pass": true,
+          "scope": "constant vertical effective stress, free volume change, no pore fluid or liquefaction validation"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "name": "Earth_analytical_layered_column",
+      "seconds": 0.049241065979003906,
+      "body": "Earth",
+      "analytical_settlement_m": 0.001690376566730745,
+      "actual_settlement_m": 0.0016903765667307452,
+      "relative_error": 1.282793661275599e-16,
+      "pass": true
+    },
+    {
+      "name": "Earth_nonlinear_raft_frame",
+      "seconds": 3.904927968978882,
+      "body": "Earth",
+      "factor": 1.0,
+      "spacing": 1.0,
+      "width": 6.0,
+      "frame": true,
+      "penalty": 10.0,
+      "soil_mass_kg": 781588.1429816912,
+      "materials": {
+        "earth_sand_dr30_dp_reference": 0.18518518518518517,
+        "earth_sand_dr50_dp_reference": 0.3148148148148148,
+        "earth_sand_dr75_dp_reference": 0.3333333333333333,
+        "basalt_elastic_analogue": 0.16666666666666666
+      },
+      "additional_settlement_m": 7.118303582844417e-05,
+      "differential_settlement_m": 3.0993359939036035e-06,
+      "force_error": 7.18198490587658e-16,
+      "contact_normal_relative_error": 5.576655006334594e-15,
+      "friction_capacity_excess_N": 0,
+      "contact_mpc_error_m": 0.0,
+      "max_contact_penetration_m": 1.4138957168787934e-05,
+      "gravity_stress_samples": 128,
+      "pass": true
+    },
+    {
+      "name": "Earth_absorbing_rest",
+      "seconds": 2.8204050064086914,
+      "body": "Earth",
+      "max_unforced_drift_m": 8.86227310739781e-16,
+      "boundary": {
+        "kind": "local_viscous",
+        "dashpots": 459,
+        "released_reaction_force_N": [
+          2.7284841053187847e-08,
+          -4.9622030928730965e-09,
+          7706760.9466503905
+        ],
+        "scope": "plane-wave approximation with fixed record impedances; not free-field, no automatic Rayleigh damping"
+      },
+      "pass": true
+    },
+    {
+      "name": "Moon_analytical_layered_column",
+      "seconds": 0.05140185356140137,
+      "body": "Moon",
+      "analytical_settlement_m": 0.0041269416083909065,
+      "actual_settlement_m": 0.004126941608390909,
+      "relative_error": 6.305117592831082e-16,
+      "pass": true
+    },
+    {
+      "name": "Moon_nonlinear_raft_frame",
+      "seconds": 3.9142887592315674,
+      "body": "Moon",
+      "factor": 1.0,
+      "spacing": 1.0,
+      "width": 6.0,
+      "frame": true,
+      "penalty": 10.0,
+      "soil_mass_kg": 952180.0,
+      "materials": {
+        "moon_jsc1a_17_peak": 0.0574074074074074,
+        "moon_jsc1a_18_peak": 0.058333333333333307,
+        "moon_jsc1a_19_peak": 0.5509259259259259,
+        "basalt_elastic_analogue": 0.3333333333333333
+      },
+      "additional_settlement_m": 0.0008170037543698864,
+      "differential_settlement_m": 2.9386949344940502e-05,
+      "force_error": 1.5130884275398903e-16,
+      "contact_normal_relative_error": 1.4682895196293173e-15,
+      "friction_capacity_excess_N": 0,
+      "contact_mpc_error_m": 0.0,
+      "max_contact_penetration_m": 3.8693346380300545e-05,
+      "gravity_stress_samples": 144,
+      "pass": true
+    },
+    {
+      "name": "Moon_absorbing_rest",
+      "seconds": 2.96401309967041,
+      "body": "Moon",
+      "max_unforced_drift_m": 3.7045677786841367e-16,
+      "boundary": {
+        "kind": "local_viscous",
+        "dashpots": 507,
+        "released_reaction_force_N": [
+          -8.803908713161945e-10,
+          -7.712515071034431e-10,
+          1549034.9279999998
+        ],
+        "scope": "plane-wave approximation with fixed record impedances; not free-field, no automatic Rayleigh damping"
+      },
+      "pass": true
+    },
+    {
+      "name": "Mars_analytical_layered_column",
+      "seconds": 0.054131269454956055,
+      "body": "Mars",
+      "analytical_settlement_m": 0.005327131484640558,
+      "actual_settlement_m": 0.005327131484640559,
+      "relative_error": 1.6281966016593032e-16,
+      "pass": true
+    },
+    {
+      "name": "Mars_nonlinear_raft_frame",
+      "seconds": 1.498283863067627,
+      "body": "Mars",
+      "factor": 1.0,
+      "spacing": 1.0,
+      "width": 6.0,
+      "frame": true,
+      "penalty": 10.0,
+      "soil_mass_kg": 933952.0,
+      "materials": {
+        "mars_insight_duricrust_proxy": 0.04907407407407407,
+        "mars_jez1_peak": 0.6175925925925926,
+        "basalt_elastic_analogue": 0.33333333333333337
+      },
+      "additional_settlement_m": 0.000482510081882054,
+      "differential_settlement_m": 2.4448335067425025e-05,
+      "force_error": 3.9524171011673295e-16,
+      "contact_normal_relative_error": 2.384348142565021e-15,
+      "friction_capacity_excess_N": 0,
+      "contact_mpc_error_m": 0.0,
+      "max_contact_penetration_m": 5.4404189927730745e-05,
+      "gravity_stress_samples": 144,
+      "pass": true
+    },
+    {
+      "name": "Mars_absorbing_rest",
+      "seconds": 2.144374132156372,
+      "body": "Mars",
+      "max_unforced_drift_m": 5.080299390125185e-18,
+      "boundary": {
+        "kind": "local_viscous",
+        "dashpots": 507,
+        "released_reaction_force_N": [
+          -4.3655745685100555e-11,
+          -5.820766091346741e-11,
+          3480793.310399999
+        ],
+        "scope": "plane-wave approximation with fixed record impedances; not free-field, no automatic Rayleigh damping"
+      },
+      "pass": true
+    },
+    {
+      "name": "incident_shear_wave",
+      "seconds": 25.841339111328125,
+      "Vs_m_s": 79.18903339499381,
+      "travel_time_s": 0.1262801119205501,
+      "relative_L2_error": 0.021937656747168955,
+      "late_reflection_ratio": 2.6992949018954135e-06,
+      "scope": "normal-incidence homogeneous elastic S-wave; not layered oblique-wave/free-field validation",
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "complete": true
+}

@@ -1,0 +1,96 @@
+{
+  "id": "hysteretic_crust_scale_benchmark",
+  "group": "uniaxial_comparison",
+  "layer": "conditional_duricrust_curve_fitting_only",
+  "family": "Hysteretic",
+  "parameters": {
+    "positive_backbone": [
+      [
+        21091.789367798978,
+        0.0018372638822124546
+      ],
+      [
+        21302.707261476968,
+        0.007349055528849818
+      ],
+      [
+        21513.625155154958,
+        0.014698111057699637
+      ]
+    ],
+    "negative_backbone": [
+      [
+        -21091.789367798978,
+        -0.0018372638822124546
+      ],
+      [
+        -21302.707261476968,
+        -0.007349055528849818
+      ],
+      [
+        -21513.625155154958,
+        -0.014698111057699637
+      ]
+    ],
+    "pinchX": 1.0,
+    "pinchY": 1.0,
+    "damage1": 0.0,
+    "damage2": 0.0,
+    "beta": 0.0
+  },
+  "evidence": {
+    "positive_backbone": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "synthetic symmetric DP-scale envelope",
+      "kind": "synthetic_mechanics",
+      "note": "Backbone points (fy,uy), (1.01fy,4uy), (1.02fy,8uy) are a mechanics benchmark; NO measured crust tension/cyclic/pinching calibration. Symmetry is not crust tensile strength."
+    },
+    "negative_backbone": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "synthetic symmetric DP-scale envelope",
+      "kind": "synthetic_mechanics",
+      "note": "Backbone points (fy,uy), (1.01fy,4uy), (1.02fy,8uy) are a mechanics benchmark; NO measured crust tension/cyclic/pinching calibration. Symmetry is not crust tensile strength."
+    },
+    "pinchX": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "synthetic symmetric DP-scale envelope",
+      "kind": "synthetic_mechanics",
+      "note": "Backbone points (fy,uy), (1.01fy,4uy), (1.02fy,8uy) are a mechanics benchmark; NO measured crust tension/cyclic/pinching calibration. Symmetry is not crust tensile strength."
+    },
+    "pinchY": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "synthetic symmetric DP-scale envelope",
+      "kind": "synthetic_mechanics",
+      "note": "Backbone points (fy,uy), (1.01fy,4uy), (1.02fy,8uy) are a mechanics benchmark; NO measured crust tension/cyclic/pinching calibration. Symmetry is not crust tensile strength."
+    },
+    "damage1": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "synthetic symmetric DP-scale envelope",
+      "kind": "synthetic_mechanics",
+      "note": "Backbone points (fy,uy), (1.01fy,4uy), (1.02fy,8uy) are a mechanics benchmark; NO measured crust tension/cyclic/pinching calibration. Symmetry is not crust tensile strength."
+    },
+    "damage2": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "synthetic symmetric DP-scale envelope",
+      "kind": "synthetic_mechanics",
+      "note": "Backbone points (fy,uy), (1.01fy,4uy), (1.02fy,8uy) are a mechanics benchmark; NO measured crust tension/cyclic/pinching calibration. Symmetry is not crust tensile strength."
+    },
+    "beta": {
+      "source": "Spohn2022+Brinkman2022+specimen_assumption",
+      "locator": "synthetic symmetric DP-scale envelope",
+      "kind": "synthetic_mechanics",
+      "note": "Backbone points (fy,uy), (1.01fy,4uy), (1.02fy,8uy) are a mechanics benchmark; NO measured crust tension/cyclic/pinching calibration. Symmetry is not crust tensile strength."
+    }
+  },
+  "mars_calibrated": false,
+  "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+  "geometry": {
+    "type": "zeroLength",
+    "direction": 3
+  },
+  "displacement_scale_m": 0.0018372638822124546,
+  "notes": [
+    "Force N versus relative displacement m, not continuum stress versus strain.",
+    "Independent spring fixture; no automatic normal/shear coupling or tributary ring-area calibration."
+  ]
+}

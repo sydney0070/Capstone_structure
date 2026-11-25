@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "returncode": 0,
+  "complete": true,
+  "elapsed_s": 1.867093416978605,
+  "process_group_cleanup": true,
+  "cleanup_error": null,
+  "solver_threads": 1,
+  "cleanup_scope": "owned_process_group",
+  "command": [
+    "research_20261109/test_research.py"
+  ],
+  "safe_verdict": false
+}

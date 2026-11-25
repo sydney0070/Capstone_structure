@@ -1,29 +1,54 @@
-__pycache__/
-*.pyc
+# Local caches and credentials
 .DS_Store
-
-# output files
-*.html
-*.csv
-
-# DEM data
-*.hgt
-
-# Planetary DEM data
-*.img
-*.IMG
-*.lbl
-*.LBL
-*.hgt
-*.HGT
-*.tif
-*.tiff
-
-# Generated visualization/results
-*.html
-*.csv
-
-# Python/macOS
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+
+# Large external datasets/backups are kept locally; see upload manifest.
+/material/archive/material_original.zip
+/ground/ground_modeling/DTEEC_037262_1845_036761_1845_U01.IMG
+/ground/ground_modeling/ldem_1024_90s_75s_000_030.img
+/ground/ground_modeling/megt00n000hb.img
+/structure/MARS_DATA 복사본
+/ground/results/nonlinear_layers_20261125/performance/native_call_sample_57685.txt
+
+# Shared Mars input data stay with the team, outside this publication.
+/material/references_20261109/03_candidates/earlier_raw/aluminum_TRR285-processed_data.zip
+/material/references_20261109/03_candidates/earlier_raw/stressStrain.zip
+/ground/archive/ground_modeling_20261116/stationxml.xb.elyse.2019.151.sxml
+/docs/references/07_observations/stationxml.xb.elyse.2019.151.xml
+/docs/references/07_observations/S1222a_ACC.mseed
+/material/material_release_20261101/research/rc_transform_results.zip
+/material/material_release_20261101/research/rc_probe_results.zip
+/material/references_20261109/06_site_and_input/motion_window_enu.json
+/material/references_20261109/06_site_and_input/ground_run_context.json
+/material/references_20261109/06_site_and_input/motion_full_enu.json
+/material/references_20261109/06_site_and_input/stationxml.xb.elyse.2019.151.xml
+/material/references_20261109/06_site_and_input/large_originals.json
+/ground/ground_modeling/xb.elyse.03.bhu.mqs2019drgb.1.mseed
+/ground/ground_modeling/xb.elyse.03.bhv.mqs2019drgb.1.mseed
+/ground/ground_modeling/xb.elyse.03.bhw.mqs2019drgb.1.mseed
+/ground/ground_modeling/megt00n000hb.lbl
+/ground/ground_modeling/stationxml.xb.elyse.2019.151.xml
+/docs/references/01_ground.zip
+/structure/MARS_DATA/twins_calib_1218_01.csv
+/structure/MARS_DATA/ps_calib_1218_01.csv
+/structure/MARS_DATA/ps_calib_1217_01.csv
+/structure/MARS_DATA/twins_calib_1217_01.csv
+/structure/MARS_DATA/S1222a_ACC.mseed
+/material/rc_step3_diagnostics/results_rc_diagnostics.zip
+/material/rc_element_comparison/results_rc_element_comparison.zip
+/material/rc_step2/results_rc_step2.zip
+/material/rc_step3_final_validation/results_rc_final_validation.zip
+/material/rc_step3_fix/results_rc_step3.zip
+/material/material_tuning_20261008/material_tuning_only_20261012.zip
+/material/material_tuning_20261008/material_tuning_with_structure_20261012.zip
+/material/material_tuning_20261008/material_tuning_20261008.zip
+/material/material_tuning_20261008/material_tuning_only_20261012_v2.zip
+/structure/MARS_DATA (1).zip
+/material/insight_specimen_evaluation_20261124.zip
+/material/rc_step2_package.zip
+/material/insight_layer_specimens_20261123.zip

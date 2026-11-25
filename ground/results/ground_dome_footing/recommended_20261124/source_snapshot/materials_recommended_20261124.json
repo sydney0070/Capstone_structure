@@ -1,0 +1,260 @@
+{
+  "created_on": "2026-11-24",
+  "units": "m N s kg Pa",
+  "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/materials.json",
+  "specimen_source_sha256": "b9c2c062f312925f65d6728af9fa4447ebc9ee54c1b418527dca2085ce08da17",
+  "materials": {
+    "mars_recommended_duricrust_dp_20261124": {
+      "E_Pa": 11480000.0,
+      "nu": 0.28,
+      "G_Pa": 4484375.0,
+      "K_Pa": 8696969.696969697,
+      "density_kg_m3": 1025.0,
+      "phi_deg": 30.0,
+      "c_Pa": 5800.0,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "role": "duricrust",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "specimen_id": "duricrust_dp",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Brinkman2022",
+          "locator": "Table 4, PDF p.13",
+          "kind": "transferred",
+          "note": "Select E=11.48 MPa and nu=.28; effective shallow volume, not isolated crust. Derive G/K consistently; do not mix independent modal estimates."
+        },
+        "nu": {
+          "source": "Brinkman2022",
+          "locator": "Table 4, PDF p.13",
+          "kind": "transferred",
+          "note": "Select E=11.48 MPa and nu=.28; effective shallow volume, not isolated crust. Derive G/K consistently; do not mix independent modal estimates."
+        },
+        "density_kg_m3": {
+          "source": "Spohn2022",
+          "locator": "Section 6.7, range 950–1100 kg/m3",
+          "kind": "assumed_within_inferred_range",
+          "note": "Midpoint 1025 chosen for this specimen, not directly measured"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "phi_deg": {
+          "source": "Spohn2022",
+          "locator": "Section 6.4, slope analysis; phi=30 deg and rho1200 assumed",
+          "kind": "inferred_conditional",
+          "note": "c=5.8 kPa is inferred conditional on phi and rho1200; transferred to rho1025 without new calibration. Not independent measured c and phi."
+        },
+        "c_Pa": {
+          "source": "Spohn2022",
+          "locator": "Section 6.4, slope analysis; phi=30 deg and rho1200 assumed",
+          "kind": "inferred_conditional",
+          "note": "c=5.8 kPa is inferred conditional on phi and rho1200; transferred to rho1025 without new calibration. Not independent measured c and phi."
+        },
+        "psi_deg": {
+          "source": "specimen_assumption",
+          "locator": "non-associated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; not measured"
+        },
+        "hardening": {
+          "source": "specimen_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "mars_calibrated": false,
+      "assumptions": [
+        "Unit cube is a material test, not the actual thickness of this geological unit.",
+        "No selfweight; confinement is an imposed laboratory test condition."
+      ]
+    },
+    "mars_recommended_sand_mgs1_dp_1300_20261124": {
+      "E_Pa": 28400000.0,
+      "nu": 0.22,
+      "G_Pa": 11639344.262295082,
+      "K_Pa": 16904761.904761903,
+      "density_kg_m3": 1300,
+      "phi_deg": 35.5,
+      "c_Pa": 280,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "role": "sand",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "specimen_id": "sand_mgs1_dp_1300",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Murdoch2018",
+          "locator": "Table 2; existing 1300 kg/m3 candidate",
+          "kind": "transferred",
+          "note": "Rounded E=28.4 MPa, nu=.22 from previous cross-source initial set"
+        },
+        "nu": {
+          "source": "Murdoch2018",
+          "locator": "Table 2; existing 1300 kg/m3 candidate",
+          "kind": "transferred",
+          "note": "Rounded E=28.4 MPa, nu=.22 from previous cross-source initial set"
+        },
+        "density_kg_m3": {
+          "source": "Spohn2022",
+          "locator": "Section 6.7, sand 1300–1500 kg/m3",
+          "kind": "selected_inferred_reference",
+          "note": "1300 is also the previously saved target density"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "phi_deg": {
+          "source": "Dotson2024",
+          "locator": "Figures 5–6; previously digitized set",
+          "kind": "simulant_transfer_approximate",
+          "note": "c≈280 Pa, phi near rho1310–1320 transferred to rho1300. Direct-shear normal stress .097–.68 kPa, not foundation pressure validation"
+        },
+        "c_Pa": {
+          "source": "Dotson2024",
+          "locator": "Figures 5–6; previously digitized set",
+          "kind": "simulant_transfer_approximate",
+          "note": "c≈280 Pa, phi near rho1310–1320 transferred to rho1300. Direct-shear normal stress .097–.68 kPa, not foundation pressure validation"
+        },
+        "psi_deg": {
+          "source": "specimen_assumption",
+          "locator": "non-associated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; not measured"
+        },
+        "hardening": {
+          "source": "specimen_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "mars_calibrated": false,
+      "assumptions": [
+        "Unit cube is a material test, not the actual thickness of this geological unit.",
+        "No selfweight; confinement is an imposed laboratory test condition.",
+        "InSight target density and predicted 1 m wave speeds determine common initial elastic moduli",
+        "Apparent cohesion and peak friction digitized approximately from MGS-1 at about 1320 kg/m3",
+        "Transfer to 1300 kg/m3 assumes the nearby measured coefficients; zero dilation and hardening are initial assumptions",
+        "Direct-shear normal stress 0.097–0.68 kPa; no site-specific strength or foundation-pressure validation"
+      ]
+    },
+    "mars_recommended_blocky_ejecta_elastic_20261124": {
+      "E_Pa": 520000000.0,
+      "nu": 0.24,
+      "G_Pa": 209677419.3548387,
+      "K_Pa": 333333333.3333333,
+      "density_kg_m3": 1700.0,
+      "law": "ElasticIsotropic",
+      "role": "blocky_ejecta",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "specimen_id": "blocky_ejecta_elastic",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Kenda2020",
+          "locator": "Table 1, coarse ejecta",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "nu": {
+          "source": "Kenda2020",
+          "locator": "Table 1, coarse ejecta",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "density_kg_m3": {
+          "source": "existing_project_reference",
+          "locator": "mars_insight_blocky_ejecta",
+          "kind": "transferred_model_density",
+          "note": "1700 carried over from published reference density scenario, not core measurement"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        }
+      },
+      "mars_calibrated": false,
+      "assumptions": [
+        "Unit cube is a material test, not the actual thickness of this geological unit.",
+        "No selfweight; confinement is an imposed laboratory test condition."
+      ]
+    },
+    "mars_recommended_fractured_basalt_elastic_20261124": {
+      "E_Pa": 13000000000.0,
+      "nu": 0.28,
+      "G_Pa": 5078125000.0,
+      "K_Pa": 9848484848.48485,
+      "density_kg_m3": 2760.0,
+      "law": "ElasticIsotropic",
+      "role": "fractured_basalt",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "specimen_id": "fractured_basalt_elastic",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Kenda2020",
+          "locator": "Table 1, fractured bedrock",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "nu": {
+          "source": "Kenda2020",
+          "locator": "Table 1, fractured bedrock",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "density_kg_m3": {
+          "source": "Morgan2018",
+          "locator": "Section 4.1, terrestrial fractured basalt analogy",
+          "kind": "analogue_transfer",
+          "note": "Effective continuum; no joint failure strength inferred"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        }
+      },
+      "mars_calibrated": false,
+      "assumptions": [
+        "Unit cube is a material test, not the actual thickness of this geological unit.",
+        "No selfweight; confinement is an imposed laboratory test condition."
+      ]
+    }
+  }
+}

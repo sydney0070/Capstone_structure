@@ -1,0 +1,35 @@
+{
+  "kind": "soil2dcv",
+  "material": "PM4Sand",
+  "params": {
+    "Dr": 0.35,
+    "G0": 476.0,
+    "hpo": 0.53,
+    "rho": 1.9,
+    "pa": 101.3,
+    "emax": 0.8,
+    "emin": 0.5,
+    "nu": 0.333333333333
+  },
+  "bounds": {
+    "G0": [
+      300.0,
+      700.0
+    ],
+    "hpo": [
+      0.2,
+      1.0
+    ]
+  },
+  "name": "sand_pm4",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

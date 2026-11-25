@@ -1,0 +1,1075 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.2.12.1. SSPquadUP Element &mdash; OpenSeesPy 3.2.2.9 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4.2.12.2. SSPbrickUP Element" href="SSPbrickUP.html" />
+    <link rel="prev" title="4.2.11.6. Twenty Eight Node Brick u-p Element" href="TwentyEightNodeBrickUP.html" /> 
+
+<!-- RTD Extra Head -->
+
+
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2021-03-24T19:39:52Z", "builder": "sphinx", "canonical_url": null, "commit": "0761d8b9", "docroot": "/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "src/SSPquadUP", "programming_language": "py", "project": "openseespydoc", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "stable"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+
+
+<!-- end RTD <extrahead> -->
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="openseespydoc" /><meta name="readthedocs-version-slug" content="stable" /><meta name="readthedocs-resolver-filename" content="/src/SSPquadUP.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> OpenSeesPy
+          
+
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                stable
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">1. Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pypi.html">1.1. PyPi (Windows, Linux, Mac)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pypiwin.html">1.1.1. PyPi (Windows)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pypiwin.html#install-anaconda">1.1.1.1. Install Anaconda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pypiwin.html#install-in-jupyter-notebook">1.1.1.2. Install In Jupyter Notebook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pypiwin.html#install-in-command-line">1.1.1.3. Install In command line</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pypilinux.html">1.1.2. PyPi (Linux)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pypilinux.html#install-python">1.1.2.1. Install Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pypilinux.html#install-in-terminal">1.1.2.2. Install in terminal</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pypimac.html">1.1.3. PyPi (Mac)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pypimac.html#install-dependencies">1.1.3.1. Install Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pypimac.html#install-python">1.1.3.2. Install Python</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pypimac.html#install-in-terminal">1.1.3.3. Install in terminal</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="otherinstall.html">1.2. Other Instalation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="designsafe.html">1.2.1. DesignSafe (Web-based)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="designsaferun.html">1.2.1.1. OpenSeesPy in DesignSafe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="paraview.html">1.2.1.2. Paraview in DesignSafe</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="wsl.html">1.2.2. Windows Subsystem for Linux (Windows)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wsl.html#install-the-windows-subsystem-for-linux">1.2.2.1. Install the Windows Subsystem for Linux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsl.html#install-anaconda-and-start-jupyter-notebook">1.2.2.2. Install Anaconda and start Jupyter Notebook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsl.html#in-jupyter-notebook">1.2.2.3. In Jupyter Notebook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wsl.html#in-the-command-line-optional">1.2.2.4. In the command line (optional)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="compile.html">2. Compilation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="compilewin.html">2.1. Compilation for Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compilemac.html">2.2. Compilation for MacOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compileqt.html">2.3. Compilation using QT</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#a-qt-build-environment-for-opensees">2.3.1. A Qt build environment for OpenSees</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#dependency">2.3.2. Dependency</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#getting-started">2.3.3. Getting started:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#building-openseespy">2.3.4. Building OpenSeesPy:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#supported-build-environments">2.3.5. Supported Build Environments:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#mumps">2.3.6. MUMPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#openmpi">2.3.7. OpenMPI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#umfpack">2.3.8. UMFPACK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#superlu">2.3.9. SUPERLU</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#superlumt">2.3.10. SUPERLUMT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#superludist">2.3.11. SUPERLUDIST</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#lapack-scalapack">2.3.12. LAPACK (SCALAPACK)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#blas">2.3.13. BLAS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#arpack">2.3.14. ARPACK</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#gcc">2.3.15. GCC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#python">2.3.16. PYTHON</a></li>
+<li class="toctree-l3"><a class="reference internal" href="compileqt.html#misc-notes">2.3.17. MISC. NOTES</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">3. Change Log</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modelcmds.html">4. Model Commands</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="model.html">4.1. model command</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="element.html">4.2. element commands</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="element.html#zero-length-element">4.2.1. Zero-Length Element</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ZeroLength.html">4.2.1.1. zeroLength Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthND.html">4.2.1.2. zeroLengthND Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthSection.html">4.2.1.3. zeroLengthSection Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CoupledZeroLength.html">4.2.1.4. CoupledZeroLength Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthContact2D.html">4.2.1.5. zeroLengthContact Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthContactNTS2D.html">4.2.1.6. zeroLengthContactNTS2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthInterface2D.html">4.2.1.7. zeroLengthInterface2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthImpact3D.html">4.2.1.8. zeroLengthImpact3D</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#truss-elements">4.2.2. Truss Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="trussEle.html">4.2.2.1. Truss Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="corotTruss.html">4.2.2.2. Corotational Truss Element</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#beam-column-elements">4.2.3. Beam-Column Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="elasticBeamColumn.html">4.2.3.1. Elastic Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ModElasticBeam2d.html">4.2.3.2. Elastic Beam Column Element with Stiffness Modifiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticTimoshenkoBeam.html">4.2.3.3. Elastic Timoshenko Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="beamWithHinges.html">4.2.3.4. Beam With Hinges Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dispBeamColumn.html">4.2.3.5. dispBeamColumn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ForceBeamColumn.html">4.2.3.6. forceBeamColumn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="nonlinearBeamColumn.html">4.2.3.7. nonlinearBeamColumn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dispBeamColumnInt.html">4.2.3.8. Flexure-Shear Interaction Displacement-Based Beam-Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MVLEM.html">4.2.3.9. MVLEM - Multiple-Vertical-Line-Element-Model for RC Walls</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SFI_MVLEM.html">4.2.3.10. SFI MVLEM - Cyclic Shear-Flexure Interaction Model for RC Walls</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#joint-elements">4.2.4. Joint Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="beamColumnJoint.html">4.2.4.1. BeamColumnJoint Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticTubularJoint.html">4.2.4.2. ElasticTubularJoint Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Joint2D.html">4.2.4.3. Joint2D Element</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#link-elements">4.2.5. Link Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="twoNodeLink.html">4.2.5.1. Two Node Link Element</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#bearing-elements">4.2.6. Bearing Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="elastomericBearingPlasticity.html">4.2.6.1. Elastomeric Bearing (Plasticity) Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="elastomericBearingBoucWen.html">4.2.6.2. Elastomeric Bearing (Bouc-Wen) Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="flatSliderBearing.html">4.2.6.3. Flat Slider Bearing Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="singleFPBearing.html">4.2.6.4. Single Friction Pendulum Bearing Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TFP.html">4.2.6.5. Triple Friction Pendulum Bearing Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TripleFrictionPendulum.html">4.2.6.6. Triple Friction Pendulum Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="multipleShearSpring.html">4.2.6.7. MultipleShearSpring Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="KikuchiBearing.html">4.2.6.8. KikuchiBearing Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="YamamotoBiaxialHDR.html">4.2.6.9. YamamotoBiaxialHDR Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElastomericX.html">4.2.6.10. ElastomericX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="LeadRubberX.html">4.2.6.11. LeadRubberX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="HDR.html">4.2.6.12. HDR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RJWatsonEqsBearing.html">4.2.6.13. RJ-Watson EQS Bearing Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FPBearingPTV.html">4.2.6.14. FPBearingPTV</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#quadrilateral-elements">4.2.7. Quadrilateral Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="quad.html">4.2.7.1. Quad Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellMITC4.html">4.2.7.2. Shell Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellDKGQ.html">4.2.7.3. ShellDKGQ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellDKGT.html">4.2.7.4. ShellDKGT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellNLDKGQ.html">4.2.7.5. ShellNLDKGQ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellNLDKGT.html">4.2.7.6. ShellNLDKGT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ShellNL.html">4.2.7.7. ShellNL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bbarQuad.html">4.2.7.8. Bbar Plane Strain Quadrilateral Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="enhancedQuad.html">4.2.7.9. Enhanced Strain Quadrilateral Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSPquad.html">4.2.7.10. SSPquad Element</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#triangular-elements">4.2.8. Triangular Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tri31.html">4.2.8.1. Tri31 Element</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#brick-elements">4.2.9. Brick Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="stdBrick.html">4.2.9.1. Standard Brick Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bbarBrick.html">4.2.9.2. Bbar Brick Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="20NodeBrick.html">4.2.9.3. Twenty Node Brick Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSPbrick.html">4.2.9.4. SSPbrick Element</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#tetrahedron-elements">4.2.10. Tetrahedron Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="FourNodeTetrahedron.html">4.2.10.1. FourNodeTetrahedron</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#uc-san-diego-u-p-element-saturated-soil">4.2.11. UC San Diego u-p element (saturated soil)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="quadUP.html">4.2.11.1. Four Node Quad u-p Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="brickUP.html">4.2.11.2. Brick u-p Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bbarQuadUP.html">4.2.11.3. BbarQuad u-p Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bbarBrickUP.html">4.2.11.4. BbarBrick u-p Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="NineFourNodeQuadUP.html">4.2.11.5. Nine Four Node Quad u-p Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TwentyEightNodeBrickUP.html">4.2.11.6. Twenty Eight Node Brick u-p Element</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="element.html#other-u-p-elements">4.2.12. Other u-p elements</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">4.2.12.1. SSPquadUP Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSPbrickUP.html">4.2.12.2. SSPbrickUP Element</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#contact-elements">4.2.13. Contact Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="SimpleContact2D.html">4.2.13.1. SimpleContact2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SimpleContact3D.html">4.2.13.2. SimpleContact3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BeamContact2D.html">4.2.13.3. BeamContact2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BeamContact3D.html">4.2.13.4. BeamContact3D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BeamEndContact3D.html">4.2.13.5. BeamEndContact3D</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#cable-elements">4.2.14. Cable Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CatenaryCable.html">4.2.14.1. CatenaryCableElement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#pfem-elements">4.2.15. PFEM Elements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PFEMElementBubble.html">4.2.15.1. PFEMElementBubble</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PFEMElementCompressible.html">4.2.15.2. PFEMElementCompressible</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="element.html#misc">4.2.16. Misc.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="SurfaceLoad.html">4.2.16.1. SurfaceLoad Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="VS3D4.html">4.2.16.2. VS3D4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AC3D8.html">4.2.16.3. AC3D8</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASI3D8.html">4.2.16.4. ASI3D8</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AV3D4.html">4.2.16.5. AV3D4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="node.html">4.3. node command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SP_Constraint.html">4.4. sp constraint commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fix.html">4.4.1. fix command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fixX.html">4.4.2. fixX command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fixY.html">4.4.3. fixY command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fixZ.html">4.4.4. fixZ command</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mp_constraint.html">4.5. mp constraint commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="equalDOF.html">4.5.1. equalDOF command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="equalDOF_Mixed.html">4.5.2. equalDOF_Mixed command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigidDiaphragm.html">4.5.3. rigidDiaphragm command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rigidLink.html">4.5.4. rigidLink command</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="timeSeries.html">4.6. timeSeries commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="constantTs.html">4.6.1. Constant TimeSeries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linearTs.html">4.6.2. Linear TimeSeries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trigTs.html">4.6.3. Trigonometric TimeSeries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="triangleTs.html">4.6.4. Triangular TimeSeries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rectTs.html">4.6.5. Rectangular TimeSeries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pulseTs.html">4.6.6. Pulse TimeSeries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pathTs.html">4.6.7. Path TimeSeries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pattern.html">4.7. pattern commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="plainPattern.html">4.7.1. Plain Pattern</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="load.html">4.7.1.1. load command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="eleload.html">4.7.1.2. eleLoad command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sp.html">4.7.1.3. sp command</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="uniformExcitation.html">4.7.2. UniformExcitation Pattern</a></li>
+<li class="toctree-l3"><a class="reference internal" href="multiExcitation.html">4.7.3. Multi-Support Excitation Pattern</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="groundMotion.html">4.7.3.1. Plain Ground Motion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interpolatedGroundMotion.html">4.7.3.2. Interpolated Ground Motion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="imposedMotion.html">4.7.3.3. Imposed Motion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mass.html">4.8. mass command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="region.html">4.9. region command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reyleigh.html">4.10. rayleigh command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="block.html">4.11. block commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="block2D.html">4.11.1. block2D command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="block3D.html">4.11.2. block3D command</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="beamIntegration.html">4.12. beamIntegration commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Lobatto.html">4.12.1. Lobatto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Legendre.html">4.12.2. Legendre</a></li>
+<li class="toctree-l3"><a class="reference internal" href="NewtonCotes.html">4.12.3. NewtonCotes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Radau.html">4.12.4. Radau</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Trapezoidal.html">4.12.5. Trapezoidal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CompositeSimpson.html">4.12.6. CompositeSimpson</a></li>
+<li class="toctree-l3"><a class="reference internal" href="userDefined.html">4.12.7. UserDefined</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FixedLocation.html">4.12.8. FixedLocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LowOrder.html">4.12.9. LowOrder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MidDistance.html">4.12.10. MidDistance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UserHinge.html">4.12.11. UserHinge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HingeMidpoint.html">4.12.12. HingeMidpoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HingeRadau.html">4.12.13. HingeRadau</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HingeRadauTwo.html">4.12.14. HingeRadauTwo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="HingeEndpoint.html">4.12.15. HingeEndpoint</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="uniaxialMaterial.html">4.13. uniaxialMaterial commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="uniaxialMaterial.html#steel-reinforcing-steel-materials">4.13.1. Steel &amp; Reinforcing-Steel Materials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="steel01.html">4.13.1.1. Steel01</a></li>
+<li class="toctree-l4"><a class="reference internal" href="steel02.html">4.13.1.2. Steel02</a></li>
+<li class="toctree-l4"><a class="reference internal" href="steel4.html">4.13.1.3. Steel4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Hysteretic.html">4.13.1.4. Hysteretic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ReinforcingSteel.html">4.13.1.5. ReinforcingSteel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Dodd_Restrepo.html">4.13.1.6. Dodd_Restrepo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RambergOsgoodSteel.html">4.13.1.7. RambergOsgoodSteel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SteelMPF.html">4.13.1.8. SteelMPF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="steel01thermal.html">4.13.1.9. Steel01Thermal</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="uniaxialMaterial.html#concrete-materials">4.13.2. Concrete Materials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Concrete01.html">4.13.2.1. Concrete01</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Concrete02.html">4.13.2.2. Concrete02</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Concrete04.html">4.13.2.3. Concrete04</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Concrete06.html">4.13.2.4. Concrete06</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Concrete07.html">4.13.2.5. Concrete07</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Concrete01WithSITC.html">4.13.2.6. Concrete01WithSITC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ConfinedConcrete01.html">4.13.2.7. ConfinedConcrete01</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ConcreteD.html">4.13.2.8. ConcreteD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FRPConfinedConcrete.html">4.13.2.9. FRPConfinedConcrete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FRPConfinedConcrete02.html">4.13.2.10. FRPConfinedConcrete02</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ConcreteCM.html">4.13.2.11. ConcreteCM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TDConcrete.html">4.13.2.12. TDConcrete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TDConcreteEXP.html">4.13.2.13. TDConcreteEXP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TDConcreteMC10.html">4.13.2.14. TDConcreteMC10</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TDConcreteMC10NL.html">4.13.2.15. TDConcreteMC10NL</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="uniaxialMaterial.html#standard-uniaxial-materials">4.13.3. Standard Uniaxial Materials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ElasticUni.html">4.13.3.1. Elastic Uniaxial Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticPP.html">4.13.3.2. Elastic-Perfectly Plastic Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticPPGap.html">4.13.3.3. Elastic-Perfectly Plastic Gap Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ENT.html">4.13.3.4. Elastic-No Tension Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ParallelUni.html">4.13.3.5. Parallel Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SeriesUni.html">4.13.3.6. Series Material</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="uniaxialMaterial.html#pytzqz-uniaxial-materials-for-p-y-t-z-and-q-z-elements-for-modeling-soil-structure-interaction-through-the-piles-in-a-structural-foundation">4.13.4. PyTzQz uniaxial materials for p-y, t-z and q-z elements for modeling soil-structure interaction through the piles in a structural foundation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PySimple1.html">4.13.4.1. PySimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TzSimple1.html">4.13.4.2. TzSimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="QzSimple1.html">4.13.4.3. QzSimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyLiq1.html">4.13.4.4. PyLiq1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TzLiq1.html">4.13.4.5. TzLiq1 Material</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="uniaxialMaterial.html#other-uniaxial-materials">4.13.5. Other Uniaxial Materials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Hardening.html">4.13.5.1. Hardening Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Cast.html">4.13.5.2. CastFuse Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ViscousDamper.html">4.13.5.3. ViscousDamper Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BilinearOilDamper.html">4.13.5.4. BilinearOilDamper Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Bilin.html">4.13.5.5. Modified Ibarra-Medina-Krawinkler Deterioration Model with Bilinear Hysteretic Response (Bilin Material)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ModIMKPeakOriented.html">4.13.5.6. Modified Ibarra-Medina-Krawinkler Deterioration Model with Peak-Oriented Hysteretic Response (ModIMKPeakOriented Material)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ModIMKPinching.html">4.13.5.7. Modified Ibarra-Medina-Krawinkler Deterioration Model with Pinched Hysteretic Response (ModIMKPinching Material)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SAWS.html">4.13.5.8. SAWS Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BarSlip.html">4.13.5.9. BarSlip Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Bond_SP01.html">4.13.5.10. Bond SP01 - - Strain Penetration Model for Fully Anchored Steel Reinforcing Bars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Fatigue.html">4.13.5.11. Fatigue Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ImpactMaterial.html">4.13.5.12. Impact Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="HyperbolicGapMaterial.html">4.13.5.13. Hyperbolic Gap Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="LimitState.html">4.13.5.14. Limit State Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MinMax.html">4.13.5.15. MinMax Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticBilin.html">4.13.5.16. ElasticBilin Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticMultiLinear.html">4.13.5.17. ElasticMultiLinear Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MultiLinear.html">4.13.5.18. MultiLinear</a></li>
+<li class="toctree-l4"><a class="reference internal" href="InitStrainMaterial.html">4.13.5.19. Initial Strain Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="InitStressMaterial.html">4.13.5.20. Initial Stress Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PathIndependent.html">4.13.5.21. PathIndependent Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Pinching4.html">4.13.5.22. Pinching4 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ECC01.html">4.13.5.23. Engineered Cementitious Composites Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SelfCentering.html">4.13.5.24. SelfCentering Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Viscous.html">4.13.5.25. Viscous Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BoucWen.html">4.13.5.26. BoucWen Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BWBN.html">4.13.5.27. BWBN Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="KikuchiAikenHDR.html">4.13.5.28. KikuchiAikenHDR Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="KikuchiAikenLRB.html">4.13.5.29. KikuchiAikenLRB Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AxialSp.html">4.13.5.30. AxialSp Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AxialSpHD.html">4.13.5.31. AxialSpHD Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PinchingLimitStateMaterial.html">4.13.5.32. Pinching Limit State Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CFSWSWP.html">4.13.5.33. CFSWSWP Wood-Sheathed Cold-Formed Steel Shear Wall Panel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CFSSSWP.html">4.13.5.34. CFSSSWP Steel-Sheathed Cold-formed Steel Shear Wall Panel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ndMaterial.html">4.14. nDMaterial commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ndMaterial.html#standard-models">4.14.1. Standard Models</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="elasticIsotropic.html">4.14.1.1. ElasticIsotropic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="elasticOrthotropic.html">4.14.1.2. ElasticOrthotropic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="J2Plasticity.html">4.14.1.3. J2Plasticity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="DrunkerPrager.html">4.14.1.4. DruckerPrager</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Damage2p.html">4.14.1.5. Damage2p</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PlaneStress.html">4.14.1.6. PlaneStress</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PlaneStrain.html">4.14.1.7. PlaneStrain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MultiAxialCyclicPlasticity.html">4.14.1.8. MultiaxialCyclicPlasticity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BoundingCamClay.html">4.14.1.9. BoundingCamClay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PlateFiber.html">4.14.1.10. PlateFiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FSAM.html">4.14.1.11. FSAM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ManzariDafalias.html">4.14.1.12. ManzariDafalias</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PM4Sand.html">4.14.1.13. PM4Sand</a></li>
+<li class="toctree-l4"><a class="reference internal" href="StressDensityModel.html">4.14.1.14. StressDensityModel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="AcousticMedium.html">4.14.1.15. AcousticMedium</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndMaterial.html#tsinghua-sand-models">4.14.2. Tsinghua Sand Models</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="CycLiqCP.html">4.14.2.1. CycLiqCP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CycLiqCPSP.html">4.14.2.2. CycLiqCPSP</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndMaterial.html#materials-for-modeling-concrete-walls">4.14.3. Materials for Modeling Concrete Walls</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PlaneStressUserMaterial.html">4.14.3.1. PlaneStressUserMaterial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PlateFromPlaneStress.html">4.14.3.2. PlateFromPlaneStress</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PlateRebar.html">4.14.3.3. PlateRebar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PlasticDamageConcretePlaneStress.html">4.14.3.4. PlasticDamageConcretePlaneStress</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndMaterial.html#contact-materials-for-2d-and-3d">4.14.4. Contact Materials for 2D and 3D</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ContactMaterial2D.html">4.14.4.1. ContactMaterial2D</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ContactMaterial3D.html">4.14.4.2. ContactMaterial3D</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndMaterial.html#wrapper-material-for-initial-state-analysis">4.14.5. Wrapper material for Initial State Analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="InitialStateAnalysisWrapper.html">4.14.5.1. InitialStateAnalysisWrapper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="InitStressNDMaterial.html">4.14.5.2. Initial Stress Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="InitStrainNDMaterial.html">4.14.5.3. Initial Strain Material</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndMaterial.html#uc-san-diego-soil-models">4.14.6. UC San Diego soil models</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="PressureIndependMultiYield.html">4.14.6.1. PressureIndependMultiYield</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PressureDependMultiYield.html">4.14.6.2. PressureDependMultiYield</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PressureDependMultiYield02.html">4.14.6.3. PressureDependMultiYield02</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PressureDependMultiYield03.html">4.14.6.4. PressureDependMultiYield03</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndMaterial.html#uc-san-diego-saturated-undrained-soil">4.14.7. UC San Diego Saturated Undrained soil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="FluidSolidPorousMaterial.html">4.14.7.1. FluidSolidPorousMaterial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="section.html">4.15. section commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="elasticSection.html">4.15.1. Elastic Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fibersection.html">4.15.2. Fiber Section</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="fiber.html">4.15.2.1. Fiber Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="patch.html">4.15.2.2. Patch Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="layer.html">4.15.2.3. Layer Command</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fiberThermalsection.html">4.15.3. Fiber Thermal Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ndfiber.html">4.15.4. NDFiber Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wfsection2d.html">4.15.5. Wide Flange Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rcsection2d.html">4.15.6. RC Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rccircularsection.html">4.15.7. RCCircular Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parallelsection.html">4.15.8. Parallel Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sectionaggregator.html">4.15.9. Section Aggregator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uniaxialsection.html">4.15.10. Uniaxial Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elasticMembranePlateSection.html">4.15.11. Elastic Membrane Plate Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plateFiberSection.html">4.15.12. Plate Fiber Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bidirectionalSection.html">4.15.13. Bidirectional Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="isolatorsection.html">4.15.14. Isolator2spring Section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LayeredShell.html">4.15.15. LayeredShell</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="frictionModel.html">4.16. frictionModel commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Coulomb.html">4.16.1. Coulomb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="veldependent.html">4.16.2. Velocity Dependent Friction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="velnormal.html">4.16.3. Velocity and Normal Force Dependent Friction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="velpressure.html">4.16.4. Velocity and Pressure Dependent Friction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="velmulti.html">4.16.5. Multi-Linear Velocity Dependent Friction</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="geomTransf.html">4.17. geomTransf commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="LinearTransf.html">4.17.1. Linear Transformation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pdelta.html">4.17.2. PDelta Transformation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="corotational.html">4.17.3. Corotational Transformation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="analysiscmds.html">5. Analysis Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="constraints.html">5.1. constraints commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PlainConstraint.html">5.1.1. Plain Constraints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LagrangeMultipliers.html">5.1.2. Lagrange Multipliers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PenaltyMethod.html">5.1.3. Penalty Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TransformationMethod.html">5.1.4. Transformation Method</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="numberer.html">5.2. numberer commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="PlainNumberer.html">5.2.1. Plain Numberer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RCM.html">5.2.2. RCM Numberer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="AMD.html">5.2.3. AMD Numberer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ParallelPlainNumberer.html">5.2.4. Parallel Plain Numberer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ParallelRCMNumberer.html">5.2.5. Parallel RCM Numberer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="system.html">5.3. system commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="BandGen.html">5.3.1. BandGeneral SOE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="BandSPD.html">5.3.2. BandSPD SOE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ProfileSPD.html">5.3.3. ProfileSPD SOE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SuperLU.html">5.3.4. SuperLU SOE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="UmfPack.html">5.3.5. UmfPack SOE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FullGeneral.html">5.3.6. FullGeneral SOE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="SparseSYM.html">5.3.7. SparseSYM SOE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Mumps.html">5.3.8. MUMPS Solver</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">5.4. test commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="normUnbalance.html">5.4.1. NormUnbalance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="normDispIncr.html">5.4.2. NormDispIncr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="energyIncr.html">5.4.3. energyIncr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativeNormUnbalance.html">5.4.4. RelativeNormUnbalance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativeNormDispIncr.html">5.4.5. RelativeNormDispIncr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativeTotalNormDispIncr.html">5.4.6. RelativeTotalNormDispIncr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="relativeEnergyIncr.html">5.4.7. RelativeEnergyIncr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fixedNumIter.html">5.4.8. FixedNumIter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="normDispAndUnbalance.html">5.4.9. NormDispAndUnbalance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="normDispOrUnbalance.html">5.4.10. NormDispOrUnbalance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="algorithm.html">5.5. algorithm commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linearAlgo.html">5.5.1. Linear Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="newton.html">5.5.2. Newton Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="newtonLineSearch.html">5.5.3. Newton with Line Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modifiedNewton.html">5.5.4. Modified Newton Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="krylovNewton.html">5.5.5. Krylov-Newton Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="secantNewton.html">5.5.6. SecantNewton Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="raphsonNewton.html">5.5.7. RaphsonNewton Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="periodicNewton.html">5.5.8. PeriodicNewton Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bfgs.html">5.5.9. BFGS Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="broyden.html">5.5.10. Broyden Algorithm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">5.6. integrator commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="integrator.html#static-integrator-objects">5.6.1. Static integrator objects</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="loadControl.html">5.6.1.1. LoadControl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="displacementControl.html">5.6.1.2. DisplacementControl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ParallelDisplacementControl.html">5.6.1.3. Parallel DisplacementControl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="minUnbalDispNorm.html">5.6.1.4. Minimum Unbalanced Displacement Norm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="arcLength.html">5.6.1.5. Arc-Length Control</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="integrator.html#transient-integrator-objects">5.6.2. Transient integrator objects</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="centralDifference.html">5.6.2.1. Central Difference</a></li>
+<li class="toctree-l4"><a class="reference internal" href="newmark.html">5.6.2.2. Newmark Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="hht.html">5.6.2.3. Hilber-Hughes-Taylor Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generalizedAlpha.html">5.6.2.4. Generalized Alpha Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="trbdf2.html">5.6.2.5. TRBDF2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="explicitDifference.html">5.6.2.6. Explicit Difference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">5.7. analysis command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eigen.html">5.8. eigen command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analyze.html">5.9. analyze command</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="outputcmds.html">6. Output Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="basicDeformation.html">6.1. basicDeformation command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicForce.html">6.2. basicForce command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basicStiffness.html">6.3. basicStiffness command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eleDynamicalForce.html">6.4. eleDynamicalForce command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eleForce.html">6.5. eleForce command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eleNodes.html">6.6. eleNodes command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="eleResponse.html">6.7. eleResponse command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getEleTags.html">6.8. getEleTags command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getLoadFactor.html">6.9. getLoadFactor command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getNodeTags.html">6.10. getNodeTags command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getTime.html">6.11. getTime command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeAccel.html">6.12. nodeAccel command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeBounds.html">6.13. nodeBounds command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeCoord.html">6.14. nodeCoord command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeDisp.html">6.15. nodeDisp command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeEigenvector.html">6.16. nodeEigenvector command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeDOFs.html">6.17. nodeDOFs command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeMass.html">6.18. nodeMass command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodePressure.html">6.19. nodePressure command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeReaction.html">6.20. nodeReaction command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeResponse.html">6.21. nodeResponse command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeVel.html">6.22. nodeVel command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nodeUnbalance.html">6.23. nodeUnbalance command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numFact.html">6.24. numFact command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="numIter.html">6.25. numIter command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printA.html">6.26. printA command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printB.html">6.27. printB command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printGID.html">6.28. printGID command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printModel.html">6.29. printModel command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="record.html">6.30. record command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recorder.html">6.31. recorder command</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="nodeRecorder.html">6.31.1. node recorder command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nodeEnRecorder.html">6.31.2. node envelope recorder command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elementRecorder.html">6.31.3. element recorder command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="elementEnRecorder.html">6.31.4. element envelope recorder command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pvdRecorder.html">6.31.5. pvd recorder command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bgpvdRecorder.html">6.31.6. background recorder command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="CollapseRecorder.html">6.31.7. Collapse Recorder command</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sectionForce.html">6.32. sectionForce command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sectionDeformation.html">6.33. sectionDeformation command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sectionStiff.html">6.34. sectionStiffness command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sectionFlexibility.html">6.35. sectionFlexibility command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sectionLocation.html">6.36. sectionLocation command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sectionWeight.html">6.37. sectionWeight command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="systemSize.html">6.38. systemSize command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testIter.html">6.39. testIter command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testNorm.html">6.40. testNorm command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="version.html">6.41. version command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logFile.html">6.42. logFile command</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="utilitycmds.html">7. Utility Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="convertBinaryToText.html">7.1. convertBinaryToText command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convertTextToBinary.html">7.2. convertTextToBinary command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="database.html">7.3. database command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InitialStateAnalysis.html">7.4. InitialStateAnalysis command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loadConst.html">7.5. loadConst command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modalDamping.html">7.6. modalDamping command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reactions.html">7.7. reactions command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remove.html">7.8. remove command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reset.html">7.9. reset command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restore.html">7.10. restore command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="save.html">7.11. save command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sdfResponse.html">7.12. sdfResponse command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setTime.html">7.13. setTime command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setNodeCoord.html">7.14. setNodeCoord command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setNodeDisp.html">7.15. setNodeDisp command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setNodeVel.html">7.16. setNodeVel command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setNodeAccel.html">7.17. setNodeAccel command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setPrecision.html">7.18. setPrecision command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setElementRayleighDampingFactors.html">7.19. setElementRayleighDampingFactors command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html">7.20. start command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stop.html">7.21. stop command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stripXML.html">7.22. stripXML command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="updateElementDomain.html">7.23. updateElementDomain command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="updateMaterialStage.html">7.24. updateMaterialStage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wipe.html">7.25. wipe command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wipeAnalysis.html">7.26. wipeAnalysis command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setNumThread.html">7.27. setNumthread command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getNumThreads.html">7.28. getNumthread command</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fsicmds.html">8. FSI Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mesh.html">8.1. mesh command</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linemesh.html">8.1.1. line mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trimesh.html">8.1.2. triangular mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="quadmesh.html">8.1.3. quad mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tetmesh.html">8.1.4. tetrahedron mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="partmesh.html">8.1.5. particle mesh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bgmesh.html">8.1.6. background mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="remesh.html">8.2. remesh command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pfemIntegrator.html">8.3. PFEM integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pfemSystem.html">8.4. PFEM SOE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pfemTest.html">8.5. PFEM test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pfemAnalysis.html">8.6. PFEM analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="senscmds.html">9. Sensitivity Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="parameter.html">9.1. parameter command</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parameter.html#examples">9.1.1. Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="addToParameter.html">9.2. addToParameter command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="updateParameter.html">9.3. updateParameter command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setParameter.html">9.4. setParameter command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getParamTags.html">9.5. getParamTags command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getParamValue.html">9.6. getParamValue command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="computeGradients.html">9.7. computeGradients command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sensitivityAlgorithm.html">9.8. sensitivityAlgorithm command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sensNodeDisp.html">9.9. sensNodeDisp command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sensNodeVel.html">9.10. sensNodeVel command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sensNodeAccel.html">9.11. sensNodeAccel command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sensLambda.html">9.12. sensLambda command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sensSectionForce.html">9.13. sensSectionForce command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sensNodePressure.html">9.14. sensNodePressure command</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reliabilitycmds.html">10. Reliability Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="randomVariable.html">10.1. randomVariable command</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="parallelcmds.html">11. Parallel Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getPID.html">11.1. getPID command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getNP.html">11.2. getNP command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barrier.html">11.3. barrier command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="send.html">11.4. send command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recv.html">11.5. recv command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Bcast.html">11.6. Bcast command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setStartNodeTag.html">11.7. setStartNodeTag command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="domainChange.html">11.8. domainChange command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="partition.html">11.9. partition command</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">12. Preprocessing Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="DiscretizeMember.html">12.1. DiscretizeMember command</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="postprocessing.html">13. Postprocessing Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plotcmds.html">13.1. Get_Rendering Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="createODB.html">13.1.1. Create Output Database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="saveFiberData2D.html">13.1.2. saveFiberData2D command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plot_model.html">13.1.3. plot_model command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plot_modeshape.html">13.1.4. plot_modeshape command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plot_deformedshape.html">13.1.5. plot_deformedshape command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plot_fiberResponse2D.html">13.1.6. plot_fiberResponse2D command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="animate_deformedshape.html">13.1.7. animate_deformedshape command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="animate_fiberResponse2D.html">13.1.8. animate_fiberResponse2D command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plotting_OpenSeesTcl.html">13.1.9. Plotting OpenSees Tcl Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Plotting_Development_Guide.html">13.1.10. Visualization Development Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Plotting_Development_Guide.html#internal-database-functions">13.1.10.1. Internal Database functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Plotting_Development_Guide.html#internal-plotting-functions">13.1.10.2. Internal Plotting functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Plotting_Development_Guide.html#user-functions">13.1.10.3. User functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Plotting_Development_Guide.html#example-of-an-internal-function">13.1.10.4. Example of an internal function</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Plotting_Development_Guide.html#naming-conventions">13.1.10.5. Naming conventions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Plotting_Development_Guide.html#wish-list">13.1.10.6. Wish List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ops_vis.html">13.2. ops_vis module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_plot_model.html">13.2.1. plot_model (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_plot_defo.html">13.2.2. plot_defo (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_plot_mode_shape.html">13.2.3. plot_mode_shape (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_section_force_diagram_2d.html">13.2.4. section_force_diagram_2d (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_section_force_diagram_3d.html">13.2.5. section_force_diagram_3d (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_plot_stress_2d.html">13.2.6. plot_stress_2d (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_anim_defo.html">13.2.7. anim_defo (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_anim_mode.html">13.2.8. anim_mode (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_plot_fiber_section.html">13.2.9. plot_fiber_section (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_fib_sec_list_to_cmds.html">13.2.10. fib_sec_list_to_cmds (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_sig_out_per_node.html">13.2.11. sig_out_per_node (ops_vis)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">14. Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">14.1. Structural Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="truss.html">14.1.1. Elastic Truss Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nonlinearTruss.html">14.1.2. Nonlinear Truss Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="PortalFrame2d.html">14.1.3. Portal Frame 2d Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="MomentCurvature.html">14.1.4. Moment Curvature Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RCFrameGravity.html">14.1.5. Reinforced Concrete Frame Gravity Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RCFramePushOver.html">14.1.6. Reinforced Concrete Frame Pushover Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ThreeStorySteel.html">14.1.7. Three story steel building with rigid beam-column connections and W-section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ExampleFRP.html">14.1.8. Cantilever FRP-Confined Circular Reinforced Concrete Column under Cyclic Lateral Loading</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RCshearwall.html">14.1.9. Reinforced Concrete Shear Wall with Special Boundary Elements</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="earthquake.html">14.2. Earthquake Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Canti2DEQ.html">14.2.1. Cantilever 2D EQ ground motion with gravity Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="RCFrameEarthquake.html">14.2.2. Reinforced Concrete Frame Earthquake Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exampleNamedSpacedNonlinearSDOF.html">14.2.3. Example name spaced nonlinear SDOF</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exampleRotDSpectra.html">14.2.4. RotD Spectra of Ground Motion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="portal2deq.html">14.2.5. Portal 2D Frame - Dynamic EQ Ground Motion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="columneq.html">14.2.6. 2D Column - Dynamic EQ Ground Motion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nonlinearcanti.html">14.2.7. Nonlinear Canti Col Uniaxial Inelastic Section- Dyn EQ GM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nonlinearcanti2.html">14.2.8. Nonlin Canti Col Inelstc Uniaxial Mat in Fiber Sec - Dyn EQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cantuni.html">14.2.9. Cantilever 2D Column with Units- Dynamic EQ Ground Motion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cantuni2.html">14.2.10. Cantilever 2D Column with Units-Static Pushover</a></li>
+<li class="toctree-l3"><a class="reference internal" href="portalpavan1.html">14.2.11. 2D Portal Frame with Units- Dynamic EQ Ground Motion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="portalpavan2.html">14.2.12. 2D Portal Frame with Units- Multiple Support Dynamic EQ Ground Motion-acctimeseries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="portalpavan3.html">14.2.13. 2D Portal Frame with Units- Multiple Support Dynamic EQ Ground Motion-disptimeseries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="portalpavan4.html">14.2.14. 2D Portal Frame with Units- Uniform Dynamic EQ -bidirectional-acctimeseries</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tsunami.html">14.3. Tsunami Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="movingmesh.html">14.3.1. Moving Mesh</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dambreak.html">14.3.1.1. Dambreak Analysis using moving mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="elasticobstacle.html">14.3.1.2. Dambreak with Elastic Obstacle Analysis using moving mesh</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="backgroundmeshexamples.html">14.3.2. Background Mesh</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dambreakbg.html">14.3.2.1. Dambreak Analysis using background mesh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="elasticobstaclebg.html">14.3.2.2. Dambreak with Elastic Obstacle Analysis using background mesh</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="geotech.html">14.4. GeoTechnical Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pile.html">14.4.1. Laterally-Loaded Pile Foundation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="freeFieldEffective.html">14.4.2. Effective Stress Site Response Analysis of a Layered Soil Column</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="thermal.html">14.5. Thermal Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="beamThermal.html">14.5.1. Restrained beam under thermal expansion</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="parallelexs.html">14.6. Parallel Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="hello.html">14.6.1. Hello World Example 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hello2.html">14.6.2. Hello World Example 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paralleltruss.html">14.6.3. Parallel Truss Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paralleltri31.html">14.6.4. Parallel Tri31 Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="paralleltruss2.html">14.6.5. Parallel Parametric Study Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="plotting.html">14.7. Plotting Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ModelRendering.html">14.7.1. A Procedure to Render 2D or 3D OpenSees Model and Mode Shapes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_ex_2d_portal_frame.html">14.7.2. Statics of a 2d Portal Frame (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_ex_3d_3el_cantilever.html">14.7.3. Statics of a 3d 3-element cantilever beam (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_ex_quads_4x4.html">14.7.4. Plot stress distribution of plane stress quad model (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_ex_plot_fiber_section.html">14.7.5. Plot steel and reinforced concrete fiber sections (ops_vis)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ops_vis_ex_2d_portal_frame_th_mode_anim.html">14.7.6. Animation of dynamic analysis and mode shapes of a 2d Portal Frame (ops_vis)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">OpenSeesPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modelcmds.html">4. Model Commands</a> &raquo;</li>
+        
+          <li><a href="element.html">4.2. element commands</a> &raquo;</li>
+        
+      <li>4.2.12.1. SSPquadUP Element</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/zhuminjie/OpenSeesPyDoc/blob/0761d8b97725cb263e7d52869beedc8426766a88/src/SSPquadUP.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sspquadup-element">
+<h1>4.2.12.1. SSPquadUP Element<a class="headerlink" href="#sspquadup-element" title="Permalink to this headline">¶</a></h1>
+<p>This command is used to construct a SSPquadUP element object.</p>
+<dl class="function">
+<dt>
+<code class="descname">element</code><span class="sig-paren">(</span><em>'SSPquadUP'</em>, <em>eleTag</em>, <em>*eleNodes</em>, <em>matTag</em>, <em>thick</em>, <em>fBulk</em>, <em>fDen</em>, <em>k1</em>, <em>k2</em>, <em>void</em>, <em>alpha</em>, <em>&lt;b1=0.0</em>, <em>b2=0.0&gt;</em><span class="sig-paren">)</span></dt>
+<dd><table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">eleTag</span></code> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int">int</a>)</td>
+<td>unique element object tag</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">eleNodes</span></code> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int">int</a>))</td>
+<td>a list of four element nodes in counter-clockwise order</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">matTag</span></code> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int">int</a>)</td>
+<td>unique integer tag associated with previously-defined nDMaterial object</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">thick</span></code> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float">float</a>)</td>
+<td>thickness of the element in out-of-plane direction</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">fBulk</span></code> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float">float</a>)</td>
+<td>bulk modulus of the pore fluid</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">fDen</span></code> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float">float</a>)</td>
+<td>mass density of the pore fluid</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">k1</span></code> <code class="docutils literal notranslate"><span class="pre">k2</span></code> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float">float</a>)</td>
+<td>permeability coefficients in global x- and y-directions, respectively</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">void</span></code> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float">float</a>)</td>
+<td>voids ratio</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">alpha</span></code> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float">float</a>)</td>
+<td>spatial pressure field stabilization parameter (see discussion below for more information)</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">b1</span></code>  <code class="docutils literal notranslate"><span class="pre">b2</span></code> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float">float</a>)</td>
+<td>constant body forces in global x- and y-directions, respectively (optional, default = 0.0) - See Note 3</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div>The SSPquadUP element is an extension of the SSPquad Element for use in dynamic plane strain analysis of fluid saturated porous media. A mixed displacement-pressure (u-p) formulation is used, based upon the work of Biot as extended by Zienkiewicz and Shiomi (1984).</div></blockquote>
+</dd></dl>
+
+<p>The physical stabilization necessary to allow for reduced integration incorporates an assumed strain field in which the volumetric dilation and the shear strain associated with the the hourglass modes are zero, resulting in an element which is free from volumetric and shear locking. The elimination of shear locking results in greater coarse mesh accuracy in bending dominated problems, and the elimination of volumetric locking improves accuracy in nearly-incompressible problems. Analysis times are generally faster than corresponding full integration elements.</p>
+<p>Equal-order interpolation is used for the displacement and pressure fields, thus, the SSPquadUP element does not inherently pass the inf-sup condition, and is not fully acceptable in the incompressible-impermeable limit (the QuadUP Element has the same issue). A stabilizing parameter is employed to permit the use of equal-order interpolation for the SSPquadUP element. This parameter $alpha can be computed as</p>
+<div class="math notranslate nohighlight">
+\[\alpha = 0.25*(h^2)/(den*c^2)\]</div>
+<p>where h is the element size, c is the speed of elastic wave propagation in the solid phase, and den is the mass density of the solid phase. The $alpha parameter should be a small number. With a properly defined $alpha parameter, the SSPquadUP element can produce comparable results to a higher-order element such as the 9_4_QuadUP Element at a significantly lower computational cost and with a greater ease in mesh generation.</p>
+<p>The full formulation for the SSPquadUP element can be found in McGann et al. (2012) along with several example applications.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ol class="last arabic simple">
+<li>The SSPquadUP element will only work in dynamic analysis.</li>
+<li>For saturated soils, the mass density input into the associated nDMaterial object should be the saturated mass density.</li>
+<li>When modeling soil, the body forces input into the SSPquadUP element should be the components of the gravitational vector, not the unit weight.</li>
+<li>Fixing the pore pressure degree-of-freedom (dof 3) at a node is a drainage boundary condition at which zero pore pressure will be maintained throughout the analysis. Leaving the third dof free allows pore pressures to build at that node.</li>
+<li>Valid queries to the SSPquadUP element when creating an ElementalRecorder object correspond to those for the nDMaterial object assigned to the element (e.g., ‘stress’, ‘strain’). Material response is recorded at the single integration point located in the center of the element.</li>
+<li>The SSPquadUP element was designed with intentions of duplicating the functionality of the QuadUP Element. If an example is found where the SSPquadUP element cannot do something that works for the QuadUP Element, e.g., material updating, please contact the developers listed below so the bug can be fixed.</li>
+</ol>
+</div>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference external" href="http://opensees.berkeley.edu/wiki/index.php/SSPquadUP_Element">Notes</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="SSPbrickUP.html" class="btn btn-neutral float-right" title="4.2.12.2. SSPbrickUP Element" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="TwentyEightNodeBrickUP.html" class="btn btn-neutral float-left" title="4.2.11.6. Twenty Eight Node Brick u-p Element" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2021, Minjie Zhu
+      
+        <span class="commit">
+          Revision <code>0761d8b9</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+   
+
+</body>
+</html>

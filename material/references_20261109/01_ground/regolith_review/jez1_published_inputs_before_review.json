@@ -1,0 +1,68 @@
+{
+  "status": "LITERATURE_STRENGTH_TRANSFER_ONLY_NOT_CALIBRATED",
+  "source_doi": "10.3390/app11157052",
+  "source_locations": "Table 4; Figure 10 and section 4.3",
+  "license": "CC-BY-4.0",
+  "material": "JEZ-1 simulant tested on Earth; not in-situ Mars soil",
+  "density_tonne_m3": 1.84,
+  "relative_density": 0.8628,
+  "normal_stresses_kPa": [
+    25,
+    50,
+    75
+  ],
+  "inputs": [
+    {
+      "surface": "soil",
+      "state": "peak",
+      "angle_deg": 40.6,
+      "cohesion_or_adhesion_kPa": 3.1,
+      "friction_coefficient": 0.8571036610748987
+    },
+    {
+      "surface": "soil",
+      "state": "residual",
+      "angle_deg": 39.7,
+      "cohesion_or_adhesion_kPa": 3.2,
+      "friction_coefficient": 0.8302159954806118
+    },
+    {
+      "surface": "smooth_steel",
+      "state": "peak",
+      "angle_deg": 18.9,
+      "cohesion_or_adhesion_kPa": 1.5,
+      "friction_coefficient": 0.342376525728683
+    },
+    {
+      "surface": "smooth_steel",
+      "state": "residual",
+      "angle_deg": 16.7,
+      "cohesion_or_adhesion_kPa": 1.5,
+      "friction_coefficient": 0.3000143778165491
+    },
+    {
+      "surface": "rough_steel",
+      "state": "peak",
+      "angle_deg": 36.2,
+      "cohesion_or_adhesion_kPa": 4.3,
+      "friction_coefficient": 0.7318893615113481
+    },
+    {
+      "surface": "rough_steel",
+      "state": "residual",
+      "angle_deg": 33.2,
+      "cohesion_or_adhesion_kPa": 2.8,
+      "friction_coefficient": 0.6543816636121457
+    }
+  ],
+  "not_identified": [
+    "K",
+    "G",
+    "dilatancy",
+    "hardening",
+    "contact_Kn",
+    "contact_Kt",
+    "low-stress extrapolation"
+  ],
+  "model_caveat": "DruckerPrager compression-meridian mapping is not direct-shear calibration. Existing zeroLengthContactASDimplex coupon has no adhesion, so mu alone cannot reproduce these envelopes; no targets are manufactured from the fitted envelopes."
+}

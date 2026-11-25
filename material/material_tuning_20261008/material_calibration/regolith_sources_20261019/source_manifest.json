@@ -1,0 +1,14 @@
+[
+  {
+    "file": "jez1_2021.pdf",
+    "download_url": "https://pdfs.semanticscholar.org/e909/0fdfaba79687a8d6c95a3755e375d475167d.pdf",
+    "origin": "https://doi.org/10.3390/app11157052",
+    "sha256": "e6e7d8176834dfe6eca6d8cdc39a00aefe4ce38d8e5961b12cd44ca367a08bed"
+  },
+  {
+    "file": "nasa_guide_2024.pdf",
+    "download_url": "https://ntrs.nasa.gov/api/citations/20240011783/downloads/Lunar_Regolith_Simulant_Users_Guide_Rev_A_28OCT.pdf",
+    "origin": "NASA/TM-20240011783",
+    "sha256": "52e52b195ef25e26004c8bb06b9d88614c64dcf3d0a8f4a3a5c64b94d3cd9c16"
+  }
+]

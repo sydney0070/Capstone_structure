@@ -1,0 +1,28 @@
+{
+  "temperature_assignment_status": "RESOLVED_FROM_EXISTING_STRUCTURE_CODE",
+  "thermal_inputs19_configured": true,
+  "material_point_numerical_checks": 99,
+  "all_numerical_checks_pass": true,
+  "common_environment_histories_completed": 4,
+  "records_per_history": 19,
+  "environment_samples_per_history": 142,
+  "full_SSI_thermal_coupling": false,
+  "experimental_thermal_refit": false,
+  "mechanical_baseline_preserved": true,
+  "PPT_update": "completed; reorganized per four requested changes",
+  "PPT_final_path": "/Users/sydney/Desktop/capstone/총정리ppt_재료19개_지반수정.pptx",
+  "PPT_final_sha256": "9d13cd2ab1464c8640dd66cff7717673511ff3c046ef9a7453de0a75ea471219",
+  "PPT_total_slides": 14,
+  "PPT_backup_path": "/Users/sydney/Desktop/capstone/총정리ppt_재료19개_지반수정_구성개편전백업_20261112_173345.pptx",
+  "PPT_thermal_content_pages": [
+    1,
+    3,
+    4,
+    12
+  ],
+  "PPT_material_status_page": 1,
+  "PPT_material_selection_page": 2,
+  "PPT_material_catalog_page": 3,
+  "PPT_ground_status_page": 6,
+  "PPT_environment_comparison_page": 12
+}

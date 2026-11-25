@@ -1,0 +1,30 @@
+SSPbrick element - Written: C.McGann, P.Arduino, P.Mackenzie-Helnwein, U.Washington
+OK elastic_soil
+OK sand_pdmy02
+OK clay_pimy
+PM4Sand nDmaterial - Written: L.Chen, P.Arduino, U.Washington
+SSPquad element - Written: C.McGann, P.Arduino, P.Mackenzie-Helnwein, U.Washington
+1 initialize
+OK sand_pm4
+PM4Silt nDmaterial - Written: L.Chen, P.Arduino, U.Washington
+1 initialize
+OK silt_pm4
+OK concrete_cover
+OK concrete_core
+OK rebar_steel02
+OK pile_py
+OK pile_tz
+OK pile_qz
+OK normal_gap
+OK interface_friction
+OK radiation_dashpot
+OK shell_concrete
+OK shell_sintered_regolith
+OK shell_geopolymer
+OK shell_sulfur_concrete
+OK shell_steel
+OK shell_aluminum
+OK shell_cfrp_elastic
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+OK moon_regolith_dp
+OK mars_regolith_dp

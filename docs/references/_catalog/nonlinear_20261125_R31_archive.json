@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-25",
+  "new_ids": [
+    "R31"
+  ],
+  "sources": [
+    {
+      "id": "R31",
+      "title": "Sabet & de Borst (2019), Structural softening, mesh dependence, and regularisation in non-associated plastic flow",
+      "group": "04_SSI_and_numerics",
+      "group_label": "SSI·기초·수치해석 선행연구",
+      "used_for": "비선형 층별 재료 및 평가·검증 방법",
+      "used_section": "Abstract; biaxial/shear-layer analyses; ellipticity and mesh dependence for nonassociated perfect plasticity",
+      "prior_scope": "General diagnostic rationale, not proof of the cause of this OpenSees run failure; Cosserat regularisation not implemented",
+      "kind": "논문·보고서",
+      "url": "https://doi.org/10.1002/nag.2973",
+      "files": [
+        "04_SSI_and_numerics/R31_Sabet_deBorst_2019_Nonassociated_Mesh_Dependence.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true,
+      "reviewed_on": "2026-11-25"
+    }
+  ],
+  "download_log": "/private/tmp/nonlinear_literature_20261125/downloads.json"
+}

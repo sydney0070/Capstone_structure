@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "dome",
+  "material": "shell_concrete",
+  "planet": "mars",
+  "support": "linear_springs",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 30000000.0,
+    "nu": 0.2,
+    "rho": 2.4,
+    "thickness": 0.02
+  },
+  "nodes": 2401,
+  "elements": 2304,
+  "surface_area_m2": 98.13750166813792,
+  "mass_tonne": 4.710600080070652,
+  "weight_kN": 17.47632629706212,
+  "max_displacement_m": 6.172758190057048e-05,
+  "min_uz_m": -6.172758190057048e-05,
+  "max_uz_m": -2.7619270838473906e-05,
+  "mean_base_uz_m": -2.7818580870156076e-05,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -7.721601136267964e-14,
+    -3.302025173013614e-13,
+    -1.8829382497642655e-13
+  ],
+  "moment_residual_kNm": [
+    -1.3812321512235437e-12,
+    -3.1429106279318164e-12,
+    -2.6955941506466736e-14
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -17.47632629706207
+  ],
+  "relative_force_residual": 2.219457266423641e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

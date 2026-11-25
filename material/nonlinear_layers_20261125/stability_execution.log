@@ -1,0 +1,325 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+InitialStateAnalysisWrapper nDmaterial - Written: C.McGann, P.Arduino, P.Mackenzie-Helnwein, U.Washington
+{
+  "native_checks": [
+    {
+      "specimen": "mgs1_ss",
+      "method": "Finite difference of native NDTest trial stresses; no native tangent recorder is exposed for this3.4.0 material",
+      "native_versus_continuum_tangent_max_error_over_G": 1.3335676516902069e-05,
+      "limit_relative": 0.001,
+      "passed": true,
+      "engineering_strain_order": "xx yy zz xy yz xz; shear strain is engineering gamma",
+      "small_plastic_trial_increment": 3.2666178974423883e-09,
+      "central_difference_increment": 3.2666178974423883e-12
+    },
+    {
+      "specimen": "blocky_phi35",
+      "method": "Finite difference of native NDTest trial stresses; no native tangent recorder is exposed for this3.4.0 material",
+      "native_versus_continuum_tangent_max_error_over_G": 1.3335240919443278e-05,
+      "limit_relative": 0.001,
+      "passed": true,
+      "engineering_strain_order": "xx yy zz xy yz xz; shear strain is engineering gamma",
+      "small_plastic_trial_increment": 1.9526915685036656e-10,
+      "central_difference_increment": 1.9526915685036655e-13
+    }
+  ],
+  "determinant_formula_checks": [
+    {
+      "specimen": "mgs1_ss",
+      "direct_tensor_vs_matrix_lemma_max_absolute_error": 2.220446049250313e-15,
+      "passed": true
+    },
+    {
+      "specimen": "blocky_phi35",
+      "direct_tensor_vs_matrix_lemma_max_absolute_error": 3.1086244689504383e-15,
+      "passed": true
+    }
+  ],
+  "analytical_controls": [
+    {
+      "specimen": "mgs1_ss",
+      "nu": 0.22,
+      "phi_deg": 30.81395784142527,
+      "psi_deg": 0.0,
+      "triaxial_min_det_Q_over_G3": 0.8827971038926451,
+      "pure_shear_min_det_Q_over_G3": -0.15024424511236908
+    },
+    {
+      "specimen": "mgs1_ss",
+      "nu": 0.22,
+      "phi_deg": 30.81395784142527,
+      "psi_deg": 30.81395784142527,
+      "triaxial_min_det_Q_over_G3": 1.0832691117427875,
+      "pure_shear_min_det_Q_over_G3": 0.22101372044085638
+    },
+    {
+      "specimen": "blocky_phi35",
+      "nu": 0.24,
+      "phi_deg": 35.0,
+      "psi_deg": 0.0,
+      "triaxial_min_det_Q_over_G3": 0.9550852600307429,
+      "pure_shear_min_det_Q_over_G3": -0.22028263385521352
+    },
+    {
+      "specimen": "blocky_phi35",
+      "nu": 0.24,
+      "phi_deg": 35.0,
+      "psi_deg": 35.0,
+      "triaxial_min_det_Q_over_G3": 1.1068191627685955,
+      "pure_shear_min_det_Q_over_G3": 0.26145029343891574
+    }
+  ],
+  "candidate_path_screen": [
+    {
+      "specimen": "crust_tc",
+      "triaxial_min_det_Q_over_G3": 1.0581586997443253,
+      "pure_shear_min_det_Q_over_G3": -0.19857020427460353,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "crust_ss",
+      "triaxial_min_det_Q_over_G3": 1.0257272243491038,
+      "pure_shear_min_det_Q_over_G3": -0.1378681730678493,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "mgs1_tc",
+      "triaxial_min_det_Q_over_G3": 0.9061161415586642,
+      "pure_shear_min_det_Q_over_G3": -0.20414690811034153,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "mgs1_ss",
+      "triaxial_min_det_Q_over_G3": 0.8827971038926451,
+      "pure_shear_min_det_Q_over_G3": -0.15024424511236908,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "mgs1_ss_nearest",
+      "triaxial_min_det_Q_over_G3": 0.8827971038926451,
+      "pure_shear_min_det_Q_over_G3": -0.15024424511236908,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "mgs1s_tc",
+      "triaxial_min_det_Q_over_G3": 0.899532412796918,
+      "pure_shear_min_det_Q_over_G3": -0.18599166818035776,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "mgs1s_ss",
+      "triaxial_min_det_Q_over_G3": 0.8733263684776698,
+      "pure_shear_min_det_Q_over_G3": -0.1343549522246181,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "mgs1s_ss_nearest",
+      "triaxial_min_det_Q_over_G3": 0.8733263684776698,
+      "pure_shear_min_det_Q_over_G3": -0.1343549522246181,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "blocky_phi20",
+      "triaxial_min_det_Q_over_G3": 0.8497879020670236,
+      "pure_shear_min_det_Q_over_G3": -0.0651968843318657,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "blocky_phi30",
+      "triaxial_min_det_Q_over_G3": 0.9296832166150429,
+      "pure_shear_min_det_Q_over_G3": -0.1576331954677344,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "blocky_phi35",
+      "triaxial_min_det_Q_over_G3": 0.9550852600307429,
+      "pure_shear_min_det_Q_over_G3": -0.22028263385521352,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "blocky_phi40",
+      "triaxial_min_det_Q_over_G3": 0.9698700623117216,
+      "pure_shear_min_det_Q_over_G3": -0.29316768192646325,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "blocky_c1000_phi30",
+      "triaxial_min_det_Q_over_G3": 0.9296832166150429,
+      "pure_shear_min_det_Q_over_G3": -0.1576331954677344,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "blocky_c5000_phi30",
+      "triaxial_min_det_Q_over_G3": 0.9296832166150429,
+      "pure_shear_min_det_Q_over_G3": -0.1576331954677344,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "blocky_ss_phi30",
+      "triaxial_min_det_Q_over_G3": 0.8973296085927441,
+      "pure_shear_min_det_Q_over_G3": -0.10949493251652224,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "blocky_ss_phi35",
+      "triaxial_min_det_Q_over_G3": 0.9314823506462768,
+      "pure_shear_min_det_Q_over_G3": -0.16106674385618597,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "basalt_hb_gsi40",
+      "triaxial_min_det_Q_over_G3": 0.9791561913242706,
+      "pure_shear_min_det_Q_over_G3": -0.923419059926115,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "basalt_hb_gsi55",
+      "triaxial_min_det_Q_over_G3": 0.9780804375849586,
+      "pure_shear_min_det_Q_over_G3": -0.9265569953285103,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "basalt_hb_gsi70",
+      "triaxial_min_det_Q_over_G3": 0.9870672597662508,
+      "pure_shear_min_det_Q_over_G3": -0.9006808390574518,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    },
+    {
+      "specimen": "basalt_lab_reference",
+      "triaxial_min_det_Q_over_G3": 1.083420093128781,
+      "pure_shear_min_det_Q_over_G3": -0.509288930658142,
+      "scope": "Conditional perfect-plastic loading tangent; two reference stress directions, not all field states"
+    }
+  ],
+  "ground_snapshot_screen": [
+    {
+      "stage": "gravity",
+      "material": "mars_nl25_basalt_hb_gsi55",
+      "total_GP": 12960,
+      "near_yield_GP": 0,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": null,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "gravity",
+      "material": "mars_nl25_blocky_phi35",
+      "total_GP": 7776,
+      "near_yield_GP": 192,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": 0.7809349195028666,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "gravity",
+      "material": "mars_nl25_crust_tc",
+      "total_GP": 1824,
+      "near_yield_GP": 0,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": null,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "gravity",
+      "material": "mars_nl25_mgs1_ss",
+      "total_GP": 5472,
+      "near_yield_GP": 3640,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 560,
+      "min_det_Q_over_G3": -0.2215506580710837,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "depressurized",
+      "material": "mars_nl25_basalt_hb_gsi55",
+      "total_GP": 12960,
+      "near_yield_GP": 0,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": null,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "depressurized",
+      "material": "mars_nl25_blocky_phi35",
+      "total_GP": 7776,
+      "near_yield_GP": 2124,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": 0.07641141636986794,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "depressurized",
+      "material": "mars_nl25_crust_tc",
+      "total_GP": 1824,
+      "near_yield_GP": 0,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": null,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "depressurized",
+      "material": "mars_nl25_mgs1_ss",
+      "total_GP": 5472,
+      "near_yield_GP": 4476,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 736,
+      "min_det_Q_over_G3": -0.24433658964299654,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "pressurized",
+      "material": "mars_nl25_basalt_hb_gsi55",
+      "total_GP": 12960,
+      "near_yield_GP": 0,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": null,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "pressurized",
+      "material": "mars_nl25_blocky_phi35",
+      "total_GP": 7776,
+      "near_yield_GP": 0,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": null,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "pressurized",
+      "material": "mars_nl25_crust_tc",
+      "total_GP": 1824,
+      "near_yield_GP": 0,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": null,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    },
+    {
+      "stage": "pressurized",
+      "material": "mars_nl25_mgs1_ss",
+      "total_GP": 5472,
+      "near_yield_GP": 192,
+      "sampled_normals": 543,
+      "negative_sampled_det_GP": 0,
+      "min_det_Q_over_G3": 0.0633559589949919,
+      "scope": "Prospective continuum plastic-loading tangent at snapshot stress; near-yield status does not prove current plastic loading; negative determinant is a local diagnostic, not global collapse"
+    }
+  ],
+  "model": "3D perfect-plastic DP, nonassociated psi0, continuum loading tangent",
+  "source": "R31 Sabet/deBorst2019 for general ellipticity/mesh-dependence rationale; DP derivation and native tangent check are project calculations",
+  "limitations": [
+    "Not a measured material instability experiment",
+    "543 normals sampled in three principal planes, including duplicate axis endpoints; absence of negative determinants does not prove stability",
+    "Stored phase snapshots, not all intermediate committed stress states",
+    "No Cosserat/nonlocal/viscous regularisation implemented",
+    "Does not establish the cause of an unreturned native call or the global soil bearing capacity"
+  ]
+}

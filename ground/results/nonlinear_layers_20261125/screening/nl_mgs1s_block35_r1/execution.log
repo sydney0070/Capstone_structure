@@ -1,0 +1,72 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+[static 800001] factor=0.0500, increment=0.05
+[static 800001] factor=0.1000, increment=0.05
+[static 800001] factor=0.1500, increment=0.05
+[static 800001] factor=0.2000, increment=0.05
+[static 800001] factor=0.2500, increment=0.05
+[static 800001] factor=0.3000, increment=0.05
+[static 800001] factor=0.3500, increment=0.05
+[static 800001] factor=0.4000, increment=0.05
+[static 800001] factor=0.4500, increment=0.05
+[static 800001] factor=0.5000, increment=0.05
+[static 800001] factor=0.5500, increment=0.05
+[static 800001] factor=0.6000, increment=0.05
+[static 800001] factor=0.6500, increment=0.05
+[static 800001] factor=0.7000, increment=0.05
+[static 800001] factor=0.7500, increment=0.05
+[static 800001] factor=0.8000, increment=0.05
+[static 800001] factor=0.8500, increment=0.05
+[static 800001] factor=0.9000, increment=0.05
+[static 800001] factor=0.9500, increment=0.05
+[static 800001] factor=1.0000, increment=0.05
+[static 800002] factor=0.1250, increment=0.125
+[static 800002] factor=0.2500, increment=0.125
+[static 800002] factor=0.3750, increment=0.125
+[static 800002] factor=0.5000, increment=0.125
+[static 800002] factor=0.6250, increment=0.125
+[static 800002] factor=0.7500, increment=0.125
+[static 800002] factor=0.8750, increment=0.125
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 4.83718e+11 (max: 0.01503, Norm deltaX: 66.8922)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 1.33495e+13 (max: 0.01503, Norm deltaX: 9405.02)
+NewtonLineSearch::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 1.85649e+14 (max: 0.01503, Norm deltaX: 837.13)
+NewtonRaphson::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 1
+OpenSees > analyze failed, returned: -3 error flag
+[static 800002] factor=0.8750, increment=0.125
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 115699 (max: 0.01503, Norm deltaX: 0.000220747)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 0.9375
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 3.542e+11 (max: 0.01503, Norm deltaX: 3.68476)
+NewtonLineSearch::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 0.9375
+OpenSees > analyze failed, returned: -3 error flag
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 1.17189e+14 (max: 0.01503, Norm deltaX: 453.543)
+NewtonRaphson::solveCurrentStep() -the ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 0.9375
+OpenSees > analyze failed, returned: -3 error flag
+[static 800002] factor=0.8750, increment=0.0625
+[static 800002] factor=0.9062, increment=0.0312
+[static 800002] factor=0.9453, increment=0.0391
+[static 800002] factor=0.9844, increment=0.0391
+[static 800002] factor=1.0000, increment=0.0156
+[static 800003] factor=0.1250, increment=0.125
+[static 800003] factor=0.2500, increment=0.125
+[static 800003] factor=0.3750, increment=0.125
+[static 800003] factor=0.5000, increment=0.125
+[static 800003] factor=0.6250, increment=0.125
+[static 800003] factor=0.7500, increment=0.125
+[static 800003] factor=0.8750, increment=0.125
+[static 800003] factor=1.0000, increment=0.125

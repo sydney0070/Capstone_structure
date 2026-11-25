@@ -1,0 +1,14 @@
+test_anchor_allowable_exceedance_stops (__main__.Checks.test_anchor_allowable_exceedance_stops) ... ok
+test_closed_contact_matches_linear_foundation (__main__.Checks.test_closed_contact_matches_linear_foundation) ... ok
+test_elastic_cycle_returns_to_initial_equilibrium (__main__.Checks.test_elastic_cycle_returns_to_initial_equilibrium) ... ok
+test_equal_contact_anchor_stiffness_matches_bilateral (__main__.Checks.test_equal_contact_anchor_stiffness_matches_bilateral) ... ok
+test_invalid_configuration_rejected (__main__.Checks.test_invalid_configuration_rejected) ... ok
+test_no_anchor_global_impossibility_is_explicit (__main__.Checks.test_no_anchor_global_impossibility_is_explicit) ... ok
+test_no_tension_contact_and_no_compression_anchor (__main__.Checks.test_no_tension_contact_and_no_compression_anchor) ... ok
+test_partial_opening_with_net_compression (__main__.Checks.test_partial_opening_with_net_compression) ... ok
+test_pressure_increment_refinement (__main__.Checks.test_pressure_increment_refinement) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 5.664s
+
+OK

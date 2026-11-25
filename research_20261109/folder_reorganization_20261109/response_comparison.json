@@ -1,0 +1,24 @@
+[
+  {
+    "group": "ground",
+    "baseline": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_20261109/viewer_split_verified_v2/committed_response.csv",
+    "current": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_20261109/layout_verified/committed_response.csv",
+    "shape": [
+      40,
+      3
+    ],
+    "maximum_absolute_difference": 0.0,
+    "identical": true
+  },
+  {
+    "group": "integrated",
+    "baseline": "/Users/sydney/Desktop/capstone/Capstone_structure/integrated/results/mars_ssi_20261109/viewer_split_verified/coupled_response.csv",
+    "current": "/Users/sydney/Desktop/capstone/Capstone_structure/integrated/results/mars_ssi_20261109/layout_verified/coupled_response.csv",
+    "shape": [
+      40,
+      8
+    ],
+    "maximum_absolute_difference": 0.0,
+    "identical": true
+  }
+]

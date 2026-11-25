@@ -1,0 +1,61 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+[static 800001] factor=0.0100, increment=0.01
+[static 800001] factor=0.0200, increment=0.01
+[static 800001] factor=0.0300, increment=0.01
+[static 800001] factor=0.0400, increment=0.01
+[static 800001] factor=0.0500, increment=0.01
+[static 800001] factor=0.0600, increment=0.01
+[static 800001] factor=0.0700, increment=0.01
+[static 800001] factor=0.0800, increment=0.01
+[static 800001] factor=0.0900, increment=0.01
+[static 800001] factor=0.1000, increment=0.01
+[static 800001] factor=0.1100, increment=0.01
+[static 800001] factor=0.1200, increment=0.01
+[static 800001] factor=0.1300, increment=0.01
+[static 800001] factor=0.1400, increment=0.01
+[static 800001] factor=0.1500, increment=0.01
+[static 800001] factor=0.1600, increment=0.01
+[static 800001] factor=0.1700, increment=0.01
+[static 800001] factor=0.1800, increment=0.01
+[static 800001] factor=0.1900, increment=0.01
+[static 800001] factor=0.2000, increment=0.01
+[static 800001] factor=0.2100, increment=0.01
+[static 800001] factor=0.2200, increment=0.01
+[static 800001] factor=0.2300, increment=0.01
+[static 800001] factor=0.2400, increment=0.01
+[static 800001] factor=0.2500, increment=0.01
+[static 800001] factor=0.2600, increment=0.01
+[static 800001] factor=0.2700, increment=0.01
+[static 800001] factor=0.2800, increment=0.01
+[static 800001] factor=0.2900, increment=0.01
+[static 800001] factor=0.3000, increment=0.01
+[static 800001] factor=0.3100, increment=0.01
+[static 800001] factor=0.3200, increment=0.01
+[static 800001] factor=0.3300, increment=0.01
+[static 800001] factor=0.3400, increment=0.01
+[static 800001] factor=0.3500, increment=0.01
+[static 800001] factor=0.3600, increment=0.01
+[static 800001] factor=0.3700, increment=0.01
+[static 800001] factor=0.3800, increment=0.01
+[static 800001] factor=0.3900, increment=0.01
+[static 800001] factor=0.4000, increment=0.01
+[static 800001] factor=0.4100, increment=0.01
+[static 800001] factor=0.4200, increment=0.01
+[static 800001] factor=0.4300, increment=0.01
+[static 800001] factor=0.4400, increment=0.01
+[static 800001] factor=0.4500, increment=0.01
+[static 800001] factor=0.4600, increment=0.01
+[static 800001] factor=0.4700, increment=0.01
+[static 800001] factor=0.4800, increment=0.01
+[static 800001] factor=0.4900, increment=0.01
+[static 800001] factor=0.5000, increment=0.01
+[static 800001] factor=0.5100, increment=0.01
+WARNING: CTestNormUnbalance::test() - failed to converge 
+after: 80 iterations  current Norm: 433177 (max: 0.201214, Norm deltaX: 0.00220078)
+AcceleratedNewton::solveCurrentStep() -The ConvergenceTest object failed in test()
+StaticAnalysis::analyze() - the Algorithm failed at step: 0 with domain at load factor 0.52
+OpenSees > analyze failed, returned: -3 error flag
+[static 800001] factor=0.5100, increment=0.01
+[static 800001] factor=0.5150, increment=0.005
+[static 800001] factor=0.5213, increment=0.00625
+[static 800001] factor=0.5291, increment=0.00781

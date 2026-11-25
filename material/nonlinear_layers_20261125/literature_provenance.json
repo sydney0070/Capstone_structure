@@ -1,0 +1,112 @@
+[
+  {
+    "id": "G17",
+    "title": "Villeneuve & Heap (2021), Calculating cohesion and internal friction angle of volcanic rocks and rock masses",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G17_Villeneuve_Heap_2021_Volcanic_Rock_Strength.pdf",
+    "sha256": "8e685e1d56e744de2f3f981f152ca25cc98129c19e929a51ed3441e39401493b",
+    "bytes": 2544692,
+    "source_url": "https://doi.org/10.30909/vol.04.02.279293",
+    "retrieved_url": "https://www.jvolcanica.org/ojs/index.php/volcanica/article/download/134/139",
+    "review_locator": "Table1–3; Eqs5–14; GSI55 recommendation; canonical a sign checked against HoekBrown2019",
+    "full_pdf_available": true
+  },
+  {
+    "id": "G17",
+    "title": "Villeneuve & Heap (2021), Calculating cohesion and internal friction angle of volcanic rocks and rock masses",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G17_Villeneuve_Heap_2021_Supplement.xlsx",
+    "sha256": "c1a7426124451862c439a221dc212aceccda75f06a542b0b5a7404c76c797723",
+    "bytes": 89671,
+    "source_url": "https://doi.org/10.30909/vol.04.02.279293",
+    "retrieved_url": "https://www.jvolcanica.org/ojs/index.php/volcanica/article/download/134/140",
+    "review_locator": "Table1–3; Eqs5–14; GSI55 recommendation; canonical a sign checked against HoekBrown2019",
+    "full_pdf_available": true
+  },
+  {
+    "id": "G18",
+    "title": "Hoek & Brown (2019), The Hoek–Brown failure criterion and GSI – 2018 edition",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G18_Hoek_Brown_2019_GSI.pdf",
+    "sha256": "2bd7ec8ab273fd560f97ab148a9f61caec5e047300b1e2ce228ed1f4d6d8f918",
+    "bytes": 1837020,
+    "source_url": "https://doi.org/10.1016/j.jrmge.2018.08.001",
+    "retrieved_url": "https://static.rocscience.cloud/assets/resources/learning/hoek/2019-The-Hoek-Brown-failure-criterion-and-GSI-2018-edition-1.pdf",
+    "review_locator": "Eqs3–6, PDF p2; application range and tension cutoff",
+    "full_pdf_available": true
+  },
+  {
+    "id": "G19",
+    "title": "Hughes et al. (2022), Canyon Wall and Floor Debris Deposits in Aeolis Mons, Mars",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G19_Hughes_2022_Blocky_Regolith.pdf",
+    "sha256": "9a94f2803e08dcc72166c21d6dc6c3feeabf76d0104230f6129463f53d746877",
+    "bytes": 6450269,
+    "source_url": "https://doi.org/10.1029/2021JE006848",
+    "retrieved_url": "https://lamb.caltech.edu/documents/22303/JGR_Planets_-_2022_-_Hughes_-_Canyon_Wall_and_Floor_Debris_Deposits_in_Aeolis_Mons_Mars.pdf",
+    "review_locator": "Section6.2, PDF p16, granular and broken-rock phi20–40deg/c0 or1–5kPa ranges",
+    "full_pdf_available": true
+  },
+  {
+    "id": "G20",
+    "title": "Coleman (2024), Megaflood Erosion on Mars—How Lava-Filled Craters Became Mesas",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G20_Coleman_2024_original_unavailable.webloc",
+    "sha256": "dba1c7b789a11b152832f163a732ce09b5bcc7381cb0d1e2e274f98d3e5e0123",
+    "bytes": 259,
+    "source_url": "https://doi.org/10.1029/2023JE007997",
+    "retrieved_url": null,
+    "review_locator": "Section rock mechanics, fractured/jointed basalt comparison",
+    "full_pdf_available": false
+  },
+  {
+    "id": "R28",
+    "title": "NASA-STD-7009B (2024), Standard for Models and Simulations",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/04_SSI_and_numerics/R28_NASA_STD_7009B_2024.pdf",
+    "sha256": "7b95a2065325dc3035c35ce110557d817555d3f22210ce5f6ce0bb2fb4ccd8b4",
+    "bytes": 1417365,
+    "source_url": "https://standards.nasa.gov/node/263",
+    "retrieved_url": "https://standards.nasa.gov/sites/default/files/standards/NASA/B/1/NASA-STD-7009B-Final-3-5-2024.pdf",
+    "review_locator": "Credibility, verification/validation, project acceptance and uncertainty requirements",
+    "full_pdf_available": true
+  },
+  {
+    "id": "R29",
+    "title": "Goldberg & Ricks (2022), Lessons Learned and Best Practices for Utilizing a Generalized Composite Impact Model",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/04_SSI_and_numerics/R29_Goldberg_Ricks_2022_Single_Element_Verification.pdf",
+    "sha256": "9dafa4bc435cad05667d7e8bf1683bc42a30a49c9ee378635c9e9586fba8a51d",
+    "bytes": 928128,
+    "source_url": "https://ntrs.nasa.gov/citations/20220004943",
+    "retrieved_url": "https://ntrs.nasa.gov/api/citations/20220004943/downloads/Earth%20and%20Space%202022%20paper%20revised-final.pdf",
+    "review_locator": "Single Element Verification Procedure Summary",
+    "full_pdf_available": true
+  },
+  {
+    "id": "R30",
+    "title": "McGann, Arduino & Mackenzie-Helnwein (2012), Development of Simplified Analysis Procedure for Piles in Laterally Spreading Layered Soils, PEER2012/05",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/04_SSI_and_numerics/R30_McGann_2012_OpenSees_DP_Verification.pdf",
+    "sha256": "4de8306144fdc19433bdcee5e22e345693bee94db0a8dc8cb5eab17a34d1c460",
+    "bytes": 3167718,
+    "source_url": "https://peer.berkeley.edu/sites/default/files/webpeer-2012-05-christopher_r._mcgann_pedro_arduino_and_peter_mackenzie_helnwein.pdf",
+    "retrieved_url": "https://peer.berkeley.edu/sites/default/files/webpeer-2012-05-christopher_r._mcgann_pedro_arduino_and_peter_mackenzie_helnwein.pdf",
+    "review_locator": "Section4.5.1–4.5.5, printed pp48–60: confined compression, triaxial compression, simple shear, hydrostatic extension, multi-element test",
+    "full_pdf_available": true
+  },
+  {
+    "id": "G21",
+    "title": "Long-Fox & Britt (2023), Characterization of planetary regolith simulants for the research and development of space resource technologies",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/01_ground/G21_LongFox_Britt_2023_Planetary_Simulants.pdf",
+    "sha256": "d939e07e2fc54fc0cd62d554900148512115926dcddf69a9ccbac6d508da307b",
+    "bytes": 3089639,
+    "source_url": "https://doi.org/10.3389/frspt.2023.1255535",
+    "retrieved_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2023.1255535/pdf",
+    "review_locator": "Section3.2, Table4/5: MGS1 basaltic-base composition and MGS1S40wt% gypsum; composition/PSD, not raw strength-strain validation data",
+    "full_pdf_available": true
+  },
+  {
+    "id": "R31",
+    "title": "Sabet & de Borst (2019), Structural softening, mesh dependence, and regularisation in non-associated plastic flow",
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/docs/references/04_SSI_and_numerics/R31_Sabet_deBorst_2019_Nonassociated_Mesh_Dependence.pdf",
+    "sha256": "97d4638df860527cd33c4e934c2132d0291853d41f7f807804037345c41479ee",
+    "bytes": 4807846,
+    "source_url": "https://doi.org/10.1002/nag.2973",
+    "retrieved_url": "https://eprints.whiterose.ac.uk/id/eprint/148931/1/ShearLayer.pdf",
+    "review_locator": "Abstract; biaxial/shear-layer analyses; ellipticity and mesh dependence for nonassociated perfect plasticity",
+    "full_pdf_available": true
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "id": "duricrust_elastic",
+  "family": "ElasticIsotropic",
+  "status": "SOURCE_BASED_INITIAL_TRIAL",
+  "mars_calibrated": false,
+  "tests": [
+    {
+      "test": "triaxial_load_unload",
+      "pressure_Pa": 5000.0,
+      "initial_E_Pa": 11479999.999999966,
+      "expected_E_Pa": 11480000.0,
+      "confinement_max_error_Pa": 3.637978807091713e-12,
+      "force_balance_max_error_N": 2.5011104298755527e-12,
+      "final_strain": 0.0,
+      "final_q_Pa": 0.0,
+      "checks": {
+        "elastic_modulus": true,
+        "confinement": true,
+        "homogeneity": true,
+        "force_balance": true,
+        "finite": true,
+        "elastic_curve": true,
+        "return_to_origin": true
+      },
+      "passed": true
+    },
+    {
+      "test": "triaxial_load_unload",
+      "pressure_Pa": 50000.0,
+      "initial_E_Pa": 11480000.000000147,
+      "expected_E_Pa": 11480000.0,
+      "confinement_max_error_Pa": 3.637978807091713e-11,
+      "force_balance_max_error_N": 2.546585164964199e-11,
+      "final_strain": 0.0,
+      "final_q_Pa": 0.0,
+      "checks": {
+        "elastic_modulus": true,
+        "confinement": true,
+        "homogeneity": true,
+        "force_balance": true,
+        "finite": true,
+        "elastic_curve": true,
+        "return_to_origin": true
+      },
+      "passed": true
+    }
+  ],
+  "mass_test": {
+    "expected_kg": 1025.0,
+    "recovered_kg": 1025.0000000000018,
+    "relative_error": 1.7763568394002505e-15,
+    "passed": true
+  },
+  "passed": true,
+  "elapsed_seconds": 0.060351749998517334
+}

@@ -1,0 +1,85 @@
+{
+  "id": "local_gravel_dp_trial",
+  "group": "first_comparison",
+  "layer": "local_gravel_below_31cm_penetrated_interval_only",
+  "family": "DruckerPrager",
+  "parameters": {
+    "E_Pa": 28400000.0,
+    "nu": 0.22,
+    "G_Pa": 11639344.262295082,
+    "K_Pa": 16904761.904761903,
+    "density_kg_m3": 1600.0,
+    "phi_deg": 35.0,
+    "c_Pa": 0.0,
+    "psi_deg": 0.0,
+    "hardening": 0.0
+  },
+  "evidence": {
+    "E_Pa": {
+      "source": "Murdoch2018",
+      "locator": "sand reference reused as matrix proxy",
+      "kind": "proxy_assumption",
+      "note": "No gravel-layer E measured; penetration resistance 4.9 MPa is NOT E"
+    },
+    "nu": {
+      "source": "Murdoch2018",
+      "locator": "sand reference reused as matrix proxy",
+      "kind": "proxy_assumption",
+      "note": "No gravel-layer E measured; penetration resistance 4.9 MPa is NOT E"
+    },
+    "density_kg_m3": {
+      "source": "Spohn2022",
+      "locator": "Section 6.7, gravel mixture estimate",
+      "kind": "inferred",
+      "note": "Approximate 1600 from 15 vol-% rock and 1300 kg/m3 sand"
+    },
+    "G_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "K_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "phi_deg": {
+      "source": "specimen_assumption",
+      "locator": "unbonded granular sensitivity",
+      "kind": "assumed",
+      "note": "c=0 and phi are trial envelope choices; no layer-specific shear test"
+    },
+    "c_Pa": {
+      "source": "specimen_assumption",
+      "locator": "unbonded granular sensitivity",
+      "kind": "assumed",
+      "note": "c=0 and phi are trial envelope choices; no layer-specific shear test"
+    },
+    "psi_deg": {
+      "source": "specimen_assumption",
+      "locator": "non-associated flow",
+      "kind": "assumed",
+      "note": "Zero dilation; not measured"
+    },
+    "hardening": {
+      "source": "specimen_assumption",
+      "locator": "perfect plasticity",
+      "kind": "assumed",
+      "note": "No measured hardening/softening curve"
+    }
+  },
+  "mars_calibrated": false,
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "status": "SOURCE_BASED_INITIAL_TRIAL",
+  "notes": [
+    "Unit cube is a material test, not the actual thickness of this geological unit.",
+    "No selfweight; confinement is an imposed laboratory test condition."
+  ]
+}

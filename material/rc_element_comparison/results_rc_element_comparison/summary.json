@@ -1,0 +1,300 @@
+{
+  "status": "DIAGNOSTIC_ONLY_NOT_CALIBRATED",
+  "steps": 60,
+  "retry": false,
+  "cases": {
+    "force_24x12_ip5_it30": {
+      "case": "force_24x12_ip5_it30",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 24,
+        "nz": 12
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": 30,
+      "status": "FAILED",
+      "failure": {
+        "segment": 4,
+        "substep": 22,
+        "reason": "equilibrium_gate",
+        "force_N": 18300.982430168242,
+        "reaction_x_N": -18186.846636223087
+      },
+      "points": 202,
+      "peak_force_kN": 72.33768008660073,
+      "balance_rel_peak": 0.0015778193855334475,
+      "equilibrium_pass": false
+    },
+    "force_36x18_ip5_it30": {
+      "case": "force_36x18_ip5_it30",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 36,
+        "nz": 18
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": 30,
+      "status": "COMPLETED",
+      "failure": null,
+      "points": 540,
+      "peak_force_kN": 76.12151417417996,
+      "balance_rel_peak": 4.906941966909232e-07,
+      "equilibrium_pass": true
+    },
+    "force_48x24_ip5_it30": {
+      "case": "force_48x24_ip5_it30",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": 30,
+      "status": "FAILED",
+      "failure": {
+        "segment": 4,
+        "substep": 15,
+        "reason": "equilibrium_gate",
+        "force_N": 35555.59009769134,
+        "reaction_x_N": -35439.142506225864
+      },
+      "points": 195,
+      "peak_force_kN": 72.38947071899256,
+      "balance_rel_peak": 0.0016086260931166602,
+      "equilibrium_pass": false
+    },
+    "force_48x24_ip5_it50": {
+      "case": "force_48x24_ip5_it50",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": 50,
+      "status": "FAILED",
+      "failure": {
+        "segment": 4,
+        "substep": 15,
+        "reason": "equilibrium_gate",
+        "force_N": 35555.59009769134,
+        "reaction_x_N": -35439.142506225864
+      },
+      "points": 195,
+      "peak_force_kN": 72.38947071899256,
+      "balance_rel_peak": 0.0016086260931166602,
+      "equilibrium_pass": false
+    },
+    "force_24x12_ip7_it30": {
+      "case": "force_24x12_ip7_it30",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 24,
+        "nz": 12
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 7,
+      "element_iterations": 30,
+      "status": "COMPLETED",
+      "failure": null,
+      "points": 540,
+      "peak_force_kN": 75.81777477968825,
+      "balance_rel_peak": 7.155082638262836e-07,
+      "equilibrium_pass": true
+    },
+    "force_48x24_ip7_it30": {
+      "case": "force_48x24_ip7_it30",
+      "formulation": "force",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 7,
+      "element_iterations": 30,
+      "status": "FAILED",
+      "failure": {
+        "segment": 3,
+        "substep": 12,
+        "target_m": 0.006,
+        "du_m": 0.00015000000000000001
+      },
+      "points": 131,
+      "peak_force_kN": 56.57883036796018,
+      "balance_rel_peak": 1.9025161050387776e-05,
+      "equilibrium_pass": false
+    },
+    "disp_24x12_ip5": {
+      "case": "disp_24x12_ip5",
+      "formulation": "disp",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 24,
+        "nz": 12
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": null,
+      "status": "FAILED",
+      "failure": {
+        "segment": 2,
+        "substep": 6,
+        "reason": "equilibrium_gate",
+        "force_N": 49834.85392361379,
+        "reaction_x_N": -49633.572981393074
+      },
+      "points": 66,
+      "peak_force_kN": 62.37041970366018,
+      "balance_rel_peak": 0.0032271859509212454,
+      "equilibrium_pass": false
+    },
+    "disp_36x18_ip5": {
+      "case": "disp_36x18_ip5",
+      "formulation": "disp",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 36,
+        "nz": 18
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": null,
+      "status": "FAILED",
+      "failure": {
+        "segment": 3,
+        "substep": 5,
+        "reason": "equilibrium_gate",
+        "force_N": -46645.76677246023,
+        "reaction_x_N": 46591.98826304482
+      },
+      "points": 125,
+      "peak_force_kN": 62.3940727769472,
+      "balance_rel_peak": 0.0008619169581646423,
+      "equilibrium_pass": false
+    },
+    "disp_48x24_ip5": {
+      "case": "disp_48x24_ip5",
+      "formulation": "disp",
+      "section": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "section_invariants": {
+        "nominal_concrete_patch_area_m2": 0.24,
+        "steel_area_m2": 0.0018849555921538759,
+        "steel_area_fraction_of_concrete_patch": 0.007853981633974483,
+        "note": "Concrete patch includes steel locations; overlap is present in all runs. No correction performed."
+      },
+      "nip": 5,
+      "element_iterations": null,
+      "status": "FAILED",
+      "failure": {
+        "segment": 8,
+        "substep": 4,
+        "reason": "equilibrium_gate",
+        "force_N": 121825.47431757684,
+        "reaction_x_N": -118198.48577199497
+      },
+      "points": 424,
+      "peak_force_kN": 137.7006387229115,
+      "balance_rel_peak": 0.026339663920370703,
+      "equilibrium_pass": false
+    }
+  }
+}

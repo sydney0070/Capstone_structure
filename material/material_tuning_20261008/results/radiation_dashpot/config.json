@@ -1,0 +1,25 @@
+{
+  "kind": "viscous",
+  "material": "Viscous",
+  "params": {
+    "C": 400.0,
+    "alpha": 1.0
+  },
+  "bounds": {
+    "C": [
+      100.0,
+      800.0
+    ]
+  },
+  "name": "radiation_dashpot",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

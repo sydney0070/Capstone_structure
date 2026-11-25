@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "returncode": 1,
+  "complete": false,
+  "elapsed_s": 12.199414041009732,
+  "process_group_cleanup": true,
+  "cleanup_error": null,
+  "solver_threads": 1,
+  "cleanup_scope": "owned_process_group",
+  "safe_verdict": false
+}

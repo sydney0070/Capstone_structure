@@ -1,0 +1,18 @@
+﻿id,metric,formula,tolerance_relative,tolerance_pct,scope,basis,tolerance_absolute,unit
+N_E,initial E,abs(Efit/Ein-1),1e-05,0.001,numerical_formula,Existing project tolerance; not a paper validation standard,,
+N_Y,DP triaxial yield,abs(qFE/qanalytic-1),0.0001,0.01,numerical_formula,Existing project tolerance; MC-matched triaxial compression only,,
+N_SHEAR,DP fully developed simple-shear yield,tau=2sqrt(3)*cos(phi)/(3-sin(phi)) * (c+p*tan(phi)),0.0001,0.01,added_numerical_formula,Derived from the implemented DP yield surface at equal normal stresses and zero dilation; not a paper strength fit,,
+N_M,cube mass,abs((spring_k/eigenvalue)/(rho*1m3)-1),1e-07,1e-05,numerical_formula,"Existing project tolerance; density implementation, not a density experiment",,
+N_L,lateral pressure,"max(abs(sigma_x+p),abs(sigma_y+p))/p",1e-05,0.001,numerical_boundary,Existing tolerance,,
+N_F,force balance,"max(abs(F+R))/max(max(abs(F)),1N); triaxial scale=max(qpeak*A,p*A,1N)",1e-05,0.001,numerical_equilibrium,Existing tolerance,,
+N_V,constant vertical pressure,max(abs(sigma_z+p))/p,1e-05,0.001,numerical_boundary,Existing tolerance,,
+N_U,DP elastic unloading to q0,abs(qfinal)/qyield,0.0001,0.01,numerical_formula,Existing tolerance; residual strain imposed at 2*qyield/E,,
+N_C,elastic curve,abs(q-E*eps) <= .01Pa + 1e-6*abs(E*eps),1e-06,0.0001,numerical_formula,Existing mixed absolute/relative tolerance,,
+N_0,elastic return to origin,abs(qfinal) < .01Pa,,,numerical_formula,Existing absolute tolerance; relative error undefined at zero,0.01,Pa
+N_CAP,spring capacity bound,max(abs(F))/Fult <= 1.001,0.001,0.1,constitutive_bound,Existing upper bound; reaching Fult is not required at finite displacement,,
+N_GAP,ElasticPPGap capacity,abs(Fmin/Fyield-1),1e-06,0.0001,synthetic_mechanics,Existing tolerance; not a measured contact force,,
+N_HYS,Hysteretic initial stiffness,abs(KFE/Kinput-1),1e-05,0.001,synthetic_mechanics,Existing tolerance,,
+L_RANGE,reported interval membership,reported_low <= trial_value <= reported_high,,,literature_plausibility,Published range; no assumed confidence level or layer-specific validation,,
+L_ENV,approximate MC envelope difference,100*(tau_FE/tau_reference-1),,5.0,provisional_literature_target,"NEW project screening target, not a paper/ASTM tolerance or statistical acceptance criterion. Density/fixture mismatch remains.",,
+L_CURVE,experimental cyclic/force-displacement curve RMSE,RMSE=sqrt(mean((prediction-observation)^2)),,,not_evaluable,Matched raw experimental curves unavailable. Not calculated as zero.,,
+L_50,nominal spring half-capacity point,100*(abs(F(z50))/(.5*Fult)-1),,,nominal_diagnostic,"Nominal shape diagnostic, not a universal pass tolerance. Simple1 docs do not establish exact Simple2 shape equivalence.",,

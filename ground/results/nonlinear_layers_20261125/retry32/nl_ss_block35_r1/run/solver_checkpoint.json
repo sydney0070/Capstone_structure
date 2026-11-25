@@ -1,0 +1,12 @@
+{
+  "elapsed_s": 387.6235643340042,
+  "event": "attempt_finished",
+  "pattern": 800003,
+  "before": 0.96875,
+  "increment": 0.03125,
+  "after": 1.0,
+  "code": 0,
+  "algorithm": "Newton",
+  "iterations": 2,
+  "unbalance_norm_N": 6.736363161685141e-06
+}

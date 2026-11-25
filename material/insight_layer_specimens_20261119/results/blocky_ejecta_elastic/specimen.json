@@ -1,0 +1,57 @@
+{
+  "id": "blocky_ejecta_elastic",
+  "group": "first_comparison",
+  "layer": "metre_scale_blocky_ejecta_3_13m_reference",
+  "family": "ElasticIsotropic",
+  "parameters": {
+    "E_Pa": 520000000.0,
+    "nu": 0.24,
+    "G_Pa": 209677419.3548387,
+    "K_Pa": 333333333.3333333,
+    "density_kg_m3": 1700.0
+  },
+  "evidence": {
+    "E_Pa": {
+      "source": "Kenda2020",
+      "locator": "Table 1, coarse ejecta",
+      "kind": "published_reference",
+      "note": ""
+    },
+    "nu": {
+      "source": "Kenda2020",
+      "locator": "Table 1, coarse ejecta",
+      "kind": "published_reference",
+      "note": ""
+    },
+    "density_kg_m3": {
+      "source": "existing_project_reference",
+      "locator": "mars_insight_blocky_ejecta",
+      "kind": "transferred_model_density",
+      "note": "1700 carried over from published reference density scenario, not core measurement"
+    },
+    "G_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "K_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    }
+  },
+  "mars_calibrated": false,
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "status": "SOURCE_BASED_INITIAL_TRIAL",
+  "notes": [
+    "Unit cube is a material test, not the actual thickness of this geological unit.",
+    "No selfweight; confinement is an imposed laboratory test condition."
+  ]
+}

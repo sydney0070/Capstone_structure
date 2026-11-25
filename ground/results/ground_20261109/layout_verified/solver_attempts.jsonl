@@ -1,0 +1,40 @@
+{"elapsed_s": 0.49800324998795986, "event": "attempt_started", "pattern": 800001, "before": 0.0, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 0.7761379169533029, "event": "attempt_finished", "pattern": 800001, "before": 0.0, "increment": 0.05, "after": 0.05, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 1.4031131488450732e-09}
+{"elapsed_s": 0.848431000020355, "event": "attempt_started", "pattern": 800001, "before": 0.05, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 1.1247802920406684, "event": "attempt_finished", "pattern": 800001, "before": 0.05, "increment": 0.05, "after": 0.1, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 2.1403133630335576e-09}
+{"elapsed_s": 1.1984990830533206, "event": "attempt_started", "pattern": 800001, "before": 0.1, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 1.4705870830221102, "event": "attempt_finished", "pattern": 800001, "before": 0.1, "increment": 0.05, "after": 0.15000000000000002, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 2.8551608320852413e-09}
+{"elapsed_s": 1.5410928749479353, "event": "attempt_started", "pattern": 800001, "before": 0.15000000000000002, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 1.814379082992673, "event": "attempt_finished", "pattern": 800001, "before": 0.15000000000000002, "increment": 0.05, "after": 0.2, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 3.3451996459544584e-09}
+{"elapsed_s": 1.884896041941829, "event": "attempt_started", "pattern": 800001, "before": 0.2, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 2.1601757500320673, "event": "attempt_finished", "pattern": 800001, "before": 0.2, "increment": 0.05, "after": 0.25, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 4.338072011613727e-09}
+{"elapsed_s": 2.2337231669807807, "event": "attempt_started", "pattern": 800001, "before": 0.25, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 2.509786249953322, "event": "attempt_finished", "pattern": 800001, "before": 0.25, "increment": 0.05, "after": 0.3, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 4.507807288889656e-09}
+{"elapsed_s": 2.58173162501771, "event": "attempt_started", "pattern": 800001, "before": 0.3, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 2.8561824170174077, "event": "attempt_finished", "pattern": 800001, "before": 0.3, "increment": 0.05, "after": 0.35, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 5.054134722026021e-09}
+{"elapsed_s": 2.9292445000028238, "event": "attempt_started", "pattern": 800001, "before": 0.35, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 3.2088355829473585, "event": "attempt_finished", "pattern": 800001, "before": 0.35, "increment": 0.05, "after": 0.39999999999999997, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 6.98513962345389e-09}
+{"elapsed_s": 3.279540542047471, "event": "attempt_started", "pattern": 800001, "before": 0.39999999999999997, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 3.5741086249472573, "event": "attempt_finished", "pattern": 800001, "before": 0.39999999999999997, "increment": 0.05, "after": 0.44999999999999996, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 7.871465531388483e-09}
+{"elapsed_s": 3.6494319170014933, "event": "attempt_started", "pattern": 800001, "before": 0.44999999999999996, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 3.927502749953419, "event": "attempt_finished", "pattern": 800001, "before": 0.44999999999999996, "increment": 0.05, "after": 0.49999999999999994, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 7.513109285777696e-09}
+{"elapsed_s": 4.028141582966782, "event": "attempt_started", "pattern": 800001, "before": 0.49999999999999994, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 4.30288658302743, "event": "attempt_finished", "pattern": 800001, "before": 0.49999999999999994, "increment": 0.05, "after": 0.5499999999999999, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 7.762292673905447e-09}
+{"elapsed_s": 4.378196500008926, "event": "attempt_started", "pattern": 800001, "before": 0.5499999999999999, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 4.64223612495698, "event": "attempt_finished", "pattern": 800001, "before": 0.5499999999999999, "increment": 0.05, "after": 0.6, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 8.314613276333616e-09}
+{"elapsed_s": 4.7164144170237705, "event": "attempt_started", "pattern": 800001, "before": 0.6, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 5.006795541965403, "event": "attempt_finished", "pattern": 800001, "before": 0.6, "increment": 0.05, "after": 0.65, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 8.667738550759316e-09}
+{"elapsed_s": 5.08035874995403, "event": "attempt_started", "pattern": 800001, "before": 0.65, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 5.361230000038631, "event": "attempt_finished", "pattern": 800001, "before": 0.65, "increment": 0.05, "after": 0.7000000000000001, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 1.0200696407443228e-08}
+{"elapsed_s": 5.431037292000838, "event": "attempt_started", "pattern": 800001, "before": 0.7000000000000001, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 5.699230332975276, "event": "attempt_finished", "pattern": 800001, "before": 0.7000000000000001, "increment": 0.05, "after": 0.7500000000000001, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 1.4514990805515966e-08}
+{"elapsed_s": 5.786504082963802, "event": "attempt_started", "pattern": 800001, "before": 0.7500000000000001, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 6.07203841698356, "event": "attempt_finished", "pattern": 800001, "before": 0.7500000000000001, "increment": 0.05, "after": 0.8000000000000002, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 1.602329953607853e-08}
+{"elapsed_s": 6.146457833005115, "event": "attempt_started", "pattern": 800001, "before": 0.8000000000000002, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 6.414540624944493, "event": "attempt_finished", "pattern": 800001, "before": 0.8000000000000002, "increment": 0.05, "after": 0.8500000000000002, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 1.529090914458033e-08}
+{"elapsed_s": 6.485745082958601, "event": "attempt_started", "pattern": 800001, "before": 0.8500000000000002, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 6.769431583001278, "event": "attempt_finished", "pattern": 800001, "before": 0.8500000000000002, "increment": 0.05, "after": 0.9000000000000002, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 1.4960671511603627e-08}
+{"elapsed_s": 6.8504844170529395, "event": "attempt_started", "pattern": 800001, "before": 0.9000000000000002, "increment": 0.05, "algorithm": "KrylovNewton"}
+{"elapsed_s": 7.131333207944408, "event": "attempt_finished", "pattern": 800001, "before": 0.9000000000000002, "increment": 0.05, "after": 0.9500000000000003, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 1.4599877439579149e-08}
+{"elapsed_s": 7.204608542029746, "event": "attempt_started", "pattern": 800001, "before": 0.9500000000000003, "increment": 0.04999999999999971, "algorithm": "KrylovNewton"}
+{"elapsed_s": 7.474054042017087, "event": "attempt_finished", "pattern": 800001, "before": 0.9500000000000003, "increment": 0.04999999999999971, "after": 1.0, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 1.545972275622148e-08}

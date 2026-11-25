@@ -1,0 +1,94 @@
+{
+  "id": "blocky_c5000_phi30",
+  "group": "nonlinear_20261125",
+  "layer": "blocky_ejecta",
+  "family": "DruckerPrager",
+  "parameters": {
+    "E_Pa": 520000000.0,
+    "nu": 0.24,
+    "G_Pa": 209677419.3548387,
+    "K_Pa": 333333333.3333333,
+    "density_kg_m3": 1700.0,
+    "phi_deg": 30.0,
+    "c_Pa": 5000.0,
+    "psi_deg": 0.0,
+    "hardening": 0.0
+  },
+  "evidence": {
+    "E_Pa": {
+      "source": "Kenda2020",
+      "locator": "Table 1, coarse ejecta",
+      "kind": "published_reference",
+      "note": ""
+    },
+    "nu": {
+      "source": "Kenda2020",
+      "locator": "Table 1, coarse ejecta",
+      "kind": "published_reference",
+      "note": ""
+    },
+    "density_kg_m3": {
+      "source": "existing_project_reference",
+      "locator": "mars_insight_blocky_ejecta",
+      "kind": "transferred_model_density",
+      "note": "1700 carried over from published reference density scenario, not core measurement"
+    },
+    "G_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "K_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "phi_deg": {
+      "source": "Hughes2022 granular regolith c1–5kPa; bonded-mixture sensitivity, not measured InSight blocky ejecta",
+      "locator": "see calibration record",
+      "kind": "literature_range_scenario",
+      "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+    },
+    "c_Pa": {
+      "source": "Hughes2022 granular regolith c1–5kPa; bonded-mixture sensitivity, not measured InSight blocky ejecta",
+      "locator": "see calibration record",
+      "kind": "literature_range_scenario",
+      "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+    },
+    "psi_deg": {
+      "source": "modelling_assumption",
+      "locator": "nonassociated flow",
+      "kind": "assumed",
+      "note": "Zero dilation; requires volumetric-strain calibration"
+    },
+    "hardening": {
+      "source": "modelling_assumption",
+      "locator": "perfect plasticity",
+      "kind": "assumed",
+      "note": "No measured hardening/softening curve"
+    }
+  },
+  "mars_calibrated": false,
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+  "notes": [
+    "Actual DP c/phi and target physical MC c/phi are stored separately.",
+    "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+    "Elastoplastic law may remain on its elastic branch at service loads."
+  ],
+  "law": "DruckerPrager",
+  "calibration": {
+    "target_mode": "triaxial",
+    "target_MC_c_Pa": 5000.0,
+    "target_MC_phi_deg": 30.0,
+    "target_source": "Hughes2022 granular regolith c1–5kPa; bonded-mixture sensitivity, not measured InSight blocky ejecta",
+    "independent_validation": false
+  }
+}

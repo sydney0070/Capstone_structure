@@ -1,0 +1,45 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "dome",
+  "material": "shell_aluminum",
+  "planet": "earth",
+  "support": "linear_springs",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 69000000.0,
+    "nu": 0.33,
+    "rho": 2.7,
+    "thickness": 0.02
+  },
+  "nodes": 2401,
+  "elements": 2304,
+  "surface_area_m2": 98.13750166813792,
+  "mass_tonne": 5.299425090079451,
+  "weight_kN": 51.98736013367942,
+  "max_displacement_m": 7.630340263566364e-05,
+  "min_uz_m": 4.169297119558719e-05,
+  "max_uz_m": 7.545316866889426e-05,
+  "mean_base_uz_m": 4.2253086242644574e-05,
+  "required_hold_down_kN": 26.53799112004757,
+  "force_residual_kN": [
+    6.007618447850804e-13,
+    -5.093374029448255e-13,
+    3.339550858072471e-13
+  ],
+  "moment_residual_kNm": [
+    -1.969218191288924e-12,
+    -4.45019542050229e-12,
+    -5.021805672875996e-13
+  ],
+  "load_resultant_kN": [
+    3.671108556035918e-16,
+    -8.323853759040212e-15,
+    26.53799112004792
+  ],
+  "relative_force_residual": 1.339802764997447e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground.",
+    "Tension support required: linear springs/pins assume hold-down; unanchored contact invalid."
+  ]
+}

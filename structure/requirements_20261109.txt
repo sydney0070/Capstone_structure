@@ -1,0 +1,9 @@
+# Versions observed in the validated cap environment (macOS/Python 3.10).
+numpy==2.2.6
+scipy==1.15.2
+obspy==1.5.1
+plotly==6.7.0
+matplotlib==3.10.1
+openseespy==3.7.1.2
+openseespymac==3.4.0.2
+# matplotlib imported 3.10.1; installed distribution metadata reported 3.10.9.

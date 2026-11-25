@@ -1,0 +1,54 @@
+{
+  "groups": [
+    {
+      "group": "revision",
+      "tests": 11,
+      "status": "complete",
+      "returncode": 0,
+      "complete": true,
+      "elapsed_s": 25.11245658295229,
+      "process_group_cleanup": true,
+      "cleanup_error": null,
+      "solver_threads": 1,
+      "cleanup_scope": "owned_process_group",
+      "command": [
+        "structure/verify_revision_20261107.py"
+      ],
+      "safe_verdict": false
+    },
+    {
+      "group": "research",
+      "tests": 9,
+      "status": "complete",
+      "returncode": 0,
+      "complete": true,
+      "elapsed_s": 1.867093416978605,
+      "process_group_cleanup": true,
+      "cleanup_error": null,
+      "solver_threads": 1,
+      "cleanup_scope": "owned_process_group",
+      "command": [
+        "research_20261109/test_research.py"
+      ],
+      "safe_verdict": false
+    },
+    {
+      "group": "followup",
+      "tests": 18,
+      "status": "complete",
+      "returncode": 0,
+      "complete": true,
+      "elapsed_s": 4.279444165993482,
+      "process_group_cleanup": true,
+      "cleanup_error": null,
+      "solver_threads": 1,
+      "cleanup_scope": "owned_process_group",
+      "command": [
+        "research_20261109/followup_20261109/test_followup.py"
+      ],
+      "safe_verdict": false
+    }
+  ],
+  "total_tests": 38,
+  "passed": true
+}

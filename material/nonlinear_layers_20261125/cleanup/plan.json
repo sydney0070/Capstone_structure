@@ -1,0 +1,422 @@
+{
+  "date": "2026-11-25",
+  "authorization": "User requested removal of unused ground code/data",
+  "deletions": [
+    {
+      "path": "ground/earth",
+      "bytes": 2868,
+      "sha256": "803a28dbc6594fa49a8f1b87989a65ab2f4698b7b63f2ef337c43465fd258afe",
+      "reason": "Standalone obsolete prototype; no active Python importer/caller; active multi-planet entrypoints and geometry helpers retained"
+    },
+    {
+      "path": "ground/earth.py",
+      "bytes": 8293,
+      "sha256": "e7ff22fd90c474264f2ab6ce912d6470ae7697befe1e3ba80c713e6afc38931c",
+      "reason": "Standalone obsolete prototype; no active Python importer/caller; active multi-planet entrypoints and geometry helpers retained"
+    },
+    {
+      "path": "ground/soildata_fromnasa",
+      "bytes": 1217,
+      "sha256": "ba3bdfbf467e8ecdc49442c24490765e1f2605f9d7c6d6902c0ce66b8564fe76",
+      "reason": "Standalone obsolete prototype; no active Python importer/caller; active multi-planet entrypoints and geometry helpers retained"
+    },
+    {
+      "path": "ground/pohang_nasadem.py",
+      "bytes": 49197,
+      "sha256": "c049dcc869811c26fdf536b39d24aece39426424d7639c80cc59ef79e2ade229",
+      "reason": "Standalone obsolete prototype; no active Python importer/caller; active multi-planet entrypoints and geometry helpers retained"
+    },
+    {
+      "path": "ground/NASADEM_HGT_n37e126/.DS_Store",
+      "bytes": 6148,
+      "sha256": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+      "reason": "Unused n37e126 terrain / unread .num and .swb ancillary masks; active n36e129.hgt retained"
+    },
+    {
+      "path": "ground/NASADEM_HGT_n37e126/n37e126.num",
+      "bytes": 12967201,
+      "sha256": "adb4b6f72d5ec11229b04ee9f5096fc95b556b1023cc5e2fe4b1c5d293b13287",
+      "reason": "Unused n37e126 terrain / unread .num and .swb ancillary masks; active n36e129.hgt retained"
+    },
+    {
+      "path": "ground/NASADEM_HGT_n37e126/n37e126.swb",
+      "bytes": 12967201,
+      "sha256": "3ac3e29cda36a4cb8d63147370466b54970cd59cd06f1ab4536773cea809f0b1",
+      "reason": "Unused n37e126 terrain / unread .num and .swb ancillary masks; active n36e129.hgt retained"
+    },
+    {
+      "path": "ground/NASADEM_HGT_n37e126/n37e126.hgt",
+      "bytes": 25934402,
+      "sha256": "f1c7813809b92a604d7bf52673d7dfa8e8c9055cf5b96679c228afa6b905e74b",
+      "reason": "Unused n37e126 terrain / unread .num and .swb ancillary masks; active n36e129.hgt retained"
+    },
+    {
+      "path": "ground/포항 지반 데이터/n36e129.num",
+      "bytes": 12967201,
+      "sha256": "3d13db685edc6c7d56be76168042a9be7d9a50d6a3dd83e7b88af9d32a3f34c3",
+      "reason": "Unused n37e126 terrain / unread .num and .swb ancillary masks; active n36e129.hgt retained"
+    },
+    {
+      "path": "ground/포항 지반 데이터/n36e129.swb",
+      "bytes": 12967201,
+      "sha256": "0568399cbd11c7dcc4d9225141499c5362af6f25fe688ff7af5c4b0f625cd155",
+      "reason": "Unused n37e126 terrain / unread .num and .swb ancillary masks; active n36e129.hgt retained"
+    },
+    {
+      "path": "ground/포항 지반 데이터/.DS_Store",
+      "bytes": 6148,
+      "sha256": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+      "reason": "Unused n37e126 terrain / unread .num and .swb ancillary masks; active n36e129.hgt retained"
+    },
+    {
+      "path": "ground/pohang_soil_mesh_3d_abaqus_like.html",
+      "bytes": 5571270,
+      "sha256": "68bd4d0e6ae4a697b4f28a694ec96df1ea26fc1c0f0e8370c8808c710beee2c2",
+      "reason": "Old Pohang prototype output, not an input to the current ground pipeline"
+    },
+    {
+      "path": "ground/pohang_area_3d_terrain.html",
+      "bytes": 4934838,
+      "sha256": "66a66ba2e5e67af3531c8d98e99d2614fa164c0a02ddb30e02360f09b944b5db",
+      "reason": "Old Pohang prototype output, not an input to the current ground pipeline"
+    },
+    {
+      "path": "ground/pohang_profile_2d.html",
+      "bytes": 4858045,
+      "sha256": "5ffbb036bfe53aa88f0533f5f9e4566d558466141d53ddde57d5c367c52a9f2d",
+      "reason": "Old Pohang prototype output, not an input to the current ground pipeline"
+    },
+    {
+      "path": "ground/pohang_nasadem_profile.csv",
+      "bytes": 10065,
+      "sha256": "ed49c66c46138f04249a7ddcf43bd1ec7db7b1469fd6d06c7a78cd2b2500a8a1",
+      "reason": "Old Pohang prototype output, not an input to the current ground pipeline"
+    },
+    {
+      "path": "ground/pohang_soil_mesh_2d.html",
+      "bytes": 4938277,
+      "sha256": "7ae418a394d3c752992dbd6f6e0c912cb9f67e99db9947c22ef9edcaa8a434be",
+      "reason": "Old Pohang prototype output, not an input to the current ground pipeline"
+    },
+    {
+      "path": "ground/pohang_area_3d_solid_abaqus_like.html",
+      "bytes": 5989096,
+      "sha256": "f1118bdeca243442c56c35ff11d230146c6a6bfb77d3f20c7614dc8ed28714e2",
+      "reason": "Old Pohang prototype output, not an input to the current ground pipeline"
+    },
+    {
+      "path": "ground/n37e126.hgt",
+      "bytes": 25934402,
+      "sha256": "f1c7813809b92a604d7bf52673d7dfa8e8c9055cf5b96679c228afa6b905e74b",
+      "reason": "Unused terrain tile; no active n37e126 reference; current Earth terrain uses n36e129.hgt"
+    },
+    {
+      "path": "ground/.DS_Store",
+      "bytes": 10244,
+      "sha256": "34651acbbcb27a30837ec1b60be003b663886b82619d49639c64de8989c6e1e4",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/insight_opensees_integration/.DS_Store",
+      "bytes": 6148,
+      "sha256": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/insight_opensees_integration/__pycache__/insight_motion.cpython-310.pyc",
+      "bytes": 11234,
+      "sha256": "f4df6211d85ae93ad32d934f0b87ea82a468bf9c33d442152201ebb987747b11",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/.DS_Store",
+      "bytes": 6148,
+      "sha256": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/__pycache__/ground_modeling.cpython-310.pyc",
+      "bytes": 92408,
+      "sha256": "e30cfa5fe26b6a87c3b4cbcb4df6c040c22946c3e41797656a7c3fd4d73c8a9b",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/__pycache__/insight_motion.cpython-310.pyc",
+      "bytes": 17141,
+      "sha256": "97f2fc976f91ac837e4780cf814eef8676d6d15c453c528fc40400091c10a04d",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/__pycache__/insight_site_dem.cpython-310.pyc",
+      "bytes": 3621,
+      "sha256": "ebe18cff0bc199c2685e889b31f6098fd21365348c92cc666dd821f906f765bd",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/__pycache__/ground_20261107.cpython-310.pyc",
+      "bytes": 22741,
+      "sha256": "a5ecd3875a9aa436ac55befd9b1e64b6a05212bdef7db30b0a8fcbac6b47db1c",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/mars_results.cpython-310.pyc",
+      "bytes": 14153,
+      "sha256": "7d0040bb84b97b924e9890cf52e4874e560dee8be15c93212c9b0f0cfa15d879",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/mars_inputs.cpython-310.pyc",
+      "bytes": 8403,
+      "sha256": "2bbe40570f0d99aaf8997cf9dceca770d3c6372e7bdad9d1b6e08431ef2c907a",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/materials.cpython-310.pyc",
+      "bytes": 2164,
+      "sha256": "5a22387d78a6d690197b5c889e0f6e238d2f6dc0680d8b5077d2862dd4730136",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/io.cpython-310.pyc",
+      "bytes": 7137,
+      "sha256": "9b6428f359391387ea14e1229d0afe381ff573711f9e2f75b37c999d2e6b5740",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/mesh.cpython-310.pyc",
+      "bytes": 7718,
+      "sha256": "79efe7100c93288cca82eff1ca4bc0900170bdf3a98da7a69d109324e062a04f",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/config.cpython-310.pyc",
+      "bytes": 6617,
+      "sha256": "88836c425dd8d6095258a218a1a770d357e5636b0d5ebd567122dda15b77c029",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/conforming_mesh.cpython-310.pyc",
+      "bytes": 11488,
+      "sha256": "e8233428dd4c64be8adfa4a89049540b8504595f038c583d85e24b389bfc4fb5",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/run_journal.cpython-310.pyc",
+      "bytes": 2200,
+      "sha256": "91a89a831127536c2b0e2ede98c8f76080e7d1aa0ed6c9191ec17e01f8c9a736",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/dynamics.cpython-310.pyc",
+      "bytes": 9042,
+      "sha256": "cf767a32a5a34e0d81413b481b586e277caf079c607f3506af436e4a8f2db89d",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/process_control.cpython-310.pyc",
+      "bytes": 3889,
+      "sha256": "328abed3b20e39a71b45ef4064d0f1d34849fb4dfb987289bd75fbd8c845611f",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/solver.cpython-310.pyc",
+      "bytes": 9336,
+      "sha256": "89921b8ee390252db974ac4f0bd1ea372ecd2dea8bb8fb2cbe14089ef73e5ddb",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    },
+    {
+      "path": "ground/ground_modeling/ground_hybrid/__pycache__/__init__.cpython-310.pyc",
+      "bytes": 851,
+      "sha256": "93b435ec787b36304dc2bba6fcef1ea2d38a2e8c4b51a0b1571cbfd6c7a9200a",
+      "reason": "Regenerable filesystem metadata or Python bytecode cache"
+    }
+  ],
+  "duplicate_aliases": [
+    {
+      "path": "ground/archive/ground_modeling_20261116/stationxml.xb.elyse.2019.151.sxml",
+      "canonical": "ground/ground_modeling/stationxml.xb.elyse.2019.151.xml",
+      "bytes": 81731990,
+      "sha256": "b947292143b43383785e700f0aef0f30918355c7deb9ec5cb109ea47baaf7493",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_dome_footing/analysis_mgs1_20261118/run/footing_settlement.html",
+      "canonical": "ground/saved_candidates_20261118/mgs1/ground_analysis/footing_settlement.html",
+      "bytes": 5448457,
+      "sha256": "179201b34e448f013b248bf4f65ffe3527824220332f41373d5fce4ec1dbad0e",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_dome_footing/analysis_mgs1_20261118/run/footing_settlement.json",
+      "canonical": "ground/saved_candidates_20261118/mgs1/ground_analysis/footing_settlement.json",
+      "bytes": 594767,
+      "sha256": "bc238d586915376e4d0859fe277959face278348087f4aab2051cb4ddbe22c19",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_dome_footing/analysis_mgs1s_20261118/run/footing_settlement.html",
+      "canonical": "ground/saved_candidates_20261118/mgs1s/ground_analysis/footing_settlement.html",
+      "bytes": 5448382,
+      "sha256": "51c38b2d09f28c5d25f766db7584185dcda7450651a8b63ff1f1a1b8ca5a11a9",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_dome_footing/analysis_mgs1s_20261118/run/footing_settlement.json",
+      "canonical": "ground/saved_candidates_20261118/mgs1s/ground_analysis/footing_settlement.json",
+      "bytes": 594692,
+      "sha256": "8a03954d8f938569671a0fa0781e45389958ac99a8d0fa77156908b0b51d54f0",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/archive/ground_modeling_20261116/insight_verification/material/mars_insight_duricrust_proxy_15000.csv",
+      "canonical": "ground/archive/ground_modeling_20261116/hybrid_verification/material/mars_insight_duricrust_proxy_15000.csv",
+      "bytes": 147005,
+      "sha256": "d1fe53593633450d4f3557996b0a1879a8456e89a4e2b21ae1e4f0ac429301ae",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/archive/ground_modeling_20261116/insight_verification/material/mars_jez1_peak_15000.csv",
+      "canonical": "ground/archive/ground_modeling_20261116/hybrid_verification/material/mars_jez1_peak_15000.csv",
+      "bytes": 147762,
+      "sha256": "e554dc7b32838b95e76f95124b17fdbcf0330ef959953472362c7c837b01e142",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/archive/ground_modeling_20261116/insight_verification/material/mars_jez1_peak_1000.csv",
+      "canonical": "ground/archive/ground_modeling_20261116/hybrid_verification/material/mars_jez1_peak_1000.csv",
+      "bytes": 149836,
+      "sha256": "0ed664cdd8c01c53babd0ee2a76bb4a1667c388a96a944a74b9097d825ac06d1",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/archive/ground_modeling_20261116/insight_verification/material/mars_insight_duricrust_proxy_60000.csv",
+      "canonical": "ground/archive/ground_modeling_20261116/hybrid_verification/material/mars_insight_duricrust_proxy_60000.csv",
+      "bytes": 150449,
+      "sha256": "87c1d4b4d2b6c35950864cfbacc707b397f87e4a3c8674ae28afea43ea2171d9",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/archive/ground_modeling_20261116/insight_verification/material/mars_jez1_peak_60000.csv",
+      "canonical": "ground/archive/ground_modeling_20261116/hybrid_verification/material/mars_jez1_peak_60000.csv",
+      "bytes": 146944,
+      "sha256": "3a767389beff2dd0f01d4e2b47de63d36ae515b14863db099d8402f5ce5fef1c",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/archive/ground_modeling_20261116/insight_verification/material/mars_insight_duricrust_proxy_1000.csv",
+      "canonical": "ground/archive/ground_modeling_20261116/hybrid_verification/material/mars_insight_duricrust_proxy_1000.csv",
+      "bytes": 149447,
+      "sha256": "1d170e0fc974f96ad6ff4b0f8820289691d9fbc15b908a45b3fd68cd666fedac",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/archive/ground_modeling_20261116/insight_results_quick/insight_acceleration_enu.csv",
+      "canonical": "ground/archive/ground_modeling_20261116/insight_results/insight_acceleration_enu.csv",
+      "bytes": 3044992,
+      "sha256": "f795043cea38de9e0910a9605cb1fe6f52d181f25098b094d5effee103f162da",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_20261109/layout_verified/ground_response.html",
+      "canonical": "ground/results/ground_20261109/run_20261109_174344_f30e3d/ground_response.html",
+      "bytes": 9177530,
+      "sha256": "a83cf8ab1653e154a53df7b611fb799ba9371a7be3f23f41b3bbb64f5bb8e963",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_20261109/layout_verified/ground_response.json",
+      "canonical": "ground/results/ground_20261109/run_20261109_174344_f30e3d/ground_response.json",
+      "bytes": 4324685,
+      "sha256": "23b347cb306c1b0d9c6b95829e4df5e79727d582733a8ccb2bb50104b9b56287",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_20261109/layout_verified/motion_full_enu.csv",
+      "canonical": "ground/results/ground_20261109/run_20261109_174344_f30e3d/motion_full_enu.csv",
+      "bytes": 3045075,
+      "sha256": "9f7b6d2505648219a9fb46eac399cd48321b35f390a7ca30de764fc2a9f6b364",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_20261109/layout_verified/site_dem_samples.csv",
+      "canonical": "ground/results/ground_20261109/run_20261109_174344_f30e3d/site_dem_samples.csv",
+      "bytes": 122359,
+      "sha256": "0900d9ae859ac5d1ed63f358c05a15eca5fa66656141d21ff1e52e1aaba001e9",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_20261109/viewer_split_verified/site_dem_samples.csv",
+      "canonical": "ground/results/ground_20261109/run_20261109_174344_f30e3d/site_dem_samples.csv",
+      "bytes": 122359,
+      "sha256": "0900d9ae859ac5d1ed63f358c05a15eca5fa66656141d21ff1e52e1aaba001e9",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_20261109/viewer_split_verified_v2/ground_response.html",
+      "canonical": "ground/results/ground_20261109/run_20261109_174344_f30e3d/ground_response.html",
+      "bytes": 9177530,
+      "sha256": "a83cf8ab1653e154a53df7b611fb799ba9371a7be3f23f41b3bbb64f5bb8e963",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_20261109/viewer_split_verified_v2/ground_response.json",
+      "canonical": "ground/results/ground_20261109/run_20261109_174344_f30e3d/ground_response.json",
+      "bytes": 4324685,
+      "sha256": "23b347cb306c1b0d9c6b95829e4df5e79727d582733a8ccb2bb50104b9b56287",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_20261109/viewer_split_verified_v2/motion_full_enu.csv",
+      "canonical": "ground/results/ground_20261109/run_20261109_174344_f30e3d/motion_full_enu.csv",
+      "bytes": 3045075,
+      "sha256": "9f7b6d2505648219a9fb46eac399cd48321b35f390a7ca30de764fc2a9f6b364",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    },
+    {
+      "path": "ground/results/ground_20261109/viewer_split_verified_v2/site_dem_samples.csv",
+      "canonical": "ground/results/ground_20261109/run_20261109_174344_f30e3d/site_dem_samples.csv",
+      "bytes": 122359,
+      "sha256": "0900d9ae859ac5d1ed63f358c05a15eca5fa66656141d21ff1e52e1aaba001e9",
+      "reason": "Byte-identical duplicate; relative symlink retains old report/import paths"
+    }
+  ],
+  "saved_candidate_hashes": {
+    "selected_materials.json": "f027dfb55b5adc2d0aa438fa14af1e4ca65ba5ffd71bc53f57251966dde667b8",
+    "README.md": "e8395a35dcb4126ab54db6ea50aa2507a16d1c51e7ec828edec9fd0c1dee7467",
+    "shear_comparison.csv": "541e833db4e91004e698ad1c76e33dc37a6708526414c96e14f68e9ea7c38327",
+    "manifest.json": "a7cc2b1cce75bf93741230eb9ae85fb70ebaadca72dc5188cfe12eb553950e12",
+    "mgs1/triaxial_curves.csv": "7154569fe24bb208fdf078ce7f9f8f35d8594e74ff0a9b53108beafbecc0aaf9",
+    "mgs1/material.json": "a53cd0f50b8e8223b419e5134e2fe411f3101da8153c3df374eb5b2604fa5038",
+    "mgs1/execution_status.json": "03e7183b13aa7821e29f6e3131c8fda3dcd28d170f15ca030d593f3c6ae72c6a",
+    "mgs1/specimen.json": "5b14a5e2f9ca7ff3912cd7959d62c510ef027da7622772c2570069283a8bef86",
+    "mgs1/ground_analysis/summary.json": "914e94303e98cbe75dc645d031d4282421cabc4f121d64ee73b3213982be0103",
+    "mgs1/ground_analysis/solver_attempts.jsonl": "b6f693a369d0d479a328a4b88678ae9802af4f6eaf2f161f63f2afec9f644141",
+    "mgs1/ground_analysis/footing_settlement.html": "179201b34e448f013b248bf4f65ffe3527824220332f41373d5fce4ec1dbad0e",
+    "mgs1/ground_analysis/solver_checkpoint.json": "eaa112c3494c9cd9b7868f8c1363ea4b84b6566e308c6740bb7c6b32e4e8a38b",
+    "mgs1/ground_analysis/opensees.log": "bdf979f97940d7424486f4dedd490ef6ee834fb5b4005763f2b58574818041bb",
+    "mgs1/ground_analysis/footing_settlement.json": "bc238d586915376e4d0859fe277959face278348087f4aab2051cb4ddbe22c19",
+    "mgs1/ground_analysis/model_checkpoint.json": "67c14f40187dc708345e014062a3d9daeea4da1ea698a041d688b277ae726743",
+    "mgs1s/triaxial_curves.csv": "3f403a3ec953862f4686e783075a1c5f5b898134aa33c318234a1a8dbae1018d",
+    "mgs1s/material.json": "449083f5207b8b396d4580c7e8cdf47f410bbeb9ede64e3c7547c0203f60fdce",
+    "mgs1s/execution_status.json": "bf1388c1558974f7d468b759ae88493d4cb5080881bc223e278430ac61fac06d",
+    "mgs1s/specimen.json": "f198508509d5de50ea9df04d98d944f8267203706cd47605dcda1acf904e7566",
+    "mgs1s/ground_analysis/summary.json": "ec8ca33ab15b0d944b31f5e5d3feec317ae50b5bc646242026b165795eede210",
+    "mgs1s/ground_analysis/solver_attempts.jsonl": "fbcffa8c982cebaf4d1f281d07f594620cd2d7726dbb43816b343583d2de6366",
+    "mgs1s/ground_analysis/footing_settlement.html": "51c38b2d09f28c5d25f766db7584185dcda7450651a8b63ff1f1a1b8ca5a11a9",
+    "mgs1s/ground_analysis/solver_checkpoint.json": "334218cb325bfc8df65c259df8ff574b4f6b8ca3732e76689c5f1e05e1149a82",
+    "mgs1s/ground_analysis/opensees.log": "bdf979f97940d7424486f4dedd490ef6ee834fb5b4005763f2b58574818041bb",
+    "mgs1s/ground_analysis/footing_settlement.json": "8a03954d8f938569671a0fa0781e45389958ac99a8d0fa77156908b0b51d54f0",
+    "mgs1s/ground_analysis/model_checkpoint.json": "f8920b13ed6354057d5c17c06bc6730819a51e261fb3fa24b0f5314e5eab0213"
+  },
+  "preserved_active_inputs": [
+    "ground_modeling/ldem_1024_90s_75s_000_030.img",
+    "ground_modeling/DTEEC_037262_1845_036761_1845_U01.IMG",
+    "ground_modeling/megt00n000hb.img",
+    "ground_modeling/n36e129.hgt",
+    "ground_modeling/stationxml.xb.elyse.2019.151.xml"
+  ],
+  "preserved_legacy_dependencies": [
+    "ground_modeling/ground_modeling.py",
+    "ground_modeling/ground_modeling_insight_updated.py"
+  ]
+}

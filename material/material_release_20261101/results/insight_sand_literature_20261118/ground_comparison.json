@@ -1,0 +1,318 @@
+{
+  "mgs1": {
+    "status": {
+      "status": "complete",
+      "returncode": 0,
+      "complete": true,
+      "elapsed_s": 344.0666167909949,
+      "process_group_cleanup": true,
+      "cleanup_error": null,
+      "solver_threads": 1,
+      "cleanup_scope": "owned_process_group"
+    },
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/analysis_mgs1_20261118/run/summary.json",
+    "last_committed_gravity_factor": 1.0,
+    "stage": "complete",
+    "complete": true,
+    "gravity": {
+      "final_factor": 1.0,
+      "attempts": 20,
+      "linear_system": "UmfPack",
+      "force_balance": {
+        "applied_N": [
+          0.0,
+          0.0,
+          -2012963874.4719715
+        ],
+        "reaction_N": [
+          2.3283064365386963e-09,
+          -5.9371814131736755e-09,
+          2012963874.4719756
+        ],
+        "residual_N": [
+          2.3283064365386963e-09,
+          -5.9371814131736755e-09,
+          4.0531158447265625e-06
+        ],
+        "relative_error": 2.0135089920847657e-15
+      },
+      "physical_support_force_error": 2.0135069721909306e-15,
+      "physical_support_moment_error": 1.6633738044286042e-17,
+      "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact"
+    },
+    "depressurized": {
+      "final_factor": 1.0,
+      "attempts": 8,
+      "linear_system": "UmfPack",
+      "force_balance": {
+        "applied_N": [
+          0.0,
+          0.0,
+          -2163263874.471967
+        ],
+        "reaction_N": [
+          -1.30385160446167e-08,
+          -1.0069925338029861e-08,
+          2163263874.471976
+        ],
+        "residual_N": [
+          -1.30385160446167e-08,
+          -1.0069925338029861e-08,
+          8.58306884765625e-06
+        ],
+        "relative_error": 3.967654967796971e-15
+      },
+      "physical_support_force_error": 3.967647937328728e-15,
+      "physical_support_moment_error": 4.850997570868457e-18,
+      "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact",
+      "average_mm": 1.2215949760967013,
+      "maximum_mm": 1.4337579917857415
+    },
+    "pressurized": {
+      "final_factor": 1.0,
+      "attempts": 8,
+      "linear_system": "UmfPack",
+      "force_balance": {
+        "applied_N": [
+          0.0,
+          0.0,
+          -2042543874.4719706
+        ],
+        "reaction_N": [
+          -9.313225746154785e-10,
+          -8.032657206058502e-09,
+          2042543874.4719748
+        ],
+        "residual_N": [
+          -9.313225746154785e-10,
+          -8.032657206058502e-09,
+          4.291534423828125e-06
+        ],
+        "relative_error": 2.101077042238764e-15
+      },
+      "physical_support_force_error": 2.101074568489039e-15,
+      "physical_support_moment_error": 1.0942481498134366e-17,
+      "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact",
+      "average_mm": 0.2411093909392923,
+      "maximum_mm": 0.28270051951497094
+    },
+    "cleanup_audit": {}
+  },
+  "mgs1s": {
+    "status": {
+      "status": "complete",
+      "returncode": 0,
+      "complete": true,
+      "elapsed_s": 389.957040334004,
+      "process_group_cleanup": true,
+      "cleanup_error": null,
+      "solver_threads": 1,
+      "cleanup_scope": "owned_process_group"
+    },
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/analysis_mgs1s_20261118/run/summary.json",
+    "last_committed_gravity_factor": 1.0,
+    "stage": "complete",
+    "complete": true,
+    "gravity": {
+      "final_factor": 1.0,
+      "attempts": 20,
+      "linear_system": "UmfPack",
+      "force_balance": {
+        "applied_N": [
+          0.0,
+          0.0,
+          -2012963874.4719715
+        ],
+        "reaction_N": [
+          5.820766091346741e-09,
+          -9.546056389808655e-09,
+          2012963874.4719756
+        ],
+        "residual_N": [
+          5.820766091346741e-09,
+          -9.546056389808655e-09,
+          4.0531158447265625e-06
+        ],
+        "relative_error": 2.013514160578556e-15
+      },
+      "physical_support_force_error": 2.013512246999885e-15,
+      "physical_support_moment_error": 1.5901146283649253e-17,
+      "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact"
+    },
+    "depressurized": {
+      "final_factor": 1.0,
+      "attempts": 8,
+      "linear_system": "UmfPack",
+      "force_balance": {
+        "applied_N": [
+          0.0,
+          0.0,
+          -2163263874.471967
+        ],
+        "reaction_N": [
+          -9.778887033462524e-09,
+          -1.3445969671010971e-08,
+          2163263874.471976
+        ],
+        "residual_N": [
+          -9.778887033462524e-09,
+          -1.3445969671010971e-08,
+          8.58306884765625e-06
+        ],
+        "relative_error": 3.967655102829722e-15
+      },
+      "physical_support_force_error": 3.96765743853062e-15,
+      "physical_support_moment_error": 1.0234841734050009e-17,
+      "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact",
+      "average_mm": 1.2217811839984112,
+      "maximum_mm": 1.4338901093568504
+    },
+    "pressurized": {
+      "final_factor": 1.0,
+      "attempts": 8,
+      "linear_system": "UmfPack",
+      "force_balance": {
+        "applied_N": [
+          0.0,
+          0.0,
+          -2042543874.4719706
+        ],
+        "reaction_N": [
+          4.656612873077393e-10,
+          -3.7834979593753815e-09,
+          2042543874.471976
+        ],
+        "residual_N": [
+          4.656612873077393e-10,
+          -3.7834979593753815e-09,
+          5.4836273193359375e-06
+        ],
+        "relative_error": 2.684705436626725e-15
+      },
+      "physical_support_force_error": 2.68471147687714e-15,
+      "physical_support_moment_error": 9.27128038624847e-18,
+      "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact",
+      "average_mm": 0.24129015981248123,
+      "maximum_mm": 0.2828294365011648
+    },
+    "cleanup_audit": {}
+  },
+  "jez1": {
+    "status": {
+      "status": "timeout",
+      "returncode": 124,
+      "complete": false,
+      "elapsed_s": 600.1316473750048,
+      "process_group_cleanup": false,
+      "cleanup_error": "[Errno 1] Operation not permitted: '/bin/ps'",
+      "solver_threads": 1,
+      "cleanup_scope": "owned_process_group"
+    },
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/analysis_jez1_20261118/run/summary.json",
+    "last_committed_gravity_factor": 0.15000000000000002,
+    "stage": "gravity",
+    "complete": false,
+    "gravity": null,
+    "depressurized": null,
+    "pressurized": null,
+    "cleanup_audit": {
+      "verified_at_utc": "2026-11-18T08:17:54.588730+00:00",
+      "exact_output_directory": "analysis_jez1_20261118/run",
+      "active_solver_processes": [],
+      "solver_cleanup_verified": true
+    }
+  },
+  "jez1_newton": {
+    "status": {
+      "status": "timeout",
+      "returncode": 124,
+      "complete": false,
+      "elapsed_s": 600.0709191659989,
+      "process_group_cleanup": false,
+      "cleanup_error": "[Errno 1] Operation not permitted: '/bin/ps'",
+      "solver_threads": 1,
+      "cleanup_scope": "owned_process_group"
+    },
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/analysis_jez1_newton_20261118/run/summary.json",
+    "last_committed_gravity_factor": 0.23750000000000007,
+    "stage": "gravity",
+    "complete": false,
+    "gravity": null,
+    "depressurized": null,
+    "pressurized": null,
+    "cleanup_audit": {
+      "verified_at_utc": "2026-11-18T08:17:54.591402+00:00",
+      "exact_output_directory": "analysis_jez1_newton_20261118/run",
+      "active_solver_processes": [],
+      "solver_cleanup_verified": true
+    }
+  },
+  "jez1_long": {
+    "status": {
+      "status": "cancelled_duplicate",
+      "returncode": 143,
+      "wall_clock_timeout_s": null,
+      "elapsed_s": 793.0178940296173,
+      "reason": "Slower duplicate Newton run; KrylovNewton and adaptive subdivision runs continue.",
+      "solver_exit_verified": true
+    },
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/analysis_jez1_long_20261118/summary.json",
+    "last_committed_gravity_factor": 0.25000000000000006,
+    "stage": "gravity",
+    "complete": false,
+    "gravity": null,
+    "depressurized": null,
+    "pressurized": null
+  },
+  "jez1_long_krylov": {
+    "status": {
+      "status": "cancelled_duplicate",
+      "returncode": 143,
+      "wall_clock_timeout_s": null,
+      "elapsed_s": 778.6012706756592,
+      "reason": "Adaptive subdivision passed the stalled 30% step; adaptive run continues.",
+      "solver_exit_verified": true
+    },
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/analysis_jez1_long_krylov_20261118/summary.json",
+    "last_committed_gravity_factor": 0.2875000000000001,
+    "stage": "gravity",
+    "complete": false,
+    "gravity": null,
+    "depressurized": null,
+    "pressurized": null
+  },
+  "jez1_adaptive": {
+    "status": {
+      "status": "stopped_by_user",
+      "returncode": 143,
+      "wall_clock_timeout_s": null,
+      "elapsed_s": 1275.5150928497314,
+      "reason": "User requested stop and diagnosis/material comparison.",
+      "solver_exit_verified": true
+    },
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/analysis_jez1_adaptive_20261118/summary.json",
+    "last_committed_gravity_factor": 0.4919578003076722,
+    "stage": "gravity",
+    "complete": false,
+    "gravity": null,
+    "depressurized": null,
+    "pressurized": null
+  },
+  "jez1_adaptive_dim10": {
+    "status": {
+      "status": "stopped_by_user",
+      "returncode": 143,
+      "wall_clock_timeout_s": null,
+      "elapsed_s": 448.9999659061432,
+      "reason": "User requested stop and diagnosis/material comparison.",
+      "solver_exit_verified": true
+    },
+    "summary_path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/ground_dome_footing/analysis_jez1_adaptive_dim10_20261118/summary.json",
+    "last_committed_gravity_factor": 0.3437499999999999,
+    "stage": "gravity",
+    "complete": false,
+    "gravity": null,
+    "depressurized": null,
+    "pressurized": null
+  }
+}

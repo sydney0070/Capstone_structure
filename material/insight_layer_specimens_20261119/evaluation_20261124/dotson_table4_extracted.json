@@ -1,0 +1,25 @@
+{
+  "source": "Dotson2024 archived v1 PDF12 Table4; Eq2 PDF10; Fig6 PDF13",
+  "units": "cohesion Pa, density g/cm3, phi degrees",
+  "materials": {
+    "mgs1": {
+      "A_Pa": 4.96,
+      "A_reported_uncertainty": 0.34,
+      "k": 2.97,
+      "k_reported_uncertainty": 0.22,
+      "rho_min": 1.32,
+      "rho_max": 1.86,
+      "phi_deg": 35.5
+    },
+    "mgs1s": {
+      "A_Pa": 5.28,
+      "A_reported_uncertainty": 1.14,
+      "k": 2.93,
+      "k_reported_uncertainty": 0.22,
+      "rho_min": 1.31,
+      "rho_max": 1.83,
+      "phi_deg": 34.0
+    }
+  },
+  "note": "Fit covariance/raw point residuals not supplied here; no confidence interval propagated. phi graph/text value at nearest measured density, not a fit at1300."
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "uniaxial",
+  "material": "Steel02",
+  "params": {
+    "Fy": 379999.99872978276,
+    "E": 200000000.0,
+    "b": 0.015000000508953875,
+    "R0": 18.0,
+    "cR1": 0.925,
+    "cR2": 0.15,
+    "a1": 0.0,
+    "a2": 1.0,
+    "a3": 0.0,
+    "a4": 1.0
+  },
+  "bounds": {
+    "Fy": [
+      350000.0,
+      450000.0
+    ],
+    "b": [
+      0.005,
+      0.025
+    ]
+  },
+  "name": "rebar_steel02",
+  "status": "FIT_TO_SYNTHETIC_ONLY",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.008,
+    "cycles": 3,
+    "dt": 1.0,
+    "permeability": 1e-09,
+    "fluid_bulk": 2200000.0,
+    "fluid_density": 1.0,
+    "alpha_stabilization": 1e-05,
+    "normal_force": 100.0,
+    "frequency": 1.0,
+    "substeps": 1
+  }
+}

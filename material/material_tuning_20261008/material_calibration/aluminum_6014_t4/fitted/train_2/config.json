@@ -1,0 +1,44 @@
+{
+  "kind": "shell",
+  "material": "J2Plasticity",
+  "params": {
+    "E": 60000000.0,
+    "nu": 0.33,
+    "rho": 2.7,
+    "sig0": 114684.2543519771,
+    "sigInf": 300000.0,
+    "delta": 16.433178493873697,
+    "H": 0.0,
+    "thickness": 0.002
+  },
+  "bounds": {
+    "E": [
+      60000000.0,
+      80000000.0
+    ],
+    "sig0": [
+      50000.0,
+      300000.0
+    ],
+    "sigInf": [
+      300000.0,
+      500000.0
+    ],
+    "delta": [
+      1.0,
+      400.0
+    ]
+  },
+  "name": "aluminum_aw6014_t4_axial",
+  "status": "FITTED_REQUIRES_INDEPENDENT_VALIDATION",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 2
+  },
+  "calibration_scope": "AW6014 T4, 23 C, rolling 0 degrees, 15 mm/min; engineering strain <=2%; axial monotonic response only. Elastic strain/compliance review required. nu=.33 assumed, H=0 fixed; no multiaxial/isotropy/cyclic validation."
+}

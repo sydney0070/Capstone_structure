@@ -1,0 +1,127 @@
+@context:
+  tto: "https://w3id.org/pmd/tto/"
+  pmdco: "https://w3id.org/pmd/co/"
+  schema: "https://schema.org/"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  material: "pmdco:PMD_0000000"             # rdfs:label "material"
+  sheet_thickness_value: "tto:TTO_0000029"   # rdfs:label "original thickness"
+  specimen_geometry: "pmdco:PMD_0050156"     # rdfs:label "geometry shape"
+  test_speed_value: "tto:TTO_0000014"        # rdfs:label "crosshead separation rate"
+  temperature_value: "pmdco:PMD_0000967"     # rdfs:label "temperature"
+  orientations_value: "pmdco:PMD_0001035"    # rdfs:label "angle"
+  sheet_thickness_unit: "schema:unitText"
+  test_speed_unit: "schema:unitText"
+  temperature_unit: "schema:unitText"
+  orientations_unit: "schema:unitText"
+
+# Global material identifier
+material: "EN-AW6014 T4"
+
+# Global defaults corresponding exactly to your master file headers
+defaults:
+  sheet_thickness_value: 2.0
+  sheet_thickness_unit: "mm"
+  specimen_geometry: "SEP 1230"
+  test_speed_value: 15.0
+  test_speed_unit: "mm/min"
+  temperature_value: 23.0
+  temperature_unit: "°C"
+  orientations_value: 0.0
+  orientations_unit: "°"
+
+folders:
+  base:
+    description: "Reference condition tests"
+    deviations: {}
+    test_series: 
+      - TS17
+
+  velo/0.25m_s:
+    description: "Deviation in test speed"
+    deviations:
+      test_speed_value: 0.25
+      test_speed_unit: "m/s"
+    test_series: 
+      - TS21
+
+  velo/2.5m_s:
+    description: "Deviation in test speed"
+    deviations:
+      test_speed_value: 2.5
+      test_speed_unit: "m/s"
+    test_series: 
+      - TS22
+
+  velo/6.0m_s:
+    description: "Deviation in test speed"
+    deviations:
+      test_speed_value: 6.0
+      test_speed_unit: "m/s"
+    test_series: 
+      - TS23
+
+  temp/100°C:
+    description: "Deviation in temperature"
+    deviations:
+      temperature_value: 100.0
+      temperature_unit: "°C"
+    test_series: 
+      - TS18
+
+  temp/150°C:
+    description: "Deviation in temperature"
+    deviations:
+      temperature_value: 150.0
+      temperature_unit: "°C"
+    test_series: 
+      - TS19
+
+  temp/200°C:
+    description: "Deviation in temperature"
+    deviations:
+      temperature_value: 200.0
+      temperature_unit: "°C"
+    test_series: 
+      - TS20
+
+  ori/45°:
+    description: "Anisotropy investigation at 45° across varying speeds"
+    deviations:
+      orientations_value: 45.0
+      orientations_unit: "°"
+    test_series:
+      - id: TS24
+        deviations: {} # Inherits default 15.0 mm/min
+      - id: TS25
+        deviations:
+          test_speed_value: 0.25
+          test_speed_unit: "m/s"
+      - id: TS26
+        deviations:
+          test_speed_value: 2.5
+          test_speed_unit: "m/s"
+      - id: TS27
+        deviations:
+          test_speed_value: 6.0
+          test_speed_unit: "m/s"
+
+  ori/90°:
+    description: "Anisotropy investigation at 90° across varying speeds"
+    deviations:
+      orientations_value: 90.0
+      orientations_unit: "°"
+    test_series:
+      - id: TS28
+        deviations: {} # Inherits default 15.0 mm/min
+      - id: TS29
+        deviations:
+          test_speed_value: 0.25
+          test_speed_unit: "m/s"
+      - id: TS30
+        deviations:
+          test_speed_value: 2.5
+          test_speed_unit: "m/s"
+      - id: TS31
+        deviations:
+          test_speed_value: 6.0
+          test_speed_unit: "m/s"

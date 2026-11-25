@@ -1,0 +1,10 @@
+{
+  "criterion_defined_before_fitting": true,
+  "nrmse_max": 0.05,
+  "peak_error_max": 0.1,
+  "increment_error_max": 0.01,
+  "require_optimizer_success": true,
+  "scope": "AW6014 T4, 23 C, rolling 0 degrees, 15 mm/min; engineering strain <=2%; axial monotonic response only. Elastic strain/compliance review required. nu=.33 assumed, H=0 fixed; no multiaxial/isotropy/cyclic validation.",
+  "mandatory_review": "ELASTIC_STRAIN_AND_MACHINE_COMPLIANCE_NOT_CONFIRMED",
+  "notes": "Project screening; even numerical pass is not final material acceptance until strain provenance and elastic stiffness are reviewed."
+}

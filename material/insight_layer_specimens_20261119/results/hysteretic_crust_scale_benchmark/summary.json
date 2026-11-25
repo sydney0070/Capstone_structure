@@ -1,0 +1,23 @@
+{
+  "id": "hysteretic_crust_scale_benchmark",
+  "family": "Hysteretic",
+  "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+  "mars_calibrated": false,
+  "tests": [
+    {
+      "test": "committed_uniaxial_material_history",
+      "steps": 1100,
+      "max_force_N": 21513.625155154958,
+      "min_force_N": -21513.625155154958,
+      "scope": "Material tester on the same defined zeroLength law; no global spring equilibrium solve or ring area conversion.",
+      "checks": {
+        "finite": true,
+        "responds": true,
+        "initial_stiffness": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "elapsed_seconds": 0.006477457995060831
+}

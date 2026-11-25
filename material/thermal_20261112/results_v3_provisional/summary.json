@@ -1,0 +1,947 @@
+{
+  "runtime": "3.4.0",
+  "temperature_assignment_status": "PROVISIONAL_AWAITING_USER_NUMERIC_INPUT",
+  "temperature_reference_K": 219.69442627047763,
+  "temperature_envelope_K": [
+    163.997,
+    266.106
+  ],
+  "physical_thermal_calibration_completed": false,
+  "full_SSI_thermal_coupling_completed": false,
+  "native_3d_thermal_wrapper_supported": false,
+  "mechanical_constants_refitted": false,
+  "records": [
+    {
+      "name": "steel_s355_coupon",
+      "status": "CONVENTIONAL_REFERENCE_NOT_THERMAL_FIT",
+      "alpha_at_reference_per_K": [
+        1.2e-05,
+        1.2e-05,
+        1.2e-05
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "steel_s355_nominal",
+      "status": "CONVENTIONAL_REFERENCE_NOT_THERMAL_FIT",
+      "alpha_at_reference_per_K": [
+        1.2e-05,
+        1.2e-05,
+        1.2e-05
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "al6061_t6_extrusion",
+      "status": "PUBLISHED_TEMPERATURE_FUNCTION",
+      "alpha_at_reference_per_K": [
+        2.1074134395533075e-05,
+        2.1074134395533075e-05,
+        2.1074134395533075e-05
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "concrete_c30_prototype",
+      "status": "CONVENTIONAL_REFERENCE_NOT_MIX_CALIBRATED",
+      "alpha_at_reference_per_K": [
+        1e-05,
+        1e-05,
+        1e-05
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "rebar_sd400_prototype",
+      "status": "CONVENTIONAL_REFERENCE_NOT_THERMAL_FIT",
+      "alpha_at_reference_per_K": [
+        1.2e-05,
+        1.2e-05,
+        1.2e-05
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "cfrp_as4_8552_ud_rtd",
+      "status": "TRANSFERRED_RESEARCH_ORTHOTROPIC_MODEL",
+      "alpha_at_reference_per_K": [
+        0.0,
+        3.261e-05,
+        3.261e-05
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity",
+      "status": "PROVISIONAL_ANALOGUE_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "sintered_jsc1a_low_porosity",
+      "status": "PROVISIONAL_ANALOGUE_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_17_peak",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_17_residual",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_18_peak",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_18_residual",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_19_peak",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_19_residual",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "mars_jez1_peak",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "mars_jez1_residual",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "earth_sand_dr50_pdmy02",
+      "status": "PROVISIONAL_EFFECTIVE_SKELETON_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        1.1e-05,
+        1.1e-05,
+        1.1e-05
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference",
+      "status": "PROVISIONAL_EFFECTIVE_SKELETON_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        1.1e-05,
+        1.1e-05,
+        1.1e-05
+      ],
+      "tests": [
+        "free expansion",
+        "restrained heating sign/units",
+        "constrained temperature cycle",
+        "original native mechanical-history replay at3 temperatures"
+      ],
+      "passed": true
+    },
+    {
+      "name": "shield_loose_jsc1a",
+      "status": "PROVISIONAL_EFFECTIVE_BULK_ASSUMPTION",
+      "alpha_at_reference_per_K": [
+        8e-06,
+        8e-06,
+        8e-06
+      ],
+      "tests": [
+        "mass conservation and no fictitious thermal force"
+      ],
+      "thermal_stress_test": "NOT_APPLICABLE_MASS_ONLY",
+      "assumed_density_range_kg_m3": [
+        1698.107813075672,
+        1702.2744816150691
+      ],
+      "passed": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "steel_s355_coupon_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "steel_s355_coupon_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "steel_s355_coupon_restrained_sign_units",
+      "passed": true,
+      "relative_error": 2.9697609207335494e-16,
+      "stress_Pa": [
+        -24500.1459995851,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "steel_s355_coupon_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 136459507.54290363
+    },
+    {
+      "name": "steel_s355_coupon_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 4.470348358154297e-08
+    },
+    {
+      "name": "steel_s355_nominal_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "steel_s355_nominal_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "steel_s355_nominal_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -59999.99999994543,
+        -59999.99999994543,
+        -59999.99999994543,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "steel_s355_nominal_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 578824632.9077326
+    },
+    {
+      "name": "steel_s355_nominal_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 1.1920928955078125e-07
+    },
+    {
+      "name": "al6061_t6_extrusion_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "al6061_t6_extrusion_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "al6061_t6_extrusion_restrained_sign_units",
+      "passed": true,
+      "relative_error": 1.3622350182094953e-16,
+      "stress_Pa": [
+        -43610.64306483862,
+        -43610.64306483862,
+        -43610.643064838616,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "al6061_t6_extrusion_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 390122235.18808645
+    },
+    {
+      "name": "al6061_t6_extrusion_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 5.960464477539063e-08
+    },
+    {
+      "name": "concrete_c30_prototype_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "concrete_c30_prototype_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "concrete_c30_prototype_restrained_sign_units",
+      "passed": true,
+      "relative_error": 2.5000000000113683e-05,
+      "stress_Pa": [
+        -2999.9249999972717,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "concrete_c30_prototype_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 12307946.48681854
+    },
+    {
+      "name": "concrete_c30_prototype_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 3.725290298461914e-09
+    },
+    {
+      "name": "rebar_sd400_prototype_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "rebar_sd400_prototype_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "rebar_sd400_prototype_restrained_sign_units",
+      "passed": true,
+      "relative_error": 1.5158245029562591e-16,
+      "stress_Pa": [
+        -23999.99999997817,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "rebar_sd400_prototype_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 133673823.02927783
+    },
+    {
+      "name": "rebar_sd400_prototype_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 2.9802322387695312e-08
+    },
+    {
+      "name": "cfrp_as4_8552_ud_rtd_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "cfrp_as4_8552_ud_rtd_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "cfrp_as4_8552_ud_rtd_restrained_sign_units",
+      "passed": true,
+      "relative_error": 2.579898988337947e-16,
+      "stress_Pa": [
+        -2857.829714930165,
+        -4731.506150546632,
+        -4731.506150546632,
+        0.0,
+        -9.057541703068438e-14,
+        0.0
+      ]
+    },
+    {
+      "name": "cfrp_as4_8552_ud_rtd_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 40525950.88821502
+    },
+    {
+      "name": "cfrp_as4_8552_ud_rtd_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 3.725290298461914e-09
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity_restrained_sign_units",
+      "passed": true,
+      "relative_error": 1.3185596703797595e-16,
+      "stress_Pa": [
+        -862.2047244086646,
+        -862.2047244086646,
+        -862.2047244086646,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 8317755.551626866
+    },
+    {
+      "name": "sintered_jsc1a_high_porosity_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 1.862645149230957e-09
+    },
+    {
+      "name": "sintered_jsc1a_low_porosity_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "sintered_jsc1a_low_porosity_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "sintered_jsc1a_low_porosity_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -1428.7179487166493,
+        -1428.7179487166493,
+        -1428.7179487166493,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "sintered_jsc1a_low_porosity_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 13782952.36992259
+    },
+    {
+      "name": "sintered_jsc1a_low_porosity_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 1.862645149230957e-09
+    },
+    {
+      "name": "moon_jsc1a_17_peak_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_17_peak_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "moon_jsc1a_17_peak_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -3.019999999997253,
+        -3.019999999997253,
+        -3.0199999999972524,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "moon_jsc1a_17_peak_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 110879.47591358988
+    },
+    {
+      "name": "moon_jsc1a_17_peak_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 7.275957614183426e-12
+    },
+    {
+      "name": "moon_jsc1a_17_residual_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_17_residual_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "moon_jsc1a_17_residual_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -3.019999999997253,
+        -3.019999999997253,
+        -3.0199999999972524,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "moon_jsc1a_17_residual_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 110879.47591358988
+    },
+    {
+      "name": "moon_jsc1a_17_residual_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 7.275957614183426e-12
+    },
+    {
+      "name": "moon_jsc1a_18_peak_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_18_peak_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "moon_jsc1a_18_peak_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -4.08999999999628,
+        -4.08999999999628,
+        -4.08999999999628,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "moon_jsc1a_18_peak_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 119480.9067157774
+    },
+    {
+      "name": "moon_jsc1a_18_peak_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 1.0913936421275139e-11
+    },
+    {
+      "name": "moon_jsc1a_18_residual_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_18_residual_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "moon_jsc1a_18_residual_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -4.08999999999628,
+        -4.08999999999628,
+        -4.08999999999628,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "moon_jsc1a_18_residual_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 119480.9067157774
+    },
+    {
+      "name": "moon_jsc1a_18_residual_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 1.0913936421275139e-11
+    },
+    {
+      "name": "moon_jsc1a_19_peak_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_19_peak_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "moon_jsc1a_19_peak_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -3.4499999999968614,
+        -3.4499999999968614,
+        -3.4499999999968614,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "moon_jsc1a_19_peak_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 114336.12567521665
+    },
+    {
+      "name": "moon_jsc1a_19_peak_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 7.275957614183426e-12
+    },
+    {
+      "name": "moon_jsc1a_19_residual_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "moon_jsc1a_19_residual_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "moon_jsc1a_19_residual_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -3.4499999999968614,
+        -3.4499999999968614,
+        -3.4499999999968614,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "moon_jsc1a_19_residual_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 114336.12567521665
+    },
+    {
+      "name": "moon_jsc1a_19_residual_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 7.275957614183426e-12
+    },
+    {
+      "name": "mars_jez1_peak_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "mars_jez1_peak_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "mars_jez1_peak_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -5.999999999994541,
+        -5.999999999994541,
+        -5.999999999994541,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "mars_jez1_peak_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 134834.86263370086
+    },
+    {
+      "name": "mars_jez1_peak_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 1.4551915228366852e-11
+    },
+    {
+      "name": "mars_jez1_residual_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "mars_jez1_residual_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "mars_jez1_residual_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -5.999999999994541,
+        -5.999999999994541,
+        -5.999999999994541,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "mars_jez1_residual_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 134834.86263370086
+    },
+    {
+      "name": "mars_jez1_residual_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 1.4551915228366852e-11
+    },
+    {
+      "name": "earth_sand_dr50_pdmy02_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "earth_sand_dr50_pdmy02_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "earth_sand_dr50_pdmy02_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -86.39439233096337,
+        -86.39439233096337,
+        -86.39439233096337,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "earth_sand_dr50_pdmy02_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 3085702.7352682916
+    },
+    {
+      "name": "earth_sand_dr50_pdmy02_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 3.4924596548080444e-10
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference_free_expansion",
+      "passed": true,
+      "max_stress_Pa": 0.0
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference_restrained_sign_units",
+      "passed": true,
+      "relative_error": 0.0,
+      "stress_Pa": [
+        -86.39439233096337,
+        -86.39439233096337,
+        -86.39439233096337,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference_temperature_cycle_finite",
+      "passed": true,
+      "peak_stress_norm_Pa": 3085702.7352682916
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference_mechanical_path_replay",
+      "passed": true,
+      "max_difference_Pa": 3.4924596548080444e-10
+    },
+    {
+      "name": "shield_loose_jsc1a_Tref_zero",
+      "passed": true
+    },
+    {
+      "name": "shield_loose_jsc1a_mass_conservation",
+      "passed": true
+    },
+    {
+      "name": "CFRP90_axis_swap",
+      "passed": true
+    },
+    {
+      "name": "symmetric_laminate_no_thermal_bending",
+      "passed": true
+    },
+    {
+      "name": "no_NIST_out_of_range_extrapolation",
+      "passed": true
+    },
+    {
+      "name": "assumptions_require_explicit_opt_in",
+      "passed": true
+    },
+    {
+      "name": "earth_sand_dr50_pdmy02_native_plastic_stage_active",
+      "passed": true,
+      "relative_shear_difference": 0.9689900193047547
+    },
+    {
+      "name": "earth_sand_dr50_dry_reference_native_plastic_stage_active",
+      "passed": true,
+      "relative_shear_difference": 0.9689900193047547
+    },
+    {
+      "name": "coverage_exact19",
+      "passed": true
+    }
+  ],
+  "all_numerical_checks_pass": true,
+  "check_count": 99,
+  "source_hashes": {
+    "thermal.py": "b37a0971d7dbc61b4173d1a9973372547febb146ded153250bbeab30d96940ea",
+    "thermal_catalog.json": "8f7078ff50fc915f841a2b5896f256488eb884a8f7f76cb261c1dfa1aada6db8",
+    "verify_thermal.py": "fbdbc9530fb2e1ab04dc71005cde75c39f40209b9b6f42251fcbeb4e4cc2ddcc",
+    "catalog_with_thermal.json": "8dbe006936519ef1cd503ce9bdba99cf6db5451c9c1fa471970145dba527de47",
+    "prepare_catalog.py": "2fa68446261e00401b8ede2ce6abb8850ecb035fc2585aa90278297bcd82c548",
+    "evaluate_mars_history.py": "35253a7690ab36937a8ce4badfdbd2958d98863d0bd30f5b4731c51b6192fd5e"
+  }
+}

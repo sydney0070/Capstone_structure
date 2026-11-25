@@ -1,0 +1,97 @@
+{
+  "units": "N,m,Pa",
+  "status": "PARTIAL_OR_FAILED",
+  "tests": {
+    "baseline_24x12_ip5": {
+      "status": "COMPLETED",
+      "geometry": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 24,
+        "nz": 12
+      },
+      "lobatto_points": 5,
+      "subdivisions": 60,
+      "max_abs_force_kN": 76.13828562821895,
+      "end_cyclic_force_kN": 37.97246346259575,
+      "end_cyclic_displacement_mm": -3.144186300207963e-15,
+      "final_force_N": -5.9117155615240335e-12,
+      "final_tip_displacement_mm": -5.138453328514685,
+      "support_reaction_x_N": -1.4626488995359428e-10,
+      "equilibrium_relative_error": 1.521766055151183e-10,
+      "zero_force_unloading": true,
+      "points": 661
+    },
+    "refined_fibers_48x24_ip5": {
+      "status": "COMPLETED",
+      "geometry": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "lobatto_points": 5,
+      "subdivisions": 60,
+      "max_abs_force_kN": 56.58273946494839,
+      "end_cyclic_force_kN": 33.11997270700724,
+      "end_cyclic_displacement_mm": 5.421010862427522e-16,
+      "final_force_N": 33119.97270700724,
+      "final_tip_displacement_mm": 5.421010862427522e-16,
+      "support_reaction_x_N": -37917.44528067724,
+      "equilibrium_relative_error": 0.14485134441717068,
+      "zero_force_unloading": false,
+      "points": 541
+    },
+    "more_integration_24x12_ip7": {
+      "status": "FAILED",
+      "error": "displacement control failed: target=0.006, step=41",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/sydney/Desktop/capstone/Capstone_structure/material/rc_step3_final_validation/validate_final.py\", line 95, in main\n    item,a=run_case(name,ny,nz,nip,60,unload)\n  File \"/Users/sydney/Desktop/capstone/Capstone_structure/material/rc_step3_final_validation/validate_final.py\", line 43, in run_case\n    if ops.analyze(1)!=0:raise RuntimeError(f'displacement control failed: target={target}, step={i}')\nRuntimeError: displacement control failed: target=0.006, step=41\n"
+    },
+    "refined_both_48x24_ip7": {
+      "status": "COMPLETED",
+      "geometry": {
+        "width": 0.4,
+        "depth": 0.6,
+        "cover": 0.045,
+        "bar_diameter": 0.02,
+        "bars_top": 3,
+        "bars_bottom": 3,
+        "ny": 48,
+        "nz": 24
+      },
+      "lobatto_points": 7,
+      "subdivisions": 60,
+      "max_abs_force_kN": 56.57883035998383,
+      "end_cyclic_force_kN": 19.182564163540626,
+      "end_cyclic_displacement_mm": -2.710505431213761e-15,
+      "final_force_N": 19182.564163540625,
+      "final_tip_displacement_mm": -2.710505431213761e-15,
+      "support_reaction_x_N": -43662.76179518383,
+      "equilibrium_relative_error": 1.2761692036026935,
+      "zero_force_unloading": false,
+      "points": 541
+    }
+  },
+  "warning": "This is numerical verification of a provisional RC beam; no experimental validation.",
+  "comparison": {
+    "refined_fibers_48x24_ip5": {
+      "peak_force_relative_difference": 0.256842480782398,
+      "rms_force_difference_kN": 50.461217489935144,
+      "max_path_force_difference_kN": 103.4845465420795
+    },
+    "refined_both_48x24_ip7": {
+      "peak_force_relative_difference": 0.25689382295450375,
+      "rms_force_difference_kN": 44.23604940877176,
+      "max_path_force_difference_kN": 90.19524580466447
+    }
+  },
+  "residual_displacement_pass": true
+}

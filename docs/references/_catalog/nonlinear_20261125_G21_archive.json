@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-25",
+  "new_ids": [
+    "G21"
+  ],
+  "sources": [
+    {
+      "id": "G21",
+      "title": "Long-Fox & Britt (2023), Characterization of planetary regolith simulants for the research and development of space resource technologies",
+      "group": "01_ground",
+      "group_label": "지반·행성 레골리스",
+      "used_for": "비선형 층별 재료 및 평가·검증 방법",
+      "used_section": "Section3.2, Table4/5: MGS1 basaltic-base composition and MGS1S40wt% gypsum; composition/PSD, not raw strength-strain validation data",
+      "prior_scope": "Mineralogy informs analogue selection; does not validate mechanical parameters at rho1300 or InSight composition",
+      "kind": "논문·보고서",
+      "url": "https://doi.org/10.3389/frspt.2023.1255535",
+      "files": [
+        "01_ground/G21_LongFox_Britt_2023_Planetary_Simulants.pdf"
+      ],
+      "status": "원문 PDF 확보",
+      "full_text_available": true,
+      "reviewed_on": "2026-11-25"
+    }
+  ],
+  "download_log": "/private/tmp/nonlinear_literature_20261125/downloads.json"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "mgs1s_tc",
+  "group": "nonlinear_20261125",
+  "layer": "sand",
+  "family": "DruckerPrager",
+  "parameters": {
+    "E_Pa": 28400000.0,
+    "nu": 0.22,
+    "G_Pa": 11639344.262295082,
+    "K_Pa": 16904761.904761903,
+    "density_kg_m3": 1300,
+    "phi_deg": 34.0,
+    "c_Pa": 238.15604205438487,
+    "psi_deg": 0.0,
+    "hardening": 0.0
+  },
+  "evidence": {
+    "E_Pa": {
+      "source": "Murdoch2018",
+      "locator": "Table 2; existing 1300 kg/m3 candidate",
+      "kind": "transferred",
+      "note": "Rounded E=28.4 MPa, nu=.22 from previous cross-source initial set"
+    },
+    "nu": {
+      "source": "Murdoch2018",
+      "locator": "Table 2; existing 1300 kg/m3 candidate",
+      "kind": "transferred",
+      "note": "Rounded E=28.4 MPa, nu=.22 from previous cross-source initial set"
+    },
+    "density_kg_m3": {
+      "source": "Spohn2022",
+      "locator": "Section 6.7, sand 1300–1500 kg/m3",
+      "kind": "selected_inferred_reference",
+      "note": "1300 is also the previously saved target density"
+    },
+    "G_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "K_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "phi_deg": {
+      "source": "Dotson2024 Eq2/Table4; Fig6 nearest-density friction",
+      "locator": "see calibration record",
+      "kind": "derived_calibration",
+      "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+    },
+    "c_Pa": {
+      "source": "Dotson2024 Eq2/Table4; Fig6 nearest-density friction",
+      "locator": "see calibration record",
+      "kind": "derived_calibration",
+      "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+    },
+    "psi_deg": {
+      "source": "modelling_assumption",
+      "locator": "nonassociated flow",
+      "kind": "assumed",
+      "note": "Zero dilation; requires volumetric-strain calibration"
+    },
+    "hardening": {
+      "source": "modelling_assumption",
+      "locator": "perfect plasticity",
+      "kind": "assumed",
+      "note": "No measured hardening/softening curve"
+    }
+  },
+  "mars_calibrated": false,
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+  "notes": [
+    "Actual DP c/phi and target physical MC c/phi are stored separately.",
+    "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+    "Elastoplastic law may remain on its elastic branch at service loads."
+  ],
+  "law": "DruckerPrager",
+  "calibration": {
+    "target_mode": "triaxial",
+    "target_MC_c_Pa": 238.15604205438487,
+    "target_MC_phi_deg": 34.0,
+    "target_source": "Dotson2024 Eq2/Table4; Fig6 nearest-density friction",
+    "independent_validation": false,
+    "A_Pa": 5.28,
+    "k": 2.93,
+    "target_density_g_cm3": 1.3,
+    "measured_density_min_g_cm3": 1.31,
+    "density_extrapolated": true,
+    "uncertainty_note": "Slight density extrapolation; phi held at nearby density, fit covariance unavailable"
+  }
+}

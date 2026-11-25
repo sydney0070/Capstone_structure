@@ -1,0 +1,130 @@
+[
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/materials.json",
+    "sha256": "b9c2c062f312925f65d6728af9fa4447ebc9ee54c1b418527dca2085ce08da17"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/specimens.py",
+    "sha256": "8340d60bff5c294ed4b71896d898f5370e1d4065625f29c25906af4b2d746a9e"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/summary.json",
+    "sha256": "554775261400a919ec7eafba6b7b23c61ed0cbc331b3392d71bd2d54ec4066d5"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/evaluation_20261124/additional_tests/summary.json",
+    "sha256": "c7efdc9b6b1a147bd464038b60d2abb22f8095d223338e9da35c805ccc4a0dc7"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/surface_elastic/summary.json",
+    "sha256": "2e4764c26fb3c7e5b0cf63e3d5559f4066f5d3731b0c7ba686d9398d126dec29"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/surface_dp_trial/summary.json",
+    "sha256": "d84cbe7abc7678533c8e792b2f346ed91cdda3c8ec8b80db109c5bd37620bde1"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/duricrust_elastic/summary.json",
+    "sha256": "692b7c324d925596993e0a78c0af82ddf015f0c2b2ede0d33a7348df50519349"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/duricrust_dp/summary.json",
+    "sha256": "5289108a09a47fbe982ab7acb6f4738cda0ac83dd4df87dfbfd892728a82e014"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/sand_elastic_1300/summary.json",
+    "sha256": "49390fe6796f95cb8d45db8436b4210040d95d7245bac918d7e10a81f56e951e"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/sand_mgs1_dp_1300/summary.json",
+    "sha256": "2fa1dd18b2e61d3b68724c84abbcc614a7b1dad98280fd0618ea00107e62b92c"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/sand_mgs1s_dp_1300/summary.json",
+    "sha256": "053c8799ac3c88d309ce7d287f3390bfd7fde157a2833a89e4051c6ad098596f"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/local_gravel_elastic_proxy/summary.json",
+    "sha256": "1807dd70d7aefa5de763486fd5432d40c276cc0056a221714fc898af77506a2b"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/local_gravel_dp_trial/summary.json",
+    "sha256": "8a96856d753699386040824718588921d0878642f3661b82f9db6309ee3d0254"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/blocky_ejecta_elastic/summary.json",
+    "sha256": "1402f6a5a6dc7387833f6b801e22fd818820d8b48313a71c8c182b10a6f37e73"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/blocky_ejecta_dp_trial/summary.json",
+    "sha256": "5cf46e03482b309f71920d4d84f505b2acd1e9141f1c2e0a459ad8ac5c397d6b"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/fractured_basalt_elastic/summary.json",
+    "sha256": "97f5e035e4766252a24cb5aa887c36e21bf6f08c0211f65a9516dc73695516a1"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/sediment_elastic_prior/summary.json",
+    "sha256": "36924ebf03b5604f7472f8a3f05c323189b5a6e704ff089d65944306b6220d05"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/pdmy02_earth_dr30_reference/summary.json",
+    "sha256": "ab5c90e8cda582e1d4b3bc1a3cae244df65d737acd5908874d33546268ea7d9e"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/pdmy02_earth_dr40_reference/summary.json",
+    "sha256": "29cfebf20aeb43168e19b7c0d920778fa45cf60f9e49d368c9aeb2ac1f6dd93f"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/pdmy02_earth_dr50_reference/summary.json",
+    "sha256": "0a46c0758ca17c3a40b78709d0bc7463846d75b618fcf45a23da1fcbff655fb4"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/pdmy02_earth_dr60_reference/summary.json",
+    "sha256": "95b58754ed1c49acddc90ad2accd9edcbc81234446f1cf01e3ff3a2d0d9e53b0"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/pdmy02_earth_dr75_reference/summary.json",
+    "sha256": "8281cf6dc15f79d867c88bb0c726536fe45d4eaed346ee10bcbb38842e68754f"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/sand_mgs1_pdmy02_1300/summary.json",
+    "sha256": "479db94aa44aa915eeb87c237c4e2da29da9a632860370055b68d491feca6e04"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/sand_mgs1s_pdmy02_1300/summary.json",
+    "sha256": "1d55cd5f6f5e970f31dbdaf25d348c774929625f3397b883f8d121871413e8b8"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/local_gravel_pdmy02_trial/summary.json",
+    "sha256": "98e5d5d08826ec136253f53dc74db7380bc6f541fc09d985e11bf79f3ad6fea4"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/blocky_ejecta_pdmy02_trial/summary.json",
+    "sha256": "13e1ef96b83d0af9fb907710fb19904b665e4f8e21adb819ca4f010d80537190"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/qzsimple2_reference/summary.json",
+    "sha256": "9c12c80b31d7f16af0d6a8c36b1e6a12316aa374437866b2dd1580a412621e37"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/qzsimple1_reference/summary.json",
+    "sha256": "b1a4a09da808e23d0a83287746cfc865ad3f938a61ddec2af9da87bee36ebd74"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/pysimple2_reference/summary.json",
+    "sha256": "d8993c3b7964990d1c953ddff9e797d95ff74eb19aaed9feb30bd29f25cd4f80"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/tzsimple2_reference/summary.json",
+    "sha256": "1464a884a094e11997fa72974521ab3ce6167eb5d6f72afb9d9d4dbae1b5adb9"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/elasticppgap_compression_benchmark/summary.json",
+    "sha256": "fb36483515bbef8a290cd0cef32484fc25312393ad1910c3b8e3dc782b42ecb4"
+  },
+  {
+    "file": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/results/hysteretic_crust_scale_benchmark/summary.json",
+    "sha256": "51d51cefd71c9fdfb0dab9f1305899ee9a4a14b219acd0137a6dc114afa23035"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "previous_passed": 2,
+  "previous_count": 20,
+  "issues": [
+    "Initial-G regression sampled post-yield points when G was large relative to shear capacity; add a small-strain probe without changing properties/tolerance.",
+    "Uniaxial tension target was MC, but native TC-mapped DP has sigma_t=6c cos(phi)/(3+sin(phi)); verify DP first and separately assess MC/HB tensile mismatch."
+  ]
+}

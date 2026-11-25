@@ -1,0 +1,384 @@
+{
+  "date": "2026-11-19",
+  "results": [
+    {
+      "review_id": "G1",
+      "archive_id": "G09",
+      "file": "01_ground/G09_Golombek_2020_InSight_Geology.pdf",
+      "source": {
+        "id": "G1",
+        "authors": "Golombek et al.",
+        "year": 2020,
+        "title": "Geology of the InSight landing site on Mars",
+        "url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+        "doi": "10.1038/s41467-020-14679-1",
+        "locator": "Figure 9; discussion on printed pp. 6–7",
+        "evidence": "Observed shallow duricrust and grains; interpreted deeper blocky ejecta and fractured basalt. Salt cementation is a hypothesis, not a layer-by-layer chemical assay."
+      },
+      "attempts": [
+        {
+          "url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+          "http_status": 200,
+          "final_url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "pages": 11,
+      "pdf_title": "Geology of the InSight landing site on Mars",
+      "pdf_author": "M. Golombek",
+      "status": "downloaded",
+      "retrieved_url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+      "bytes": 4987535,
+      "sha256": "5b95364db5dc8fa915ca89fc50a45a8f3b97f1dd84c350c4edd82521d5969475"
+    },
+    {
+      "review_id": "G2",
+      "archive_id": "G10",
+      "file": "01_ground/G10_Warner_2020_Homestead_Hollow.pdf",
+      "source": {
+        "id": "G2",
+        "authors": "Warner et al.",
+        "year": 2020,
+        "title": "An Impact Crater Origin for the InSight Landing Site at Homestead Hollow, Mars",
+        "url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+        "doi": "10.1029/2019JE006333",
+        "locator": "Near-surface stratigraphy interpretation",
+        "evidence": "Impact-generated fine and coarse regolith; estimates do not establish a universal 13 m interface."
+      },
+      "attempts": [
+        {
+          "url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+          "http_status": 200,
+          "final_url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "pages": 36,
+      "pdf_title": "An Impact Crater Origin for the InSight Landing Site at Homestead Hollow, Mars: Implications for Near Surface Stratigraphy, Surface Processes, and Erosion Rates",
+      "pdf_author": "N. H. Warner, J. A. Grant, S. A. Wilson, M. P. Golombek, A. DeMott, C. Charalambous, E. Hauber, V. Ansan, C. Weitz, T. Pike, N. Williams, M. E. Banks, F. Calef, M. Baker, M. Kopp, M. Deahn, H. Lethcoe, L. Berger",
+      "status": "downloaded",
+      "retrieved_url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+      "bytes": 2949185,
+      "sha256": "782cdd222e2fe6c0c6dc9d468c0023ec7199f98ff53dafe6744084c9328f78c7"
+    },
+    {
+      "review_id": "G3",
+      "archive_id": "G11",
+      "file": "01_ground/G11_Cannon_2019_MGS1_Mineralogy.pdf",
+      "source": {
+        "id": "G3",
+        "authors": "Cannon et al.",
+        "year": 2019,
+        "title": "Mars global simulant MGS-1: A Rocknest-based open standard for basaltic martian regolith simulants",
+        "url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+        "doi": "10.1016/j.icarus.2018.08.019",
+        "locator": "Sections 1–2; mineralogical design",
+        "evidence": "Basaltic mineral analogy based on Gale/Rocknest; not measured InSight deep-layer mineral fractions."
+      },
+      "attempts": [
+        {
+          "url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+          "http_status": 200,
+          "final_url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "pages": 9,
+      "pdf_title": "Mars global simulant MGS-1_ A Rocknest-based open standard for basaltic martian regolith simulants",
+      "pdf_author": "Kevin M. Cannon",
+      "status": "downloaded",
+      "retrieved_url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+      "bytes": 1402373,
+      "sha256": "62820042972c21e03a9bba9b836a59e2c111510bfd7b834dd5e3dc60d1a0686a"
+    },
+    {
+      "review_id": "G4",
+      "archive_id": "G12",
+      "file": "01_ground/G12_Morgan_2018_InSight_Regolith_Properties.pdf",
+      "source": {
+        "id": "G4",
+        "authors": "Morgan et al.",
+        "year": 2018,
+        "title": "A Pre-Landing Assessment of Regolith Properties at the InSight Landing Site",
+        "url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+        "locator": "Sections 1.3 and 2.3–2.4",
+        "evidence": "Pre-landing reference estimates; distinction between low-cohesion sand, bonded soils, density and friction. Not a calibration of the 3–13 m unit."
+      },
+      "attempts": [
+        {
+          "url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+          "http_status": 200,
+          "final_url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "pages": 73,
+      "pdf_title": "Microsoft Word - Revised_InSight Landing Site Regolith Physical Properties Complete 2018-6-6.docx",
+      "pdf_author": "morgan",
+      "status": "downloaded",
+      "retrieved_url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+      "bytes": 1687471,
+      "sha256": "7e3f47af267230c2933d77b3ab701ea08076634cf3d9913b8446c3a0097597b9"
+    },
+    {
+      "review_id": "R1",
+      "archive_id": "R18",
+      "file": "04_SSI_and_numerics/R18_Harden_2005_PEER_2005_04.pdf",
+      "source": {
+        "id": "R1",
+        "authors": "Harden, Hutchinson, Martin and Kutter",
+        "year": 2005,
+        "title": "Numerical Modeling of the Nonlinear Cyclic Response of Shallow Foundations",
+        "url": "https://peer.berkeley.edu/sites/default/files/peer_504_c._harden_t._hutchinson_g._martin_b._kutter.pdf",
+        "locator": "PEER 2005/04, Chapter 3, Sections 3.3.1–3.3.5; printed pp. 27–37, PDF pp. 46–56",
+        "evidence": "OpenSees BNWF research evaluates ElasticPPGap, general hysteretic, QzSimple1, PySimple1 and TzSimple1. Earth sand/clay experiments, not Mars."
+      },
+      "attempts": [],
+      "pages": 233,
+      "pdf_title": "T_harden.indd",
+      "pdf_author": null,
+      "status": "existing_file_reused",
+      "bytes": 5992500,
+      "sha256": "939a0500349176f2e677f16ff67a6a43a40da50d33c253e9c8aabac323ef8192"
+    },
+    {
+      "review_id": "R2",
+      "archive_id": "R26",
+      "file": null,
+      "source": {
+        "id": "R2",
+        "authors": "Raychowdhury and Hutchinson",
+        "year": 2009,
+        "title": "Performance evaluation of a nonlinear Winkler-based shallow foundation model using centrifuge test results",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/eqe.902",
+        "doi": "10.1002/eqe.902",
+        "locator": "Earthquake Engineering & Structural Dynamics 38, 679–698; accessible abstract",
+        "evidence": "Centrifuge validation for square/strip footings on Earth sand/clay. Publisher abstract checked; exact spring command names cross-checked with R3/R4."
+      },
+      "attempts": [
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/eqe.902",
+          "http_status": 403,
+          "final_url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/eqe.902",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/eqe.902",
+          "error": "403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/pdf/10.1002/eqe.902"
+        }
+      ],
+      "status": "full_text_unavailable"
+    },
+    {
+      "review_id": "R3",
+      "archive_id": "R27",
+      "file": "04_SSI_and_numerics/R27_NIST_2012_GCR_12_917_21_REV1.pdf",
+      "source": {
+        "id": "R3",
+        "authors": "NEHRP Consultants Joint Venture / NIST",
+        "year": 2012,
+        "title": "Soil-Structure Interaction for Building Structures",
+        "url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+        "official_url": "https://www.nehrp.gov/pdf/nistgcr12-917-21.pdf",
+        "locator": "GCR 12-917-21, printed pp. 2-36–2-38, PDF pp. 68–70",
+        "evidence": "Describes OpenSees QzSimple2, PxSimple1 and TxSimple1 roles in 2D BNWF. Official 13 MB URL exceeded web parser size; contractor revision was read."
+      },
+      "attempts": [
+        {
+          "url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+          "http_status": 200,
+          "final_url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+          "content_type": "application/pdf"
+        }
+      ],
+      "pages": 292,
+      "pdf_title": "Microsoft Word - 01-TO10_Preface.docx",
+      "pdf_author": "Pete",
+      "status": "downloaded",
+      "retrieved_url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+      "bytes": 5875216,
+      "sha256": "fafb6de5f15695a3e37afea0679d180e7dda4f57af268988a584b2cfe2f7c08d"
+    },
+    {
+      "review_id": "R4",
+      "archive_id": "R20",
+      "file": "04_SSI_and_numerics/R20_ShallowFoundationGen_2008.pdf",
+      "source": {
+        "id": "R4",
+        "authors": "Raychowdhury / OpenSees",
+        "year": 2008,
+        "title": "ShallowFoundationGen implementation documentation",
+        "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/documents/ShallowDocumentation.pdf",
+        "locator": "Example material commands for shallow foundations",
+        "evidence": "Official example uses QzSimple2, PySimple2, TzSimple2. Older literature also uses PxSimple1/TxSimple1 terminology."
+      },
+      "attempts": [],
+      "pages": 26,
+      "pdf_title": null,
+      "pdf_author": null,
+      "status": "existing_file_reused",
+      "bytes": 1297356,
+      "sha256": "4d115ae4594aabb122093d3fece5fcf47b029dd906476a48a54f3a55adde0d94"
+    },
+    {
+      "review_id": "D1",
+      "archive_id": "D30",
+      "file": "05_official_model_docs/D30_bbarBrick_20261119.html",
+      "source": {
+        "id": "D1",
+        "title": "OpenSees bbarBrick documentation",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+        "evidence": "matTag must identify an nDMaterial in a 3D, 3-DOF model."
+      },
+      "attempts": [
+        {
+          "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+          "http_status": 200,
+          "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "downloaded",
+      "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+      "bytes": 25964,
+      "sha256": "ac0d6ddea641698b035897756b33a37093e295cca14548f7b470f3c5fa3cef69"
+    },
+    {
+      "review_id": "D2",
+      "archive_id": "D15",
+      "file": "05_official_model_docs/D15_QzSimple1_20261119.html",
+      "source": {
+        "id": "D2",
+        "title": "OpenSees QzSimple1 documentation",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html",
+        "evidence": "Capacity is a force, Z50 a displacement. Original backbones are pile-tip relations."
+      },
+      "attempts": [
+        {
+          "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html",
+          "http_status": 200,
+          "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "downloaded",
+      "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html",
+      "bytes": 29567,
+      "sha256": "4b1a57f0cea0faacee0397ec4c665d926b885ebf60351ca6c53e1f92a00db007"
+    },
+    {
+      "review_id": "D3",
+      "archive_id": "D13",
+      "file": "05_official_model_docs/D13_PySimple1_20261119.html",
+      "source": {
+        "id": "D3",
+        "title": "OpenSees PySimple1 documentation",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html",
+        "evidence": "Original p-y relation; capacity is a nodal force after multiplying distributed resistance by tributary length."
+      },
+      "attempts": [
+        {
+          "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html",
+          "http_status": 200,
+          "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "downloaded",
+      "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html",
+      "bytes": 31017,
+      "sha256": "e7c9f3da1d1ba20c65e82126ee4fdb10def74dd2ba031f7b4e215ada9893cd1c"
+    },
+    {
+      "review_id": "D4",
+      "archive_id": "D14",
+      "file": "05_official_model_docs/D14_TzSimple1_20261119.html",
+      "source": {
+        "id": "D4",
+        "title": "OpenSees TzSimple1 documentation",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html",
+        "evidence": "Original pile shaft t-z relation; capacity is a force after tributary-area conversion."
+      },
+      "attempts": [
+        {
+          "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html",
+          "http_status": 200,
+          "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "downloaded",
+      "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html",
+      "bytes": 26336,
+      "sha256": "b29458a4d913a79d6386425653198c472cb5d6587eb8aa3e9a5cf3193538d7e3"
+    },
+    {
+      "review_id": "D5",
+      "archive_id": "D16",
+      "file": "05_official_model_docs/D16_ElasticPPGap.html",
+      "source": {
+        "id": "D5",
+        "title": "OpenSees ElasticPPGap documentation",
+        "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/170.htm",
+        "evidence": "Compression-only sign convention; default recentering differs from damage option."
+      },
+      "attempts": [],
+      "status": "existing_file_reused",
+      "bytes": 3971,
+      "sha256": "a1b439f2c582a35811f0af40cf8b9d3f6ae7b66a2d852c625a9131353b51e90f"
+    },
+    {
+      "review_id": "D6",
+      "archive_id": "D31",
+      "file": "05_official_model_docs/D31_Hysteretic_20261119.html",
+      "source": {
+        "id": "D6",
+        "title": "OpenSees Hysteretic documentation",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+        "evidence": "User-defined asymmetric envelopes, pinching, energy/ductility damage and unloading stiffness rules."
+      },
+      "attempts": [
+        {
+          "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+          "http_status": 200,
+          "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "downloaded",
+      "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+      "bytes": 21577,
+      "sha256": "99970d1f93cf5f780b770b046c4ca0499f6fe5b74373b39e8b910d83451d4226"
+    },
+    {
+      "review_id": "D7",
+      "archive_id": "D_pdmy02",
+      "file": "05_official_model_docs/PressureDependentMultiYield02.html",
+      "source": {
+        "id": "D7",
+        "title": "OpenSees PressureDependMultiYield02 documentation",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+        "evidence": "Supports 3D, pressure-dependent moduli and cyclic contraction/dilation; example sand parameters are not Mars calibration."
+      },
+      "attempts": [],
+      "status": "existing_file_reused",
+      "bytes": 26080,
+      "sha256": "fc3e785ab22f421f4aa7ce889d1caa4af5be59f5d41140f26351c06b1370d754"
+    },
+    {
+      "review_id": "D8",
+      "archive_id": "D_dp",
+      "file": "05_official_model_docs/DruckerPrager.html",
+      "source": {
+        "id": "D8",
+        "title": "OpenSees DruckerPrager documentation",
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+        "evidence": "3D pressure-sensitive continuum model; strength, plastic volume change and hardening need calibration."
+      },
+      "attempts": [],
+      "status": "existing_file_reused",
+      "bytes": 25332,
+      "sha256": "379ad6335575f55b1c0223432627c6a7da4f5f6d26b16a4b20111c72419e7295"
+    }
+  ]
+}

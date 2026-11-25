@@ -1,0 +1,197 @@
+{
+  "sources": {
+    "2403.11029v1.pdf": {
+      "path": "/Users/sydney/Downloads/2403.11029v1.pdf",
+      "sha256": "181027971988e8d4e55fefbfc8dcf774a828ffb531a7ac40a79368d8ee94825e"
+    },
+    "s11214-023-00964-0.pdf": {
+      "path": "/Users/sydney/Downloads/s11214-023-00964-0.pdf",
+      "sha256": "9717e9f0e5152fc2e9ac3366755819cf6628d7ddb55c63458f6f4a7a4009440a"
+    },
+    "InSightLanderFlexibleModes_Changes.pdf": {
+      "path": "/Users/sydney/Downloads/InSightLanderFlexibleModes_Changes.pdf",
+      "sha256": "a694f67f68f0cace7bb05c8f74b70901bd2e658bcd8c6b0409c9399f1d3fe0e5"
+    }
+  },
+  "opensees_version": "3.4.0",
+  "method": "Homogeneous plane-strain simple shear at constant vertical stress on a 1 m cube",
+  "comparison_scope": "Approximate Dotson graph-derived Mohr\u2013Coulomb envelopes compared with the implemented DP law",
+  "normal_stress_range_Pa": [
+    97.0,
+    250.0,
+    500.0,
+    680.0
+  ],
+  "dotson_graph_readings": {
+    "mgs1": {
+      "density_kg_m3": 1320,
+      "phi_deg": 35.5,
+      "c_Pa": 280
+    },
+    "mgs1s": {
+      "density_kg_m3": 1310,
+      "phi_deg": 34.0,
+      "c_Pa": 280
+    },
+    "jez1": {
+      "density_kg_m3": 1380,
+      "phi_deg": 24.0,
+      "c_Pa": 230
+    }
+  },
+  "input_density_kg_m3": 1300,
+  "murdoch_table2_1m": {
+    "density_kg_m3": 1307,
+    "Vs_m_s": 94.6,
+    "Vp_m_s": 157.9,
+    "confinement_Pa": 5440
+  },
+  "robotic_arm_section_7_7": {
+    "pdf_page": 27,
+    "sand_density_range_kg_m3": [
+      1300,
+      1500
+    ],
+    "bulk_top_40cm_density_kg_m3": 1211,
+    "bulk_top_40cm_E_Pa": 11480000.0,
+    "bulk_top_40cm_G_Pa": 4470000.0,
+    "bulk_top_40cm_K_Pa": 7790000.0,
+    "bulk_top_40cm_nu": 0.29
+  },
+  "cases": [
+    {
+      "candidate": "mgs1",
+      "normal_stress_kPa": 0.097,
+      "dp_plateau_tau_kPa": 0.40705073914517226,
+      "graph_envelope_tau_kPa": 0.3491894275860095,
+      "relative_strength_difference": 0.16570178530079005,
+      "initial_G_Pa": 11639344.262295082
+    },
+    {
+      "candidate": "mgs1",
+      "normal_stress_kPa": 0.25,
+      "dp_plateau_tau_kPa": 0.5342682497038586,
+      "graph_envelope_tau_kPa": 0.4583232669742514,
+      "relative_strength_difference": 0.16570178343983955,
+      "initial_G_Pa": 11639344.26229508
+    },
+    {
+      "candidate": "mgs1",
+      "normal_stress_kPa": 0.5,
+      "dp_plateau_tau_kPa": 0.742139935110306,
+      "graph_envelope_tau_kPa": 0.6366465339485028,
+      "relative_strength_difference": 0.16570168144563602,
+      "initial_G_Pa": 11639344.26229508
+    },
+    {
+      "candidate": "mgs1",
+      "normal_stress_kPa": 0.68,
+      "dp_plateau_tau_kPa": 0.8918067270169651,
+      "graph_envelope_tau_kPa": 0.7650392861699638,
+      "relative_strength_difference": 0.1657005635379074,
+      "initial_G_Pa": 11639344.26229508
+    },
+    {
+      "candidate": "mgs1s",
+      "normal_stress_kPa": 0.097,
+      "dp_plateau_tau_kPa": 0.4064321642275845,
+      "graph_envelope_tau_kPa": 0.3454273261337154,
+      "relative_strength_difference": 0.17660686772144385,
+      "initial_G_Pa": 11639344.262295082
+    },
+    {
+      "candidate": "mgs1s",
+      "normal_stress_kPa": 0.25,
+      "dp_plateau_tau_kPa": 0.5278577614415834,
+      "graph_envelope_tau_kPa": 0.44862712921060666,
+      "relative_strength_difference": 0.17660686809196968,
+      "initial_G_Pa": 11639344.26229508
+    },
+    {
+      "candidate": "mgs1s",
+      "normal_stress_kPa": 0.5,
+      "dp_plateau_tau_kPa": 0.7262655536834919,
+      "graph_envelope_tau_kPa": 0.6172542584212133,
+      "relative_strength_difference": 0.17660679335141904,
+      "initial_G_Pa": 11639344.26229508
+    },
+    {
+      "candidate": "mgs1s",
+      "normal_stress_kPa": 0.68,
+      "dp_plateau_tau_kPa": 0.8691185884543765,
+      "graph_envelope_tau_kPa": 0.7386657914528502,
+      "relative_strength_difference": 0.1766059813666805,
+      "initial_G_Pa": 11639344.26229508
+    },
+    {
+      "candidate": "jez1",
+      "normal_stress_kPa": 0.097,
+      "dp_plateau_tau_kPa": 0.333376114628775,
+      "graph_envelope_tau_kPa": 0.273187182474928,
+      "relative_strength_difference": 0.2203212156901646,
+      "initial_G_Pa": 11639344.262295082
+    },
+    {
+      "candidate": "jez1",
+      "normal_stress_kPa": 0.25,
+      "dp_plateau_tau_kPa": 0.4165043823718195,
+      "graph_envelope_tau_kPa": 0.341307171327134,
+      "relative_strength_difference": 0.2203212160831245,
+      "initial_G_Pa": 11639344.26229508
+    },
+    {
+      "candidate": "jez1",
+      "normal_stress_kPa": 0.5,
+      "dp_plateau_tau_kPa": 0.5523348849852313,
+      "graph_envelope_tau_kPa": 0.45261434265426803,
+      "relative_strength_difference": 0.22032121595213194,
+      "initial_G_Pa": 11639344.26229508
+    },
+    {
+      "candidate": "jez1",
+      "normal_stress_kPa": 0.68,
+      "dp_plateau_tau_kPa": 0.6501328394654271,
+      "graph_envelope_tau_kPa": 0.5327555060098046,
+      "relative_strength_difference": 0.22032120199891914,
+      "initial_G_Pa": 11639344.26229508
+    }
+  ],
+  "murdoch_1m_derived_moduli": {
+    "E_Pa": 28540655.60169244,
+    "nu": 0.22004567281372703,
+    "G_Pa": 11696552.119999997,
+    "K_Pa": 16991257.04333334
+  },
+  "murdoch_1m_moduli_at_target_density": {
+    "E_Pa": 28387798.226625998,
+    "nu": 0.22004567281372703,
+    "G_Pa": 11633907.999999998,
+    "K_Pa": 16900255.666666675
+  },
+  "shared_input_moduli": {
+    "E_Pa": 28400000.0,
+    "nu": 0.22,
+    "G_Pa": 11639344.262295082,
+    "K_Pa": 16904761.904761903
+  },
+  "relative_rounding_errors": {
+    "E_Pa": 0.00042982457732687607,
+    "nu": 0.00020756060840920743,
+    "G_Pa": 0.0004672774011178493,
+    "K_Pa": 0.0002666372736666034
+  },
+  "effective_simple_shear_parameters": {
+    "mgs1": {
+      "phi_deg": 39.74303453970546,
+      "c_Pa": 326.3967925463416
+    },
+    "mgs1s": {
+      "phi_deg": 38.43658305027082,
+      "c_Pa": 329.45012835305744
+    },
+    "jez1": {
+      "phi_deg": 28.51620652534895,
+      "c_Pa": 280.67388197932985
+    }
+  }
+}

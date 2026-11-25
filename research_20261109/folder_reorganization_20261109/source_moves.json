@@ -1,0 +1,72 @@
+[
+  {
+    "old": "material/material_release_20261101/capmat/ssi.py",
+    "new": "SSI/contact.py",
+    "compatibility": true
+  },
+  {
+    "old": "ground/ground_modeling/ground_hybrid/interface.py",
+    "new": "SSI/interface.py",
+    "compatibility": true
+  },
+  {
+    "old": "material/material_release_20261101/capmat/ground.py",
+    "new": "ground/ground_modeling/material_ground_adapter.py",
+    "compatibility": true
+  },
+  {
+    "old": "structure/mars_ssi_integrated_20261109.py",
+    "new": "integrated/mars_ssi_integrated_20261109.py",
+    "compatibility": true
+  },
+  {
+    "old": "structure/mars_dome_ring_ground.py",
+    "new": "integrated/mars_dome_ring_ground.py",
+    "compatibility": true
+  },
+  {
+    "old": "structure/planet_foundation_demo_20261109.py",
+    "new": "integrated/planet_foundation_demo_20261109.py",
+    "compatibility": true
+  },
+  {
+    "old": "ground/ground_modeling/lunar_structure.py",
+    "new": "structure/lunar_structure.py",
+    "compatibility": true
+  },
+  {
+    "old": "ground/ground_modeling/lunar_main.py",
+    "new": "integrated/lunar_main.py",
+    "compatibility": true
+  },
+  {
+    "old": "ground/ground_modeling/lunar_main_dem.py",
+    "new": "integrated/lunar_main_dem.py",
+    "compatibility": true
+  },
+  {
+    "old": "ground/ground_modeling/ground_hybrid/cli.py",
+    "new": "integrated/ground_reference_demo.py",
+    "compatibility": true
+  },
+  {
+    "old": "ground/ground_modeling/ground_hybrid/bounded_run.py",
+    "new": "integrated/reference_bounded.py",
+    "compatibility": true
+  },
+  {
+    "old": "material/material_release_20261101/capmat/rc.py",
+    "new": "structure/sections/rc.py",
+    "compatibility": true
+  },
+  {
+    "old": "material/material_release_20261101/capmat/elastic_rc.py",
+    "new": "structure/sections/elastic_rc.py",
+    "compatibility": true
+  },
+  {
+    "old": "ground/ground_modeling/lunar_config.py",
+    "new": "integrated/lunar_config.py",
+    "compatibility": true
+  }
+]

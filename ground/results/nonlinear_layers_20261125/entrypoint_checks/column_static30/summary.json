@@ -1,0 +1,613 @@
+{
+  "model": "Mars ground only (1D column)",
+  "complete": true,
+  "safe_verdict": false,
+  "parameters": {
+    "depth": 30.0,
+    "duration": 2.0,
+    "warmup": 5.0,
+    "dt": 0.05,
+    "freqmax": 1.0,
+    "max_runtime": 300.0,
+    "static_steps": 100,
+    "material_profile": "nonlinear_20261125",
+    "max_frames": 101,
+    "quick": false,
+    "static_only": true,
+    "ground_history": false,
+    "no_html": true,
+    "visual_scale": null,
+    "output_dir": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/results/nonlinear_layers_20261125/entrypoint_checks/column_static30",
+    "worker": true,
+    "ground_width": 60.0,
+    "boundary": "tied-column"
+  },
+  "structure_count": 0,
+  "foundation_count": 0,
+  "contact_count": 0,
+  "code_sha256": {
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_20261107.py": "402933a8e53ad9368c1903fc99fc3de9b5128f252f310cd3b53deff6bbba9d5c",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/insight_dynamic_viewer.py": "de118e96f813bea263d29f72f68508050b6849de655994eebf6a0d3159e0f01d",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/insight_motion.py": "81b475f35cef18f7709406c36f19eac4f8e7bd0ee4c61d22417d7b0779c6a01b",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/insight_site_dem.py": "1b877a307e012ed2f8184d580c764b9f9fcd60d204984e8636e3cfb96229d301",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_modeling.py": "ccd31bb8ccf4cb088d7441e7174168cf1a127019ccc659c00f5c60a3c0d75d6e",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/material/materials_20261107.py": "1a248656da3e367eb9bf8244b40236f698cb907440182f93e6210ed5c2fb8417",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/conforming_mesh.py": "f94672f40847a65ff3f23b6b06f70b498a62c7949b2652b946b2f1262bc8f19d",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/process_control.py": "8095e20a37fdcd87ab4fdb806d040b2be73f3dda41631791fac6ab9b3991f6ac",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/verification.py": "0433d7eb275ff6e90eb6552bd11c0fcea2df3988c1e1d80a391cb6137a77a0eb",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/run_journal.py": "a37b9e0ac97cc5337be1c0eb336bdcd3af8947216d670e4f6bf790b10d8e49e4",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/viewer.py": "2591561c7ddc761731737f2b0c6040d8cac65cce6b43b89c2fc50b9d9efba25a",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/config.py": "4880bfbd87bdf427532af7a5b3159bde698c8c2dd4007d743b7ad13cec03350d",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/solver.py": "df207bb9462f928313f0d8bdad13e8923e904b59efcca37312924881a443b9ca",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/materials.py": "ab38926d01aa921ac00786847e964031fc3df3617183c88664b2950b26401d46",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/io.py": "d6f6522369610c88ca807250638678a2f8869be4aeb26f54ef1591c96b281fb2",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/interface.py": "0eea6d228ec72c5af60092f56da92d7d65433717ac716f2e5f4cdab8bc2803fa",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/terrain.py": "892cb2b70e28c835dd62dc8b3f5a25f732affc66f82bd67bcb6e53d219e82d1d",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/mars_inputs.py": "a64ed4647f6b3f106c5338be7853648cbadb172f632af2e0d25e3313e3306b9b",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/__init__.py": "7f939c94b68e3afd4eff3485d6ba1ef0234451bb3ce810549b1bad29dbd6de6d",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/bounded_run.py": "5575f960c3c42246efe332794f6b459a1c09a23e86dc02a79df9f7163241c4a2",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/mesh.py": "30d6c19a8ef98478b31125e281492203d64c1397f03ef871ef0666e22f2cb419",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/sensitivity.py": "734d7affb349f85465b6e7e48c8f0cbe14444403767910804eb1b1932a39d8ec",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/cli.py": "a8004226b7662898cdb3d5967879f73c433fc254ed6f186685e1641309ec34da",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/mars_results.py": "4d0f44d28b40bba7a7e5e7a1bd376eea6a0db6c6e0e20957bd10b93c1b6a9a95",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/viewer_verification.py": "646b7376002e9233f67720e9137adf39e9aacfff5d9f613bdd00bc6e60a89653",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/dynamics.py": "d08c8011faaa14a31c209752b16c2202ea49ddfb88bf026dabfb24523526f2db",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/material_audit.py": "155504f86fc6a1afdc48c94a2020afcb8c9baee1d36de3fb5e83ca0ce85b967e",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/smoke.py": "fa75bd6560e17e7891812cebc16071972d82a2102e904a723899ea011094a764",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Mars_recommended_20261124.json": "278e1446b12bb92521629c3f8935ffe0138f68cc776b5315b7d5e84bb8192b20",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/materials_recommended_20261124.json": "6a0a4c53e1310430101fd704248d9bd98f6b38612f8907c7352d68b1283f357c",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Mars_reference_20261116.json": "6c77d5b1e65443f8db65d3603c77a9e1849e7ef75057a765dd3b014aea8a0fa6",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Earth_pdmy02_optional.json": "3306e0035769a142bc238a28ee59e5f2a9fe7fd8c2dd95eb7f0d5b8b169e69a4",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Mars_large_candidate.json": "f9b9afa983fff4215c0ab6fa48ee53fe799616942ffe6806014e1c2c6009c7dd",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Earth_large_candidate.json": "e77dc05cb5586e9306fddbe5027040c66de37f2a801ddd6084d7f86a596ed098",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Moon.json": "544cee5906b8dcb0fb90ddbfe41d9dcaacb9b824e7fe2dc6b11333b936b9d5b2",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Earth.json": "6dc1a70363984f1dd6bbe345df7851e5ed20b40a5f6fd0724e40e2a06f2ac97a",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Moon_large_candidate.json": "4633b37b41137a2e684bbc959d927b03f2735c33bebb24a2005682f78ad35272",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/materials_nonlinear_20261125.json": "b2321803f5cf5041612e8996236ac137f6ae4509f06983a5acd896a1cd7464a6",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/materials.json": "2f6396deb393e903539cb8416ec2ffbd3324a30e46bfc44f236b3ada9f06f594",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Mars_nonlinear_20261125_profiles.json": "5364c6ca2851bc81da8de1a9f2091e8f4ca2f0789489b6a7d57aab774d06c2a9",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_hybrid/configs/Mars.json": "9817d809fd7e59db01a0c83d1d39c97afc7cb9dcc25dacabd3bf8e36f09fdc69",
+    "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/ground_1d_column.py": "ab64cb2ef63e43c8f64e1f8a188645a2bed3f796ed0081da09e76c4e82220af6"
+  },
+  "runtime": {
+    "python": "3.10.18 (main, Jun  5 2025, 08:13:51) [Clang 14.0.6 ]",
+    "opensees": "3.4.0",
+    "numpy": "2.2.6"
+  },
+  "site": {
+    "station": "ELYSE",
+    "latitude_deg": 4.502384,
+    "longitude_deg": 135.623447,
+    "row_0based": 7551.892876146303,
+    "col_0based": 3659.5991311532416,
+    "projection": "north-up planetocentric equirectangular",
+    "pixel_scale_m": 1.0117900853855,
+    "caveat": "Coordinate conversion, not independent DEM/station datum co-registration verification",
+    "kind": "insight_station_centered_flat_reference",
+    "width_m": 60.0,
+    "local_origin": "ELYSE StationXML coordinates; x East, y North, z Up",
+    "local_z0_dem_elevation_m": -2616.8784595678494,
+    "station_metadata_elevation_m": -2613.4,
+    "dem_minus_station_elevation_m": -3.4784595678493133,
+    "dem_elevation_range_m": [
+      -2617.25174820614,
+      -2615.6917087037377
+    ],
+    "max_flattening_difference_m": 1.1867508641116729,
+    "terrain_mode": "horizontal reference at station DEM elevation; actual relief sampled but not applied",
+    "geology_scope": "InSight landing-site reference stratigraphy inferred from geological literature",
+    "source_files": {
+      "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/DTEEC_037262_1845_036761_1845_U01.IMG": "303c16c214aa7c626fde35e34e0053f0a031fc7c0e9848893a0ec0953762d300",
+      "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/stationxml.xb.elyse.2019.151.xml": "b947292143b43383785e700f0aef0f30918355c7deb9ec5cb109ea47baaf7493"
+    },
+    "coordinate_caveat": "Station metadata anchor near InSight lander, not an independent lander-to-SEIS survey; DEM vertical disagreement retained"
+  },
+  "material_profile": {
+    "name": "nonlinear_20261125",
+    "scenario": "nl_ss_block35",
+    "selection_status": "provisional_pending_ground_comparison"
+  },
+  "ground_elements": 12,
+  "ground_nodes": 52,
+  "mesh": {
+    "nx": 2,
+    "ny": 2,
+    "nz": 12,
+    "max_aspect_ratio": 5.0,
+    "depth_levels_m": [
+      0.0,
+      0.2,
+      0.6000000000000001,
+      1.0,
+      3.0,
+      6.333333333333334,
+      9.666666666666668,
+      13.0,
+      16.4,
+      19.8,
+      23.2,
+      26.6,
+      30.0
+    ],
+    "orientation": {
+      "operations": [],
+      "mean_dx_m": 1.0,
+      "mean_dy_m": 1.0
+    }
+  },
+  "ground_materials": {
+    "mars_nl25_crust_tc": {
+      "E_Pa": 11480000.0,
+      "nu": 0.28,
+      "G_Pa": 4484375.0,
+      "K_Pa": 8696969.696969697,
+      "density_kg_m3": 1025.0,
+      "phi_deg": 30.0,
+      "c_Pa": 5800.0,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "specimen_id": "crust_tc",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Brinkman2022",
+          "locator": "Table 4, PDF p.13",
+          "kind": "transferred",
+          "note": "Select E=11.48 MPa and nu=.28; effective shallow volume, not isolated crust. Derive G/K consistently; do not mix independent modal estimates."
+        },
+        "nu": {
+          "source": "Brinkman2022",
+          "locator": "Table 4, PDF p.13",
+          "kind": "transferred",
+          "note": "Select E=11.48 MPa and nu=.28; effective shallow volume, not isolated crust. Derive G/K consistently; do not mix independent modal estimates."
+        },
+        "density_kg_m3": {
+          "source": "Spohn2022",
+          "locator": "Section 6.7, range 950\u20131100 kg/m3",
+          "kind": "assumed_within_inferred_range",
+          "note": "Midpoint 1025 chosen for this specimen, not directly measured"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "phi_deg": {
+          "source": "Spohn2022 slope inference at assumed phi30/rho1200; transferred to rho1025",
+          "locator": "see calibration record",
+          "kind": "literature_range_scenario",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "c_Pa": {
+          "source": "Spohn2022 slope inference at assumed phi30/rho1200; transferred to rho1025",
+          "locator": "see calibration record",
+          "kind": "literature_range_scenario",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "psi_deg": {
+          "source": "modelling_assumption",
+          "locator": "nonassociated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; requires volumetric-strain calibration"
+        },
+        "hardening": {
+          "source": "modelling_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "calibration": {
+        "target_mode": "triaxial",
+        "target_MC_c_Pa": 5800.0,
+        "target_MC_phi_deg": 30.0,
+        "target_source": "Spohn2022 slope inference at assumed phi30/rho1200; transferred to rho1025",
+        "independent_validation": false
+      },
+      "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+      "role": "duricrust",
+      "assumptions": [
+        "Actual DP c/phi and target physical MC c/phi are stored separately.",
+        "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+        "Elastoplastic law may remain on its elastic branch at service loads."
+      ],
+      "mars_calibrated": false,
+      "name": "mars_nl25_crust_tc",
+      "tag": 10002,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    },
+    "mars_nl25_mgs1_ss": {
+      "E_Pa": 28400000.0,
+      "nu": 0.22,
+      "G_Pa": 11639344.262295082,
+      "K_Pa": 16904761.904761903,
+      "density_kg_m3": 1300,
+      "phi_deg": 30.81395784142527,
+      "c_Pa": 197.06006164318362,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "specimen_id": "mgs1_ss",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Murdoch2018",
+          "locator": "Table 2; existing 1300 kg/m3 candidate",
+          "kind": "transferred",
+          "note": "Rounded E=28.4 MPa, nu=.22 from previous cross-source initial set"
+        },
+        "nu": {
+          "source": "Murdoch2018",
+          "locator": "Table 2; existing 1300 kg/m3 candidate",
+          "kind": "transferred",
+          "note": "Rounded E=28.4 MPa, nu=.22 from previous cross-source initial set"
+        },
+        "density_kg_m3": {
+          "source": "Spohn2022",
+          "locator": "Section 6.7, sand 1300\u20131500 kg/m3",
+          "kind": "selected_inferred_reference",
+          "note": "1300 is also the previously saved target density"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "phi_deg": {
+          "source": "Dotson2024 Eq2/Table4; Fig6 nearest-density friction",
+          "locator": "see calibration record",
+          "kind": "derived_calibration",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "c_Pa": {
+          "source": "Dotson2024 Eq2/Table4; Fig6 nearest-density friction",
+          "locator": "see calibration record",
+          "kind": "derived_calibration",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "psi_deg": {
+          "source": "modelling_assumption",
+          "locator": "nonassociated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; requires volumetric-strain calibration"
+        },
+        "hardening": {
+          "source": "modelling_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "calibration": {
+        "target_mode": "simple_shear",
+        "target_MC_c_Pa": 235.66368868562228,
+        "target_MC_phi_deg": 35.5,
+        "target_source": "Dotson2024 Eq2/Table4; Fig6 nearest-density friction",
+        "independent_validation": false,
+        "A_Pa": 4.96,
+        "k": 2.97,
+        "target_density_g_cm3": 1.3,
+        "measured_density_min_g_cm3": 1.32,
+        "density_extrapolated": true,
+        "uncertainty_note": "Slight density extrapolation; phi held at nearby density, fit covariance unavailable"
+      },
+      "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+      "role": "sand",
+      "assumptions": [
+        "Actual DP c/phi and target physical MC c/phi are stored separately.",
+        "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+        "Elastoplastic law may remain on its elastic branch at service loads."
+      ],
+      "mars_calibrated": false,
+      "name": "mars_nl25_mgs1_ss",
+      "tag": 10003,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    },
+    "mars_nl25_blocky_phi35": {
+      "E_Pa": 520000000.0,
+      "nu": 0.24,
+      "G_Pa": 209677419.3548387,
+      "K_Pa": 333333333.3333333,
+      "density_kg_m3": 1700.0,
+      "phi_deg": 35.0,
+      "c_Pa": 0.0,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "specimen_id": "blocky_phi35",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Kenda2020",
+          "locator": "Table 1, coarse ejecta",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "nu": {
+          "source": "Kenda2020",
+          "locator": "Table 1, coarse ejecta",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "density_kg_m3": {
+          "source": "existing_project_reference",
+          "locator": "mars_insight_blocky_ejecta",
+          "kind": "transferred_model_density",
+          "note": "1700 carried over from published reference density scenario, not core measurement"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "phi_deg": {
+          "source": "Hughes2022 Section6.2 broken/blasted cohesionless rock phi20\u201340deg; transferred from Gale/terrestrial range to InSight scenario",
+          "locator": "see calibration record",
+          "kind": "literature_range_scenario",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "c_Pa": {
+          "source": "Hughes2022 Section6.2 broken/blasted cohesionless rock phi20\u201340deg; transferred from Gale/terrestrial range to InSight scenario",
+          "locator": "see calibration record",
+          "kind": "literature_range_scenario",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "psi_deg": {
+          "source": "modelling_assumption",
+          "locator": "nonassociated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; requires volumetric-strain calibration"
+        },
+        "hardening": {
+          "source": "modelling_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "calibration": {
+        "target_mode": "triaxial",
+        "target_MC_c_Pa": 0.0,
+        "target_MC_phi_deg": 35.0,
+        "target_source": "Hughes2022 Section6.2 broken/blasted cohesionless rock phi20\u201340deg; transferred from Gale/terrestrial range to InSight scenario",
+        "independent_validation": false
+      },
+      "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+      "role": "blocky_ejecta",
+      "assumptions": [
+        "Actual DP c/phi and target physical MC c/phi are stored separately.",
+        "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+        "Elastoplastic law may remain on its elastic branch at service loads."
+      ],
+      "mars_calibrated": false,
+      "name": "mars_nl25_blocky_phi35",
+      "tag": 10001,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    },
+    "mars_nl25_basalt_hb_gsi55": {
+      "E_Pa": 13000000000.0,
+      "nu": 0.28,
+      "G_Pa": 5078125000.0,
+      "K_Pa": 9848484848.48485,
+      "density_kg_m3": 2760.0,
+      "c_Pa": 1141302.914434007,
+      "phi_deg": 64.82881742615024,
+      "psi_deg": 0.0,
+      "hardening": 0.0,
+      "law": "DruckerPrager",
+      "specimen_id": "basalt_hb_gsi55",
+      "specimen_evidence": {
+        "E_Pa": {
+          "source": "Kenda2020",
+          "locator": "Table 1, fractured bedrock",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "nu": {
+          "source": "Kenda2020",
+          "locator": "Table 1, fractured bedrock",
+          "kind": "published_reference",
+          "note": ""
+        },
+        "density_kg_m3": {
+          "source": "Morgan2018",
+          "locator": "Section 4.1, terrestrial fractured basalt analogy",
+          "kind": "analogue_transfer",
+          "note": "Effective continuum; no joint failure strength inferred"
+        },
+        "G_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "K_Pa": {
+          "source": "isotropic_elasticity",
+          "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+          "kind": "derived",
+          "note": ""
+        },
+        "c_Pa": {
+          "source": "VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue",
+          "locator": "see calibration record",
+          "kind": "derived_calibration",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "phi_deg": {
+          "source": "VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue",
+          "locator": "see calibration record",
+          "kind": "derived_calibration",
+          "note": "Numerical DP input; for simple-shear fitting it is not the physical MC friction/cohesion value."
+        },
+        "psi_deg": {
+          "source": "modelling_assumption",
+          "locator": "nonassociated flow",
+          "kind": "assumed",
+          "note": "Zero dilation; requires volumetric-strain calibration"
+        },
+        "hardening": {
+          "source": "modelling_assumption",
+          "locator": "perfect plasticity",
+          "kind": "assumed",
+          "note": "No measured hardening/softening curve"
+        }
+      },
+      "calibration": {
+        "target_mode": "triaxial",
+        "target_MC_c_Pa": 1141302.914434007,
+        "target_MC_phi_deg": 64.82881742615024,
+        "target_source": "VilleneuveHeap2021 + HoekBrown2019 rock-mass analogue",
+        "independent_validation": false,
+        "GSI": 55,
+        "mi": 22.4,
+        "D": 0.0,
+        "micro_porosity_analogue": 0.04,
+        "sigma_ci_Pa": 123898062.86463402,
+        "sigma_ci_source": "Villeneuve2021 Table3 basalt empirical UCS=33.32*porosity^(-.408)MPa; SEE59.5MPa for full range",
+        "mi_source": "Villeneuve2021 Table2 Etna basalt porosity.04 mi22.4",
+        "GSI_source": "55 recommended average volcanic rock mass;40/70 sensitivity assumptions, not Mars measurements",
+        "constants": {
+          "mb": 4.4902936554406665,
+          "s": 0.006737946999085467,
+          "a": 0.5040481499008612
+        },
+        "fit_sigma3_range_Pa": [
+          0.0,
+          500000.0
+        ],
+        "fit_points": 101,
+        "fit_max_relative_error": 0.025834648339624944,
+        "fit_kind": "minimax relative linear MC fit, then DP triaxial mapping",
+        "formula_note": "Canonical a=.5+(exp(-GSI/15)-exp(-20/3))/6 from HoekBrown2019; plus sign in Villeneuve Eq8 not used."
+      },
+      "status": "NONLINEAR_LITERATURE_CONSTRAINED_TRIAL_NOT_SITE_VALIDATED",
+      "role": "fractured_basalt",
+      "assumptions": [
+        "Actual DP c/phi and target physical MC c/phi are stored separately.",
+        "Elastic moduli remain source-based initial proxies; no unmeasured strain-softening law is claimed.",
+        "Elastoplastic law may remain on its elastic branch at service loads."
+      ],
+      "mars_calibrated": false,
+      "name": "mars_nl25_basalt_hb_gsi55",
+      "tag": 10000,
+      "active_law": "DruckerPrager",
+      "mass_in_material": true
+    }
+  },
+  "ground_layers": [
+    {
+      "bottom_m": 0.2,
+      "material": "mars_nl25_crust_tc",
+      "role": "duricrust"
+    },
+    {
+      "bottom_m": 3.0,
+      "material": "mars_nl25_mgs1_ss",
+      "role": "sand"
+    },
+    {
+      "bottom_m": 13.0,
+      "material": "mars_nl25_blocky_phi35",
+      "role": "blocky_ejecta"
+    },
+    {
+      "bottom_m": null,
+      "material": "mars_nl25_basalt_hb_gsi55",
+      "role": "fractured_basalt"
+    }
+  ],
+  "material_volume_fractions": {
+    "mars_nl25_crust_tc": 0.006666666666666666,
+    "mars_nl25_mgs1_ss": 0.09333333333333334,
+    "mars_nl25_blocky_phi35": 0.33333333333333315,
+    "mars_nl25_basalt_hb_gsi55": 0.5666666666666668
+  },
+  "ground_revision": {
+    "date": "20261107",
+    "materials_checked": [
+      "mars_nl25_basalt_hb_gsi55",
+      "mars_nl25_blocky_phi35",
+      "mars_nl25_crust_tc",
+      "mars_nl25_mgs1_ss"
+    ],
+    "max_element_aspect_ratio": 5.0,
+    "mass_kg": 67764.99999999997,
+    "site_claim": "Western Elysium Planitia, InSight landing site: literature-based shallow reference stratigraphy with effective material properties and idealized sharp interfaces.",
+    "constitutive_scope": "DP pressure-independent elastic stiffness + frictional plasticity; no G/Gmax/damping curve refit"
+  },
+  "assembly_gate": "only 3DOF ground nodes and bbarBrick ground elements before boundary activation",
+  "resolution": {
+    "target_frequency_Hz": 1.0,
+    "min_elements_per_shear_wavelength": 47.31104981985442,
+    "suggested_dt_s": 4.075190730159693e-05,
+    "mesh_target_pass": true,
+    "scope": "Frequency/mesh heuristic using reference G,K; not a time/mesh convergence proof",
+    "integration_dt_s": 0.05,
+    "samples_per_input_cycle": 20.0,
+    "temporal_bandwidth_pass": true
+  },
+  "elapsed_s": 11.272263166989433,
+  "gravity": {
+    "final_factor": 1.0,
+    "attempts": 100,
+    "linear_system": "UmfPack",
+    "force_balance": {
+      "applied_N": [
+        0.0,
+        0.0,
+        -251475.91499999986
+      ],
+      "reaction_N": [
+        -2.9103830456733704e-11,
+        4.3655745685100555e-11,
+        251475.91499999986
+      ],
+      "residual_N": [
+        -2.9103830456733704e-11,
+        4.3655745685100555e-11,
+        0.0
+      ],
+      "relative_error": 2.0863897249198588e-16
+    },
+    "physical_support_force_error": 1.2939239789004318e-16,
+    "physical_support_moment_error": 2.6048205415934303e-15,
+    "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact"
+  },
+  "boundary": {
+    "kind": "tied_column"
+  },
+  "final_ground_state": {
+    "sampled_elements": 12,
+    "integration_point": "1..8",
+    "sampled_gauss_points": 96,
+    "abs_stress_component_max_Pa": 234063.90300000002,
+    "abs_strain_component_max": 0.00029753195345384747,
+    "DP_max_yield_function_Pa": 2.2737367544323206e-13,
+    "DP_element_at_max": 10003,
+    "DP_ip_at_max": 2,
+    "lunar_low_pressure_screen": {},
+    "scope": "8 Gauss point(s) per element at snapshot time. DP shear surface diagnostic only; tensile surface not checked. Mean pressure screen is not triaxial confinement validation. Not time extrema, plastic work, bearing capacity or failure verdict."
+  }
+}

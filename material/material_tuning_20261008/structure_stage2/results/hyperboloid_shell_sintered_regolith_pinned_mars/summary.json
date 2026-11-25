@@ -1,0 +1,44 @@
+{
+  "status": "ELASTIC_SCREENING_NOT_DESIGN_VALIDATION",
+  "opensees": "3.8.0",
+  "shape": "hyperboloid",
+  "material": "shell_sintered_regolith",
+  "planet": "mars",
+  "support": "pinned",
+  "source_material_status": "DEMONSTRATION_NOT_CALIBRATED",
+  "elastic_params_used": {
+    "E": 20000000.0,
+    "nu": 0.2,
+    "rho": 2.0,
+    "thickness": 0.02
+  },
+  "nodes": 9408,
+  "elements": 9216,
+  "surface_area_m2": 176.94900253646972,
+  "mass_tonne": 7.077960101459124,
+  "weight_kN": 26.25923197641335,
+  "max_displacement_m": 3.648550464745492e-05,
+  "min_uz_m": -3.512013022546107e-05,
+  "max_uz_m": 0.0,
+  "mean_base_uz_m": 0.0,
+  "required_hold_down_kN": 0.0,
+  "force_residual_kN": [
+    -1.8457457784393227e-14,
+    1.0762571389655307e-13,
+    -4.298783551348606e-13
+  ],
+  "moment_residual_kNm": [
+    -9.487712898094953e-13,
+    2.3638729862440755e-13,
+    -1.80611512124016e-13
+  ],
+  "load_resultant_kN": [
+    0.0,
+    0.0,
+    -26.259231976413353
+  ],
+  "relative_force_residual": 1.689046263258075e-14,
+  "warnings": [
+    "No buckling, cracking, plasticity, environmental effects or calibrated planetary ground."
+  ]
+}

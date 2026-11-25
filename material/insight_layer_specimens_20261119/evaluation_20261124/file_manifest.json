@@ -1,0 +1,192 @@
+[
+  {
+    "file": "README.txt",
+    "sha256": "2ee6142407bfbcc879590d00d5015bbe7bced1a95dcfa465d0fea4d5d91ebe52",
+    "bytes": 653
+  },
+  {
+    "file": "additional_run.log",
+    "sha256": "db0bb4fecdb87cd1650168547f7b18684ba0467e2bc24f1171686cddaafcb6f1",
+    "bytes": 6771
+  },
+  {
+    "file": "additional_tests/sand_mgs1_dp_1300/monotonic_p250.csv",
+    "sha256": "9bbc04c80be7981eb3f890a4371781bd20cdcbc9d704c40a246b66bb17232210",
+    "bytes": 11971
+  },
+  {
+    "file": "additional_tests/sand_mgs1_dp_1300/monotonic_p500.csv",
+    "sha256": "1cb5ea023aae361d1209d122b0dcda3ebde30a129ab6e34b6dc83aa7a689daf8",
+    "bytes": 11911
+  },
+  {
+    "file": "additional_tests/sand_mgs1_dp_1300/monotonic_p680.csv",
+    "sha256": "01d03df8ecafd2166d94d6dacb108185a16d1a7da033aca271feec4e851ffebb",
+    "bytes": 11761
+  },
+  {
+    "file": "additional_tests/sand_mgs1_dp_1300/monotonic_p97.csv",
+    "sha256": "63e80c2e4654b577542dbd444802f0b0a58dff374153b9e2b74b2516bcac0b27",
+    "bytes": 11918
+  },
+  {
+    "file": "additional_tests/sand_mgs1_pdmy02_1300/monotonic_p250.csv",
+    "sha256": "16097dae90194a6875bc68d075ed0e00eecefce5de12ca24b9d7c0dfc40366ec",
+    "bytes": 12044
+  },
+  {
+    "file": "additional_tests/sand_mgs1_pdmy02_1300/monotonic_p500.csv",
+    "sha256": "a8e1f9510e9555bf3e887bc7433f4d2f1a7408acebfe36343ebe7b35eec2b00c",
+    "bytes": 11927
+  },
+  {
+    "file": "additional_tests/sand_mgs1_pdmy02_1300/monotonic_p680.csv",
+    "sha256": "c844ca958204e10b6f1eceb30d711dc0fe40798452015e2cebcde67cecc28c24",
+    "bytes": 11822
+  },
+  {
+    "file": "additional_tests/sand_mgs1_pdmy02_1300/monotonic_p97.csv",
+    "sha256": "c2905169f7f4f86b8ecd6a4c862f3dff33311c3d874ce05ee5a0510d9d353a73",
+    "bytes": 12028
+  },
+  {
+    "file": "additional_tests/sand_mgs1s_dp_1300/monotonic_p250.csv",
+    "sha256": "19967e25475eaf2a65933a066ddb4d8cb5ae552d3e549d4f759d53ad6d9cc0b1",
+    "bytes": 11987
+  },
+  {
+    "file": "additional_tests/sand_mgs1s_dp_1300/monotonic_p500.csv",
+    "sha256": "c580751bb1f215215013d2204212336699ec2f860fc9412f658ad8495463c9fb",
+    "bytes": 11917
+  },
+  {
+    "file": "additional_tests/sand_mgs1s_dp_1300/monotonic_p680.csv",
+    "sha256": "b114c2ebf11debbc110e93005825a783c4b17f6ec2af572786a2c2ad599b1e9f",
+    "bytes": 11780
+  },
+  {
+    "file": "additional_tests/sand_mgs1s_dp_1300/monotonic_p97.csv",
+    "sha256": "eede43f82bea17fb7dc859cbea8a44ba63561e13aac417b2cd8669c96c202380",
+    "bytes": 11920
+  },
+  {
+    "file": "additional_tests/sand_mgs1s_pdmy02_1300/monotonic_p250.csv",
+    "sha256": "1f7db7d54ca50581edbab8c285a770f4d146e49434cf90deca2dfbed65149fdc",
+    "bytes": 12073
+  },
+  {
+    "file": "additional_tests/sand_mgs1s_pdmy02_1300/monotonic_p500.csv",
+    "sha256": "e832d881bebf5045085a414b7c9844437c7929e8e7415c820227cb4a34010f3d",
+    "bytes": 11926
+  },
+  {
+    "file": "additional_tests/sand_mgs1s_pdmy02_1300/monotonic_p680.csv",
+    "sha256": "c0d5f8edd276c9c69624b71b60c702c6694d6a300ddae5773ad8aa9ce0d9845c",
+    "bytes": 11826
+  },
+  {
+    "file": "additional_tests/sand_mgs1s_pdmy02_1300/monotonic_p97.csv",
+    "sha256": "4d9e7725f97e40f4f24208ff7b5ca4e1f9dd59b7b08f9a604f875fb83ad15e41",
+    "bytes": 11999
+  },
+  {
+    "file": "additional_tests/summary.json",
+    "sha256": "c7efdc9b6b1a147bd464038b60d2abb22f8095d223338e9da35c805ccc4a0dc7",
+    "bytes": 8194
+  },
+  {
+    "file": "behaviour_metrics.csv",
+    "sha256": "4f380d3dd74e9e1a7db012fb083c272d5d050a5b335771f3ca2c26de029c8534",
+    "bytes": 9387
+  },
+  {
+    "file": "criteria.csv",
+    "sha256": "de29a41c5700ad36da8026c8f6b211d20df86493279079ed8be9b378b62656ca",
+    "bytes": 2783
+  },
+  {
+    "file": "dotson_table4_extracted.json",
+    "sha256": "f91edaea433c27619b404d4b9b22cd2295e8e32253fd0712ed639473448f6f3c",
+    "bytes": 727
+  },
+  {
+    "file": "dotson_table4_verified.png",
+    "sha256": "119cd888d66f25aacb5a369ba91a0d9752cd2eb34bbe269638db7600af8d9dd0",
+    "bytes": 372537
+  },
+  {
+    "file": "evaluate.py",
+    "sha256": "3311ed43c7080d6a9684af4a43894e923af1f01d0cde5139d5f5e876a45571aa",
+    "bytes": 45617
+  },
+  {
+    "file": "evaluation.json",
+    "sha256": "238d043fa54e32da8701642e474c710a6e7bc275c2d3628d18673dfdea66ab28",
+    "bytes": 15765
+  },
+  {
+    "file": "input_manifest.json",
+    "sha256": "8a37d71504c919775f2a8704c79d1342409a2ebd330c372eb34b0e841e61068c",
+    "bytes": 7641
+  },
+  {
+    "file": "literature_input_comparison.csv",
+    "sha256": "e8bdb38a1bc88048532fd0f6cd4e03a80669404a4a84929c455f12bdc74ad01e",
+    "bytes": 57196
+  },
+  {
+    "file": "numerical_errors.csv",
+    "sha256": "8463cd8584c0a22cb4f7cd61272320db90cf96d4489338d2ea52127e74472be9",
+    "bytes": 39822
+  },
+  {
+    "file": "report.html",
+    "sha256": "3ca36651b5f120282a0c7303707289172d91ce33ecaa0822ee6f37fa41af65a3",
+    "bytes": 154232
+  },
+  {
+    "file": "run_additional_tests.py",
+    "sha256": "6125093270d375f72ea50b4e0db6293fc6eb6ce495fdd6b22757fc589da6109b",
+    "bytes": 4052
+  },
+  {
+    "file": "source_manifest.json",
+    "sha256": "e0783e74091c186765d98973c022a2f16deb8b448c47d804a139126ac0686fec",
+    "bytes": 5444
+  },
+  {
+    "file": "specimen_assessments.csv",
+    "sha256": "77649a144edae4fa4cb540d9314bf45bf9dc99e946e7ea73ef7d75898645fac1",
+    "bytes": 6926
+  },
+  {
+    "file": "strength_comparison.png",
+    "sha256": "0262b4a3aef4bf122a2ba661a3da3b2a0c341962c1b74e4c445626f656a680a5",
+    "bytes": 142898
+  },
+  {
+    "file": "strength_envelope_comparison.csv",
+    "sha256": "7bdfab3e5709e12e1b0bf35e437134fb38a22a4aee38d34ca6f95ea31d6bf706",
+    "bytes": 6810
+  },
+  {
+    "file": "strength_statistics.csv",
+    "sha256": "664f9ead02457fb30708e1f4b5e003c4ca0833a7a75d0e2b6cc5071835affb17",
+    "bytes": 1062
+  },
+  {
+    "file": "wave_speed_comparison.csv",
+    "sha256": "ac32bad169d9009c1186dba45b1b414851978929a77051f50983cb28a18d559f",
+    "bytes": 3093
+  },
+  {
+    "file": "wave_speed_comparison.png",
+    "sha256": "4df7716fe9337a522323993027584ebb3bdc901f86c9562163a8a130f70164f5",
+    "bytes": 60783
+  },
+  {
+    "file": "결과요약.txt",
+    "sha256": "42007d8a799c5cb11499116ab83d3bf1eafe89816a13e75cccfeef8b98025202",
+    "bytes": 1308
+  }
+]

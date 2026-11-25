@@ -1,0 +1,36 @@
+{
+  "units": {
+    "length": "m",
+    "force": "N",
+    "stress": "Pa",
+    "strain": "dimensionless"
+  },
+  "status": "PROTOTYPE_ONLY_NOT_CALIBRATED",
+  "user_selected": {
+    "concrete_fc_MPa": 30,
+    "rebar_grade": "SD400",
+    "rebar_Fy_MPa": 400
+  },
+  "concrete_Concrete02": {
+    "fpc": -30000000.0,
+    "epsc0": -0.002,
+    "fpcu": -6000000.0,
+    "epsU": -0.006,
+    "lam": 0.1,
+    "ft": 3000000.0,
+    "Ets": 1500000000.0
+  },
+  "steel_Steel02": {
+    "Fy": 400000000.0,
+    "E0": 200000000000.0,
+    "b": 0.01,
+    "R0": 18.0,
+    "cR1": 0.925,
+    "cR2": 0.15
+  },
+  "concrete_initial_tangent_Pa": 30000000000.0,
+  "documentation": {
+    "Concrete02": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html",
+    "Steel02": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html"
+  }
+}

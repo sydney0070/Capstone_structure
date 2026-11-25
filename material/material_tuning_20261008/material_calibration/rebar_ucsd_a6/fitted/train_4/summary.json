@@ -1,0 +1,15 @@
+{
+  "case": "rebar_ucsd_grade60_a6",
+  "status": "FITTED_REQUIRES_INDEPENDENT_VALIDATION",
+  "opensees": "3.8.0",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "points": 246,
+  "units": [
+    "axial strain",
+    "axial stress (kPa)"
+  ],
+  "y_min": -734140.4458156946,
+  "y_max": 812914.2369258807,
+  "physical_validation": "NOT_EVALUATED_WITHOUT_INDEPENDENT_EXPERIMENT",
+  "history_sha256": "d819477b035db6cacc7db60b05560e4fdafaad12e2bbca3f6b21df170de57779"
+}

@@ -1,0 +1,96 @@
+{
+  "reference_temperature_K": 219.63789912878437,
+  "minimum_K": 185.53123083333335,
+  "maximum_K": 264.9059608333333,
+  "temperature_assignment_status": "EXTRACTED_EXISTING_STRUCTURE_ENVIRONMENT",
+  "reference_basis": "existing THERMAL_REF_TEMP_K=None: mean of PS-overlap,600-second-binned,interpolated TWINS tip proxy temperatures",
+  "source_sample_count": 85071,
+  "timeline_sample_count": 142,
+  "timeline_dt_s": 600.0,
+  "valid_sensor_range_K": [
+    160.0,
+    300.0
+  ],
+  "profile_csv": "/Users/sydney/Desktop/capstone/Capstone_structure/material/thermal_20261112/structure_environment_temperature.csv",
+  "source_structure_path": "/Users/sydney/Desktop/capstone/Capstone_structure/structure/dome_in_mars_tuned.py",
+  "source_structure_sha256": "6284b1fc899c94876f34d0f363baffec7b3ed307eade118789e92a3ad3dcf766",
+  "extraction_method": "AST-selected exact existing load_twins/load_ps/build_env_timeline/effective_env; no OpenSees or optimization execution",
+  "constants": {
+    "DIURNAL_SKIN_DEPTH_M": 0.05,
+    "ENV_DT_S": 600.0,
+    "INTERNAL_PRESSURE_PA": 101325.0,
+    "MARS_GAS_CONSTANT": 191.8,
+    "PS_FILES": [
+      "ps_calib_1217_01.csv",
+      "ps_calib_1218_01.csv"
+    ],
+    "PS_VALID_PA": [
+      300.0,
+      1500.0
+    ],
+    "THERMAL_REF_TEMP_K": null,
+    "TWINS_FILES": [
+      "twins_calib_1217_01.csv",
+      "twins_calib_1218_01.csv"
+    ],
+    "TWINS_TEMP_VALID_K": [
+      160.0,
+      300.0
+    ],
+    "USE_INTERNAL_PRESSURE": true,
+    "USE_WIND": true,
+    "WIND_DIR_IS_FROM": true,
+    "WIND_SECTORS": 16
+  },
+  "cover_cases": [
+    {
+      "cover_thickness_m": 0.0,
+      "amplitude_factor": 1.0,
+      "minimum_structural_temperature_K": 185.53123083333335,
+      "maximum_structural_temperature_K": 264.9059608333333,
+      "min_delta_K": -34.106668295451016,
+      "max_delta_K": 45.268061704548956
+    },
+    {
+      "cover_thickness_m": 2.0,
+      "amplitude_factor": 4.248354255291589e-18,
+      "minimum_structural_temperature_K": 219.63789912878437,
+      "maximum_structural_temperature_K": 219.63789912878437,
+      "min_delta_K": -1.4489720938679804e-16,
+      "max_delta_K": 1.9231476257132278e-16
+    },
+    {
+      "cover_thickness_m": 7.5,
+      "amplitude_factor": 7.175095973164411e-66,
+      "minimum_structural_temperature_K": 219.63789912878437,
+      "maximum_structural_temperature_K": 219.63789912878437,
+      "min_delta_K": -2.4471861834474487e-64,
+      "max_delta_K": 3.2480268724926726e-64
+    }
+  ],
+  "component_scope": {
+    "dome": "temperature change is environmental dT times exp(-cover_thickness/0.05m)",
+    "buried_ring": "legacy thermal_node_forces only acts on DOME_EDGES; docstring assumes ring deltaT=0",
+    "soil": "no depth-dependent temperature assignment or conduction model in current integrated path",
+    "current_tuned_main": "does not call the retained thermal environment helper; full SSI has no thermal stage"
+  },
+  "thermal_transfer_scope": "existing structure environment proxy; covered dome attenuation is a simplified assumption, not measured component or soil temperatures",
+  "sources": [
+    {
+      "path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/MARS_DATA/twins_calib_1217_01.csv",
+      "sha256": "141dbec4a263f73b593105c14e36b5ff5b12d43c250192dfdb09384154fe8816"
+    },
+    {
+      "path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/MARS_DATA/twins_calib_1218_01.csv",
+      "sha256": "73fd6ed24cd2ea9a2f79d704dc6d50f10a6d0c3ea5d1d0e8152bfcb0adc95756"
+    },
+    {
+      "path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/MARS_DATA/ps_calib_1217_01.csv",
+      "sha256": "2d6bc50c147d38018d7528c6722880abb7b9b1278733f775897b9c761a6ef78c"
+    },
+    {
+      "path": "/Users/sydney/Desktop/capstone/Capstone_structure/ground/ground_modeling/MARS_DATA/ps_calib_1218_01.csv",
+      "sha256": "f733607d405a99d009e31ca9a0de590beaedc6c244dc627326c1bc637f9dc612"
+    }
+  ]
+}

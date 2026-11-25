@@ -1,0 +1,259 @@
+{
+  "date": "2026-11-25",
+  "selected_profile": "nl_ss_block35",
+  "selection_status": "research_only_localization_and_mesh_verification_unresolved",
+  "profiles": {
+    "nl_tc_block35": {
+      "name": "nl_tc_block35",
+      "layers": [
+        {
+          "bottom_m": 0.2,
+          "material": "mars_nl25_crust_tc",
+          "role": "duricrust"
+        },
+        {
+          "bottom_m": 3.0,
+          "material": "mars_nl25_mgs1_tc",
+          "role": "sand"
+        },
+        {
+          "bottom_m": 13.0,
+          "material": "mars_nl25_blocky_phi35",
+          "role": "blocky_ejecta"
+        },
+        {
+          "bottom_m": null,
+          "material": "mars_nl25_basalt_hb_gsi55",
+          "role": "fractured_basalt"
+        }
+      ],
+      "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+      "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+      "note": "All four layers elastoplastic; input strength fitting/analogue assumptions retained; same geometry and loading"
+    },
+    "nl_ss_block30": {
+      "name": "nl_ss_block30",
+      "layers": [
+        {
+          "bottom_m": 0.2,
+          "material": "mars_nl25_crust_tc",
+          "role": "duricrust"
+        },
+        {
+          "bottom_m": 3.0,
+          "material": "mars_nl25_mgs1_ss",
+          "role": "sand"
+        },
+        {
+          "bottom_m": 13.0,
+          "material": "mars_nl25_blocky_phi30",
+          "role": "blocky_ejecta"
+        },
+        {
+          "bottom_m": null,
+          "material": "mars_nl25_basalt_hb_gsi55",
+          "role": "fractured_basalt"
+        }
+      ],
+      "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+      "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+      "note": "All four layers elastoplastic; input strength fitting/analogue assumptions retained; same geometry and loading"
+    },
+    "nl_ss_block35": {
+      "name": "nl_ss_block35",
+      "layers": [
+        {
+          "bottom_m": 0.2,
+          "material": "mars_nl25_crust_tc",
+          "role": "duricrust"
+        },
+        {
+          "bottom_m": 3.0,
+          "material": "mars_nl25_mgs1_ss",
+          "role": "sand"
+        },
+        {
+          "bottom_m": 13.0,
+          "material": "mars_nl25_blocky_phi35",
+          "role": "blocky_ejecta"
+        },
+        {
+          "bottom_m": null,
+          "material": "mars_nl25_basalt_hb_gsi55",
+          "role": "fractured_basalt"
+        }
+      ],
+      "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+      "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+      "note": "All four layers elastoplastic; input strength fitting/analogue assumptions retained; same geometry and loading"
+    },
+    "nl_ss_block40": {
+      "name": "nl_ss_block40",
+      "layers": [
+        {
+          "bottom_m": 0.2,
+          "material": "mars_nl25_crust_tc",
+          "role": "duricrust"
+        },
+        {
+          "bottom_m": 3.0,
+          "material": "mars_nl25_mgs1_ss",
+          "role": "sand"
+        },
+        {
+          "bottom_m": 13.0,
+          "material": "mars_nl25_blocky_phi40",
+          "role": "blocky_ejecta"
+        },
+        {
+          "bottom_m": null,
+          "material": "mars_nl25_basalt_hb_gsi55",
+          "role": "fractured_basalt"
+        }
+      ],
+      "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+      "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+      "note": "All four layers elastoplastic; input strength fitting/analogue assumptions retained; same geometry and loading"
+    },
+    "nl_ss_block35_gsi40": {
+      "name": "nl_ss_block35_gsi40",
+      "layers": [
+        {
+          "bottom_m": 0.2,
+          "material": "mars_nl25_crust_tc",
+          "role": "duricrust"
+        },
+        {
+          "bottom_m": 3.0,
+          "material": "mars_nl25_mgs1_ss",
+          "role": "sand"
+        },
+        {
+          "bottom_m": 13.0,
+          "material": "mars_nl25_blocky_phi35",
+          "role": "blocky_ejecta"
+        },
+        {
+          "bottom_m": null,
+          "material": "mars_nl25_basalt_hb_gsi40",
+          "role": "fractured_basalt"
+        }
+      ],
+      "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+      "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+      "note": "All four layers elastoplastic; input strength fitting/analogue assumptions retained; same geometry and loading"
+    },
+    "nl_mgs1s_block35": {
+      "name": "nl_mgs1s_block35",
+      "layers": [
+        {
+          "bottom_m": 0.2,
+          "material": "mars_nl25_crust_tc",
+          "role": "duricrust"
+        },
+        {
+          "bottom_m": 3.0,
+          "material": "mars_nl25_mgs1s_ss",
+          "role": "sand"
+        },
+        {
+          "bottom_m": 13.0,
+          "material": "mars_nl25_blocky_phi35",
+          "role": "blocky_ejecta"
+        },
+        {
+          "bottom_m": null,
+          "material": "mars_nl25_basalt_hb_gsi55",
+          "role": "fractured_basalt"
+        }
+      ],
+      "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+      "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+      "note": "All four layers elastoplastic; input strength fitting/analogue assumptions retained; same geometry and loading"
+    },
+    "nl_ss_blockSS35": {
+      "name": "nl_ss_blockSS35",
+      "layers": [
+        {
+          "bottom_m": 0.2,
+          "material": "mars_nl25_crust_tc",
+          "role": "duricrust"
+        },
+        {
+          "bottom_m": 3.0,
+          "material": "mars_nl25_mgs1_ss",
+          "role": "sand"
+        },
+        {
+          "bottom_m": 13.0,
+          "material": "mars_nl25_blocky_ss_phi35",
+          "role": "blocky_ejecta"
+        },
+        {
+          "bottom_m": null,
+          "material": "mars_nl25_basalt_hb_gsi55",
+          "role": "fractured_basalt"
+        }
+      ],
+      "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+      "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+      "note": "All four layers elastoplastic; input strength fitting/analogue assumptions retained; same geometry and loading"
+    },
+    "nl_ss_bond1k": {
+      "name": "nl_ss_bond1k",
+      "layers": [
+        {
+          "bottom_m": 0.2,
+          "material": "mars_nl25_crust_tc",
+          "role": "duricrust"
+        },
+        {
+          "bottom_m": 3.0,
+          "material": "mars_nl25_mgs1_ss",
+          "role": "sand"
+        },
+        {
+          "bottom_m": 13.0,
+          "material": "mars_nl25_blocky_c1000_phi30",
+          "role": "blocky_ejecta"
+        },
+        {
+          "bottom_m": null,
+          "material": "mars_nl25_basalt_hb_gsi55",
+          "role": "fractured_basalt"
+        }
+      ],
+      "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+      "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+      "note": "All layers DP. Bonded granular-mixture sensitivity c1/5kPa within Hughes2022 granular range; cohesion of actual InSight blocky ejecta unknown. Do not select for convergence alone."
+    },
+    "nl_ss_bond5k": {
+      "name": "nl_ss_bond5k",
+      "layers": [
+        {
+          "bottom_m": 0.2,
+          "material": "mars_nl25_crust_tc",
+          "role": "duricrust"
+        },
+        {
+          "bottom_m": 3.0,
+          "material": "mars_nl25_mgs1_ss",
+          "role": "sand"
+        },
+        {
+          "bottom_m": 13.0,
+          "material": "mars_nl25_blocky_c5000_phi30",
+          "role": "blocky_ejecta"
+        },
+        {
+          "bottom_m": null,
+          "material": "mars_nl25_basalt_hb_gsi55",
+          "role": "fractured_basalt"
+        }
+      ],
+      "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/nonlinear_layers_20261125/materials.json",
+      "specimen_source_sha256": "ec2f96dd365c4852a14a5ec9a06a172488d3db77fa80bc69e99baca5ace08073",
+      "note": "All layers DP. Bonded granular-mixture sensitivity c1/5kPa within Hughes2022 granular range; cohesion of actual InSight blocky ejecta unknown. Do not select for convergence alone."
+    }
+  }
+}

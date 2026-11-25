@@ -1,0 +1,53 @@
+{
+  "kind": "uniaxial",
+  "material": "Steel02",
+  "params": {
+    "Fy": 400000.0,
+    "E": 205000000.0,
+    "b": 0.01,
+    "R0": 18.0,
+    "cR1": 0.925,
+    "cR2": 0.15,
+    "a1": 0.02,
+    "a2": 1.0,
+    "a3": 0.02,
+    "a4": 1.0
+  },
+  "bounds": {
+    "E": [
+      170000000.0,
+      230000000.0
+    ],
+    "Fy": [
+      330000.0,
+      460000.0
+    ],
+    "b": [
+      0.001,
+      0.03
+    ],
+    "R0": [
+      8.0,
+      30.0
+    ],
+    "a1": [
+      0.0,
+      0.12
+    ],
+    "a3": [
+      0.0,
+      0.12
+    ]
+  },
+  "name": "structural_steel_s355_hem320_web",
+  "status": "EXPERIMENTAL_CALIBRATION_START_NOT_REBAR_GRADE",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "elasticppgap_compression_benchmark",
+  "family": "ElasticPPGap",
+  "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+  "mars_calibrated": false,
+  "tests": [
+    {
+      "test": "committed_uniaxial_material_history",
+      "steps": 1100,
+      "max_force_N": 0.0,
+      "min_force_N": -21091.789367798978,
+      "scope": "Material tester on the same defined zeroLength law; no global spring equilibrium solve or ring area conversion.",
+      "checks": {
+        "finite": true,
+        "responds": true,
+        "compression_only": true,
+        "yield_capacity": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "elapsed_seconds": 0.004490249993978068
+}

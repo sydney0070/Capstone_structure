@@ -1,0 +1,3187 @@
+[
+  {
+    "id": "M01",
+    "title": "Hydro Alloy 6061 datasheet (2019)",
+    "group": "02_material_properties",
+    "used_for": "6061-T6 압출재 최소 항복·인장강도",
+    "url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+    "candidates": [
+      "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "02_material_properties/Hydro_2019_Alloy_6061.pdf"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "구조재 물성·시험자료",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "p.2 T6/T6511 tensile properties"
+  },
+  {
+    "id": "M02",
+    "title": "NIST Aluminum 6061-T6 material properties",
+    "group": "02_material_properties",
+    "used_for": "온도별 탄성계수 참고",
+    "url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061",
+    "candidates": [
+      "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 물성자료",
+    "files": [
+      "02_material_properties/NIST_Aluminum_6061_T6.html"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "구조재 물성·시험자료",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": "Young modulus polynomial, 2–295 K"
+  },
+  {
+    "id": "M03",
+    "title": "NIAR Hexcel 8552 AS4 UD qualification data, CAM-RP-2010-002 Rev A (2011)",
+    "group": "02_material_properties",
+    "used_for": "CFRP AS4/8552 상온 건조 평균 물성, Table 2-1",
+    "url": "https://www.wichita.edu/research/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+    "candidates": [
+      "https://www.wichita.edu/research/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+      "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf"
+    ],
+    "prior_scope": "기존에는 표·색인 텍스트만 확인, 원문 파일 미확보",
+    "kind": "논문·보고서",
+    "files": [],
+    "status": "원문 파일 미확보(출처 링크만)",
+    "attempts": [
+      {
+        "url": "https://www.wichita.edu/research/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+        "result": "unavailable",
+        "error": "Blocked/challenge page"
+      },
+      {
+        "url": "https://www.wichita.edu/industry_and_defense/NIAR/Research/hexcel-8552/AS4-Unitape-2.pdf",
+        "result": "unavailable",
+        "error": "Blocked/challenge page"
+      }
+    ],
+    "group_label": "구조재 물성·시험자료",
+    "reference_file_formats": [],
+    "link_file": "02_material_properties/M03_NIAR_Hexcel_8552_AS4_UD_qualification_data_CAM-RP-2010-002_Rev_A_원문미확보.webloc",
+    "used_section": "Table 2-1, PDF p.30, RTD normalized means"
+  },
+  {
+    "id": "M04",
+    "title": "Indyk & Benaroya, Sintered JSC-1A, LEAG 2016 poster 5082",
+    "group": "02_material_properties",
+    "used_for": "소결 JSC-1A 공극률별 탄성·압축 물성",
+    "url": "https://www.hou.usra.edu/meetings/leag2016/eposter/5082.pdf",
+    "candidates": [
+      "https://www.hou.usra.edu/meetings/leag2016/eposter/5082.pdf"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "02_material_properties/Indyk_Benaroya_2016_Sintered_JSC1A.pdf"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "구조재 물성·시험자료",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "LEAG 2016 poster 5082, porosity groups"
+  },
+  {
+    "id": "G01",
+    "title": "Spohn et al. (2022), The InSight HP3 Penetrator (Mole) on Mars",
+    "group": "01_ground",
+    "used_for": "InSight 표층 경화층·점착력 추정",
+    "url": "https://doi.org/10.1007/s11214-022-00941-z",
+    "candidates": [
+      "https://doi.org/10.1007/s11214-022-00941-z"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/spohn_2022_insight_hp3.pdf"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "Sections 6.4–6.6"
+  },
+  {
+    "id": "G02",
+    "title": "Yin et al. (2021), Interface Direct Shear Tests on JEZ-1 Mars Regolith Simulant",
+    "group": "01_ground",
+    "used_for": "JEZ-1 지반·강판 계면 직접전단 강도",
+    "url": "https://doi.org/10.3390/app11157052",
+    "candidates": [
+      "https://doi.org/10.3390/app11157052"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/jez1_2021.pdf"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "Soil and interface direct-shear strength tables"
+  },
+  {
+    "id": "G03",
+    "title": "Musiol et al. (2016), Lithospheric flexure and gravity spreading of Olympus Mons volcano, Mars",
+    "group": "01_ground",
+    "used_for": "Table 1 crust 값의 탄성 암석 아날로그",
+    "url": "https://doi.org/10.1002/2015JE004896",
+    "candidates": [
+      "https://doi.org/10.1002/2015JE004896"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/musiol_2016_basalt.pdf"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "Table 1, crust column"
+  },
+  {
+    "id": "G04",
+    "title": "NASA Lunar Regolith Simulant Users Guide Rev A (2024)",
+    "group": "01_ground",
+    "used_for": "달 시뮬런트·Table 18 현장 참고 물성",
+    "url": "https://ntrs.nasa.gov/citations/20240011783",
+    "candidates": [
+      "https://ntrs.nasa.gov/citations/20240011783"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/nasa_lunar_simulant_guide_2024.pdf"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "Table 18, field cohesion summaries"
+  },
+  {
+    "id": "G05",
+    "title": "Connolly & Carrier, Lunar soil profile, LPSC (2023)",
+    "group": "01_ground",
+    "used_for": "달 지반 밀도·깊이 분포 참고",
+    "url": "https://ntrs.nasa.gov/citations/20220018853",
+    "candidates": [
+      "https://ntrs.nasa.gov/citations/20220018853"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/connolly_carrier_2023_lunar_profile.pdf"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "Lunar subsurface geotechnical profiles"
+  },
+  {
+    "id": "G06",
+    "title": "JSC-1A LASP Geotechnical Properties, Tons 1–3",
+    "group": "01_ground",
+    "used_for": "밀도별 건조 삼축시험 강도 요약표",
+    "url": "https://ares.jsc.nasa.gov/projects/simulants/attachments/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf",
+    "candidates": [
+      "https://ares.jsc.nasa.gov/projects/simulants/attachments/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "Density groups Tons 1–3, dry triaxial summary"
+  },
+  {
+    "id": "G07",
+    "title": "Brinkman et al. (2022), In Situ Regolith Seismic Velocity Measurement at the InSight Landing Site on Mars",
+    "group": "01_ground",
+    "used_for": "Table 4 천부 파동 기반 탄성 물성",
+    "url": "https://doi.org/10.1029/2022JE007229",
+    "candidates": [
+      "https://elib.dlr.de/148669/1/JGR%20Planets%20-%202022%20-%20Brinkman%20-%20In%20Situ%20Regolith%20Seismic%20Velocity%20Measurement%20at%20the%20InSight%20Landing%20Site%20on%20Mars.pdf",
+      "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022JE007229"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/G07_Brinkman_et_al_2022_In_Situ_Regolith_Seismic_Velocity_Measurement_at_the_InSight_Lan.pdf"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://elib.dlr.de/148669/1/JGR%20Planets%20-%202022%20-%20Brinkman%20-%20In%20Situ%20Regolith%20Seismic%20Velocity%20Measurement%20at%20the%20InSight%20Landing%20Site%20on%20Mars.pdf",
+    "bytes": 3268543,
+    "sha256": "2b4bb798ecbd5c66079645e70277d4b23bce2a310f4022fe016161b3c738bf2c",
+    "attempts": [
+      {
+        "url": "https://elib.dlr.de/148669/1/JGR%20Planets%20-%202022%20-%20Brinkman%20-%20In%20Situ%20Regolith%20Seismic%20Velocity%20Measurement%20at%20the%20InSight%20Landing%20Site%20on%20Mars.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "Table 4, bulk wave-based elastic properties"
+  },
+  {
+    "id": "G08",
+    "title": "Time-domain deconvolution procedure for elastoplastic materials: Application to Treasure Island (2023)",
+    "group": "01_ground",
+    "used_for": "지표 관측 운동과 기저 입력 운동의 역산 방법 참고",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37767156/",
+    "candidates": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10520356/",
+      "https://pubmed.ncbi.nlm.nih.gov/37767156/"
+    ],
+    "prior_scope": "공개 초록과 설명을 참고, 현재 모델에 역산을 구현한 근거는 아님",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/G08_Time-domain_deconvolution_procedure_for_elastoplastic_materials_Application_to_Treas.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10520356/",
+    "bytes": 190715,
+    "sha256": "1584ba0d71fba5b2249138397da51a6a9b04373f9a4e3362fc41006afb6d32cb",
+    "attempts": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC10520356",
+        "result": "unavailable",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10520356/",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37767156/",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10520356/pdf/main.pdf",
+        "result": "Not a PDF; not substituted for the paper"
+      }
+    ],
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R01",
+    "title": "Mrozek et al. (2025), Concept and preliminary structural analysis of a crater-covering dome for future lunar habitats",
+    "group": "03_prior_structures",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://www.nature.com/articles/s41598-025-07901-x",
+    "candidates": [
+      "https://www.nature.com/articles/s41598-025-07901-x.pdf",
+      "https://www.nature.com/articles/s41598-025-07901-x"
+    ],
+    "prior_scope": "기존 조사에서 공개 본문 또는 구현 부분을 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "03_prior_structures/R01_Mrozek_2025_Lunar_Crater_Dome.pdf"
+    ],
+    "slug": "Mrozek_2025_Lunar_Crater_Dome",
+    "all_original_urls": [
+      "https://www.nature.com/articles/s41598-025-07901-x",
+      "https://doi.org/10.1038/s41598-025-07901-x"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://www.nature.com/articles/s41598-025-07901-x.pdf?error=cookies_not_supported&code=fa017311-c794-4326-9923-f96e87b87701",
+    "bytes": 2969677,
+    "sha256": "df3c69dcc9e64d4f01712885dbcc52f5a2d5307b6c03b3adcb6a94f178a1cbd9",
+    "attempts": [
+      {
+        "url": "https://www.nature.com/articles/s41598-025-07901-x.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "행성 구조물·형상 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R02",
+    "title": "Ruess, Schaenzlin & Benaroya (2006), Structural Design of a Lunar Habitat",
+    "group": "03_prior_structures",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://scholarship.libraries.rutgers.edu/esploro/outputs/journalArticle/Structural-Design-of-a-Lunar-Habitat/991031665574004646",
+    "candidates": [
+      "https://scholarship.libraries.rutgers.edu/esploro/outputs/journalArticle/Structural-Design-of-a-Lunar-Habitat/991031665574004646"
+    ],
+    "prior_scope": "기존 조사에서 공개 본문 또는 구현 부분을 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "03_prior_structures/R02_Ruess_2006_Structural_Design_Lunar_Habitat.html"
+    ],
+    "slug": "Ruess_2006_Structural_Design_Lunar_Habitat",
+    "all_original_urls": [
+      "https://scholarship.libraries.rutgers.edu/esploro/outputs/journalArticle/Structural-Design-of-a-Lunar-Habitat/991031665574004646",
+      "https://doi.org/10.1061/%28ASCE%290893-1321%282006%2919%3A3%28133%29"
+    ],
+    "status": "대학 서지 안내 페이지 확보(원문 PDF 아님)",
+    "retrieved_url": "https://scholarship.libraries.rutgers.edu/esploro/outputs/journalArticle/Structural-Design-of-a-Lunar-Habitat/991031665574004646",
+    "bytes": 2328,
+    "sha256": "0bf2cb7491c80152dbf68b7b7ce3193dc2bb64b75bcc7991e5ba47205e15501e",
+    "attempts": [
+      {
+        "url": "https://scholarship.libraries.rutgers.edu/esploro/outputs/journalArticle/Structural-Design-of-a-Lunar-Habitat/991031665574004646",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://ascelibrary.org/doi/pdf/10.1061/%28ASCE%290893-1321%282006%2919%3A3%28133%29",
+        "result": "unavailable",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "group_label": "행성 구조물·형상 선행연구",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R03",
+    "title": "NASA/CR-2005-213845, On Structural Design of a Mobile Lunar Habitat With Multi-Layered Environmental Shielding",
+    "group": "03_prior_structures",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://ntrs.nasa.gov/citations/20050185204",
+    "candidates": [
+      "nasa:20050185204"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "03_prior_structures/R03_NASA_2005_Mobile_Lunar_Habitat.pdf"
+    ],
+    "slug": "NASA_2005_Mobile_Lunar_Habitat",
+    "all_original_urls": [
+      "https://ntrs.nasa.gov/citations/20050185204"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://ntrs.nasa.gov/api/citations/20050185204/downloads/20050185204.pdf",
+    "bytes": 5362542,
+    "sha256": "02a7fef150c22db3f06853c56cc82f9ff89416ff8c38d7c1babbefb0990d8e7a",
+    "attempts": [
+      {
+        "url": "nasa:20050185204",
+        "result": "NASA download metadata resolved",
+        "links": 3
+      },
+      {
+        "url": "https://ntrs.nasa.gov/20050185204.pdf",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://ntrs.nasa.gov/api/citations/20050185204/downloads/20050185204.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "행성 구조물·형상 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R04",
+    "title": "Hybrid lunar inflatable structure (2021), Acta Astronautica, PII S0094576520306342",
+    "group": "03_prior_structures",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0094576520306342",
+    "candidates": [
+      "https://www.sciencedirect.com/science/article/abs/pii/S0094576520306342"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [],
+    "slug": "Hybrid_Lunar_Inflatable_2021",
+    "all_original_urls": [
+      "https://www.sciencedirect.com/science/article/abs/pii/S0094576520306342"
+    ],
+    "status": "원문 파일 미확보(출처 링크만)",
+    "attempts": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0094576520306342",
+        "result": "unavailable",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "group_label": "행성 구조물·형상 선행연구",
+    "reference_file_formats": [],
+    "link_file": "03_prior_structures/R04_Hybrid_Lunar_Inflatable_2021_원문미확보.webloc",
+    "used_section": ""
+  },
+  {
+    "id": "R05",
+    "title": "Wan, Wendner & Cusatis (2016), A Novel Material for In Situ Construction on Mars: Experiments and Numerical Simulations",
+    "group": "03_prior_structures",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://arxiv.org/abs/1512.05461",
+    "candidates": [
+      "https://arxiv.org/pdf/1512.05461"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "03_prior_structures/R05_Wan_2016_Mars_Sulfur_Concrete.pdf"
+    ],
+    "slug": "Wan_2016_Mars_Sulfur_Concrete",
+    "all_original_urls": [
+      "https://arxiv.org/abs/1512.05461",
+      "https://doi.org/10.1016/j.conbuildmat.2016.05.046"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://arxiv.org/pdf/1512.05461",
+    "bytes": 7080105,
+    "sha256": "cf74f7674fb22eaf187dbb1c1bf986dcc5bee058ac90126d8537dd2b9035b30e",
+    "attempts": [
+      {
+        "url": "https://arxiv.org/pdf/1512.05461",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "행성 구조물·형상 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R06",
+    "title": "Gupta et al. (2023), Synthetic space bricks from lunar and martian regolith via sintering",
+    "group": "03_prior_structures",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://arxiv.org/abs/2308.14331",
+    "candidates": [
+      "https://arxiv.org/pdf/2308.14331"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "03_prior_structures/R06_Gupta_2023_Sintered_Space_Bricks.pdf"
+    ],
+    "slug": "Gupta_2023_Sintered_Space_Bricks",
+    "all_original_urls": [
+      "https://arxiv.org/abs/2308.14331"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://arxiv.org/pdf/2308.14331",
+    "bytes": 8721308,
+    "sha256": "2b28d0c9b8a2bba6ab8eca4956b11317f1563b576440cfb4532665679a9ee879",
+    "attempts": [
+      {
+        "url": "https://arxiv.org/pdf/2308.14331",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "행성 구조물·형상 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R07",
+    "title": "On the Structural Design and Additive Construction Process of Martian Habitat Units Using In-Situ Resources on Mars (2025)",
+    "group": "03_prior_structures",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://www.mdpi.com/2226-4310/12/9/761",
+    "candidates": [
+      "https://www.mdpi.com/2226-4310/12/9/761/pdf",
+      "https://www.mdpi.com/2226-4310/12/9/761"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "03_prior_structures/R07_Martian_Habitat_Units_2025.pdf"
+    ],
+    "slug": "Martian_Habitat_Units_2025",
+    "all_original_urls": [
+      "https://www.mdpi.com/2226-4310/12/9/761"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://mdpi-res.com/d_attachment/aerospace/aerospace-12-00761/article_deploy/aerospace-12-00761.pdf",
+    "bytes": 5024605,
+    "sha256": "09d02709d7c7e0bcf8a6c7bd08820bade6fea7e82c2fb3905e37edd9fe640244",
+    "attempts": [
+      {
+        "url": "https://www.mdpi.com/2226-4310/12/9/761/pdf",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://www.mdpi.com/2226-4310/12/9/761",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://mdpi-res.com/d_attachment/aerospace/aerospace-12-00761/article_deploy/aerospace-12-00761.pdf",
+        "result": "Original PDF recovered"
+      }
+    ],
+    "group_label": "행성 구조물·형상 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R08",
+    "title": "Mechanical Properties of Lunar Regolith and Lunar Soil Simulant, NASA record 19940004207",
+    "group": "01_ground",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://ntrs.nasa.gov/citations/19940004207",
+    "candidates": [
+      "nasa:19940004207"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/R08_NASA_Mechanical_Properties_Lunar_Regolith_original_unavailable.webloc"
+    ],
+    "slug": "NASA_Mechanical_Properties_Lunar_Regolith",
+    "all_original_urls": [
+      "https://ntrs.nasa.gov/citations/19940004207"
+    ],
+    "status": "원문 PDF 미확보(기존 서지 HTML 사본 유실; 링크 보관)",
+    "retrieved_url": "https://ntrs.nasa.gov/citations/19940004207",
+    "bytes": 94309,
+    "sha256": "24d6252617cb8e09461bdad61a1d1f0c1327b333f7d306afdce720cda78b68ea",
+    "attempts": [
+      {
+        "url": "nasa:19940004207",
+        "result": "NASA download metadata resolved",
+        "links": 0
+      },
+      {
+        "url": "https://ntrs.nasa.gov/citations/19940004207",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".webloc"
+    ],
+    "used_section": "",
+    "missing_original_shortcut": "01_ground/R08_NASA_Mechanical_Properties_Lunar_Regolith_original_unavailable.webloc",
+    "full_text_available": false
+  },
+  {
+    "id": "R09",
+    "title": "Rame et al. (2009), Flowability of JSC-1a, NASA/TM-2009-215625",
+    "group": "01_ground",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://ntrs.nasa.gov/citations/20090023168",
+    "candidates": [
+      "nasa:20090023168"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/R09_Rame_2009_Flowability_JSC1A.pdf"
+    ],
+    "slug": "Rame_2009_Flowability_JSC1A",
+    "all_original_urls": [
+      "https://ntrs.nasa.gov/citations/20090023168"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://ntrs.nasa.gov/api/citations/20090023168/downloads/20090023168.pdf",
+    "bytes": 3148479,
+    "sha256": "ab743c953ff741f7b3076335f0feab1e67be8bf205d471c3d0f8f9acac7e99fd",
+    "attempts": [
+      {
+        "url": "nasa:20090023168",
+        "result": "NASA download metadata resolved",
+        "links": 3
+      },
+      {
+        "url": "https://ntrs.nasa.gov/20090023168.pdf",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://ntrs.nasa.gov/api/citations/20090023168/downloads/20090023168.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R10",
+    "title": "Alshibli & Hasan (2009), Strength Properties of JSC-1A Lunar Regolith Simulant",
+    "group": "01_ground",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29GT.1943-5606.0000068",
+    "candidates": [
+      "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29GT.1943-5606.0000068"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [],
+    "slug": "Strength_Properties_JSC1A_2009",
+    "all_original_urls": [
+      "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29GT.1943-5606.0000068"
+    ],
+    "status": "원문 파일 미확보(출처 링크만)",
+    "attempts": [
+      {
+        "url": "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29GT.1943-5606.0000068",
+        "result": "unavailable",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [],
+    "link_file": "01_ground/R10_Strength_Properties_JSC1A_2009_원문미확보.webloc",
+    "used_section": ""
+  },
+  {
+    "id": "R11",
+    "title": "Development and Geotechnical Engineering Properties of KLS-1 Lunar Simulant (2018)",
+    "group": "01_ground",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://ascelibrary.org/doi/10.1061/%28ASCE%29AS.1943-5525.0000798",
+    "candidates": [
+      "https://ascelibrary.org/doi/10.1061/%28ASCE%29AS.1943-5525.0000798"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [],
+    "slug": "KLS1_Geotechnical_Properties_2018",
+    "all_original_urls": [
+      "https://ascelibrary.org/doi/10.1061/%28ASCE%29AS.1943-5525.0000798"
+    ],
+    "status": "원문 파일 미확보(출처 링크만)",
+    "attempts": [
+      {
+        "url": "https://ascelibrary.org/doi/10.1061/%28ASCE%29AS.1943-5525.0000798",
+        "result": "unavailable",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [],
+    "link_file": "01_ground/R11_KLS1_Geotechnical_Properties_2018_원문미확보.webloc",
+    "used_section": ""
+  },
+  {
+    "id": "R12",
+    "title": "Oravec et al., Geotechnical Review of Existing Mars Soil Simulants for Surface Mobility",
+    "group": "01_ground",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://ntrs.nasa.gov/api/citations/20200003046/downloads/20200003046.pdf",
+    "candidates": [
+      "https://ntrs.nasa.gov/api/citations/20200003046/downloads/20200003046.pdf"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/R12_NASA_Mars_Simulants_Geotechnical_Review.pdf"
+    ],
+    "slug": "NASA_Mars_Simulants_Geotechnical_Review",
+    "all_original_urls": [
+      "https://ntrs.nasa.gov/api/citations/20200003046/downloads/20200003046.pdf"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://ntrs.nasa.gov/api/citations/20200003046/downloads/20200003046.pdf",
+    "bytes": 1117760,
+    "sha256": "e8c07daa33f7ecdf1ca6bc2ac44c8f0c31c1ef7f0183ef47e1b51616392f3140",
+    "attempts": [
+      {
+        "url": "https://ntrs.nasa.gov/api/citations/20200003046/downloads/20200003046.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R13",
+    "title": "Dotson et al. (2024), Cohesion and Shear Strength of Compacted Lunar and Martian Regolith Simulants",
+    "group": "01_ground",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0019103524000010",
+    "candidates": [
+      "https://arxiv.org/pdf/2403.11029"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/R13_Regolith_Cohesion_Shear_Strength_2024.pdf"
+    ],
+    "slug": "Regolith_Cohesion_Shear_Strength_2024",
+    "all_original_urls": [
+      "https://www.sciencedirect.com/science/article/pii/S0019103524000010",
+      "https://arxiv.org/abs/2403.11029"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://arxiv.org/pdf/2403.11029",
+    "bytes": 2342348,
+    "sha256": "181027971988e8d4e55fefbfc8dcf774a828ffb531a7ac40a79368d8ee94825e",
+    "attempts": [
+      {
+        "url": "https://arxiv.org/pdf/2403.11029",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R14",
+    "title": "Elgamal et al. (2003), Modeling of cyclic mobility in saturated cohesionless soils",
+    "group": "01_ground",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0749641902000104",
+    "candidates": [
+      "https://www.sciencedirect.com/science/article/pii/S0749641902000104"
+    ],
+    "prior_scope": "기존 조사에서 공개 본문 또는 구현 부분을 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [],
+    "slug": "Elgamal_2003_Cyclic_Mobility",
+    "all_original_urls": [
+      "https://www.sciencedirect.com/science/article/pii/S0749641902000104",
+      "https://doi.org/10.1016/S0749-6419%2802%2900010-4"
+    ],
+    "status": "원문 파일 미확보(출처 링크만)",
+    "attempts": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S0749641902000104",
+        "result": "unavailable",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [],
+    "link_file": "01_ground/R14_Elgamal_2003_Cyclic_Mobility_원문미확보.webloc",
+    "used_section": ""
+  },
+  {
+    "id": "R15",
+    "title": "Boulanger & Ziotopoulou (2017), PM4Sand Version 3.1, UCD/CGM-17/01",
+    "group": "01_ground",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/PM4Sand.html",
+    "candidates": [
+      "https://pm4sand.engr.ucdavis.edu/pm4sand-files"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/R15_PM4Sand_v31_2017.pdf"
+    ],
+    "slug": "PM4Sand_v31_2017",
+    "all_original_urls": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/PM4Sand.html",
+      "https://pm4sand.engr.ucdavis.edu/"
+    ],
+    "status": "원문 PDF 확보",
+    "attempts": [
+      {
+        "url": "https://pm4sand.engr.ucdavis.edu/pm4sand-files",
+        "result": "unavailable",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://ucdavis.box.com/shared/static/t2s3vg7z4idd4s4dv5tj2u63xblkkq43.pdf",
+        "result": "Recovered original PDF"
+      }
+    ],
+    "retrieved_url": "https://public.boxcloud.com/d/1/b1!PaTrjhYc1zjvj7dowmG7Num32GQy4Pscq8QAMW2JT5Q1mgNhsCSxJx1rosiYTHtp4opZfiBRvIXoUl3my930kdDM3qif0OAsfbzoge0gziabNRZDWOewCbBHkCWrlSg_iDNUNrlJ9GE3BlWW2TvR6AX_4yaKAhNheC47G-s8a4xfZ7dvRk73yn2XFdFD8QBO-VDac6seRiHXLZxfGChdy_BusvN-wLSwIPdTLejFwaEeDotfCkZWqiGuzQZcjjWqMevJFOJ5-NK-amgVsv-_RXkQc4WNmGfWoCn4HoLMjx75DX4Yv4scxr9AZ7rDxO11MhVwbAkv3-SyLqt3a8dVn4Rlt9be9TfuJISV5O1aIa951aiLx8mTwVPALAJh6_EOpvG60wy7GgeGweiu7o-zW4fupK54UVgdAtL_VGtGaxSdDLummIhOpPsSoaPcN8GFSoOa2o_v_P2pgM8zOqMr6WLAQU4icYAYBN96NjIFU9Dyu-mvBFDfm6OKsKAzr1hsMPjCeTX7gdAK89UaYTwZtP98Gv5fnbBZZcQzzu9qSHa-opZDvV36-X68axh61lahEJMtf-BJY_Rr73klWuOicsXhg3uUk-xgfxJqK245rUbaqLmLQC5QEzc494mTqxc_DHId49fH0XMeXjQUgsGczyCLcafkBCF7YgVSxrW1M9nyIrbdS_X24F3k87APh25V0Yb1aQZmDO48pyJSozBmBncTN4xGHz05yeqy_JGZHKFfIrsUpCoZVm7YYs_n7oLC9WUUwILsqiIjmg61FpkrpNA97-wd_Yr1CgQhj5LDZVpHt8n-cXdCrXSSzTb-MVEkqcdHFTZTlc2TGULrucqMU4DM10YNSaHc2-6DWfzl9QaGvyvcFGKJpdnVOvk9XJkn5MeaYMWGA_VH-oKXFkR8Per2t2C3OLXdoVVAiGm9aEisjwa-DKDcCXK7Pv4RDdePfA1KOEqW5I2EeY0Y6wwmEY0VmTOFebQnZhRZ46t0sXLHpdNJxHLyElXXQ74zoUV9i1pEwZFmLgzDlzbqtWCvRn8KszRXrWtHy5lSYhDjbMB21LjZZIrctqqTdra1ufTPfjmpxHmDZHgAaJRoUNYJ-3VVByh38OF6U-Kimushaax_1FFxtnr4fW4ZPx7RYl-yGs3KilobLUO5OMiLeipoR2PwGaPvLxIlJMjal5v1WddWOpUSPzrqY71AWrnstBsdzmYMWSCHjcGc_7XfWkbDAPjkgUjNsgcrikxsDMEptZp2dQ7hX3Uu_DN9R-CPaVylUK_wLgPB4UiF-lBFG9FiuC4Ju1sAjyEkp8WUvqU4-s7iKlfTKRgkm420YNIOL4v43yJT56I4udCn6J1adrrz48ItbzJu2VRWdPNZgl0OkMZQOkoaE75iCX2SIz12-AQYFPsXaOc1fHE5j9AZ_vWL8nw99hBtDg76-9bVLOuf0Pt6H30tZEZWFUsMWMTt7k07mkwczs5SNEMQ6CJJcz8mer5PYdYRYxbH0Lh2hogJLpeVMn0w3tfCU-DUc6bPP_ujjM5KOPm7yMXLkD_3kPjItLO7Llw0Kw../download",
+    "bytes": 3954860,
+    "sha256": "4c0b8784b22f0a984d48ce515d2438a9494bbe134b8cb9dca23ab65d91372181",
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R16",
+    "title": "Boulanger & Ziotopoulou (2018), PM4Silt Version 1, UCD/CGM-18/01",
+    "group": "01_ground",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://pm4silt.engr.ucdavis.edu/pm4silt-files",
+    "candidates": [
+      "https://pm4silt.engr.ucdavis.edu/pm4silt-files"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/R16_PM4Silt_v1_2018.pdf"
+    ],
+    "slug": "PM4Silt_v1_2018",
+    "all_original_urls": [
+      "https://pm4silt.engr.ucdavis.edu/pm4silt-files",
+      "https://openseespydoc.readthedocs.io/en/latest/src/PM4Silt.html"
+    ],
+    "status": "원문 PDF 확보",
+    "attempts": [
+      {
+        "url": "https://pm4silt.engr.ucdavis.edu/pm4silt-files",
+        "result": "unavailable",
+        "error": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://itasca-software.s3.amazonaws.com/udm-library/Boulanger_Ziotopoulou_PM4Silt_Model_CGM-18-01_2018.pdf",
+        "result": "Recovered original PDF"
+      }
+    ],
+    "retrieved_url": "https://itasca-software.s3.amazonaws.com/udm-library/Boulanger_Ziotopoulou_PM4Silt_Model_CGM-18-01_2018.pdf",
+    "bytes": 3452953,
+    "sha256": "7eccd740249d72861e9727bc17d26fc07d382cfe4624902371e744d559b317ea",
+    "group_label": "지반·행성 레골리스",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R17",
+    "title": "Boulanger et al. (1999), Seismic Soil-Pile-Structure Interaction Experiments and Analyses",
+    "group": "04_SSI_and_numerics",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%291090-0241%281999%29125%3A9%28750%29",
+    "candidates": [
+      "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%291090-0241%281999%29125%3A9%28750%29"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [],
+    "slug": "Boulanger_1999_Seismic_Soil_Pile_Structure",
+    "all_original_urls": [
+      "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%291090-0241%281999%29125%3A9%28750%29"
+    ],
+    "status": "원문 파일 미확보(출처 링크만)",
+    "attempts": [
+      {
+        "url": "https://ascelibrary.org/doi/abs/10.1061/%28ASCE%291090-0241%281999%29125%3A9%28750%29",
+        "result": "unavailable",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "reference_file_formats": [],
+    "link_file": "04_SSI_and_numerics/R17_Boulanger_1999_Seismic_Soil_Pile_Structure_원문미확보.webloc",
+    "used_section": ""
+  },
+  {
+    "id": "R18",
+    "title": "Harden et al. (2005), Numerical Modeling of the Nonlinear Cyclic Response of Shallow Foundations, PEER 2005/04",
+    "group": "04_SSI_and_numerics",
+    "used_for": "OpenSees 얕은기초 단축 재료 비교와 누적침하·들림 검토",
+    "url": "https://peer.berkeley.edu/publications/2005-04",
+    "candidates": [
+      "https://peer.berkeley.edu/publications/2005-04",
+      "https://peer.berkeley.edu/sites/default/files/peer_504_c._harden_t._hutchinson_g._martin_b._kutter.pdf"
+    ],
+    "prior_scope": "OpenSees BNWF research evaluates ElasticPPGap, general hysteretic, QzSimple1, PySimple1 and TzSimple1. Earth sand/clay experiments, not Mars. / 2026-11-19 문헌 조사에서 확인",
+    "kind": "논문·보고서",
+    "files": [
+      "04_SSI_and_numerics/R18_Harden_2005_PEER_2005_04.pdf"
+    ],
+    "slug": "Harden_2005_PEER_2005_04",
+    "all_original_urls": [
+      "https://peer.berkeley.edu/publications/2005-04",
+      "https://peer.berkeley.edu/sites/default/files/peer_504_c._harden_t._hutchinson_g._martin_b._kutter.pdf"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://peer.berkeley.edu/sites/default/files/peer_504_c._harden_t._hutchinson_g._martin_b._kutter.pdf",
+    "bytes": 5992500,
+    "sha256": "939a0500349176f2e677f16ff67a6a43a40da50d33c253e9c8aabac323ef8192",
+    "attempts": [
+      {
+        "url": "https://peer.berkeley.edu/publications/2005-04",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://peer.berkeley.edu/sites/default/files/peer_504_c._harden_t._hutchinson_g._martin_b._kutter.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "PEER 2005/04, Chapter 3, Sections 3.3.1–3.3.5; printed pp. 27–37, PDF pp. 46–56",
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "R1"
+    ],
+    "full_text_available": true,
+    "archive_details": {
+      "04_SSI_and_numerics/R18_Harden_2005_PEER_2005_04.pdf": {
+        "sha256": "939a0500349176f2e677f16ff67a6a43a40da50d33c253e9c8aabac323ef8192",
+        "bytes": 5992500,
+        "pages": 233,
+        "pdf_title": "T_harden.indd",
+        "status": "existing_file_reused"
+      }
+    }
+  },
+  {
+    "id": "R19",
+    "title": "Gajan et al. (2008), Numerical Models for Analysis and Performance-Based Design of Shallow Foundations Subjected to Seismic Loading, PEER 2007/04",
+    "group": "04_SSI_and_numerics",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://peer.berkeley.edu/sites/default/files/web_peer704_sivapalan_gajan_tara_hutchinson_bruce_kutter.pdf",
+    "candidates": [
+      "https://peer.berkeley.edu/sites/default/files/web_peer704_sivapalan_gajan_tara_hutchinson_bruce_kutter.pdf"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "04_SSI_and_numerics/R19_Gajan_2008_PEER_2007_04.pdf"
+    ],
+    "slug": "Gajan_2008_PEER_2007_04",
+    "all_original_urls": [
+      "https://peer.berkeley.edu/sites/default/files/web_peer704_sivapalan_gajan_tara_hutchinson_bruce_kutter.pdf"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://peer.berkeley.edu/sites/default/files/web_peer704_sivapalan_gajan_tara_hutchinson_bruce_kutter.pdf",
+    "bytes": 7400868,
+    "sha256": "17b67b1e398c8daf91f7d78d058266e95aacf51793314eda4549b9c8dddf61a4",
+    "attempts": [
+      {
+        "url": "https://peer.berkeley.edu/sites/default/files/web_peer704_sivapalan_gajan_tara_hutchinson_bruce_kutter.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R20",
+    "title": "Raychowdhury & Hutchinson (2008), ShallowFoundationGen OpenSees Documentation",
+    "group": "04_SSI_and_numerics",
+    "used_for": "QzSimple2·PySimple2·TzSimple2 명령 예제",
+    "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/documents/ShallowDocumentation.pdf",
+    "candidates": [
+      "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/documents/ShallowDocumentation.pdf"
+    ],
+    "prior_scope": "Official example uses QzSimple2, PySimple2, TzSimple2. Older literature also uses PxSimple1/TxSimple1 terminology. / 2026-11-19 문헌 조사에서 확인",
+    "kind": "논문·보고서",
+    "files": [
+      "04_SSI_and_numerics/R20_ShallowFoundationGen_2008.pdf"
+    ],
+    "slug": "ShallowFoundationGen_2008",
+    "all_original_urls": [
+      "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/documents/ShallowDocumentation.pdf",
+      "https://opensees.berkeley.edu/wiki/index.php/ShallowFoundationGen"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/documents/ShallowDocumentation.pdf",
+    "bytes": 1297356,
+    "sha256": "4d115ae4594aabb122093d3fece5fcf47b029dd906476a48a54f3a55adde0d94",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/documents/ShallowDocumentation.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": "Example material commands for shallow foundations",
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "R4"
+    ],
+    "full_text_available": true,
+    "archive_details": {
+      "04_SSI_and_numerics/R20_ShallowFoundationGen_2008.pdf": {
+        "sha256": "4d115ae4594aabb122093d3fece5fcf47b029dd906476a48a54f3a55adde0d94",
+        "bytes": 1297356,
+        "pages": 26,
+        "pdf_title": null,
+        "status": "existing_file_reused"
+      }
+    }
+  },
+  {
+    "id": "R21",
+    "title": "McGann & Arduino, Laterally-Loaded Pile Foundation, official OpenSees example",
+    "group": "04_SSI_and_numerics",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/Laterally-Loaded_Pile_Foundation",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/Laterally-Loaded_Pile_Foundation"
+    ],
+    "prior_scope": "기존 조사에서 공개 본문 또는 구현 부분을 확인한 자료",
+    "kind": "논문·보고서",
+    "files": [
+      "04_SSI_and_numerics/R21_Laterally_Loaded_Pile_Example.html"
+    ],
+    "slug": "Laterally_Loaded_Pile_Example",
+    "all_original_urls": [
+      "https://opensees.berkeley.edu/wiki/index.php/Laterally-Loaded_Pile_Foundation",
+      "https://openseespydoc.readthedocs.io/en/latest/src/pile.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/wiki/index.php/Laterally-Loaded_Pile_Foundation",
+    "bytes": 40006,
+    "sha256": "9671cd48901ddd04820032b9e7a418411118769913dd5ee485e8dd29e123a213",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/wiki/index.php/Laterally-Loaded_Pile_Foundation",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R22",
+    "title": "Kramer, Arduino & Shin (2008), Using OpenSees for Performance-Based Evaluation of Bridges on Liquefiable Soils, PEER 2008/07",
+    "group": "04_SSI_and_numerics",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://peer.berkeley.edu/publications/2008-07",
+    "candidates": [
+      "https://peer.berkeley.edu/sites/default/files/web_peer807_steven_l._kramer_pedro_arduino.pdf"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "04_SSI_and_numerics/R22_Kramer_2008_PEER_2008_07.pdf"
+    ],
+    "slug": "Kramer_2008_PEER_2008_07",
+    "all_original_urls": [
+      "https://peer.berkeley.edu/publications/2008-07"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://peer.berkeley.edu/sites/default/files/web_peer807_steven_l._kramer_pedro_arduino.pdf",
+    "bytes": 23843158,
+    "sha256": "8549bb2508fd9b4a1c3b25b670d50aad041a44d825b979dc7dd38e08cbcbdef4",
+    "attempts": [
+      {
+        "url": "https://peer.berkeley.edu/sites/default/files/web_peer807_steven_l._kramer_pedro_arduino.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R23",
+    "title": "Luu, Mo & Hsu (2017), Development of CSMM-based shell element for reinforced concrete structures",
+    "group": "04_SSI_and_numerics",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0141029616314171",
+    "candidates": [
+      "https://www.sciencedirect.com/science/article/abs/pii/S0141029616314171"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [],
+    "slug": "Luu_2017_CSMM_RC_Shell",
+    "all_original_urls": [
+      "https://www.sciencedirect.com/science/article/abs/pii/S0141029616314171",
+      "https://doi.org/10.1016/j.engstruct.2016.11.064"
+    ],
+    "status": "원문 파일 미확보(출처 링크만)",
+    "attempts": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0141029616314171",
+        "result": "unavailable",
+        "error": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "reference_file_formats": [],
+    "link_file": "04_SSI_and_numerics/R23_Luu_2017_CSMM_RC_Shell_원문미확보.webloc",
+    "used_section": ""
+  },
+  {
+    "id": "R24",
+    "title": "Karakas, Ozgan & Daloglu (2018), Soil-structure interaction effects on seismic behavior of a hyperbolic cooling tower using three-parameter Vlasov foundation model",
+    "group": "04_SSI_and_numerics",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://www.techno-press.org/download.php?journal=eas&num=1&ordernum=8&volume=14",
+    "candidates": [
+      "https://www.techno-press.org/download.php?journal=eas&num=1&ordernum=8&volume=14"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "04_SSI_and_numerics/R24_Karakas_2018_Hyperbolic_Cooling_Tower_SSI.html"
+    ],
+    "slug": "Karakas_2018_Hyperbolic_Cooling_Tower_SSI",
+    "all_original_urls": [
+      "https://www.techno-press.org/download.php?journal=eas&num=1&ordernum=8&volume=14",
+      "https://doi.org/10.12989/eas.2018.14.1.085"
+    ],
+    "status": "서지·초록 페이지 확보(원문 PDF 아님)",
+    "retrieved_url": "https://www.techno-press.com/papers/5268?access=required",
+    "bytes": 13294,
+    "sha256": "e6024492bde598cb55d824dac6864399ebdc48ab6592003313313c6263bfda9c",
+    "attempts": [
+      {
+        "url": "https://www.techno-press.org/download.php?journal=eas&num=1&ordernum=8&volume=14",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "R25",
+    "title": "Kang et al. (2022), Accuracy of Seismic Response Evaluation of Two-Dimensional Analysis Model with Rigid Joints for RC Frame Buildings",
+    "group": "04_SSI_and_numerics",
+    "used_for": "이전 선행연구·후보 모델 조사",
+    "url": "https://www.mdpi.com/1996-1944/15/22/8027",
+    "candidates": [
+      "https://www.mdpi.com/1996-1944/15/22/8027/pdf",
+      "https://www.mdpi.com/1996-1944/15/22/8027"
+    ],
+    "prior_scope": "공개 초록·서지/발췌를 확인한 선행조사 자료. 원문 전체 검토 여부와 별도 구분.",
+    "kind": "논문·보고서",
+    "files": [
+      "04_SSI_and_numerics/R25_Kang_2022_RC_Frame_Rigid_Joints.pdf"
+    ],
+    "slug": "Kang_2022_RC_Frame_Rigid_Joints",
+    "all_original_urls": [
+      "https://www.mdpi.com/1996-1944/15/22/8027",
+      "https://doi.org/10.3390/ma15228027"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://mdpi-res.com/d_attachment/materials/materials-15-08027/article_deploy/materials-15-08027.pdf",
+    "bytes": 7933147,
+    "sha256": "29e84eabd1321cd37b278316b26ac8c2517078b882ea49f831f2d8f4e67ed4b7",
+    "attempts": [
+      {
+        "url": "https://www.mdpi.com/1996-1944/15/22/8027/pdf",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://www.mdpi.com/1996-1944/15/22/8027",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://mdpi-res.com/d_attachment/materials/materials-15-08027/article_deploy/materials-15-08027.pdf",
+        "result": "Original PDF recovered"
+      }
+    ],
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_pdmy02",
+    "title": "pdmy02",
+    "group": "05_official_model_docs",
+    "used_for": "3D 반복 전단 및 압력 의존 지반 재료 후보",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+    "candidates": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html"
+    ],
+    "prior_scope": "Supports 3D, pressure-dependent moduli and cyclic contraction/dilation; example sand parameters are not Mars calibration. / 2026-11-19 문헌 조사에서 확인",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/PressureDependentMultiYield02.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": "Supports 3D, pressure-dependent moduli and cyclic contraction/dilation; example sand parameters are not Mars calibration.",
+    "all_original_urls": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "D7"
+    ],
+    "full_text_available": true,
+    "archive_details": {
+      "05_official_model_docs/PressureDependentMultiYield02.html": {
+        "sha256": "fc3e785ab22f421f4aa7ce889d1caa4af5be59f5d41140f26351c06b1370d754",
+        "bytes": 26080,
+        "status": "existing_file_reused"
+      }
+    },
+    "attempts": []
+  },
+  {
+    "id": "D_dp",
+    "title": "dp",
+    "group": "05_official_model_docs",
+    "used_for": "3D Drucker–Prager 탄소성·항복·경화 입력",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html",
+    "candidates": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html"
+    ],
+    "prior_scope": "3D pressure-sensitive continuum model; strength, plastic volume change and hardening need calibration. / 2026-11-19 문헌 조사에서 확인",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/DruckerPrager.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": "3D pressure-sensitive continuum model; strength, plastic volume change and hardening need calibration.",
+    "all_original_urls": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "D8"
+    ],
+    "full_text_available": true,
+    "archive_details": {
+      "05_official_model_docs/DruckerPrager.html": {
+        "sha256": "379ad6335575f55b1c0223432627c6a7da4f5f6d26b16a4b20111c72419e7295",
+        "bytes": 25332,
+        "status": "existing_file_reused"
+      }
+    },
+    "attempts": []
+  },
+  {
+    "id": "D_steel02",
+    "title": "steel02",
+    "group": "05_official_model_docs",
+    "used_for": "구성법칙·인자·구현 식 확인",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html",
+    "candidates": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/Steel02.html"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_concrete02",
+    "title": "concrete02",
+    "group": "05_official_model_docs",
+    "used_for": "구성법칙·인자·구현 식 확인",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html",
+    "candidates": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/Concrete02.html"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_flat_slider",
+    "title": "flat_slider",
+    "group": "05_official_model_docs",
+    "used_for": "구성법칙·인자·구현 식 확인",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/Flat_Slider_Bearing_Element",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/Flat_Slider_Bearing_Element"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/FlatSliderBearing.html"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_dp_engine_340",
+    "title": "dp_engine_340",
+    "group": "05_official_model_docs",
+    "used_for": "구성법칙·인자·구현 식 확인",
+    "url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/material/nD/UWmaterials/DruckerPrager.cpp",
+    "candidates": [
+      "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/material/nD/UWmaterials/DruckerPrager.cpp"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/DruckerPrager_v3.4.0.cpp"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".cpp"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D06",
+    "title": "PIMY",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureIndependentMultiYield.html",
+    "candidates": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureIndependentMultiYield.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D06_PIMY.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureIndependentMultiYield.html",
+    "bytes": 25456,
+    "sha256": "16bb5fe788893cbce34a82fc653ea241b6df79cc739abea79cdbf029f2fa2b01",
+    "attempts": [
+      {
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureIndependentMultiYield.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D07",
+    "title": "DruckerPrager",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/Drucker_Prager",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/Drucker_Prager"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D07_DruckerPrager.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/wiki/index.php/Drucker_Prager",
+    "bytes": 35431,
+    "sha256": "d043c6e43d9fb70b13d820be1d61b33b566b400181aa9b80a202e318ae137b16",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/wiki/index.php/Drucker_Prager",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D08",
+    "title": "SSPbrick",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/SSPbrick.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/SSPbrick.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D08_SSPbrick.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/SSPbrick.html",
+    "bytes": 104325,
+    "sha256": "0a57b3895778c04eba887fcbe4594700c9dc9aa21429e1dbcc875fd196d63ab0",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/SSPbrick.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D09",
+    "title": "SSPquad",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/SSPquad.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/SSPquad.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D09_SSPquad.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/SSPquad.html",
+    "bytes": 105370,
+    "sha256": "4221b9df44917c3f845ff5105323ceeecb6152bf68bd2b5fcb6d79c34581ec2d",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/SSPquad.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D10",
+    "title": "SSPquadUP",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/stable/src/SSPquadUP.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/stable/src/SSPquadUP.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D10_SSPquadUP.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/stable/src/SSPquadUP.html",
+    "bytes": 86378,
+    "sha256": "0c5afd9f76d683fa122be8331a0a596004be743fe2cd42b957ee19f8d217b374",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/stable/src/SSPquadUP.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D11",
+    "title": "PM4Sand 공식 단일 요소 개념",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/PM4Sand-Example_1",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/PM4Sand-Example_1"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D11_PM4Sand.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/wiki/index.php/PM4Sand-Example_1",
+    "bytes": 18914,
+    "sha256": "b429ed6c6788a6fdc34c8f5634d255e4a147f3168970435f56b6b668dc007810",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/wiki/index.php/PM4Sand-Example_1",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D12",
+    "title": "Python PM4 순환 시험",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/pm4sand_cyc_cal.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/pm4sand_cyc_cal.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D12_Python_PM4.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/pm4sand_cyc_cal.html",
+    "bytes": 163383,
+    "sha256": "7e4467f37d3867cd97912bd307d5b0263ea05cbf97658af56753809d5e1762db",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/pm4sand_cyc_cal.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D13",
+    "title": "PySimple1",
+    "group": "05_official_model_docs",
+    "used_for": "p-y 수평 스프링의 용량·분담 길이·갭",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/PySimple1.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/PySimple1.html",
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html"
+    ],
+    "prior_scope": "Original p-y relation; capacity is a nodal force after multiplying distributed resistance by tributary length. / 2026-11-19 문헌 조사에서 확인",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D13_PySimple1.html",
+      "05_official_model_docs/D13_PySimple1_20261119.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/PySimple1.html",
+    "bytes": 103880,
+    "sha256": "597e7e35c52558eb0953ce54826d414600fd1698f4cd2e69b050e13116a66a15",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/PySimple1.html",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html",
+        "http_status": 200,
+        "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html",
+        "content_type": "text/html; charset=utf-8"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": "Original p-y relation; capacity is a nodal force after multiplying distributed resistance by tributary length.",
+    "all_original_urls": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/PySimple1.html",
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "D3"
+    ],
+    "full_text_available": true,
+    "archive_details": {
+      "05_official_model_docs/D13_PySimple1_20261119.html": {
+        "sha256": "e7c9f3da1d1ba20c65e82126ee4fdb10def74dd2ba031f7b4e215ada9893cd1c",
+        "bytes": 31017,
+        "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html",
+        "status": "downloaded"
+      }
+    }
+  },
+  {
+    "id": "D14",
+    "title": "TzSimple1",
+    "group": "05_official_model_docs",
+    "used_for": "t-z 전단 스프링의 용량·분담 면적·변위",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/TzSimple1.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/TzSimple1.html",
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html"
+    ],
+    "prior_scope": "Original pile shaft t-z relation; capacity is a force after tributary-area conversion. / 2026-11-19 문헌 조사에서 확인",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D14_TzSimple1.html",
+      "05_official_model_docs/D14_TzSimple1_20261119.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/TzSimple1.html",
+    "bytes": 104034,
+    "sha256": "bf73e4f11437660abacaed9b1862e8e9b84a917895f9cc5d68eb5988ddd73d3b",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/TzSimple1.html",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html",
+        "http_status": 200,
+        "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html",
+        "content_type": "text/html; charset=utf-8"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": "Original pile shaft t-z relation; capacity is a force after tributary-area conversion.",
+    "all_original_urls": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/TzSimple1.html",
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "D4"
+    ],
+    "full_text_available": true,
+    "archive_details": {
+      "05_official_model_docs/D14_TzSimple1_20261119.html": {
+        "sha256": "b29458a4d913a79d6386425653198c472cb5d6587eb8aa3e9a5cf3193538d7e3",
+        "bytes": 26336,
+        "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html",
+        "status": "downloaded"
+      }
+    }
+  },
+  {
+    "id": "D15",
+    "title": "QzSimple1",
+    "group": "05_official_model_docs",
+    "used_for": "q-z 수직 스프링의 분담 극한력·변위·들림 계수",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/QzSimple1.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/QzSimple1.html",
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html"
+    ],
+    "prior_scope": "Capacity is a force, Z50 a displacement. Original backbones are pile-tip relations. / 2026-11-19 문헌 조사에서 확인",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D15_QzSimple1.html",
+      "05_official_model_docs/D15_QzSimple1_20261119.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/QzSimple1.html",
+    "bytes": 105517,
+    "sha256": "59c15b950350a22e9488072db209c0ca4736b09485400be9bb5612714a3aa916",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/QzSimple1.html",
+        "result": "Valid source page, pending PDF options"
+      },
+      {
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html",
+        "http_status": 200,
+        "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html",
+        "content_type": "text/html; charset=utf-8"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": "Capacity is a force, Z50 a displacement. Original backbones are pile-tip relations.",
+    "all_original_urls": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/QzSimple1.html",
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "D2"
+    ],
+    "full_text_available": true,
+    "archive_details": {
+      "05_official_model_docs/D15_QzSimple1_20261119.html": {
+        "sha256": "4b1a57f0cea0faacee0397ec4c665d926b885ebf60351ca6c53e1f92a00db007",
+        "bytes": 29567,
+        "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html",
+        "status": "downloaded"
+      }
+    }
+  },
+  {
+    "id": "D16",
+    "title": "ElasticPPGap",
+    "group": "05_official_model_docs",
+    "used_for": "압축 접촉·갭·damage/recentering 옵션",
+    "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/170.htm",
+    "candidates": [
+      "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/170.htm"
+    ],
+    "prior_scope": "Compression-only sign convention; default recentering differs from damage option. / 2026-11-19 문헌 조사에서 확인",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D16_ElasticPPGap.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/170.htm",
+    "bytes": 3971,
+    "sha256": "a1b439f2c582a35811f0af40cf8b9d3f6ae7b66a2d852c625a9131353b51e90f",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/170.htm",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": "Compression-only sign convention; default recentering differs from damage option.",
+    "all_original_urls": [
+      "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/170.htm"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "D5"
+    ],
+    "full_text_available": true,
+    "archive_details": {
+      "05_official_model_docs/D16_ElasticPPGap.html": {
+        "sha256": "a1b439f2c582a35811f0af40cf8b9d3f6ae7b66a2d852c625a9131353b51e90f",
+        "bytes": 3971,
+        "status": "existing_file_reused"
+      }
+    }
+  },
+  {
+    "id": "D17",
+    "title": "Viscous",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/186.htm",
+    "candidates": [
+      "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/186.htm"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D17_Viscous.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/186.htm",
+    "bytes": 2817,
+    "sha256": "1e3d6d696cce3f7a5ce68c12feff411f57945a9be8bf37e44caeb3d2ea702216",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/186.htm",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D18",
+    "title": "zeroLengthContact",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/zeroLengthContact2D.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/zeroLengthContact2D.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D18_zeroLengthContact.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/zeroLengthContact2D.html",
+    "bytes": 106734,
+    "sha256": "c7231e81f82cdd93be4d606f0242192fa22d0ef8fa54888dbe279625091fbaa6",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/zeroLengthContact2D.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D19",
+    "title": "zeroLengthContactASDimplex",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/zeroLengthContactASDimplex.html",
+    "candidates": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/zeroLengthContactASDimplex.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D19_zeroLengthContactASDimplex.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/zeroLengthContactASDimplex.html",
+    "bytes": 33471,
+    "sha256": "3e659419b40caf054bbf0ed7aca967d351f32e156c0c6831901945a257f36b77",
+    "attempts": [
+      {
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/zeroLengthContactASDimplex.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D20",
+    "title": "J2Plasticity",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/J2Plasticity.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/J2Plasticity.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D20_J2Plasticity.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/J2Plasticity.html",
+    "bytes": 105099,
+    "sha256": "a8e4a530b4e863592352392c6cddd5b97d3526dcf2281b9ad8e381ef25e3053c",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/J2Plasticity.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D21",
+    "title": "ElasticOrthotropic",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/elasticOrthotropic.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/elasticOrthotropic.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D21_ElasticOrthotropic.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/elasticOrthotropic.html",
+    "bytes": 105607,
+    "sha256": "11b551756ecbf4567478fa6d6a5395cd91a348a4bd207e5baf42bbe4abddbf67",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/elasticOrthotropic.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D22",
+    "title": "PlateFiber wrapper",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/PlateFiber.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/PlateFiber.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D22_PlateFiber_wrapper.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/PlateFiber.html",
+    "bytes": 101631,
+    "sha256": "fb5ba68ac12d31ce0ce4233014f2b1ead9c3aabeceade55f0b45d49ca81a8847",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/PlateFiber.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D23",
+    "title": "PlateFiber section",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/plateFiberSection.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/plateFiberSection.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D23_PlateFiber_section.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/plateFiberSection.html",
+    "bytes": 102073,
+    "sha256": "48fc8666a67651e2f8ef6b5f33948305b766887d0eae3beadc2b20c49aa76772",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/plateFiberSection.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D24",
+    "title": "공식 동적 쉘 예제",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://opensees.berkeley.edu/OpenSees/manuals/ExamplesManual/HTML/876.htm",
+    "candidates": [
+      "https://opensees.berkeley.edu/OpenSees/manuals/ExamplesManual/HTML/876.htm"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D24_D24.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/OpenSees/manuals/ExamplesManual/HTML/876.htm",
+    "bytes": 11274,
+    "sha256": "e2d8ceefc3878c0be778f87a0105fe521b685e8648ed9c78ce04b6e47b640a64",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/OpenSees/manuals/ExamplesManual/HTML/876.htm",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D25",
+    "title": "RC 적층 쉘 공식 Python 예제",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://openseespydoc.readthedocs.io/en/latest/src/RCshearwall.html",
+    "candidates": [
+      "https://openseespydoc.readthedocs.io/en/latest/src/RCshearwall.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D25_RC_Python.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://openseespydoc.readthedocs.io/en/latest/src/RCshearwall.html",
+    "bytes": 185700,
+    "sha256": "deb20a5a6a696480429f8006ece31e681b9aeeec7d2ab45406744d12642caaab",
+    "attempts": [
+      {
+        "url": "https://openseespydoc.readthedocs.io/en/latest/src/RCshearwall.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D26",
+    "title": "OpenSees 구조 모델링 강습 자료",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://opensees.berkeley.edu/OpenSees/workshops/OpenSeesDays2010/A5_StructModeling.pdf",
+    "candidates": [
+      "https://opensees.berkeley.edu/OpenSees/workshops/OpenSeesDays2010/A5_StructModeling.pdf"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D26_OpenSees.pdf"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://opensees.berkeley.edu/OpenSees/workshops/OpenSeesDays2010/A5_StructModeling.pdf",
+    "bytes": 4542902,
+    "sha256": "44760ff9a0652c7374fbf55dc85f96a690ee38fdb3b741625df236c48db60573",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/OpenSees/workshops/OpenSeesDays2010/A5_StructModeling.pdf",
+        "result": "PDF saved"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D27",
+    "title": "SimpleContact3D",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/SimpleContact3D",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/SimpleContact3D"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D27_SimpleContact3D.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/wiki/index.php/SimpleContact3D",
+    "bytes": 26514,
+    "sha256": "d12eff303a2f4f36aa567ae0022e0c3664107837bb4419e8adbe8a8b9b48a2d0",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/wiki/index.php/SimpleContact3D",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D28",
+    "title": "NASA 행성표",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "candidates": [
+      "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D28_NASA.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+    "bytes": 14363,
+    "sha256": "42bdc3f1dae470b85580c6ac66c353964a05d544ad2ac970a6b7d908337a6c3c",
+    "attempts": [
+      {
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D29",
+    "title": "NASA 화성 수치",
+    "group": "05_official_model_docs",
+    "used_for": "기존 명령·모델·재료 또는 행성 환경 참고",
+    "url": "https://solarsystem.nasa.gov/mars-by-the-numbers/",
+    "candidates": [
+      "https://solarsystem.nasa.gov/mars-by-the-numbers/"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D29_NASA.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://solarsystem.nasa.gov/mars-by-the-numbers/",
+    "bytes": 52228,
+    "sha256": "9d85739618d6935bfbe2d44bfde036b3a559eab0cd3ab91ef2e0a195f2b5b881",
+    "attempts": [
+      {
+        "url": "https://solarsystem.nasa.gov/mars-by-the-numbers/",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_TotalStress",
+    "title": "OpenSees Total Stress Layered Site Response",
+    "group": "05_official_model_docs",
+    "used_for": "후속 지반·수치해석 검토에서 참고한 공식자료",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/D_TotalStress_OpenSees_Total_Stress_Layered_Site_Response.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/wiki/index.php/Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)",
+    "bytes": 52299,
+    "sha256": "36a6000a4cb6d9f9db4a67ae9c1ca661efb7bb24de48f62d6533d50451859334",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/wiki/index.php/Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_EffectiveStress",
+    "title": "OpenSees Effective Stress Layered Site Response",
+    "group": "05_official_model_docs",
+    "used_for": "후속 지반·수치해석 검토에서 참고한 공식자료",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/D_EffectiveStress_OpenSees_Effective_Stress_Layered_Site_Response.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/wiki/index.php/Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column",
+    "bytes": 43904,
+    "sha256": "731d5c095cdb29406c9c130159d90540551ed6f25be67fabcf1914411e9c48cb",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/wiki/index.php/Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_PDTable",
+    "title": "OpenSees PDMY02 suggested parameter table",
+    "group": "05_official_model_docs",
+    "used_for": "후속 지반·수치해석 검토에서 참고한 공식자료",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/PressureDependMultiYield02_Material",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/PressureDependMultiYield02_Material"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/D_PDTable_OpenSees_PDMY02_suggested_parameter_table.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/wiki/index.php/PressureDependMultiYield02_Material",
+    "bytes": 31502,
+    "sha256": "7678ab00e7e49205542a597e189d0e566a81c7c514a81e5aa0a661dec4468e95",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/wiki/index.php/PressureDependMultiYield02_Material",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_UMFPACK",
+    "title": "OpenSees v3.4.0 UmfpackGenLinSolver source",
+    "group": "05_official_model_docs",
+    "used_for": "후속 지반·수치해석 검토에서 참고한 공식자료",
+    "url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/system_of_eqn/linearSOE/umfGEN/UmfpackGenLinSolver.cpp",
+    "candidates": [
+      "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/system_of_eqn/linearSOE/umfGEN/UmfpackGenLinSolver.cpp"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/D_UMFPACK_OpenSees_v3_4_0_UmfpackGenLinSolver_source.cpp"
+    ],
+    "status": "공식 구현 원문 확보",
+    "retrieved_url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/system_of_eqn/linearSOE/umfGEN/UmfpackGenLinSolver.cpp",
+    "bytes": 4804,
+    "sha256": "a30416452df30bca0ec5bf9772aa19ec8020a759b02007d21c9edd5a34f19919",
+    "attempts": [
+      {
+        "url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/system_of_eqn/linearSOE/umfGEN/UmfpackGenLinSolver.cpp",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".cpp"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_UMFStatus",
+    "title": "SuiteSparse UMFPACK status definitions",
+    "group": "05_official_model_docs",
+    "used_for": "후속 지반·수치해석 검토에서 참고한 공식자료",
+    "url": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/UMFPACK/Include/umfpack.h",
+    "candidates": [
+      "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/UMFPACK/Include/umfpack.h"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/D_UMFStatus_SuiteSparse_UMFPACK_status_definitions.h"
+    ],
+    "status": "공식 구현 원문 확보",
+    "retrieved_url": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/UMFPACK/Include/umfpack.h",
+    "bytes": 222009,
+    "sha256": "d2e898722647c614f7c1114655af93f253968abeaf278c6591d9a297fbe445ad",
+    "attempts": [
+      {
+        "url": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/UMFPACK/Include/umfpack.h",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".h"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_OpenBLAS",
+    "title": "OpenBLAS runtime variables",
+    "group": "05_official_model_docs",
+    "used_for": "후속 지반·수치해석 검토에서 참고한 공식자료",
+    "url": "https://www.openmathlib.org/OpenBLAS/docs/runtime_variables/",
+    "candidates": [
+      "https://www.openmathlib.org/OpenBLAS/docs/runtime_variables/"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/D_OpenBLAS_OpenBLAS_runtime_variables.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://www.openmathlib.org/OpenBLAS/docs/runtime_variables/",
+    "bytes": 21926,
+    "sha256": "baee4828a51f28f6ccd5342d0ba67a04259f9468f9fb0c5aa58c4eb6cf6b514a",
+    "attempts": [
+      {
+        "url": "https://www.openmathlib.org/OpenBLAS/docs/runtime_variables/",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_AMD",
+    "title": "OpenSees AMD Numberer",
+    "group": "05_official_model_docs",
+    "used_for": "후속 지반·수치해석 검토에서 참고한 공식자료",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/AMD_Numberer",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/AMD_Numberer"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/D_AMD_OpenSees_AMD_Numberer.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/wiki/index.php/AMD_Numberer",
+    "bytes": 23243,
+    "sha256": "61d84162e6c666cc34fb8332fe0912cc82e449938158a8b4dd01df37ecc9bc9f",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/wiki/index.php/AMD_Numberer",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_Krylov",
+    "title": "OpenSees KrylovNewton",
+    "group": "05_official_model_docs",
+    "used_for": "후속 지반·수치해석 검토에서 참고한 공식자료",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/analysis/algorithm/KrylovNewton.html",
+    "candidates": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/analysis/algorithm/KrylovNewton.html"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/D_Krylov_OpenSees_KrylovNewton.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/analysis/algorithm/KrylovNewton.html",
+    "bytes": 13875,
+    "sha256": "26798f6d8d8f4e7e3eb5b4f3abaa5c68cb66db7cacc7dea492a00411dc721b8a",
+    "attempts": [
+      {
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/analysis/algorithm/KrylovNewton.html",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "D_Norm",
+    "title": "OpenSees Norm Unbalance Test",
+    "group": "05_official_model_docs",
+    "used_for": "후속 지반·수치해석 검토에서 참고한 공식자료",
+    "url": "https://opensees.berkeley.edu/wiki/index.php/Norm_Unbalance_Test",
+    "candidates": [
+      "https://opensees.berkeley.edu/wiki/index.php/Norm_Unbalance_Test"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "공식 문서·공식 구현",
+    "files": [
+      "05_official_model_docs/D_Norm_OpenSees_Norm_Unbalance_Test.html"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "retrieved_url": "https://opensees.berkeley.edu/wiki/index.php/Norm_Unbalance_Test",
+    "bytes": 24490,
+    "sha256": "0d579b4f7f93c242a9bb03ef69d5135d94bf4836ac5e715d786577acdb5cde3c",
+    "attempts": [
+      {
+        "url": "https://opensees.berkeley.edu/wiki/index.php/Norm_Unbalance_Test",
+        "result": "Valid source page, pending PDF options"
+      }
+    ],
+    "group_label": "OpenSees·공식 모델 문서",
+    "reference_file_formats": [
+      ".html"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T01",
+    "title": "Hartloper et al. metallic coupon experimental database v1.0.0",
+    "group": "06_original_data",
+    "used_for": "과거 재료 보정·후보자료 조사에 사용한 외부 원자료",
+    "url": "https://doi.org/10.5281/zenodo.6965147",
+    "candidates": [
+      "https://doi.org/10.5281/zenodo.6965147"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "외부 시험 원자료",
+    "files": [
+      "06_original_data/S355/Clean_Data_v1-0-0.zip",
+      "06_original_data/S355/Database_References.bib",
+      "06_original_data/S355/Overall_Summary.csv",
+      "06_original_data/S355/validation_LP9_id6_source.csv",
+      "06_original_data/S355/validation_LP2_id3_source.csv",
+      "06_original_data/S355/train_LP6_id8_source.csv",
+      "06_original_data/S355/train_LP4_id0_source.csv"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "외부 시험 원자료",
+    "reference_file_formats": [
+      ".bib",
+      ".csv",
+      ".zip"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T02",
+    "title": "TRR285 aluminum processed experimental data",
+    "group": "06_original_data",
+    "used_for": "과거 재료 보정·후보자료 조사에 사용한 외부 원자료",
+    "url": "https://doi.org/10.5281/zenodo.21993433",
+    "candidates": [
+      "https://doi.org/10.5281/zenodo.21993433"
+    ],
+    "prior_scope": "이전 6014-T4/T6 후보. 현재 6061-T6 채택값과 구분.",
+    "kind": "외부 시험 원자료",
+    "files": [
+      "06_original_data/Aluminum/aluminum_TRR285-processed_data.zip",
+      "06_original_data/Aluminum/aluminum_mapping-EN_AW6014_T4.yml",
+      "06_original_data/Aluminum/aluminum_mapping-EN_AW6014_T6.yml"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "외부 시험 원자료",
+    "reference_file_formats": [
+      ".yml",
+      ".zip"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T03",
+    "title": "Micro-concrete experimental stress-strain data",
+    "group": "06_original_data",
+    "used_for": "과거 재료 보정·후보자료 조사에 사용한 외부 원자료",
+    "url": "https://doi.org/10.5281/zenodo.3898495",
+    "candidates": [
+      "https://doi.org/10.5281/zenodo.3898495"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "외부 시험 원자료",
+    "files": [
+      "06_original_data/Micro_concrete/stressStrain.zip"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "외부 시험 원자료",
+    "reference_file_formats": [
+      ".zip"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T04",
+    "title": "Smartfan transverse CFRP experimental workbook",
+    "group": "06_original_data",
+    "used_for": "과거 재료 보정·후보자료 조사에 사용한 외부 원자료",
+    "url": "https://doi.org/10.5281/zenodo.5876612",
+    "candidates": [],
+    "prior_scope": "이전 후보 횡방향 시험자료. 현재 AS4/8552 채택 물성의 직접 근거로 사용하지 않음.",
+    "kind": "외부 시험 원자료",
+    "files": [
+      "06_original_data/CFRP/cfrp_smartfan_transversal.xlsx"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "외부 시험 원자료",
+    "reference_file_formats": [
+      ".xlsx"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T05",
+    "title": "Lunar regolith simulant database original table and repository metadata",
+    "group": "06_original_data",
+    "used_for": "과거 재료 보정·후보자료 조사에 사용한 외부 원자료",
+    "url": "https://doi.org/10.57745/NTSZ8G",
+    "candidates": [
+      "https://doi.org/10.57745/NTSZ8G"
+    ],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "외부 시험 원자료",
+    "files": [
+      "06_original_data/Lunar_database/lunar_simulants.csv",
+      "06_original_data/Lunar_database/lunar_database_metadata.json"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "외부 시험 원자료",
+    "reference_file_formats": [
+      ".csv",
+      ".json"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T06",
+    "title": "NHERI SimCenter quoFEM UCSD A6 reinforcing steel example data",
+    "group": "06_original_data",
+    "used_for": "철근 후보 보정에 사용한 공개 원자료",
+    "url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028",
+    "candidates": [
+      "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+    ],
+    "prior_scope": "UCSD A6 후보 보정 원자료. 현재 명목 SD400 record의 실험보정 자료와 구분.",
+    "kind": "외부 시험 원자료",
+    "files": [
+      "06_original_data/Rebar_UCSD/08_A75_input_data.txt",
+      "06_original_data/Rebar_UCSD/model_matTestAllParamsReadStrain.tcl",
+      "06_original_data/Rebar_UCSD/10_A77_output_data.txt",
+      "06_original_data/Rebar_UCSD/06_A69_input_data.txt",
+      "06_original_data/Rebar_UCSD/05_A68_input_data.txt",
+      "06_original_data/Rebar_UCSD/11_A78_output_data.txt",
+      "06_original_data/Rebar_UCSD/05_A68_output_data.txt",
+      "06_original_data/Rebar_UCSD/10_A77_input_data.txt",
+      "06_original_data/Rebar_UCSD/04_A67_output_data.txt",
+      "06_original_data/Rebar_UCSD/06_A69_output_data.txt",
+      "06_original_data/Rebar_UCSD/03_A66_input_data.txt",
+      "06_original_data/Rebar_UCSD/12_A79_output_data.txt",
+      "06_original_data/Rebar_UCSD/03_A66_output_data.txt",
+      "06_original_data/Rebar_UCSD/09_A76_output_data.txt",
+      "06_original_data/Rebar_UCSD/SOURCE_LICENSE.txt",
+      "06_original_data/Rebar_UCSD/09_A76_input_data.txt",
+      "06_original_data/Rebar_UCSD/01_A64_output_data.txt",
+      "06_original_data/Rebar_UCSD/07_A74_output_data.txt",
+      "06_original_data/Rebar_UCSD/11_A78_input_data.txt",
+      "06_original_data/Rebar_UCSD/12_A79_input_data.txt",
+      "06_original_data/Rebar_UCSD/08_A75_output_data.txt",
+      "06_original_data/Rebar_UCSD/02_A65_output_data.txt",
+      "06_original_data/Rebar_UCSD/07_A74_input_data.txt",
+      "06_original_data/Rebar_UCSD/02_A65_input_data.txt",
+      "06_original_data/Rebar_UCSD/01_A64_input_data.txt",
+      "06_original_data/Rebar_UCSD/04_A67_input_data.txt"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "외부 시험 원자료",
+    "reference_file_formats": [
+      ".tcl",
+      ".txt"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T07_t4",
+    "title": "EN AW6014 T4 source workbook",
+    "group": "06_original_data",
+    "used_for": "공개 압출/판재 시험 후보 workbook",
+    "url": "https://doi.org/10.5281/zenodo.21993433",
+    "candidates": [
+      "https://doi.org/10.5281/zenodo.21993433"
+    ],
+    "prior_scope": "이전 6014-T4/T6 후보. 현재 6061-T6 채택값과 구분.",
+    "kind": "외부 시험 원자료",
+    "files": [
+      "06_original_data/Aluminum/EN_AW6014_T4_source.xlsx"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "외부 시험 원자료",
+    "reference_file_formats": [
+      ".xlsx"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T07_t6",
+    "title": "EN AW6014 T6 source workbook",
+    "group": "06_original_data",
+    "used_for": "공개 압출/판재 시험 후보 workbook",
+    "url": "https://doi.org/10.5281/zenodo.21993433",
+    "candidates": [
+      "https://doi.org/10.5281/zenodo.21993433"
+    ],
+    "prior_scope": "이전 6014-T4/T6 후보. 현재 6061-T6 채택값과 구분.",
+    "kind": "외부 시험 원자료",
+    "files": [
+      "06_original_data/Aluminum/EN_AW6014_T6_source.xlsx"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "외부 시험 원자료",
+    "reference_file_formats": [
+      ".xlsx"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "O01",
+    "title": "InSight ELYSE StationXML and supplied S1222a ACC observation",
+    "group": "07_observations",
+    "used_for": "위치 기준·실제 입력 관측 자료",
+    "url": "",
+    "candidates": [],
+    "prior_scope": "프로젝트에 제공된 관측 원본. MiniSEED 단위는 제공된 ACC 자료 전제.",
+    "kind": "관측자료",
+    "files": [
+      "07_observations/stationxml.xb.elyse.2019.151.xml",
+      "07_observations/S1222a_ACC.mseed"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "관측 입력·위치 원자료",
+    "reference_file_formats": [
+      ".mseed",
+      ".xml"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "U01",
+    "title": "사용자 제공 하이퍼볼로이드 관련 논문",
+    "group": "03_prior_structures",
+    "used_for": "사용자 제공 구조 형상 선행자료",
+    "url": "",
+    "candidates": [],
+    "prior_scope": "기존 조사에서 확인한 자료",
+    "kind": "사용자 제공 원문",
+    "files": [
+      "03_prior_structures/사용자제공_하이퍼볼로이드_논문.pdf"
+    ],
+    "status": "기존 원문·원자료 확보",
+    "group_label": "행성 구조물·형상 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T08",
+    "title": "El Jisr (2022), The role of the composite floor system and framing action in the seismic performance of composite steel moment-resisting frames, EPFL thesis 8700",
+    "group": "03_prior_structures",
+    "used_for": "S355 HEM320 원 시편 연구의 출처",
+    "url": "https://doi.org/10.5075/epfl-thesis-8700",
+    "candidates": [
+      "https://doi.org/10.5075/epfl-thesis-8700"
+    ],
+    "prior_scope": "S355 데이터 원 연구의 출처로 인용",
+    "kind": "원 연구 학위논문",
+    "files": [
+      "03_prior_structures/T08_El_Jisr_2022_EPFL_doctoral_thesis_8700.pdf"
+    ],
+    "status": "원문 PDF 확보",
+    "attempts": [
+      {
+        "url": "https://doi.org/10.5075/epfl-thesis-8700",
+        "result": "unavailable",
+        "error": "HTTP Error 429: Too Many Requests"
+      },
+      {
+        "url": "https://infoscience.epfl.ch/record/292178/files/EPFL_TH8700.pdf",
+        "result": "Repository original PDF recovered"
+      }
+    ],
+    "retrieved_url": "https://cf002.cdn.4science.cloud/4s-assetstore-epfl-prod/76/87/86/7687862361283132464940336734643131571?response-content-type=application%2Fpdf&response-content-disposition=attachment%3B+filename%3D%22EPFL_TH8700.pdf%22&Expires=1794303466&Signature=ohycShwS2mAWtJxCyUkXkEyfbe4cowxYdquJ9xjAdxBRTCeRR~ZgjADhco-~wlTQkowmLpJIlvOSNYIqKX8sPci6QaC~VuUb8suI3PihVvCKpS7GSm626aduuCtB8Z31u6WuOMpKiZiSBrwEUZFwLGcNCeasd01M4OgtX4pgHtA0KLPgqYqwXrE~ZYXK9NSi28IBv-igiBqR-hfhGt1wQCF-WpLGk2SxoYiClNSaeQLHxS6wE3Oe9B8yyJiIrqfUHDJgyKW4kFYHTpSiqIPcPQjcAx4J8~lYMYMhQnjqiAU2MGGeEbcbCBdezQAgrNHjKT0HSV6XTjkfvIn3YAb5Zw__&Key-Pair-Id=K20AKEP5FKG3TS",
+    "bytes": 44128529,
+    "sha256": "19a6826afc7d43af30cbafca442c3631b0d7dac232c806c59d075d5b0e903a9c",
+    "group_label": "행성 구조물·형상 선행연구",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "T09",
+    "title": "Stamati et al. (2021), Fracturing process of micro-concrete under uniaxial and triaxial compression",
+    "group": "02_material_properties",
+    "used_for": "micro-concrete 공개 시험 데이터의 원 논문",
+    "url": "https://doi.org/10.1016/j.cemconres.2021.106578",
+    "candidates": [
+      "https://hal.science/hal-03340858/document",
+      "https://www.sciencedirect.com/science/article/pii/S0008884621002271"
+    ],
+    "prior_scope": "시험 데이터 출처·시험 조건 확인",
+    "kind": "원 연구 논문",
+    "files": [
+      "02_material_properties/T09_Stamati_et_al_2021_Fracturing_process_of_micro-concrete_under_uniaxial_and_triaxial.pdf"
+    ],
+    "status": "원문 PDF 확보",
+    "retrieved_url": "https://hal.science/hal-03340858/document",
+    "bytes": 4964211,
+    "sha256": "2c2a55d7cba1b3f593f3c9ac4fc8de6f6c31cfe7c965ad0687464b001be48d8c",
+    "attempts": [],
+    "group_label": "구조재 물성·시험자료",
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "used_section": ""
+  },
+  {
+    "id": "G09",
+    "title": "Golombek et al. (2020), Geology of the InSight landing site on Mars",
+    "group": "01_ground",
+    "group_label": "지반·행성 레골리스",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/G09_Golombek_2020_InSight_Geology.pdf"
+    ],
+    "used_for": "InSight 경화층·조립질 분출물·파쇄 현무암 층서, 그림 9",
+    "used_section": "Figure 9; discussion on printed pp. 6–7",
+    "prior_scope": "Observed shallow duricrust and grains; interpreted deeper blocky ejecta and fractured basalt. Salt cementation is a hypothesis, not a layer-by-layer chemical assay. / 2026-11-19 문헌 조사에서 확인",
+    "url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+    "all_original_urls": [
+      "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf"
+    ],
+    "candidates": [
+      "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "G1"
+    ],
+    "doi": "10.1038/s41467-020-14679-1",
+    "status": "원문 PDF 확보",
+    "full_text_available": true,
+    "archive_details": {
+      "01_ground/G09_Golombek_2020_InSight_Geology.pdf": {
+        "sha256": "5b95364db5dc8fa915ca89fc50a45a8f3b97f1dd84c350c4edd82521d5969475",
+        "bytes": 4987535,
+        "pages": 11,
+        "pdf_title": "Geology of the InSight landing site on Mars",
+        "retrieved_url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+        "status": "downloaded"
+      }
+    },
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "attempts": [
+      {
+        "url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+        "http_status": 200,
+        "final_url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+        "content_type": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "G10",
+    "title": "Warner et al. (2020), An Impact Crater Origin for the InSight Landing Site at Homestead Hollow, Mars",
+    "group": "01_ground",
+    "group_label": "지반·행성 레골리스",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/G10_Warner_2020_Homestead_Hollow.pdf"
+    ],
+    "used_for": "Homestead hollow 충돌구 기원 및 깊은 층의 추정 근거",
+    "used_section": "Near-surface stratigraphy interpretation",
+    "prior_scope": "Impact-generated fine and coarse regolith; estimates do not establish a universal 13 m interface. / 2026-11-19 문헌 조사에서 확인",
+    "url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+    "all_original_urls": [
+      "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf"
+    ],
+    "candidates": [
+      "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "G2"
+    ],
+    "doi": "10.1029/2019JE006333",
+    "status": "원문 PDF 확보",
+    "full_text_available": true,
+    "archive_details": {
+      "01_ground/G10_Warner_2020_Homestead_Hollow.pdf": {
+        "sha256": "782cdd222e2fe6c0c6dc9d468c0023ec7199f98ff53dafe6744084c9328f78c7",
+        "bytes": 2949185,
+        "pages": 36,
+        "pdf_title": "An Impact Crater Origin for the InSight Landing Site at Homestead Hollow, Mars: Implications for Near Surface Stratigraphy, Surface Processes, and Erosion Rates",
+        "retrieved_url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+        "status": "downloaded"
+      }
+    },
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "attempts": [
+      {
+        "url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+        "http_status": 200,
+        "final_url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+        "content_type": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "G11",
+    "title": "Cannon et al. (2019), Mars global simulant MGS-1: A Rocknest-based open standard for basaltic martian regolith simulants",
+    "group": "01_ground",
+    "group_label": "지반·행성 레골리스",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/G11_Cannon_2019_MGS1_Mineralogy.pdf"
+    ],
+    "used_for": "MGS-1 광물 조성의 기준과 Rocknest 아날로그 적용 범위",
+    "used_section": "Sections 1–2; mineralogical design",
+    "prior_scope": "Basaltic mineral analogy based on Gale/Rocknest; not measured InSight deep-layer mineral fractions. / 2026-11-19 문헌 조사에서 확인",
+    "url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+    "all_original_urls": [
+      "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf"
+    ],
+    "candidates": [
+      "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "G3"
+    ],
+    "doi": "10.1016/j.icarus.2018.08.019",
+    "status": "원문 PDF 확보",
+    "full_text_available": true,
+    "archive_details": {
+      "01_ground/G11_Cannon_2019_MGS1_Mineralogy.pdf": {
+        "sha256": "62820042972c21e03a9bba9b836a59e2c111510bfd7b834dd5e3dc60d1a0686a",
+        "bytes": 1402373,
+        "pages": 9,
+        "pdf_title": "Mars global simulant MGS-1_ A Rocknest-based open standard for basaltic martian regolith simulants",
+        "retrieved_url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+        "status": "downloaded"
+      }
+    },
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "attempts": [
+      {
+        "url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+        "http_status": 200,
+        "final_url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+        "content_type": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "G12",
+    "title": "Morgan et al. (2018), A Pre-Landing Assessment of Regolith Properties at the InSight Landing Site",
+    "group": "01_ground",
+    "group_label": "지반·행성 레골리스",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/G12_Morgan_2018_InSight_Regolith_Properties.pdf"
+    ],
+    "used_for": "InSight 착륙 전 밀도·입도·점착력·마찰각 참고",
+    "used_section": "Sections 1.3 and 2.3–2.4",
+    "prior_scope": "Pre-landing reference estimates; distinction between low-cohesion sand, bonded soils, density and friction. Not a calibration of the 3–13 m unit. / 2026-11-19 문헌 조사에서 확인",
+    "url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+    "all_original_urls": [
+      "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf"
+    ],
+    "candidates": [
+      "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "G4"
+    ],
+    "status": "원문 PDF 확보",
+    "full_text_available": true,
+    "archive_details": {
+      "01_ground/G12_Morgan_2018_InSight_Regolith_Properties.pdf": {
+        "sha256": "7e3f47af267230c2933d77b3ab701ea08076634cf3d9913b8446c3a0097597b9",
+        "bytes": 1687471,
+        "pages": 73,
+        "pdf_title": "Microsoft Word - Revised_InSight Landing Site Regolith Physical Properties Complete 2018-6-6.docx",
+        "retrieved_url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+        "status": "downloaded"
+      }
+    },
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "attempts": [
+      {
+        "url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+        "http_status": 200,
+        "final_url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+        "content_type": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "R26",
+    "title": "Raychowdhury and Hutchinson (2009), Performance evaluation of a nonlinear Winkler-based shallow foundation model using centrifuge test results",
+    "group": "04_SSI_and_numerics",
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "kind": "논문·보고서",
+    "files": [
+      "04_SSI_and_numerics/R26_Raychowdhury_Hutchinson_2009_original_unavailable.webloc"
+    ],
+    "used_for": "비선형 Winkler 얕은기초 모델 원심시험 검증; 공개 초록 확인",
+    "used_section": "Earthquake Engineering & Structural Dynamics 38, 679–698; accessible abstract",
+    "prior_scope": "Centrifuge validation for square/strip footings on Earth sand/clay. Publisher abstract checked; exact spring command names cross-checked with R3/R4. / 2026-11-19 문헌 조사에서 확인",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/eqe.902",
+    "all_original_urls": [
+      "https://onlinelibrary.wiley.com/doi/10.1002/eqe.902"
+    ],
+    "candidates": [
+      "https://onlinelibrary.wiley.com/doi/10.1002/eqe.902"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "R2"
+    ],
+    "doi": "10.1002/eqe.902",
+    "missing_original_shortcut": "04_SSI_and_numerics/R26_Raychowdhury_Hutchinson_2009_original_unavailable.webloc",
+    "status": "원문 PDF 미확보(서지·원 출처 링크 보관)",
+    "full_text_available": false,
+    "reference_file_formats": [
+      ".webloc"
+    ],
+    "attempts": [
+      {
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/eqe.902",
+        "http_status": 403,
+        "final_url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/eqe.902",
+        "content_type": "text/html; charset=UTF-8"
+      },
+      {
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/eqe.902",
+        "error": "403 Client Error: Forbidden for url: https://onlinelibrary.wiley.com/doi/pdf/10.1002/eqe.902"
+      }
+    ]
+  },
+  {
+    "id": "R27",
+    "title": "NEHRP Consultants Joint Venture / NIST (2012), Soil-Structure Interaction for Building Structures",
+    "group": "04_SSI_and_numerics",
+    "group_label": "SSI·기초·수치해석 선행연구",
+    "kind": "논문·보고서",
+    "files": [
+      "04_SSI_and_numerics/R27_NIST_2012_GCR_12_917_21_REV1.pdf"
+    ],
+    "used_for": "BNWF 수직·측면·전단 스프링의 역할과 요구 매개변수",
+    "used_section": "GCR 12-917-21, printed pp. 2-36–2-38, PDF pp. 68–70",
+    "prior_scope": "Describes OpenSees QzSimple2, PxSimple1 and TxSimple1 roles in 2D BNWF. Official 13 MB URL exceeded web parser size; contractor revision was read. / 2026-11-19 문헌 조사에서 확인",
+    "url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+    "all_original_urls": [
+      "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf"
+    ],
+    "candidates": [
+      "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "R3"
+    ],
+    "status": "원문 PDF 확보",
+    "full_text_available": true,
+    "archive_details": {
+      "04_SSI_and_numerics/R27_NIST_2012_GCR_12_917_21_REV1.pdf": {
+        "sha256": "fafb6de5f15695a3e37afea0679d180e7dda4f57af268988a584b2cfe2f7c08d",
+        "bytes": 5875216,
+        "pages": 292,
+        "pdf_title": "Microsoft Word - 01-TO10_Preface.docx",
+        "retrieved_url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+        "status": "downloaded"
+      }
+    },
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "attempts": [
+      {
+        "url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+        "http_status": 200,
+        "final_url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+        "content_type": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "D30",
+    "title": "OpenSees (공식 문서), OpenSees bbarBrick documentation",
+    "group": "05_official_model_docs",
+    "group_label": "OpenSees·공식 모델 문서",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D30_bbarBrick_20261119.html"
+    ],
+    "used_for": "3D bbarBrick의 nDMaterial 요구 조건",
+    "used_section": "matTag must identify an nDMaterial in a 3D, 3-DOF model.",
+    "prior_scope": "matTag must identify an nDMaterial in a 3D, 3-DOF model. / 2026-11-19 문헌 조사에서 확인",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+    "all_original_urls": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html"
+    ],
+    "candidates": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "D1"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "full_text_available": true,
+    "archive_details": {
+      "05_official_model_docs/D30_bbarBrick_20261119.html": {
+        "sha256": "ac0d6ddea641698b035897756b33a37093e295cca14548f7b470f3c5fa3cef69",
+        "bytes": 25964,
+        "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+        "status": "downloaded"
+      }
+    },
+    "reference_file_formats": [
+      ".html"
+    ],
+    "attempts": [
+      {
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+        "http_status": 200,
+        "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+        "content_type": "text/html; charset=utf-8"
+      }
+    ]
+  },
+  {
+    "id": "D31",
+    "title": "OpenSees (공식 문서), OpenSees Hysteretic documentation",
+    "group": "05_official_model_docs",
+    "group_label": "OpenSees·공식 모델 문서",
+    "kind": "공식 문서·공식 예제",
+    "files": [
+      "05_official_model_docs/D31_Hysteretic_20261119.html"
+    ],
+    "used_for": "양·음 배면곡선·핀칭·손상·제하강성",
+    "used_section": "User-defined asymmetric envelopes, pinching, energy/ductility damage and unloading stiffness rules.",
+    "prior_scope": "User-defined asymmetric envelopes, pinching, energy/ductility damage and unloading stiffness rules. / 2026-11-19 문헌 조사에서 확인",
+    "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+    "all_original_urls": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html"
+    ],
+    "candidates": [
+      "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html"
+    ],
+    "reviewed_on": "2026-11-19",
+    "research_ids": [
+      "D6"
+    ],
+    "status": "공식 웹페이지 확보(PDF 아님)",
+    "full_text_available": true,
+    "archive_details": {
+      "05_official_model_docs/D31_Hysteretic_20261119.html": {
+        "sha256": "99970d1f93cf5f780b770b046c4ca0499f6fe5b74373b39e8b910d83451d4226",
+        "bytes": 21577,
+        "retrieved_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+        "status": "downloaded"
+      }
+    },
+    "reference_file_formats": [
+      ".html"
+    ],
+    "attempts": [
+      {
+        "url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+        "http_status": 200,
+        "final_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+        "content_type": "text/html; charset=utf-8"
+      }
+    ]
+  },
+  {
+    "id": "G13",
+    "title": "Golombek et al. (2023), Results from InSight Robotic Arm Activities",
+    "url": "https://doi.org/10.1007/s11214-023-00964-0",
+    "doi": "10.1007/s11214-023-00964-0",
+    "used_for": "천부 밀도·강성 자료; 앞서 제공된 PDF",
+    "used_section": "Section 7.7, PDF p.27",
+    "group": "01_ground",
+    "group_label": "지반·행성 레골리스",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/G13_Golombek_2023_InSight_Robotic_Arm.pdf"
+    ],
+    "status": "원문 PDF 확보(사용자 제공 사본)",
+    "full_text_available": true,
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "prior_scope": "앞선 밀도·강성 매개변수 구성에서 사용; 원본 파일과 동일한 SHA-256",
+    "reviewed_on": "2026-11-19",
+    "all_original_urls": [
+      "https://doi.org/10.1007/s11214-023-00964-0"
+    ],
+    "original_local_file": "/Users/sydney/Downloads/s11214-023-00964-0.pdf"
+  },
+  {
+    "id": "G14",
+    "title": "Murdoch et al. (2018), Flexible mode modelling of the InSight lander and consequences for the SEIS instrument",
+    "url": "https://doi.org/10.1007/s11214-018-0553-y",
+    "doi": "10.1007/s11214-018-0553-y",
+    "used_for": "표 2 예측 파속·구속압과 탄성계수 환산; 앞서 제공된 저자 승인 원고",
+    "used_section": "Equations 4–6 and Table 2, supplied PDF pp.15–16",
+    "group": "01_ground",
+    "group_label": "지반·행성 레골리스",
+    "kind": "논문·보고서",
+    "files": [
+      "01_ground/G14_Murdoch_2018_InSight_Lander_Flexible_Modes_AAM.pdf"
+    ],
+    "status": "원문 PDF 확보(사용자 제공 사본)",
+    "full_text_available": true,
+    "reference_file_formats": [
+      ".pdf"
+    ],
+    "prior_scope": "앞선 밀도·강성 매개변수 구성에서 사용; 원본 파일과 동일한 SHA-256",
+    "reviewed_on": "2026-11-19",
+    "all_original_urls": [
+      "https://doi.org/10.1007/s11214-018-0553-y"
+    ],
+    "original_local_file": "/Users/sydney/Downloads/InSightLanderFlexibleModes_Changes.pdf"
+  }
+]

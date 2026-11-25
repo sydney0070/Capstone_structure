@@ -1,0 +1,15 @@
+{
+  "criterion_defined_before_fitting": true,
+  "nrmse_max": 0.05,
+  "peak_error_max": 0.1,
+  "increment_error_max": 0.01,
+  "require_optimizer_success": true,
+  "scope": "UCSD Grade 60 A6 group supplied histories; ASTM subclass mapping not asserted; not buckling, fracture or all Grade 60 products.",
+  "not_claimed": [
+    "grade population certification",
+    "buckling",
+    "fracture",
+    "fatigue"
+  ],
+  "notes": "Project screening criteria. No closed-loop energy acceptance claim for these irregular open-ended paths."
+}

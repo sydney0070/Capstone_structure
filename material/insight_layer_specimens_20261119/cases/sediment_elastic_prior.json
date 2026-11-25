@@ -1,0 +1,71 @@
+{
+  "id": "sediment_elastic_prior",
+  "group": "first_comparison",
+  "layer": "deep_low_velocity_sediment_hypothesis",
+  "family": "ElasticIsotropic",
+  "parameters": {
+    "E_Pa": 754558814.2569305,
+    "nu": 0.276268556474212,
+    "G_Pa": 295611300.0,
+    "K_Pa": 562101600.0,
+    "density_kg_m3": 1700.0,
+    "Vp_m_s": 750.0,
+    "Vs_m_s": 417.0
+  },
+  "evidence": {
+    "E_Pa": {
+      "source": "Hobiger2021",
+      "locator": "Table 2 modified prior, sediment Vp750 Vs417 m/s",
+      "kind": "derived_from_prior",
+      "note": "Prior values, not final inversion point or actual 30–75m measured stiffness; density assumed"
+    },
+    "nu": {
+      "source": "Hobiger2021",
+      "locator": "Table 2 modified prior, sediment Vp750 Vs417 m/s",
+      "kind": "derived_from_prior",
+      "note": "Prior values, not final inversion point or actual 30–75m measured stiffness; density assumed"
+    },
+    "density_kg_m3": {
+      "source": "specimen_assumption",
+      "locator": "velocity-to-modulus conversion",
+      "kind": "assumed",
+      "note": "1700 kg/m3 requires density sensitivity"
+    },
+    "G_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "K_Pa": {
+      "source": "isotropic_elasticity",
+      "locator": "G=E/[2(1+nu)], K=E/[3(1-2nu)]",
+      "kind": "derived",
+      "note": ""
+    },
+    "Vp_m_s": {
+      "source": "Hobiger2021",
+      "locator": "Table 2 modified prior",
+      "kind": "published_prior",
+      "note": ""
+    },
+    "Vs_m_s": {
+      "source": "Hobiger2021",
+      "locator": "Table 2 modified prior",
+      "kind": "published_prior",
+      "note": ""
+    }
+  },
+  "mars_calibrated": false,
+  "geometry": {
+    "type": "cube",
+    "side_m": 1.0,
+    "area_m2": 1.0,
+    "volume_m3": 1.0
+  },
+  "status": "SOURCE_BASED_INITIAL_TRIAL",
+  "notes": [
+    "Unit cube is a material test, not the actual thickness of this geological unit.",
+    "No selfweight; confinement is an imposed laboratory test condition."
+  ]
+}

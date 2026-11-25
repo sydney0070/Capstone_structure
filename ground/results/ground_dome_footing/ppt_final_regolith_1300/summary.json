@@ -1,0 +1,169 @@
+{
+  "complete": true,
+  "ground_domain_m": [
+    90.0,
+    90.0,
+    30.0
+  ],
+  "footing": {
+    "centerline_radius_m": 20.0,
+    "outer_diameter_m": 54.0,
+    "width_m": 14.0,
+    "embedment_m": 3.0,
+    "flange_thickness_m": 2.5,
+    "cover_thickness_m": 6.2,
+    "dome_mass_t": 200.0,
+    "ring_mass_t": 10260.0,
+    "circular_footprint_m2": 1759.291886010284,
+    "modeled_footprint_m2": 1739.2639830889404
+  },
+  "loads": {
+    "source": "\uad6c\uc870\ubb3c\ud300 PPT slides 16\u201318, selected 14 m footing",
+    "downforce_N": 150300000.0,
+    "pressure_plan_area_m2": 1200.0,
+    "net_internal_pressure_Pa": 100600.0,
+    "dome_uplift_N": 120720000.0,
+    "pressurized_net_compression_N": 29580000.0,
+    "depressurized_contact_pressure_Pa": 86415.86410193268,
+    "pressurized_contact_pressure_Pa": 17007.19401287537
+  },
+  "scope": "Vertical settlement under area-distributed equivalent thrust only. Initial gravity is equilibrated on the excavated ground. Foundation/soil interaction, uplift resistance, structural design and soil failure are outside this analysis.",
+  "ground_mesh": {
+    "kind": "square_core_polygon_rings_square_farfield",
+    "sectors": 24,
+    "radial_subdivisions": 2,
+    "plan_refinement": 1,
+    "vertical_subdivisions": 1,
+    "nz": 12,
+    "max_aspect_ratio": 95.09618943233424,
+    "depth_levels_m": [
+      0.0,
+      0.2,
+      0.6000000000000001,
+      1.0,
+      3.0,
+      6.333333333333334,
+      9.666666666666668,
+      13.0,
+      16.4,
+      19.8,
+      23.2,
+      26.6,
+      30.0
+    ]
+  },
+  "ground_elements": 3504,
+  "ground_mass_kg": 542431655.7456186,
+  "ground_layers": [
+    {
+      "bottom_m": 0.2,
+      "material": "mars_insight_duricrust_proxy",
+      "density_kg_m3": 1200
+    },
+    {
+      "bottom_m": 3.0,
+      "material": "mars_insight_sandy_regolith_1300",
+      "density_kg_m3": 1300
+    },
+    {
+      "bottom_m": 13.0,
+      "material": "mars_insight_blocky_ejecta",
+      "density_kg_m3": 1700
+    },
+    {
+      "bottom_m": null,
+      "material": "mars_insight_fractured_basalt",
+      "density_kg_m3": 2760
+    }
+  ],
+  "gravity": {
+    "final_factor": 1.0,
+    "attempts": 20,
+    "linear_system": "UmfPack",
+    "force_balance": {
+      "applied_N": [
+        0.0,
+        0.0,
+        -2012963874.4719715
+      ],
+      "reaction_N": [
+        4.190951585769653e-09,
+        -3.026798367500305e-09,
+        2012963874.4719758
+      ],
+      "residual_N": [
+        4.190951585769653e-09,
+        -3.026798367500305e-09,
+        4.291534423828125e-06
+      ],
+      "relative_error": 2.1319496052600014e-15
+    },
+    "physical_support_force_error": 2.131955529092526e-15,
+    "physical_support_moment_error": 1.2455092063293637e-17,
+    "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact"
+  },
+  "depressurized": {
+    "final_factor": 1.0,
+    "attempts": 8,
+    "linear_system": "UmfPack",
+    "force_balance": {
+      "applied_N": [
+        0.0,
+        0.0,
+        -2163263874.471967
+      ],
+      "reaction_N": [
+        9.313225746154785e-09,
+        -1.0069925338029861e-08,
+        2163263874.471976
+      ],
+      "residual_N": [
+        9.313225746154785e-09,
+        -1.0069925338029861e-08,
+        8.58306884765625e-06
+      ],
+      "relative_error": 3.967652725522738e-15
+    },
+    "physical_support_force_error": 3.967652877343429e-15,
+    "physical_support_moment_error": 8.207873806697252e-18,
+    "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact",
+    "average_mm": 1.2207301044345733,
+    "maximum_mm": 1.4331082410979998
+  },
+  "pressurized": {
+    "final_factor": 1.0,
+    "attempts": 8,
+    "linear_system": "UmfPack",
+    "force_balance": {
+      "applied_N": [
+        0.0,
+        0.0,
+        -2042543874.4719706
+      ],
+      "reaction_N": [
+        -9.313225746154785e-10,
+        6.28642737865448e-09,
+        2042543874.4719775
+      ],
+      "residual_N": [
+        -9.313225746154785e-10,
+        6.28642737865448e-09,
+        6.9141387939453125e-06
+      ],
+      "relative_error": 3.3850639885558236e-15
+    },
+    "physical_support_force_error": 3.385064234224941e-15,
+    "physical_support_moment_error": 8.127383628742221e-18,
+    "moment_caveat": "Contact bearing auxiliary rotational reactions excluded; moment residual is diagnostic for contact",
+    "average_mm": 0.24024748163123538,
+    "maximum_mm": 0.2820448554336584
+  },
+  "viewer": {
+    "file": "ground/results/ground_dome_footing/ppt_final_regolith_1300/footing_settlement.html",
+    "frames": 1,
+    "nodes": 4093,
+    "structures": 0,
+    "offline": true,
+    "reference": "total"
+  }
+}

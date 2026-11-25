@@ -1,0 +1,1024 @@
+[
+  {
+    "source_id": "M01",
+    "file": "02_material_properties/Hydro_2019_Alloy_6061.pdf",
+    "bytes": 419400,
+    "sha256": "cc3cc79ef34d7ccd2a69fe5216f726be23d23d0b07e12c2ea1091adbba7fd009",
+    "source_url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf"
+  },
+  {
+    "source_id": "M02",
+    "file": "02_material_properties/NIST_Aluminum_6061_T6.html",
+    "bytes": 83310,
+    "sha256": "d93b08cc5d7cf94a03b2b9e72e4bbd0cef779dce75ea310070a180be7ec07d70",
+    "source_url": "https://www.nist.gov/mml/acmd/aluminum-6061-t6-uns-aa96061"
+  },
+  {
+    "source_id": "M04",
+    "file": "02_material_properties/Indyk_Benaroya_2016_Sintered_JSC1A.pdf",
+    "bytes": 3261436,
+    "sha256": "be6521cead79a29980208847eef5e5e62ac7ba36ff274049c2352114f6049385",
+    "source_url": "https://www.hou.usra.edu/meetings/leag2016/eposter/5082.pdf"
+  },
+  {
+    "source_id": "G01",
+    "file": "01_ground/spohn_2022_insight_hp3.pdf",
+    "bytes": 14154940,
+    "sha256": "5dd3372f576c7ccf0e23790d7c240e5371050a6c28998e7911c516a6d506e340",
+    "source_url": "https://doi.org/10.1007/s11214-022-00941-z"
+  },
+  {
+    "source_id": "G02",
+    "file": "01_ground/jez1_2021.pdf",
+    "bytes": 4125514,
+    "sha256": "e6e7d8176834dfe6eca6d8cdc39a00aefe4ce38d8e5961b12cd44ca367a08bed",
+    "source_url": "https://doi.org/10.3390/app11157052"
+  },
+  {
+    "source_id": "G03",
+    "file": "01_ground/musiol_2016_basalt.pdf",
+    "bytes": 3274003,
+    "sha256": "f8bc0d93dfc261f4d7e0db36d2839650e185862a352445a8f196f76530c7947b",
+    "source_url": "https://doi.org/10.1002/2015JE004896"
+  },
+  {
+    "source_id": "G04",
+    "file": "01_ground/nasa_lunar_simulant_guide_2024.pdf",
+    "bytes": 5783538,
+    "sha256": "52e52b195ef25e26004c8bb06b9d88614c64dcf3d0a8f4a3a5c64b94d3cd9c16",
+    "source_url": "https://ntrs.nasa.gov/citations/20240011783"
+  },
+  {
+    "source_id": "G05",
+    "file": "01_ground/connolly_carrier_2023_lunar_profile.pdf",
+    "bytes": 149514,
+    "sha256": "8fed5f0c72d12f39f6e1237ec03edc397c46ea2a553540736a58ebe7ea087617",
+    "source_url": "https://ntrs.nasa.gov/citations/20220018853"
+  },
+  {
+    "source_id": "G06",
+    "file": "01_ground/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf",
+    "bytes": 3235736,
+    "sha256": "f30aeba051b2b03d3053bc58ddfa5efb1c941562beea0c76015ea5b7f8dadef8",
+    "source_url": "https://ares.jsc.nasa.gov/projects/simulants/attachments/JSC-1A_LASP_Geotech_Properties_Tons1-3.pdf"
+  },
+  {
+    "source_id": "G07",
+    "file": "01_ground/G07_Brinkman_et_al_2022_In_Situ_Regolith_Seismic_Velocity_Measurement_at_the_InSight_Lan.pdf",
+    "bytes": 3268543,
+    "sha256": "2b4bb798ecbd5c66079645e70277d4b23bce2a310f4022fe016161b3c738bf2c",
+    "source_url": "https://elib.dlr.de/148669/1/JGR%20Planets%20-%202022%20-%20Brinkman%20-%20In%20Situ%20Regolith%20Seismic%20Velocity%20Measurement%20at%20the%20InSight%20Landing%20Site%20on%20Mars.pdf"
+  },
+  {
+    "source_id": "G08",
+    "file": "01_ground/G08_Time-domain_deconvolution_procedure_for_elastoplastic_materials_Application_to_Treas.html",
+    "bytes": 190715,
+    "sha256": "1584ba0d71fba5b2249138397da51a6a9b04373f9a4e3362fc41006afb6d32cb",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10520356/"
+  },
+  {
+    "source_id": "R01",
+    "file": "03_prior_structures/R01_Mrozek_2025_Lunar_Crater_Dome.pdf",
+    "bytes": 2969677,
+    "sha256": "df3c69dcc9e64d4f01712885dbcc52f5a2d5307b6c03b3adcb6a94f178a1cbd9",
+    "source_url": "https://www.nature.com/articles/s41598-025-07901-x.pdf?error=cookies_not_supported&code=fa017311-c794-4326-9923-f96e87b87701"
+  },
+  {
+    "source_id": "R02",
+    "file": "03_prior_structures/R02_Ruess_2006_Structural_Design_Lunar_Habitat.html",
+    "bytes": 2328,
+    "sha256": "0bf2cb7491c80152dbf68b7b7ce3193dc2bb64b75bcc7991e5ba47205e15501e",
+    "source_url": "https://scholarship.libraries.rutgers.edu/esploro/outputs/journalArticle/Structural-Design-of-a-Lunar-Habitat/991031665574004646"
+  },
+  {
+    "source_id": "R03",
+    "file": "03_prior_structures/R03_NASA_2005_Mobile_Lunar_Habitat.pdf",
+    "bytes": 5362542,
+    "sha256": "02a7fef150c22db3f06853c56cc82f9ff89416ff8c38d7c1babbefb0990d8e7a",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20050185204/downloads/20050185204.pdf"
+  },
+  {
+    "source_id": "R05",
+    "file": "03_prior_structures/R05_Wan_2016_Mars_Sulfur_Concrete.pdf",
+    "bytes": 7080105,
+    "sha256": "cf74f7674fb22eaf187dbb1c1bf986dcc5bee058ac90126d8537dd2b9035b30e",
+    "source_url": "https://arxiv.org/pdf/1512.05461"
+  },
+  {
+    "source_id": "R06",
+    "file": "03_prior_structures/R06_Gupta_2023_Sintered_Space_Bricks.pdf",
+    "bytes": 8721308,
+    "sha256": "2b28d0c9b8a2bba6ab8eca4956b11317f1563b576440cfb4532665679a9ee879",
+    "source_url": "https://arxiv.org/pdf/2308.14331"
+  },
+  {
+    "source_id": "R07",
+    "file": "03_prior_structures/R07_Martian_Habitat_Units_2025.pdf",
+    "bytes": 5024605,
+    "sha256": "09d02709d7c7e0bcf8a6c7bd08820bade6fea7e82c2fb3905e37edd9fe640244",
+    "source_url": "https://mdpi-res.com/d_attachment/aerospace/aerospace-12-00761/article_deploy/aerospace-12-00761.pdf"
+  },
+  {
+    "source_id": "R09",
+    "file": "01_ground/R09_Rame_2009_Flowability_JSC1A.pdf",
+    "bytes": 3148479,
+    "sha256": "ab743c953ff741f7b3076335f0feab1e67be8bf205d471c3d0f8f9acac7e99fd",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20090023168/downloads/20090023168.pdf"
+  },
+  {
+    "source_id": "R12",
+    "file": "01_ground/R12_NASA_Mars_Simulants_Geotechnical_Review.pdf",
+    "bytes": 1117760,
+    "sha256": "e8c07daa33f7ecdf1ca6bc2ac44c8f0c31c1ef7f0183ef47e1b51616392f3140",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20200003046/downloads/20200003046.pdf"
+  },
+  {
+    "source_id": "R13",
+    "file": "01_ground/R13_Regolith_Cohesion_Shear_Strength_2024.pdf",
+    "bytes": 2342348,
+    "sha256": "181027971988e8d4e55fefbfc8dcf774a828ffb531a7ac40a79368d8ee94825e",
+    "source_url": "https://arxiv.org/pdf/2403.11029"
+  },
+  {
+    "source_id": "R15",
+    "file": "01_ground/R15_PM4Sand_v31_2017.pdf",
+    "bytes": 3954860,
+    "sha256": "4c0b8784b22f0a984d48ce515d2438a9494bbe134b8cb9dca23ab65d91372181",
+    "source_url": "https://public.boxcloud.com/d/1/b1!PaTrjhYc1zjvj7dowmG7Num32GQy4Pscq8QAMW2JT5Q1mgNhsCSxJx1rosiYTHtp4opZfiBRvIXoUl3my930kdDM3qif0OAsfbzoge0gziabNRZDWOewCbBHkCWrlSg_iDNUNrlJ9GE3BlWW2TvR6AX_4yaKAhNheC47G-s8a4xfZ7dvRk73yn2XFdFD8QBO-VDac6seRiHXLZxfGChdy_BusvN-wLSwIPdTLejFwaEeDotfCkZWqiGuzQZcjjWqMevJFOJ5-NK-amgVsv-_RXkQc4WNmGfWoCn4HoLMjx75DX4Yv4scxr9AZ7rDxO11MhVwbAkv3-SyLqt3a8dVn4Rlt9be9TfuJISV5O1aIa951aiLx8mTwVPALAJh6_EOpvG60wy7GgeGweiu7o-zW4fupK54UVgdAtL_VGtGaxSdDLummIhOpPsSoaPcN8GFSoOa2o_v_P2pgM8zOqMr6WLAQU4icYAYBN96NjIFU9Dyu-mvBFDfm6OKsKAzr1hsMPjCeTX7gdAK89UaYTwZtP98Gv5fnbBZZcQzzu9qSHa-opZDvV36-X68axh61lahEJMtf-BJY_Rr73klWuOicsXhg3uUk-xgfxJqK245rUbaqLmLQC5QEzc494mTqxc_DHId49fH0XMeXjQUgsGczyCLcafkBCF7YgVSxrW1M9nyIrbdS_X24F3k87APh25V0Yb1aQZmDO48pyJSozBmBncTN4xGHz05yeqy_JGZHKFfIrsUpCoZVm7YYs_n7oLC9WUUwILsqiIjmg61FpkrpNA97-wd_Yr1CgQhj5LDZVpHt8n-cXdCrXSSzTb-MVEkqcdHFTZTlc2TGULrucqMU4DM10YNSaHc2-6DWfzl9QaGvyvcFGKJpdnVOvk9XJkn5MeaYMWGA_VH-oKXFkR8Per2t2C3OLXdoVVAiGm9aEisjwa-DKDcCXK7Pv4RDdePfA1KOEqW5I2EeY0Y6wwmEY0VmTOFebQnZhRZ46t0sXLHpdNJxHLyElXXQ74zoUV9i1pEwZFmLgzDlzbqtWCvRn8KszRXrWtHy5lSYhDjbMB21LjZZIrctqqTdra1ufTPfjmpxHmDZHgAaJRoUNYJ-3VVByh38OF6U-Kimushaax_1FFxtnr4fW4ZPx7RYl-yGs3KilobLUO5OMiLeipoR2PwGaPvLxIlJMjal5v1WddWOpUSPzrqY71AWrnstBsdzmYMWSCHjcGc_7XfWkbDAPjkgUjNsgcrikxsDMEptZp2dQ7hX3Uu_DN9R-CPaVylUK_wLgPB4UiF-lBFG9FiuC4Ju1sAjyEkp8WUvqU4-s7iKlfTKRgkm420YNIOL4v43yJT56I4udCn6J1adrrz48ItbzJu2VRWdPNZgl0OkMZQOkoaE75iCX2SIz12-AQYFPsXaOc1fHE5j9AZ_vWL8nw99hBtDg76-9bVLOuf0Pt6H30tZEZWFUsMWMTt7k07mkwczs5SNEMQ6CJJcz8mer5PYdYRYxbH0Lh2hogJLpeVMn0w3tfCU-DUc6bPP_ujjM5KOPm7yMXLkD_3kPjItLO7Llw0Kw../download"
+  },
+  {
+    "source_id": "R16",
+    "file": "01_ground/R16_PM4Silt_v1_2018.pdf",
+    "bytes": 3452953,
+    "sha256": "7eccd740249d72861e9727bc17d26fc07d382cfe4624902371e744d559b317ea",
+    "source_url": "https://itasca-software.s3.amazonaws.com/udm-library/Boulanger_Ziotopoulou_PM4Silt_Model_CGM-18-01_2018.pdf"
+  },
+  {
+    "source_id": "R18",
+    "file": "04_SSI_and_numerics/R18_Harden_2005_PEER_2005_04.pdf",
+    "bytes": 5992500,
+    "sha256": "939a0500349176f2e677f16ff67a6a43a40da50d33c253e9c8aabac323ef8192",
+    "source_url": "https://peer.berkeley.edu/sites/default/files/peer_504_c._harden_t._hutchinson_g._martin_b._kutter.pdf"
+  },
+  {
+    "source_id": "R19",
+    "file": "04_SSI_and_numerics/R19_Gajan_2008_PEER_2007_04.pdf",
+    "bytes": 7400868,
+    "sha256": "17b67b1e398c8daf91f7d78d058266e95aacf51793314eda4549b9c8dddf61a4",
+    "source_url": "https://peer.berkeley.edu/sites/default/files/web_peer704_sivapalan_gajan_tara_hutchinson_bruce_kutter.pdf"
+  },
+  {
+    "source_id": "R20",
+    "file": "04_SSI_and_numerics/R20_ShallowFoundationGen_2008.pdf",
+    "bytes": 1297356,
+    "sha256": "4d115ae4594aabb122093d3fece5fcf47b029dd906476a48a54f3a55adde0d94",
+    "source_url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/documents/ShallowDocumentation.pdf"
+  },
+  {
+    "source_id": "R21",
+    "file": "04_SSI_and_numerics/R21_Laterally_Loaded_Pile_Example.html",
+    "bytes": 40006,
+    "sha256": "9671cd48901ddd04820032b9e7a418411118769913dd5ee485e8dd29e123a213",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/Laterally-Loaded_Pile_Foundation"
+  },
+  {
+    "source_id": "R22",
+    "file": "04_SSI_and_numerics/R22_Kramer_2008_PEER_2008_07.pdf",
+    "bytes": 23843158,
+    "sha256": "8549bb2508fd9b4a1c3b25b670d50aad041a44d825b979dc7dd38e08cbcbdef4",
+    "source_url": "https://peer.berkeley.edu/sites/default/files/web_peer807_steven_l._kramer_pedro_arduino.pdf"
+  },
+  {
+    "source_id": "R24",
+    "file": "04_SSI_and_numerics/R24_Karakas_2018_Hyperbolic_Cooling_Tower_SSI.html",
+    "bytes": 13294,
+    "sha256": "e6024492bde598cb55d824dac6864399ebdc48ab6592003313313c6263bfda9c",
+    "source_url": "https://www.techno-press.com/papers/5268?access=required"
+  },
+  {
+    "source_id": "R25",
+    "file": "04_SSI_and_numerics/R25_Kang_2022_RC_Frame_Rigid_Joints.pdf",
+    "bytes": 7933147,
+    "sha256": "29e84eabd1321cd37b278316b26ac8c2517078b882ea49f831f2d8f4e67ed4b7",
+    "source_url": "https://mdpi-res.com/d_attachment/materials/materials-15-08027/article_deploy/materials-15-08027.pdf"
+  },
+  {
+    "source_id": "D_pdmy02",
+    "file": "05_official_model_docs/PressureDependentMultiYield02.html",
+    "bytes": 26080,
+    "sha256": "fc3e785ab22f421f4aa7ce889d1caa4af5be59f5d41140f26351c06b1370d754",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html"
+  },
+  {
+    "source_id": "D_dp",
+    "file": "05_official_model_docs/DruckerPrager.html",
+    "bytes": 25332,
+    "sha256": "379ad6335575f55b1c0223432627c6a7da4f5f6d26b16a4b20111c72419e7295",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/DruckerPrager.html"
+  },
+  {
+    "source_id": "D_steel02",
+    "file": "05_official_model_docs/Steel02.html",
+    "bytes": 24697,
+    "sha256": "f0f1444bf83857b18407733b30375560ef33b834de881175f81f03734b272e9d",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Steel02.html"
+  },
+  {
+    "source_id": "D_concrete02",
+    "file": "05_official_model_docs/Concrete02.html",
+    "bytes": 21069,
+    "sha256": "57320e03907e654a63c23a602c45fa693ed20861a72a5b267da1ce34448aa144",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Concrete02.html"
+  },
+  {
+    "source_id": "D_flat_slider",
+    "file": "05_official_model_docs/FlatSliderBearing.html",
+    "bytes": 30718,
+    "sha256": "5a49dc5d995ef62471b45aee187c6c45734c5b6ba8cf1544a38b2fb20e55db20",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/Flat_Slider_Bearing_Element"
+  },
+  {
+    "source_id": "D_dp_engine_340",
+    "file": "05_official_model_docs/DruckerPrager_v3.4.0.cpp",
+    "bytes": 26517,
+    "sha256": "f421155becb6ad5a1215b14f41cb4d38e894ef53a44484b8fd05877d2f49414a",
+    "source_url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/material/nD/UWmaterials/DruckerPrager.cpp"
+  },
+  {
+    "source_id": "D06",
+    "file": "05_official_model_docs/D06_PIMY.html",
+    "bytes": 25456,
+    "sha256": "16bb5fe788893cbce34a82fc653ea241b6df79cc739abea79cdbf029f2fa2b01",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureIndependentMultiYield.html"
+  },
+  {
+    "source_id": "D07",
+    "file": "05_official_model_docs/D07_DruckerPrager.html",
+    "bytes": 35431,
+    "sha256": "d043c6e43d9fb70b13d820be1d61b33b566b400181aa9b80a202e318ae137b16",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/Drucker_Prager"
+  },
+  {
+    "source_id": "D08",
+    "file": "05_official_model_docs/D08_SSPbrick.html",
+    "bytes": 104325,
+    "sha256": "0a57b3895778c04eba887fcbe4594700c9dc9aa21429e1dbcc875fd196d63ab0",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/SSPbrick.html"
+  },
+  {
+    "source_id": "D09",
+    "file": "05_official_model_docs/D09_SSPquad.html",
+    "bytes": 105370,
+    "sha256": "4221b9df44917c3f845ff5105323ceeecb6152bf68bd2b5fcb6d79c34581ec2d",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/SSPquad.html"
+  },
+  {
+    "source_id": "D10",
+    "file": "05_official_model_docs/D10_SSPquadUP.html",
+    "bytes": 86378,
+    "sha256": "0c5afd9f76d683fa122be8331a0a596004be743fe2cd42b957ee19f8d217b374",
+    "source_url": "https://openseespydoc.readthedocs.io/en/stable/src/SSPquadUP.html"
+  },
+  {
+    "source_id": "D11",
+    "file": "05_official_model_docs/D11_PM4Sand.html",
+    "bytes": 18914,
+    "sha256": "b429ed6c6788a6fdc34c8f5634d255e4a147f3168970435f56b6b668dc007810",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/PM4Sand-Example_1"
+  },
+  {
+    "source_id": "D12",
+    "file": "05_official_model_docs/D12_Python_PM4.html",
+    "bytes": 163383,
+    "sha256": "7e4467f37d3867cd97912bd307d5b0263ea05cbf97658af56753809d5e1762db",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/pm4sand_cyc_cal.html"
+  },
+  {
+    "source_id": "D13",
+    "file": "05_official_model_docs/D13_PySimple1.html",
+    "bytes": 103880,
+    "sha256": "597e7e35c52558eb0953ce54826d414600fd1698f4cd2e69b050e13116a66a15",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/PySimple1.html"
+  },
+  {
+    "source_id": "D14",
+    "file": "05_official_model_docs/D14_TzSimple1.html",
+    "bytes": 104034,
+    "sha256": "bf73e4f11437660abacaed9b1862e8e9b84a917895f9cc5d68eb5988ddd73d3b",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/TzSimple1.html"
+  },
+  {
+    "source_id": "D15",
+    "file": "05_official_model_docs/D15_QzSimple1.html",
+    "bytes": 105517,
+    "sha256": "59c15b950350a22e9488072db209c0ca4736b09485400be9bb5612714a3aa916",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/QzSimple1.html"
+  },
+  {
+    "source_id": "D16",
+    "file": "05_official_model_docs/D16_ElasticPPGap.html",
+    "bytes": 3971,
+    "sha256": "a1b439f2c582a35811f0af40cf8b9d3f6ae7b66a2d852c625a9131353b51e90f",
+    "source_url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/170.htm"
+  },
+  {
+    "source_id": "D17",
+    "file": "05_official_model_docs/D17_Viscous.html",
+    "bytes": 2817,
+    "sha256": "1e3d6d696cce3f7a5ce68c12feff411f57945a9be8bf37e44caeb3d2ea702216",
+    "source_url": "https://opensees.berkeley.edu/OpenSees/manuals/usermanual/186.htm"
+  },
+  {
+    "source_id": "D18",
+    "file": "05_official_model_docs/D18_zeroLengthContact.html",
+    "bytes": 106734,
+    "sha256": "c7231e81f82cdd93be4d606f0242192fa22d0ef8fa54888dbe279625091fbaa6",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/zeroLengthContact2D.html"
+  },
+  {
+    "source_id": "D19",
+    "file": "05_official_model_docs/D19_zeroLengthContactASDimplex.html",
+    "bytes": 33471,
+    "sha256": "3e659419b40caf054bbf0ed7aca967d351f32e156c0c6831901945a257f36b77",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/zeroLengthContactASDimplex.html"
+  },
+  {
+    "source_id": "D20",
+    "file": "05_official_model_docs/D20_J2Plasticity.html",
+    "bytes": 105099,
+    "sha256": "a8e4a530b4e863592352392c6cddd5b97d3526dcf2281b9ad8e381ef25e3053c",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/J2Plasticity.html"
+  },
+  {
+    "source_id": "D21",
+    "file": "05_official_model_docs/D21_ElasticOrthotropic.html",
+    "bytes": 105607,
+    "sha256": "11b551756ecbf4567478fa6d6a5395cd91a348a4bd207e5baf42bbe4abddbf67",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/elasticOrthotropic.html"
+  },
+  {
+    "source_id": "D22",
+    "file": "05_official_model_docs/D22_PlateFiber_wrapper.html",
+    "bytes": 101631,
+    "sha256": "fb5ba68ac12d31ce0ce4233014f2b1ead9c3aabeceade55f0b45d49ca81a8847",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/PlateFiber.html"
+  },
+  {
+    "source_id": "D23",
+    "file": "05_official_model_docs/D23_PlateFiber_section.html",
+    "bytes": 102073,
+    "sha256": "48fc8666a67651e2f8ef6b5f33948305b766887d0eae3beadc2b20c49aa76772",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/plateFiberSection.html"
+  },
+  {
+    "source_id": "D24",
+    "file": "05_official_model_docs/D24_D24.html",
+    "bytes": 11274,
+    "sha256": "e2d8ceefc3878c0be778f87a0105fe521b685e8648ed9c78ce04b6e47b640a64",
+    "source_url": "https://opensees.berkeley.edu/OpenSees/manuals/ExamplesManual/HTML/876.htm"
+  },
+  {
+    "source_id": "D25",
+    "file": "05_official_model_docs/D25_RC_Python.html",
+    "bytes": 185700,
+    "sha256": "deb20a5a6a696480429f8006ece31e681b9aeeec7d2ab45406744d12642caaab",
+    "source_url": "https://openseespydoc.readthedocs.io/en/latest/src/RCshearwall.html"
+  },
+  {
+    "source_id": "D26",
+    "file": "05_official_model_docs/D26_OpenSees.pdf",
+    "bytes": 4542902,
+    "sha256": "44760ff9a0652c7374fbf55dc85f96a690ee38fdb3b741625df236c48db60573",
+    "source_url": "https://opensees.berkeley.edu/OpenSees/workshops/OpenSeesDays2010/A5_StructModeling.pdf"
+  },
+  {
+    "source_id": "D27",
+    "file": "05_official_model_docs/D27_SimpleContact3D.html",
+    "bytes": 26514,
+    "sha256": "d12eff303a2f4f36aa567ae0022e0c3664107837bb4419e8adbe8a8b9b48a2d0",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/SimpleContact3D"
+  },
+  {
+    "source_id": "D28",
+    "file": "05_official_model_docs/D28_NASA.html",
+    "bytes": 14363,
+    "sha256": "42bdc3f1dae470b85580c6ac66c353964a05d544ad2ac970a6b7d908337a6c3c",
+    "source_url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+  },
+  {
+    "source_id": "D29",
+    "file": "05_official_model_docs/D29_NASA.html",
+    "bytes": 52228,
+    "sha256": "9d85739618d6935bfbe2d44bfde036b3a559eab0cd3ab91ef2e0a195f2b5b881",
+    "source_url": "https://solarsystem.nasa.gov/mars-by-the-numbers/"
+  },
+  {
+    "source_id": "D_TotalStress",
+    "file": "05_official_model_docs/D_TotalStress_OpenSees_Total_Stress_Layered_Site_Response.html",
+    "bytes": 52299,
+    "sha256": "36a6000a4cb6d9f9db4a67ae9c1ca661efb7bb24de48f62d6533d50451859334",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/Site_Response_Analysis_of_a_Layered_Soil_Column_(Total_Stress_Analysis)"
+  },
+  {
+    "source_id": "D_EffectiveStress",
+    "file": "05_official_model_docs/D_EffectiveStress_OpenSees_Effective_Stress_Layered_Site_Response.html",
+    "bytes": 43904,
+    "sha256": "731d5c095cdb29406c9c130159d90540551ed6f25be67fabcf1914411e9c48cb",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/Effective_Stress_Site_Response_Analysis_of_a_Layered_Soil_Column"
+  },
+  {
+    "source_id": "D_PDTable",
+    "file": "05_official_model_docs/D_PDTable_OpenSees_PDMY02_suggested_parameter_table.html",
+    "bytes": 31502,
+    "sha256": "7678ab00e7e49205542a597e189d0e566a81c7c514a81e5aa0a661dec4468e95",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/PressureDependMultiYield02_Material"
+  },
+  {
+    "source_id": "D_UMFPACK",
+    "file": "05_official_model_docs/D_UMFPACK_OpenSees_v3_4_0_UmfpackGenLinSolver_source.cpp",
+    "bytes": 4804,
+    "sha256": "a30416452df30bca0ec5bf9772aa19ec8020a759b02007d21c9edd5a34f19919",
+    "source_url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.4.0/SRC/system_of_eqn/linearSOE/umfGEN/UmfpackGenLinSolver.cpp"
+  },
+  {
+    "source_id": "D_UMFStatus",
+    "file": "05_official_model_docs/D_UMFStatus_SuiteSparse_UMFPACK_status_definitions.h",
+    "bytes": 222009,
+    "sha256": "d2e898722647c614f7c1114655af93f253968abeaf278c6591d9a297fbe445ad",
+    "source_url": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/UMFPACK/Include/umfpack.h"
+  },
+  {
+    "source_id": "D_OpenBLAS",
+    "file": "05_official_model_docs/D_OpenBLAS_OpenBLAS_runtime_variables.html",
+    "bytes": 21926,
+    "sha256": "baee4828a51f28f6ccd5342d0ba67a04259f9468f9fb0c5aa58c4eb6cf6b514a",
+    "source_url": "https://www.openmathlib.org/OpenBLAS/docs/runtime_variables/"
+  },
+  {
+    "source_id": "D_AMD",
+    "file": "05_official_model_docs/D_AMD_OpenSees_AMD_Numberer.html",
+    "bytes": 23243,
+    "sha256": "61d84162e6c666cc34fb8332fe0912cc82e449938158a8b4dd01df37ecc9bc9f",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/AMD_Numberer"
+  },
+  {
+    "source_id": "D_Krylov",
+    "file": "05_official_model_docs/D_Krylov_OpenSees_KrylovNewton.html",
+    "bytes": 13875,
+    "sha256": "26798f6d8d8f4e7e3eb5b4f3abaa5c68cb66db7cacc7dea492a00411dc721b8a",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/analysis/algorithm/KrylovNewton.html"
+  },
+  {
+    "source_id": "D_Norm",
+    "file": "05_official_model_docs/D_Norm_OpenSees_Norm_Unbalance_Test.html",
+    "bytes": 24490,
+    "sha256": "0d579b4f7f93c242a9bb03ef69d5135d94bf4836ac5e715d786577acdb5cde3c",
+    "source_url": "https://opensees.berkeley.edu/wiki/index.php/Norm_Unbalance_Test"
+  },
+  {
+    "source_id": "T01",
+    "file": "06_original_data/S355/Clean_Data_v1-0-0.zip",
+    "bytes": 63200304,
+    "sha256": "4e76e8b674944fad9a01fe62ea946e8255737f525178a2b14e333f549e2353a6",
+    "source_url": "https://doi.org/10.5281/zenodo.6965147"
+  },
+  {
+    "source_id": "T01",
+    "file": "06_original_data/S355/Database_References.bib",
+    "bytes": 4513,
+    "sha256": "8af2268ae0187364f61e76ab87bccbaac89d158c2a5c6a23a029be0d3f44ca9b",
+    "source_url": "https://doi.org/10.5281/zenodo.6965147"
+  },
+  {
+    "source_id": "T01",
+    "file": "06_original_data/S355/Overall_Summary.csv",
+    "bytes": 135564,
+    "sha256": "d4fc11c511296f57e392156fd89cc252c80f55e000da8d7a91d51f51675ee558",
+    "source_url": "https://doi.org/10.5281/zenodo.6965147"
+  },
+  {
+    "source_id": "T01",
+    "file": "06_original_data/S355/validation_LP9_id6_source.csv",
+    "bytes": 16367,
+    "sha256": "0bf1b1407c8dfbbc3d3e7c068d34460019c0ecc15e3ee2dc566258636252a843",
+    "source_url": "https://doi.org/10.5281/zenodo.6965147"
+  },
+  {
+    "source_id": "T01",
+    "file": "06_original_data/S355/validation_LP2_id3_source.csv",
+    "bytes": 3865,
+    "sha256": "dc26073819951759f4377690434c0a390d268f2ab77c4dc0b7a146eeaf7484ae",
+    "source_url": "https://doi.org/10.5281/zenodo.6965147"
+  },
+  {
+    "source_id": "T01",
+    "file": "06_original_data/S355/train_LP6_id8_source.csv",
+    "bytes": 15426,
+    "sha256": "49acbf4a43a06314cad488fd66d32e9c922d36cc5557cd054e4aaa8c9b4b9856",
+    "source_url": "https://doi.org/10.5281/zenodo.6965147"
+  },
+  {
+    "source_id": "T01",
+    "file": "06_original_data/S355/train_LP4_id0_source.csv",
+    "bytes": 85723,
+    "sha256": "1d0352b174803af88358713ed811a93c7221dd20fcd4ca8671f91adb1443b521",
+    "source_url": "https://doi.org/10.5281/zenodo.6965147"
+  },
+  {
+    "source_id": "T02",
+    "file": "06_original_data/Aluminum/aluminum_TRR285-processed_data.zip",
+    "bytes": 7636825,
+    "sha256": "c2bf085333e30cdcd0c318fe0a43eace6ed0ac844f775c6a876808ec9250f84f",
+    "source_url": "https://doi.org/10.5281/zenodo.21993433"
+  },
+  {
+    "source_id": "T02",
+    "file": "06_original_data/Aluminum/aluminum_mapping-EN_AW6014_T4.yml",
+    "bytes": 3495,
+    "sha256": "fe7bc797884c006ba74bbe76b08be590660f972147c510d133ebf6cce92892b9",
+    "source_url": "https://doi.org/10.5281/zenodo.21993433"
+  },
+  {
+    "source_id": "T02",
+    "file": "06_original_data/Aluminum/aluminum_mapping-EN_AW6014_T6.yml",
+    "bytes": 2967,
+    "sha256": "00811ee92c4446f93c267b44f64fa7bb388351bb012bdedeab506c751ba0c22d",
+    "source_url": "https://doi.org/10.5281/zenodo.21993433"
+  },
+  {
+    "source_id": "T03",
+    "file": "06_original_data/Micro_concrete/stressStrain.zip",
+    "bytes": 202730,
+    "sha256": "51f6eb3263a70d934500d20dd6243b641732180e2f49e8b1c14b04f9e0b54c6c",
+    "source_url": "https://doi.org/10.5281/zenodo.3898495"
+  },
+  {
+    "source_id": "T04",
+    "file": "06_original_data/CFRP/cfrp_smartfan_transversal.xlsx",
+    "bytes": 161904,
+    "sha256": "e58892fea6db328a75f281e99c67265f43a07f8515c971c711f796b1b24c5796",
+    "source_url": "https://doi.org/10.5281/zenodo.5876612"
+  },
+  {
+    "source_id": "T05",
+    "file": "06_original_data/Lunar_database/lunar_simulants.csv",
+    "bytes": 8027,
+    "sha256": "9340f2d535fb4fc924e381df26e7c74913b5d3aba2d99e3742b0c26fc33c4f38",
+    "source_url": "https://doi.org/10.57745/NTSZ8G"
+  },
+  {
+    "source_id": "T05",
+    "file": "06_original_data/Lunar_database/lunar_database_metadata.json",
+    "bytes": 15224,
+    "sha256": "43a2baf982825d17d96d6fd8abe905520fd7d59e3cd441035ea53e7baf069e2d",
+    "source_url": "https://doi.org/10.57745/NTSZ8G"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/08_A75_input_data.txt",
+    "bytes": 8801,
+    "sha256": "b351b447fe195787a4827f08260448fde4d943cc5ed701f5c3b544a61535733b",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/model_matTestAllParamsReadStrain.tcl",
+    "bytes": 926,
+    "sha256": "1b1c3894b6ac45f2af6d36f7083d19e07ed050ba1b87aabb7ce756128751eb0a",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/10_A77_output_data.txt",
+    "bytes": 6260,
+    "sha256": "20c30d21e008e8b46d000ce9efced65a64495d5c6165510905b6207060b708c5",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/06_A69_input_data.txt",
+    "bytes": 8848,
+    "sha256": "ef266bd0a41f6dee1c84b49ba49d2d8edbcc92888ce8c02e18d11ee2431ce468",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/05_A68_input_data.txt",
+    "bytes": 8801,
+    "sha256": "61e3a73ccf7a6a16310d1b5f2e2f9424fe01478dfe99b794728810b5d5e1e5e9",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/11_A78_output_data.txt",
+    "bytes": 9154,
+    "sha256": "07672fb468f5716d41ac9488f9b4116279c228aeb7be07ee1d4694e3dc732f6c",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/05_A68_output_data.txt",
+    "bytes": 8850,
+    "sha256": "fbadc8c81794562429cb45b26caddcad9f515c7774d706265f947ed8ef184520",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/10_A77_input_data.txt",
+    "bytes": 6196,
+    "sha256": "13cbcf5b514c5825f97c57b0f05892acbaa3b0fe804601fbb0097a282ec63581",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/04_A67_output_data.txt",
+    "bytes": 6254,
+    "sha256": "8ed5538f4ba2e49794848a8e64fef52ebc242c8a6cba78a6d354112cbbbee27d",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/06_A69_output_data.txt",
+    "bytes": 8878,
+    "sha256": "cd9cf84efe868be2157d112c6547f5c69b656d00e4f710f6d9f3fc00ef513b08",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/03_A66_input_data.txt",
+    "bytes": 8788,
+    "sha256": "38ebf668c469a0c751f45ee2e30fb158f8beecc6e27849c129e27524448db12c",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/12_A79_output_data.txt",
+    "bytes": 9239,
+    "sha256": "553667175a1abb07ed02fde3ef2cee3f31e4b2dc310ad56f1ae39d11b8ceced2",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/03_A66_output_data.txt",
+    "bytes": 8749,
+    "sha256": "1a1b0979d09dfcbc85eab2cb93dc023d85d34888bb8748a2b970ba0bbbe441a3",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/09_A76_output_data.txt",
+    "bytes": 8743,
+    "sha256": "adda68ccb25e21c33f39f56822b1f14dfd931fcfd9f2e761b56cf970ac25f43d",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/SOURCE_LICENSE.txt",
+    "bytes": 1949,
+    "sha256": "48e469a422f92a5f2ee6086b28ed9557544f91da692ee72686fa6d4bcd26686e",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/09_A76_input_data.txt",
+    "bytes": 8787,
+    "sha256": "a91098e313f3331addeb524c5953480cdde892ec469a56224382673e9f77f4f9",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/01_A64_output_data.txt",
+    "bytes": 8693,
+    "sha256": "2e601ed9daac7b53064c36874337370c5c1885e9093d2dea7676a67ead27aa8b",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/07_A74_output_data.txt",
+    "bytes": 8698,
+    "sha256": "5d05898fa25c8c38ace4b89dfc6de8c6028ff238d3f525a20abc19be0cff2bbf",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/11_A78_input_data.txt",
+    "bytes": 9109,
+    "sha256": "4acb798990e575ea2317a5c655e7092e0787ce13f8d7c214970046be36697dab",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/12_A79_input_data.txt",
+    "bytes": 9202,
+    "sha256": "7ee4f4caef2dee85ec3c6274ec510a938c3258590e97e58f3d3c65a33b5ea8a3",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/08_A75_output_data.txt",
+    "bytes": 8829,
+    "sha256": "6ee314b1391aa7f28d4e441314fdd403eb20499c2b6f9483586d205b8cc58ba5",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/02_A65_output_data.txt",
+    "bytes": 8828,
+    "sha256": "f030d5a5f7b07b1369b4b8f85023de2c1c1dad9362bdb7f07eb21074ec2d83bf",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/07_A74_input_data.txt",
+    "bytes": 8651,
+    "sha256": "318947c1e6d25e7529ff99c7d56844cd00ffba007341313dea6abfb0a965830c",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/02_A65_input_data.txt",
+    "bytes": 8801,
+    "sha256": "12a5019f65ef517aa580eea2b87ad3388ccce43a5d98e78ba7063f25f02b0b31",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/01_A64_input_data.txt",
+    "bytes": 8651,
+    "sha256": "8e3dd0d6dbe5762508d3592fcc6030bbc67506bc54d2657ffc318af761c96f9f",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T06",
+    "file": "06_original_data/Rebar_UCSD/04_A67_input_data.txt",
+    "bytes": 6195,
+    "sha256": "5d31ca20524e78c806fe09fd537f5f19807a8c0701c68fbbad99bf622d3ce739",
+    "source_url": "https://github.com/NHERI-SimCenter/quoFEM/tree/c30196dda348d0a33b2aeb508825c5f340a7521b/Examples/qfem-0028"
+  },
+  {
+    "source_id": "T07_t4",
+    "file": "06_original_data/Aluminum/EN_AW6014_T4_source.xlsx",
+    "bytes": 55178,
+    "sha256": "3d809225dbf113adadeed81dad499d26d7355249a1388ea759b9a1900986c638",
+    "source_url": "https://doi.org/10.5281/zenodo.21993433"
+  },
+  {
+    "source_id": "T07_t6",
+    "file": "06_original_data/Aluminum/EN_AW6014_T6_source.xlsx",
+    "bytes": 38629,
+    "sha256": "c7b8bd4659ab04922cd8de17fbde28b82c99e0e9aaf826ebae173e303ceca1ef",
+    "source_url": "https://doi.org/10.5281/zenodo.21993433"
+  },
+  {
+    "source_id": "O01",
+    "file": "07_observations/stationxml.xb.elyse.2019.151.xml",
+    "bytes": 81731990,
+    "sha256": "b947292143b43383785e700f0aef0f30918355c7deb9ec5cb109ea47baaf7493",
+    "source_url": ""
+  },
+  {
+    "source_id": "O01",
+    "file": "07_observations/S1222a_ACC.mseed",
+    "bytes": 1617408,
+    "sha256": "ba80d301a7c1c7ac18290bcdc68b238e75df687e82525a1c7e0308537e0b9b85",
+    "source_url": ""
+  },
+  {
+    "source_id": "U01",
+    "file": "03_prior_structures/사용자제공_하이퍼볼로이드_논문.pdf",
+    "bytes": 19258228,
+    "sha256": "b704140b1dfe993676ed1eda707d8e787ec83103a0e2f009364f557e4506a49a",
+    "source_url": ""
+  },
+  {
+    "source_id": "T08",
+    "file": "03_prior_structures/T08_El_Jisr_2022_EPFL_doctoral_thesis_8700.pdf",
+    "bytes": 44128529,
+    "sha256": "19a6826afc7d43af30cbafca442c3631b0d7dac232c806c59d075d5b0e903a9c",
+    "source_url": "https://cf002.cdn.4science.cloud/4s-assetstore-epfl-prod/76/87/86/7687862361283132464940336734643131571?response-content-type=application%2Fpdf&response-content-disposition=attachment%3B+filename%3D%22EPFL_TH8700.pdf%22&Expires=1794303466&Signature=ohycShwS2mAWtJxCyUkXkEyfbe4cowxYdquJ9xjAdxBRTCeRR~ZgjADhco-~wlTQkowmLpJIlvOSNYIqKX8sPci6QaC~VuUb8suI3PihVvCKpS7GSm626aduuCtB8Z31u6WuOMpKiZiSBrwEUZFwLGcNCeasd01M4OgtX4pgHtA0KLPgqYqwXrE~ZYXK9NSi28IBv-igiBqR-hfhGt1wQCF-WpLGk2SxoYiClNSaeQLHxS6wE3Oe9B8yyJiIrqfUHDJgyKW4kFYHTpSiqIPcPQjcAx4J8~lYMYMhQnjqiAU2MGGeEbcbCBdezQAgrNHjKT0HSV6XTjkfvIn3YAb5Zw__&Key-Pair-Id=K20AKEP5FKG3TS"
+  },
+  {
+    "source_id": "T09",
+    "file": "02_material_properties/T09_Stamati_et_al_2021_Fracturing_process_of_micro-concrete_under_uniaxial_and_triaxial.pdf",
+    "bytes": 4964211,
+    "sha256": "2c2a55d7cba1b3f593f3c9ac4fc8de6f6c31cfe7c965ad0687464b001be48d8c",
+    "source_url": "https://hal.science/hal-03340858/document"
+  },
+  {
+    "source_id": "R08",
+    "file": "01_ground/R08_NASA_Mechanical_Properties_Lunar_Regolith_original_unavailable.webloc",
+    "bytes": 266,
+    "sha256": "b8fbddd7dcb8edda8d19ec16a3dda3f047c8c191c465614ed09b0a77272da0b7",
+    "source_url": "https://ntrs.nasa.gov/citations/19940004207",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "D13",
+    "file": "05_official_model_docs/D13_PySimple1_20261119.html",
+    "bytes": 31017,
+    "sha256": "e7c9f3da1d1ba20c65e82126ee4fdb10def74dd2ba031f7b4e215ada9893cd1c",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/PySimple1.html",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "D14",
+    "file": "05_official_model_docs/D14_TzSimple1_20261119.html",
+    "bytes": 26336,
+    "sha256": "b29458a4d913a79d6386425653198c472cb5d6587eb8aa3e9a5cf3193538d7e3",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/TzSimple1.html",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "D15",
+    "file": "05_official_model_docs/D15_QzSimple1_20261119.html",
+    "bytes": 29567,
+    "sha256": "4b1a57f0cea0faacee0397ec4c665d926b885ebf60351ca6c53e1f92a00db007",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/QzSimple1.html",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "G09",
+    "file": "01_ground/G09_Golombek_2020_InSight_Geology.pdf",
+    "bytes": 4987535,
+    "sha256": "5b95364db5dc8fa915ca89fc50a45a8f3b97f1dd84c350c4edd82521d5969475",
+    "source_url": "https://elib.dlr.de/139605/1/Golombek_et_al.InSight_Landing_Site.Nat_Comm_2020.pdf",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "G10",
+    "file": "01_ground/G10_Warner_2020_Homestead_Hollow.pdf",
+    "bytes": 2949185,
+    "sha256": "782cdd222e2fe6c0c6dc9d468c0023ec7199f98ff53dafe6744084c9328f78c7",
+    "source_url": "https://ntrs.nasa.gov/api/citations/20205003548/downloads/Warner_impact_origin_InSight_2020_2019JE006333_optimized.pdf",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "G11",
+    "file": "01_ground/G11_Cannon_2019_MGS1_Mineralogy.pdf",
+    "bytes": 1402373,
+    "sha256": "62820042972c21e03a9bba9b836a59e2c111510bfd7b834dd5e3dc60d1a0686a",
+    "source_url": "https://sciences.ucf.edu/class/wp-content/uploads/sites/23/2019/01/Cannon_MGS-1.pdf",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "G12",
+    "file": "01_ground/G12_Morgan_2018_InSight_Regolith_Properties.pdf",
+    "bytes": 1687471,
+    "sha256": "7e3f47af267230c2933d77b3ab701ea08076634cf3d9913b8446c3a0097597b9",
+    "source_url": "https://elib.dlr.de/122371/1/Revised_InSight%20Landing%20Site%20Regolith%20Physical%20Properties%20Complete%202018-6-6.pdf",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "R26",
+    "file": "04_SSI_and_numerics/R26_Raychowdhury_Hutchinson_2009_original_unavailable.webloc",
+    "bytes": 274,
+    "sha256": "803bf27b3b9105c67e54e05c97eceac4c8f5d8dc19ed6dc4a3458cc460fa80ad",
+    "source_url": "https://onlinelibrary.wiley.com/doi/10.1002/eqe.902",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "R27",
+    "file": "04_SSI_and_numerics/R27_NIST_2012_GCR_12_917_21_REV1.pdf",
+    "bytes": 5875216,
+    "sha256": "fafb6de5f15695a3e37afea0679d180e7dda4f57af268988a584b2cfe2f7c08d",
+    "source_url": "https://nehrp-consultants.org/publications/download/nistgcr12-917-21REV1.pdf",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "D30",
+    "file": "05_official_model_docs/D30_bbarBrick_20261119.html",
+    "bytes": 25964,
+    "sha256": "ac0d6ddea641698b035897756b33a37093e295cca14548f7b470f3c5fa3cef69",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/elements/bbarBrick.html",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "D31",
+    "file": "05_official_model_docs/D31_Hysteretic_20261119.html",
+    "bytes": 21577,
+    "sha256": "99970d1f93cf5f780b770b046c4ca0499f6fe5b74373b39e8b910d83451d4226",
+    "source_url": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/uniaxialMaterials/Hysteretic.html",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "G13",
+    "file": "01_ground/G13_Golombek_2023_InSight_Robotic_Arm.pdf",
+    "bytes": 11806943,
+    "sha256": "9717e9f0e5152fc2e9ac3366755819cf6628d7ddb55c63458f6f4a7a4009440a",
+    "source_url": "https://doi.org/10.1007/s11214-023-00964-0",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "G14",
+    "file": "01_ground/G14_Murdoch_2018_InSight_Lander_Flexible_Modes_AAM.pdf",
+    "bytes": 4597199,
+    "sha256": "a694f67f68f0cace7bb05c8f74b70901bd2e658bcd8c6b0409c9399f1d3fe0e5",
+    "source_url": "https://doi.org/10.1007/s11214-018-0553-y",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "G15",
+    "file": "01_ground/G15_Hobiger_2021_InSight_Shallow_Structure.pdf",
+    "bytes": 7985444,
+    "sha256": "c76b68ea8ac46b7cb2f1b787594a8c0d2dd43a7a72af9741db240a8f45750890",
+    "source_url": "https://www.nature.com/articles/s41467-021-26957-7.pdf",
+    "archived_on": "2026-11-19"
+  },
+  {
+    "source_id": "G16",
+    "file": "01_ground/G16_Kenda_2020_Compliance.pdf",
+    "bytes": 6346972,
+    "sha256": "5d1b00886d35aaeede666ae42e3df70984091ef95bbd79fc8204387964b450a9",
+    "source_url": "https://hal.science/hal-03657932/document",
+    "archived_on": "2026-11-23"
+  },
+  {
+    "source_id": "G17",
+    "file": "01_ground/G17_Villeneuve_Heap_2021_Volcanic_Rock_Strength.pdf",
+    "bytes": 2544692,
+    "sha256": "8e685e1d56e744de2f3f981f152ca25cc98129c19e929a51ed3441e39401493b",
+    "source_url": "https://doi.org/10.30909/vol.04.02.279293",
+    "archived_on": "2026-11-25",
+    "retrieved_url": "https://www.jvolcanica.org/ojs/index.php/volcanica/article/download/134/139"
+  },
+  {
+    "source_id": "G17",
+    "file": "01_ground/G17_Villeneuve_Heap_2021_Supplement.xlsx",
+    "bytes": 89671,
+    "sha256": "c1a7426124451862c439a221dc212aceccda75f06a542b0b5a7404c76c797723",
+    "source_url": "https://doi.org/10.30909/vol.04.02.279293",
+    "archived_on": "2026-11-25",
+    "retrieved_url": "https://www.jvolcanica.org/ojs/index.php/volcanica/article/download/134/140"
+  },
+  {
+    "source_id": "G18",
+    "file": "01_ground/G18_Hoek_Brown_2019_GSI.pdf",
+    "bytes": 1837020,
+    "sha256": "2bd7ec8ab273fd560f97ab148a9f61caec5e047300b1e2ce228ed1f4d6d8f918",
+    "source_url": "https://doi.org/10.1016/j.jrmge.2018.08.001",
+    "archived_on": "2026-11-25",
+    "retrieved_url": "https://static.rocscience.cloud/assets/resources/learning/hoek/2019-The-Hoek-Brown-failure-criterion-and-GSI-2018-edition-1.pdf"
+  },
+  {
+    "source_id": "G19",
+    "file": "01_ground/G19_Hughes_2022_Blocky_Regolith.pdf",
+    "bytes": 6450269,
+    "sha256": "9a94f2803e08dcc72166c21d6dc6c3feeabf76d0104230f6129463f53d746877",
+    "source_url": "https://doi.org/10.1029/2021JE006848",
+    "archived_on": "2026-11-25",
+    "retrieved_url": "https://lamb.caltech.edu/documents/22303/JGR_Planets_-_2022_-_Hughes_-_Canyon_Wall_and_Floor_Debris_Deposits_in_Aeolis_Mons_Mars.pdf"
+  },
+  {
+    "source_id": "G20",
+    "file": "01_ground/G20_Coleman_2024_original_unavailable.webloc",
+    "bytes": 259,
+    "sha256": "dba1c7b789a11b152832f163a732ce09b5bcc7381cb0d1e2e274f98d3e5e0123",
+    "source_url": "https://doi.org/10.1029/2023JE007997",
+    "archived_on": "2026-11-25"
+  },
+  {
+    "source_id": "R28",
+    "file": "04_SSI_and_numerics/R28_NASA_STD_7009B_2024.pdf",
+    "bytes": 1417365,
+    "sha256": "7b95a2065325dc3035c35ce110557d817555d3f22210ce5f6ce0bb2fb4ccd8b4",
+    "source_url": "https://standards.nasa.gov/node/263",
+    "archived_on": "2026-11-25",
+    "retrieved_url": "https://standards.nasa.gov/sites/default/files/standards/NASA/B/1/NASA-STD-7009B-Final-3-5-2024.pdf"
+  },
+  {
+    "source_id": "R29",
+    "file": "04_SSI_and_numerics/R29_Goldberg_Ricks_2022_Single_Element_Verification.pdf",
+    "bytes": 928128,
+    "sha256": "9dafa4bc435cad05667d7e8bf1683bc42a30a49c9ee378635c9e9586fba8a51d",
+    "source_url": "https://ntrs.nasa.gov/citations/20220004943",
+    "archived_on": "2026-11-25",
+    "retrieved_url": "https://ntrs.nasa.gov/api/citations/20220004943/downloads/Earth%20and%20Space%202022%20paper%20revised-final.pdf"
+  },
+  {
+    "source_id": "R30",
+    "file": "04_SSI_and_numerics/R30_McGann_2012_OpenSees_DP_Verification.pdf",
+    "bytes": 3167718,
+    "sha256": "4de8306144fdc19433bdcee5e22e345693bee94db0a8dc8cb5eab17a34d1c460",
+    "source_url": "https://peer.berkeley.edu/sites/default/files/webpeer-2012-05-christopher_r._mcgann_pedro_arduino_and_peter_mackenzie_helnwein.pdf",
+    "archived_on": "2026-11-25",
+    "retrieved_url": "https://peer.berkeley.edu/sites/default/files/webpeer-2012-05-christopher_r._mcgann_pedro_arduino_and_peter_mackenzie_helnwein.pdf"
+  },
+  {
+    "source_id": "G21",
+    "file": "01_ground/G21_LongFox_Britt_2023_Planetary_Simulants.pdf",
+    "bytes": 3089639,
+    "sha256": "d939e07e2fc54fc0cd62d554900148512115926dcddf69a9ccbac6d508da307b",
+    "source_url": "https://doi.org/10.3389/frspt.2023.1255535",
+    "archived_on": "2026-11-25",
+    "retrieved_url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2023.1255535/pdf"
+  },
+  {
+    "source_id": "R31",
+    "file": "04_SSI_and_numerics/R31_Sabet_deBorst_2019_Nonassociated_Mesh_Dependence.pdf",
+    "bytes": 4807846,
+    "sha256": "97d4638df860527cd33c4e934c2132d0291853d41f7f807804037345c41479ee",
+    "source_url": "https://doi.org/10.1002/nag.2973",
+    "archived_on": "2026-11-25",
+    "retrieved_url": "https://eprints.whiterose.ac.uk/id/eprint/148931/1/ShearLayer.pdf"
+  }
+]

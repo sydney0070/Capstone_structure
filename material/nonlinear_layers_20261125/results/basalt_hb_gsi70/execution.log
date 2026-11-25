@@ -1,0 +1,3 @@
+DruckerPrager nDmaterial - Written: K.Petek, P.Mackenzie-Helnwein, P.Arduino, U.Washington
+{"id": "basalt_hb_gsi70", "passed": true, "tests": 7, "error": null}
+WARNING - the 'fullGenLapack' eigen solver is VERY SLOW. Consider using the default eigen solver.

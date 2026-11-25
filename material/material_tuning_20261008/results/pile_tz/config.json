@@ -1,0 +1,31 @@
+{
+  "kind": "spring",
+  "material": "TzSimple1",
+  "params": {
+    "soil_type": 2,
+    "tult": 100.0,
+    "z50": 0.005,
+    "c": 0.0
+  },
+  "bounds": {
+    "tult": [
+      50.0,
+      200.0
+    ],
+    "z50": [
+      0.001,
+      0.02
+    ]
+  },
+  "name": "pile_tz",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.05,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

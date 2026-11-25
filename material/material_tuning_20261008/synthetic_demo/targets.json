@@ -1,0 +1,51 @@
+{
+  "case": "rebar_steel02",
+  "units": "kN,m,s,tonne,kPa",
+  "synthetic": true,
+  "source": "OpenSees generated synthetic truth: Fy=380000 kPa, b=0.015; NOT experimental data",
+  "conditions_confirmed": true,
+  "tests": [
+    {
+      "csv": "train/history.csv",
+      "role": "train",
+      "test": {
+        "sigma_v": 100.0,
+        "steps": 40,
+        "amplitude": 0.005,
+        "cycles": 3,
+        "dt": 1.0,
+        "permeability": 1e-09,
+        "fluid_bulk": 2200000.0,
+        "fluid_density": 1.0,
+        "alpha_stabilization": 1e-05,
+        "normal_force": 100.0,
+        "frequency": 1.0,
+        "substeps": 1
+      },
+      "channels": {
+        "y": 1.0
+      }
+    },
+    {
+      "csv": "validation/history.csv",
+      "role": "validation",
+      "test": {
+        "sigma_v": 100.0,
+        "steps": 40,
+        "amplitude": 0.008,
+        "cycles": 3,
+        "dt": 1.0,
+        "permeability": 1e-09,
+        "fluid_bulk": 2200000.0,
+        "fluid_density": 1.0,
+        "alpha_stabilization": 1e-05,
+        "normal_force": 100.0,
+        "frequency": 1.0,
+        "substeps": 1
+      },
+      "channels": {
+        "y": 1.0
+      }
+    }
+  ]
+}

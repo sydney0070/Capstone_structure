@@ -1,0 +1,38 @@
+{
+  "kind": "uniaxial",
+  "material": "Concrete02",
+  "params": {
+    "fpc": -30000.0,
+    "epsc0": -0.002,
+    "fpcu": -6000.0,
+    "epsU": -0.006,
+    "lam": 0.1,
+    "ft": 2500.0,
+    "Ets": 1500000.0
+  },
+  "bounds": {
+    "fpc": [
+      -40000.0,
+      -20000.0
+    ],
+    "epsc0": [
+      -0.003,
+      -0.0015
+    ],
+    "lam": [
+      0.05,
+      0.3
+    ]
+  },
+  "name": "concrete_cover",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

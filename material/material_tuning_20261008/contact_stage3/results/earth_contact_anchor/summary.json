@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETED_REQUESTED_PATH",
+  "attempted_stop": null,
+  "interpretation": "NECESSARY_EQUILIBRIUM_CHECK_AND_ELASTIC_TIE_DEMAND_NOT_COLLAPSE_PREDICTION",
+  "last_converged_pressure_kPa": 0.0,
+  "planet": "earth",
+  "support": "contact_anchor",
+  "horizontal_force_kN": 10.0,
+  "mass_tonne": 5.299425090079451,
+  "weight_kN": 51.98736013367968,
+  "total_anchor_allowable_kN": 157.07239982267419,
+  "max_gap_m": 2.011799909668325e-05,
+  "peak_anchor_tension_kN": 26.537991120047877,
+  "peak_anchor_utilization": 0.2011799909668325,
+  "max_force_residual": 8.79301462507962e-15,
+  "max_moment_residual_kNm": 0.00950054136125189,
+  "opensees": "3.8.0",
+  "steps": 54,
+  "mesh_n": 48
+}

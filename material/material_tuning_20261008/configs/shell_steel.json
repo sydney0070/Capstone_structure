@@ -1,0 +1,35 @@
+{
+  "kind": "shell",
+  "material": "J2Plasticity",
+  "params": {
+    "E": 200000000.0,
+    "nu": 0.3,
+    "rho": 7.85,
+    "sig0": 355000.0,
+    "sigInf": 426000.0,
+    "delta": 15.0,
+    "H": 1000000.0,
+    "thickness": 0.02
+  },
+  "bounds": {
+    "sig0": [
+      248499.99999999997,
+      461500.0
+    ],
+    "H": [
+      200000.0,
+      4000000.0
+    ]
+  },
+  "name": "shell_steel",
+  "status": "DEMONSTRATION_NOT_CALIBRATED",
+  "units": "kN,m,s,tonne,kPa",
+  "test": {
+    "sigma_v": 100.0,
+    "steps": 40,
+    "amplitude": 0.005,
+    "cycles": 3,
+    "normal_force": 100.0,
+    "substeps": 1
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "scope": "현재 단일 압력/진폭 시험에 한정; 지반 재료 전체 사용 승인 아님",
+  "numerical_status": "PASS",
+  "target_status": "NOT_EVALUATED",
+  "consistency_status": "NO_FAILURE_DETECTED",
+  "metrics": {
+    "G0_kPa": 79389.96210927196,
+    "Gsec_last_kPa": 7439.374737833305,
+    "G_ratio_last": 0.09370674251731957,
+    "D_last_percent": null,
+    "tau_peak_observed_kPa": 75.11198504335843,
+    "eps_v_final_percent": -0.19577544247662912,
+    "G_last_over_first": 1.0005499563148306,
+    "tau_last_over_first": 1.0005499563148306,
+    "eps_v_min_percent": -0.19577544247662912,
+    "eps_v_max_percent": 0.0,
+    "p_initial_kPa": 63.60327570518657,
+    "K0_x_initial": 0.4540491355777978,
+    "K0_y_initial": 0.4540491355777978,
+    "eta_max": 0.9505224983775911,
+    "Vs_equivalent_m_s": 204.41181615510231
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "Gsec_kPa": 7435.285655534474,
+      "tau_amplitude_kPa": 74.35285655534474,
+      "gamma_amplitude": 0.01,
+      "shear_work_kPa": 2.0427481132094556,
+      "stress_closure_ratio": 0.43511956914346644,
+      "volume_closure_strain": 0.0005300911522277902,
+      "D_percent": null,
+      "eps_v_end_percent": -0.05300911522277901
+    },
+    {
+      "cycle": 2,
+      "Gsec_kPa": 7437.1413970654185,
+      "tau_amplitude_kPa": 74.37141397065419,
+      "gamma_amplitude": 0.01,
+      "shear_work_kPa": 2.104825558709611,
+      "stress_closure_ratio": 0.00012826657818467343,
+      "volume_closure_strain": 0.000614972745790766,
+      "D_percent": null,
+      "eps_v_end_percent": -0.11450638980185562
+    },
+    {
+      "cycle": 3,
+      "Gsec_kPa": 7439.374737833305,
+      "tau_amplitude_kPa": 74.39374737833305,
+      "gamma_amplitude": 0.01,
+      "shear_work_kPa": 2.104801500925726,
+      "stress_closure_ratio": 0.00018430714309200188,
+      "volume_closure_strain": 0.0008126905267477347,
+      "D_percent": null,
+      "eps_v_end_percent": -0.19577544247662912
+    }
+  ],
+  "checks": [
+    {
+      "group": "수치 안정성",
+      "name": "전체 재하 완료",
+      "status": "PASS",
+      "value": 1,
+      "criterion": "요청한 모든 증분 수렴; 중도 실패는 FAIL",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "유한 응답",
+      "status": "PASS",
+      "value": 1,
+      "criterion": "NaN/Inf 없음",
+      "basis": "계산 유효성"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "전단 반력-재료응력 평형",
+      "status": "PASS",
+      "value": 4.263256414560601e-16,
+      "criterion": "max|Δτ| / max(σv, |τ|, 1 kPa) <= 1e-4",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "일정 수직응력 유지",
+      "status": "PASS",
+      "value": 5.842853613131638e-06,
+      "criterion": "max|σzz + σv| / σv <= 1e-4",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "절점-재료 전단변형률",
+      "status": "PASS",
+      "value": 1.734723475976807e-18,
+      "criterion": "절대차 <= 1e-8",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "목표 변형률 도달",
+      "status": "PASS",
+      "value": 1.734723475976807e-18,
+      "criterion": "절대차 <= 1e-8",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "강성",
+      "name": "양의 반복 할선강성",
+      "status": "PASS",
+      "value": 7439.374737833305,
+      "criterion": "이 시험의 모든 완결 사이클 Gsec > 0 kPa",
+      "basis": "기초 물리 일관성; 실험 적합성 아님"
+    },
+    {
+      "group": "강도",
+      "name": "PDMY02 강도면 일관성",
+      "status": "PASS",
+      "value": 0.9505224983775911,
+      "criterion": "0 <= eta_r <= 1 (수치 여유 1e-6)",
+      "basis": "PDMY02 출력 정의; 독립 강도검증 아님"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "미소변형 G0 진폭 수렴",
+      "status": "PASS",
+      "value": 1.5738731231902553e-08,
+      "criterion": "gamma=1e-7, 5e-8 독립 시험 G0 차이 <= 2%, 두 G0 > 0",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 base->fine 응력경로",
+      "status": "PASS",
+      "value": 0.0005744025522450832,
+      "criterion": "max|Δτ| / max|τ_fine| <= 2%",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 base->fine tau_peak_observed_kPa",
+      "status": "PASS",
+      "value": 4.09217980770019e-06,
+      "criterion": "세분화 결과 대비 상대차 <= 2%",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 base->fine Gsec_last_kPa",
+      "status": "PASS",
+      "value": 3.5058960336613532e-06,
+      "criterion": "세분화 결과 대비 상대차 <= 2%",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 base->fine 사이클 전단일",
+      "status": "PASS",
+      "value": 0.00045549155224522067,
+      "criterion": "모든 사이클 차이 <= 5%; 분모 하한 1e-8 kPa",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 base->fine 체적변형 경로",
+      "status": "PASS",
+      "value": 1.4465686405129314e-06,
+      "criterion": "전단 시작점 기준 절대차 <= 1e-5 (=0.001%p)",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 fine->finer 응력경로",
+      "status": "PASS",
+      "value": 0.0001824384011310386,
+      "criterion": "max|Δτ| / max|τ_fine| <= 2%",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 fine->finer tau_peak_observed_kPa",
+      "status": "PASS",
+      "value": 1.2930102610710354e-06,
+      "criterion": "세분화 결과 대비 상대차 <= 2%",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 fine->finer Gsec_last_kPa",
+      "status": "PASS",
+      "value": 6.110941757053976e-07,
+      "criterion": "세분화 결과 대비 상대차 <= 2%",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 fine->finer 사이클 전단일",
+      "status": "PASS",
+      "value": 0.00011120143201145984,
+      "criterion": "모든 사이클 차이 <= 5%; 분모 하한 1e-8 kPa",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "수치 안정성",
+      "name": "증분 수렴 fine->finer 체적변형 경로",
+      "status": "PASS",
+      "value": 1.7898808667561432e-07,
+      "criterion": "전단 시작점 기준 절대차 <= 1e-5 (=0.001%p)",
+      "basis": "프로젝트 수치검증 허용오차"
+    },
+    {
+      "group": "감쇠",
+      "name": "닫힌 반복 루프",
+      "status": "NOT_EVALUATED",
+      "value": null,
+      "criterion": "첫 사이클 제외; 응력 폐합 오차 <=1%, 체적변형 드리프트 <=1e-5 필요",
+      "basis": "PEER2001 에너지 정의 + 프로젝트 폐합 허용오차"
+    },
+    {
+      "group": "강도",
+      "name": "최대강도 도달 여부",
+      "status": "NOT_EVALUATED",
+      "value": 75.11198504335843,
+      "criterion": "현재 값은 반복시험 중 관측 최대응력; 단조전단 강도시험 필요",
+      "basis": "PEER2008/2014"
+    },
+    {
+      "group": "강성/감쇠",
+      "name": "일반 경험곡선 적용범위",
+      "status": "NOT_APPLICABLE",
+      "value": 1.0,
+      "criterion": "일반 MRD 관계는 약 0.3~0.5% 초과에서 신뢰 제한; 이 범위 이하도 자동 합격 아님",
+      "basis": "PEER2014"
+    },
+    {
+      "group": "체적변형",
+      "name": "문헌의 모래 체적변형 문턱",
+      "status": "INFO",
+      "value": 1.0,
+      "criterion": "Hsu & Vucetic: gamma_tv 약 0.01~0.02%; 전단진폭 문턱이며 허용 체적변형률 아님",
+      "basis": "Hsu2004; 대상 흙의 동일성 미확인, 합격판정에 전용하지 않음"
+    },
+    {
+      "group": "반복에 따른 변화",
+      "name": "장기 반복/잔류전단변형",
+      "status": "NOT_APPLICABLE",
+      "value": 3,
+      "criterion": "단기 변형률제어 시험으로 자유 잔류전단변형 및 장기 수명 판정 불가",
+      "basis": "시험 경계조건 / Carotenuto2022"
+    },
+    {
+      "group": "강성",
+      "name": "실험자료 적합성",
+      "status": "NOT_EVALUATED",
+      "value": null,
+      "criterion": "해당 항목의 모든 지정 지표를 비교; 상세 판정은 target_checks 참조",
+      "basis": "독립 비교자료"
+    },
+    {
+      "group": "감쇠",
+      "name": "실험자료 적합성",
+      "status": "NOT_EVALUATED",
+      "value": null,
+      "criterion": "해당 항목의 모든 지정 지표를 비교; 상세 판정은 target_checks 참조",
+      "basis": "독립 비교자료"
+    },
+    {
+      "group": "강도",
+      "name": "실험자료 적합성",
+      "status": "NOT_EVALUATED",
+      "value": null,
+      "criterion": "해당 항목의 모든 지정 지표를 비교; 상세 판정은 target_checks 참조",
+      "basis": "독립 비교자료"
+    },
+    {
+      "group": "체적변형",
+      "name": "실험자료 적합성",
+      "status": "NOT_EVALUATED",
+      "value": null,
+      "criterion": "해당 항목의 모든 지정 지표를 비교; 상세 판정은 target_checks 참조",
+      "basis": "독립 비교자료"
+    },
+    {
+      "group": "반복에 따른 변화",
+      "name": "실험자료 적합성",
+      "status": "NOT_EVALUATED",
+      "value": null,
+      "criterion": "해당 항목의 모든 지정 지표를 비교; 상세 판정은 target_checks 참조",
+      "basis": "독립 비교자료"
+    }
+  ],
+  "target_checks": [
+    {
+      "group": "강성",
+      "name": "G0_kPa",
+      "status": "NOT_EVALUATED",
+      "value": 79389.96210927196,
+      "criterion": "동일 조건 실험/검증자료의 lower, upper 필요",
+      "basis": "비교자료 미입력"
+    },
+    {
+      "group": "강성",
+      "name": "Gsec_last_kPa",
+      "status": "NOT_EVALUATED",
+      "value": 7439.374737833305,
+      "criterion": "동일 조건 실험/검증자료의 lower, upper 필요",
+      "basis": "비교자료 미입력"
+    },
+    {
+      "group": "강성",
+      "name": "G_ratio_last",
+      "status": "NOT_EVALUATED",
+      "value": 0.09370674251731957,
+      "criterion": "동일 조건 실험/검증자료의 lower, upper 필요",
+      "basis": "비교자료 미입력"
+    },
+    {
+      "group": "감쇠",
+      "name": "D_last_percent",
+      "status": "NOT_EVALUATED",
+      "value": null,
+      "criterion": "동일 조건 실험/검증자료의 lower, upper 필요",
+      "basis": "비교자료 미입력"
+    },
+    {
+      "group": "강도",
+      "name": "tau_peak_observed_kPa",
+      "status": "NOT_EVALUATED",
+      "value": 75.11198504335843,
+      "criterion": "동일 조건 실험/검증자료의 lower, upper 필요",
+      "basis": "비교자료 미입력"
+    },
+    {
+      "group": "체적변형",
+      "name": "eps_v_final_percent",
+      "status": "NOT_EVALUATED",
+      "value": -0.19577544247662912,
+      "criterion": "동일 조건 실험/검증자료의 lower, upper 필요",
+      "basis": "비교자료 미입력"
+    },
+    {
+      "group": "반복에 따른 변화",
+      "name": "G_last_over_first",
+      "status": "NOT_EVALUATED",
+      "value": 1.0005499563148306,
+      "criterion": "동일 조건 실험/검증자료의 lower, upper 필요",
+      "basis": "비교자료 미입력"
+    },
+    {
+      "group": "반복에 따른 변화",
+      "name": "tau_last_over_first",
+      "status": "NOT_EVALUATED",
+      "value": 1.0005499563148306,
+      "criterion": "동일 조건 실험/검증자료의 lower, upper 필요",
+      "basis": "비교자료 미입력"
+    }
+  ],
+  "targets": {
+    "description": "실험/검증자료의 허용 구간을 입력. null은 합격이 아니라 자료 부족. 숫자를 입력할 때 근거(source)를 반드시 기록.",
+    "context": {
+      "conditions_confirmed": false,
+      "soil_description": null,
+      "test": "drained_constant_sigma_v_simple_shear",
+      "sigma_v_kPa": 100.0,
+      "gamma_amplitude": 0.01,
+      "cycles": 3
+    },
+    "bounds": {
+      "G0_kPa": null,
+      "Gsec_last_kPa": null,
+      "G_ratio_last": null,
+      "D_last_percent": null,
+      "tau_peak_observed_kPa": null,
+      "eps_v_final_percent": null,
+      "G_last_over_first": null,
+      "tau_last_over_first": null
+    }
+  },
+  "numerical_tolerances": {
+    "probe_relative": 0.02,
+    "refinement_relative": 0.02,
+    "work_refinement_relative": 0.05,
+    "stress_balance_relative": 0.0001,
+    "strain_absolute": 1e-08,
+    "eta_absolute": 1e-06,
+    "loop_stress_closure_relative": 0.01,
+    "loop_volume_closure_absolute": 1e-05,
+    "volume_refinement_absolute": 1e-05
+  },
+  "sources": {
+    "PEER2014": "https://peer.berkeley.edu/publications/2014-16",
+    "PEER2008": "https://peer.berkeley.edu/publications/2008-04",
+    "PEER2001": "https://peer.berkeley.edu/sites/default/files/0109_j._stewart_s._chiou_j._bray_r._graves_p._somerville_n._abrahamson.pdf",
+    "PDMY02": "https://opensees.github.io/OpenSeesDocumentation/user/manual/material/ndMaterials/PressureDependentMultiYield02.html",
+    "Hsu2004": "https://doi.org/10.1061/(ASCE)1090-0241(2004)130:1(58)",
+    "Carotenuto2022": "https://www.issmge.org/uploads/publications/1/120/ICSMGE_2022-10.pdf"
+  },
+  "run": {
+    "completed": true,
+    "error": null,
+    "steps": 40,
+    "cycles": 3,
+    "amplitude": 0.01,
+    "sigma_v": 100.0,
+    "rho": 1.9,
+    "material": {
+      "G_ref": 100000.0,
+      "B_ref": 233000.0,
+      "ref_pressure": 101.0,
+      "friction_angle": 33.5,
+      "PT_angle": 25.5,
+      "peak_shear_strain": 0.1,
+      "pressure_depend_coeff": 0.5,
+      "contrac1": 0.045,
+      "contrac3": 0.15,
+      "dilat1": 0.06,
+      "dilat3": 0.15,
+      "n_yield_surface": 20
+    },
+    "opensees_version": "3.8.0"
+  },
+  "auxiliary_runs": {
+    "probe": {
+      "completed": true,
+      "error": null
+    },
+    "probe_half": {
+      "completed": true,
+      "error": null
+    },
+    "fine": {
+      "completed": true,
+      "error": null
+    },
+    "finer": {
+      "completed": true,
+      "error": null
+    }
+  }
+}

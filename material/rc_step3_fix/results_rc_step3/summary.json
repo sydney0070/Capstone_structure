@@ -1,0 +1,48 @@
+{
+  "status": "PROTOTYPE_NOT_EXPERIMENTALLY_CALIBRATED",
+  "units": "N,m,Pa",
+  "geometry_provisional": {
+    "width": 0.4,
+    "depth": 0.6,
+    "cover": 0.045,
+    "bar_diameter": 0.02,
+    "bars_top": 3,
+    "bars_bottom": 3,
+    "ny": 24,
+    "nz": 12
+  },
+  "concrete_provisional": {
+    "fpc": -30000000.0,
+    "epsc0": -0.002,
+    "fpcu": -6000000.0,
+    "epsU": -0.006,
+    "lam": 0.1,
+    "ft": 3000000.0,
+    "Ets": 1500000000.0
+  },
+  "steel_provisional": {
+    "Fy": 400000000.0,
+    "E0": 200000000000.0,
+    "b": 0.01,
+    "R0": 18.0,
+    "cR1": 0.925,
+    "cR2": 0.15
+  },
+  "documentation": [
+    "https://openseespydoc.readthedocs.io/en/latest/src/MomentCurvature.html",
+    "https://opensees.github.io/OpenSeesDocumentation/user/manual/model/beamIntegrations/Lobatto.html"
+  ],
+  "moment_curvature": {
+    "status": "PASS_NUMERICAL_EXECUTION",
+    "completed_steps": 150,
+    "max_abs_moment_kNm": 320.93724807476,
+    "axial_load_N": -360000.0
+  },
+  "beam_cyclic": {
+    "status": "PASS_NUMERICAL_EXECUTION",
+    "completed_points": 541,
+    "max_abs_force_kN": 76.13828562821895,
+    "max_abs_disp_m": 0.018000000000000013,
+    "height_m": 3.0
+  }
+}

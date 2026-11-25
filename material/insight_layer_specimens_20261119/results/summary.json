@@ -1,0 +1,1464 @@
+{
+  "opensees_version": "3.4.0",
+  "scope": "Numerical implementation checks, not experimental validation",
+  "case_count": 28,
+  "passed_count": 28,
+  "all_pass": true,
+  "cases": [
+    {
+      "id": "surface_elastic",
+      "family": "ElasticIsotropic",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 7500000.000000012,
+          "expected_E_Pa": 7500000.0,
+          "confinement_max_error_Pa": 3.637978807091713e-12,
+          "force_balance_max_error_N": 1.5916157281026244e-12,
+          "final_strain": 0.0,
+          "final_q_Pa": 0.0,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 7499999.999999641,
+          "expected_E_Pa": 7500000.0,
+          "confinement_max_error_Pa": 3.637978807091713e-11,
+          "force_balance_max_error_N": 2.1827872842550278e-11,
+          "final_strain": 0.0,
+          "final_q_Pa": 2.1827872842550278e-11,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1200.0,
+        "recovered_kg": 1199.9999999999989,
+        "relative_error": 9.992007221626409e-16,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.06470295799954329
+    },
+    {
+      "id": "surface_dp_trial",
+      "family": "DruckerPrager",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 7499999.999999999,
+          "expected_E_Pa": 7500000.0,
+          "confinement_max_error_Pa": 9.094947017729282e-12,
+          "force_balance_max_error_N": 7.275957614183426e-12,
+          "final_strain": 0.002666666666666666,
+          "final_q_Pa": 1.1823431123048067e-11,
+          "expected_yield_q_Pa": 9999.999999999998,
+          "computed_yield_q_Pa": 10000.000000000007,
+          "yield_relative_error": 8.881784197001252e-16,
+          "expected_residual_strain": 0.002666666666666666,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 7500000.0,
+          "expected_E_Pa": 7500000.0,
+          "confinement_max_error_Pa": 9.458744898438454e-11,
+          "force_balance_max_error_N": 7.275957614183426e-11,
+          "final_strain": 0.02666666666666666,
+          "final_q_Pa": 9.458744898438454e-11,
+          "expected_yield_q_Pa": 99999.99999999999,
+          "computed_yield_q_Pa": 100000.0,
+          "yield_relative_error": 2.220446049250313e-16,
+          "expected_residual_strain": 0.02666666666666666,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1200.0,
+        "recovered_kg": 1199.9999999999989,
+        "relative_error": 9.992007221626409e-16,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.1287910419923719
+    },
+    {
+      "id": "duricrust_elastic",
+      "family": "ElasticIsotropic",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 11479999.999999966,
+          "expected_E_Pa": 11480000.0,
+          "confinement_max_error_Pa": 3.637978807091713e-12,
+          "force_balance_max_error_N": 2.5011104298755527e-12,
+          "final_strain": 0.0,
+          "final_q_Pa": 0.0,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 11480000.000000147,
+          "expected_E_Pa": 11480000.0,
+          "confinement_max_error_Pa": 3.637978807091713e-11,
+          "force_balance_max_error_N": 2.546585164964199e-11,
+          "final_strain": 0.0,
+          "final_q_Pa": 0.0,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1025.0,
+        "recovered_kg": 1025.0000000000018,
+        "relative_error": 1.7763568394002505e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.060351749998517334
+    },
+    {
+      "id": "duricrust_dp",
+      "family": "DruckerPrager",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 11479999.999999998,
+          "expected_E_Pa": 11480000.0,
+          "confinement_max_error_Pa": 3.637978807091713e-11,
+          "force_balance_max_error_N": 2.1827872842550278e-11,
+          "final_strain": 0.005242472015295988,
+          "final_q_Pa": 2.000888343900442e-11,
+          "expected_yield_q_Pa": 30091.78936779897,
+          "computed_yield_q_Pa": 30091.789367798985,
+          "yield_relative_error": 4.440892098500626e-16,
+          "expected_residual_strain": 0.005242472015295988,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 11479999.999999996,
+          "expected_E_Pa": 11480000.0,
+          "confinement_max_error_Pa": 1.4551915228366852e-10,
+          "force_balance_max_error_N": 8.731149137020111e-11,
+          "final_strain": 0.02092191452400679,
+          "final_q_Pa": 1.0913936421275139e-10,
+          "expected_yield_q_Pa": 120091.78936779896,
+          "computed_yield_q_Pa": 120091.78936779905,
+          "yield_relative_error": 6.661338147750939e-16,
+          "expected_residual_strain": 0.02092191452400679,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1025.0,
+        "recovered_kg": 1024.9999999999966,
+        "relative_error": 3.3306690738754696e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.15180212500854395
+    },
+    {
+      "id": "sand_elastic_1300",
+      "family": "ElasticIsotropic",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 28399999.999999948,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 3.637978807091713e-12,
+          "force_balance_max_error_N": 2.2737367544323206e-12,
+          "final_strain": 0.0,
+          "final_q_Pa": 3.637978807091713e-12,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 28399999.999999754,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 4.3655745685100555e-11,
+          "force_balance_max_error_N": 2.000888343900442e-11,
+          "final_strain": 0.0,
+          "final_q_Pa": -7.275957614183426e-12,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1300.0,
+        "recovered_kg": 1300.0000000000014,
+        "relative_error": 1.1102230246251565e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.06001170800300315
+    },
+    {
+      "id": "sand_mgs1_dp_1300",
+      "family": "DruckerPrager",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 28399999.999999996,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 1.4551915228366852e-11,
+          "force_balance_max_error_N": 1.4551915228366852e-11,
+          "final_strain": 0.0010518836552030246,
+          "final_q_Pa": 1.7280399333685637e-11,
+          "expected_yield_q_Pa": 14936.74790388295,
+          "computed_yield_q_Pa": 14936.74790388296,
+          "yield_relative_error": 6.661338147750939e-16,
+          "expected_residual_strain": 0.0010518836552030246,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 28399999.999999993,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 1.0913936421275139e-10,
+          "force_balance_max_error_N": 1.1641532182693481e-10,
+          "final_strain": 0.009829698193262008,
+          "final_q_Pa": 1.7462298274040222e-10,
+          "expected_yield_q_Pa": 139581.71434432053,
+          "computed_yield_q_Pa": 139581.7143443207,
+          "yield_relative_error": 1.3322676295501878e-15,
+          "expected_residual_strain": 0.009829698193262008,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1300,
+        "recovered_kg": 1299.9999999999955,
+        "relative_error": 3.552713678800501e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.15189912500500213
+    },
+    {
+      "id": "sand_mgs1s_dp_1300",
+      "family": "DruckerPrager",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 28399999.999999993,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 1.000444171950221e-11,
+          "force_balance_max_error_N": 1.2732925824820995e-11,
+          "final_strain": 0.0009675258456242597,
+          "final_q_Pa": 7.275957614183426e-12,
+          "expected_yield_q_Pa": 13738.867007864488,
+          "computed_yield_q_Pa": 13738.867007864494,
+          "yield_relative_error": 4.440892098500626e-16,
+          "expected_residual_strain": 0.0009675258456242597,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 28400000.000000004,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 1.3096723705530167e-10,
+          "force_balance_max_error_N": 1.0186340659856796e-10,
+          "final_strain": 0.009007733006570378,
+          "final_q_Pa": 2.0372681319713593e-10,
+          "expected_yield_q_Pa": 127909.80869329938,
+          "computed_yield_q_Pa": 127909.80869329948,
+          "yield_relative_error": 8.881784197001252e-16,
+          "expected_residual_strain": 0.009007733006570378,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1300,
+        "recovered_kg": 1299.9999999999955,
+        "relative_error": 3.552713678800501e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.12930962500104215
+    },
+    {
+      "id": "local_gravel_elastic_proxy",
+      "family": "ElasticIsotropic",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 28399999.999999948,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 3.637978807091713e-12,
+          "force_balance_max_error_N": 2.2737367544323206e-12,
+          "final_strain": 0.0,
+          "final_q_Pa": 3.637978807091713e-12,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 28399999.999999754,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 4.3655745685100555e-11,
+          "force_balance_max_error_N": 2.000888343900442e-11,
+          "final_strain": 0.0,
+          "final_q_Pa": -7.275957614183426e-12,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1600.0,
+        "recovered_kg": 1600.000000000001,
+        "relative_error": 6.661338147750939e-16,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.05995991700910963
+    },
+    {
+      "id": "local_gravel_dp_trial",
+      "family": "DruckerPrager",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 28400000.000000007,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 1.000444171950221e-11,
+          "force_balance_max_error_N": 1.4551915228366852e-11,
+          "final_strain": 0.0009472437789234732,
+          "final_q_Pa": 8.185452315956354e-12,
+          "expected_yield_q_Pa": 13450.861660713319,
+          "computed_yield_q_Pa": 13450.861660713332,
+          "yield_relative_error": 8.881784197001252e-16,
+          "expected_residual_strain": 0.0009472437789234732,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 28399999.99999999,
+          "expected_E_Pa": 28400000.0,
+          "confinement_max_error_Pa": 1.0186340659856796e-10,
+          "force_balance_max_error_N": 8.731149137020111e-11,
+          "final_strain": 0.009472437789234732,
+          "final_q_Pa": 1.1641532182693481e-10,
+          "expected_yield_q_Pa": 134508.61660713318,
+          "computed_yield_q_Pa": 134508.6166071333,
+          "yield_relative_error": 8.881784197001252e-16,
+          "expected_residual_strain": 0.009472437789234732,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1600.0,
+        "recovered_kg": 1599.9999999999936,
+        "relative_error": 3.9968028886505635e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.15067899999849033
+    },
+    {
+      "id": "blocky_ejecta_elastic",
+      "family": "ElasticIsotropic",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 519999999.9999998,
+          "expected_E_Pa": 520000000.0,
+          "confinement_max_error_Pa": 1.4551915228366852e-11,
+          "force_balance_max_error_N": 2.9103830456733704e-11,
+          "final_strain": 0.0,
+          "final_q_Pa": 1.8189894035458565e-12,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 520000000.0000003,
+          "expected_E_Pa": 520000000.0,
+          "confinement_max_error_Pa": 4.3655745685100555e-11,
+          "force_balance_max_error_N": 3.637978807091713e-11,
+          "final_strain": 0.0,
+          "final_q_Pa": -1.4551915228366852e-11,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1700.0,
+        "recovered_kg": 1700.0000000000498,
+        "relative_error": 2.930988785010413e-14,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.06045654200715944
+    },
+    {
+      "id": "blocky_ejecta_dp_trial",
+      "family": "DruckerPrager",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 519999999.99999994,
+          "expected_E_Pa": 520000000.0,
+          "confinement_max_error_Pa": 1.1823431123048067e-11,
+          "force_balance_max_error_N": 1.4551915228366852e-11,
+          "final_strain": 5.173408331043585e-05,
+          "final_q_Pa": 1.0913936421275139e-11,
+          "expected_yield_q_Pa": 13450.861660713319,
+          "computed_yield_q_Pa": 13450.861660713328,
+          "yield_relative_error": 6.661338147750939e-16,
+          "expected_residual_strain": 5.1734083310435844e-05,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 519999999.99999994,
+          "expected_E_Pa": 520000000.0,
+          "confinement_max_error_Pa": 1.3096723705530167e-10,
+          "force_balance_max_error_N": 1.1641532182693481e-10,
+          "final_strain": 0.0005173408331043584,
+          "final_q_Pa": 1.3096723705530167e-10,
+          "expected_yield_q_Pa": 134508.61660713318,
+          "computed_yield_q_Pa": 134508.61660713327,
+          "yield_relative_error": 6.661338147750939e-16,
+          "expected_residual_strain": 0.0005173408331043584,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "yield_strength": true,
+            "elastic_unloading": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1700.0,
+        "recovered_kg": 1699.9999999999484,
+        "relative_error": 3.0309088572266774e-14,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.15084187500178814
+    },
+    {
+      "id": "fractured_basalt_elastic",
+      "family": "ElasticIsotropic",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 12999999999.999992,
+          "expected_E_Pa": 13000000000.0,
+          "confinement_max_error_Pa": 4.656612873077393e-10,
+          "force_balance_max_error_N": 4.656612873077393e-10,
+          "final_strain": 0.0,
+          "final_q_Pa": 5.4569682106375694e-12,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 12999999999.999992,
+          "expected_E_Pa": 13000000000.0,
+          "confinement_max_error_Pa": 4.0745362639427185e-10,
+          "force_balance_max_error_N": 4.656612873077393e-10,
+          "final_strain": 0.0,
+          "final_q_Pa": 2.9103830456733704e-11,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 2760.0,
+        "recovered_kg": 2760.000000003948,
+        "relative_error": 1.4304113449270517e-12,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.058153042002231814
+    },
+    {
+      "id": "sediment_elastic_prior",
+      "family": "ElasticIsotropic",
+      "status": "SOURCE_BASED_INITIAL_TRIAL",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 5000.0,
+          "initial_E_Pa": 754558814.2569302,
+          "expected_E_Pa": 754558814.2569305,
+          "confinement_max_error_Pa": 2.546585164964199e-11,
+          "force_balance_max_error_N": 5.820766091346741e-11,
+          "final_strain": 0.0,
+          "final_q_Pa": 2.7284841053187847e-12,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        },
+        {
+          "test": "triaxial_load_unload",
+          "pressure_Pa": 50000.0,
+          "initial_E_Pa": 754558814.2569306,
+          "expected_E_Pa": 754558814.2569305,
+          "confinement_max_error_Pa": 4.3655745685100555e-11,
+          "force_balance_max_error_N": 5.820766091346741e-11,
+          "final_strain": 0.0,
+          "final_q_Pa": 2.1827872842550278e-11,
+          "checks": {
+            "elastic_modulus": true,
+            "confinement": true,
+            "homogeneity": true,
+            "force_balance": true,
+            "finite": true,
+            "elastic_curve": true,
+            "return_to_origin": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1700.0,
+        "recovered_kg": 1700.0000000002017,
+        "relative_error": 1.1857181902996672e-13,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.05956024999613874
+    },
+    {
+      "id": "pdmy02_earth_dr30_reference",
+      "family": "PressureDependMultiYield02",
+      "status": "OFFICIAL_EARTH_REFERENCE_NOT_MARS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 5000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 3333.3333333333326,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 3757.6914371855555,
+          "final_tau_Pa": 3487.475771933516,
+          "force_balance_relative_error": 6.437317796911707e-08,
+          "vertical_stress_relative_error": 3.6118192292633467e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        },
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 80000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 53333.33333333332,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 50155.77380594311,
+          "final_tau_Pa": 35643.86685758257,
+          "force_balance_relative_error": 1.845134959112896e-08,
+          "vertical_stress_relative_error": 9.685288023320026e-09,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1700,
+        "recovered_kg": 1700.0000000000243,
+        "relative_error": 1.4210854715202004e-14,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.35572416699142195
+    },
+    {
+      "id": "pdmy02_earth_dr40_reference",
+      "family": "PressureDependMultiYield02",
+      "status": "OFFICIAL_EARTH_REFERENCE_NOT_MARS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 5000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 3235.2941176470576,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 3935.3410380738146,
+          "final_tau_Pa": 3871.2653727342317,
+          "force_balance_relative_error": 9.758656294343942e-08,
+          "vertical_stress_relative_error": 4.892161541647511e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        },
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 80000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 51764.70588235292,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 54413.049119749856,
+          "final_tau_Pa": 42687.702738879714,
+          "force_balance_relative_error": 2.6012676435974424e-08,
+          "vertical_stress_relative_error": 1.3748868150287308e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1800,
+        "recovered_kg": 1800.0000000000125,
+        "relative_error": 6.8833827526759706e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.32578795800509397
+    },
+    {
+      "id": "pdmy02_earth_dr50_reference",
+      "family": "PressureDependMultiYield02",
+      "status": "OFFICIAL_EARTH_REFERENCE_NOT_MARS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 5000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 3180.1637852593262,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 4149.552991179833,
+          "final_tau_Pa": 4074.3725947736657,
+          "force_balance_relative_error": 1.047812861701225e-07,
+          "vertical_stress_relative_error": 5.464705463964492e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        },
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 80000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 50882.62056414922,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 57673.97934225107,
+          "final_tau_Pa": 45859.59039062653,
+          "force_balance_relative_error": 2.6624593005206676e-08,
+          "vertical_stress_relative_error": 1.4957723578845615e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1900,
+        "recovered_kg": 1899.9999999999584,
+        "relative_error": 2.1871393585115584e-14,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.3185727920063073
+    },
+    {
+      "id": "pdmy02_earth_dr60_reference",
+      "family": "PressureDependMultiYield02",
+      "status": "OFFICIAL_EARTH_REFERENCE_NOT_MARS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 5000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 3103.448275862069,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 4391.704452508719,
+          "final_tau_Pa": 4198.2330180303115,
+          "force_balance_relative_error": 1.0396426171662678e-07,
+          "vertical_stress_relative_error": 5.6607754049764483e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        },
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 80000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 49655.1724137931,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 61280.723541753796,
+          "final_tau_Pa": 49044.012868321624,
+          "force_balance_relative_error": 2.8165368965872897e-08,
+          "vertical_stress_relative_error": 3.916300502169179e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 2000,
+        "recovered_kg": 2000.0000000000282,
+        "relative_error": 1.3988810110276972e-14,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.3092825839994475
+    },
+    {
+      "id": "pdmy02_earth_dr75_reference",
+      "family": "PressureDependMultiYield02",
+      "status": "OFFICIAL_EARTH_REFERENCE_NOT_MARS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 5000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 2999.9999999999995,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 5022.46213537008,
+          "final_tau_Pa": 4388.719869403173,
+          "force_balance_relative_error": 1.0464954796334535e-07,
+          "vertical_stress_relative_error": 6.389657974068541e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        },
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 80000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 47999.99999999999,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 68965.80924808476,
+          "final_tau_Pa": 54250.26941552281,
+          "force_balance_relative_error": 2.7062599254894998e-08,
+          "vertical_stress_relative_error": 1.8408392679702956e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 2100,
+        "recovered_kg": 2100.00000000003,
+        "relative_error": 1.4210854715202004e-14,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.2969218340003863
+    },
+    {
+      "id": "sand_mgs1_pdmy02_1300",
+      "family": "PressureDependMultiYield02",
+      "status": "UNCALIBRATED_MARS_SENSITIVITY_SEED",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 5000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 2606.837606837606,
+          "steps": 540,
+          "step_bisections": 1,
+          "error": null,
+          "peak_tau_Pa": 4407.937148052737,
+          "final_tau_Pa": 3763.4437787190354,
+          "force_balance_relative_error": 2.6469681043120322e-08,
+          "vertical_stress_relative_error": 2.0287989536882377e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        },
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 80000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 41709.401709401696,
+          "steps": 540,
+          "step_bisections": 51,
+          "error": null,
+          "peak_tau_Pa": 50193.15305485831,
+          "final_tau_Pa": 34365.56167093598,
+          "force_balance_relative_error": 7.642235177130678e-09,
+          "vertical_stress_relative_error": 5.56367031094851e-09,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1300,
+        "recovered_kg": 1299.9999999999955,
+        "relative_error": 3.552713678800501e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.5002446659927955
+    },
+    {
+      "id": "sand_mgs1s_pdmy02_1300",
+      "family": "PressureDependMultiYield02",
+      "status": "UNCALIBRATED_MARS_SENSITIVITY_SEED",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 5000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 2606.837606837606,
+          "steps": 540,
+          "step_bisections": 1,
+          "error": null,
+          "peak_tau_Pa": 4180.417434427009,
+          "final_tau_Pa": 3606.8806794467314,
+          "force_balance_relative_error": 2.8814526660462517e-08,
+          "vertical_stress_relative_error": 2.0526095249806532e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        },
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 80000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 41709.401709401696,
+          "steps": 540,
+          "step_bisections": 129,
+          "error": null,
+          "peak_tau_Pa": 47121.90470145891,
+          "final_tau_Pa": 32577.6599061806,
+          "force_balance_relative_error": 7.566229283817412e-09,
+          "vertical_stress_relative_error": 5.575497380050365e-09,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1300,
+        "recovered_kg": 1299.9999999999955,
+        "relative_error": 3.552713678800501e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.6722334579972085
+    },
+    {
+      "id": "local_gravel_pdmy02_trial",
+      "family": "PressureDependMultiYield02",
+      "status": "UNCALIBRATED_MARS_SENSITIVITY_SEED",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 5000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 2606.837606837606,
+          "steps": 540,
+          "step_bisections": 1,
+          "error": null,
+          "peak_tau_Pa": 4330.49307865113,
+          "final_tau_Pa": 3710.6268038506087,
+          "force_balance_relative_error": 2.6501760943320755e-08,
+          "vertical_stress_relative_error": 2.0327228230598847e-08,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        },
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 80000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 41709.401709401696,
+          "steps": 540,
+          "step_bisections": 117,
+          "error": null,
+          "peak_tau_Pa": 49164.801666039966,
+          "final_tau_Pa": 33719.43350912886,
+          "force_balance_relative_error": 7.955109490069248e-09,
+          "vertical_stress_relative_error": 5.583249730989337e-09,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1600.0,
+        "recovered_kg": 1599.9999999999936,
+        "relative_error": 3.9968028886505635e-15,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.6514136249898002
+    },
+    {
+      "id": "blocky_ejecta_pdmy02_trial",
+      "family": "PressureDependMultiYield02",
+      "status": "UNCALIBRATED_MARS_SENSITIVITY_SEED",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 5000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 2719.298245614035,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 4354.133018094939,
+          "final_tau_Pa": 4219.017580476424,
+          "force_balance_relative_error": 5.954574597687309e-07,
+          "vertical_stress_relative_error": 3.835186500509735e-07,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        },
+        {
+          "test": "drained_constant_vertical_stress_cyclic_shear",
+          "pressure_Pa": 80000.0,
+          "element": "SSPbrick",
+          "initial_mean_pressure_Pa": 43508.77192982456,
+          "steps": 540,
+          "step_bisections": 0,
+          "error": null,
+          "peak_tau_Pa": 63788.177817257034,
+          "final_tau_Pa": 62555.98289302393,
+          "force_balance_relative_error": 1.6901070803446593e-07,
+          "vertical_stress_relative_error": 1.0513830711715855e-07,
+          "scope": "No pore fluid. Lateral strain constrained; mean pressure evolves and is not equal to vertical pressure.",
+          "checks": {
+            "complete": true,
+            "finite": true,
+            "force_balance": true,
+            "vertical_stress": true,
+            "stress_force": true
+          },
+          "passed": true
+        }
+      ],
+      "mass_test": {
+        "expected_kg": 1700.0,
+        "recovered_kg": 1699.9999999999484,
+        "relative_error": 3.0309088572266774e-14,
+        "passed": true
+      },
+      "passed": true,
+      "elapsed_seconds": 0.32520750000549015
+    },
+    {
+      "id": "qzsimple2_reference",
+      "family": "QzSimple2",
+      "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "committed_uniaxial_material_history",
+          "steps": 1100,
+          "max_force_N": 3556.5091497560343,
+          "min_force_N": -36950.86403550573,
+          "scope": "Material tester on the same defined zeroLength law; no global spring equilibrium solve or ring area conversion.",
+          "checks": {
+            "finite": true,
+            "responds": true,
+            "force_capacity_bound": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "elapsed_seconds": 0.005789582995930687
+    },
+    {
+      "id": "qzsimple1_reference",
+      "family": "QzSimple1",
+      "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "committed_uniaxial_material_history",
+          "steps": 1100,
+          "max_force_N": 3557.063677959536,
+          "min_force_N": -37294.70030041525,
+          "scope": "Material tester on the same defined zeroLength law; no global spring equilibrium solve or ring area conversion.",
+          "checks": {
+            "finite": true,
+            "responds": true,
+            "force_capacity_bound": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "elapsed_seconds": 0.0056215410004369915
+    },
+    {
+      "id": "pysimple2_reference",
+      "family": "PySimple2",
+      "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "committed_uniaxial_material_history",
+          "steps": 1100,
+          "max_force_N": 96551.86216722731,
+          "min_force_N": -96476.00913367033,
+          "scope": "Material tester on the same defined zeroLength law; no global spring equilibrium solve or ring area conversion.",
+          "checks": {
+            "finite": true,
+            "responds": true,
+            "force_capacity_bound": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "elapsed_seconds": 0.006073750002542511
+    },
+    {
+      "id": "tzsimple2_reference",
+      "family": "TzSimple2",
+      "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "committed_uniaxial_material_history",
+          "steps": 1100,
+          "max_force_N": 98625.21368070191,
+          "min_force_N": -97742.68766549412,
+          "scope": "Material tester on the same defined zeroLength law; no global spring equilibrium solve or ring area conversion.",
+          "checks": {
+            "finite": true,
+            "responds": true,
+            "force_capacity_bound": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "elapsed_seconds": 0.005443417001515627
+    },
+    {
+      "id": "elasticppgap_compression_benchmark",
+      "family": "ElasticPPGap",
+      "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "committed_uniaxial_material_history",
+          "steps": 1100,
+          "max_force_N": 0.0,
+          "min_force_N": -21091.789367798978,
+          "scope": "Material tester on the same defined zeroLength law; no global spring equilibrium solve or ring area conversion.",
+          "checks": {
+            "finite": true,
+            "responds": true,
+            "compression_only": true,
+            "yield_capacity": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "elapsed_seconds": 0.004490249993978068
+    },
+    {
+      "id": "hysteretic_crust_scale_benchmark",
+      "family": "Hysteretic",
+      "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+      "mars_calibrated": false,
+      "tests": [
+        {
+          "test": "committed_uniaxial_material_history",
+          "steps": 1100,
+          "max_force_N": 21513.625155154958,
+          "min_force_N": -21513.625155154958,
+          "scope": "Material tester on the same defined zeroLength law; no global spring equilibrium solve or ring area conversion.",
+          "checks": {
+            "finite": true,
+            "responds": true,
+            "initial_stiffness": true
+          },
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "elapsed_seconds": 0.006477457995060831
+    }
+  ]
+}

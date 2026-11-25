@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "body": "Mars",
+  "gravity_m_s2": 3.711,
+  "scenario": "nl_ss_block35",
+  "units": "m N s kg Pa",
+  "depth_m": 12.0,
+  "width_m": 6.0,
+  "length_m": 6.0,
+  "core_width_m": 2.0,
+  "core_length_m": 2.0,
+  "core_spacing_m": 1.0,
+  "max_outer_spacing_m": 3.0,
+  "max_vertical_spacing_m": 2.0,
+  "mesh_scope": "Compact integration example; domain and mesh convergence have not been established.",
+  "layers": [
+    {
+      "bottom_m": 0.2,
+      "material": "mars_nl25_crust_tc",
+      "role": "duricrust"
+    },
+    {
+      "bottom_m": 3.0,
+      "material": "mars_nl25_mgs1_ss",
+      "role": "sand"
+    },
+    {
+      "bottom_m": 13.0,
+      "material": "mars_nl25_blocky_phi35",
+      "role": "blocky_ejecta"
+    },
+    {
+      "bottom_m": null,
+      "material": "mars_nl25_basalt_hb_gsi55",
+      "role": "fractured_basalt"
+    }
+  ],
+  "lenses": [],
+  "layer_geometry": "surface_following",
+  "boundary": "static_box",
+  "elastic": false,
+  "earth_model": "dp",
+  "stiffness_factor": 1.0,
+  "pdmy_elastic_seating_fraction": 0.001,
+  "tag_start": 10000,
+  "max_elements": 12000,
+  "max_aspect_ratio": 40.0,
+  "assumption": "0.2 m effective duricrust based on Warner et al. (2022); 3 m sandy-regolith base and 13 m blocky-ejecta base are reference interfaces, consistent with Hobiger et al. (2021) Table 1. The centimetre-scale loose surface layer is omitted. The domain may end within the blocky ejecta.",
+  "material_scope": "Finite continuum regions; not grain-scale mixing. Rock/soil internal interfaces bonded.",
+  "site_scope": "Western Elysium Planitia, InSight landing site: literature-based shallow reference stratigraphy with effective material properties and idealized sharp interfaces.",
+  "material_profile": "nonlinear_20261125",
+  "selection_status": "research_only_localization_and_mesh_verification_unresolved",
+  "nonlinear_scope": "All layer laws DruckerPrager. Specimen constitutive verification passed; actual Mars parameters and dynamic damping/volumetric response remain unvalidated."
+}

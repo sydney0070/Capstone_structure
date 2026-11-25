@@ -1,0 +1,8 @@
+{
+  "status": "stopped_by_user",
+  "returncode": 143,
+  "wall_clock_timeout_s": null,
+  "elapsed_s": 1275.5150928497314,
+  "reason": "User requested stop and diagnosis/material comparison.",
+  "solver_exit_verified": true
+}

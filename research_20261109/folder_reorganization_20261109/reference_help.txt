@@ -1,0 +1,41 @@
+usage: ground_reference_demo.py [-h] [--body {Earth,Moon,Mars}]
+                                [--earth-model {dp,pdmy02}] [--config CONFIG]
+                                [--terrain {flat,slope,dem}] [--prepare-pad]
+                                [--no-raft] [--demo-frame] [--elastic]
+                                [--stiffness-factor STIFFNESS_FACTOR]
+                                [--pressure-kpa PRESSURE_KPA] [--gravity-only]
+                                [--no-html] [--no-open]
+                                [--html-frames HTML_FRAMES] [--output OUTPUT]
+                                [--dynamic {none,rest,pulse,incident}]
+                                [--dt DT] [--steps STEPS] [--verify]
+
+3D mixed Earth/Moon/Mars ground + SSI reference (SI).
+
+options:
+  -h, --help            show this help message and exit
+  --body {Earth,Moon,Mars}
+  --earth-model {dp,pdmy02}
+                        dp: static reference; pdmy02: advanced cyclic skeleton
+                        option
+  --config CONFIG       full config JSON; overrides body/default geometry
+  --terrain {flat,slope,dem}
+  --prepare-pad         explicit initial graded pad for DEM (not staged
+                        excavation)
+  --no-raft
+  --demo-frame
+  --elastic             explicit elastic diagnostic instead of nonlinear soil
+  --stiffness-factor STIFFNESS_FACTOR
+                        override JSON stiffness multiplier only when supplied
+  --pressure-kpa PRESSURE_KPA
+                        illustrative extra uniform foundation pressure
+  --gravity-only
+  --no-html
+  --no-open             save HTML without automatically opening the browser
+  --html-frames HTML_FRAMES
+                        maximum saved animation frames, including initial
+                        state; does not change integration steps
+  --output OUTPUT
+  --dynamic {none,rest,pulse,incident}
+  --dt DT
+  --steps STEPS
+  --verify

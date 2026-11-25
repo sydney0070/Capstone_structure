@@ -1,0 +1,30 @@
+{
+  "created_on": "2026-11-24",
+  "units": "m N s kg Pa",
+  "specimen_source": "/Users/sydney/Desktop/capstone/Capstone_structure/material/insight_layer_specimens_20261119/materials.json",
+  "specimen_source_sha256": "b9c2c062f312925f65d6728af9fa4447ebc9ee54c1b418527dca2085ce08da17",
+  "name": "recommended_20261124",
+  "layers": [
+    {
+      "bottom_m": 0.2,
+      "material": "mars_recommended_duricrust_dp_20261124",
+      "role": "duricrust"
+    },
+    {
+      "bottom_m": 3.0,
+      "material": "mars_recommended_sand_mgs1_dp_1300_20261124",
+      "role": "sand"
+    },
+    {
+      "bottom_m": 13.0,
+      "material": "mars_recommended_blocky_ejecta_elastic_20261124",
+      "role": "blocky_ejecta"
+    },
+    {
+      "bottom_m": null,
+      "material": "mars_recommended_fractured_basalt_elastic_20261124",
+      "role": "fractured_basalt"
+    }
+  ],
+  "note": "Same 0.2/3/13m reference geometry; source specimen values unchanged, no unperformed shear calibration. Relative to saved MGS1, only duricrust density changes1200->1025."
+}

@@ -1,0 +1,49 @@
+{
+  "id": "tzsimple2_reference",
+  "group": "uniaxial_comparison",
+  "layer": "footing_base_tangential",
+  "family": "TzSimple2",
+  "parameters": {
+    "soil_type": 1,
+    "ultimate_force_N": 100000.0,
+    "z50_m": 0.0142222,
+    "damping": 0.0
+  },
+  "evidence": {
+    "soil_type": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17 spring106",
+      "kind": "earth_example",
+      "note": "Use documented one optional damping argument, set zero for static test"
+    },
+    "ultimate_force_N": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17 spring106",
+      "kind": "earth_example",
+      "note": "Use documented one optional damping argument, set zero for static test"
+    },
+    "z50_m": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17 spring106",
+      "kind": "earth_example",
+      "note": "Use documented one optional damping argument, set zero for static test"
+    },
+    "damping": {
+      "source": "Shallow2008",
+      "locator": "PDF p.17 spring106",
+      "kind": "earth_example",
+      "note": "Use documented one optional damping argument, set zero for static test"
+    }
+  },
+  "mars_calibrated": false,
+  "status": "LITERATURE_REFERENCE_OR_SYNTHETIC_MECHANICS",
+  "geometry": {
+    "type": "zeroLength",
+    "direction": 1
+  },
+  "displacement_scale_m": 0.0142222,
+  "notes": [
+    "Force N versus relative displacement m, not continuum stress versus strain.",
+    "Independent spring fixture; no automatic normal/shear coupling or tributary ring-area calibration."
+  ]
+}
