@@ -1,9 +1,0 @@
-{"elapsed_s": 0.02125279200845398, "event": "attempt_started", "pattern": 800001, "before": 0.0, "increment": 0.05, "algorithm": "KrylovNewton"}
-{"elapsed_s": 1.0658357499924023, "event": "attempt_finished", "pattern": 800001, "before": 0.0, "increment": 0.05, "after": 0.05, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 7.1555260580363285e-09}
-{"elapsed_s": 1.070269374991767, "event": "attempt_started", "pattern": 800001, "before": 0.05, "increment": 0.05, "algorithm": "KrylovNewton"}
-{"elapsed_s": 2.09284141700482, "event": "attempt_finished", "pattern": 800001, "before": 0.05, "increment": 0.05, "after": 0.1, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 9.912168648840092e-09}
-{"elapsed_s": 2.0973468750016764, "event": "attempt_started", "pattern": 800001, "before": 0.1, "increment": 0.05, "algorithm": "KrylovNewton"}
-{"elapsed_s": 3.144584458001191, "event": "attempt_finished", "pattern": 800001, "before": 0.1, "increment": 0.05, "after": 0.15000000000000002, "code": 0, "algorithm": "KrylovNewton", "iterations": 1, "unbalance_norm_N": 1.2449065592484284e-08}
-{"elapsed_s": 3.149291292007547, "event": "attempt_started", "pattern": 800001, "before": 0.15000000000000002, "increment": 0.05, "algorithm": "KrylovNewton"}
-{"elapsed_s": 9.31246149999788, "event": "attempt_finished", "pattern": 800001, "before": 0.15000000000000002, "increment": 0.05, "after": 0.2, "code": 0, "algorithm": "KrylovNewton", "iterations": 7, "unbalance_norm_N": 0.10103107947997002}
-{"elapsed_s": 9.319697875005659, "event": "attempt_started", "pattern": 800001, "before": 0.2, "increment": 0.05, "algorithm": "KrylovNewton"}

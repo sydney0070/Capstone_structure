@@ -1,8 +1,0 @@
-{
-  "status": "cancelled_duplicate",
-  "returncode": 143,
-  "wall_clock_timeout_s": null,
-  "elapsed_s": 793.0178940296173,
-  "reason": "Slower duplicate Newton run; KrylovNewton and adaptive subdivision runs continue.",
-  "solver_exit_verified": true
-}

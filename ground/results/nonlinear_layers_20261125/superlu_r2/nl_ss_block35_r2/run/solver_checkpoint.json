@@ -1,8 +1,0 @@
-{
-  "elapsed_s": 116.19967000000179,
-  "event": "attempt_started",
-  "pattern": 800001,
-  "before": 0.05,
-  "increment": 0.01,
-  "algorithm": "KrylovNewton"
-}

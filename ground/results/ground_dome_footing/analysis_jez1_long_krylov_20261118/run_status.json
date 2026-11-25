@@ -1,8 +1,0 @@
-{
-  "status": "cancelled_duplicate",
-  "returncode": 143,
-  "wall_clock_timeout_s": null,
-  "elapsed_s": 778.6012706756592,
-  "reason": "Adaptive subdivision passed the stalled 30% step; adaptive run continues.",
-  "solver_exit_verified": true
-}

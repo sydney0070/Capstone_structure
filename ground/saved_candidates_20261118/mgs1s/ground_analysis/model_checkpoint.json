@@ -1,7 +1,0 @@
-{
-  "candidate": "mgs1s",
-  "static_steps": 20,
-  "primary_algorithm": "KrylovNewton",
-  "complete": false,
-  "safe_verdict": false
-}
